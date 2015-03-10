@@ -37,7 +37,7 @@ Allocating Domain Names
 If you recall from the previous section, IP addresses are allocated based on
 where you connect a new network to the Internet.   Domain names are allocated
 based on organizations that "own" the domain name.  At the top of the domain
-name hierarchy there is an organization called the International 
+name hierarchy there is an organization called the International
 Corporation for Assigned Network Names (ICANN).
 ICANN chooses the top level domains like .com, .edu,
 and .org and assigns those to other organizations to manage.  ICANN also
@@ -46,12 +46,14 @@ countries around the world.
 
 Once a domain name is assigned to an organization, the controlling organization
 is allowed to assign sub domains within the domain.  As an example, the .edu
-subdomain is assigned to the Educause organization.  Educause assigns domains
-like umich.edu to higher education institutions.  Once the University of
-Michigan receives umich.edu it can make its own choices for subdomains within
-umich.edu.  Domains like .com and .org can be purchased by individuals and the
-individual owners are allowed to manage their domain and create sub-domains for
-their own use or use by others.
+top-level domain is assigned to the Educause organization.
+Educause assigns domains like umich.edu to higher education institutions.
+Once the University of Michigan is given control of umich.edu it
+can make its own choices for subdomains within
+its new domain.  Domains in .com and .org can be purchased
+by individuals and the
+individual owners of those domains are allowed to manage their
+sub-domain and create sub-domains for their own use or use by others.
 
 Reading Domain Names
 --------------------

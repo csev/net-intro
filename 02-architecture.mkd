@@ -1,13 +1,16 @@
 Network Architecture
 ====================
 
+\index{NSFNet}
 When we use the Internet, it seems pretty simple.   We go to a Web address and
 up comes a page.  Or we go to our favorite social site and see pictures of our
-friends and families.  It takes a lot of complex software and hardware to make
-the Internet seem simple.  The design of the technologies that make today's
+friends, families and pets.  It takes a lot of complex software and
+hardware to make the Internet seem simple.  The design of the
+technologies that make today's
 Internet work started in the 1960's and there was over 20 years of research
 into how to build Internet technologies before the first "Internet" was built
-in the late 1980's by academics.  And since then the research and development
+in the late 1980's by academics in a project called NSFNet.
+And since then the research and development
 into improving network technologies has continued as networks have become far
 larger and faster and globally distributed with billions of computers.
 

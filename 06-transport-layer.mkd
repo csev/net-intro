@@ -26,7 +26,7 @@ the problems of packet reassembly and retransmission.
 Packet Headers
 --------------
 
-If you were to look at a packet, going across one of many links 
+If you were to look at a packet, going across one of many links
 between its source and destination computers, you would see a link header, IP
 header, and TCP header along with the actual data in the packet:
 

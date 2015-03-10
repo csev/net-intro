@@ -35,7 +35,7 @@ places "train stations" - we call them "routers".    Like train stations,
 routers have many incoming and outgoing links.  Some links may be fiber optic,
 others might be satellite, and still others might be wireless.  The job of the
 router is to make sure packets move through the router and end up on the
-correct outbound link layer.  A typical packet passes through from 
+correct outbound link layer.  A typical packet passes through from
 five to 20 routers as it moves from its source to its destination.
 
 But unlike a train station where the person traveling needs to look at displays
@@ -286,37 +286,11 @@ TTL of 3 and continues to increase the TTL until the packet makes it all the
 way to its destination.
 
 With this approach traceroute builds  up an approximate path that your packets
-are taking across the network.  Here is the output of a traceroute from the
-University of Michigan to Stanford University:
+are taking across the network.
 
-    traceroute to www.stanford.edu (171.67.20.37), 64 hops max
-     1  141.211.203.252 (141.211.203.252) 1.39 ms 0.53 ms 0.49 ms
-     2  v-bin-seb.r-bin-seb.umnet.umich.edu (192.122.183.61)
-                 0.591 ms 0.558 ms 0.570 ms
-     3  v-bin-seb-i2-aa.merit-aa2.umnet.umich.edu (192.12.80.33)
-                 6.610 ms 6.545 ms 6.654 ms
-     4  192.122.183.30 (192.122.183.30) 7.9 ms 7.2 ms 7.1 ms
-     5  so-4-3-0.0.rtr.kans.net.internet2.edu (64.57.28.36)
-                  17.672 ms 17.836 ms 17.673 ms
-     6  so-0-1-0.0.rtr.hous.net.internet2.edu (64.57.28.57)
-                  31.800 ms 41.967 ms 31.787 ms
-     7  so-3-0-0.0.rtr.losa.net.internet2.edu (64.57.28.44)
-                  63.478 ms 63.704 ms 63.710 ms
-     8  hpr-lax-hpr--i2-newnet.cenic.net (137.164.26.132)
-                  63.093 ms 63.026 ms 63.384 ms
-     9  svl-hpr--lax-hpr-10ge.cenic.net (137.164.25.13)
-                  71.242 ms 71.542 ms 76.282 ms
-    10  oak-hpr--svl-hpr-10ge.cenic.net (137.164.25.9)
-                  72.744 ms 72.243 ms 72.556 ms
-    11  hpr-stan-ge--oak-hpr.cenic.net (137.164.27.158)
-                  73.763 ms 73.396 ms 73.665 ms
-    12  bbra-rtr.Stanford.EDU (171.64.1.134)
-                   73.577 ms 73.682 ms 73.492 ms
-    13  * * *
-    14  www.Stanford.EDU (171.67.20.37)
-                   77.317 ms 77.128 ms 77.648 ms
+![Traceroute from Michigan to Stanford](images/traceroute-stanford)
 
-On this particular day, it took 14 hops to get from Ann Arbor, Michigan to Palo
+It took 14 hops to get from Ann Arbor, Michigan to Palo
 Alto, California.  The packets passed through Kansas, Texas, Los Angeles, and
 Oakland.  This might not be the best route between the two cities if you are
 driving a car or taking a train, but on that day for packets between the
@@ -335,25 +309,10 @@ am sorry".   Traceroute waits for the message and after a few seconds just
 gives up and increases the TTL value so it gets past the rude router.
 
 If you run a trace route for a connection that includes an undersea cable, you
-can see how fast data moves under the sea as can be seen in this traceroute
-between the University of Michigan and Peking University in China:
+can see how fast data moves under the sea as can be seen in a traceroute
+between the University of Michigan and Peking University in China.
 
-    traceroute to www.pku.edu.cn (162.105.129.104), 64 hops max
-     1  141.211.203.252 (141.211.203.252) 1.2 ms 0.58 ms 0.59 ms
-     2  v-bin-seb.r-bin-seb.umnet.umich.edu (192.122.183.61) 
-               0.604 ms 0.565 ms 0.466 ms
-     3  v-bin-seb-i2-aa.merit-aa2.umnet.umich.edu (192.12.80.33) 
-               7.511 ms 6.641 ms 6.588 ms
-     4  192.122.183.30 (192.122.183.30) 12.0 ms 6.9 ms 7.6 ms
-     5  192.31.99.133 (192.31.99.133) 7.6 ms 8.9 ms 17.8 ms
-     6  192.31.99.170 (192.31.99.170) 59.2 ms 59.2 ms 59.1 ms
-     7  134.75.108.209 (134.75.108.209) 173.6 ms 173.5 ms
-     8  134.75.107.10 (134.75.107.10) 256.760 ms 134.75.107.18 
-                      (134.75.107.18) 256.574 ms 256.530
-     9  202.112.53.17 (202.112.53.17) 256.7 ms 256.8 ms
-    10  202.112.61.157 (202.112.61.157) 257.4 ms 257.9 ms
-    11  202.112.53.194 (202.112.53.194) 256.8 ms 257.0 ms
-    12  202.112.41.202 (202.112.41.202) 256.8 ms 257.0 ms 
+![Traceroute from Michigan to Peking University](images/traceroute-peking)
 
 You can see when the packet is encountering a long undersea cable in steps
 seven and eight.  The time goes from less than 1/10 of a second to nearly 1/4 of
@@ -487,7 +446,7 @@ expansion of the Internet and the "Internet of things" where smart cars,
 refrigerators, thermostats, and even lights will need IP addresses we need to
 connect far more than a billion computers to the Internet.  To make it possible
 to connect all these new computers to the Internet engineers have designed a
-build a new generation of the Internet Protocol called "IPv6".  The 128-bit 
+build a new generation of the Internet Protocol called "IPv6".  The 128-bit
 IPv6 addresses are much longer than the 32-bit IPv4 addresses.
 
 The Regional Internet Registries (RIRs) are leading the transition from IPv4 to

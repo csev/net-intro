@@ -71,7 +71,7 @@ set of rules.  We use this word to describe networked applications, because
 without precise rules, applications have no way to establish and have a
 conversation.   Computers like precision.
 
-\index{RFC7230 HTTP}
+\index{RFC-7230 HTTP}
 There are many networked applications that are found in the Application Layer
 and it is important that each networked application have a well-documented
 protocol so that all servers and clients can interoperate.  Some of these
@@ -110,7 +110,7 @@ web browser and sending HTTP commands to the web browser to retrieve data.  To
 play with the HTTP protocol, we will use one of the earliest applications ever
 built.
 
-\index{RFC15 Telnet}
+\index{RFC-15 Telnet}
 \index{telnet}
 The "telnet" application was first developed in 1968 and was developed
 according to one of the earliest standards for the Internet:
@@ -135,7 +135,7 @@ not present on later versions of Windows.  If you have a later version of
 Windows, you can download and install a telnet client so you can do the
 examples in this section.
 
-The telnet command is a simple application.  You run telnet
+Telnet is a simple application.  You run telnet
 from the command line (or terminal) and type the following command:
 
     telnet www.dr-chuck.com 80
@@ -175,6 +175,7 @@ the enter or return key.  Since we don't know the protocol, we type
 then closes the connection.  We do not get a second chance - if we do not know
 the protocol - the web server does not want to talk to us.
 
+\index{Hacking HTTP}
 But lets go back and read section 5.3.2 of the RFC-7230 document and try again
 to request a document using the correct syntax:
 
@@ -222,7 +223,7 @@ computer might not be turned on at all time, when mail is sent to you it is
 sent to a server and stored on that server until you turn on your computer and
 retrieve any new email.
 
-\index{RFC3501 IMAP}
+\index{RFC-3501 IMAP}
 \index{mail protocol}
 \index{IMAP}
 Like many application standards, the Internet Message Access Protocol (IMAP) is
@@ -350,7 +351,7 @@ have seen a wide range of networked applications from web browsers, mail
 applications, networked video games, network-based telephony applications and
 many others.  And what is even more exciting is that it is easy to experiment
 and build whole new types of networked applications that solve problems that
-have no yet been imagined.
+have not yet been imagined.
 
 
 
