@@ -35,8 +35,8 @@ places "train stations" - we call them "routers".    Like train stations,
 routers have many incoming and outgoing links.  Some links may be fiber optic,
 others might be satellite, and still others might be wireless.  The job of the
 router is to make sure packets move through the router and end up on the
-correct outbound link layer.  A typical passes through from five to 20 routers
-as it moves from its source to its destination.
+correct outbound link layer.  A typical packet passes through from 
+five to 20 routers as it moves from its source to its destination.
 
 But unlike a train station where the person traveling needs to look at displays
 to figure out the next train (and platform) you need to take, the router looks
@@ -76,7 +76,7 @@ numbers separated by dots like this:
     141.21.163.17
 
 \index{IPv6}
-Each of the numbers can only be from 0-255 and we have so many computers
+Each of the numbers can only be from 0 through 255.  We have so many computers
 connected to the Internet that we are running out of IPv4 addresses to assign
 them.  IPv6 address are longer and look like:
 
