@@ -1,8 +1,10 @@
-These are my books that I am keeping private until they are released.
+This is a book under development.
 
-For now, in this repo, they are Copyright All Rights Reserved Charles Severance
+For now, in this repo, everything is Copyright All Rights Reserved Charles Severance
 
-When I released them I will move them into public repos and change their
-copyright to somevariant of CC-BY or CC_BY-NC.
+The sketchnote figures are copyright all rights reserved Mauro Toselli.
+
+When the book is published - it will be given some variant 
+of CC-BY or CC_BY-NC.
 
 

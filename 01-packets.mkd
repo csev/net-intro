@@ -231,4 +231,6 @@ the Internet connects the local networks together so all of our computers can
 talk to each other.
 
 
+*Draft - Copyright All Rights Reserved - Charles R. Severance.
+Please do not reproduce or redistribute.*
 

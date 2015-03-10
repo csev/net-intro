@@ -206,3 +206,5 @@ The design of the secure transport layer provides a secure and yet easy to use
 mechanism for secure communications across the Internet at a scale of trillions
 of pairs of computers interacting.
 
+*Draft - Copyright All Rights Reserved - Charles R. Severance.
+Please do not reproduce or redistribute.*

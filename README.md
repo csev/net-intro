@@ -28,3 +28,9 @@ If you are on a Mac.
 The illustrations for this book are being developed by Mauro Toselli
 and Sue Blumenberg is doing copy editing.
 
+While this is under development, please do not reuse any of this material.
+The book is Copyright All Rights Reserved - Charles R. Severance and the 
+sketchnote figures are Copyright All Rights Reserved - Mauro Toselli.
+
+When the book is completed and published we will put a more liberal copyright
+on all of the materials.
