@@ -1,6 +1,8 @@
 Internetworking Layer (IP)
 ==========================
 
+\index{Internetworking(IP) Layer}
+\index{Layer!Internetworking(IP)}
 Now that we can move data across a single link, it is time to figure out how to
 move data across a country or even all the way around the world.   In order to
 make it possible to send data from your computer to any of a billion
@@ -44,6 +46,7 @@ person getting off of an inbound train and walked with them right to their next
 train.  If you were a packet, you would never have to look at another screen
 with a list of train departures and tracks!
 
+\index{IP address}
 The router is able to quickly determine the outbound link for your packet
 because every single packet is marked with its ultimate destination address.
 It is called the Internet Address or "IP Address" for short.  We carefully
@@ -61,9 +64,10 @@ there is no relationship between a link layer address and the location where
 that computer is connected to the network.   And with portable computers and
 cell phones moving constantly, the system would need to track each individual
 computer as it moved from one location to another.  And with many billions of
-computers using the link layer address to make routing decisions would be very
+computers using the link layer address to make routing decisions would be
 slow and inefficient.
 
+\index{IPv4}
 In order to make this easier, we assign another address to every computer based
 on where the computer is connected to the network.  There are two different
 versions of IP addresses.  The old (classic) IPv4 addresses consisted of four
@@ -71,17 +75,22 @@ numbers separated by dots like this:
 
     141.21.163.17
 
+\index{IPv6}
 Each of the numbers can only be from 0-255 and we have so many computers
 connected to the Internet that we are running out of IPv4 addresses to assign
 them.  IPv6 address are longer and look like:
 
-    2001:1234:1234:1234:1234:1234:1234:1234
+    2001:0db8:85a3:0042:1000:8a2e:0370:7334
 
 For this chapter we will focus on the classic IPv4 addresses - but all of the
 ideas apply equally to IPv4 and IPv6 addresses.
 
+\index{network number}
+\index{host identifier}
 The most important aspect of IP addresses are that they can be broken into two
-parts[2-detail].   The first part of the two-piece address is called the
+parts.^[There are many points where an IP address can be broken into "Network number"
+ad "Host identifier" - for this example we will just split the address in half]
+The first part of the two-piece address is called the
 "Network Number".  If we break out IPv4 address into two parts, we might find
 the following:
 
@@ -136,7 +145,7 @@ router table and only encounters a new network number once in a great while.
 Once a router figures the route to a new network number the first time it sees
 a packet destined for that network number, it does not need to re-discover the
 route for the network number unless something changes or goes wrong.  This
-means that the router does a lookup on the very first packet, but then it could
+means that the router does a lookup on the first packet, but then it could
 route the next billion packets to that network number just using the
 information it already has in its router tables.
 
@@ -148,9 +157,9 @@ around the problems.  A common problem is that one of the outbound links fails.
  Perhaps someone tripped over a wire and unplugged a fiber optic cable.  At
 this point, the router has a bunch of network numbers that it wants to route
 out on a link that has failed.  The recovery when a router loses an outbound
-link is surprisingly simple.  The router simply discards all of the entries in
+link is surprisingly simple.  The router discards all of the entries in
 its routing table that were being routed on that link.  Then as more packets
-arrive for those network numbers, the router simply goes through the route
+arrive for those network numbers, the router goes through the route
 discovery process again except this time asking all the neighboring routers
 except the ones that can no longer be contacted due to the broken link.
 
@@ -180,12 +189,12 @@ that network number through the link to the router that has a better route.
 
 With these approaches to outages and the exchange of router table information,
 routers can quickly react to network outages and re-route packets for links
-that are down or very slow to links that are up and/or faster.   And all the
+that are down or slow to links that are up and/or faster.   And all the
 while each router is slowly trying to talk to its neighboring routers to find
 ways to improve its own router table.   Even there is no central source of the
-"best route" from any source to any destination, the routers are very good at
+"best route" from any source to any destination, the routers are good at
 knowing the fastest path from a source to a destination.    Routers are also
-very good at detecting and dynamically routing packets around links that are
+good at detecting and dynamically routing packets around links that are
 slow or temporarily overloaded.
 
 One of the side effects of the way routers discover the structure of the
@@ -352,7 +361,7 @@ a second.  Even though 1/4 of a second is slower than 1/10 a second - it is
 pretty impressive when you consider that the packet is going nearly all of the
 way around the world in that 1/4 second.
 
-The core of our IP network is very impressive.  Most of the time we don't
+The core of our IP network is impressive.  Most of the time we don't
 really care how hard the routers are working to make sure our packets move
 quickly from our computer to the various destinations around the world.  Next
 we will move from looking at how the core of the network functions to how IP
@@ -444,6 +453,10 @@ network to another.
 Global IP Address Allocation
 ----------------------------
 
+\index{ISP}
+\index{IP address allocation}
+\index{Internet service provider}
+\index{network number}
 If you wanted to connect the network for a new organization to the Internet you
 would need to contact an Internet Service Provider and make a connection.
 Your ISP would give you a range of IP addresses (i.e. one or more network
@@ -451,6 +464,13 @@ numbers) that you could allocate to the computers attached to your network.
 The ISP gives you network numbers by giving you a portion of the network
 numbers they received from a higher level internet service provider.
 
+\index{RIRs}
+\index{Regional Internet Registries}
+\index{ARIN}
+\index{LACNIC}
+\index{RIPE NCC}
+\index{APNIC}
+\index{AFRNIC}
 At the top level of IP address allocations are five Regional Internet
 Registries (RIRs).    Each of the five registries allocate IP addresses for a
 major geographic area.  Between the five registries, ever location in the world
@@ -458,6 +478,8 @@ can be allocated a network number.   The five registries are North America
 (ARIN), South and Central America (LACNIC), Europe (RIPE NCC), Asia-Pacific
 (APNIC) and Africa (AFRNIC).
 
+\index{IPv4}
+\index{IPv6}
 When the classic IPv4 addresses like "141.21.163.17" were invented there were
 only a few thousand computers connected to the Internet and we never imagined
 that we would have a billion computers on the Internet.  But today with the
@@ -465,10 +487,8 @@ expansion of the Internet and the "Internet of things" where smart cars,
 refrigerators, thermostats, and even lights will need IP addresses we need to
 connect far more than a billion computers to the Internet.  To make it possible
 to connect all these new computers to the Internet engineers have designed a
-build a new generation of the Internet Protocol called "IPv6".  The addresses
-in IPv6 are much longer than the IPv4 addresses that generally look as follows:
-
-    2001:1234:1234:1234:1234:1234:1234:1234
+build a new generation of the Internet Protocol called "IPv6".  The 128-bit 
+IPv6 addresses are much longer than the 32-bit IPv4 addresses.
 
 The Regional Internet Registries (RIRs) are leading the transition from IPv4 to
 IPv6.  The transition from IPv4 to IPv6 will take many years where both IPv4

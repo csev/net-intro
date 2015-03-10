@@ -1,6 +1,8 @@
 Application Layer
 =================
 
+\index{Application Layer}
+\index{Layer!Application}
 We are now a the top layer of our four layer model that governs the design of
 our current Internet.   The Transport layer makes use of the Internetwork and
 Link layers to reliably deliver a message or stream of data across the
@@ -49,6 +51,8 @@ exchange data.
 Application Layer Protocols
 ---------------------------
 
+\index{client}
+\index{server}
 Just like people talking on telephones, each pair (client and server) of
 applications need a set of rules that govern the conversation.   In most
 cultures when your phone rings and you pick up the phone you say 'Hello'.
@@ -58,23 +62,27 @@ ever called someone who does not follow this simple rule, it can be quite
 confusing.  You probably would assume that the phone call was not working, hang
 up and retry the call.
 
+\index{protocl}
 This set of rules that govern how we "talk" is called a "protocol".  The
-definition of the word protocol is "A protocol is a rule which describes how an
-activity should be performed, especially in the field of diplomacy".  There is
+definition of the word protocol is "a rule which describes how an
+activity should be performed, especially in the field of diplomacy."  There is
 this idea that in formal situations, we should behave according to a precise
 set of rules.  We use this word to describe networked applications, because
 without precise rules, applications have no way to establish and have a
 conversation.   Computers like precision.
 
+\index{RFC7230 HTTP}
 There are many networked applications that are found in the Application Layer
 and it is important that each networked application have a well-documented
 protocol so that all servers and clients can interoperate.  Some of these
-protocols are very intricate and complex.   The protocol that describes how a
+protocols are intricate and complex.   The protocol that describes how a
 web browser communicated with a web server is described in a number of large
 documents starting with this document:
 
 [https://tools.ietf.org/html/rfc7230](https://tools.ietf.org/html/rfc7230)
 
+\index{HyperText Transport Protocol}
+\index{HTTP}
 The formal name of the protocol between web clients and web servers is the
 "HyperText Transport Protocol" or "HTTP" for short.  When you put "http:" or
 "https:" on the beginning of a URL when you type it into the browser, you are
@@ -92,7 +100,7 @@ servers communicate efficiently and transfer a wide range of information and
 data.   There are a total of six documents that describe the HTTP protocol with
 a total of 305 pages.   That might seem like a lot of detail, but the key in
 designing protocols is to thing through all possible uses of the protocol and
-describe each scenario very carefully.
+describe each scenario carefully.
 
 Exploring the HTTP Protocol
 ---------------------------
@@ -102,30 +110,38 @@ web browser and sending HTTP commands to the web browser to retrieve data.  To
 play with the HTTP protocol, we will use one of the earliest applications ever
 built.
 
+\index{RFC15 Telnet}
+\index{telnet}
 The "telnet" application was first developed in 1968 and was developed
 according to one of the earliest standards for the Internet:
 
 [https://tools.ietf.org/html/rfc15](https://tools.ietf.org/html/rfc15)
 
+\index{ARPANET}
+\index{NSFNet}
 This standard is only five pages long and at this point, you probably can
-easily read most of what is in the document.   The telnet command is so old
+easily read and understand most of what is in the document
+The telnet command is so old
 that it is effectively a "dinosaur" as it comes from "pre-historic" times in
-terms of the age of the Internet.  The Internet was created in 1985 and the
-precursor to the Internet called the ARPANET was brought up in 1969.  Telnet
-was designed and built even before the first network was in production.
+terms of the age of the Internet.  The Internet was created in 1985 by the
+NSFNet project and the
+precursor to the NSFNet called the ARPANET was brought up in 1969.  Telnet
+was designed and built even before the first TCP/IP network was in production.
 
-Interestingly the telnet comment is still present in most modern operating
+Interestingly the telnet command is still present in most modern operating
 systems.  You can access telnet in the terminal (command line) in Macintosh and
 Linux.  The telnet command was present in Windows-95 through Windows-XP but is
 not present on later versions of Windows.  If you have a later version of
 Windows, you can download and install a telnet client so you can do the
 examples in this section.
 
-The telnet command is exceedingly simple as an application.  You run telnet
+The telnet command is a simple application.  You run telnet
 from the command line (or terminal) and type the following command:
 
     telnet www.dr-chuck.com 80
 
+\index{TCP ports}
+\index{port 80}
 The first parameter is a domain name (an IP address would work here as well)
 and a port to connect to on that host.   We use the port to indicate which
 application server we would like to connect to.  Port 80 is where we typically
@@ -153,8 +169,8 @@ We type the telnet command in the terminal requesting to connect to port 80
 (the web server) on the host www.dr-chuck.com.  You can see as our transport
 layer is looking up the domain name and finding that the actual address is
 "198.251.66.43" and then making a successful connection to that server.  Once
-we are connected, the server simply waits for us to type a command followed by
-the enter or return key.  Since we don't know the protocol, we simply type
+we are connected, the server waits for us to type a command followed by
+the enter or return key.  Since we don't know the protocol, we type
 "HELP" and enter.  The server is not pleased, and gives us an error message and
 then closes the connection.  We do not get a second chance - if we do not know
 the protocol - the web server does not want to talk to us.
@@ -166,8 +182,7 @@ to request a document using the correct syntax:
     Trying 198.251.66.43...
     Connected to www.dr-chuck.com.
     Escape character is '^]'.
-    GET http://www.dr-chuck.com/page1.htm HTTP/1.1
-    Host: www.dr-chuck.com
+    GET http://www.dr-chuck.com/page1.htm HTTP/1.0
 
     HTTP/1.1 200 OK
     Last-Modified: Sun, 19 Jan 2014 14:25:43 GMT
@@ -183,14 +198,16 @@ to request a document using the correct syntax:
     Connection closed by foreign host.
 
 We make the connection to the web browser again using telnet, then we send a
-GET command that indicates which document we want to retrieve followed by a
-Host: header indicating which host to retrieve the document from and then we
-send a blank line by pressing "return" or "enter" to indicate we are done with
-our request.
+GET command that indicates which document we want to retrieve.  We use
+version 1.0 of the HTTP protocol because it is simpler than HTTP 1.1.
+Then we send a blank line by pressing "return" or "enter" to indicate
+we are done with our request.
 
+\index{HTML}
+\index{HyperText Markup Language}
 Given that we have send the proper request, the host responds first with a
 series of headers describing the document followed by a blank line than then
-sends the actual document.  This is a Hypertext Markup Language (HTML) document
+sends the actual document.  This is a HyperText Markup Language (HTML) document
 so it is marked up with tags like \<h1\> and \<p\>.   When your browser receives
 the document in HTML format, it looks at the markup in the document and
 presents you a formatted version of the document.
@@ -205,6 +222,9 @@ computer might not be turned on at all time, when mail is sent to you it is
 sent to a server and stored on that server until you turn on your computer and
 retrieve any new email.
 
+\index{RFC3501 IMAP}
+\index{mail protocol}
+\index{IMAP}
 Like many application standards, the Internet Message Access Protocol (IMAP) is
 described in a series of Request For Comment (RFC) documents starting with this
 RFC:
@@ -237,20 +257,23 @@ connection.
 Flow Control
 ------------
 
+\index{flow control}
+\index{window size}
 When we looked at the transport layer, we talked about the "window size" which
 was the amount of data that the transport layer on sending computer will send
 before pausing to wait for an acknowledgement.
 
 ![Buffering in the Transport Layer](images/transport-buffer)
 
-In this figure, we see a message, broken into packets, some of the packets have been sent and
-acknowledged.  Six packets have been send but not acknowledged yet and the
+In this figure, we see a message, broken into packets with some of the 
+packets sent and
+acknowledged.  Six packets have been sent but not yet acknowledged and the
 sending transport layer has reached the limit of the transmit window so it is
 pausing until it receives an acknowledgement from the receiving transport
 layer.  The receiving transmit layer has received three packets, one of which
 is out of order.
 
-When we were looking at this figure from the point of view of the transport
+When we were looking at this from the point of view of the transport
 layer, we ignored where the packets to be sent were coming from and where the
 packets are going to in the receiving computer.
 

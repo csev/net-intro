@@ -1,12 +1,14 @@
 Secure Transport Layer
 ======================
 
-In the early days of the Internet, since the networks were very small and all
-of the (<100) routers were in known, secure locations, it was not all that
+\index{Transport Layer}
+\index{Layer!Transport}
+In the early days of the Internet, since the networks were small and all
+of the (<100) routers were in secure locations, it was not all that
 important to encrypt network traffic while it was crossing the network.  As
 long as each computer connected to the Internet protected itself from unwanted
 incoming connections, it was felt that there was no need to encrypt network
-traffic.  So the Link, Internetwork, and Transport layer were not designed with
+traffic.  So the Link, Internetwork, and Transport layers were not designed with
 encryption in mind.  They were focused on the efficient movement of data and
 solving the problems of a large-scale shared distributed network.
 
@@ -18,10 +20,11 @@ numbers were being routinely sent across the network, security and encryption
 became essential.   And when we started using wireless technologies like WiFi
 security became essential to even the simplest uses of the Internet.
 
+\index{physical security}
 There are generally two approaches to securing network activity.  The first
 makes sure that all of the network hardware (routers and links) are in
 physically secure locations so it is not possible to sneak in and monitor
-traffic while it is crossing the Internet.  This approach is simply not
+traffic while it is crossing the Internet.  This approach is not
 practical given that there are hundreds of thousands of network routers that
 are owned and operated by many different organizations.   While you might be
 able to insure that some of the router operators adhered to strict security
@@ -30,6 +33,8 @@ was added to the mix and your packets went over radio waves, a network attacker
 could just sit in a coffee shop and monitor packets as they passed through the
 air.
 
+\index{encrypt}
+\index{decrypt}
 With these limitations the only reasonable solution is to encrypt data within
 your computer before it is sent across its first physical link and then decrypt
 the data in the destination computer after it arrives.  Using this approach, we
@@ -41,18 +46,19 @@ data you are sending while it is crossing the Internet.
 Two Kinds of Secrets
 --------------------
 
-The approach to encrypting messages so that wile everyone might see the
+\index{shared secret}
+The approach to encrypting messages so that while everyone might see the
 encrypted message while is is being transported but only the correct receiver
 of the message can decrypt the message is well understood.   The traditional
 way to encrypt transmissions was using a secret that only the sending and
 receiving parties know.  With the secret it is easy to decrypt the received
 data but if you received the data without possessing the secret, it would be
-very difficult (effectively impossible) to decrypt the message.
+difficult (effectively impossible) to decrypt the message.
 
 The shared secret approach could be used in a few situations in the early
 internet where two people could send encrypted e-mail to each other by calling
 the other person on the phone and giving them the decryption secret.   This
-worked but simply could not scale to situations where a company would have
+worked but could not scale to situations where a company would have
 millions of customers and could not afford to make a phone call to each
 customer to establish a shared secret before they could make a purchase.
 
@@ -69,6 +75,9 @@ an attacker.
 So shared secrets clearly would not work to solve the problem of securing
 network traffic between trillions of pairs of networked computers.
 
+\index{asymetric key}
+\index{private key}
+\index{public key}
 The solution to this problem came in the 1970's when the concept of asymmetric
 key encryption was discovered.  The idea of asymmetric key encryption is that
 one key is used to encrypt the message and another key is used to decrypted the
@@ -95,6 +104,10 @@ to apply it in our network model.
 Secure Sockets Layer (SSL)
 --------------------------
 
+\index{Secure Socket Layer}
+\index{SSL}
+\index{TLS}
+\index{Transport Layer Security}
 Since we were adding network security nearly 20 years after the Internet
 protocols were developed, it was important not to break the existing internet
 protocols or architecture when security was added.
@@ -112,15 +125,16 @@ perform exactly the same whether the packets are encrypted or non-encrypted.
 And the applications making the connections were spared the details of how
 encryption and decryption worked.
 
-Since encryption was a simple an transparent add on to the Transport layer,
-there was no need to change routers that only operate at the Internetwork and
-Link layers.  And there was no need to change any link layer hardware to make
+Since encryption was a simple an transparent addition to the Transport layer,
+there was no need to change routers that operate at the Internetwork and
+Link layers.  And there was no need to change any Link layer hardware to make
 encryption work.  Also applications did not need to be modified except to
 request that a connection be encrypted when appropriate.
 
 Encrypting Web Browser Traffic
 ------------------------------
 
+\index{https}
 Since web browser and web servers operate at the Application layer we barely
 notice when we are using encrypted or unencrypted connections.  Web browsers
 use the URL convention of replacing "http:" with "https:" to indicate that the
@@ -141,7 +155,9 @@ account.
 Certificates and Certificate Authorities
 ----------------------------------------
 
-While the public/private key encryption works very well to allow the
+\index{CA}
+\index{Certificate Authority}
+While the public/private key encryption works to allow the
 distribution of encryption keys across insecure networks and then using those
 keys to encrypt transmissions, there is still a problem of knowing if the
 public key that you have received when you connected to a server is really from
@@ -155,6 +171,8 @@ to encrypt your banking information and send it to the rogue computer.  Since
 the rogue computer gave you the public key, it also has the private key and is
 able to decrypt and abscond with your banking information.
 
+\index{digital signatures}
+\index{signed key}
 So your computer needs to know who the key is actually coming from.   This is
 achieved by sending you a public key that is digitally signed by a Certificate
 Authority (CA).  When your computer or browser is initially installed it knows
@@ -165,7 +183,7 @@ receives a public key that is not signed by one of its trusted certificate
 authorities, it will warn you before sending your data using the
 the key.
 
-If you see one of these warning messages about an untrusted
+If you see a warning messages about an untrusted
 certificate, you should probably say 'no' and figure out why your network
 traffic is not being routed to the server that you think it is going to before
 sending any sensitive data.
@@ -193,7 +211,7 @@ leaves your computer.  Given that many of us use wireless connections like WiFi
 which are easily monitored by attackers, it is a good idea to encrypt data
 before it is sent across WiFi.
 
-We browsers support secure connections by simply changing the prefix on the URL
+Browsers support secure connections by changing the prefix on the URL
 from "http:" to "https:".  By keeping an eye on the URL, end users can make
 sure to never send sensitive data across insecure connections.
 

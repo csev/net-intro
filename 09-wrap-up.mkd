@@ -26,7 +26,7 @@ wired Ethernet, fiber optic or satellite connection.
 across a series of hops to get quickly and efficiently from one of a billion
 source computers to any of a billion destination computers.  The IP layer
 dynamically adjusts and reroutes data based on network load, link performance,
-or network outages.  While the IP layer is highly reliable and very fast, at
+or network outages.  While the IP layer is highly reliable and fast, at
 times it loses or even throws away data.  The IP layer is not responsible for
 insuring the overall reliability of the network.  It just moves the data the
 best that it can.
@@ -36,7 +36,7 @@ or link layers.  The Transport Layer makes sure that any lost packets are
 retransmitted and packets that arrive out of order are put back into order
 before being passed on to the receiving application.  The Transport layer also
 acts as flow control between the sending and receiving applications to make
-sure that data is moved very quickly when the network is fast and the links are
+sure that data is moved quickly when the network is fast and the links are
 not overloaded and slows the transfer of data when using slower or heavily
 loaded links.   The data flow and rate limitation in the Transport layer are
 what makes sure that even when the Internet is heavily loaded it continues to

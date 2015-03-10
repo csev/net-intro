@@ -14,19 +14,19 @@ works precisely because we break data into packets before we send the data.
 
 But the users of the network want to send entire files or messages across the
 Internet.   A network is not much good to us if all it can do is send packets.
-For the network to be useful all of the packets need to be reassembled int he
+For the network to be useful all of the packets need to be reassembled into the
 right order to reconstruct the message on the receiving system.  Not only must
 we reconstruct the entire message or file from the packets, we must deal with
 packets that arrive out of order or not at all.
 
-The problems are all solved by the Transport Layer.    Just like the IP layer,
+These problems are all solved by the Transport Layer.    Just like the IP layer,
 the transport layer adds a small amount of data to each packet to help solve
 the problems of packet reassembly and retransmission.
 
 Packet Headers
 --------------
 
-If you were to look at a packet, going across one of the many links it crosses
+If you were to look at a packet, going across one of many links 
 between its source and destination computers, you would see a link header, IP
 header, and TCP header along with the actual data in the packet:
 
@@ -34,8 +34,8 @@ header, and TCP header along with the actual data in the packet:
 
 The link header is removed when the packet is received on one link and and a
 new link header is added when the packet is sent out on the next link on its
-journey.  Remember that a packet may go across several types of link layers in
-its journey.
+journey.  The IP and TCP headers stay with a packet as it is going across each
+link in its journey. Remember that a packet may go across several types of link layers as it is routed through the Internet.
 
 The IP header holds the source and destination Internet Protocol (IP) addresses
 as well as the Time to Live (TTL) for the packet.  The IP header is set on the
@@ -62,14 +62,16 @@ re-constructed.  If the packets were just out of order, the earlier packet
 arrives a moment after the later packet and fits perfectly into the gap in the
 reassembled data.
 
+\index{window size}
 In order to avoid overwhelming the network, the transport layer in the sending
 computer only sends a certain amount of data before waiting for an
 acknowledgement from the transport layer on destination computer that the
 packets were received.   The amount of data that the sending computer will send
-before pausing to wait for an acknowledgment is called the "window size".   The
-sending computer keeps track of how quickly it starts to receive
+before pausing to wait for an acknowledgment is called the "window size".
+
+The sending computer keeps track of how quickly it starts to receive
 acknowledgements from the receiving computer.  If the acknowledgments come back
-very quickly, the sending computer increases its window size but if the
+quickly, the sending computer increases its window size but if the
 acknowledgments come back slowly, the sending computer transmits less data.  By
 adjusting the window size, transmitting computers can send large amounts of
 data quickly over fast connections that have light load and when sending data
@@ -79,8 +81,8 @@ overwhelm the network.
 When a packet is lost, it will never arrive at the destination computer and so
 the destination computer will never send an acknowledgment for that data.
 Because the sending computer does not receive an acknowledgment, it quickly
-gets to the point where it has sent too much unacknowledged data (more than the
-window size would allow) and so the sending computer stops sending new packets.
+gets to the point where it has sent enough unacknowledged data to fill up the
+window and so the sending computer stops sending new packets.
 At this point, both computers are waiting.  The sending computer is waiting
 for an acknowledgement for a lost packet that will never come and the receiving
 computer is waiting for a lost packet that will never come.   To make sure that
@@ -99,10 +101,11 @@ when it appears that data has been lost creates a relatively simple solution to
 reliably send large messages or files across a network by breaking them into
 packets.
 
-The transport layer is sending a stream of data, it continuously monitors how
+While, the transport layer is sending a stream of data
+it continuously monitors how
 quickly it receives acknowledgements and dynamically adjusts its window size.
 We want to make sure that we send data rapidly when the connection between two
-computers is very fast and send data much more slowly when the connection has
+computers is fast and send data much more slowly when the connection has
 slow links or heavy load.
 
 The Transport Layer In Operation
@@ -110,7 +113,7 @@ The Transport Layer In Operation
 
 One of the key elements of the transport layer is that the sending computer
 must hold onto all of the data it is sending until the data has been
-acknowledged.  Once the receiving computer acknowledges the receipt of some
+acknowledged.  Once the receiving computer acknowledges the
 data, the sending computer can discard the data.  We can look at this
 graphically when a message is broken into many packets.  The first ten packets
 of the message have been send and acknowledged by the destination computer.
@@ -120,8 +123,8 @@ reached its window size.
 ![Buffering in the Transport Layer](images/transport-buffer)
 
 The Transport layer on the receiving computer has received and acknowledged ten
-packets and delivered them to the receiving application (we talk about the
-application layer in the next chapter).   The transport layer on the
+packets and delivered them to the receiving application.^[We talk about the
+application layer in the next chapter]   The transport layer on the
 destination computer has received three packets but one packet is out of order.
 Receiving a packet out of order is not a cause for concern as long as the missing
 packet arrives in a reasonably short amount of time.  As long as all the
@@ -131,6 +134,9 @@ message, fitting the packets together like puzzle pieces.
 Clients, Servers, and Sockets
 -----------------------------
 
+\index{client}
+\index{server}
+\index{socket}
 The purpose of the transport layer is to provide a reliable connections between
 networked applications so those applications can send and receive streams of
 data.  For an application it is as simple as calling the Transport Layer and
@@ -142,14 +148,16 @@ ends of the connection a "client/server" application because the two pieces of
 the application must work together to solve the end-user's problem.
 
 A lot of engineering has gone into the lower three layers of our architecture
-to make it very easy to open a connection to a remote computer and then send
+to make it easy to open a connection to a remote computer and then send
 and receive data over that connection.  In many programming languages, we call
 these endpoints a "socket".   Making a connection to an application running on
 a server, sending data to the server, and receiving data from the server is
 generally as easy as reading and writing a file.
 
-Just as an example, the code below is all it takes in Python to make a
-connection to a web server in Python and retrieve a document:
+\index{programming sockets}
+Just as an example, the code below is all it takes in the Python
+programming lauguage to make a connection to a web server
+and retrieve a document:
 
     import socket
     
@@ -161,7 +169,7 @@ connection to a web server in Python and retrieve a document:
         data = mysock.recv(512)
         if ( len(data) < 1 ) :
             break
-        print data;
+        print data
     
     mysock.close()
 
@@ -175,7 +183,7 @@ network is implemented.
 Ports and Applications
 ----------------------
 
-The above application is a client application.  Recall that a client
+The above Python program is a client application.  Recall that a client
 application is the application running on your local computer and is the one
 that initiates the connection.  Your application needs to connect to a server
 application on the remote computer.  A remote computer might actually have any
@@ -200,7 +208,7 @@ number).
 
 When a server application starts up it "listens" for incoming connections on
 the specified port.  Once the server application has registered that it is
-ready to receive incoming connections, it simply waits until the first
+ready to receive incoming connections, it waits until the first
 connection is made.
 
 In order to make it so that client applications know which port to connect to,
