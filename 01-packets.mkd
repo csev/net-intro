@@ -1,0 +1,234 @@
+% Introduction to Internet Technology
+% Charles Severance
+%
+
+Introduction
+============
+
+Today's Internet connects billions of people and computers together that in
+many ways it seems to be like "magic" to those who have no understanding of how
+it works on the inside.  In this class we will dig into how the Internet works
+and how networking is done in general.
+
+Communicating At a Distance
+---------------------------
+
+For a group of five people are sitting in a room in a circle, it is easy for
+them to communicate with each other.  As long as people are courteous and don't
+have more than one conversation at the same time, it is quite natural for any
+person to talk to any other person in the room.  We need to be able to hear
+each other and we need a way to coordinate how we use the shared space in the
+room.
+
+But what if we moved the people to be in different rooms so that they could
+neither hear nor see each other how could we let any pair of people communicate
+with each other?   One way would be to run a wire between each pair of people
+with a microphone one end and a speaker on the other end.  Everyone would still
+hear all the conversations and we would still need to be courteous to make sure
+that there was only one conversation going on at the same time.
+
+For five people, each person would need four speakers (one for each of the
+other people) and 24 pieces of wires to connect all the microphones and
+speakers.   This is a problem with five people and it gets far worse when
+there are hundreds or thousands of people.   So early telephone systems did not
+allow all pairs of people to be connected at the same time.   Each person had a
+single connection to an "operator" and the operator would connect two wires
+together to allow a pair of people to talk and then disconnect the people when
+the conversation was finished.
+
+This was exactly how local telephone systems were done in the early days and it
+worked well when your home or business was within a short distance of the
+operator's building when a wire could be strung from the operator's building to
+the person's home.
+
+But what then happens when we have thousands people scattered all over that are
+hundreds of kilometers apart.  We cannot run a 100 kilometer wire from each
+home to a single central office.  What was done instead was to have many
+central offices and run a few wires between the central offices and then share
+those wires between central offices.  For very long distances, your connection
+might run through a number of central offices.
+
+Since the cost of the wires went up as the length of the wire increased, these
+longer connections between offices were quite expensive to install and maintain
+and they were rather scarce.  So in the early days of telephones, local calls
+were generally quite inexpensive and they were not charged by the minute.   But
+long distance calls were more expensive and they were charged by the minute.
+It made sense because each minute you talked on a long distance call, your use
+of the long-distance wires made it so no one else could use the wires.   So
+they wanted you to talk quickly and then finish talking so they did not run out
+of wires.
+
+Computers Communicate Differently
+---------------------------------
+
+When humans talk on the phone, they make a call, talk for a while and then
+hang up.  Statistically, most of the time, humans are not talking on the phone.
+But computers communicate differently.  Sometimes computers send something
+very short like a text message saying "Where are you?"  Computers sometimes
+send medium sized information like a single picture or long email message.  And
+sometimes computers send a lot of information like a whole movie or a piece of
+software to install that might take minutes or even hours to send.  So messages
+between computers, can be short, medium, or long.
+
+Before computers sent data across networks they sent data on physical
+media like tapes and disks that were transported physically from one computer
+to another.   Sometimes it is still faster to physically transport large
+amounts of data between computers than to send the data over the network.
+
+Back in the earliest days of connecting computers to one another we simply used
+wires to connect pairs of computers.  The simplest way was to line up the outgoing
+messages in a queue and send the messages one after another as fast as the
+computers and the wires could send the data.   Each message would patiently
+wait for its turn until the messages in front of it were sent and then it would
+get its chance to be sent across the connection.
+
+When computers were in the same building, the building owner would run wires
+to connect the computers within the building.   But if the computers were in
+the same town, the owners of the computers generally had to lease wires from
+the telephone companies to connect their computers.  They often would have the
+phone company simply connect the wires together in the office so that it was
+not necessary for one computer to "dial" the other computer to send data.
+These leased lines were very convenient for computer communications because
+they were "always on" - but they were also quite expensive because they were
+used 24 hours per day.
+
+And when the computers were even further away, in different cities, the leased
+lines were extended using the longer distance wires between the central
+offices.  But since there were so few wires between central offices, these long
+distance leased lines were quite expensive and their cost increased
+dramatically as the length of the leased line increased.
+
+So if you had enough money, you could connect your computers together so that
+they could exchange data.  This worked pretty well as long as you were using
+one brand of computers because each computer company had their own way of using
+these telephone wires to connect their computers together and send data.
+
+Early Wide Area Store and Forward Networks
+------------------------------------------
+
+In the 1970's and 1980's, people working at various universities around the
+world wanted to send each other data and messages using these computer to
+computer connections.  Since the cost for each connection was so high and
+increased with distance, computers generally only had connections to computers
+that were geographically close to them.  But if the computer that you were
+connected to was connected to another computer and that computer in turn was
+connected to another computer and so on, you could send a message a very long
+distance if each of the computers along the route of the message would agree to
+store and forward your message.
+
+Over time with relatively few connections, you could send data very long
+distances across a patchwork of network connections as long as you were very
+patient.   Along the way, after your message made it into one computer, it
+would have to wait until its turn came to be sent to the next computer along
+the route.  A message would arrive in an intermediate computer, be stored for a
+while (perhaps hours depending on traffic), and then be forward one more
+connection (or hop) towards its ultimate destination.   Using this technique, a
+message might take minutes, hours, or even days to arrive at its ultimate
+destination depending on the traffic at each of the hops.
+
+Even if it took a few hours for an e-mail message to find its way from one part
+of the country to another, it was still much quicker and easier than sending a
+letter or postcard.
+
+Packets and Routers
+-------------------
+
+The most important innovation that allowed messages to move more quickly across
+a multi-hop network was to break each message into small fragments and send
+each fragment individually.  In networking terms these pieces of messages are
+called "packets".  If a short message was sent after a large message had
+started sending, the short message did not have to wait until the entire long
+message was sent.  The first packet of the short message only had to wait for
+the current packet of the large message was sent before it could be sent.   The
+system sent the packets from the long and short messages alternatively so after
+a while the short message was completely sent and the long message resumed
+making full use of the network connection.
+
+Breaking the message into packets also greatly reduced the amount of storage
+needed in the intermediate computers because instead of needing to store an
+entire message for as long as a few hours, the intermediate computer only
+needed to store a few packets for a few seconds while the packets waited for
+their turn on the outbound link.
+
+As networks moved from the store and forward approach, we started to build
+special purpose computers that specialized in moving packets.  They initially
+called these computers focused on moving packets "Interface Message Processors"
+or "IMPs" because they acted as an interface between the general purpose
+computer and the rest of the network.  Later these computers dedicated to
+communications were called "routers" because their purpose was to route the
+packets they received towards their ultimate destination.
+
+By building "routers", that specialized in moving packets across the multiple
+hops, it became simpler to connect computers from multiple vendors to the same
+network.    To connect any computer to the network all you needed to do was
+connect it to one router and then the rest of the communication details were
+handled by the routers.
+
+And as we went from having a single computer at one location to having multiple
+computers connected to a "Local Area Network" (or LAN), you would connect a
+router to the local area network and by sending data through the router, all
+the computers on the local area network could send data across the wide area
+network.
+
+Addressing and Packets
+----------------------
+
+In the early store and forward networks it was important to know the source and
+destination computers for each message.   We give each of the computers a
+unique name or number and call this the "address" of the computer.  To send a
+message to a computer, we needed to add the source and destination address to
+the message before we sent the message along its way.   By having a source and
+destination address in each message, the computers that would store and
+forward the message would be able to pick the best
+path for the message if there were more than one possible path for the message.
+
+When a long message was broken into much smaller packets and each packet was
+sent individually, it was necessary to add the source and destination addresses
+to each packet so that routers would know the best path to forward each message.
+
+In addition to the source and destination addresses, it was necessary to add
+data to each packet indicating the "offset" or position of the packet in the
+overall message so that the receiving computer could put the packets back
+together in the right order to construct the original message from the packets.
+
+Putting it all Together
+-----------------------
+
+So when we combine all this together we can understand the basic operation of
+today's Internet.   We have specialized computers called "routers" that know
+how to route packets along a path from a source to a destination.   Each packet
+will pass through multiple routers (or hops) during its journey from
+the source computer to the destination computer.  Even thought the packets may
+be part of a larger message, the routers simply forward each message
+independently based on source and destinations addresses on each packet.
+Different packets from the same message may take different routes from the
+source to the destination.  And packets may even arrive out of order where a
+later packet might arrive before an earlier packet - perhaps because of a data
+"traffic jam".  Each packet contains an "offset" from the beginning of the
+packet so that the destination computer can reassemble the packets to
+reconstruct the original message that was sent.
+
+Once the idea of routers and multiple hops was created and the routers could
+forward packets very quickly, the network to cover a geographical area
+increasingly looked like a mesh with many different paths from one computer to
+another.   By creating a mesh-style network using multiple short hops, the
+overall cost of communicating across a large geographical area could be spread
+across a large number of connecting organizations and individuals.  Normally
+packets would find the shortest path between the source and destination, but if
+there was an overloaded or broken link, the routers could cooperate and
+re-route traffic to take slightly longer paths that would get packets from a
+source to a destination as quickly as possible.
+
+The core of the Internet is a set of cooperating routers that move packets from
+many sources to many destinations at the same time.   Each computer or local
+area network is connected to a router which forwards the traffic from its
+location to the various destinations on the Internet.  Each router might handle
+data from a single computer like a smart phone in your hand or from many
+thousands of computers connected to a university campus network.  The term
+"Internet" comes from the idea of "Internetworking" which captures the idea of
+connecting many networks together.  Our computers connect to local networks and
+the Internet connects the local networks together so all of our computers can
+talk to each other.
+
+
+

@@ -25,3 +25,6 @@ using
 
 If you are on a Mac.
 
+The illustrations for this book are being developed by Mauro Toselli
+and Sue Blumenberg is doing copy editing.
+

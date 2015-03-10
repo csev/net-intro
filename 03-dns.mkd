@@ -1,0 +1,83 @@
+The Domain Name System
+======================
+
+The domain name system is what makes it so we don't need to keep a list of
+number Internet Protocol (IP) addresses like "141.21.157.16" for all the
+servers that you need to communicate with throughout a day.  If you recall, IP
+address are determined by where your computer connects to the Internet.   When
+you have a portable computer and you move from one location to another, you get
+a new IP address at each new location.  Since no one connects to your portable
+computer, it does not matter if your IP address changes from time to time. But
+since so many people connect to a we server, it would be very inconvenient if
+the server moved to a new location and needed to change its IP address.   While
+servers do need an assigned IP address, we also give servers a textual Domain
+Name address like www.umich.edu.
+
+When your computer makes a connection to a system using a Domain Name address,
+the first thing your computer does is look up the corresponding IP address for
+the Domain Name.   Then your computer makes the connection using the IP
+address.   By taking the separate step of looking up the IP address for a DNS
+address, it is very easy to move a server from one location to another.   The
+server is given a new IP address and the entry for the domain address is
+updated.   Once the DNS entry is updated, new requests for the domain name are
+given the new IP address.  Since end-users access most servers using domain
+names and never see the IP address, a server can be easily moved to a new
+network connection without affecting the end-user's ability to access the
+server.
+
+Allocating Domain Names
+-----------------------
+
+If you recall from the previous section, IP addresses are allocated based on
+where you connect a new network to the Internet.   Domain names are allocated
+based on organizations that "own" the domain name.  At the top of the domain
+name hierarchy there is an organization called the International Assigned
+Network Names (ICANN).  ICANN chooses the top level domains like .com, .edu,
+and .org and assigns those to other organizations to manage.  ICANN also
+assigns two letter top level domain names like .us, .za, .nl, and .jp to
+countries around the world.
+
+Once a domain name is assigned to an organization, the controlling organization
+is allowed to assign sub domains within the domain.  As an example, the .edu
+subdomain is assigned to the Educause organization.  Educause assigns domains
+like umich.edu to higher education institutions.  Once the University of
+Michigan receives umich.edu it can makes own choices for subdomains within
+umich.edu.  Domains like .com and .org can be purchased by individuals and the
+individual owners are allowed to manage their domain and create sub-domains for
+their own use or us by others.
+
+Reading Domain Names
+--------------------
+
+When we look at an IP address like "141.21.157.16" the left prefix is the
+"Network Number" so in a sense we read IP addresses from left-to-right where
+the left part of the IP address is the most general part of the address and
+right right part of the address is most specific:
+
+    141.21.157.16
+    Broad ----> Narrow
+
+For Domain Names we read them from right to left:
+
+    drchuck.personal.si.umich.edu
+    Narrow       <---       Broad
+
+The most general part of this domain name is ".edu" which means higher
+education institutions.  The subdomain is "umich.edu" is a particular higher
+education institution.
+
+Summary
+-------
+
+While the Domain Name system is not one of our four layers in the model, it is
+an important part of making the Internet easier to use.  Domain Names allow
+end-users to use symbolic names for servers instead of numeric Internet
+Protocol addresses.  Bu adding a service that maps Domain Names to IP
+addresses, we can move servers from one internet connection to another
+connection without requiring users to manually change their configurations to
+connection to a server.
+
+
+
+
+

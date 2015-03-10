@@ -1,0 +1,239 @@
+Link Layer
+==========
+
+\index{Link Layer}
+The lowest layer of our Internet Architecture is the link layer.  We call it
+the "lowest layer" because it is closest to the physical network media.
+Sometimes the link layer transmits data using a wire, fiber optic, or a radio
+signal.  A key element of the link layer is that usually is that data can only
+be transmitted part of the way from the source computer to the destination
+computer.  Wired Ethernet, WiFi, and the cellular phone network are examples of
+link layers that can transmit data about a kilometer.  Fiber optic cables,
+particularly those under the oceans can transmit data up to thousands of
+kilometers.  Satellite links can also send data over long distances.
+
+Regardless of the distance we can send the data, it is still a single link and
+to reach the ultimate destination computer requires forwarding your packets
+across multiple links.   For this section we will look at how one of the most
+common link layers functions in some detail.  WiFi is a great way to look at
+many issues that must be solved at the Link Layer.^[We necessarily simplify some
+of the precise technical detail in some of these descriptions to
+make them easier to understand.]
+
+Sharing the Air
+---------------
+
+When your laptop or phone is using WiFi to connect to the Internet, it is using
+a small, low-powered radio to send and receive data.   Since the radio in your
+computer is so low powered, it can only send data about 300 meters.   So your
+computer is sending your packets to a "base station" which is forwarding the
+packets using a link to the rest of the internet.   The "base station" is
+sometimes called a "gateway" because your packets need to find their way to the
+gateway so they can get "onto" the Internet.  The technical term in our
+Internet Architecture for the "base station" is a "router" because it "routes"
+your packets along their way from your computer to the destination computer and
+back.
+
+The first problem that needs to be solved is how to make sure packets are sent
+to the correct computer.   All of the computers that are close enough to the
+base station with their radios turned on hear all of the packets regardless of
+which computer the packet is supposed to be sent to.  All of the computers also
+"hear" all the packets sent by all of the other computers nearby.   So your
+computer needs to know which packets to treat as their own and which packets
+being send to other computers that can be ignored.
+
+An interesting side effect of the fact that all the computers within range can
+hear all packets is that we should be concerned about a rogue computer
+listening to and capturing your packets and reading your data, perhaps getting
+ahold of important data like bank account numbers or passwords to online
+services.   We will come back to the issue of protecting your data from prying
+eyes in a later section.
+
+In WiFi, every radio in every device that is ever built is given a unique
+serial number at the moment it is manufactured.  This means that each of the
+computers using any WiFi has its own serial number and even the radio in the
+gateway has a serial number.  Usually, you can get into a settings screen on
+your device and look up the exact serial number for the WiFi radio in your
+device.  They are generally shown in the following form:
+
+    0f:21:63:12:b3:1a
+
+This is just a representation of a 48-bit serial number for your WiFi radio.
+It is also called the "Media Access Control" or "MAC" address.  It is like a
+from or to address on a postcard.  Every packet (radio postcard) that sent
+across the WiFi, has a source and destination address so that all of the
+computers computers know which messages are theirs and which messages are to be
+ignored.
+
+When you turn on your computer and connect to a WiFi network, your computer
+could listen for a while and learn the serial numbers (MAC addresses) of the
+other computers on the network as data was being sent across the WiFi and build
+a list of all the computers on the network.
+
+But when you are talking to the Internet, your computer is really not
+interested in talking to the other computers that are using the WiFi.  What
+your computer really needs to know is the MAC Address of the gateway router so
+it can send your packets to the gateway for forwarding to  the rest of the
+Internet.  And when you move from one location to another, your computer will
+be talking to different gateways and each of those gateways will have a
+different serial number.  So when you first connect to a new WiFi, your
+computer must discover the MAC address for the gateway of that particular WiFi.
+
+When your computer first connects to a new WiFi, it sends a special message to
+a broadcast address, effectively asking the question, "Who is in charge of this
+WiFi?"  Your computer knows it is not the gateway, so it simply sends a
+broadcast message to ask if there are any gateways present on the WiFi network.
+Your computer sends a message with its own serial number as the "from" address
+and the broadcast address as the "to" address:
+
+    From: 0f:21:63:12:b3:1a
+    To: ff:ff:ff:ff:ff:ff
+    Data: Who is the MAC-Gateway for this network?
+
+If there is a gateway on the network, it sends a message containing its serial
+number back to your computer.
+
+    From: 98:2f:4e:78:01:b4
+    To: 0f:21:63:12:b3:1a
+    Data: I am in the gateway-in-charge here.
+          Welcome to my network!
+
+If there are no gateways on the network, your computer waits a few seconds and
+then assumes there is no gateway for this network.  Sometimes when there is no
+gateway your computer will show a different WiFi icon or not show the WiFi icon
+at all.  There can be more than one gateway - but we will ignore that for a
+while because it is not very common and a little complex.
+
+Once your computer receives the message with the MAC-Address of gateway, it can
+send packets that it wants to forward to the Internet to the gateway using that
+address.  Your computer only needs to use the broadcast address once at the
+very beginning and from that point sends all of its packets with the actual
+serial number of the destination.  We want to use the broadcast address as
+little a possible because every computer connected to the WiFi receives and
+processes messages sent to the broadcast address to make sure the message was
+not intended for them.
+
+Courtesy and Coordination
+-------------------------
+
+Because many computers are sharing the same frequencies, it is important to
+coordinate the sending of data when multiple computers want to send data at the
+same time.  Just like when there is a crowd of people in a room, they cannot
+all talk at the same time or everything is garbled.   The same happens when
+multiple WiFi radios transmit at the same time on the same frequency.  So we
+need to make sure there is a way to coordinate all the radios to make best used
+of the shared frequencies.  We will look at the basics of technical approaches
+to avoiding lost data due to transmission "collisions".
+
+The first technique is called "Carrier Sense" and the technique is to simply
+listen for a transmission and if there is already a transmission in progress,
+simply wait until the transmission finishes.   This might seem like you would
+wait for a long time, but since all messages are broken into packets, usually
+your computer only has to wait for the computer currently sending data to
+finish a packet, after which your computer gets its chance to send its data.
+
+If your computer's WiFi radio listens for data and hears silence, it can begin
+transmitting.  But there might be another computer's WiFi radio that wants to
+send a packet that listened to and heard the exact same silence and decided to
+start transmitting at the exact same time.  If two or more WiFi radios start
+transmitting at the same time all of the data is corrupted and both packets are
+lost.   So once you WiFi radio starts sending a packet it is important for it
+to listen to make sure it can receive its own data.  If it is not "hearing" the
+same thing that it is sending, your WiFi radio assumes something is wrong and
+stops transmitting since it knows that no data will be received by the
+destination WiFi radio.
+
+We as humans do a very similar thing when we are speaking in a room full of
+people.  If we start talking, we naturally are listening to what we are saying
+and if someone else starts talking at the same time, we heard both people
+talking and so we stop.
+
+Interestingly when two people start talking at the same time, we are good at
+noticing that the other person is talking and we quickly stop talking.   But
+the problem is how to restart the conversation.  After a long pause it is very
+common that both people start talking at the exact same time *again*.  This can
+happen over and over and each person says "No You" repeatedly to
+attempt to figure out how to get the conversation restarted.  It can be quite
+comical at times.
+
+The WiFi radios in two computers that send packets that collide are able to
+solve this problem much better than people can solve the problem.   When the
+WiFi radios detect a collision or garbled transmission, they compute a random
+amount of time to wait before retrying the transmission.  The rules for
+computing the random wait are set up to make sure the two colliding stations
+pick a different amount of time to wait before attempting to re-transmit the
+packet.
+
+It might sound a little chaotic to just "give it a try" and then "give it
+another try" if your transmission collides with another station's transmission.
+But in practice it works very well.  There is a whole category of link layers
+that use this basic pattern of listen, transmit, listen, and optionally retry.
+ Wired Ethernet and cellular telephone data, and even Short Message Service
+(SMS / Texting) uses this "try then retry" approach.
+
+Other Types of Link Layers
+--------------------------
+
+Sometimes when a link layer has many transmitting stations and needs to operate
+at near 100% efficiency for long periods of time, the design of the link layer
+takes a different approach.  In this approach, there is a "token" that
+indicates when each station is given the opportunity to make a transmission.
+Stations cannot start a transmission until it is their turn.  So instead of
+listening for "silence" and jumping in - they must wait for their turn to come
+around.
+
+Once a station receives the "token" and has a packet to send, it sends the
+packet.  When the packet has been sent, the station gives up the "token" and
+waits until the token comes back to it. When none of the stations have any data
+to send, the token is simply moved from one computer to the
+next computer as quickly as possible.
+
+If you had a bunch of people sitting around a meeting, you could communicate
+without ever interrupting anyone by having a small ball that you pass around in
+a circle and only allowing someone to talk when they have the ball.  When you
+get the ball and have something to say you talk for a short period (a packet of
+words) and then pass the ball on.
+
+If you think about it, the "try then retry" approach works really well when
+there is no data or when there are moderate levels of data being sent.  On a
+token style network, when there is no data being sent and you want to send a
+packet, you still have to wait for a while before you receive the token and can
+start transmitting.  And then when you finish your packet - you have to wait
+until the token comes back before you can send the next packet.  If you are the
+only station that wants to send data, you spend a good bit of time simply
+waiting for the token to come back to you after passing through all of the
+other stations.
+
+The token approach is best suited when using link medium that is expensive such
+as a satellite link, or long distance shared fiber optic link.  The CSMA-CD
+(listen-try) is best suited when the medium is inexpensive, shorter distance,
+and there are a lot of stations sharing the medium that only send data in short
+bursts.  So that is why WiFi (and CSMA-CD is so effective for providing
+network access in a coffee shop, home, or room in a school.
+
+Summary
+-------
+
+So now we have looked at the "lowest" layer in our four-layer architecture.
+And we have only taken a very simple look at how the link layer works.  There
+are many other details that must be designed into a link layer like connection
+distance, voltage, frequency, speed, and many others.
+
+A key benefit of the layered architecture is that engineers who design and
+built link layer technologies can ignore all of the issues that are handled by
+the layers above the link layer.   This allows them to focus on building the
+best possible solution to moving data across a single "hop".  Modern day link
+layers like WiFi, Satellite, Cable Modems, Ethernet, and Cellular technology
+are very well developed.   Data moves so quickly and seamlessly, that once we
+get our connection, we rarely have to worry about the link layer.  It just
+works.
+
+
+
+
+
+
+
+
+
+
