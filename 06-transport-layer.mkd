@@ -156,7 +156,7 @@ generally as easy as reading and writing a file.
 
 \index{programming sockets}
 Just as an example, the code below is all it takes in the Python
-programming lauguage to make a connection to a web server
+programming language to make a connection to a web server
 and retrieve a document:
 
     import socket
