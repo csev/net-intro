@@ -150,6 +150,7 @@ $endfor$
 \makeindex
 
 \begin{document}
+\frontmatter
 $if(title)$
 \maketitle
 $endif$
@@ -163,6 +164,10 @@ $for(include-before)$
 $include-before$
 
 $endfor$
+
+\input{tmp.preface}
+
+
 $if(toc)$
 {
 \hypersetup{linkcolor=blue}
@@ -176,6 +181,8 @@ $endif$
 $if(lof)$
 \listoffigures
 $endif$
+% START THE BOOK
+\mainmatter
 $body$
 
 $if(natbib)$

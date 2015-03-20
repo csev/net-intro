@@ -1,0 +1,53 @@
+*Draft - Copyright All Rights Reserved - Charles R. Severance.
+Please do not reproduce or redistribute.*
+\thispagestyle{empty}
+
+    Illustrations: Mauro Toselli
+    Editorial Support: Sue Blumenberg
+
+Printing history:
+
+*TBD* Original Printing.
+
+*Copyright Notes*
+
+Once this work has been completed and and I have published it, 
+I will switch the license to a CC-BY-NC with exceptions as I have done 
+in my other book: http://www.py4inf.com/
+
+Please contact me if you have any questions or comments.
+
+\cleardoublepage
+
+Preface
+=======
+\thispagestyle{empty}
+
+The intention for this text book is to provide a technical understanding
+of the principles of the technical design and architecture of the Internet.
+The book is aimed at all audiences - even those with absolutely no prior
+technical experience or math skills.   The Internet is an amazingly beautiful
+design and should be understood by all that use the Internet.
+
+In initally developed this material as a single week's lecture in 
+the *SI502 - Networked Computing* course that I taught at the
+University of Michigan School of Information starting in 2008.
+I refined and expanded the material to be three weeks of my 
+Internet History, Technology, and Security course 
+that I have taught to over 100,000 students on Coursera 
+starting in 2012.  This book adds further detail to make a stand alone
+book that can be read for enjoyment or used to support an introductory course
+that focuses on the Internet's architecture.
+
+The book is aimed at students with no background at all.  The book is suitable
+for use in high schools, community college classes, early college classes or 
+adult education.   We hope to give anyone with an interest insight into how
+the network we use every day actually works.
+
+If you like the book, let us know.  Send us a tweet with your thoughts.
+
+    Charles R. Severance (@drchuck)
+    www.dr-chuck.com
+    Ann Arbor, MI USA
+    Fri Mar 20, 2015
+
