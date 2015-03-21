@@ -73,7 +73,7 @@ on where the computer is connected to the network.  There are two different
 versions of IP addresses.  The old (classic) IPv4 addresses consisted of four
 numbers separated by dots like this:
 
-    141.21.163.17
+    212.78.1.25
 
 \index{IPv6}
 Each of the numbers can only be from 0 through 255.  We have so many computers
@@ -94,17 +94,17 @@ The first part of the two-piece address is called the
 "Network Number".  If we break out IPv4 address into two parts, we might find
 the following:
 
-    Network Number: 141.21
-    Host Identifier: 163.17
+    Network Number: 212.78
+    Host Identifier: 1.25
 
 The idea is that many computers can be connected via a single connection to the
 Internet.  An entire college campus, school or business could connect using a
 single (or several) network numbers.  In the above example, 65,536 computers
-could be connected to the network using the network number of "141.21".  Since
+could be connected to the network using the network number of "212.78".  Since
 all of the computers appear to the rest of the Internet on a single connection,
 all packets with an IP address of:
 
-    141.21.*.*
+    212.78.*.*
 
 Can be routed to the same location.
 
@@ -242,8 +242,8 @@ of routers.
 ![Routing Vortex](images/router-loop)
 
 Each of the routers thinks they know the best outbound link for IP addresses
-that start with "141.21".  But somehow the routers are a little confused and
-the routing tables form a loop.  If a packet with a prefix of "141.21" found
+that start with "212.78".  But somehow the routers are a little confused and
+the routing tables form a loop.  If a packet with a prefix of "212.78" found
 its way into one of these routers, it would be routed around a circle of three
 links forever.  There is no way out.  And if more packet arrived with the same
 prefix they would just be added to the "infinite packet vortex".  Pretty soon
@@ -441,7 +441,7 @@ can be allocated a network number.   The five registries are North America
 
 \index{IPv4}
 \index{IPv6}
-When the classic IPv4 addresses like "141.21.163.17" were invented there were
+When the classic IPv4 addresses like "212.78.1.25" were invented there were
 only a few thousand computers connected to the Internet and we never imagined
 that we would have a billion computers on the Internet.  But today with the
 expansion of the Internet and the "Internet of things" where smart cars,

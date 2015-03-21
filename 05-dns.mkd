@@ -4,7 +4,7 @@ The Domain Name System
 \index{Domain Name System}
 \index{DNS}
 The domain name system is what makes it so we don't need to keep a list of
-numeric Internet Protocol (IP) addresses like "141.21.157.16" for all the
+numeric Internet Protocol (IP) addresses like "212.78.1.25" for all the
 servers that you need to communicate with throughout a day.  If you recall, IP
 address are determined by where your computer connects to the Internet.   When
 you have a portable computer and you move from one location to another, you get
@@ -60,12 +60,12 @@ sub-domain and create sub-domains for their own use or use by others.
 Reading Domain Names
 --------------------
 
-When we look at an IP address like "141.21.157.16" the left prefix is the
+When we look at an IP address like "212.78.1.25" the left prefix is the
 "Network Number" so in a sense we read IP addresses from left-to-right where
 the left part of the IP address is the most general part of the address and
 right right part of the address is most specific:
 
-    141.21.157.16
+    212.78.1.25
     Broad ----> Narrow
 
 For Domain Names we read them from right to left:

@@ -55,7 +55,7 @@ long-distance calls were more expensive and they were charged by the minute.
 This made sense because each minute you talked on a long-distance call, your use
 of the long-distance wires meant no one else could use them.  The
 telephone companies wanted you to keep your calls short so their long-distance
-lines woud be available for other customers.
+lines would be available for other customers.
 
 Computers Communicate Differently
 ---------------------------------
@@ -180,7 +180,7 @@ Addressing and Packets
 
 In the early store and forward networks it was important to know the source and
 destination computers for each message.  Each computer was given a unique name 
-or number that was called the "address" of the computer.  To send a messge
+or number that was called the "address" of the computer.  To send a message
 to another computer, we needed to add the source and destination address to
 the message before we sent the message along its way.  By having a source and
 destination address in each message, the computers that stored and forwarded

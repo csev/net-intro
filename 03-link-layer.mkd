@@ -95,15 +95,16 @@ and the broadcast address as the "to" address:
 
     From: 0f:2a:b3:1f:b3:1a
     To: ff:ff:ff:ff:ff:ff
-    Data: Who is the MAC-Gateway for this network?
+    Data: Who is the MAC-Gateway
+        for this network?
 
 If there is a gateway on the network, it sends a message containing its serial
 number back to your computer.
 
     From: 98:2f:4e:78:c1:b4
     To: 0f:2a:b3:1f:b3:1a
-    Data: I am in the gateway-in-charge here.
-          Welcome to my network!
+    Data: I am the gateway
+       Welcome to my network
 
 If there are no gateways on the network, your computer waits a few seconds and
 then assumes there is no gateway for this network.  Sometimes when there is no
