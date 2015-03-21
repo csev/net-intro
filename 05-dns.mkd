@@ -44,6 +44,8 @@ and .org and assigns those to other organizations to manage.  ICANN also
 assigns two letter top level domain names like .us, .za, .nl, and .jp to
 countries around the world.
 
+![Domain Names](sketchnote/DNS)
+
 Once a domain name is assigned to an organization, the controlling organization
 is allowed to assign sub domains within the domain.  As an example, the .edu
 top-level domain is assigned to the Educause organization.

@@ -200,6 +200,8 @@ server running on the remote server.  So a client application not only needs to
 know which host to connect to, it also needs to choose a particular application
 to interact with on that server.
 
+![TCP Ports](sketchnote/Ports)
+
 We use a concept called "ports" to allow a client application to choose which
 server application it wants to interact with.   Ports are like telephone
 extensions.   All of the extensions have the same phone number (IP Address) but

@@ -62,7 +62,7 @@ ever called someone who does not follow this simple rule, it can be quite
 confusing.  You probably would assume that the phone call was not working, hang
 up and retry the call.
 
-\index{protocl}
+\index{protocol}
 This set of rules that govern how we "talk" is called a "protocol".  The
 definition of the word protocol is "a rule which describes how an
 activity should be performed, especially in the field of diplomacy."  There is
@@ -70,6 +70,8 @@ this idea that in formal situations, we should behave according to a precise
 set of rules.  We use this word to describe networked applications, because
 without precise rules, applications have no way to establish and have a
 conversation.   Computers like precision.
+
+![Application Protocols](sketchnote/Protocols)
 
 \index{RFC-7230 HTTP}
 There are many networked applications that are found in the Application Layer

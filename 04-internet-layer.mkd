@@ -163,6 +163,8 @@ arrive for those network numbers, the router goes through the route
 discovery process again except this time asking all the neighboring routers
 except the ones that can no longer be contacted due to the broken link.
 
+![Dynamic Routing](sketchnote/Routing)
+
 Packets are routed more slowly for a while as the router tables are rebuilt
 that reflect the new network configuration, but after a while things are
 humming along nicely.
@@ -209,8 +211,8 @@ much like we would send out a bunch of letters in the mail at the post office.
 The packets find their way though the postal system and arrive a their
 destinations.
 
-Figuring out Your Route
------------------------
+Determining Your Route
+----------------------
 
 There is no place in the Internet that knows in advance the route your packets
 will take from your computer to  particular destination.  Even the routers that

@@ -17,5 +17,5 @@ else
   echo "Output on x.pdf"
 fi
 
-rm tmp.* texput.log
+rm tmp.* 
 
