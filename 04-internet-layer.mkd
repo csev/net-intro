@@ -331,7 +331,7 @@ addresses are managed at the edges.
 Getting an IP Address
 ---------------------
 
-Increasingly, computers are portable or mobile.  We just got done done saying
+Increasingly, computers are portable or mobile.  We just pointed out
 how important it was for the IP layer to track large groups of computers using
 "Network Numbers" instead of tracking every single computer individually.  But
 since these Network Numbers indicate a particular physical connection to the
