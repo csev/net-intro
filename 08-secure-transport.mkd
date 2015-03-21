@@ -55,6 +55,8 @@ receiving parties know.  With the secret it is easy to decrypt the received
 data but if you received the data without possessing the secret, it would be
 difficult (effectively impossible) to decrypt the message.
 
+![Shared Secrets](sketchnote/Shared_Secret)
+
 The shared secret approach could be used in a few situations in the early
 internet where two people could send encrypted e-mail to each other by calling
 the other person on the phone and giving them the decryption secret.   This
@@ -87,6 +89,8 @@ the computer that will be sending the data.   The sending computer encrypts the
 data and sends it across the network.  The receiving computer uses the
 decryption key to decrypt the data.
 
+![Asymmetric Keys](sketchnote/Shared_vs_Asymmetric)
+
 We call the encryption key the "public" key because it is can be widely shared.
 We call the decryption key the "private" key because it never leaves the
 computer where it was created.  Another name for asymmetric keys is a
@@ -100,6 +104,8 @@ data.
 
 So with the advent of public-private key technology, the only question was how
 to apply it in our network model.
+
+![Asymmetric Keys](sketchnote/Asymmetric_keys)
 
 Secure Sockets Layer (SSL)
 --------------------------
