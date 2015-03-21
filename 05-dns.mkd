@@ -63,7 +63,7 @@ Reading Domain Names
 When we look at an IP address like "212.78.1.25" the left prefix is the
 "Network Number" so in a sense we read IP addresses from left-to-right where
 the left part of the IP address is the most general part of the address and
-right right part of the address is most specific:
+right part of the address is most specific:
 
     212.78.1.25
     Broad ----> Narrow

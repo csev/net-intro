@@ -32,7 +32,7 @@ header, and TCP header along with the actual data in the packet:
 
 ![Headers and Data](images/headers)
 
-The link header is removed when the packet is received on one link and and a
+The link header is removed when the packet is received on one link and a
 new link header is added when the packet is sent out on the next link on its
 journey.  The IP and TCP headers stay with a packet as it is going across each
 link in its journey. Remember that a packet may go across several types of link layers as it is routed through the Internet.

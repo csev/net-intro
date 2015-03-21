@@ -255,7 +255,7 @@ The Application Layer
 The Link, Internetwork, and Transport layers work together to quickly and
 reliably move a data between two computers across a shared network of networks.
 With this capability to move data reliably the next question is what
-networked applications applications will be built to make use of these network
+networked applications will be built to make use of these network
 connections.
 
 \index{remote log in}
@@ -299,7 +299,7 @@ Stacking the Layers
 -------------------
 
 \index{Layered Model}
-We have the four different layers (Link, Internetwork, Transport, and and
+We have the four different layers (Link, Internetwork, Transport, and
 Application) we usually show these layers stacked one on top of the other with
 the application layer at the top and the link layer at the bottom.  You as the
 end user interact with the applications that make up the top layer of the stack

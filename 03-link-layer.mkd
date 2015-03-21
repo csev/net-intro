@@ -67,7 +67,7 @@ This is just a representation of a 48-bit serial number for your WiFi radio.
 It is also called the "Media Access Control" or "MAC" address.  It is like a
 from or to address on a postcard.  Every packet (radio postcard) that sent
 across the WiFi, has a source and destination address so that all of the
-computers computers know which messages are theirs and which messages are to be
+computers know which messages are theirs and which messages are to be
 ignored.
 
 When you turn on your computer and connect to a WiFi network, your computer

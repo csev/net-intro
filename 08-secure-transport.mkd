@@ -48,7 +48,7 @@ Two Kinds of Secrets
 
 \index{shared secret}
 The approach to encrypting messages so that while everyone might see the
-encrypted message while is is being transported but only the correct receiver
+encrypted message while it is being transported but only the correct receiver
 of the message can decrypt the message is well understood.   The traditional
 way to encrypt transmissions was using a secret that only the sending and
 receiving parties know.  With the secret it is easy to decrypt the received
@@ -180,7 +180,7 @@ about a number of well-known certificate authorities. If your browser is given
 a public key that is signed by one of the well-known certificate authorities,
 it trusts the key and uses it to encrypt and send your data.  If your computer
 receives a public key that is not signed by one of its trusted certificate
-authorities, it will warn you before sending your data using the
+authorities, it will warn you before sending your data using
 the key.
 
 If you see a warning messages about an untrusted

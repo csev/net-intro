@@ -5,7 +5,7 @@
 Introduction
 ============
 
-Today's Internet connects billions of people and computers together in ways
+Today's Internet connects billions of people and computers together in 
 ways that seem like "magic" to those who don't understand what's going on
 behind the scenes.  In this material we will dig into how the Internet works
 and how computer networking is done in general.

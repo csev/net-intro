@@ -11,7 +11,7 @@ Printing history:
 
 *Copyright Notes*
 
-Once this work has been completed and and I have published it, 
+Once this work has been completed and I have published it, 
 I will switch the license to a CC-BY-NC with exceptions as I have done 
 in my other book: http://www.py4inf.com/
 
