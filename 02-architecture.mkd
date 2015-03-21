@@ -68,7 +68,7 @@ noise and no data would be transmitted.   So we need to find a fair way to
 allow each station to wait their turn to use the shared network.
 
 The idea of breaking a large message into packets and then sending each packet
-separately makes this sharing easier.   If there is only one computer that
+separately makes this sharing easier.  If there is only one computer that
 wants to send data, they send their packets one right after another and move
 their data as quickly as they can.   But if there are three computers that want
 to send data at the same time, each computer sends one packet and then waits
@@ -90,6 +90,8 @@ computers started transmitting at the same time (Collision Detection) and both
 computers stop transmitting and wait a bit and re-try the transmission.  The
 two computers that collided wait a different amount of time to re-try their
 transmissions to reduce the chances of a second collision.
+
+![Carrier Sense/Collision Detection](sketchnote/Link_CSMA)
 
 When your computer finishes sending a packet of data, then it waits a bit to
 give other computers a chance to start sending data if they have been waiting
