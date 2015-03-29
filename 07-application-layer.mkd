@@ -210,7 +210,19 @@ we are done with our request.
 \index{HyperText Markup Language}
 Given that we have send the proper request, the host responds first with a
 series of headers describing the document followed by a blank line than then
-sends the actual document.  This is a HyperText Markup Language (HTML) document
+sends the actual document.  
+
+\index{HTTP status code!200}
+\index{HTTP status code!403}
+\index{HTTP status code!404}
+The headers communicate metadata about the document that we have asked 
+to retrieve.  For example the first line contains a status code.  In this 
+example a status code of "200" means that things went well.   A tatus code 
+of "404" in the first line of the headers indicates that the requested 
+document was "not found".  A status code of "403" indicates that the document
+has moved to a new location.
+
+This is a HyperText Markup Language (HTML) document
 so it is marked up with tags like \<h1\> and \<p\>.   When your browser receives
 the document in HTML format, it looks at the markup in the document and
 presents you a formatted version of the document.
@@ -356,6 +368,102 @@ and build whole new types of networked applications that solve problems that
 have not yet been imagined.
 
 
+Questions
+---------
+
+1. Which layer is right below the Application layer?
+a) Transport
+b) Internetworking
+c) Link Layer
+d) Obtuse layer
+
+2. What kind of document is used to describe widely used
+application layer prototcols?
+a) DHCP
+b) RFC
+c) APPDOC
+d) ISO 9000
+
+3. Which of these is an idea that was invented in he Application layer?
+a) 0f:2a:b3:1f:b3:1a
+b) 192.168.3.14
+c) www.khanacademy.com
+d) http://www.dr-chuck.com/
+
+4. Which of the following is *not* something that the application layer
+worries about?
+a) Whether the client or server starts talking first
+b) The format of the commands and responses exchanged across a socket
+c) How the window size changes as data is sent across a socket
+d) How data is represented as it is sent across the network to 
+assue interoperability.
+
+5. Which of these is an application layer protocol?
+a) HTTP
+b) TCP
+c) DHCP
+d) Ethernet
+
+6. What port would typically be used to talk to a web server?
+a) 23
+b) 80
+c) 103
+d) 143
+
+7. What is the command that a web browser sends to a web server
+to retrieve an web document?
+a) RETR
+b) DOCUMENT
+c) 404
+d) GET
+
+8. What is the purpose of the "Content-type:" header when you
+retrieve a document over the web protocol?
+a) Tells the browser how to display the retrieved document
+b) Tells the browser where to go if the document cannot be found
+c) Tells the browser whether or not the retrieved document is empty
+c) Tells the browser where the headers end and the content starts
+
+9. What common UNIX command can be used to send simple commands to 
+a web server?
+a) ftp
+b) ping
+c) traceroute
+d) telnet
+
+10. What does an HTTP status code of "404" mean?
+a) Document has moved
+b) Successful document retrieval
+c) Protocol error
+d) Document not found
+
+11. What characters are used to mark up HTML documents?
+a) Less-then and greater-than signs < > 
+b) Exclamation points ! 
+c) Square brackets [ ]
+d) Curly brackets { }
+
+12. What is a common application protocol for retrieving mail?
+a) RFC
+b) HTML
+c) ICANN
+d) IMAP
+
+13. What application protocol does RFC15 describe?
+a) telnet
+b) ping
+c) traceroute
+d) www
+
+14. What happens to a server application that is sending a large
+file when the TCP layer has sent enough data to fill the window size
+and has not yet received an acknowledgement?
+a) The application switches its transmission to a new socket
+b) The application crashes and must be restarted
+c) The application is paused until the remote computer acknowledges
+that it has received some of the data
+d) The closest gateway router starts to discard packets that 
+would exceed the window size
 
 
 *Draft - Copyright All Rights Reserved - Charles R. Severance.

@@ -230,5 +230,91 @@ The design of the secure transport layer provides a secure and yet easy to use
 mechanism for secure communications across the Internet at a scale of trillions
 of pairs of computers interacting.
 
+Questions
+---------
+
+1. How do we indicate that we want a secure connection when using a
+web browser?
+a) Use https:// in the URL
+b) Use a secure web browser
+c) Open an icognito window
+d) Manually encode the address of the server using SHA1
+
+2. Why is a shared-secret approach not suitable for use on the Internet?
+a) Because people would lose or misplace the secret
+b) It is difficult to distribute the secrets
+c) Encryption and decruption with shared secrets are too easily broken
+d) Encryption and decryption with shared secrets take too much compute power
+
+3. What is the underlying mathematical concept that makes public-private key
+encryption secure?
+a) Continuous functions
+b) Taylor series
+c) Karnaugh Maps
+d) Prime numbers
+
+4. Which of the keys can be send across the internet in plain text without
+compromising security?
+a) Encryption key
+b) Decription Key
+c) Shared Secret
+d) Univerally Safe Key (USK)
+
+5. Where does the Secure Sockets Layer (SSL) fit in the
+four layer architecture?
+a) Below the Link layer
+b) Between the Link and Internetworking layers
+c) Between the Internetworking and Transport layers
+d) Between the Transport and Application layers
+
+6. If you were properly using https in a browser over WiFi in a Cafe,
+which of the following is the greatest risk to you losing cradit
+card information when making an online purchase?
+a) Someone captured the packets that were sent across the WiFi
+b) Someone captured the packets in the gateway router
+c) Someone captured the packets as they passed through a core Intenet routers
+d) You have a virus on your computer that is cauturing keystrokes
+
+7. With the Secure Socket Layer, where are packets encrypted and decrypted?
+a) They are encrypted and decrypted as they pass through router
+b) Each physical link has its own separate encryption
+c) They are encrypted in your computer and decrypted in the server
+d) They are encrypted in the WiFi gateway and decrypted in the
+last router before the destination computer
+
+8. What changes to the IP layer were needed to make secure 
+socket layer (SSL) work?
+a) No changes were needed
+b) We had to add support for Secure IP (IPSEC)
+c) We needed to support longer packets in IP
+d) The Time-To-Live (TTL) value needed to be encrypted
+
+9. If a rogue element was able to monitor all packets going through an 
+undersea cable and you were using public private key encryption properly, 
+which of the following would be the most difficult for them to obtain?
+a) What servers you were communicating with
+b) How often you used the servers
+c) How much data you retrieved from the servers
+d) Which documents you retrieved from the servers
+
+10. What is the purpose of a Certificate Authority in public-private
+key encryption?
+a) To make sure people do not forge badges for learning activities
+b) To make sure packets get routed to the correct destination computer
+c) To assure us that a public key comes from the orgnization it claims to be from
+d) To choose when a particular countey must switch from IPv4 to IPv6
+
+11. The ARPANET network was in operation starting in the 1960's.  
+Secure Sockets Layer (SSL) was not invented util the 1980's.
+How did the ARPANET insure the security of the data on its network?
+a) By using public/private keys and encrypting all transmissions
+b) By using encryption at the Link layer
+c) By making sure no one could access the physical links
+d) By only using secure WiFi routers
+
+
+
+
+
 *Draft - Copyright All Rights Reserved - Charles R. Severance.
 Please do not reproduce or redistribute.*
