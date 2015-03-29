@@ -482,6 +482,148 @@ So instead of asking too much of the IP layer, we leave the problem of packet
 loss and packets that arrive out of order to our next layer up - the Transport
 layer.
 
+Questions
+---------
+
+1. What is the goal of the Internetworking Layer?
+a) Move packets across multiple hops from a source to destination computer
+b) Move packets across a single physical connection
+c) Deal with web server failover
+d) Deal with encryption of sensitive data
+
+2. How many different physical links does a typical packet cross from 
+its source to its destination on the Internet?
+a) 1
+b) 4
+c) 15
+d) 255
+
+3. Which of these is an IP address?
+a) 0f:2a:b3:1f:b3:1a
+b) 192.168.3.14
+c) www.khanacademy.com
+d) @drchuck
+
+
+4. Why is it necessary to move from IPv4 to IPv6?
+a) Because IPv6 has smaller router tables
+b) Because IPv6 reduces the number of hops a packet must go across
+c) Because we are running out of IPv4 addresses
+d) Because IPv6 addresses are chosen by network hardware manufacturers
+
+5. What is a network number?
+a) A group of IP addresses with the same prefix
+b) The GPS coordinates of a particular LAN
+c) The number of hops it takes for a packet to cross the network
+d) The overall delay packets experience crossing the network
+
+6. How many computers can have addresses within network number "218.78"?
+a) 650
+b) 6500
+c) 65000
+d) 650000
+
+7. How do routers determine the path taken by a packet acrtoss the Internet?
+a) The routes are controlled by the IRG (Internet Routing Group)
+b) Each router looks at a packet and forwards it on its best guess 
+as to the correct outbound link
+c) Each router sends all packets on every outbound link (flooding algorithm)
+d) Each router holds on to a packet until a packet comes in from the 
+destination computer
+
+8. What is a routing table?
+a) A list of IP addresses mapped to link addresses
+b) A list of IP addressed mapped to GPS coordinates
+c) A list of network numbers mapped to GPS coordinates
+d) A list of network numbers mappted to outboud links from the router
+
+9. How does a newly connected router fill its routing tables?
+a) By consulting the IANA (Internet Assigned Numbers Authority)
+b) By downloading the routing RFC (Request for Comments)
+c) By contacting the Internet Engineering Task Force (IETF)
+d) By asking neighboring routers how they route packets
+
+10. What does a router do when a physical link goes down?
+a) Throws away all of the router table entries for that link
+b) Consults the Internet Map (IMAP) service
+c) Does a Domain Name (DNS) looking for the IP address
+d) Sends all the packets for that link back to the source computer
+
+11. Why is it good to have at least a "two-connected" network?
+a) Because router tables are much smaller
+b) Because it removes the need for network numbers
+c) Because it supports more IPv4 addresses
+d) Because it continues to function even when a single link goes down
+
+12. Do all packets from a message take the same route across the Internet?
+a) Yes
+b) No
+
+13. How do routers discover new routes and improve their router tables?
+a) Each day at midnight they download a new internet map from IMAP
+b) They periodically ask neighboring routers for their network tables
+c) They randomly discard packets to trigger error-correction code within
+the Internet
+d) They are given transmission speed data by destination computers
+
+14. What is the purpose of the "Time to Live" field in a packet?
+a) To make sure that packets do not end up in an "infinite loop"
+b) To track how many minutes it takes for a packet to get through the network
+c) To maintain a mapping between network numbers and GPS coordinates
+d) To tell the router the correct output link for a particular packet
+
+15. How does the "traceroute" command work?
+a) It sends a series of packets with low TTL values so it can get a 
+picture of where the packets get dropped
+b) It loads a network route from the Internet Map (IMAP)
+c) It contacts a Domain Name Server to get the route for a 
+particular network number
+d) It asks routers to append route information to a packet as it is 
+routed from source to destination
+
+16. About how long does it take for a packet to cross the Paccific Ocean
+via an undersea fiber optic cable?
+a) 0.0025 Seconds
+b) 0.025 Seconds
+c) 0.250 Seconds
+d) 2.5 Seconds
+
+17. On a WiFi network, how does a computer get an Internetworking(IP) address?
+a) Using the DHCP protocol
+b) Using the DNS protocol
+c) Using the HTTP protocol
+d) Using the IMAP protocol
+
+18. What is Network Address Translation (NAT)?
+a) It looks up the IP address associated with text names 
+like "www.dr-chuck.com"
+b) It allows IPv6 traffic to go across IPv4 networks
+c) It looks up the best outbound link for a particular router 
+and network number
+d) It re-uses of special network numbers like "192.168" across multiple
+network gateways ad multiple locations
+
+19. How are IP addresses and network numbers managed globally?
+a) There are five top level registries that manage network numbers in 
+five geographic areas
+b) IP addresses are assigned worldwide randomly in a lottery
+c) IP addresses are assigned by network equipment manufacturers
+d) IP addresses are based on GPS coordinates
+
+20. How much larger are IPv6 addresses than IPv4 addresses?
+a) They are the same size
+b) IPv6 addresses are 50% larger than IPv4 addresses
+c) IPv6 addresses are twice as large as IPv4 addresses
+d) IPv6 addresses are 10 times larser than IPv4 addresses
+
+
+
+
+
+
+
+
+
 
 *Draft - Copyright All Rights Reserved - Charles R. Severance.
 Please do not reproduce or redistribute.*

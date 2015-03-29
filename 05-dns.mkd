@@ -89,6 +89,37 @@ connection without requiring users to manually change their configurations to
 connect to a server.
 
 
+Questions
+---------
+
+1. What does the Domain Name System accomplish?
+a) It allows network connect computers to use a textual name for a computer
+and look up its IP address
+b) It keeps track of the GPS coordinates of all servers
+c) It allows Regional Internet Registries (RIRs) to manage IP addresses
+on the various continents
+d) It assigns different IP addresses to portable computers 
+as they move from one WiFi to another
+
+2. What organization assigns top-level domains like ".com", ".org", 
+and ".club"?
+a) IANA - Internet Assigned Numbers Authority
+b) IETF - Internet Engineering Task Force
+c) ICANN - International Corporation for Assigned Network Names
+d) IMAP - Internet Mapping Authoization Prototol
+
+3. Which of these is a domain address?
+a) 0f:2a:b3:1f:b3:1a
+b) 192.168.3.14
+c) www.khanacademy.com
+d) @drchuck
+
+4. What can a domain owner do with their domain? (choose all that apply)
+a) Create subdomains
+b) Sell subdomains
+c) Create new top level domains
+d) Assign an IP address to the domain or subdomain
+
 
 
 
