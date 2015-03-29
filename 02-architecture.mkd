@@ -23,6 +23,11 @@ groups of engineers.
 
 ![The Four Layer Model](images/layers)
 
+\index{TCP Model}
+\index{Link Layer}
+\index{Internetwork Layer}
+\index{Transport Layer}
+\index{Application Layer}
 They gave these four areas of engineering the following
 names: (1) Link, (2) Internetwork, (3) Transport, and (4) Application.  We
 visualize these different areas as layers with one stacked on top of another
@@ -328,6 +333,75 @@ networked applications because so many of the complex details of moving data
 from one computer to another can be ignored.
 
 Up next we will talk about these four layers in more detail.
+
+Questions
+---------
+
+1. Why do engineers use a "model" to organize their approach to 
+solving a large and complex problem?
+a) Because it allows them to build something small and test it in a wind tunnel
+b) Because talking about a model delays the actual start of the hard work
+c) Because they can break a problem down into a set of smaller problems that can 
+be solved independently
+d) Because it helps in developing marketing materials
+
+2. Which is the top layer of the network model used by TCP/IP networks?
+a) Application
+b) Transport
+c) Internetwork
+d) Link
+
+3. Which of the layers concerns itself with getting a packet of data
+across a single physical connection?
+a) Application
+b) Transport
+c) Internetwork
+d) Link
+
+4. What does CSMA/CD stand for?
+a) Carrier Sense Multiple Access with Collission Detection
+b) Collision Sense Media Access with Continuous Direction
+c) Correlated Space Media Allocation with Constant Division
+d) Constant State Multiple Address Channel Divison
+
+5. What is the goal of the Internetwork Layer?
+a) Insure that no data is lost while enroute
+b) Get a packet of data moved across multiple networks from its source to its destination
+c) Make sure that only logged in users can use the Internet
+d) Insure than WiFi is fairly shared across multiple computers
+
+6. In addition to the data, source and destination addresses, what else
+is needed to make sure that a message can be reassembled when it reaches
+its destination?
+a) An offset of where the packet belongs relative to the beginning of the message
+b) A location to send the data if the destination computer is down
+c) A compressed and ucompressed version of the data in the packet
+d) The GPS cordinates of the destination computer
+
+7. What is "window size"?
+a) The sum of the length and width of a packet
+b) The maximum size of a single packet
+c) The maximum number of packets that can make up a message
+d) The maximum amount of data a computer can send before receiving an acknowledgement
+
+8. What is a populare Application Layer protocol?
+a) WiFi
+b) TCP/IP
+c) Ethernet
+d) World-Wide-Web
+
+9. In a typical networked client-server application, where does the client
+application run?
+a) In your laptop, desktop, or mobile computer
+b) In a wireless access point
+c) In the closest router
+d) In an undersea fiber optic cable
+
+10. What does URL stand for?
+a) Universal Routing Linkage
+b) Uniform Retransmission Logic
+c) Uniform Resource Locator
+d) Unified Recovery List
 
 
 

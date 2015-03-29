@@ -85,6 +85,7 @@ carry the data.  Each message would patiently wait for its turn until the
 messages ahead of it were sent, and then it would get its chance to be
 sent across the connection.
 
+\index{leased line}
 When computers were in the same building, the building owner could run wires
 to connect them.  If the computers were in the same town, the owners of
 the computers generally had to lease wires from the telephone companies to
@@ -108,6 +109,8 @@ telephone wires to connect their computers together and send data.
 Early Wide Area Store and Forward Networks
 ------------------------------------------
 
+\index{Early Networks}
+\index{Store and Forward Networks}
 In the 1970s and 1980s, people working at universities around the world wanted 
 to send each other data and messages using these computer-to-computer
 connections.  Since the cost for each connection was so high and increased
@@ -137,6 +140,7 @@ letter or postcard.
 Packets and Routers
 -------------------
 
+\index{packet}
 The most important innovation that allowed messages to move more quickly across
 a multi-hop network was to break each message into small fragments and send
 each fragment individually.  In networking terms, these pieces of messages are
@@ -156,6 +160,9 @@ their turns on the outbound link.
 
 ![Sending Packets](sketchnote/Packets)
 
+\index{IMP}
+\index{Interface Message Processor}
+\index{router}
 As networks moved away from the store and forward approach, they started to 
 include special-purpose computers that specialized in moving packets.  These
 were initially called "Interface Message Processors" or "IMPs" because
@@ -170,6 +177,8 @@ network.  To connect any computer to the network all you needed to do was
 connect it to one router and then the rest of the communication details were
 handled by the other routers.
 
+\index{LAN}
+\index{Local Area Network}
 When multiple computers at one location were connected together in a
 "Local Area Network" (or LAN), you would connect a router to the local area
 network and by sending data through the router, all the computers on the
@@ -234,6 +243,60 @@ thousands of computers connected to a university campus network.  The term
 connecting many networks together.  Our computers connect to local networks and
 the Internet connects the local networks together so all of our computers can
 talk to each other.
+
+Questions
+---------
+
+1. What did early telephone operators do?
+a) Maintained cell phone towers
+b) Connected pairs of wires to allow people to talk
+c) Installed copper wire between cities
+d) Sorted packets as they went to the corerect destination
+
+2. What is a leased line?
+a) A boundary between leased and owned telephone equipment
+b) A connection between a keyboard and monitor
+c) A wire that ran from one phone company office to another
+d) An "always on" telephone connection
+
+3. How long might a message be stored in an intermediate computer
+for a store-and-forward network?
+a) less than a second
+b) no more than four seconds
+c) less than a minute
+d) possibly as long as several hours
+
+4. What is a packet?
+a) A technique for wrapping items for shipping
+b) A small box used for storage
+c) A portion of a larger message that is sent across a network
+d) The amount of data that could be stored on an early punched card
+
+5. Which of these is most like a router?
+a) A mail sorting facility
+b) A refrigerator
+c) A high speed train
+d) An undersea telecommunicaitons cable
+
+6. What was the name given to early routers in the ARPANET?
+a) Interfaith Message Processors
+b) Internet Motion Perceptrons
+c) Instant Message Programs
+d) Interface Message Processors
+
+7. In addition to breaking large messages into smaller segements to be 
+sent, what else was needed to properly route each message segment?
+a) A source and destination address on each message segment
+b) And id and password for each message segment
+c) A small battery to maintain the storage for each message segment
+d) A small tracking unit like a GPS to find lost messages
+
+8. Why is it virtually free to send messages around the world
+using the Internet?
+a) Beause governments pay for all the connections
+b) Advertising pays for all the connections
+c) So many people share all the resources
+d) Because it is illegal to charge for long-distance fiber optic cables.
 
 
 *Draft - Copyright All Rights Reserved - Charles R. Severance.

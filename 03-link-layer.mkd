@@ -178,7 +178,7 @@ packet.
 
 \index{CSMA/CD}
 The formal name for the listen, transmit, listen and wait and retry if necessary 
-is called "Carrier Sense Media Access with Collision Detection" or CSMA/CD.
+is called "Carrier Sense Multiple Access with Collision Detection" or CSMA/CD.
 
 \index{Ethernet}
 It might sound a little chaotic to just "give it a try" and then "give it
@@ -245,6 +245,57 @@ layers like WiFi, Satellite, Cable Modems, Ethernet, and Cellular technology
 are very well developed.   Data moves so quickly and seamlessly, that once we
 get our connection, we rarely have to worry about the link layer.  It just
 works.
+
+Questions
+---------
+
+1. When using a WiFi network to talk to the Internet, where does your computer
+send its packets?
+a) A gateway
+b) A satellite
+c) A cell phone tower
+d) The Internet Central Office
+
+2. How is the link/physical address for a network device assigned?
+a) By cell tower
+b) By the Internet Assignment Numbers Authority (IANA)
+c) By the manufacturer of the link equipment
+d) By the government
+
+3. Which of these is a link address?
+a) 0f:2a:b3:1f:b3:1a
+b) 192.168.3.14
+c) www.khanacademy.com
+d) @drchuck
+
+4. How does your computer find the gateway on a WiFi network?
+a) It has a gateway address installed by the manufacturer
+b) It broadcasts a request forthe address fo the gateway
+c) It repeatedly sends a message to all possible gateway addresses
+until it finds one that works
+d) The user must enter the gateway address by hand
+
+5. When a computer wants to send data across WiFi, what is the first
+thing it must do?
+a) Listen to see if other computers are sending data
+b) Just start sending the data
+c) Send a message to the gateway asking for permission to transmit
+d) Wait until you are informed that it is your tuen to transmit
+
+6. What does a WiFi connected workstation do when it tries to send
+data and senses a collision has happenned?
+a) Keep sending the message so part of the message makes it through
+b) Wait until the gateway tells you that the collision is over
+c) Immediately restart transmitting the message at the beginning
+d) Stop trainsmitting and wait a random amoutn of time before restarting
+
+7. When a station wants to send data across a "token" style network,
+what is the first thing it must do?
+a) Listen to see if other computers are sending data
+b) Just start sending the data
+c) Send a message to the gateway asking for permission to transmit
+d) Wait until you are informed that it is your tuen to transmit
+
 
 
 
