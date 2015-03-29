@@ -45,8 +45,6 @@ which computer the packet is supposed to be sent to.  All of the computers also
 computer needs to know which packets to treat as their own and which packets
 being sent to other computers that can be ignored.
 
-![TBD: WiFi in a Typical Cafe](images/tbd)
-
 An interesting side effect of the fact that all the computers within range can
 hear all packets is that we should be concerned about a rogue computer
 listening to and capturing your packets and reading your data, perhaps getting
@@ -208,7 +206,7 @@ waits until the token comes back to it. When none of the stations have any data
 to send, the token is moved from one computer to the
 next computer as quickly as possible.
 
-![Communicating with a Token](images/tbd)
+![TBD: Communicating with a Token](images/tbd)
 
 If you had a bunch of people sitting around a meeting, you could communicate
 without ever interrupting anyone by having a small ball that you pass around in

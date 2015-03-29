@@ -1,0 +1,52 @@
+01-packets.mkd:
+![TBD: Connecting Around the World](images/tbd)
+   Concept: Relatiing hops and geography
+
+02-architecture.mkd:
+![TBD: A Multi-Step Trip](images/tbd)
+    This trip shows the physical human "transports"
+
+03-link-layer.mkd:
+![TBD: Communicating with a Token](images/tbd)
+    Concept: Have to wait your turn until the token arrives
+
+04-internet-layer.mkd:
+![TBD: Travelling Packets](images/tbd)
+    This trip shows technology transports with homage to 
+    the physical transport
+
+![TBD: Notifications of Dropped Packets](images/tbd)
+    Concept how dropped packets and TTL make traceroute possible
+
+![TBD: Getting an IP Address Via DHCP](images/tbd)
+    Concept: Arrive and get an IP address by opening a laptop
+
+![TBD: Waiting for a Lost Packet](images/tbd)
+    Concept: Destination is missing a packet and too much time
+    has passed so the destination request retransmit
+
+06-transport-layer.mkd:
+![TBD: What is a Socket](images/tbd)
+    Clients talk to servers and ignore all the detail.
+
+07-application-layer.mkd:
+![TBD: Client/Server Applications](images/tbd)
+    Server starts first - sets up shop (listens) and client
+    comes along later
+
+![TBD: Hacking HTTP By Hand](images/tbd)
+    Instead of a web browser we use telnet.
+
+![TBD: Window Size](images/tbd)
+    Concept: A stream of packets need to stop when the
+    window size is exceed.    
+
+08-secure-transport.mkd:
+![TBD: Where Encryption and Decryption Happens](images/tbd)
+    Concept: Encryption happens before it leaves your computer.
+    Also the IP and lower layers only see encrypted data.
+
+![TBD: Certificate Authorities And Public Keys](images/tbd)
+    Concept: Whe check with a CA to see if a amazon-labelled key is 
+    really from Amazon
+
