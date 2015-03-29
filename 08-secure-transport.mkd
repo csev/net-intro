@@ -122,6 +122,8 @@ The solution was to add an optional partial layer between the Transport layer
 and the Application layer.   We called this partial layer the Secure Sockets
 Layer (SSL) or Transport Layer Security (TLS).
 
+![TBD: Where Encryption and Decryption Happens](images/tbd)
+
 When an application would request that the Transport layer make a connection to
 a remote host, it could request that the connection either be unencrypted or
 encrypted.  If an encrypted connection was requested, the transport layer would
@@ -168,6 +170,8 @@ distribution of encryption keys across insecure networks and then using those
 keys to encrypt transmissions, there is still a problem of knowing if the
 public key that you have received when you connected to a server is really from
 the organization you expect it to be.
+
+![TBD: Certificate Authorities And Public Keys](images/tbd)
 
 We need to deal with the problem where you think you are connecting wo
 www.amazon.com but a rogue computer intercepts your traffic claiming to be

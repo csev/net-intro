@@ -19,7 +19,9 @@ interact with.  The client portion of the application makes
 connections to the server
 application, and retrieves information and shows it to the user.
 
-In order for you to brows a web address like www.khanacademy.org, you have a
+![TBD: Client/Server Applications](images/tbd)
+
+In order for you to browse a web address like www.khanacademy.org, you have a
 web application running on your computer.  When you type an address into your
 web browser, it makes a connection to the appropriate web server, retrieves
 pages for you to view and then shows you the pages.
@@ -206,6 +208,8 @@ version 1.0 of the HTTP protocol because it is simpler than HTTP 1.1.
 Then we send a blank line by pressing "return" or "enter" to indicate
 we are done with our request.
 
+![TBD: Hacking HTTP By Hand](images/tbd)
+
 \index{HTML}
 \index{HyperText Markup Language}
 Given that we have send the proper request, the host responds first with a
@@ -303,6 +307,8 @@ the rules of window size and so it can only send a certain amount of data.
 When the window size fills up, the web server is paused until the transport
 layer on the destination computer has started to receive and acknowledge
 packets.
+
+![TBD: Window Size](images/tbd)
 
 As the Transport layer on the destination computer starts to receive packets,
 reconstruct the stream of data and acknowledge packets it delivers the

@@ -16,6 +16,8 @@ and then walk to your hotel.   For your packet taking its "trip" to another
 country, the "walk", "bus", "train" and "plane" can be thought of as different
 link layers like "WiFi", "Ethernet", "fiber optic", and "satellite".
 
+![TBD: Travelling Packets](images/tbd)
+
 At each point during the trip, you (and your packet) are being transported
 using a shared medium.  But even though there might have been thousands of
 people on the bus, train, and plane as you were on your trip, you were the only
@@ -299,6 +301,8 @@ driving a car or taking a train, but on that day for packets between the
 two cities - this was the
 best route.
 
+![TBD: Notifications of Dropped Packets](images/tbd)
+
 You can also see how long it took for packets to make it from the source to
 each router, and then from the source to the destination.   A millisecond (ms)
 is a 1/1000 of a second.  So 77.317 ms is just under a tenth of a second.  This
@@ -362,6 +366,8 @@ computer to the effect of, "Another computer is using 192.168.0.5, we have
 stopped using this address".  Your computer sees this because it sees another
 computer with a link address other than its own using the IP address that your
 computer thinks is assigned to it.
+
+![TBD: Getting an IP Address Via DHCP](images/tbd)
 
 But most of the time this dynamic IP address assignment (DHCP) works perfectly.
  You open your laptop and in a few seconds you are connected and can use the

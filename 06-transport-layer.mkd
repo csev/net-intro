@@ -94,6 +94,8 @@ received data.  When the sending computer receives this message, it "backs up"
 and re-sends data from the last position that the receiving computer had
 successfully received.
 
+![TBD: Waiting for a Lost Packet](images/tbd)
+
 The combination of the receiving computer acknowledging received data, not
 allowing the transmitting computer to get too far ahead (window size), and the
 receiving computer requesting the sending computer to "back up and restart"
@@ -153,6 +155,8 @@ and receive data over that connection.  In many programming languages, we call
 these endpoints a "socket".   Making a connection to an application running on
 a server, sending data to the server, and receiving data from the server is
 generally as easy as reading and writing a file.
+
+![TBD: What is a Socket](images/tbd)
 
 \index{programming sockets}
 Just as an example, the code below is all it takes in the Python

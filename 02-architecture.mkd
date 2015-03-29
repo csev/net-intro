@@ -178,6 +178,8 @@ middle of the journey work to get your message closer to its destination.
 But just like when you are traveling, unexpected problems or delays can come up
 that require a change in plans as your packets are sent across the network.
 
+![TBD: A Multi-Step Trip](images/tbd)
+
 Routers work hard to inform each other about any kind of traffic delay or
 network outage so that packets can be switched from a route that is no longer
 working to a different route.   The Internet routers that make up the core of

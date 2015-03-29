@@ -222,6 +222,8 @@ later packet might arrive before an earlier packet - perhaps because of a data
 packet so that the destination computer can reassemble the packets to
 reconstruct the original message that was sent.
 
+![TBD: Connecting Around the World](images/tbd)
+
 Once the idea of routers and multiple hops was created and the routers could
 forward packets quickly, the network covering a geographical area started to
 look more and more like a mesh with many different paths from one computer to
