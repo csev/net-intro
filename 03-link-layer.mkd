@@ -206,7 +206,7 @@ waits until the token comes back to it. When none of the stations have any data
 to send, the token is moved from one computer to the
 next computer as quickly as possible.
 
-![TBD: Communicating with a Token](images/tbd)
+![Communicating with a Token](sketchnote/Token)
 
 If you had a bunch of people sitting around a meeting, you could communicate
 without ever interrupting anyone by having a small ball that you pass around in

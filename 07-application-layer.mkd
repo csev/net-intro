@@ -19,7 +19,7 @@ interact with.  The client portion of the application makes
 connections to the server
 application, and retrieves information and shows it to the user.
 
-![TBD: Client/Server Applications](images/tbd)
+![Client/Server Applications](sketchnote/Client_Server)
 
 In order for you to browse a web address like www.khanacademy.org, you have a
 web application running on your computer.  When you type an address into your
@@ -208,7 +208,7 @@ version 1.0 of the HTTP protocol because it is simpler than HTTP 1.1.
 Then we send a blank line by pressing "return" or "enter" to indicate
 we are done with our request.
 
-![TBD: Hacking HTTP By Hand](images/tbd)
+![Hacking HTTP By Hand](sketchnote/Hacking_HTTP)
 
 \index{HTML}
 \index{HyperText Markup Language}
