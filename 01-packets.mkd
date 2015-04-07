@@ -10,7 +10,7 @@ ways that seem like "magic" to those who don't understand what's going on
 behind the scenes.  In this material we will dig into how the Internet works
 and how computer networking is done in general.
 
-Communicating At a Distance
+Communicating at a Distance
 ---------------------------
 
 Imagine a group of five people in a room sitting in a circle.  As long as they are
@@ -18,7 +18,7 @@ courteous and don't have more than one conversation at the same time, it's quite
 natural for any person to talk to any other person in the room.  They just need to
 be able to hear each other and coordinate how to use the shared space in the room.
 
-But what if we put these people in different rooms so they could no longer
+But what if we put these people in different rooms so they can no longer
 see or hear each other?  How could pairs of people communicate with each other
 then?  One way might be to run a wire between each pair of people with a 
 microphone on one end and a speaker on the other end.  Everyone could still
@@ -86,7 +86,7 @@ messages ahead of it were sent, and then it would get its chance to be
 sent across the connection.
 
 \index{leased line}
-When computers were in the same building, the building owner could run wires
+When the computers were in the same building, the building owner could run wires
 to connect them.  If the computers were in the same town, the owners of
 the computers generally had to lease wires from the telephone companies to
 connect their computers.  They often would have the phone company connect 
@@ -102,7 +102,7 @@ long-distance leased lines were quite expensive and their cost increased
 dramatically as the length of the leased line increased.
 
 So if you had enough money, you could connect your computers together to
-exchange data.  This worked pretty well as long as you were using
+exchange data.  This worked pretty well as long as you were only using
 one brand of computers, because each computer company had their own way of using
 telephone wires to connect their computers together and send data.
 
@@ -118,7 +118,7 @@ with distance, computers generally only had connections to other nearby
 computers.  But if the computer that you were
 connected to was connected to another computer and that computer in turn was
 connected to another computer, and so on, you could send a message a long
-distance if each of the computers along the route of the message agreed to
+distance as long as each of the computers along the route of the message agreed to
 store and forward your message.
 
 ![Store and Forward Networks](sketchnote/Store_Fwd)
@@ -181,7 +181,7 @@ handled by the other routers.
 \index{Local Area Network}
 When multiple computers at one location were connected together in a
 "Local Area Network" (or LAN), you would connect a router to the local area
-network and by sending data through the router, all the computers on the
+network.  By sending data through the router, all the computers on the
 local area network could send data across the wider network.
 
 Addressing and Packets
@@ -190,8 +190,8 @@ Addressing and Packets
 In the early store and forward networks it was important to know the source and
 destination computers for each message.  Each computer was given a unique name 
 or number that was called the "address" of the computer.  To send a message
-to another computer, we needed to add the source and destination address to
-the message before we sent the message along its way.  By having a source and
+to another computer, you needed to add the source and destination address to
+the message before sending the message along its way.  By having a source and
 destination address in each message, the computers that stored and forwarded
 the message would be able to pick the best path for the message if more than
 one path was available.
@@ -199,12 +199,12 @@ one path was available.
 When a long message was broken into much smaller packets and each packet was
 sent individually, we needed to add the source and destination addresses
 to each packet so that routers would know the best path to forward each message.
-In addition to the source and destination addresses, it was necessary to add
+In addition to the source and destination addresses, it was also necessary to add
 data to each packet indicating the "offset" or position of the packet in the
 overall message so that the receiving computer could put the packets back
 together in the right order to reconstruct the original message.
 
-Putting it all Together
+Putting It All Together
 -----------------------
 
 So when we combine all this together we can understand the basic operation of
@@ -219,7 +219,7 @@ Different packets from the same message may take different routes from the
 source to the destination.  And packets may even arrive out of order where a
 later packet might arrive before an earlier packet - perhaps because of a data
 "traffic jam".  Each packet contains an "offset" from the beginning of the
-packet so that the destination computer can reassemble the packets to
+message so that the destination computer can reassemble the packets to
 reconstruct the original message that was sent.
 
 ![Connecting Around the World](sketchnote/Conn_around_world)
@@ -262,7 +262,7 @@ c) A wire that ran from one phone company office to another
 d) An "always on" telephone connection
 
 3. How long might a message be stored in an intermediate computer
-for a store-and-forward network?
+for a store and forward network?
 a) less than a second
 b) no more than four seconds
 c) less than a minute
@@ -277,10 +277,10 @@ d) The amount of data that could be stored on an early punched card
 5. Which of these is most like a router?
 a) A mail sorting facility
 b) A refrigerator
-c) A high speed train
+c) A high-speed train
 d) An undersea telecommunicaitons cable
 
-6. What was the name given to early routers in the ARPANET?
+6. What was the name given to early network routers?
 a) Interfaith Message Processors
 b) Internet Motion Perceptrons
 c) Instant Message Programs
@@ -289,16 +289,16 @@ d) Interface Message Processors
 7. In addition to breaking large messages into smaller segements to be 
 sent, what else was needed to properly route each message segment?
 a) A source and destination address on each message segment
-b) And id and password for each message segment
+b) And ID and password for each message segment
 c) A small battery to maintain the storage for each message segment
 d) A small tracking unit like a GPS to find lost messages
 
 8. Why is it virtually free to send messages around the world
 using the Internet?
 a) Beause governments pay for all the connections
-b) Advertising pays for all the connections
-c) So many people share all the resources
-d) Because it is illegal to charge for long-distance fiber optic cables.
+b) Because advertising pays for all the connections
+c) Because so many people share all the resources
+d) Because it is illegal to charge for long-distance fiber optic cables
 
 
 *Draft - Copyright All Rights Reserved - Charles R. Severance.
