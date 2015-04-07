@@ -5,6 +5,9 @@ Please do not reproduce or redistribute.*
     Illustrations: Mauro Toselli
     Editorial Support: Sue Blumenberg
 
+The figures for the book were drawn with OmniGraffle and the SketchNotes
+were converted from image to vector format using www.vectormagic.com.
+
 Printing history:
 
 *TBD* Original Printing.
