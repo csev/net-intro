@@ -16,7 +16,7 @@ packet taking its "trip" to another country, the "walk", "bus", "train", and "pl
 can be thought of as different link layers like "WiFi", "Ethernet", "fiber optic",
 and "satellite".
 
-![TBD: Travelling Packets](images/tbd)
+![Travelling Packets](sketchnote/Traveling_Packets)
 
 At each point during the trip, you (or your packet) are being transported using a
 shared medium.  There might be hundreds of other people on the same bus, train,

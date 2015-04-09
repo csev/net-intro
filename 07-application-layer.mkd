@@ -308,7 +308,7 @@ When the window size fills up, the web server is paused until the transport
 layer on the destination computer has started to receive and acknowledge
 packets.
 
-![TBD: Window Size](images/tbd)
+![Window Size](sketchnote/Windows_Size)
 
 As the Transport layer on the destination computer starts to receive packets,
 reconstruct the stream of data and acknowledge packets it delivers the
