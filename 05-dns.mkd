@@ -5,9 +5,9 @@ The Domain Name System
 \index{DNS}
 The Domain Name System lets you access websites by name, so you don't have to
 keep a list of numeric Internet Protocol (IP) addresses like "212.78.1.25" for
-all the servers that you need to communicate with throughout a day.  If you recall,
-IP address are determined by where your computer connects to the Internet.  When
-you have a portable computer and you move from one location to another, you get
+all the servers that you need to communicate with.  IP address are determined
+by where your computer connects to the Internet.  When you have a portable
+computer and you move from one location to another, you get
 a new IP address at each new location.  Since no one connects to your portable
 computer, it does not matter if your IP address changes from time to time. But
 since so many people connect to a web server, it would be inconvenient if
@@ -36,7 +36,7 @@ Allocating Domain Names
 If you recall from the previous section, IP addresses are allocated based on
 where you connect a new network to the Internet.   Domain names are allocated
 based on organizations that "own" the domain name.  At the top of the domain
-name hierarchy there is an organization called the International
+name hierarchy is an organization called the International
 Corporation for Assigned Network Names (ICANN).   ICANN chooses the top-level
 domains like .com, .edu, and .org and assigns those to other organizations to
 manage.  ICANN also assigns two-letter top-level domain names like .us, .za,
@@ -50,14 +50,14 @@ top-level domain is assigned to the Educause organization.   Educause assigns
 domains like umich.edu to higher education institutions.   Once the University
 of Michigan is given control of umich.edu, it can make its own choices for
 subdomains within its new domain.  Domains ending in .com and .org can be purchased
-by individuals and the individual owners of those domains are allowed to manage
+by individuals.   The individual owners of those domains are allowed to manage
 their domain and create subdomains under it for their own use or use by others.
 
 Reading Domain Names
 --------------------
 
 When we look at an IP address like "212.78.1.25" the left prefix is the
-"Network Number" so in a sense we read IP addresses from left to right, where
+"Network Number", so in a sense we read IP addresses from left to right, where
 the left part of the IP address is the most general part of the address and
 right part of the address is most specific:
 
@@ -70,7 +70,7 @@ For Domain Names, we read from right to left:
     Narrow       <---       Broad
 
 The most general part of this domain name is ".edu" which means higher
-education institutions.  The subdomain is "umich.edu" is a particular higher
+education institutions.  The subdomain "umich.edu" is a particular higher
 education institution.
 
 Summary
