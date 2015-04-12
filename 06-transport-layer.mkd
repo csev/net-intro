@@ -4,68 +4,67 @@ Transport Layer
 \index{Layer!Transport}
 \index{TCP}
 
-If you go all the way back to the most important aspect and foundational notion
-around the design of the internet, it is about breaking long files or messages
+The most important aspect and foundational notion
+around the design of the Internet is breaking long files or messages
 into many different packets, and then sending the packets across the network
-independently.  Using packets makes sharing a link layer medium like a radio
-frequency work, packets allows the IP routers to redirect traffic dynamically
-as the network encounters loaded connections or failing links.   The Internet
+independently.  Using packets over a shared link layer medium like a radio
+frequency allows IP routers to redirect traffic dynamically as the
+network encounters loaded connections or failing links.   The Internet
 works precisely because we break data into packets before we send the data.
 
-But the users of the network want to send entire files or messages across the
+But users of the network want to send entire files or messages across the
 Internet.   A network is not much good to us if all it can do is send packets.
-For the network to be useful all of the packets need to be reassembled into the
-right order to reconstruct the message on the receiving system.  Not only must
-we reconstruct the entire message or file from the packets, we must deal with
-packets that arrive out of order or not at all.
+For the network to be useful, all of the packets need to be reassembled into the
+right order to reconstruct the message on the receiving system.  The network
+must also deal with packets that arrive out of order or never arrive at all.
 
-These problems are all solved by the Transport Layer.    Just like the IP layer,
+These problems are all solved by the Transport Layer.  Just like the IP layer,
 the transport layer adds a small amount of data to each packet to help solve
 the problems of packet reassembly and retransmission.
 
 Packet Headers
 --------------
 
-If you were to look at a packet, going across one of many links
-between its source and destination computers, you would see a link header, IP
-header, and TCP header along with the actual data in the packet:
+If you were to look at a packet going across one of many links
+between its source and destination computers, you would see a link header,
+an IP header, and a Transport Control Protocol (TCP) header along with the
+actual data in the packet:
 
 ![Headers and Data](images/headers)
 
 The link header is removed when the packet is received on one link and a
 new link header is added when the packet is sent out on the next link on its
 journey.  The IP and TCP headers stay with a packet as it is going across each
-link in its journey. Remember that a packet may go across several types of link layers as it is routed through the Internet.
+link in its journey. Remember that a packet may go across several types of link
+layers as it is routed through the Internet.
 
 The IP header holds the source and destination Internet Protocol (IP) addresses
 as well as the Time to Live (TTL) for the packet.  The IP header is set on the
 source computer and is unchanged (other than the TTL) as the packet moves
 through the various routers on its journey.
 
-The TCP headers indicate where the data in the packet belongs from the
-beginning of the message or file.  As the source computer breaks the large
-message or file into packets, it keeps track of the position of each packet
-relative to the beginning of the file and places the offset in each packet that
-is created and sent.
+The TCP headers indicate where the data in each packet belongs.  As the source
+computer breaks the message or file into packets, it keeps track of the position
+of each packet relative to the beginning of the message or file and places the
+offset in each packet that is created and sent.
 
 Packet Reassembly and Retransmission
 ------------------------------------
 
-So as the destination computer receives the packets, it looks at the offset
+As the destination computer receives the packets, it looks at the offset
 position from the beginning of the message so it can put the packet into the
 proper place in the reassembled message.  Simply by making sure to put the
 packet data at the correct position relative to the beginning of the message,
-the Transport layer easily handles packets that arrive out of order.  It
-receives a packet further down a message and places it in a buffer, keeping
-track of the fact that there is now a gap in the message that is being
-re-constructed.  If the packets were just out of order, the earlier packet
-arrives a moment after the later packet and fits perfectly into the gap in the
-reassembled data.
+the transport layer easily handles packets that arrive out of order.  If it
+receives a packet further down a message, it places that packet in a buffer,
+keeping track of the fact that there is now a gap in the message that is being
+reconstructed.  When the earlier packet arrives a moment later, it fits
+perfectly into the gap in the reassembled data.
 
 \index{window size}
-In order to avoid overwhelming the network, the transport layer in the sending
+To avoid overwhelming the network, the transport layer in the sending
 computer only sends a certain amount of data before waiting for an
-acknowledgement from the transport layer on destination computer that the
+acknowledgement from the transport layer on the destination computer that the
 packets were received.   The amount of data that the sending computer will send
 before pausing to wait for an acknowledgment is called the "window size".
 
@@ -74,22 +73,23 @@ acknowledgements from the receiving computer.  If the acknowledgments come back
 quickly, the sending computer increases its window size but if the
 acknowledgments come back slowly, the sending computer transmits less data.  By
 adjusting the window size, transmitting computers can send large amounts of
-data quickly over fast connections that have light load and when sending data
-over slow or heavily loaded links, they can send data in a way so as not to
-overwhelm the network.
+data quickly over fast connections that have light loads.  When sending data
+over slow or heavily loaded links, they can send the data in a way that does
+not overwhelm the network.
 
-When a packet is lost, it will never arrive at the destination computer and so
+If a packet is lost, it will never arrive at the destination computer and so
 the destination computer will never send an acknowledgment for that data.
 Because the sending computer does not receive an acknowledgment, it quickly
-gets to the point where it has sent enough unacknowledged data to fill up the
+reaches the point where it has sent enough unacknowledged data to fill up the
 window and so the sending computer stops sending new packets.
+
 At this point, both computers are waiting.  The sending computer is waiting
 for an acknowledgement for a lost packet that will never come and the receiving
 computer is waiting for a lost packet that will never come.   To make sure that
 the computers do not wait forever, the destination computer keeps track of the
 amount of time since it received the last packet of data.  At some point, the
 receiving computer decides too much time has passed and sends a packet to the
-sending computer indicating where in the stream the receiving computer has
+sending computer indicating where in the stream the receiving computer has last
 received data.  When the sending computer receives this message, it "backs up"
 and re-sends data from the last position that the receiving computer had
 successfully received.
@@ -100,15 +100,13 @@ The combination of the receiving computer acknowledging received data, not
 allowing the transmitting computer to get too far ahead (window size), and the
 receiving computer requesting the sending computer to "back up and restart"
 when it appears that data has been lost creates a relatively simple solution to
-reliably send large messages or files across a network by breaking them into
-packets.
+reliably send large messages or files across a network.
 
-While, the transport layer is sending a stream of data
-it continuously monitors how
-quickly it receives acknowledgements and dynamically adjusts its window size.
+While the transport layer is sending a stream of data, it continuously monitors
+how quickly it receives acknowledgements and dynamically adjusts its window size.
 We want to make sure that we send data rapidly when the connection between two
 computers is fast and send data much more slowly when the connection has
-slow links or heavy load.
+slow links or a heavy load.
 
 The Transport Layer In Operation
 --------------------------------
@@ -117,18 +115,18 @@ One of the key elements of the transport layer is that the sending computer
 must hold onto all of the data it is sending until the data has been
 acknowledged.  Once the receiving computer acknowledges the
 data, the sending computer can discard the data.  We can look at this
-graphically when a message is broken into many packets.  The first ten packets
-of the message have been send and acknowledged by the destination computer.
-The sending transport computer has sent six packets and stopped because it
+graphically when a message is broken into many packets.  Here, the first ten packets
+of the message have been sent and acknowledged by the destination computer.
+The sending computer has sent more six packets more and then stopped because it
 reached its window size.
 
 ![Buffering in the Transport Layer](images/transport-buffer)
 
-The Transport layer on the receiving computer has received and acknowledged ten
+The transport layer on the receiving computer has received and acknowledged ten
 packets and delivered them to the receiving application.^[We talk about the
-application layer in the next chapter]   The transport layer on the
-destination computer has received three packets but one packet is out of order.
-Receiving a packet out of order is not a cause for concern as long as the missing
+application layer in the next chapter.]   The transport layer on the destination
+computer has received more three packets, but one packet is out of order.
+Receiving a packet out of order is not a cause for concern if the missing
 packet arrives in a reasonably short amount of time.  As long as all the
 packets are received, the receiving transport layer will reconstructed the
 message, fitting the packets together like puzzle pieces.
@@ -139,27 +137,27 @@ Clients, Servers, and Sockets
 \index{client}
 \index{server}
 \index{socket}
-The purpose of the transport layer is to provide a reliable connections between
+The purpose of the transport layer is to provide reliable connections between
 networked applications so those applications can send and receive streams of
-data.  For an application it is as simple as calling the Transport Layer and
-asking to make a connection to an application running on a remote host.   We
+data.  For an application, this is as simple as asking the transport layer
+to make a connection to an application running on a remote host.   We
 call the application that initiates the connection on the local computer the
 "client" and the application that responds to the connection request the
 "server".   We call the combination of the two networked applications at the
 ends of the connection a "client/server" application because the two pieces of
-the application must work together to solve the end-user's problem.
+the application must work together.
 
 A lot of engineering has gone into the lower three layers of our architecture
 to make it easy to open a connection to a remote computer and then send
 and receive data over that connection.  In many programming languages, we call
-these endpoints a "socket".   Making a connection to an application running on
+the two endpoints "sockets".   Making a connection to an application running on
 a server, sending data to the server, and receiving data from the server is
 generally as easy as reading and writing a file.
 
 ![What is a Socket?](sketchnote/Socket)
 
 \index{programming sockets}
-Just as an example, the code below is all it takes in the Python
+The code below is all it takes in the Python
 programming language to make a connection to a web server
 and retrieve a document:
 
@@ -180,18 +178,18 @@ and retrieve a document:
 While you may or not know the Python programming language, the key point is
 that it only takes ten lines of application code to make and use a network
 connection.   This code is simple because the Transport, Internetwork, and Link
-layers so effectively solve the problems at each of their layers so that
-Applications using the network can ignore nearly all of the details of how the
+layers so effectively solve the problems at each of their layers that
+applications using the network can ignore nearly all of the details of how the
 network is implemented.
 
 Ports and Applications
 ----------------------
 
-The above Python program is a client application.  Recall that a client
+The Python program above is a client application.  Recall that a client
 application is the application running on your local computer and is the one
 that initiates the connection.  Your application needs to connect to a server
 application on the remote computer.  A remote computer might actually have any
-number of different server applications running on the computer.  Example
+number of different server applications running at the same time.  Example
 server applications would include:
 
 * Web Server
@@ -199,10 +197,10 @@ server applications would include:
 * Mail Server
 
 It is important for a client application to connect to the corresponding
-application on the server.   A Web client (a browser) needs to connect to a web
-server running on the remote server.  So a client application not only needs to
-know which host to connect to, it also needs to choose a particular application
-to interact with on that server.
+server application.   For instance, a web client (a browser) needs to connect to
+the web server running on the remote computer.  So a client application not only
+needs to know which host to connect to, it also needs to choose a particular
+application to interact with on that host computer.
 
 ![TCP Ports](sketchnote/Ports)
 
@@ -212,7 +210,7 @@ extensions.   All of the extensions have the same phone number (IP Address) but
 each extension (server application) has a different extension number (port
 number).
 
-When a server application starts up it "listens" for incoming connections on
+When a server application starts up, it "listens" for incoming connections on
 the specified port.  Once the server application has registered that it is
 ready to receive incoming connections, it waits until the first
 connection is made.
@@ -231,27 +229,27 @@ there is a list of well-known default ports for various server applications:
 * FTP (21) - File Transfer
 
 If you look back up at the Python application, you will notice that in this
-line:
+line
 
     mysock.connect(('www.py4inf.com', 80))
 
-We have specified that we are connecting to the application that is listening
+we have specified that we are connecting to the application that is listening
 for incoming connections on port 80 on the host www.py4inf.com.   By choosing
-port 80 we are indicating that we want to talk to a world-wide-web server on
+port 80 we are indicating that we want to talk to a World Wide Web server on
 that host and are expecting to communicate with that server using the HyperText
 Transport Protocol.
 
 Each client/server application has its own protocol.  Building and using
-Application protocols is the problem that we solve in the Application Layer.
+application protocols is the problem that we solve in the Application Layer.
 
 Summary
 -------
 
 In a sense, the purpose of the transport layer is to compensate for the fact
-that the Link and Internet Protocol layers might lose data.   When the two
-lower layers lose or reroute packets, the transport layer works to re-assemble
-and/or re-transmit data to compensate for the lower layer.  The existence of
-the Transport layer makes it possible for the two lower layers to ignore
+that the link and Internet Protocol layers might lose data.   When the two
+lower layers lose or reroute packets, the transport layer works to reassemble
+and/or retransmit data to compensate for the lower layer.  The existence of
+the transport layer makes it possible for the two lower layers to ignore
 retransmission and rate limiting issues.
 
 Part of the goal of a layered architecture is to break an overly complex
@@ -266,13 +264,13 @@ Questions
 1. What is the primary problem the Transport (TCP) layer supposed to solve?
 a) Move packets across multiple hops from a source to destination computer
 b) Move packets across a single physical connection
-c) Deal with lost and out of order packets
+c) Deal with lost and out-of-order packets
 d) Deal with encryption of sensitive data
 
 2. What is in the TCP header?
 a) Physical address
 b) IP Address and Time to Live
-c) Port number and Offset
+c) Port number and offset
 d) Which document is being requested
 
 3. Why is "window size" important for the proper functioning of the network?
@@ -292,14 +290,14 @@ d) The sending computer sends the acknowledgement to the Internet Map (IMAP)
 5. Which of these detects and takes action when packets are lost?
 a) Sending computer
 b) Network gateway
-c) Core Internet Routers
+c) Core Internet routers
 d) Receiving computer
 
 6. Which of these retains data packets so they can be retransmitted 
 if a packets lost?
 a) Sending computer
 b) Network gateway
-c) Core Internet Routers
+c) Core Internet routers
 d) Receiving computer
 
 7. What is a "socket" on the Internet?
@@ -320,7 +318,7 @@ b) Undersea network cable
 c) Apartment number
 d) Sculpture garden
 
-10. Which half of the client-service application must start first?
+10. Which half of the client/server application must start first?
 a) Client
 b) Server
 
@@ -330,7 +328,7 @@ b) 80
 c) 53
 d) 143
 
-12. What is the port number for the IMAP protocol?
+12. What is the port number for the IMAP mail retrieval protocol?
 a) 22
 b) 80
 c) 53
