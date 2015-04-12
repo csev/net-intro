@@ -13,8 +13,8 @@ take a taxi into the city, then take a train to a smaller town, a bus to an even
 smaller town, and finally walk from the bus stop to your hotel.  A packet also
 needs to take multiple forms of transportation to reach its destination.  For a
 packet taking its "trip" to another country, the "walk", "bus", "train", and "plane"
-can be thought of as different link layers like "WiFi", "Ethernet", "fiber optic",
-and "satellite".
+can be thought of as different link layers like WiFi, Ethernet, fiber optic,
+and satellite.
 
 ![Travelling Packets](sketchnote/Traveling_Packets)
 
@@ -26,7 +26,7 @@ you arrive at a train station, you might get off one train, then walk through th
 station and select a particular outbound train to continue your journey.  Travellers
 with different starting points and destinations make a different series of choices.
 All of the choices you make during your trip result in you following a series of links
-(or hops) along a "route" that takes you from your starting point to your destination.  
+(or hops) along a route that takes you from your starting point to your destination.  
 
 As your packet travels from its starting point to its destination, it also passes
 through a number of "stations" where a decision is made as to which output
@@ -41,16 +41,15 @@ But unlike a train station where you need to look at displays to figure out the
 next train you need to take, the router looks at the destination address to decide
 which outbound link your packet needs to take. It is as if a train station employee
 met every single person getting off an inbound train, asked them where they were
-headed, and walked with them right to their next train.  If you were a
-packet, you would never have to look at another screen with a list of train
-departures and tracks!
+headed, and escorted them to their next train.  If you were a packet, you would
+never have to look at another screen with a list of train departures and tracks!
 
 \index{IP address}
 The router is able to quickly determine the outbound link for your packet
 because every single packet is marked with its ultimate destination address.
-This is called the Internet Address, or "IP Address" for short.  We carefully
-construct IP addresses to make the router's job of forwarding packets as
-efficient as possible.
+This is called the Internet Protocol Address, or IP Address for short.  We
+carefully construct IP addresses to make the router's job of forwarding packets
+as efficient as possible.
 
 Internet Protocol (IP) Addresses
 --------------------------------
@@ -96,10 +95,10 @@ If we break out an IPv4 address into two parts, we might find the following:
 
 The idea is that many computers can be connected via a single connection to the
 Internet.  An entire college campus, school, or business could connect using a
-single (or several) network number.  In the above example, 65,536 computers
-could be connected to the network using the network number of "212.78".  Since
-all of the computers appear to the rest of the Internet on a single connection,
-all packets with an IP address of:
+single network number, or only a few network numbers.  In the above example, 
+65,536 computers could be connected to the network using the network number
+of "212.78".  Since all of the computers appear to the rest of the Internet
+on a single connection, all packets with an IP address of:
 
     212.78.*.*
 
@@ -112,15 +111,15 @@ need to keep track of perhaps a million or less different network numbers.
 So when your packet arrives in a router and the router needs to decide which
 outbound link to send your packet to, the router does not have to look at the
 entire IP address.   It only needs to look at the first part of the address
-to make its decision as to the best outbound link.
+to determine the best outbound link.
 
 How Routers Determine the Routes
 --------------------------------
 
 While the idea of the collapsing many IP addresses into a single network number
 greatly reduces the number of individual endpoints that a router must track to
-properly route packets, each router still needs a way to learn the path (or
-route) from itself to each of the network numbers it might encounter.
+properly route packets, each router still needs a way to learn the path
+from itself to each of the network numbers it might encounter.
 
 When a new core router is connected to the Internet, it does not know all
 the routes.  It may know a few pre-configured routes, but to build a picture of
@@ -162,15 +161,15 @@ except the ones that can no longer be contacted due to the broken link.
 
 ![Dynamic Routing](sketchnote/Routing)
 
-Packets are routed more slowly for a while as the router tables are rebuilt
+Packets are routed more slowly for a while as router tables are rebuilt
 that reflect the new network configuration, but after a while things are
 humming along nicely.
 
-This is why it is important that there are always at least two independent paths
+This is why it is important for there to always be at least two independent paths
 from a source network to a destination network in the core of the network.  If
 there are always at least two possible independent routes, we say that a
 network is a "two-connected network".  A two-connected network can recover from
-any single link outage.  In places where there are a lot of network connections
+any single link outage.  In places where there are a lot of network connections,
 like the east coast of the United States, the network could lose many links
 without ever becoming completely disconnected.  But when you are at your home
 or school and have only one connection, if that connection goes down you
@@ -198,9 +197,9 @@ dynamically routing packets around links that are slow or temporarily overloaded
 One of the side effects of the way routers discover the structure of the
 network is that the route your packets take from the source to the destination
 can change over time.   You can even send one packet immediately followed by
-another packet and because of how the packets are routed, the second packet may
+another packet and because of how the packets are routed, the second packet might
 arrive at the destination before the first packet.   We don't ask the IP layer
-to worry about the order of the packets - it already has enough to worry about.
+to worry about the order of the packets--it already has enough to worry about.
 
 We pour our packets with source and destination IP addresses into the Internet
 much like we would send out a bunch of letters in the mail at the post office.
@@ -217,15 +216,15 @@ entire route your packet will take.  They only know which link to send your
 packets to so they will get closer to their final destination.
 
 But it turns out that most computers have a network diagnostic tool called
-"traceroute" (or "tracert", depending on the operating system of your computer)
-that allows you to get a trace of the route between your computer and a
+"traceroute" (or "tracert", depending on the operating system)
+that allows you to trace the route between your computer and a
 destination computer.   Given that the route between any two computers can
 change from one packet to another, when we "trace" a route, it is only a
 "pretty good guess" as to the actual route packets will take.
 
 The traceroute command does not actually "trace" your packet at all.  It takes
 advantage of a feature in the IP network protocol that was designed to avoid
-packets becoming "trapped" in the network and staying in the network forever.
+packets becoming "trapped" in the network and never reaching their destination.
 Before we take a look at traceroute, let's take a quick look at how a packet
 might get trapped in the network forever and how the IP protocol solves that
 problem.
@@ -248,28 +247,27 @@ fill up with packets waiting to be sent, and the three routers would crash.
 This problem is worse than having someone trip over a fiber optic cable,
 since it can cause several routers to crash.
 
-To solve this problem, the IP Protocol designers added a number to each packet
-that is called the Time-To-Live (or TTL).    This number starts out with a value
-of about 30.  Each time an IP packet gets forwarded down a link, the router
-subtracts 1 from the TTL value.  So the TTL value goes down from 30, 29, 28,
-and so forth.   If the packet takes 15 hops to cross the Internet it will
-emerge on the far end with a TTL of 15.
+To solve this problem, the Internet Protocol designers added a number to each
+packet that is called the Time-To-Live (or TTL).   This number starts out with
+a value of about 30.  Each time an IP packet gets forwarded down a link, the
+router subtracts 1 from the TTL value.  So if the packet takes 15 hops to
+cross the Internet, it will emerge on the far end with a TTL of 15.
 
 But now let's look at how the TTL functions when there is a routing loop (or
 "packet vortex") for a particular network number.   Since the packet keeps
 getting forwarded around the loop, eventually the TTL reaches zero.  And when
 the TTL reaches zero, the router assumes that something is wrong and throws the
-packet away.   This approach makes sure that routing loops do not bring whole
+packet away.  This approach makes sure that routing loops do not bring whole
 areas of the network down.
 
 So that is a pretty cool bit of network protocol engineering.  To detect and
 recover from routing loops, we just put a number in, subtract 1 from that
-number, and when the number goes to zero throw the packet away.
+number on each link, and when the number goes to zero throw the packet away.
 
 It also turns out that when the router throws a packet away, it usually
 sends back a courtesy notification, something like, "Sorry I had to throw your
 packet away."  The message includes the IP address of the router that threw
-your packet away.
+the packet away.
 
 Network loops are actually pretty rare, but we can use this notification that a
 packet was dropped to map the approximate route a packet takes through the
@@ -290,7 +288,7 @@ are taking across the network.
 
 It took 14 hops to get from Ann Arbor, Michigan to Palo Alto, California.
 The packets passed through Kansas, Texas, Los Angeles, and Oakland.  This
-might not be the best route between the two cities if you are driving a car
+might not be the best route between the two cities if you were driving a car
 or taking a train, but on that day for packets between the two cities this
 was the best route on the Internet.
 
@@ -301,8 +299,8 @@ each router, and then from the source to the destination.   A millisecond (ms)
 is a 1/1000 of a second.  So 77.317 ms is just under a tenth of a second.  This
 network is pretty fast.
 
-Sometimes a traceroute can take a little while - up to a minute or two.   Not
-all of the routers give you the "I discarded your packet" message.  In
+Sometimes a traceroute can take a little while--up to a minute or two.   Not
+all routers will give you the "I discarded your packet" message.  In
 the example above, the router at hop 13 threw our packet away without saying "I
 am sorry".   Traceroute waits for the message and after a few seconds just
 gives up and increases the TTL value so it gets past the rude router.
@@ -330,7 +328,7 @@ Getting an IP Address
 
 Increasingly, computers are portable or mobile.  We just pointed out
 how important it was for the IP layer to track large groups of computers using
-"Network Numbers" instead of tracking every single computer individually.  But
+Network Numbers instead of tracking every single computer individually.  But
 since these Network Numbers indicate a particular physical connection to the
 network, when we move a computer from one location to another, it will need a new
 IP address.   Remember that the link layer address is set when a computer is
@@ -350,15 +348,16 @@ Internet? If there is, tell me your IP address and tell me what IP address I
 should use on this network".
 
 When the gateway/router replies, your computer is given a temporary IP address
-to use on that network (i.e., while you are at the coffee shop).   When you close
-your laptop and leave, after the router has not heard from your computer for a
-while, it decides you are gone and loans the IP address to another computer.
-If this process of reusing loaned IP goes wrong, two computers end up on the
-same network with the same IP address.  Perhaps you have seen a message on your
-computer to the effect of, "Another computer is using 192.168.0.5, we have
-stopped using this address".  Your computer sees this because it sees another
-computer with a link address other than its own using the IP address that your
-computer thinks is assigned to it.
+to use on that network (for instance, while you are at the coffee shop).  After
+the router has not heard from your computer for a while, it decides you are gone
+and loans the IP address to another computer.
+
+If this process of reusing a loaned IP address goes wrong, two computers end up
+on the same network with the same IP address.  Perhaps you have seen a message on
+your computer to the effect of, "Another computer is using 192.168.0.5, we have
+stopped using this address".  Your computer sees another computer with a link
+address other than its own using the IP address that your computer thinks is
+assigned to it.
 
 ![Getting an IP Address Via DHCP](sketchnote/Dhcp)
 
@@ -369,7 +368,7 @@ given a different IP address to use at that location.
 
 In some operating systems, when a computer connects to a network, issues a DHCP
 request, and receives no answer, it decides to assign itself an IP address
-anyways.  Often these self-assigned addresses start with "169....".  When your
+anyway .  Often these self-assigned addresses start with "169....".  When your
 computer has one of these self-assigned IP addresses, it thinks it is connected
 to a network and has an IP address, but without a gateway, it has no
 possibility of getting packets routed across the local network and onto the
@@ -380,7 +379,7 @@ else that can be done with these self-assigned IP addresses.
 A Different Kind of Address Reuse
 ---------------------------------
 
-If you can figure out how to find the IP address on your laptop, you could do a
+If you know how to find the IP address on your laptop, you can do a
 little experiment and look at the different IP addresses you get at the
 different locations where you use your laptop.  If you made a list of the
 different addresses you received at the different locations, you might find
@@ -421,7 +420,7 @@ If you wanted to connect the network for a new organization to the Internet you
 would need to contact an Internet Service Provider and make a connection.
 Your ISP would give you a range of IP addresses (i.e., one or more network
 numbers) that you could allocate to the computers attached to your network.
-The ISP gives you network numbers by giving you a portion of the network
+The ISP assigns you network numbers by giving you a portion of the network
 numbers they received from a higher-level Internet Service Provider.
 
 \index{RIRs}
@@ -457,12 +456,12 @@ both IPv4 and IPv6 must work seamlessly together.
 Summary
 -------
 
-The Internetworking Protocol Layer (IP) extends our network from a single hop
+The Internetworking Protocol Layer extends our network from a single hop
 (Link Layer) to a series of hops that result in a packet quickly and
 efficiently being routed from your computer to a destination IP address and
-back to your computer.   The IP address is designed to react and route around
-network outages and maintain near ideal routing paths for packets moving between
-billions of computers without any kind of central routing clearing house.  Each
+back to your computer.  The IP address is designed to react and route around
+network outages and maintain near-ideal routing paths for packets moving between
+billions of computers without any kind of central routing clearinghouse.  Each
 router learns its position within the overall network, and by cooperating with
 its neighboring routers helps move packets effectively across the Internet.
 
@@ -478,7 +477,7 @@ impossible for the IP layer to handle the extreme complexities involved in
 connecting so many systems.
 
 So instead of asking too much of the IP layer, we leave the problem of packet
-loss and packets that arrive out of order to our next layer up - the Transport
+loss and packets that arrive out of order to our next layer up--the Transport
 layer.
 
 Questions
@@ -521,7 +520,7 @@ b) 6500
 c) 65000
 d) 650000
 
-7. How do routers determine the path taken by a packet acrtoss the Internet?
+7. How do routers determine the path taken by a packet across the Internet?
 a) The routes are controlled by the IRG (Internet Routing Group)
 b) Each router looks at a packet and forwards it based on its best guess 
 as to the correct outbound link
