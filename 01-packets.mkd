@@ -50,12 +50,11 @@ might run through a number of central offices.
 Since the cost of the wires went up as the length of the wire increased, these
 longer connections between offices were quite expensive to install and maintain,
 and they were scarce.  So in the early days of telephones, local calls
-were generally quite inexpensive and they were not charged by the minute.  But
-long-distance calls were more expensive and they were charged by the minute.
-This made sense because each minute you talked on a long-distance call, your use
-of the long-distance wires meant no one else could use them.  The
-telephone companies wanted you to keep your calls short so their long-distance
-lines would be available for other customers.
+were generally quite inexpensive.  But long-distance calls were more expensive
+and they were charged by the minute. This made sense because each minute you
+talked on a long-distance call, your use of the long-distance wires meant no
+one else could use them.  The telephone companies wanted you to keep your calls
+short so their long-distance lines would be available for other customers.
 
 Computers Communicate Differently
 ---------------------------------
@@ -77,31 +76,31 @@ amounts of data between computers than to send the data over the network.
 
 ![Computer Communication](sketchnote/Comp_Comm)
 
-In the earliest days of connecting computers to one another we connected
+In the earliest days of connecting computers to one another, we connected
 pairs of computers with wires.  The simplest way to send data from one
 computer to another was to line up the outgoing messages in a queue and send
 the messages one after another as fast as the computers and the wires could
-carry the data.  Each message would patiently wait for its turn until the
-messages ahead of it were sent, and then it would get its chance to be
-sent across the connection.
+carry the data.  Each message would wait for its turn until the messages
+ahead of it were sent, and then it would get its chance to be sent across
+the connection.
 
 \index{leased line}
 When the computers were in the same building, the building owner could run wires
 to connect them.  If the computers were in the same town, the owners of
 the computers generally had to lease wires from the telephone companies to
 connect their computers.  They often would have the phone company connect 
-the wires together in the office so that it was not necessary for one computer
-to "dial" the other computer to send data.  These leased lines were convenient
-for computer communications because they were "always on" - but they were
+the wires together in their ventral office so that it was not necessary for one
+computer to "dial" the other computer to send data.  These leased lines were 
+convenient for computer communications because they were "always on", but they were
 also quite expensive because they were used 24 hours a day.
 
 When the computers were even further away, in different cities, the leased
-lines were extended using the longer distance wires between the central
-offices.  But since there were so few wires between central offices, these
+lines were extended using the longer wires between the central offices.
+But since there were so few wires between central offices, these
 long-distance leased lines were quite expensive and their cost increased
 dramatically as the length of the leased line increased.
 
-So if you had enough money, you could connect your computers together to
+But if you had enough money, you could connect your computers together to
 exchange data.  This worked pretty well as long as you were only using
 one brand of computers, because each computer company had their own way of using
 telephone wires to connect their computers together and send data.
@@ -129,7 +128,7 @@ patient.  Along the way, after your message reached one computer, it
 would have to wait until its turn came to be sent to the next computer along
 the route.  A message would arrive at an intermediate computer, be stored for a
 while (perhaps hours, depending on traffic), and then be forward one more
-connection (or hop).  Using this technique, a message might take minutes,
+connection (or "hop").  Using this technique, a message might take minutes,
 hours, or even days to arrive at its ultimate destination, depending on the
 traffic at each of the hops.
 
@@ -197,10 +196,10 @@ the message would be able to pick the best path for the message if more than
 one path was available.
 
 When a long message was broken into much smaller packets and each packet was
-sent individually, we needed to add the source and destination addresses
-to each packet so that routers would know the best path to forward each message.
-In addition to the source and destination addresses, it was also necessary to add
-data to each packet indicating the "offset" or position of the packet in the
+sent individually, the source and destination addresses had to be added to each
+packet, so that routers could choose the best path to forward each packet of the
+message. In addition to the source and destination addresses, it was also necessary
+to add data to each packet indicating the "offset" or position of the packet in the
 overall message so that the receiving computer could put the packets back
 together in the right order to reconstruct the original message.
 
@@ -216,11 +215,11 @@ to the destination computer.
 Even though the packets may be part of a larger message, the routers forward
 each packet separately based on its source and destination addresses.
 Different packets from the same message may take different routes from the
-source to the destination.  And packets may even arrive out of order where a
-later packet might arrive before an earlier packet - perhaps because of a data
+source to the destination.  And packets may even arrive out of order; a
+later packet might arrive before an earlier packet, perhaps because of a data
 "traffic jam".  Each packet contains an "offset" from the beginning of the
-message so that the destination computer can reassemble the packets to
-reconstruct the original message that was sent.
+message so that the destination computer can reassemble the packets in the
+correct order to reconstruct the original message.
 
 ![Connecting Around the World](sketchnote/Conn_around_world_HOP)
 
@@ -238,13 +237,13 @@ source to a destination as quickly as possible.
 The core of the Internet is a set of cooperating routers that move packets from
 many sources to many destinations at the same time.  Each computer or local
 area network is connected to a router that forwards the traffic from its
-location to the various destinations on the Internet.  Each router might handle
-data from a single computer like a smartphone in your hand or from many
-thousands of computers connected to a university campus network.  The term
-"Internet" comes from the idea of "internetworking", which captures the idea of
-connecting many networks together.  Our computers connect to local networks and
-the Internet connects the local networks together so all of our computers can
-talk to each other.
+location to the various destinations on the Internet.  A router might handle
+data from a single computer like a smartphone in your hand, from several
+computers in the same building, or from many thousands of computers connected
+to a university campus network.  The term "Internet" comes from the idea of
+"internetworking", which captures the idea of connecting many networks together.
+Our computers connect to local networks and the Internet connects the local
+networks together so all of our computers can talk to each other.
 
 Questions
 ---------
@@ -286,7 +285,7 @@ b) Internet Motion Perceptrons
 c) Instant Message Programs
 d) Interface Message Processors
 
-7. In addition to breaking large messages into smaller segements to be 
+7. In addition to breaking large messages into smaller segments to be 
 sent, what else was needed to properly route each message segment?
 a) A source and destination address on each message segment
 b) And ID and password for each message segment
