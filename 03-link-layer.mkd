@@ -144,7 +144,7 @@ transmitting at the same time, all of the data is corrupted and both packets are
 lost.   So once your WiFi radio starts sending a packet it is important for it
 to listen to make sure it can receive its own data.  If it is not "hearing" the
 same thing that it is sending, your WiFi radio assumes that a collision has happened
-(ths is called Collision Detection) and stops transmitting, since it knows that no
+(this is called Collision Detection) and stops transmitting, since it knows that no
 data will be received by the destination WiFi radio.
 
 We humans do a similar thing in a room full of people.  When we start talking,
@@ -178,7 +178,7 @@ another try" if your transmission collides with another station's transmission.
 But in practice it works well.  There is a whole category of link layers
 that use this basic pattern of listen, transmit, listen, and optionally retry.
 Wired Ethernet, cellular telephone data, and even Short Message Service
-(SMS / Texting) all use this "try then retry" approach.
+(SMS/Texting) all use this "try then retry" approach.
 
 Other Types of Link Layers
 --------------------------
@@ -202,8 +202,8 @@ as possible.
 A group of people sitting around a meeting could communicate without ever
 interrupting each other by having a small ball that they pass around in
 a circle and only allowing someone to talk when they have the ball.  When you
-get the ball and have something to say you talk for a short period (a packet of
-words) and then pass the ball on.
+get the ball and have something to say you talk for a short period (transmit
+a packet of words) and then pass the ball on.
 
 If you think about it, the "try then retry" approach works very well when
 there is no data or when there are low or moderate levels of data being sent.
@@ -215,10 +215,10 @@ only station that wants to send data, you spend a good bit of time waiting for
 the token to come back to you after passing through all of the other stations.
 
 The token approach is best suited when using a link medium that is expensive such
-as a satellite link, or a long-distance shared fiber optic link.  The CSMA-CD
+as a satellite link, or a long-distance shared fiber optic link.  The CSMA/CD
 (listen-try) is best suited when the medium is inexpensive, shorter distance,
 and there are a lot of stations sharing the medium that only send data in short
-bursts.  So that is why WiFi (and CSMA-CD) is so effective for providing
+bursts.  So that is why WiFi (and CSMA/CD) is so effective for providing
 network access in a coffee shop, home, or room in a school.
 
 Summary
@@ -272,7 +272,7 @@ thing it must do?
 a) Listen to see if other computers are sending data
 b) Just start sending the data
 c) Send a message to the gateway asking for permission to transmit
-d) Wait until you are informed that it is your turn to transmit
+d) Wait until informed that it is your turn to transmit
 
 6. What does a WiFi-connected workstation do when it tries to send
 data and senses a collision has happenned?
@@ -286,7 +286,7 @@ what is the first thing it must do?
 a) Listen to see if other computers are sending data
 b) Just start sending the data
 c) Send a message to the gateway asking for permission to transmit
-d) Wait until you are informed that it is your turn to transmit
+d) Wait until informed that it is your turn to transmit
 
 
 
