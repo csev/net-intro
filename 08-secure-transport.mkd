@@ -164,7 +164,7 @@ to encrypt transmissions, there is still a problem of knowing if the
 public key that you have received when you connected to a server is
 really from the organization it claims to be from.
 
-![Certificate Authorities and Public Keys](sketchnote/Certificate_Autorities)
+![Certificate Authorities and Public Keys](sketchnote/Certificate_Authorities3)
 
 Perhaps you think you are connecting to www.amazon.com but a rogue computer
 intercepts your traffic, claiming to be www.amazon.com and giving you a public
