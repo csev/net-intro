@@ -3,24 +3,24 @@ Wrap Up
 
 It has been said that building the Internet solved the world's most complex
 engineering problem to date.  The design and engineering of the Internet
-started well over 50 years ago and the design has been continuously improving
+started well over 50 years ago.  It has been continuously improving
 and evolving over the past 50 years and will continue to evolve in the future.
 
 The Internet now connects billions of computers using many thousands of routers
-and link level connections.   The Internet is so complex that it is never fully
+and link-level connections.   The Internet is so complex that it is never fully
 operational.   The Internet is less about being "perfect" and more about
-adapting to problems, outages, errors, lost data and many other unforeseen
+adapting to problems, outages, errors, lost data, and many other unforeseen
 problems.  The Internet is designed to be flexible and adapt to whatever
 problem are encountered.
 
-![The Four Layer Model](images/layers)
+![The Four-Layer Model](images/layers)
 
 In order to build an overall solution that works at scale, it was necessary to
 break the Internet engineering problems down into four distinct layers:
 
 * The Link/Physical Layer includes all of the complex engineering
-required to move data across a single "hop" whether the hop is a wireless WiFi,
-wired Ethernet, fiber optic or satellite connection.
+required to move data across a single "hop", whether the hop is a wireless WiFi,
+wired Ethernet, fiber optic, or satellite connection.
 
 * The Internetwork Protocol (IP) layer is how your data is routed
 across a series of hops to get quickly and efficiently from one of a billion
@@ -37,15 +37,14 @@ retransmitted and packets that arrive out of order are put back into order
 before being passed on to the receiving application.  The Transport layer also
 acts as flow control between the sending and receiving applications to make
 sure that data is moved quickly when the network is fast and the links are
-not overloaded and slows the transfer of data when using slower or heavily
-loaded links.   The data flow and rate limitation in the Transport layer are
-what makes sure that even when the Internet is heavily loaded it continues to
-function.
+not overloaded and slow the transfer of data when using slower or heavily
+loaded links.   The data flow and rate limitation in the Transport layer allow
+the Internet to continue to function smoothly even when it is heavily loaded.
 
 * The other three layers make the use of the network very simple
 in the Application Layer.  An application can make a network connection and
-send/receive data on that connection with a few lines of code.  By making the
-use of the network simple, Applications can focus on solving the end-user
+send/receive data on that connection with just a few lines of code.  By making the
+use of the network simple, applications can focus on solving the end-user
 problem they need to solve.   Because it is so easy for an application to use
 the network in a new and different way, we have seen the emergence of a wide
 range of highly innovative applications that work without any needed changes to
@@ -63,15 +62,15 @@ over the past 50 years.  But in a way, we have only just begun the engineering
 journey of building networked applications.  It does not take much to imagine
 an Internet where
 every light switch, lightbulb, refrigerator, table, automobile, roadway, flying
-drone, and chair have an Internet address and they all want communicate with
-one another.       There will be new engineering issues that will need to be
-solved and perhaps even the four layer network model will need to evolve to
-meet these new engineering challenges.
+drone, and chair have an Internet address and they all want to communicate with
+one another.   New engineering issues will need to be solved, and perhaps even
+the four-layer network model will need to evolve to meet these new engineering
+challenges.
 
 But just like brilliant engineers designed and evolved network protocols to
-move from hundreds of network connected computers to billions of network
-connected computers, our present and future engineers will certainly solve the
-problems and challenges we will face as the network evolves to connect
+move from hundreds of network-connected computers to billions of
+network-connected computers, our present and future engineers will certainly
+solve the problems and challenges we will face as the network evolves to connect
 trillions of computers.
 
 
