@@ -13,8 +13,11 @@ careful design process by many networking experts that worked
 to develop a general approach to network models.
 
 In today's networked world, the OSI model and the TCP/IP model serve 
-two different purposes.  The
-TCP/IP model is an *implementation* model in that it provides the
+two different purposes.^[This of course is an oversimplification. Prior to 1990,
+there *were* operational network implementations based on ISO specifications
+that followed the OSI network model very closely. But today those ISO/OSI 
+network implementations no longer are in broad use.]
+The TCP/IP model is an *implementation* model in that it provides the
 guidance for those who would build TCP/IP compatible network hardware
 or software.  The OSI model is more of an *abstract* model that 
 can be used to understand a wide range of network architectures.
