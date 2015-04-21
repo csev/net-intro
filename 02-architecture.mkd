@@ -400,20 +400,8 @@ A data transmission technology that encodes data using light and sends the
 light down a very long strand of thin glass or plastic.  Fiber optic
 connections are both fast and can cover very long distances.
 
-**hop**: A single physical network connection.  A packet on the Internet
-will typically make several "hops" to get from its source computer to 
-its destination.
-
 **offset**: The relative position of a packet within an overall message
 or stream of data.
-
-**packet**: A limited-size fragment of a large message.  Large messages or
-files are broken down into many packets and sent across the Internet.  
-The typical maximum packet size is between 1000 and 3000 characters.
-
-**router**: A specialized computer that is designed to receive incoming
-packets on many links and quickly forward the packets on the best outbound
-link to speed the packet to its destination.
 
 **server**:
 In a networked application the server application is the one that responds

@@ -195,7 +195,7 @@ destination address in each message, the computers that stored and forwarded
 the message would be able to pick the best path for the message if more than
 one path was available.
 
-When a long message was broken into much smaller packets and each packet was
+When a long message was split into much smaller packets and each packet was
 sent individually, the source and destination addresses had to be added to each
 packet, so that routers could choose the best path to forward each packet of the
 message. In addition to the source and destination addresses, it was also necessary
@@ -297,7 +297,55 @@ using the Internet?
 a) Beause governments pay for all the connections
 b) Because advertising pays for all the connections
 c) Because so many people share all the resources
-d) Because it is illegal to charge for long-distance fiber optic cables
+d) Because it is illegal to charge for long-distance connections
+
+
+
+
+
+Glossary
+--------
+
+**address**: A number that is assigned to a computer so that messages
+can be routed to the computer.
+
+**hop**: A single physical network connection.  A packet on the Internet
+will typically make several "hops" to get from its source computer to
+its destination.
+
+**LAN**: Local Area Network.  A network that covers an area that is limited
+by the ability for an organization to run wires or the power of a radio
+transmitter.
+
+**leased line**: An "always up" connection that an organzization leased
+from a telephone company or other utility to send data across longer 
+distances.
+
+**operator (telephone)**: A person who works for a telephone company 
+that helps people make telephone calls.
+
+**packet**: A limited-size fragment of a large message.  Large messages or
+files are split into many packets and sent across the Internet.
+The typical maximum packet size is between 1000 and 3000 characters.
+
+**router**: A specialized computer that is designed to receive incoming
+packets on many links and quickly forward the packets on the best outbound
+link to speed the packet to its destination.
+
+**store-and-forward network**: A network where data is send from one 
+computer to another with the message being stored for relatively long periods
+of time in an intermediate computer waiting for an outbound network connection
+to become available.
+
+\index{WAN}
+\index{Wide Area Network}
+**WAN**: Wide Area Network.  A network that covers longer distances up to
+sending data completely around the world.  A WAN is generally constructed
+using communication links owned and managed by a number of 
+different organizations.
+
+
+
 
 
 *Draft - Copyright All Rights Reserved - Charles R. Severance.
