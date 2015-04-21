@@ -323,6 +323,29 @@ from one computer to another can be ignored.
 
 Up next we will talk about these four layers in more detail.
 
+Glossary
+--------
+
+**client**:
+In a networked application the client application is the one that requests
+services or initiates connections.
+
+**fiber optic**:
+A data transmission technology that encodes data using light and sends the
+light down a very long strand of thin glass or plastic.  Fiber optic
+connections are both fast and can cover very long distances.
+
+**offset**: The relative position of a packet within an overall message
+or stream of data.
+
+**server**:
+In a networked application the server application is the one that responds
+to requests for services or waits for incoming connections.
+
+**window size**: The amount of data that the sending computer is allowed to 
+send before waiting for an acknowledgement.
+
+
 Questions
 ---------
 
@@ -387,28 +410,6 @@ a) Universal Routing Linkage
 b) Uniform Retransmission Logic
 c) Uniform Resource Locator
 d) Unified Recovery List
-
-Glossary
---------
-
-**client**:
-In a networked application the client application is the one that requests
-services or initiates connections.
-
-**fiber optic**:
-A data transmission technology that encodes data using light and sends the
-light down a very long strand of thin glass or plastic.  Fiber optic
-connections are both fast and can cover very long distances.
-
-**offset**: The relative position of a packet within an overall message
-or stream of data.
-
-**server**:
-In a networked application the server application is the one that responds
-to requests for services or waits for incoming connections.
-
-**window size**: The amount of data that the sending computer is allowed to 
-send before waiting for an acknowledgement.
 
 
 *Draft - Copyright All Rights Reserved - Charles R. Severance.

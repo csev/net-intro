@@ -25,8 +25,6 @@ web application running on your computer.  When you type an address into your
 web browser, it connects to the appropriate web server, retrieves
 pages for you to view, and then shows you the pages.
 
-![Applications and the Transport Layer](images/application-transport)
-
 The web browser on your computer sends a request to connect to
 www.khanacademy.org.  Your computer looks up the domain name to find the
 corresponding IP address for the server and makes a transport connection to
@@ -364,6 +362,37 @@ many others.  And what is even more exciting is that it is easy to experiment
 and build whole new types of networked applications that solve problems that
 have not yet been imagined.
 
+Glossary
+--------
+
+**HTML**: HyperText Markup Language.  A textual format that marks up 
+text using tags surrounded by less-than and greater then characters.
+Example HTML looks like: \<p\>This is \<strong\>nice\</strong\>\</p\>.
+
+**HTTP**: HyperText Transport Protocol.  An application layer protocol
+that allows web browsers to retrieve web documents from web servers.
+
+**IMAP**: Internet Message Access Protocol.  A protocol that allows
+mail clients to login and retrieve mail from IMAP-enabled mail servers.
+
+**status code**: One aspect of the HTTP protocol that indicates to overall 
+success or failure of a request for a document.  The most well-known
+HTTP status code is "404" which is how an HTTP server tells an 
+HTTP client (i.e. a browser) that it requested a document 
+that could not be found.
+
+**telnet**: A simple client application that makes TCP connections
+to various address/port combinations and type data to be sent across
+the connection.  In the early days of the Internet, telnet was used
+to remotely log in to a computer across the network.
+
+**web browser**: A client application that you run on your computer
+to retrieve and display web pages.
+
+**web server**: A server application which allows you to retrieve various
+web documents.
+
+
 
 Questions
 ---------
@@ -462,37 +491,6 @@ that it has received some of the data
 d) The closest gateway router starts to discard packets that 
 would exceed the window size
 
-
-
-Glossary
---------
-
-**HTML**: HyperText Markup Language.  A textual format that marks up 
-text using tags surrounded by less-than and greater then characters.
-Example HTML looks like: \<p\>This is \<strong\>nice\</em\>\</p\>.
-
-**HTTP**: HyperText Transport Protocol.  An application layer protocol
-that allows web browsers to retrieve web documents from web servers.
-
-**IMAP**: Internet Message Access Protocol.  A protocol that allows
-mail clients to login and retrieve mail from IMAP-enabled mail servers.
-
-**status code**: One aspect of the HTTP protocol that indicates to overall 
-success or failure of a request for a document.  The most well-known
-HTTP status code is "404" which is how an HTTP server tells an 
-HTTP client (i.e. a browser) that it requested a document 
-that could not be found.
-
-**telnet**: A simple client application that makes TCP connections
-to various address/port combinations and type data to be sent across
-the connection.  In the early days of the Internet, telnet was used
-to remotely log in to a computer across the network.
-
-**web browser**: A client application that you run on your computer
-to retrieve and display web pages.
-
-**web server**: A server application which allows you to retrieve various
-web documents.
 
 
 

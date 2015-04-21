@@ -480,6 +480,56 @@ So instead of asking too much of the IP layer, we leave the problem of packet
 loss and packets that arrive out of order to our next layer up--the Transport
 layer.
 
+Glossary
+--------
+
+**core router**: A router that is forwarding traffic within the core of the 
+Internet.  
+
+**DHCP**: Dynamic Host Configuration Protocol.  DHCP is how a portable computer
+gets an IP address when it is moved to a new location.
+
+**edge router**: A router which provides a connection between a local network
+and the Internet.  Equivalent to "gateway".
+
+**Host Identifier**: The bottom portion of an IP address that is used to 
+identify a computer within a local area network.
+
+**IP Address**: A globally-assigned address that is assigned to a computer
+so that it can communicate with other computers that have IP addresses and
+are connected to the Internet.  To simplify routing in the core of the Internet
+IP addresses are broken into Network Numbers and Host Identifiers.  An example
+IP address might be "212.78.1.25".
+
+**NAT**: Network Address Translation.  This technique allows a single global 
+IP address to be shared by many computers on a single local area network.
+
+**Network Number**: The top portion of an IP address that is used to identify
+which local network the computer is connected to.
+
+**packet vortex**: An error situation where a packet gets into an infinite 
+loop because of errors in routing tables.
+
+**RIR**: Regional Internet Registry.  The five RIRs roughly correspond 
+to the contenents of the world and allocate IP address 
+for the major geographical areas of the world.
+
+**router tables**: Information maintained by each router that keeps track 
+of which outbound link should be used for each network number.
+
+**Time-To-Live (TTL)**: A number that is stored in every packet that 
+is reduced by one as the packet passes through each router.  When the TTL
+reaches zero, the packet is discarded.
+
+**traceroute**: A command that is available on many Linux/UNIX systems that 
+attempts to map the path taken by a packet as it moves from its source to its
+destination.  May be called "tracert" on Windows systems.
+
+**two-connected network**: A situation where there is at least two possible
+paths between any pair of nodes in a network.  A two-connected network can 
+lose any single link without losing overall connectivity.
+
+
 Questions
 ---------
 
@@ -633,55 +683,6 @@ d) APNIC
 e) AFRNIC
 f) United Nations
 
-
-Glossary
---------
-
-**core router**: A router that is forwarding traffic within the core of the 
-Internet.  
-
-**DHCP**: Dynamic Host Configuration Protocol.  DHCP is how a portable computer
-gets an IP address when it is moved to a new location.
-
-**edge router**: A router which provides a connection between a local network
-and the Internet.  Equivalent to "gateway".
-
-**Host Identifier**: The bottom portion of and IP address that is used to 
-identify a computer within a local area network.
-
-**IP Address**: A globally-assigned address that is assigned to a computer
-so that it can communicate with other computers that have IP addresses and
-are connected to the Internet.  To simplify routing in the core of the Internet
-IP addresses are broken into Network Numbers and Host Identifiers.  An example
-IP address might be "212.78.1.25".
-
-**NAT**: Network Address Translation.  This technique allows a single global 
-IP address to be shared by many computers on a single local area network.
-
-**Network Number**: The top portion of an IP address that is used to identify
-which local network the computer is connected to.
-
-**packet vortex**: An error situation where a packet gets into an infinite 
-loop because of errors in routing tables.
-
-**RIR**: Regional Internet Registry.  The five RIRs roughly correspond 
-to the contenents of the world and allocate IP address 
-for the major geographical areas of the world.
-
-**router tables**: Information maintained by each router that keeps track 
-of which outbound link should be used for each network number.
-
-**Time-To-Live (TTL)**: A number that is stored in every packet that 
-is reduced by one as the packet passes through each router.  When the TTL
-reaches zero, the packet is discarded.
-
-**traceroute**: A command that is available on many Linux/UNIX systems that 
-attempts to map the path taken by a packet as it moves from its source to its
-destination.  May be called "tracert" on Windows systems.
-
-**two-connected network**: A situation where there is at least two possible
-paths between any pair of nodes in a network.  A two-connected network can 
-lose any single link without losing overall connectivity.
 
 
 

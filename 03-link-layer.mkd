@@ -238,6 +238,26 @@ are very well developed.   Data moves so quickly and seamlessly that once we
 get our connection we rarely have to worry about the link layer.  It just
 works.
 
+Glossary
+--------
+
+**broadcast**: Sending a packet in a way that all the stations connected
+to a local area network will receive the packet.
+
+**gatewway**: A router that is a connection between a local area network
+and a wider area network such as the Internet.  Computers that want to send
+data outside the local network must send their packets to the gateway 
+for forwarding.
+
+**MAC Address**: An address that is assigned to a piece of network hardware 
+when the device is manufactured.
+
+**token**: A technique to allow many computers to share the same physical 
+media without collisions.  Each computer must wait to send data until it
+has received the token.
+
+
+
 Questions
 ---------
 
@@ -287,25 +307,6 @@ a) Listen to see if other computers are sending data
 b) Just start sending the data
 c) Send a message to the gateway asking for permission to transmit
 d) Wait until informed that it is your turn to transmit
-
-
-Glossary
---------
-
-**broadcast**: Sending a packet in a way that all the stations connected
-to a local area network will receive the packet.
-
-**gatewway**: A router that is a connection between a local area network
-and a wider area network such as the Internet.  Computers that want to send
-data outside the local network must send their packets to the gateway 
-for forwarding.
-
-**MAC Address**: An address that is assigned to a piece of network hardware 
-when the device is manufactured.
-
-**token**: A technique to allow many computers to share the same physical 
-media without collisions.  Each computer must wait to send data until it
-has received the token.
 
 
 

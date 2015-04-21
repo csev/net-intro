@@ -188,6 +188,24 @@ OSI model is used to help us look at and compare a wide range of
 network architectures ranging from openly developed networks to
 proprietary vendor specific networks.
 
+Glossary
+--------
+
+**abstract model**: A model and set of terminology that is used to generally
+understand a problem area and guide the development of standards and
+implementations to solve a problem.
+
+**implementation model**: A model and set of terminology that is used to 
+guide the development of standards and an implementation to solve a parciular
+problem.
+
+**ISO**: International Organization for Standardization.  A worldwide body
+that develops standards in computing, networking, and many other areas.
+
+**OSI**: Open System Interconnection.  A seven-layer model used to help organize 
+the design of various approaches to network architecture.
+
+
 Questions
 ---------
 
@@ -226,23 +244,5 @@ a) Because the TCP model does not worry about the Physical Layer
 b) Because the TCP model designers were ignored at the 1981 OSI meeting in Utrect, Netherlands
 c) Because quite often the design of Data Link and Physical layers are tightly connected for a particular technology
 d) To make the TCP model easier to understand by end users
-
-
-Glossary
---------
-
-**abstract model**: A model and set of terminology that is used to generally
-understand a problem area and guide the development of standards and
-implementations to solve a problem.
-
-**implementation model**: A model and set of terminology that is used to 
-guide the development of standards and an implementation to solve a parciular
-problem.
-
-**ISO**: International Organization for Standardization.  A worldwide body
-that develops standards in computing, networking, and many other areas.
-
-**OSI**: Open System Interconnection.  A seven-layer model used to help organize 
-the design of various approaches to network architecture.
 
 

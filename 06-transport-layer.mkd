@@ -257,6 +257,35 @@ problem into smaller sub-problems.  Each layer focuses on solving part of the
 overall problem and assumes that the other layers solve the problems they are
 supposed to solve.
 
+Glossary
+--------
+
+**acknowledgement**: When the receiving computer sends a notification back
+to the source computer indicating that data has been received.
+
+**buffering**: Temporarily holding onto data that has been sent or received until 
+the computer is sure the data is no longer needed.
+
+**flow control**: When a sending computer slows down make 
+sure not to overwhelm either the network or the destination computer.
+Flow control also causes the sending computer to increase the speed at which data 
+is sent when it is sure that the network and destination computer can hadle the
+faster data rates.
+
+**listen**: When a server application is started and ready to accept
+incoming connections from client applications.
+
+**port**: A way to allow many different server applications to be waiting 
+for incoming connections on a single computer.   Each application waits on 
+a different port.   Client applications make connections to well-known
+port numbers to make sure they are talking to the correct server application.
+
+**socket**: A software library available in many programming languages
+that makes it so that creating a network connection and exchanging data is 
+nearly as easy opening and reading a file on your computer.
+
+
+
 
 Questions
 ---------
@@ -333,35 +362,6 @@ a) 22
 b) 80
 c) 53
 d) 143
-
-
-Glossary
---------
-
-**acknowledgement**: When the receiving computer sends a notification back
-to the source computer indicating that data has been received.
-
-**buffering**: Temporarily holding onto data that has been sent or received until 
-the computer is sure the data is no longer needed.
-
-**flow control**: When a sending computer slows down make 
-sure not to overwhelm either the network or the destination computer.
-Flow control also causes the sending computer to increase the speed at which data 
-is sent when it is sure that the network and destination computer can hadle the
-faster data rates.
-
-**listen**: When a server application is started and ready to accept
-incoming connections from client applications.
-
-**port**: A way to allow many different server applications to be waiting 
-for incoming connections on a single computer.   Each application waits on 
-a different port.   Client applications make connections to well-known
-port numbers to make sure they are talking to the correct server application.
-
-**socket**: A software library available in many programming languages
-that makes it so that creating a network connection and exchanging data is 
-nearly as easy opening and reading a file on your computer.
-
 
 
 
