@@ -4,12 +4,13 @@ Introduction to Internet Technology
 This is my under-development book on introduction to network
 technology.  
 
-You can view the latest version of the book at:
+You can view or view the latest version of the book in 
+<a href="http://do1.dr-chuck.com/net-intro/EN_us/net-intro.pdf" target="_blank">PDF</a>
+or
+<a href="http://do1.dr-chuck.com/net-intro/EN_us/net-intro.epub" target="_blank">EPUB</a>
+(rebuilt hourly)
 
-    [PDF](http://do1.dr-chuck.com/net-intro/EN_us/net-intro.pdf)
-    [EPUB](http://do1.dr-chuck.com/net-intro/EN_us/net-intro.epub)
-
-To build the book, install *pandoc* and run
+To build the book yourself, install *pandoc* and run
 
     pandoc --default-image-extension=svg --epub-stylesheet=epub.css *.mkd -o x.epub
 
