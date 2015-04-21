@@ -1,27 +1,28 @@
 The OSI Model
 =============
 
-So far we have spent all of our time describing about the four-layer model
+So far we have spent all of our time describing the four-layer model
 used to design and implement the TCP/IP protocols and applications that
-make up the Internet.  This model is not the only model that we use to
-help understand how networks work.  Since the Internet uses the TCP/IP
-model, it is by far the most widely used network model.  The other
+make up the Internet.  The TCP/IP  model is not the only model that 
+we use to help understand how networks work.  The other
 model that is commonly used to make sense of network design is called
 the Open System Interconnection (OSI) model.  While the TCP/IP model
-was designed and evolved as the TCP/IP protocols were developed and
-deployed, the OSI model was the result of a careful design process
-by many networking experts that worked to develop a general approach
-to developing networked applications.
+was designed and evolved as the TCP/IP protocols were developed,
+deployed and changed, the OSI model was the result of a 
+careful design process by many networking experts that worked 
+to develop a general approach to network models.
 
-The OSI model and the TCP/IP model serve two different purposes.  The
+In today's networked world, the OSI model and the TCP/IP model serve 
+two different purposes.  The
 TCP/IP model is an *implementation* model in that it provides the
 guidance for those who would build TCP/IP compatible network hardware
-or software.  And while TCP/IP is the most widely used network
-technology, there are many different types of networks that have been
-implemented and deployed over the past 50 years.  The OSI model has
-been used to develop a common terminology that can be applied to many
-different implementation models and has led to a consistency across
-various network technology developments.
+or software.  The OSI model is more of an *abstract* model that 
+can be used to understand a wide range of network architectures.
+
+While TCP/IP is the most widely used network technology, there are 
+many different types of networks that have been implemented and deployed 
+over the past 50 years.  And as we continue to improve and evolve networking, 
+new implementation models may emerge.
 
 The OSI model has seven layers instead of the four layers of the
 TCP/IP model.  Starting at the bottom (nearest the physical
@@ -30,8 +31,8 @@ Link, (3) Network, (4) Transport, (5) Session, (6) Presentation,
 and (7) Application.  We will look at each layer in the OSI model
 in turn starting with the Physical Layer.
 
-Physical Layer
--------------------
+Physical Layer (OSI)
+--------------------
 
 The ISO Physical Layer worries about the physical attributes of the
 actual, wired, wireless, fiber optic or other connection that we will
@@ -113,6 +114,9 @@ have protocol standards where interoperability between multiple
 clients and multiple servers from different vendors will
 need to interoperate.
 
+![Comparing the TCP and OSI Models](images/iso-tcp)
+
+
 Comparing the OSI and TCP/IP Models
 -----------------------------------
 
@@ -134,10 +138,10 @@ card generally implements bother the physical and data link aspects
 of the connection in the hardware on the card.  Generally the data
 link layers are tuned to the limitations and requirements of their
 corresponding physical layers.  So in real systems, it is somewhat
-rare for a particular data ling layer to be arbitrarily paired with
+rare for a particular data link layer to be arbitrarily paired with
 any number of physical layers.  Since it is somewhat hard to separate the
-physical and data link aspects, the TCP model just combines them
-into a single layer for simplicity.
+physical and data link aspects for a particular link technology, the 
+TCP model combines them into a single layer for simplicity.
 
 Internetwork Layer (TCP/IP)
 ---------------------------
@@ -145,7 +149,7 @@ Internetwork Layer (TCP/IP)
 The one layer that maps pretty cleanly between the two models is
 the OSI Network and TCP/IP Internetwork layers.  They perform the
 same functions of creating a globally routable address
-space and creating routers to insure that packets properly find
+space and building routers to insure that packets properly find
 their way from the source to the destination across multiple hops.
 
 Transport Layer (TCP/IP)
@@ -181,4 +185,42 @@ OSI model is used to help us look at and compare a wide range of
 network architectures ranging from openly developed networks to
 proprietary vendor specific networks.
 
+Questions
+---------
+
+1. What is the primary value of the OSI network model?
+a) OSI networks are used in the southern hemisphere
+b) The OSI apporach can be use to nalyze many different network models
+c) OSI networks make better use of limited bandwidth
+d) OSI networks are more secure
+
+2. How many layers does the OSI model have?
+a) Four
+b) Six
+c) Seven
+c) Nine
+
+3. Which of the OSI layers deals with the shape of connectors for network connections?
+a) Physical
+b) Data Link
+c) Network
+d) Transport
+
+4. Which of the layers is most similar between the OSI and TCP network models?
+a) TCP Link Layer and OSI Data Link Layer
+b) TCP Internetwork Layer and OSI Network Layer
+c) TCP Transport Layer and OSI Transport Layer
+d) TCP Application Layer and OSI Session Layer
+
+5. Where for the TCP/IP Secure Sockets Layer map to in the OSI network model?
+a) Secure Data Link Layer (SDLL)
+b) Secure Network Layer (SNL)
+c) Secure Transport Layer (STL)
+d) Session and Presentation Layers
+
+6. Why does the TCP model combine the OSI Data Link and Physical Layers into a single Link Layer?
+a) Because the TCP model does not worry about the Phycisal Layer
+b) Because the TCP model designers were ignored at the 1981 OSI meeting in Utrect, Netherlands
+c) Because quite often the design of Data Link and Physical layers are tightly connected for a particlar technology
+d) To make the TCP model easier to understand by end users
 
