@@ -337,7 +337,7 @@ close your laptop in one coffee shop and re-open it using your home WiFi, your
 computer will need a different IP address.
 
 This ability for your computer to get a different IP address when it is moved
-from one network to another uses a protocol called "Dynamic Host Control
+from one network to another uses a protocol called "Dynamic Host Configuration
 Protocol" (or DHCP for short).  DCHP is pretty simple.   Going back to the link
 layer section, recall the first thing your computer does at the link level is
 ask "Is there a base station on this network?" by sending a message to a special
@@ -613,10 +613,75 @@ b) IPv6 addresses are 50% larger than IPv4 addresses
 c) IPv6 addresses are twice as large as IPv4 addresses
 d) IPv6 addresses are 10 times larger than IPv4 addresses
 
+21. What does it mean when your computer receives an IP address that starts with "169.."?
+a) Your connection to the Internet supports the Multicast protocol
+b) The gateway is mappping your local address to a global address using NAT
+c) There was no gateway available to forward your packets to the Internet
+d) The gateway for this network is a low-speed gateway with a small window size
+
+22. What does it mean when your computer receives an IP address that starts with "192.."?
+a) Your connection to the Internet supports the Multicast protocol
+b) The gateway is mappping your local address to a global address using NAT
+c) There was no gateway available to forward your packets to the Internet
+d) The gateway for this network is a low-speed gateway with a small window size
+
+23. If you were starting an Internet Service Provider in Poland, which Regional Internet Registry (RIR) would assign you a block of IP addresses.
+a) ARIN
+b) LACNIC
+c) RIPE NCC
+d) APNIC
+e) AFRNIC
+f) United Nations
 
 
+Glossary
+--------
 
+**core router**: A router that is forwarding traffic within the core of the 
+Internet.  
 
+**DHCP**: Dynamic Host Configuration Protocol.  DHCP is how a portable computer
+gets an IP address when it is moved to a new location.
+
+**edge router**: A router which provides a connection between a local network
+and the Internet.  Equivalent to "gateway".
+
+**Host Identifier**: The bottom portion of and IP address that is used to 
+identify a computer within a local area network.
+
+**IP Address**: A globally-assigned address that is assigned to a computer
+so that it can communicate with other computers that have IP addresses and
+are connected to the Internet.  To simplify routing in the core of the Internet
+IP addresses are broken into Network Numbers and Host Identifiers.  An example
+IP address might be "212.78.1.25".
+
+**NAT**: Network Address Translation.  This technique allows a single global 
+IP address to be shared by many computers on a single local area network.
+
+**Network Number**: The top portion of an IP address that is used to identify
+which local network the computer is connected to.
+
+**packet vortex**: An error situation where a packet gets into an infinite 
+loop because of errors in routing tables.
+
+**RIR**: Regional Internet Registry.  The five RIRs roughly correspond 
+to the contenents of the world and allocate IP address 
+for the major geographical areas of the world.
+
+**router tables**: Information maintained by each router that keeps track 
+of which outbound link should be used for each network number.
+
+**Time-To-Live (TTL)**: A number that is stored in every packet that 
+is reduced by one as the packet passes through each router.  When the TTL
+reaches zero, the packet is discarded.
+
+**traceroute**: A command that is available on many Linux/UNIX systems that 
+attempts to map the path taken by a packet as it moves from its source to its
+destination.  May be called "tracert" on Windows systems.
+
+**two-connected network**: A situation where there is at least two possible
+paths between any pair of nodes in a network.  A two-connected network can 
+lose any single link without losing overall connectivity.
 
 
 

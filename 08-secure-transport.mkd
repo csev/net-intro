@@ -105,7 +105,7 @@ was how to apply it in our network model.
 Secure Sockets Layer (SSL)
 --------------------------
 
-\index{Secure Socket Layer}
+\index{Secure Sockets Layer}
 \index{SSL}
 \index{TLS}
 \index{Transport Layer Security}
@@ -270,7 +270,7 @@ b) Someone captured the packets in the gateway router
 c) Someone captured the packets as they passed through a core Intenet router
 d) You have a virus on your computer that is capturing keystrokes
 
-7. With the Secure Socket Layer, where are packets encrypted and decrypted?
+7. With the Secure Sockets Layer, where are packets encrypted and decrypted?
 a) They are encrypted and decrypted as they pass through router
 b) Each physical link has its own separate encryption
 c) They are encrypted in your computer and decrypted in the server
@@ -307,6 +307,32 @@ b) By using encryption at the link layer
 c) By making sure no one could access the physical links
 d) By only using secure WiFi routers
 
+
+Glossary
+--------
+
+**assymetric key**: An approach ot encryption where one (public) key is used
+to encrypt data prior transmission and a different (private) key is used to 
+decrypt data once it is received.
+
+**certificate authority**: An organization that digitaly signs public keys 
+after assuring that the name listed in the public key is actually the person 
+who is in posession of the public key.
+
+**private key**: The portion of a key pair that is used to decrypt transmissions.
+
+**public key**: The portion of a key pair that is used to encrypt transmissions.
+
+**shared secret**: An approach to encryption that uses the same key for encryption
+and decryption.
+
+**SSL**: Secure Sockets Layer.  An approach that allows an application to 
+request that a Transport Layer connection is to be encrypted as it 
+crosses the network.  Similar to Transport Layer Security (TLS).
+
+**TLS**: Transport Layer Security. An approach that allows an application to
+request that a Transport Layer connection is to be encrypted as it
+crosses the network.  Similar to Secure Sockets Layer (SSL).
 
 
 

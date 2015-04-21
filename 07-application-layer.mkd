@@ -463,5 +463,39 @@ d) The closest gateway router starts to discard packets that
 would exceed the window size
 
 
+
+Glossary
+--------
+
+**HTML**: HyperText Markup Language.  A textual format that marks up 
+text using tags surrounded by less-than and greater then characters.
+Example HTML looks like: \<p\>This is \<strong\>nice\</em\>\</p\>.
+
+**HTTP**: HyperText Transport Protocol.  An application layer protocol
+that allows web browsers to retrieve web documents from web servers.
+
+**IMAP**: Internet Message Access Protocol.  A protocol that allows
+mail clients to login and retrieve mail from IMAP-enabled mail servers.
+
+**status code**: One aspect of the HTTP protocol that indicates to overall 
+success or failure of a request for a document.  The most well-known
+HTTP status code is "404" which is how an HTTP server tells an 
+HTTP client (i.e. a browser) that it requested a document 
+that could not be found.
+
+**telnet**: A simple client application that makes TCP connections
+to various address/port combinations and type data to be sent across
+the connection.  In the early days of the Internet, telnet was used
+to remotely log in to a computer across the network.
+
+**web browser**: A client application that you run on your computer
+to retrieve and display web pages.
+
+**web server**: A server application which allows you to retrieve various
+web documents.
+
+
+
+
 *Draft - Copyright All Rights Reserved - Charles R. Severance.
 Please do not reproduce or redistribute.*

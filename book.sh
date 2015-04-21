@@ -3,7 +3,7 @@
 rm tmp.* *.tmp *.aux
 pandoc A1-preface.mkd -o tmp.prefacex.tex
 sed < tmp.prefacex.tex 's/section{/section*{/' > tmp.preface.tex
-pandoc -s -N --toc --default-image-extension=eps -V fontsize:11pt -V documentclass:book --template=template.latex [0-9]*.mkd -o tmp.tex
+pandoc -s -N -f markdown+definition_lists --toc --default-image-extension=eps -V fontsize:11pt -V documentclass:book --template=template.latex [0-9]*.mkd -o tmp.tex
 
 latex tmp
 makeindex tmp

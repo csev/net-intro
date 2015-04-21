@@ -33,12 +33,13 @@ Allocating Domain Names
 \index{.com}
 \index{.org}
 \index{.edu}
+\index{TLD}
 If you recall from the previous section, IP addresses are allocated based on
 where you connect a new network to the Internet.   Domain names are allocated
 based on organizations that "own" the domain name.  At the top of the domain
 name hierarchy is an organization called the International
 Corporation for Assigned Network Names (ICANN).   ICANN chooses the top-level
-domains like .com, .edu, and .org and assigns those to other organizations to
+domains (TLDs) like .com, .edu, and .org and assigns those to other organizations to
 manage.  ICANN also assigns two-letter top-level domain names like .us, .za,
 .nl, and .jp to countries around the world.
 
@@ -107,7 +108,7 @@ d) IMAP - Internet Mapping Authoization Prototol
 3. Which of these is a domain address?
 a) 0f:2a:b3:1f:b3:1a
 b) 192.168.3.14
-c) www.khanacademy.com
+c) www.khanacademy.org
 d) @drchuck
 
 4. What can a domain owner do with their domain? (choose all that apply)
@@ -116,6 +117,29 @@ b) Sell subdomains
 c) Create new top-level domains
 d) Assign an IP address to the domain or subdomain
 
+
+Glossary
+--------
+
+**DNS**: Domain Name System.  A system of protocols and servers
+that allow networked applications to look up domain names
+and retrieve the corresponding IP Address for the domain name.
+
+**domain name**: A name that is assigned within a top-level domain.
+For example, khanacademy.org is a domain that is assigned within
+the ".org" top level domain.
+
+**ICANN**: International Corporation for Assigned Network Names.
+Assigns and manages the top-level domains for the Internet.
+
+**sub-domain**: A name that is created "below" a domain name.
+For example, "umich.edu" is a domain name and 
+both "www.umich.edu" and "mail.umich.edu"
+are sub-domains within "umich.edu".
+
+**TLD**: Top Level Domain.  The leftmost portion of the domain name.
+Example TLDs include ".com", ".org", and ".ru".  Recently new top 
+level domains like ".club" and ".help" were added.
 
 
 
