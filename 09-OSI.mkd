@@ -56,7 +56,7 @@ to allow for effective use of the media.  Sometimes multiple stations
 are sharing the same media (like a wireless network) and the
 data link layer defines how those stations will share the connections
 with the other systems connected to the network.  Most data link
-layers also have some form of checksum to detect and/or correct
+layers also have some form of check sum to detect and/or correct
 errors in the transmitted data.
 
 The design problems solved in the Physical and Data Link layers in
@@ -131,7 +131,7 @@ Link Layer (TCP/IP)
 
 The TCP/IP Link Layer combines the Physical and Data Link Layers
 from the OSI model.  The Physical and Data Link Layers are usually
-implemented in hardware.  Products like Ethernet, WiFI, Satellite,
+implemented in hardware.  Products like Ethernet, WiFi, Satellite,
 or Fiber Optic often are implemented in a network driver card that
 plugs into the back of a computer or router.  The network driver
 card generally implements bother the physical and data link aspects
@@ -190,7 +190,7 @@ Questions
 
 1. What is the primary value of the OSI network model?
 a) OSI networks are used in the southern hemisphere
-b) The OSI apporach can be use to nalyze many different network models
+b) The OSI approach can be use to analyze many different network models
 c) OSI networks make better use of limited bandwidth
 d) OSI networks are more secure
 
@@ -219,8 +219,8 @@ c) Secure Transport Layer (STL)
 d) Session and Presentation Layers
 
 6. Why does the TCP model combine the OSI Data Link and Physical Layers into a single Link Layer?
-a) Because the TCP model does not worry about the Phycisal Layer
+a) Because the TCP model does not worry about the Physical Layer
 b) Because the TCP model designers were ignored at the 1981 OSI meeting in Utrect, Netherlands
-c) Because quite often the design of Data Link and Physical layers are tightly connected for a particlar technology
+c) Because quite often the design of Data Link and Physical layers are tightly connected for a particular technology
 d) To make the TCP model easier to understand by end users
 

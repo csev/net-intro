@@ -25,6 +25,10 @@ using
 
 If you are on a Mac.
 
+Spell checking:
+
+    aspell -c 09-OSI.mkd
+
 The illustrations for this book are being developed by Mauro Toselli
 and Sue Blumenberg is doing copy editing.
 
