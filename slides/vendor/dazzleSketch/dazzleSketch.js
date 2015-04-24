@@ -1,25 +1,37 @@
 'use strict';
 
 // This file is Copyright 2015 - Charles R. Severance (@drchuck) and
-// made available under the MIT license.
+// is licensed under the MIT license.
 
-// Create a div the size of the window and hide it behind the content
-// until it is time to draw
+function clearSketchCanvas() {
+    // It would be nice to move this code into sketch.js
+    var ske = $('#sketchCanvas').sketch();
+    if ( ske.actions.length < 1 ) return;
+    ske.actions = [];
+    ske.action = [];
+
+    $('#sketchCanvas').sketch().redraw();
+}
+
+// Create a very large div and set up sketch on it.
+// Start the div behind the normal content
 // http://intridea.github.io/sketch.js/
 $(document).ready( function() {
-    var w = $(window).width();
-    var h = $(window).height();
-    if ( h > 30 ) h = h - 20;
-
     // Take 20px off because of the bottom bar of the browser
-    $('body').append("<div id='sketchDiv' style=\"position:fixed; top:1px; left:1px; z-index:-2\">\
-        <canvas id='sketchCanvas' height=\""+h+"px\" width=\""+(w-5)+"px\"> \
+    $('body').append("<div id=\"sketchDiv\" style=\"position:fixed; top:1px; left:1px; z-index:-2\">\
+        <canvas id=\"sketchCanvas\" height=\"3000px\" width=\"3000px\"> \
             Your browser does not support HTML5 Canvas.\
         </canvas> \
       </div>");
     $(function() {
         $('#sketchCanvas').sketch();
     });
+
+    if ( typeof Reveal !== 'undefined') {
+        Reveal.addEventListener( 'slidechanged', function( event ) {
+            clearSketchCanvas();
+        } );
+    }
 });
 
 // Global variable for pen size
@@ -44,7 +56,6 @@ var currentSketchSize = 2;
 // http://stackoverflow.com/questions/8510470/capturing-document-level-keypress-events-with-javascript
 // https://github.com/SethosII/reveal.js-jump-plugin/blob/master/jump/jump.js
 
-//
 $(document).keypress(function(event)
 {
     var isSpecialKey = event.shiftKey || event.ctrlKey || event.altKey || event.metaKey;
@@ -58,12 +69,7 @@ $(document).keypress(function(event)
         $('#sketchCanvas').sketch().set('color', newcolor);
         $('#sketchDiv').css( "zIndex", 2);
     } else if ( w == 96 && event.ctrlKey ) {
-        // It would be nice to move this code into sketch.js
-        var ske = $('#sketchCanvas').sketch();
-        ske.actions = [];
-        ske.action = [];
-
-        $('#sketchCanvas').sketch().redraw();
+        clearSketchCanvas();
         $('#sketchDiv').css( "zIndex", -2);
     } else if ( w == 31 && event.ctrlKey ) { // Minus key
         if ( currentSketchSize > 0 ) {
