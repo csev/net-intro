@@ -197,7 +197,7 @@ waits until the token comes back to it.  If none of the stations have any data
 to send, the token is moved from one computer to the next computer as quickly
 as possible.
 
-![Communicating with a Token](sketchnote/Token)
+![Communicating with a Token](../sketchnote/Token)
 
 A group of people sitting around a meeting could communicate without ever
 interrupting each other by having a small ball that they pass around in

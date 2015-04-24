@@ -21,7 +21,7 @@ The engineers who built the first internets broke the overall problem into
 four basic sub-problems that could be worked on independently by different
 groups of engineers.
 
-![The Four-Layer Model](images/layers)
+![The Four-Layer Model](../images/layers)
 
 \index{TCP Model}
 \index{Link Layer}
@@ -95,7 +95,7 @@ this means that another computer has started transmitting at the same time
 the transmission.  The two computers that collided wait different lengths of time
 to re-try their transmissions to reduce the chances of a second collision.
 
-![Carrier Sense/Collision Detection](sketchnote/Link_CSMA)
+![Carrier Sense/Collision Detection](../sketchnote/Link_CSMA)
 
 When your computer finishes sending a packet of data, it pauses to
 give other computers that have been waiting a chance to send data.
@@ -175,7 +175,7 @@ middle of the journey work to get your message closer to its destination.
 But just like when you are traveling, unexpected problems or delays can come up
 that require a change in plans as your packets are sent across the network.
 
-![A Multi-Step Trip](sketchnote/Multiple_step_trip)
+![A Multi-Step Trip](../sketchnote/Multiple_step_trip)
 
 Routers work hard to inform each other about any kind of traffic delay or
 network outage so that packets can be switched from a route that is no longer

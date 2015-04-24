@@ -30,7 +30,7 @@ between its source and destination computers, you would see a link header,
 an IP header, and a Transport Control Protocol (TCP) header along with the
 actual data in the packet:
 
-![Headers and Data](images/headers)
+![Headers and Data](../images/headers)
 
 The link header is removed when the packet is received on one link and a
 new link header is added when the packet is sent out on the next link on its
@@ -94,7 +94,7 @@ received data.  When the sending computer receives this message, it "backs up"
 and re-sends data from the last position that the receiving computer had
 successfully received.
 
-![Waiting for a Lost Packet](sketchnote/Transport)
+![Waiting for a Lost Packet](../sketchnote/Transport)
 
 The combination of the receiving computer acknowledging received data, not
 allowing the transmitting computer to get too far ahead (window size), and the
@@ -120,7 +120,7 @@ of the message have been sent and acknowledged by the destination computer.
 The sending computer has sent more six packets more and then stopped because it
 reached its window size.
 
-![Buffering in the Transport Layer](images/transport-buffer)
+![Buffering in the Transport Layer](../images/transport-buffer)
 
 The transport layer on the receiving computer has received and acknowledged ten
 packets and delivered them to the receiving application.^[We talk about the
@@ -154,7 +154,7 @@ the two endpoints "sockets".   Making a connection to an application running on
 a server, sending data to the server, and receiving data from the server is
 generally as easy as reading and writing a file.
 
-![What is a Socket?](sketchnote/Socket)
+![What is a Socket?](../sketchnote/Socket)
 
 \index{programming sockets}
 The code below is all it takes in the Python
@@ -202,7 +202,7 @@ the web server running on the remote computer.  So a client application not only
 needs to know which host to connect to, it also needs to choose a particular
 application to interact with on that host computer.
 
-![TCP Ports](sketchnote/Ports)
+![TCP Ports](../sketchnote/Ports)
 
 We use a concept called "ports" to allow a client application to choose which
 server application it wants to interact with.   Ports are like telephone

@@ -18,7 +18,7 @@ The client portion of the application makes connections to the server applicatio
 retrieves information, and shows it to the user.   These applications
 use the transport layer on each of their computers to exchange data.
 
-![Client/Server Applications](sketchnote/Client_Server)
+![Client/Server Applications](../sketchnote/Client_Server)
 
 To browse a web address like www.khanacademy.org, you must have a
 web application running on your computer.  When you type an address into your
@@ -66,7 +66,7 @@ set of rules.  We use this word to describe networked applications, because
 without precise rules, applications have no way to establish and manage a
 conversation.   Computers like precision.
 
-![Application Protocols](sketchnote/Protocols)
+![Application Protocols](../sketchnote/Protocols)
 
 \index{RFC-7230 HTTP}
 Many diferent networked applications are found in the application layer
@@ -76,7 +76,7 @@ protocols are intricate and complex.   The protocol that describes how a
 web browser communicates with a web server is described in a number of large
 documents starting with this document:
 
-[https://tools.ietf.org/html/rfc7230](https://tools.ietf.org/html/rfc7230)
+[https://tools.ietf.org/html/rfc7230](../https://tools.ietf.org/html/rfc7230)
 
 \index{HyperText Transport Protocol}
 \index{HTTP}
@@ -112,7 +112,7 @@ ever built.
 The "telnet" application was first developed in 1968 and was developed
 according to one of the earliest standards for the Internet:
 
-[https://tools.ietf.org/html/rfc15](https://tools.ietf.org/html/rfc15)
+[https://tools.ietf.org/html/rfc15](../https://tools.ietf.org/html/rfc15)
 
 \index{ARPANET}
 \index{NSFNet}
@@ -200,7 +200,7 @@ version 1.0 of the HTTP protocol because it is simpler than HTTP 1.1.
 Then we send a blank line by pressing "return" or "enter" to indicate
 we are done with our request.
 
-![Hacking HTTP By Hand](sketchnote/Hacking_HTTP)
+![Hacking HTTP By Hand](../sketchnote/Hacking_HTTP)
 
 \index{HTML}
 \index{HyperText Markup Language}
@@ -274,7 +274,7 @@ When we looked at the transport layer, we talked about the "window size" which
 was the amount of data that the transport layer on sending computer will send
 before pausing to wait for an acknowledgement.
 
-![Buffering in the Transport Layer](images/transport-buffer)
+![Buffering in the Transport Layer](../images/transport-buffer)
 
 In this figure, we see a message, broken into packets with some of the 
 packets sent and acknowledged.  Six packets have been sent but not yet
@@ -298,7 +298,7 @@ When the window fills up, the web server is paused until the transport
 layer on the destination computer has started to receive and acknowledge
 packets.
 
-![Window Size](sketchnote/Windows_Size)
+![Window Size](../sketchnote/Windows_Size)
 
 As the transport layer on the destination computer starts to receive packets,
 reconstruct the stream of data, and acknowledge packets, it delivers the
@@ -311,7 +311,7 @@ If we redraw our picture of packets in the transport layer, adding both
 of the application layers where the packets are in the middle of an image,
 now it looks like this:
 
-![Buffering in the Application and Transport Layers](images/application-transport-buffer)
+![Buffering in the Application and Transport Layers](../images/application-transport-buffer)
 
 The web server is reading the image file and sending it as a stream to the web
 browser as quickly as it can send the data.  The source transport layer has

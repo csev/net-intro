@@ -13,7 +13,7 @@ adapting to problems, outages, errors, lost data, and many other unforeseen
 problems.  The Internet is designed to be flexible and adapt to whatever
 problem are encountered.
 
-![The Four-Layer Model](images/layers)
+![The Four-Layer Model](../images/layers)
 
 In order to build an overall solution that works at scale, it was necessary to
 break the Internet engineering problems down into four distinct layers:

@@ -117,7 +117,7 @@ have protocol standards where interoperability between multiple
 clients and multiple servers from different vendors will
 need to interoperate.
 
-![Comparing the TCP and OSI Models](images/iso-tcp)
+![Comparing the TCP and OSI Models](../images/iso-tcp)
 
 
 Comparing the OSI and TCP/IP Models

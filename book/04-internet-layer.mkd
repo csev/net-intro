@@ -16,7 +16,7 @@ packet taking its "trip" to another country, the "walk", "bus", "train", and "pl
 can be thought of as different link layers like WiFi, Ethernet, fiber optic,
 and satellite.
 
-![Travelling Packets](sketchnote/Traveling_Packets)
+![Travelling Packets](../sketchnote/Traveling_Packets)
 
 At each point during the trip, you (or your packet) are being transported using a
 shared medium.  There might be hundreds of other people on the same bus, train,
@@ -159,7 +159,7 @@ arrive for those network numbers, the router goes through the route
 discovery process again, this time asking all the neighboring routers
 except the ones that can no longer be contacted due to the broken link.
 
-![Dynamic Routing](sketchnote/Routing)
+![Dynamic Routing](../sketchnote/Routing)
 
 Packets are routed more slowly for a while as router tables are rebuilt
 that reflect the new network configuration, but after a while things are
@@ -234,7 +234,7 @@ approximation of the best outbound link for a particular network number.  But
 what if we had four routers with routing table entries that formed an endless
 loop?
 
-![Routing Vortex](images/router-loop)
+![Routing Vortex](../images/router-loop)
 
 Each of the routers thinks it knows the best outbound link for IP addresses
 that start with "212.78".  But somehow the routers are a little confused and
@@ -284,7 +284,7 @@ way to its destination.
 With this approach, traceroute builds up an approximate path that your packets
 are taking across the network.
 
-![Traceroute from Michigan to Stanford](images/traceroute-stanford)
+![Traceroute from Michigan to Stanford](../images/traceroute-stanford)
 
 It took 14 hops to get from Ann Arbor, Michigan to Palo Alto, California.
 The packets passed through Kansas, Texas, Los Angeles, and Oakland.  This
@@ -292,7 +292,7 @@ might not be the best route between the two cities if you were driving a car
 or taking a train, but on that day for packets between the two cities this
 was the best route on the Internet.
 
-![Notifications of Dropped Packets](sketchnote/Dropped_packet)
+![Notifications of Dropped Packets](../sketchnote/Dropped_packet)
 
 You can also see how long it took for packets to make it from the source to
 each router, and then from the source to the destination.   A millisecond (ms)
@@ -309,7 +309,7 @@ If you run a traceroute for a connection that includes an undersea cable, you
 can see how fast data moves under the sea.  Here is a traceroute between the
 University of Michigan and Peking University in China.
 
-![Traceroute from Michigan to Peking University](images/traceroute-peking)
+![Traceroute from Michigan to Peking University](../images/traceroute-peking)
 
 You can see when the packet is encountering a long undersea cable in steps
 seven and eight.  The time goes from less than 1/10 of a second to nearly 1/4 of
@@ -359,7 +359,7 @@ stopped using this address".  Your computer sees another computer with a link
 address other than its own using the IP address that your computer thinks is
 assigned to it.
 
-![Getting an IP Address Via DHCP](sketchnote/Dhcp)
+![Getting an IP Address Via DHCP](../sketchnote/Dhcp)
 
 But most of the time this dynamic IP address assignment (DHCP) works perfectly.
 You open your laptop and in a few seconds you are connected and can use the

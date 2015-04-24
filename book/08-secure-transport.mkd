@@ -54,7 +54,7 @@ receiving parties know.  With the secret, it is easy to decrypt the received
 data, but if you received the data without possessing the secret, it would be
 difficult (effectively impossible) to decrypt the message.
 
-![Shared Versus Asymmetric Keys](sketchnote/Shared_vs_Asymmetric)
+![Shared Versus Asymmetric Keys](../sketchnote/Shared_vs_Asymmetric)
 
 In the early days of the Internet, two people could send encrypted email to each
 other by one person first calling the other person on the phone and giving them
@@ -115,7 +115,7 @@ protocols or architecture.  The solution was to add an optional partial layer
 between the transport layer and the application layer.   We called this
 partial layer the Secure Sockets Layer (SSL) or Transport Layer Security (TLS).
 
-![Where Encryption and Decryption Happens](sketchnote/Encr_Decr)
+![Where Encryption and Decryption Happens](../sketchnote/Encr_Decr)
 
 When an application requested that the transport layer make a connection to
 a remote host, it could request that the connection either be encrypted or
@@ -164,7 +164,7 @@ to encrypt transmissions, there is still a problem of knowing if the
 public key that you have received when you connected to a server is
 really from the organization it claims to be from.
 
-![Certificate Authorities and Public Keys](sketchnote/Certificate_Authorities3)
+![Certificate Authorities and Public Keys](../sketchnote/Certificate_Authorities3)
 
 Perhaps you think you are connecting to www.amazon.com but a rogue computer
 intercepts your traffic, claiming to be www.amazon.com and giving you a public
