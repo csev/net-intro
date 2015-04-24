@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>reveal.js - Slide Backgrounds</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="vendor/reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="vendor/reveal.js/css/theme/serif.css" id="theme">
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="vendor/reveal.js/lib/css/zenburn.css">
+		<style type="text/css" media="screen">
+			.slides section.has-dark-background,
+			.slides section.has-dark-background h2 {
+				color: #fff;
+			}
+			.slides section.has-light-background,
+			.slides section.has-light-background h2 {
+				color: #222;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+<section>
+<pre><code>if ( i < 100 ) {
+   echo("small");
+}
+</code></pre>
+</section>
+
+<section>
+<div style='float:left;width:50%;' class='centered'>
+<pre><code>if ( i < 100 ) {
+   echo("small");
+}
+</code></pre>
+</div>
+<div style='float:right;width:50%;padding-right:0px;'>
+<img src="../images/iso-tcp.svg" >
+</div>
+<br clear="all">
+</section>
+<section data-background="../sketchnote/Traveling_Packets.png" 
+    data-background-size="95%">
+</section>
+<section data-background="../images/iso-tcp.svg"
+    data-background-size="95%">
+</section>
+			</div>
+		</div>
+
+		<script src="vendor/reveal.js/lib/js/head.min.js"></script>
+		<script src="vendor/reveal.js/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				center: true,
+				// rtl: true,
+
+				transition: 'linear',
+				// transitionSpeed: 'slow',
+				// backgroundTransition: 'slide'
+                // Syntax highlight for <code> elements
+                dependencies: [
+                    { src: 'vendor/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                ],
+    
+
+			});
+
+		</script>
+
+        <script src="vendor/jquery/jquery-1.11.2.min.js"></script>
+        <script src="vendor/sketch/sketch.js"></script>
+        <script src="vendor/dazzleSketch/dazzleSketch.js"></script>
+
+	</body>
+</html>
