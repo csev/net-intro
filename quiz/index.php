@@ -20,6 +20,14 @@ if ( isset($_POST['cancel']) ) {
 
 $quizzes = json_decode(file_get_contents("quizzes.json"), true);
 
+?>
+<html>
+<head>
+<title>Quiz</title>
+</head>
+<body style="font-family: sans-serif;">
+<?php
+
 
 if ( ! isset($_REQUEST['quiz']) ) {
     echo("<h1>Quizzes</h1>");
