@@ -1,5 +1,5 @@
-
 import os
+import re
 
 incolumn = False
 indiv = False
@@ -44,6 +44,8 @@ for f in sorted(os.listdir(os.getcwd())):
     eatblank = False
     for line in lines:
         pieces = line.split()
+        linklist = re.findall('\[(.*)\]\((.*)\)',line)
+
         if line.startswith('<section') :
             finish()
             inhtml = True
@@ -59,10 +61,17 @@ for f in sorted(os.listdir(os.getcwd())):
         elif line.strip() == '===2' :
             print('</div>', file=outf)
             print('<div style="float:right;width:50%;padding-right:0px;">', file=outf)
+        elif line.startswith('![') and len(linklist) == 1 :
+            print('<img src="'+linklist[0][1].strip()+'" alt="'+linklist[0][0].strip()+'">', file=outf)
         elif line.startswith('!') :
             print('<img src="'+line[1:].strip()+'">', file=outf)
         elif inhtml :
             print(line.rstrip(), file=outf)
+        elif line.startswith('#[') and len(linklist) == 1 :
+            finish()
+            print('<section data-background="'+linklist[0][1].strip()+'"', file=outf)
+            print('   data-background-size="contain">', file=outf)
+            print('</section>', file=outf)
         elif line.startswith('# ..') :
             finish()
             print('<section data-background="'+pieces[1]+'"', file=outf)

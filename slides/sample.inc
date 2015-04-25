@@ -9,20 +9,19 @@
 
     while(1)
 
-# ../sketchnote/Distance_Comm.png
+#[Distance Communication](../sketchnote/Distance_Comm.png)
+
 
 # Two columns
 
 ===1
 
-! ../sketchnote/Packets.png
+![Packets](../sketchnote/Packets.svg)
 
 ===2
 
     print('hello world')
     while(1)
-
-# ../sketchnote/Store_Fwd.png
 
 <section>
 ===1
@@ -31,7 +30,7 @@
 }
 </code></pre>
 ===2
-! ../images/iso-tcp.svg
+![Layers](../images/iso-tcp.svg)
 </section>
 
 <section data-background="../images/iso-tcp.svg"
