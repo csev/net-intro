@@ -349,6 +349,8 @@ send before waiting for an acknowledgement.
 Questions
 ---------
 
+You can take this quiz online at http://www.net-intro.com/quiz/
+
 1. Why do engineers use a "model" to organize their approach to 
 solving a large and complex problem?
 a) Because it allows them to build something small and test it in a wind tunnel

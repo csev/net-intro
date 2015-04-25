@@ -290,6 +290,8 @@ nearly as easy opening and reading a file on your computer.
 Questions
 ---------
 
+You can take this quiz online at http://www.net-intro.com/quiz/
+
 1. What is the primary problem the Transport (TCP) layer supposed to solve?
 a) Move packets across multiple hops from a source to destination computer
 b) Move packets across a single physical connection

@@ -54,6 +54,10 @@ for use in high schools, community college classes, early college classes, or
 adult education.  We hope to give anyone with an interest insight into how
 the network they use every day actually works.
 
+There is supporting material for this book at
+
+http://www.net-intro.com/
+
 If you like the book, let us know.  Send us a tweet with your thoughts.
 
     Charles R. Severance (@drchuck)

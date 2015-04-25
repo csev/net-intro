@@ -261,6 +261,8 @@ has received the token.
 Questions
 ---------
 
+You can take this quiz online at http://www.net-intro.com/quiz/
+
 1. When using a WiFi network to talk to the Internet, where does your computer
 send its packets?
 a) A gateway

@@ -209,6 +209,8 @@ the design of various approaches to network architecture.
 Questions
 ---------
 
+You can take this quiz online at http://www.net-intro.com/quiz/
+
 1. What is the primary value of the OSI network model?
 a) OSI networks are used in the southern hemisphere
 b) The OSI approach can be use to analyze many different network models

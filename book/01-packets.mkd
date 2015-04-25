@@ -292,6 +292,8 @@ different organizations.
 Questions
 ---------
 
+You can take this quiz online at http://www.net-intro.com/quiz/
+
 1. What did early telephone operators do?
 a) Maintained cell phone towers
 b) Connected pairs of wires to allow people to talk

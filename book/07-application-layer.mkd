@@ -397,6 +397,8 @@ web documents.
 Questions
 ---------
 
+You can take this quiz online at http://www.net-intro.com/quiz/
+
 1. Which layer is right below the Application layer?
 a) Transport
 b) Internetworking

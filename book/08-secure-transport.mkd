@@ -256,6 +256,8 @@ crosses the network.  Similar to Secure Sockets Layer (SSL).
 Questions
 ---------
 
+You can take this quiz online at http://www.net-intro.com/quiz/
+
 1. How do we indicate that we want a secure connection when using a
 web browser?
 a) Use https:// in the URL

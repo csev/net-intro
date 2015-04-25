@@ -112,6 +112,8 @@ level domains like ".club" and ".help" were added.
 Questions
 ---------
 
+You can take this quiz online at http://www.net-intro.com/quiz/
+
 1. What does the Domain Name System accomplish?
 a) It allows network connect computers to use a textual name for a computer
 and look up its IP address

@@ -533,6 +533,8 @@ lose any single link without losing overall connectivity.
 Questions
 ---------
 
+You can take this quiz online at http://www.net-intro.com/quiz/
+
 1. What is the goal of the Internetworking Layer?
 a) Move packets across multiple hops from a source to destination computer
 b) Move packets across a single physical connection
