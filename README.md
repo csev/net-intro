@@ -12,5 +12,8 @@ or
 <a href="http://do1.dr-chuck.com/net-intro/EN_us/net-intro.epub" target="_blank">EPUB</a>
 (rebuilt hourly)
 
+You can explore the quizzes from the end-of-chapter questions 
+<a href="http://www.net-intro.com/quiz/" target="_blank">here</a>.
+
 You can check out this repo and find the book materials in the
 book folder.
