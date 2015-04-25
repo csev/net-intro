@@ -134,7 +134,7 @@ b) 192.168.3.14
 c) www.khanacademy.org
 d) @drchuck
 
-4. What can a domain owner do with their domain? (choose all that apply)
+4. Which of these is *not* something a domain owner do with their domain?
 a) Create subdomains
 b) Sell subdomains
 c) Create new top-level domains
