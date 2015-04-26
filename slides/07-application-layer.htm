@@ -31,21 +31,81 @@
 		<div class="reveal">
 			<div class="slides">
 <section>
-<h2>Introduction</h2>
+<h2>Application Layer</h2>
 </section>
-<section data-background="../sketchnote/Distance_Comm.png"
+<section data-background="../sketchnote/Client_Server.png"
    data-background-size="contain">
 </section>
-<section data-background="../sketchnote/Comp_Comm.png"
+<section data-background="../sketchnote/Protocols.png"
    data-background-size="contain">
 </section>
-<section data-background="../sketchnote/Store_Fwd.png"
+<section>
+<h2>Exploring the HTTP Protocol (Fail)</h2>
+
+<pre><code>telnet www.dr-chuck.com 80
+
+telnet www.dr-chuck.com 80
+Trying 198.251.66.43...
+Connected to www.dr-chuck.com.
+Escape character is '^]'.
+HELP
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>501 Method Not Implemented</title>
+...
+</body></html>
+Connection closed by foreign host.
+</code></pre>
+</section>
+<section>
+<h2>Exploring the HTTP Protocol</h2>
+
+<pre><code>telnet www.dr-chuck.com 80
+Trying 198.251.66.43...
+Connected to www.dr-chuck.com.
+Escape character is '^]'.
+GET http://www.dr-chuck.com/page1.htm HTTP/1.0
+
+HTTP/1.1 200 OK
+Last-Modified: Sun, 19 Jan 2014 14:25:43 GMT
+Content-Length: 131
+Content-Type: text/html
+
+<h1>The First Page</h1>
+<p>
+If you like, you can switch to the
+<a href="http://www.dr-chuck.com/page2.htm">
+Second Page</a>.
+</p>
+Connection closed by foreign host.
+</code></pre>
+</section>
+<section data-background="../sketchnote/Hacking_HTTP.png"
    data-background-size="contain">
 </section>
-<section data-background="../sketchnote/Packets.png"
+<section>
+<h2>The IMAP Protocol for Retrieving Mail</h2>
+
+<pre><code>https://tools.ietf.org/html/rfc3501
+
+C: A142 SELECT INBOX
+S: * 172 EXISTS
+S: * 1 RECENT
+S: * OK [UNSEEN 12] Message 12 is first unseen
+S: * OK [UIDVALIDITY 3857529045] UIDs valid
+S: * OK [UIDNEXT 4392] Predicted next UID
+S: * FLAGS (\Answered \Flagged \Deleted \Seen \Draft)
+S: * OK [PERMANENTFLAGS (\Deleted \Seen \*)] Limited
+S: A142 OK [READ-WRITE] SELECT completed
+</code></pre>
+</section>
+<section data-background="../images/transport-buffer.svg"
    data-background-size="contain">
 </section>
-<section data-background="../sketchnote/Conn_around_world_HOP.png"
+<section data-background="../sketchnote/Windows_Size.png"
+   data-background-size="contain">
+</section>
+<section data-background="../images/application-transport-buffer.svg"
    data-background-size="contain">
 </section>
 

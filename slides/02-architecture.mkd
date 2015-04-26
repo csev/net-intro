@@ -1,0 +1,7 @@
+#  Network Architecture
+#[The Four-Layer Model](../images/layers.svg)
+#[Carrier Sense/Collision Detection](../sketchnote/Link_CSMA.png)
+#[A Multi-Step Trip](../sketchnote/Multiple_step_trip.png)
+#  The Transport Layer (TCP)
+#  The Application Layer
+#  Stacking the Layers

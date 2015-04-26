@@ -33,12 +33,12 @@ top = open('template_top.htm').read()
 bottom = open('template_bottom.htm').read()
 
 for f in sorted(os.listdir(os.getcwd())):
-    if not f.endswith(".inc") :
+    if not f.endswith(".mkd") :
         continue
 
     b = f[:-4]
     print(f,b)
-    lines = open(b+'.inc').read().split('\n')
+    lines = open(b+'.mkd').read().split('\n')
     outf = open(b+'.htm','w')
     outf.write(top);
     eatblank = False

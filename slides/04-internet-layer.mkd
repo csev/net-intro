@@ -1,0 +1,20 @@
+#  Internetworking Layer (IP)
+#[Travelling Packets](../sketchnote/Traveling_Packets.png)
+#  Internet Protocol (IP) Addresses
+
+    212.78.1.25
+
+    2001:0db8:85a3:0042:1000:8a2e:0370:7334
+
+    Network Number: 212.78
+    Host Identifier: 1.25
+
+    212.78.*.*
+
+#[Dynamic Routing](../sketchnote/Routing.png)
+#[Routing Vortex](../images/router-loop.svg)
+#[Traceroute from Michigan to Stanford](../images/traceroute-stanford.svg)
+#[Notifications of Dropped Packets](../sketchnote/Dropped_packet.png)
+#[Traceroute from Michigan to Peking University](../images/traceroute-peking.svg)
+#[Getting an IP Address Via DHCP](../sketchnote/Dhcp.png)
+#  Global IP Address Allocation

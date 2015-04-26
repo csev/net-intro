@@ -31,23 +31,42 @@
 		<div class="reveal">
 			<div class="slides">
 <section>
-<h2>Introduction</h2>
+<h2>Transport Layer</h2>
 </section>
-<section data-background="../sketchnote/Distance_Comm.png"
+<section data-background="../images/headers.svg"
    data-background-size="contain">
 </section>
-<section data-background="../sketchnote/Comp_Comm.png"
+<section data-background="../sketchnote/Transport.png"
    data-background-size="contain">
 </section>
-<section data-background="../sketchnote/Store_Fwd.png"
+<section data-background="../images/transport-buffer.png"
    data-background-size="contain">
 </section>
-<section data-background="../sketchnote/Packets.png"
+<section data-background="../sketchnote/Socket.png"
    data-background-size="contain">
 </section>
-<section data-background="../sketchnote/Conn_around_world_HOP.png"
+<section>
+<h2>Clients, Servers, and Sockets</h2>
+
+<pre><code>import socket
+
+mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+mysock.connect(('www.py4inf.com', 80))
+mysock.send('GET http://www.py4inf.com/code/romeo.txt HTTP/1.0\n\n')
+
+while True:
+    data = mysock.recv(512)
+    if ( len(data) < 1 ) :
+        break
+    print data
+
+mysock.close()
+</code></pre>
+</section>
+<section data-background="../sketchnote/Ports.png"
    data-background-size="contain">
 </section>
+
 
 			</div>
 		</div>

@@ -1,0 +1,17 @@
+#  Link Layer
+#  Sharing the Air
+
+    0f:2a:b3:1f:b3:1a
+
+    From: 0f:2a:b3:1f:b3:1a
+    To: ff:ff:ff:ff:ff:ff
+    Data: Who is the MAC-Gateway
+        for this network?
+
+    From: 98:2f:4e:78:c1:b4
+    To: 0f:2a:b3:1f:b3:1a
+    Data: I am the gateway
+       Welcome to my network
+
+#  Courtesy and Coordination
+#[Communicating with a Token](../sketchnote/Token.png)

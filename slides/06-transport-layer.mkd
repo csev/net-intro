@@ -1,0 +1,23 @@
+#  Transport Layer
+#[Headers and Data](../images/headers.svg)
+#[Waiting for a Lost Packet](../sketchnote/Transport.png)
+#[Buffering in the Transport Layer](../images/transport-buffer.png)
+#[What is a Socket?](../sketchnote/Socket.png)
+#  Clients, Servers, and Sockets
+
+    import socket
+
+    mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    mysock.connect(('www.py4inf.com', 80))
+    mysock.send('GET http://www.py4inf.com/code/romeo.txt HTTP/1.0\n\n')
+
+    while True:
+        data = mysock.recv(512)
+        if ( len(data) < 1 ) :
+            break
+        print data
+
+    mysock.close()
+
+#[TCP Ports](../sketchnote/Ports.png)
+
