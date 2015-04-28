@@ -23,6 +23,7 @@ $quizzes = json_decode(file_get_contents("quizzes.json"), true);
 ?>
 <html>
 <head>
+<?php require_once('../head.php'); ?>
 <title>Quiz</title>
 </head>
 <body style="font-family: sans-serif;">
@@ -85,8 +86,10 @@ foreach($thequiz['questions'] as $question) {
 }
 echo("</ol>\n");
 
-echo('<input type="submit">'."\n");
-echo('<input type="submit" name="cancel" value="Cancel">'."\n");
+echo('<input class="btn btn-normal" type="submit">'."\n");
+echo('<input class="btn btn-danger" type="submit" name="cancel" value="Cancel">'."\n");
 echo("</form>\n");
 
 // echo("<pre>\n"); var_dump($thequiz); echo("</pre>\n");
+
+require_once('../javascript.php');
