@@ -31,7 +31,7 @@ $quizzes = json_decode(file_get_contents("quizzes.json"), true);
 
 
 if ( ! isset($_REQUEST['quiz']) ) {
-    echo("<h1>Quizzes</h1>");
+    echo('<h1>Quizzes <small>(<a href="../index.php">Back to Net-Intro</a>)</small></h1>');
     echo("<ol>\n");
     foreach ($quizzes as $file => $quiz ) {
         $f = str_replace(".mkd","",$file);
