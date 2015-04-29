@@ -9,9 +9,14 @@
       <!-- Jumbotron -->
       <div class="jumbotron">
         <h1>Net-Intro is under construction</h1>
-        <p class="lead">This site is being built as a one-stop shop for Open Educational Resources to learn about TCP/IP network technolgies.  
-         You can watch this evolve in my 
-<a href="https://github.com/csev/net-intro/commits/master" target="_blank">GitHub repository</a>.  Feel free to submit a pull request if you find something 
+        <p class="lead">This site is being built 
+as a source of Open Educational Resources to support my upcoming textbook on 
+TCP/IP network technologies.  
+I am also exploring a completely new approach to bulding remixable 
+OER materials.
+You can watch this evolve in my 
+<a href="https://github.com/csev/net-intro/commits/master" target="_blank">GitHub repository</a>.  
+Feel free to submit a pull request if you find something 
 that needs fixing.  Thanks in advance.</p>
       </div>
 
