@@ -12,7 +12,7 @@
         <p class="lead">This site is being built 
 as a source of Open Educational Resources to support my upcoming textbook on 
 TCP/IP network technologies.  
-I am also exploring a completely new approach to bulding remixable 
+I am also exploring a new approach to bulding remixable 
 OER materials.
 You can watch this evolve in my 
 <a href="https://github.com/csev/net-intro/commits/master" target="_blank">GitHub repository</a>.  
