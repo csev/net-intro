@@ -9,8 +9,9 @@
       <!-- Jumbotron -->
       <div class="jumbotron">
         <h1>Net-Intro is under construction</h1>
-        <p class="lead">This site is being built as a one-stop shop to learn about TCP/IP network technolgies.  
-    Here are a few early links.</p>
+        <p class="lead">This site is being built as a one-stop shop for Open Educational Resources to learn about TCP/IP network technolgies.  
+         You can watch this evolve in my 
+<a href="https://github.com/csev/net-intro/commits/master" target="_blank">GitHub repository</a>
       </div>
 
       <!-- Example row of columns -->
@@ -41,16 +42,29 @@ are available as quizzes that can be taken online.
         </div>
       </div>
 
-      <!-- Site footer -->
+      <!-- Site footer 
       <footer class="footer">
         <center>
-         <p>You can watch the magic happen in my net-intro
-<a href="https://github.com/csev/net-intro/commits/master" target="_blank">GitHub repository</a>
-         <img src="baracade.gif">
         </center>
-      </footer>
-</div>
+      </footer> -->
 
 <?php require_once('javascript.php'); ?>
+
+<hr/>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'net-intro';
+    var disqus_shortname = 'net-intro';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
 
 </body>
