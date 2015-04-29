@@ -11,7 +11,8 @@
         <h1>Net-Intro is under construction</h1>
         <p class="lead">This site is being built as a one-stop shop for Open Educational Resources to learn about TCP/IP network technolgies.  
          You can watch this evolve in my 
-<a href="https://github.com/csev/net-intro/commits/master" target="_blank">GitHub repository</a>
+<a href="https://github.com/csev/net-intro/commits/master" target="_blank">GitHub repository</a>.  Feel free to submit a pull request if you find something 
+that needs fixing.  Thanks in advance.</p>
       </div>
 
       <!-- Example row of columns -->
@@ -21,7 +22,8 @@
           <p>There is a cool textbook under construction with nice
             sketchnote images.  When completed, it will be released
             under a CC-BY-NC license.</p>
-          <p><a class="btn btn-primary" href="http://do1.dr-chuck.com/net-intro/EN_us/net-intro.pdf" target="blank">Net-Intro Book &raquo;</a>
+          <p><a class="btn btn-primary" href="http://do1.dr-chuck.com/net-intro/EN_us/net-intro.pdf" target="blank">Net-Intro PDF &raquo;</a>
+          <a class="btn btn-primary" href="http://www-personal.umich.edu/~csev/books/net-intro/audio/" target="blank">Net-Intro Audio &raquo;</a>
         </div>
         <div class="col-lg-4">
           <h2>Slides</h2>
