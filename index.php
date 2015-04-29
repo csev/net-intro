@@ -22,8 +22,10 @@ that needs fixing.  Thanks in advance.</p>
           <p>There is a cool textbook under construction with nice
             sketchnote images.  When completed, it will be released
             under a CC-BY-NC license.</p>
-          <p><a class="btn btn-primary" href="http://do1.dr-chuck.com/net-intro/EN_us/net-intro.pdf" target="blank">Net-Intro PDF &raquo;</a>
-          <a class="btn btn-primary" href="http://www-personal.umich.edu/~csev/books/net-intro/audio/" target="blank">Net-Intro Audio &raquo;</a>
+          <p><a class="btn btn-primary" href="http://do1.dr-chuck.com/net-intro/EN_us/net-intro.pdf" target="_blank">PDF &raquo;</a>
+          <a class="btn btn-primary" href="http://do1.dr-chuck.com/net-intro/EN_us/net-intro.epub" target="_blank">EPUB &raquo;</a>
+          <a class="btn btn-primary" href="http://www-personal.umich.edu/~csev/books/net-intro/audio/" target="_blank">Audio &raquo;</a>
+</p>
         </div>
         <div class="col-lg-4">
           <h2>Slides</h2>
@@ -33,7 +35,8 @@ and
 <a href="http://csev.github.io/dazzleSketch/" target="_blank">DazzleSketch</a>.
 For a fun time, Press CTRL-1 and hold down your mouse 
 to scribble on the slides.</p>
-          <p><a class="btn btn-primary" href="slides/index.php" role="button">View Sample Slides &raquo;</a></p>
+          <p><a class="btn btn-primary" href="slides/index.php" role="button">View Sample Slides &raquo;</a>
+          </p>
        </div>
         <div class="col-lg-4">
           <h2>Quizzes</h2>
