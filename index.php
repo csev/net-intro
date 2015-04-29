@@ -31,7 +31,7 @@ and
 <a href="http://csev.github.io/dazzleSketch/" target="_blank">DazzleSketch</a>.
 For a fun time, Press CTRL-1 and hold down your mouse 
 to scribble on the slides.</p>
-          <p><a class="btn btn-primary" href="slides/sample.htm" role="button">View Sample Slides &raquo;</a></p>
+          <p><a class="btn btn-primary" href="slides/index.php" role="button">View Sample Slides &raquo;</a></p>
        </div>
         <div class="col-lg-4">
           <h2>Quizzes</h2>
