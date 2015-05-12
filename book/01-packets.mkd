@@ -89,7 +89,7 @@ When the computers were in the same building, the building owner could run wires
 to connect them.  If the computers were in the same town, the owners of
 the computers generally had to lease wires from the telephone companies to
 connect their computers.  They often would have the phone company connect 
-the wires together in their ventral office so that it was not necessary for one
+the wires together in their central office so that it was not necessary for one
 computer to "dial" the other computer to send data.  These leased lines were 
 convenient for computer communications because they were "always on", but they were
 also quite expensive because they were used 24 hours a day.
