@@ -18,7 +18,7 @@ To engineer and build a system this complex, engineers try to break a single
 challenging problem into a set of smaller problems that can be solved
 independently and then put back together to solve the original large problem.
 The engineers who built the first internets broke the overall problem into
-four basic sub-problems that could be worked on independently by different
+four basic subproblems that could be worked on independently by different
 groups.
 
 ![The Four-Layer Model](../images/layers)
