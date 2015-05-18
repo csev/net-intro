@@ -4,42 +4,42 @@ Application Layer
 \index{Application Layer}
 \index{Layer!Application}
 We are now at the top layer of our four-layer model that governs the design of
-the current Internet.   The Transport layer makes use of the Internetwork and
+the current Internet. The Transport layer makes use of the Internetwork and
 Link layers to reliably deliver a message or stream of data across the
-Internet.   The Application layer is both the source and destination of these
-messages.   The simplest and most common examples of networked applications
+Internet. The Application layer is both the source and destination of these
+messages. The simplest and most common examples of networked applications
 would be a web browser or a mail reading application.
 
 It is important to understand that two parts are required for a networked
-application to function.   The architecture for a networked application is
-called "client/server".   The server portion of the application runs somewhere
+application to function. The architecture for a networked application is
+called "client/server". The server portion of the application runs somewhere
 on the Internet and has the information that users want to view or interact with.
 The client portion of the application makes connections to the server application,
-retrieves information, and shows it to the user.   These applications
-use the transport layer on each of their computers to exchange data.
+retrieves information, and shows it to the user. These applications
+use the Transport layer on each of their computers to exchange data.
 
 ![Client/Server Applications](../sketchnote/Client_Server)
 
 To browse a web address like www.khanacademy.org, you must have a
-web application running on your computer.  When you type an address into your
+web application running on your computer. When you type an address into your
 web browser, it connects to the appropriate web server, retrieves
 pages for you to view, and then shows you the pages.
 
 The web browser on your computer sends a request to connect to
-www.khanacademy.org.  Your computer looks up the domain name to find the
+www.khanacademy.org. Your computer looks up the domain name to find the
 corresponding IP address for the server and makes a transport connection to
 that IP address, then begins to request data from the server over that
-network connection.  When the data is received, the web browser shows it to you.
+network connection. When the data is received, the web browser shows it to you.
 Sometimes web browsers display a small animated icon to let you know that the
 data is being retrieved across the network.
 
 On the other end of the connection is another application called a
-"web server".  The web server program is always up and waiting for incoming
-connections.  So when you want to see a web page, you are connecting to a
+"web server". The web server program is always up and waiting for incoming
+connections. So when you want to see a web page, you are connecting to a
 server application that is already running and waiting for your connection.
 
-In a sense, the Transport, Internetwork, and Link layers along with the Domain
-Name System, are like a phone network for networked applications. They "dial
+In a sense, the Transport, Internetwork, and Link layers, along with the Domain
+Name System, are like a telephone network for networked applications. They "dial
 up" different server applications on the network and have "conversations"
 with those applications to exchange data.
 
@@ -49,39 +49,39 @@ Application Layer Protocols
 \index{client}
 \index{server}
 Just like people talking on telephones, each pair of network
-applications needs a set of rules that govern the conversation.   In most
+applications needs a set of rules that govern the conversation. In most
 cultures, when your phone rings and you pick up the phone you say 'Hello'.
 Normally the person who made the call (the client person) is silent until the
-person who picked up the phone (the server person) says "Hello".  If you have
+person who picked up the phone (the server person) says "Hello". If you have
 ever called someone who does not follow this simple rule, it can be quite
-confusing.  You probably would assume that the phone call was not working, hang
+confusing. You probably would assume that the connection was not working, hang
 up, and retry the call.
 
 \index{protocol}
-A set of rules that govern how we communicate is called a "protocol".  The
+A set of rules that govern how we communicate is called a "protocol". The
 definition of the word protocol is "a rule which describes how an activity
-should be performed, especially in the field of diplomacy."  The idea is
+should be performed, especially in the field of diplomacy." The idea is
 that in formal situations, we should behave according to a precise
-set of rules.  We use this word to describe networked applications, because
+set of rules. We use this word to describe networked applications, because
 without precise rules, applications have no way to establish and manage a
-conversation.   Computers like precision.
+conversation. Computers like precision.
 
 ![Application Protocols](../sketchnote/Protocols)
 
 \index{RFC-7230 HTTP}
-Many diferent networked applications are found in the application layer
+Many diferent networked applications are found in the Application layer
 and it is important that each networked application have a well-documented
-protocol so that all servers and clients can interoperate.  Some of these
-protocols are intricate and complex.   The protocol that describes how a
+protocol so that all servers and clients can interoperate. Some of these
+protocols are intricate and complex. The protocol that describes how a
 web browser communicates with a web server is described in a number of large
-documents starting with this document:
+documents starting with this one:
 
 [https://tools.ietf.org/html/rfc7230](../https://tools.ietf.org/html/rfc7230)
 
 \index{HyperText Transport Protocol}
 \index{HTTP}
 The formal name of the protocol between web clients and web servers is the
-"HyperText Transport Protocol" or "HTTP" for short.  When you put "http:" or
+"HyperText Transport Protocol" or "HTTP" for short. When you put "http:" or
 "https:" on the beginning of a URL that you type into the browser, you are
 indicating that you would like to retrieve a document using the HTTP protocol.
 
@@ -90,12 +90,12 @@ find the exact text of what a web client is supposed to send to a web server:
 
     GET http://www.example.org/pub/WWW/TheProject.html HTTP/1.1
 
-One of the reasons that the HTTP is so successful is that it is relatively
-simple compared to most client/server protocols.   Even though the basic use of
+One of the reasons that HTTP is so successful is that it is relatively
+simple compared to most client/server protocols. Even though the basic use of
 HTTP is relatively simple, there is a lot of detail that allows web clients and
 servers communicate efficiently and transfer a wide range of information and
-data.   Six different documents describe the HTTP protocol, in a total of 305
-pages.  That might seem like a lot of detail, but the key in designing protocols
+data. Six different documents describe the HTTP protocol, in a total of 305
+pages. That might seem like a lot of detail, but the key in designing protocols
 is to think through all possible uses of the protocol and describe each scenario
 carefully.
 
@@ -104,12 +104,12 @@ Exploring the HTTP Protocol
 
 In this section we will manually exercise the HTTP protocol by pretending to
 be a web browser and sending HTTP commands to a web server to retrieve data.
-To play with the HTTP protocol, we will use one of the earliest applications
-ever built.
+To play with the HTTP protocol, we will use one of the earliest Internet
+applications ever built.
 
 \index{RFC-15 Telnet}
 \index{telnet}
-The "telnet" application was first developed in 1968 and was developed
+The "telnet" application was first developed in 1968, and was developed
 according to one of the earliest standards for the Internet:
 
 [https://tools.ietf.org/html/rfc15](../https://tools.ietf.org/html/rfc15)
@@ -117,37 +117,37 @@ according to one of the earliest standards for the Internet:
 \index{ARPANET}
 \index{NSFNet}
 This standard is only five pages long and at this point, you probably can
-easily read and understand most of what is in the document.   The telnet
+easily read and understand most of what is in the document. The telnet
 command is so old that it is effectively a "dinosaur", as it comes from
-"pre-historic" times in terms of the age of the Internet.  The Internet
+"prehistoric" times in terms of the age of the Internet. The Internet
 was created in 1985 by the NSFNet project and the precursor to the NSFNet
-called the ARPANET was brought up in 1969.  Telnet was designed and built
+called the ARPANET was brought up in 1969. Telnet was designed and built
 even before the first TCP/IP network was in production.
 
 Interestingly, the telnet command is still present in most modern operating
-systems.  You can access telnet from the terminal (command line) in Macintosh
-and Linux.  The telnet command was also present in Windows 95 through Windows
-XP, but is not included in later versions of Windows.  If you have a later
-version of Windows, you can download and install a telnet client so you can
+systems. You can access telnet from the terminal (command line) in Macintosh
+and Linux. The telnet command was also present in Windows 95 through Windows
+XP, but is not included in later versions of Windows. If you have a later
+version of Windows, you can download and install a telnet client to
 do the examples in this section.
 
-Telnet is a simple application.  You run telnet
-from the command line (or terminal) and type the following command:
+Telnet is a simple application.  Run telnet from the command line (or
+terminal) and type the following command:
 
     telnet www.dr-chuck.com 80
 
 \index{TCP ports}
 \index{port 80}
 The first parameter is a domain name (an IP address would work here as well)
-and a port to connect to on that host.   We use the port to indicate which
-application server we would like to connect to.  Port 80 is where we typically
-expect to find an HTTP (web) server application on a host.  If there is no web
-server listening on port 80, our connection will time out and fail.  But if
+and a port to connect to on that host. We use the port to indicate which
+application server we would like to connect to. Port 80 is where we typically
+expect to find an HTTP (web) server application on a host. If there is no web
+server listening on port 80, our connection will time out and fail. But if
 there is a web server, we will be connected to that web server and whatever we
-type on our keyboard will be sent directly to the server.   At this point, we
+type on our keyboard will be sent directly to the server. At this point, we
 need to know the HTTP protocol and type the commands precisely as expected.
-If we don't know the protocol, the web server will not be too friendly.  Here
-is an example of things not going well.   What you type is in bold:
+If we don't know the protocol, the web server will not be too friendly. Here
+is an example of things not going well:
 
     telnet www.dr-chuck.com 80
     Trying 198.251.66.43...
@@ -164,11 +164,11 @@ is an example of things not going well.   What you type is in bold:
 We type the telnet command in the terminal requesting a connection to port 80
 (the web server) on the host www.dr-chuck.com.  You can see as our transport
 layer is looking up the domain name, finding that the actual address is
-"198.251.66.43", and then making a successful connection to that server.  Once
+"198.251.66.43", and then making a successful connection to that server. Once
 we are connected, the server waits for us to type a command followed by
-the enter or return key.  Since we don't know the protocol, we type
-"HELP" and enter.  The server is not pleased, and gives us an error message and
-then closes the connection.  We do not get a second chance--if we do not know
+the enter or return key. Since we don't know the protocol, we type
+"HELP" and enter. The server is not pleased, gives us an error message, and
+then closes the connection. We do not get a second chance. If we do not know
 the protocol, the web server does not want to talk to us.
 
 \index{Hacking HTTP}
@@ -195,40 +195,40 @@ to request a document using the correct syntax:
     Connection closed by foreign host.
 
 We make the connection to the web browser again using telnet, then we send a
-GET command that indicates which document we want to retrieve.  We use
+GET command that indicates which document we want to retrieve. We use
 version 1.0 of the HTTP protocol because it is simpler than HTTP 1.1.
-Then we send a blank line by pressing "return" or "enter" to indicate
+Then we send a blank line by pressing "return" or "enter" to indicate that
 we are done with our request.
 
 ![Hacking HTTP By Hand](../sketchnote/Hacking_HTTP)
 
 \index{HTML}
 \index{HyperText Markup Language}
-Since we have sent the proper request, the host responds first with a
+Since we have sent the proper request, the host responds with a
 series of headers describing the document, followed by a blank line, then it
 sends the actual document.  
 
 \index{HTTP status code!200}
 \index{HTTP status code!403}
 \index{HTTP status code!404}
-The headers communicate metadata (data bout data) about the document that we
-have asked to retrieve.  For example, the first line contains a status code.
-In this example a status code of "200" means that things went well.  A status
+The headers communicate metadata (data about data) about the document that we
+have asked to retrieve. For example, the first line contains a status code.
+In this example, the status code of "200" means that things went well. A status
 code of "404" in the first line of the headers indicates that the requested 
-document was "not found".  A status code of "403" indicates that the document
+document was "not found". A status code of "403" indicates that the document
 has moved to a new location.
 
 This is a HyperText Markup Language (HTML) document, so it is marked up
-with tags like \<h1\> and \<p\>.   When your browser receives
-the document in HTML format, it looks at the markup in the document and
-presents you a formatted version of the document.
+with tags like \<h1\> and \<p\>. When your browser receives
+the document in HTML format, it looks at the markup in the document, interprets
+it, and presents you a formatted version of the document.
 
 The IMAP Protocol for Retrieving Mail
 -------------------------------------
 
 The HTTP protocol is only one of many client/server application protocols used on the
-Internet.  Another common protocol is used so that a mail application running
-on your computer can retrieve mail from a central server.   Since your personal
+Internet. Another common protocol is used so that a mail application running
+on your computer can retrieve mail from a central server. Since your personal
 computer might not be turned on at all times, when mail is sent to you it is
 sent to a server and stored on that server until you turn on your computer and
 retrieve any new email.
@@ -242,11 +242,11 @@ RFC:
 
     https://tools.ietf.org/html/rfc3501
 
-IMAP is a more complicated protocol than the web protocol so we won't be able
-to use the telnet command to fake the protocol.  But if you were going to
+IMAP is a more complicated protocol than the web protocol, so we won't be able
+to use the telnet command to fake the protocol. But if you were going to
 develop a mail reading application, you could carefully read this document and
 develop code to have a successful conversation with a standards-compliant IMAP
-server.  Here is a simple example from section 6.3.1 of the above document
+server. Here is a simple example from section 6.3.1 of the above document
 showing what the client (C:) sends and how the server (S:) responds:
 
     C: A142 SELECT INBOX
@@ -260,7 +260,7 @@ showing what the client (C:) sends and how the server (S:) responds:
     S: A142 OK [READ-WRITE] SELECT completed
 
 The messages that are sent by the client and server are not designed to be
-viewed by an end user so they are not particularly talkative.   These messages
+viewed by an end user so they are not particularly descriptive. These messages
 are precisely formatted and are sent in a precise order so that they can be
 generated and read by networked computer applications on each end of the
 connection.
@@ -270,80 +270,80 @@ Flow Control
 
 \index{flow control}
 \index{window size}
-When we looked at the transport layer, we talked about the "window size" which
-was the amount of data that the transport layer on sending computer will send
+When we looked at the Transport layer, we talked about the "window size", which
+was the amount of data that the Transport layer on the sending computer will send
 before pausing to wait for an acknowledgement.
 
 ![Buffering in the Transport Layer](../images/transport-buffer)
 
-In this figure, we see a message, broken into packets with some of the 
-packets sent and acknowledged.  Six packets have been sent but not yet
-acknowledged and the sending transport layer has reached the limit of
-the transmit window so it is pausing until it receives an acknowledgement
-from the receiving computer's transport layer.  The receiving transmit
-layer has received three packets, one of which is out of order.
+In this figure, we see a message broken into packets, with some of the 
+packets sent and acknowledged. Six packets have been sent but not yet
+acknowledged and the sending Transport layer has reached the limit of
+the transmit window, so it is pausing until it receives an acknowledgement
+from the receiving computer's Transport layer. The receiving computer
+has received three packets, one of which is out of order.
 
 When we were looking at this example before from the point of view of the
-transport layer, we ignored where the packets to be sent were coming from
-and where the packets were going to in the receiving computer.  Now that
-we are looking at the application layer, we can add the two applications
+Transport layer, we ignored where the packets to be sent were coming from
+and where the packets were going to in the receiving computer. Now that
+we are looking at the Application layer, we can add the two applications
 that are the source and the destination of the stream of data.
 
 Let's assume the web browser has made a transport connection to the web server
-and has started downloading an image file.  The web server has opened the
-image file and is sending the data from the file to its transport layer as
-quickly as possible.  But the transport layer must follow the rules of
+and has started downloading an image file. The web server has opened the
+image file and is sending the data from the file to its Transport layer as
+quickly as possible. But the Transport layer must follow the rules of
 window size, so it can only send a certain amount of data at a time.
-When the window fills up, the web server is paused until the transport
+When the window fills up, the web server is paused until the Transport
 layer on the destination computer has started to receive and acknowledge
 packets.
 
 ![Window Size](../sketchnote/Windows_Size)
 
-As the transport layer on the destination computer starts to receive packets,
+As the Transport layer on the destination computer starts to receive packets,
 reconstruct the stream of data, and acknowledge packets, it delivers the
 reconstructed stream of packets to the web browser application display on
-the user's screen.  Sometimes on a slow connection you can see your browser
-"paint" pictures as the data is downloaded.  On a fast connection the data
+the user's screen. Sometimes on a slow connection you can see your browser
+"paint" pictures as the data is downloaded. On a fast connection the data
 comes so quickly that the pictures appear instantaneously.
 
-If we redraw our picture of packets in the transport layer, adding both
+If we redraw our picture of packets in the Transport layer, adding both
 of the application layers where the packets are in the middle of an image,
 now it looks like this:
 
 ![Buffering in the Application and Transport Layers](../images/application-transport-buffer)
 
 The web server is reading the image file and sending it as a stream to the web
-browser as quickly as it can send the data.  The source transport layer has
+browser as quickly as it can send the data.  The source Transport layer has
 broken the stream into packets and used IP to send the packets to the
-destination computer.  The transport layer has sent six packets and has stopped
+destination computer. The Transport layer has sent six packets and has stopped
 sending because it has reached its window size and paused the web server.
-Three of those six packets have made it to the transport layer on the
+Three of those six packets have made it to the Transport layer on the
 destination computer and three of the packets are still making their way
-across the Internet.  As the destination transport layer pieces the stream
+across the Internet. As the destination Transport layer pieces the stream
 back together, it both sends an acknowledgement and delivers the data to the
-receiving application (the web browser).  The web browser reconstructs
+receiving application (the web browser). The web browser reconstructs
 the image and displays it on the user's display as the data is received.
 
 A key thing to notice in this picture is that the transport layers do not keep
-the packets for the entire file.  They only retain packets that are "in transit"
-and unacknowledged.  Once packets are acknowledged and delivered to the
+the packets for the entire file. They only retain packets that are "in transit"
+and unacknowledged. Once packets are acknowledged and delivered to the
 destination application, there is no reason for either the source or destination
-transport layer to hold on to the packets.
+Transport layer to hold on to the packets.
 
 When the acknowledgment flows back from the destination computer to the source
-computer, the transport layer on the source computer un-pauses the web server
+computer, the Transport layer on the source computer unpauses the web server
 application and the web server continues to read data from the file and send it
-to the source transport layer for transmission.
+to the source Transport layer for transmission.
 
 This ability to start and stop the sending application to make sure we send
 data as quickly as possible without sending data so fast to clog up the
-Internet is called "flow control".  The applications are not responsible for
-flow control--they just try to send or receive data as quickly as possible and
+Internet is called "flow control". The applications are not responsible for
+flow control, they just try to send or receive data as quickly as possible and
 the two transport layers start and stop the applications as needed based on the
 speed and reliability of the network.
 
-Once again, we see a higher-level layer that uses the capabilities of
+Once again, we see how a higher-level layer uses the capabilities of
 the lower layer in the model to make its job much simpler.
 
 Summary
@@ -351,15 +351,15 @@ Summary
 
 The entire purpose of the lower three layers (Transport, Internetwork, and
 Link) is to make it so that applications running in the Application layer can
-focus on solving the application problem that needs to be solved and leave
-virtually all of the extreme complexity of moving data across a network to be
+focus the application problem that needs to be solved and leave
+virtually all of the complexity of moving data across a network to be
 handled by the lower layers of the network model.
 
 Because this approach makes it so simple to build networked applications, we
 have seen a wide range of networked applications including web browsers, mail
 applications, networked video games, network-based telephony applications, and
-many others.  And what is even more exciting is that it is easy to experiment
-and build whole new types of networked applications that solve problems that
+many others. And what is even more exciting is that it is easy to experiment
+and build whole new types of networked applications to solve problems that
 have not yet been imagined.
 
 Glossary
@@ -369,28 +369,27 @@ Glossary
 text using tags surrounded by less-than and greater then characters.
 Example HTML looks like: \<p\>This is \<strong\>nice\</strong\>\</p\>.
 
-**HTTP**: HyperText Transport Protocol.  An application layer protocol
+**HTTP**: HyperText Transport Protocol.  An Application layer protocol
 that allows web browsers to retrieve web documents from web servers.
 
 **IMAP**: Internet Message Access Protocol.  A protocol that allows
-mail clients to login and retrieve mail from IMAP-enabled mail servers.
+mail clients to log into and retrieve mail from IMAP-enabled mail servers.
 
-**status code**: One aspect of the HTTP protocol that indicates to overall 
-success or failure of a request for a document.  The most well-known
-HTTP status code is "404" which is how an HTTP server tells an 
-HTTP client (i.e. a browser) that it requested a document 
-that could not be found.
+**status code**: One aspect of the HTTP protocol that indicates the overall 
+success or failure of a request for a document. The most well-known
+HTTP status code is "404", which is how an HTTP server tells an 
+HTTP client (i.e., a browser) that it the requested document 
+could not be found.
 
 **telnet**: A simple client application that makes TCP connections
-to various address/port combinations and type data to be sent across
+to various address/port combinations and allows typed data to be sent across
 the connection.  In the early days of the Internet, telnet was used
 to remotely log in to a computer across the network.
 
 **web browser**: A client application that you run on your computer
 to retrieve and display web pages.
 
-**web server**: A server application which allows you to retrieve various
-web documents.
+**web server**: An application that deliver (serves up) Web pages
 
 
 
@@ -424,7 +423,7 @@ a) Whether the client or server starts talking first
 b) The format of the commands and responses exchanged across a socket
 c) How the window size changes as data is sent across a socket
 d) How data is represented as it is sent across the network to 
-assue interoperability.
+assure interoperability.
 
 5. Which of these is an Application layer protocol?
 a) HTTP
