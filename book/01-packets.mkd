@@ -231,7 +231,7 @@ overall cost of communicating across a large geographical area could be spread
 across a large number of connecting groups and individuals. Normally,
 packets would find the shortest path between the source and destination, but if
 a link on that path was an overloaded or broken, the routers could cooperate and
-re-route traffic to take slightly longer paths that would get packets from a
+reroute traffic to take slightly longer paths that would get packets from a
 source to a destination as quickly as possible.
 
 The core of the Internet is a set of cooperating routers that move packets from
