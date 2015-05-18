@@ -5,24 +5,24 @@ The Domain Name System
 \index{DNS}
 The Domain Name System lets you access websites by name, so you don't have to
 keep a list of numeric Internet Protocol (IP) addresses like "212.78.1.25" for
-all the servers that you need to communicate with.  IP address are determined
-by where your computer connects to the Internet.  When you have a portable
+all the servers that you need to communicate with. IP address are determined
+by where your computer connects to the Internet. When you have a portable
 computer and you move from one location to another, you get
-a new IP address at each new location.  Since no one connects to your portable
+a new IP address at each new location. Since no one connects to your portable
 computer, it does not matter if your IP address changes from time to time. But
 since so many people connect to a web server, it would be inconvenient if
-the server moved to a new location and needed to change its IP address.   While
+the server moved to a new location and needed to change its IP address. While
 servers do need an assigned IP address, we also give servers a textual Domain
 Name address like www.khanacademy.org.
 
 When your computer makes a connection to a system using a Domain Name address,
 the first thing your computer does is look up the IP address that corresponds
-to the Domain Name.   Then your computer makes the connection using the IP
-address.   Adding the separate step of looking up the IP address for a DNS
+to the Domain Name. Then your computer makes the connection using the IP
+address. Adding the separate step of looking up the IP address for a DNS
 address also makes it easier to move a server from one location to another.
 The server is given a new IP address and the entry for the domain address is
-updated.   Once the DNS entry is updated, new requests for the domain name are
-given the new IP address.  Since end users access most servers using domain
+updated. Once the DNS entry is updated, new requests for the domain name are
+given the new IP address. Since end users access most servers using domain
 names and never see the IP address, a server can be moved to a new network
 connection without affecting the end user's ability to access the server.
 
@@ -35,10 +35,10 @@ Allocating Domain Names
 \index{.edu}
 \index{TLD}
 If you recall from the previous section, IP addresses are allocated based on
-where you connect a new network to the Internet.   Domain names are allocated
-based on organizations that "own" the domain name.  At the top of the domain
+where you connect a new network to the Internet. Domain names are allocated
+based on organizations that "own" the domain name. At the top of the domain
 name hierarchy is an organization called the International
-Corporation for Assigned Network Names (ICANN).   ICANN chooses the top-level
+Corporation for Assigned Network Names (ICANN). ICANN chooses the top-level
 domains (TLDs) like .com, .edu, and .org and assigns those to other organizations to
 manage.  ICANN also assigns two-letter top-level domain names like .us, .za,
 .nl, and .jp to countries around the world.
@@ -46,12 +46,12 @@ manage.  ICANN also assigns two-letter top-level domain names like .us, .za,
 ![Domain Names](../sketchnote/DNS)
 
 Once a domain name is assigned to an organization, the controlling organization
-is allowed to assign subdomains within the domain.  As an example, the .edu
-top-level domain is assigned to the Educause organization.   Educause assigns
-domains like umich.edu to higher education institutions.   Once the University
+is allowed to assign subdomains within the domain. As an example, the .edu
+top-level domain is assigned to the Educause organization. Educause assigns
+domains like umich.edu to higher education institutions. Once the University
 of Michigan is given control of umich.edu, it can make its own choices for
-subdomains within its new domain.  Domains ending in .com and .org can be purchased
-by individuals.   The individual owners of those domains are allowed to manage
+subdomains within its new domain. Domains ending in .com and .org can be purchased
+by individuals. The individual owners of those domains are allowed to manage
 their domain and create subdomains under it for their own use or use by others.
 
 Reading Domain Names
@@ -71,16 +71,16 @@ For Domain Names, we read from right to left:
     Narrow       <---       Broad
 
 The most general part of this domain name is ".edu" which means higher
-education institutions.  The subdomain "umich.edu" is a particular higher
+education institutions. The subdomain "umich.edu" is a particular higher
 education institution.
 
 Summary
 -------
 
 While the Domain Name System is not one of our four layers in the model, it is
-an important part of making the Internet easier to use.  Domain Names allow
+an important part of making the Internet easier to use. Domain Names allow
 end users to use symbolic names for servers instead of numeric Internet
-Protocol addresses.  By adding a service that maps Domain Names to IP
+Protocol addresses. By adding a service that maps Domain Names to IP
 addresses, we can move servers from one Internet connection to another
 connection without requiring users to manually change their configurations
 to connect to a server.
@@ -99,14 +99,14 @@ the ".org" top level domain.
 **ICANN**: International Corporation for Assigned Network Names.
 Assigns and manages the top-level domains for the Internet.
 
-**sub-domain**: A name that is created "below" a domain name.
+**subdomain**: A name that is created "below" a domain name.
 For example, "umich.edu" is a domain name and 
 both "www.umich.edu" and "mail.umich.edu"
-are sub-domains within "umich.edu".
+are subdomains within "umich.edu".
 
 **TLD**: Top Level Domain.  The leftmost portion of the domain name.
-Example TLDs include ".com", ".org", and ".ru".  Recently new top 
-level domains like ".club" and ".help" were added.
+Example TLDs include ".com", ".org", and ".ru". Recently, new
+top-level domains like ".club" and ".help" were added.
 
 
 Questions
@@ -115,8 +115,8 @@ Questions
 You can take this quiz online at http://www.net-intro.com/quiz/
 
 1. What does the Domain Name System accomplish?
-a) It allows network connect computers to use a textual name for a computer
-and look up its IP address
+a) It allows network-connected computers to use a textual name for
+a computer and look up its IP address
 b) It keeps track of the GPS coordinates of all servers
 c) It allows Regional Internet Registries (RIRs) to manage IP addresses
 on the various continents
@@ -136,7 +136,7 @@ b) 192.168.3.14
 c) www.khanacademy.org
 d) @drchuck
 
-4. Which of these is *not* something a domain owner do with their domain?
+4. Which of these is *not* something a domain owner can do with their domain?
 a) Create subdomains
 b) Sell subdomains
 c) Create new top-level domains
