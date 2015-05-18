@@ -4,43 +4,42 @@ Secure Transport Layer
 \index{Transport Layer}
 \index{Layer!Transport}
 In the early days of the Internet, networks were small and all of the
-routers were in secure locations.  As long as each computer connected
+routers were in secure locations. As long as each computer connected
 to the Internet protected itself from unwanted incoming connections,
 it was felt that there was no need to also encrypt traffic while it was
-crossing the network.  So the link, internetwork, and transport layers
-were not designed with encryption in mind.  They were focused on the
+crossing the network. So the Link, Internetwork, and Transport layers
+were not designed with encryption in mind. They were focused on the
 efficient movement of data and solving the problems of a large-scale
 shared distributed network.
 
 But as the use of the Internet grew rapidly in the late 1980s and literally
 exploded when the Web became mainstream in 1994, security and encryption of
-network traffic became very important problems to solve.  Once we started
+network traffic became very important problems to solve. When we began
 using the Internet to conduct commerce and credit cards and bank account
 numbers were being routinely sent across the network, security and encryption
-became essential.  And when we started using wireless technologies like WiFi,
+became essential. And when we started using wireless technologies like WiFi,
 security became necessary for even the simplest uses of the Internet.
 
 \index{physical security}
-There are two general approaches to securing network activity.  The first
+There are two general approaches to securing network activity. The first
 makes sure that all of the network hardware (routers and links) is in
 physically secure locations so it is not possible for someone to sneak in
-and monitor traffic while it is crossing the Internet.  This approach is not
+and monitor traffic while it is crossing the Internet. This approach is not
 practical for hundreds of thousands of network routers owned and operated by
-many different organizations.   While you might be able to ensure that some of
+many different organizations. While you might be able to ensure that some of
 the router operators adhered to strict security procedures and policies,
-sooner or later a mistake will be made.  And once WiFi was added to the mix
+sooner or later a mistake will be made. And once WiFi was added to the mix
 and your packets went over radio waves, a network attacker could just sit
-in a coffee shop and monitor packets as they passed through the air.
+in a coffee shop and intercept packets as they passed through the air.
 
 \index{encrypt}
 \index{decrypt}
 Under these conditions, the only reasonable solution is to encrypt data in
 your computer before it is sent across its first physical link, and then decrypt
-the data in the destination computer after it arrives.  Using this approach, we
-assume that the attacker can see all of the packets that you send, but since we
-have effective encryption, they cannot decrypt the data that they have
-captured.   The encryption also guarantees that there is no way to alter the
-data you are sending while it is crossing the Internet.
+the data in the destination computer after it arrives. Using this approach, we
+assume that an attacker can see all of the packets that you send, but they
+cannot decrypt the data that they have captured. The encryption also guarantees
+that there is no way to alter your data while it is crossing the Internet.
 
 Two Kinds of Secrets
 --------------------
@@ -48,17 +47,17 @@ Two Kinds of Secrets
 \index{shared secret}
 The approach to encrypting messages so that anyone might see the
 encrypted message while it is being transported but only the correct receiver
-of the message can decrypt the message is well understood.  The traditional
+of the message can decrypt the message is well understood. The traditional
 way to encrypt transmissions is using a secret that only the sending and
-receiving parties know.  With the secret, it is easy to decrypt the received
+receiving parties know. With the secret, it is easy to decrypt the received
 data, but if you received the data without possessing the secret, it would be
-difficult (effectively impossible) to decrypt the message.
+effectively impossible to decrypt the message.
 
 ![Shared Versus Asymmetric Keys](../sketchnote/Shared_vs_Asymmetric)
 
 In the early days of the Internet, two people could send encrypted email to each
 other by one person first calling the other person on the phone and giving them
-the decryption secret.  This worked well when there were only a few users on the
+the decryption secret. This worked well when there were only a few users on the
 network, but could not scale to situations where a company might have millions
 of customers and could not afford to make a phone call to each customer to
 establish a shared secret before they could make a purchase.
@@ -66,8 +65,8 @@ establish a shared secret before they could make a purchase.
 It might seem like a good idea to distribute the shared secrets over the
 Internet, but if we assume that the attackers are monitoring and capturing all
 network traffic, they could also capture the unencrypted message that contained
-the shared secret.   At that point it would be trivial for the attacker to
-use the shared secret to decrypt a message.  And even worse, the attacker could
+the shared secret.  At that point it would be trivial for the attacker to
+use the shared secret to decrypt a message. And even worse, the attacker could
 intercept a message, delay it, then decrypt it, change and re-encrypt it, and
 send the modified message back on its way.  The receiving computer would
 decrypt the message and never know that it had been modified by an
@@ -80,22 +79,22 @@ network traffic between trillions of pairs of networked computers.
 \index{private key}
 \index{public key}
 The solution to this problem came in the 1970s when the concept of asymmetric
-key encryption was discovered.  The idea of asymmetric key encryption is that
-one key is used to encrypt the message and another key is used to decrypt the
-message.  The computer that will be receiving the encrypted data chooses both
-the encryption key and decryption key.    Then the encryption key is sent to
-the computer that will be sending the data.   The sending computer encrypts the
-data and sends it across the network.  The receiving computer uses the
+key encryption was developed. The idea of asymmetric key encryption is that
+one key is used to encrypt the message and another key is used to decrypt it.
+The computer that will be receiving the encrypted data chooses both
+the encryption key and decryption key. Then the encryption key is sent to
+the computer that will be sending the data. The sending computer encrypts the
+data and sends it across the network. The receiving computer uses the
 decryption key to decrypt the data.
 
 We call the encryption key the "public" key because it is can be widely shared.
 We call the decryption key the "private" key because it never leaves the
-computer where it was created.  Another name for asymmetric keys is
+computer where it was created. Another name for asymmetric keys is
 public/private keys.
 
 The whole process is designed so that if an attacker has the public key (which
 was sent unencrypted) and the encrypted text, it is virtually impossible to
-decrypt the encrypted data.  There is a lot of math with large prime numbers
+decrypt the encrypted data. There is a lot of math with large prime numbers
 that makes it hard to guess the private key from the public key and encrypted
 data.
 
@@ -111,25 +110,25 @@ Secure Sockets Layer (SSL)
 \index{Transport Layer Security}
 Since we were adding network security nearly 20 years after the Internet
 protocols were developed, it was important not to break any existing Internet
-protocols or architecture.  The solution was to add an optional partial layer
-between the transport layer and the application layer.   We called this
+protocols or architecture. The solution was to add an optional partial layer
+between the Transport layer and the Application layer. We called this
 partial layer the Secure Sockets Layer (SSL) or Transport Layer Security (TLS).
 
 ![Where Encryption and Decryption Happens](../sketchnote/Encr_Decr)
 
-When an application requested that the transport layer make a connection to
+When an application requested that the Transport layer make a connection to
 a remote host, it could request that the connection either be encrypted or
-unencrypted.  If an encrypted connection was requested, the transport layer
-encrypted the data before breaking the stream into packets.  This meant that
-the transport layer, internetwork layer, and physical layers could still
+unencrypted. If an encrypted connection was requested, the Transport layer
+encrypted the data before breaking the stream into packets. This meant that
+the Transport layer, Internetwork layer, and physical (link) layers could still
 perform exactly the same way whether the packets were encrypted or
 non-encrypted. The applications making the connections were also spared the
 details of how encryption and decryption worked.
 
-Since encryption was a simple and transparent addition to the transport layer,
-there was no need to change routers that operate at the internetwork and
-link layers.  There was no need to change any link layer hardware to make
-encryption work.  And applications did not need to be modified except to
+Since encryption was a simple and transparent addition to the Transport layer,
+there was no need to change routers that operate at the Internetwork and
+Link layers. There was no need to change any Link layer hardware to make
+encryption work. And applications did not need to be modified except to
 request that a connection be encrypted when appropriate.
 
 Encrypting Web Browser Traffic
@@ -137,14 +136,14 @@ Encrypting Web Browser Traffic
 
 \index{https}
 Since web browsers and web servers operate at the application layer, we barely
-notice when we are using encrypted or unencrypted connections.  Web browsers
+notice when we are using encrypted or unencrypted connections. Web browsers
 use the URL convention of replacing "http:" with "https:" to indicate that the
-browser is to communicate with the web server using the secure transport layer
-instead of the unencrypted transport layer.
+browser is to communicate with the web server using the Secure Transport Layer
+instead of the unencrypted Transport layer.
 
 For a while, some web applications did not use secure HTTP on all pages.
 There is a small overhead in setting up the https connections and a small cost
-to encrypt and decrypt the data that is being sent.  Since https was slightly
+to encrypt and decrypt the data that is being sent. Since https was slightly
 more costly, for a while it was used only for pages that contained passwords,
 bank account numbers, or other sensitive data.
 
@@ -168,9 +167,9 @@ really from the organization it claims to be from.
 
 Perhaps you think you are connecting to www.amazon.com but a rogue computer
 intercepts your traffic, claiming to be www.amazon.com and giving you a public
-key to use for encrypting your traffic. If your web browser trusts the key,
+key to use for encryption. If your web browser trusts the key,
 it will use the rogue computer's public key to encrypt your banking information
-and send it to the rogue computer.  Since the rogue computer gave you the
+and send it to the rogue computer. Since the rogue computer gave you the
 public key, it also has the corresponding private key and is able to decrypt
 and abscond with your banking information.
 
@@ -178,14 +177,14 @@ and abscond with your banking information.
 \index{signed key}
 So your computer needs to know who the key is actually coming from.   This is
 achieved by sending you a public key that is digitally signed by a Certificate
-Authority (CA).  When your computer or browser is initially installed it knows
-about a number of well-known certificate authorities.  If your browser is given
+Authority (CA). When your computer or browser is initially installed, it knows
+about a number of well-known certificate authorities. If your browser is given
 a public key that is signed by one of the well-known certificate authorities,
-it trusts the key and uses it to encrypt and send your data.  If your computer
+it trusts the key and uses it to encrypt and send your data. If your computer
 receives a public key that is not signed by one of its trusted certificate
 authorities, it will warn you before sending your data using the key.
 
-If you see a warning messages about an untrusted certificate, you should
+If you see a warning message about an untrusted certificate, you should
 probably say 'no' and figure out why your network traffic is not being routed
 to the server that you think it is going to before sending any sensitive data.
 
@@ -194,41 +193,39 @@ Summary
 
 Since the Internet was nearly 20 years old before we needed broadly deployed
 security, we needed to find a way to add security to the already existing
-four-layer model.  The perfect place to add security was as an option in the
-transport layer.   This is why we call secure connections on the Internet
+four-layer model. The perfect place to add security was as an option in the
+Transport layer. This is why we call secure connections on the Internet
 "Secure Sockets Layer" (SSL) or "Transport Layer Security" (TLS).
 
 The invention of public/private key encryption was well timed in that it solved
-the key distribution problem of shared-secret encryption approaches.  With
+the key distribution problem of shared-secret encryption approaches. With
 public/private keys, the public encryption key can be routinely shared across
 insecure media.  This means we can use an unencrypted connection to exchange
 data and upgrade the connection to a secure connection.
 
-By inserting the secure layer at the top of the transport layer we were able to
-avoid changing the application, internetwork, and link layers to make it
-possible to easily secure any transport layer connection.  This approach
+By inserting the secure layer at the top of the Transport layer, we were able to
+avoid changing the Application, Internetwork, and Link layers while still 
+easily securing any Transport layer connection. This approach
 ensures that all data being sent across a connection is encrypted before it
 leaves your computer.  Given that many of us use wireless connections like WiFi,
 which are easily monitored by attackers, it is a good idea to encrypt data
 before it is sent across WiFi.
 
 Browsers support secure connections by changing the prefix on the URL
-from "http:" to "https:".  By keeping an eye on the URL, end users can make
-sure they never send sensitive data across insecure connections.
+from "http:" to "https:". By keeping an eye on the URL, end users can make
+sure they never send sensitive data across insecure connections. A series of
+trusted Certificate Authorities will sign public keys to give
+you an assurance that the key you received is indeed from the organization
+you expect it to be.
 
-In order to make sure that you can trust the public key that has been provided
-to you by the server, there are a series of trusted Certificate Authorities
-that will sign public keys to give you an assurance that the key you received
-is indeed from the organization you expect it to be.
-
-The design of the secure transport layer provides a secure and yet easy-to-use
+The design of the Secure Transport Layer provides a secure and yet easy-to-use
 mechanism for secure communications across the Internet at a scale of trillions
 of pairs of interacting computers.
 
 Glossary
 --------
 
-**assymetric key**: An approach ot encryption where one (public) key is used
+**assymetric key**: An approach to encryption where one (public) key is used
 to encrypt data prior transmission and a different (private) key is used to 
 decrypt data once it is received.
 
@@ -245,11 +242,11 @@ in posession of the public key.
 and decryption.
 
 **SSL**: Secure Sockets Layer.  An approach that allows an application to 
-request that a Transport Layer connection is to be encrypted as it 
-crosses the network.  Similar to Transport Layer Security (TLS).
+request that a Transport layer connection is to be encrypted as it 
+crosses the network. Similar to Transport Layer Security (TLS).
 
 **TLS**: Transport Layer Security. An approach that allows an application to
-request that a Transport Layer connection is to be encrypted as it
+request that a Transport layer connection is to be encrypted as it
 crosses the network.  Similar to Secure Sockets Layer (SSL).
 
 
@@ -278,15 +275,15 @@ b) Taylor series
 c) Karnaugh Maps
 d) Prime numbers
 
-4. Which of the keys can be send across the internet in plain text without
+4. Which of the keys can be sent across the internet in plain text without
 compromising security?
 a) Encryption key
-b) Decription Key
+b) Decryption Key
 c) Shared Secret
 d) Univerally Safe Key (USK)
 
 5. Where does the Secure Sockets Layer (SSL) fit in the
-four layer architecture?
+four-layer Internet architecture?
 a) Below the Link layer
 b) Between the Link and Internetworking layers
 c) Between the Internetworking and Transport layers
@@ -329,11 +326,11 @@ b) To make sure packets get routed to the correct destination computer
 c) To assure us that a public key comes from the orgnization it claims to be from
 d) To choose when a particular country must switch from IPv4 to IPv6
 
-11. The ARPANET network was in operation starting in the 1960s.  
-Secure Sockets Layer (SSL) was not invented util the 1980s.
-How did the ARPANET insure the security of the data on its network?
+11. The ARPANET network was in operation starting in the 1960s. Secure
+Sockets Layer (SSL) was not invented util the 1980s. How did the ARPANET
+insure the security of the data on its network?
 a) By using public/private keys and encrypting all transmissions
-b) By using encryption at the link layer
+b) By using encryption at the Link layer
 c) By making sure no one could access the physical links
 d) By only using secure WiFi routers
 
