@@ -1,8 +1,8 @@
-Introduction to Internet Technology
-===================================
+Introduction to Networking
+===========================
 
 This is my under-development book and website introducing 
-Network Technology.
+network technology.
 
 The web site is under development.
 
