@@ -37,19 +37,21 @@ in turn, starting with the Physical layer.
 Physical (Layer 1)
 --------------------
 
-The ISO Physical layer deals with the physical attributes of the
+The OSI Physical layer deals with the physical attributes of the
 actual wired, wireless, fiber optic, or other connection that is
 used to transport data across a single link. The Physical layer also
 defines the shapes of the connectors and type of media which can be used.
 Another problem solved at this layer is how to encode the bits
-(0's and 1's) that make up the data being sent across the medium.
+(0's and 1's) that make up the data being sent across the
+medium.^["Manchester Encoding" is a common technique for encoding 
+bits for transmission across a wire.]
 The "bit encoding" (or modulation) also determines how fast data
 can be sent across the link.
 
 Data Link (Layer 2)
 ---------------------
 
-The ISO Data Link layer is concerned with how the systems using
+The OSI Data Link layer is concerned with how the systems using
 a physical link cooperate with one another. When data is broken
 into packets, the Data Link layer defines special sequences to
 indicate the beginning and end of each packet. The stations
@@ -62,7 +64,7 @@ layers also have some form of checksum to detect and/or correct for
 errors in the transmitted data.
 
 The design problems solved in the Physical and Data Link layers of
-the ISO model are addressed by the Link layer of the TCP/IP model.
+the OSI model are addressed by the Link layer of the TCP/IP model.
 
 Network (Layer 3)
 -------------------

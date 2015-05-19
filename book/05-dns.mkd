@@ -3,22 +3,23 @@ The Domain Name System
 
 \index{Domain Name System}
 \index{DNS}
-The Domain Name System lets you access websites by name, so you don't have to
-keep a list of numeric Internet Protocol (IP) addresses like "212.78.1.25" for
-all the servers that you need to communicate with. IP address are determined
-by where your computer connects to the Internet. When you have a portable
+The Domain Name System lets you access websites by their domain
+name like (www.khanacademy.org), so you don't have to
+keep a list of numeric Internet Protocol (IP) addresses like "212.78.1.25".
+IP address are determined
+by *where* your computer connects to the Internet. When you have a portable
 computer and you move from one location to another, you get
 a new IP address at each new location. Since no one connects to your portable
 computer, it does not matter if your IP address changes from time to time. But
 since so many people connect to a web server, it would be inconvenient if
-the server moved to a new location and needed to change its IP address. While
-servers do need an assigned IP address, we also give servers a textual Domain
-Name address like www.khanacademy.org.
+the server moved to a new location and needed to change its IP address. 
 
-When your computer makes a connection to a system using a Domain Name address,
+When your computer makes a connection to a system using a domain name address,
 the first thing your computer does is look up the IP address that corresponds
-to the Domain Name. Then your computer makes the connection using the IP
-address. Adding the separate step of looking up the IP address for a DNS
+to the domain name. Then your computer makes the connection using the IP
+address.
+
+Adding the separate step of looking up the IP address for a DNS
 address also makes it easier to move a server from one location to another.
 The server is given a new IP address and the entry for the domain address is
 updated. Once the DNS entry is updated, new requests for the domain name are
@@ -34,14 +35,21 @@ Allocating Domain Names
 \index{.org}
 \index{.edu}
 \index{TLD}
+\index{ccTLD}
 If you recall from the previous section, IP addresses are allocated based on
 where you connect a new network to the Internet. Domain names are allocated
 based on organizations that "own" the domain name. At the top of the domain
 name hierarchy is an organization called the International
 Corporation for Assigned Network Names (ICANN). ICANN chooses the top-level
 domains (TLDs) like .com, .edu, and .org and assigns those to other organizations to
-manage.  ICANN also assigns two-letter top-level domain names like .us, .za,
-.nl, and .jp to countries around the world.
+manage.  Recently a new set of TLDs like .club and .help have been made available.
+
+ICANN also assigns two-letter country code top level domain names like .us, .za,
+.nl, and .jp to countries around the world
+We call these Country-Code Top-Level Domain Names (ccTLDs).  Countries often add 
+second level TLDs like .co.uk for commercial organizations within the UK.  Policies
+for applying for domain names with any particular ccTLD vary widely from one country
+to another.
 
 ![Domain Names](../sketchnote/DNS)
 
@@ -54,6 +62,8 @@ subdomains within its new domain. Domains ending in .com and .org can be purchas
 by individuals. The individual owners of those domains are allowed to manage
 their domain and create subdomains under it for their own use or use by others.
 
+
+
 Reading Domain Names
 --------------------
 
@@ -65,7 +75,7 @@ right part of the address is most specific:
     212.78.1.25
     Broad ----> Narrow
 
-For Domain Names, we read from right to left:
+For domain names, we read from right to left:
 
     drchuck.personal.si.umich.edu
     Narrow       <---       Broad
@@ -78,12 +88,16 @@ Summary
 -------
 
 While the Domain Name System is not one of our four layers in the model, it is
-an important part of making the Internet easier to use. Domain Names allow
+an important part of making the Internet easier to use. Domain names allow
 end users to use symbolic names for servers instead of numeric Internet
-Protocol addresses. By adding a service that maps Domain Names to IP
+Protocol addresses. By adding a service that maps Domain names to IP
 addresses, we can move servers from one Internet connection to another
 connection without requiring users to manually change their configurations
 to connect to a server.
+
+\index{Domain Name Registrar}
+If you would like to purchase a domain for yourself or your company you can 
+choose from any number of domain name registrars.
 
 Glossary
 --------
@@ -99,8 +113,11 @@ the ".org" top level domain.
 **ICANN**: International Corporation for Assigned Network Names.
 Assigns and manages the top-level domains for the Internet.
 
+**registrar**: A copany that can register, sell, and host
+domain names.
+
 **subdomain**: A name that is created "below" a domain name.
-For example, "umich.edu" is a domain name and 
+For example, "umich.edu" is a domain name and
 both "www.umich.edu" and "mail.umich.edu"
 are subdomains within "umich.edu".
 
@@ -120,10 +137,10 @@ a computer and look up its IP address
 b) It keeps track of the GPS coordinates of all servers
 c) It allows Regional Internet Registries (RIRs) to manage IP addresses
 on the various continents
-d) It assigns different IP addresses to portable computers 
+d) It assigns different IP addresses to portable computers
 as they move from one WiFi to another
 
-2. What organization assigns top-level domains like ".com", ".org", 
+2. What organization assigns top-level domains like ".com", ".org",
 and ".club"?
 a) IANA - Internet Assigned Numbers Authority
 b) IETF - Internet Engineering Task Force

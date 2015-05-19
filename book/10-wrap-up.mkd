@@ -15,7 +15,7 @@ problems are encountered.
 
 ![The Four-Layer Model](../images/layers)
 
-In order to build an overall solution that works at scale, it was necessary to
+In order to build an overall solution that works at scale, it was important to
 break the Internet engineering problems down into four distinct layers:
 
 * The Link/Physical layer includes all of the complex engineering

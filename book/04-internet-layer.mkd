@@ -79,7 +79,7 @@ to them.  IPv6 address are longer and look like:
 
     2001:0db8:85a3:0042:1000:8a2e:0370:7334
 
-For this chapter we will focus on the classic IPv4 addresses, but all of the
+For this section we will focus on the classic IPv4 addresses, but all of the
 ideas apply equally to IPv4 and IPv6 addresses.
 
 \index{network number}
@@ -130,7 +130,7 @@ know how to route the network number send their data back to the requesting
 router.  Sometimes the neighboring routers need to ask their neighbors and so
 on until the route is actually found and sent back to the requesting router.
 
-In the simplest case, a router can be connected to the Internet and slowly
+In the simplest case, a new core router can be connected to the Internet and slowly
 build a map of network numbers to outbound links so it can properly route
 packets based on the IP address for each incoming packet.  We call this mapping
 of network numbers to outbound links the "routing table" for a particular
@@ -176,7 +176,7 @@ or school and have only one connection, if that connection goes down you
 are disconnected completely.
 
 At some point the broken link is repaired or a new link is brought up, and the
-router wants to make best use of the new links. The router always interested in
+router wants to make best use of the new links. The router is always interested in
 improving its router tables, and looks for opportunities to improve its routing
 tables in its spare time. When there is a lull in communication, a router will
 ask a neighboring router for all or part of its routing table. The router
@@ -191,7 +191,7 @@ that are down or slow to links that are up and/or faster. All the while,
 each router is talking to its neighboring routers to find ways to improve its
 own routing table. Even though there is no central source of the "best route"
 from any source to any destination, the routers are good at knowing the fastest
-path from a source to a destination. Routers are also good at detecting and
+path from a source to a destination nearly all the time. Routers are also good at detecting and
 dynamically routing packets around links that are slow or temporarily overloaded.
 
 One of the side effects of the way routers discover the structure of the
@@ -405,7 +405,7 @@ replaces the address with its actual routable address. When packets come back
 to your workstation, the router puts your workstation's non-routable address
 back into the returning packets.
 
-Thus approach allows us to conserve the real routable addresses and use the
+This approach allows us to conserve the real routable addresses and use the
 same non-routable addresses over and over for workstations that move from one
 network to another.
 
@@ -459,7 +459,7 @@ Summary
 The Internetworking Protocol layer extends our network from a single hop
 (Link layer) to a series of hops that result in packets quickly and
 efficiently being routed from your computer to a destination IP address and
-back to your computer. The IP address is designed to react and route around
+back to your computer. The IP layer is designed to react and route around
 network outages and maintain near-ideal routing paths for packets moving between
 billions of computers without any kind of central routing clearinghouse. Each
 router learns its position within the overall network, and by cooperating with

@@ -4,21 +4,23 @@ Transport Layer
 \index{Layer!Transport}
 \index{TCP}
 
-The most important aspect and foundational notion
-around the design of the Internet is breaking long files or messages
-into many different packets, and then sending the packets across the network
-independently. Using packets over a shared link layer medium like a radio
-frequency allows IP routers to redirect traffic dynamically as the
-network encounters loaded connections or failing links. The Internet
-works precisely because we break data into packets before we send the data.
+The next layer up from the Internetworking layer is the Transport layer.
+A key element of the Internetworking layer is that it does not attempt
+to guarantee delivery of any particular packet.   The Internetworking layer
+is nearly perfect, but sometimes packets can be lost or mis-routed.
 
-But users of the network want to send entire files or messages across the
-Internet. A network is not much good to us if all it can do is send packets.
+![The Four-Layer Model](../images/layers)
+
+But users of the network want to reliably send entire files or messages across the
+Internet. A network is not much good to us if all it can do is send packets
+that are received most of the time.
 For the network to be useful, all of the packets need to be reassembled into the
 right order to reconstruct the message on the receiving system. The network
 must also deal with packets that arrive out of order or never arrive at all.
+The Transport layer is where we handle reliability and message reconstruction on the
+destination computer.
 
-These problems are all solved by the Transport layer.  Just like the IP layer,
+Just like the IP layer,
 the Transport layer adds a small amount of data to each packet to help solve
 the problems of packet reassembly and retransmission.
 
@@ -116,27 +118,31 @@ must hold on to all of the data it is sending until the data has been
 acknowledged. Once the receiving computer acknowledges the
 data, the sending computer can discard the sent data.  We can look at this
 graphically when a message is broken into many packets. Here, the first ten packets
-of the message have been sent and acknowledged by the destination computer.
-The sending computer has sent six more packets, and then stopped because it
+of the message have been sent and acknowledged by the destination computer ('a').
+The sending computer has sent six more packets ('S'), and then stopped because it
 reached its window size.
 
 ![Buffering in the Transport Layer](../images/transport-buffer)
 
+There are three packets that have been sent but not yet received ("S").  Since there
+are many hops in the network, it is very common for more than one packet to be
+enroute in the network at the same time.
+
 The Transport layer on the receiving computer has received and acknowledged ten
-packets and delivered them to the receiving application.^[We talk about the
-Application layer in the next chapter.] The Transport layer on the destination
-computer has received more three packets, but one packet is out of order.
+packets and delivered them to the receiving application ('a').^[We talk about the
+Application layer in later material.] The Transport layer on the destination
+computer has received more three packets('R'), but one packet is out of order.
 Receiving a packet out of order is not a cause for concern if the missing
 packet arrives in a reasonably short amount of time. As long as all the
-packets are received, the receiving Transport layer will reconstructed the
-message, fitting the packets together like puzzle pieces.
+packets are received, the receiving Transport layer will reconstruct the
+message, fitting the packets together like puzzle pieces and deliver them
+to the receiving application.
 
-Clients, Servers, and Sockets
------------------------------
+Application Clients and Servers
+-------------------------------
 
 \index{client}
 \index{server}
-\index{socket}
 The purpose of the Transport layer is to provide reliable connections between
 networked applications so those applications can send and receive streams of
 data. For an application, this is as simple as asking the Transport layer
@@ -149,46 +155,14 @@ the application must work together.
 
 A lot of engineering has gone into the lower three layers of our architecture
 to make it easy to open a connection to a remote computer and then send
-and receive data over that connection. In many programming languages, we call
-the two endpoints "sockets". Making a connection to an application running on
-a server, sending data to the server, and receiving data from the server is
-generally as easy as reading and writing a file.
+and receive data over that connection.
 
-![What is a Socket?](../sketchnote/Socket)
+Server Applications and Ports
+-----------------------------
 
-\index{programming sockets}
-The code below is all it takes in the Python
-programming language to make a connection to a web server
-and retrieve a document:
-
-    import socket
-    
-    mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    mysock.connect(('www.py4inf.com', 80))
-    mysock.send('GET http://www.py4inf.com/code/romeo.txt HTTP/1.0\n\n')
-    
-    while True:
-        data = mysock.recv(512)
-        if ( len(data) < 1 ) :
-            break
-        print data
-    
-    mysock.close()
-
-While you may or not know the Python programming language, the key point is
-that it only takes ten lines of application code to make and use a network
-connection. This code is simple because the Transport, Internetwork, and Link
-layers so effectively solve the problems at each of their layers that
-applications using the network can ignore nearly all of the details of how the
-network is implemented.
-
-Ports and Applications
-----------------------
-
-The Python program above is a client application. Recall that a client
-application is the application running on your local computer and is the one
-that initiates the connection. Your application needs to connect to a server
-application on the remote computer. A remote computer might actually have any
+When a client application wants to make a connection to a remote computer,
+it is important that the connection is made to the correct server application
+on that remote computer.  A remote computer might have any
 number of different server applications running at the same time. Example
 server applications would include:
 
@@ -196,13 +170,12 @@ server applications would include:
 * Video Server
 * Mail Server
 
-It is important for a client application to connect to the corresponding
-server application. For instance, a web client (a browser) needs to connect to
-the web server running on the remote computer. So a client application not only
-needs to know which host to connect to, it also needs to choose a particular
-application to interact with on that host computer.
-
 ![TCP Ports](../sketchnote/Ports)
+
+For instance, a web client (a browser) needs to connect to
+the web server running on the remote computer. So a client application not only
+needs to know which remote computer to connect to, it also needs to choose a particular
+application to interact with on that remote computer.
 
 We use a concept called "ports" to allow a client application to choose which
 server application it wants to interact with. Ports are like telephone
@@ -228,25 +201,21 @@ of well-known default ports for various server applications:
 * DNS (53) - Domain Name Resolution
 * FTP (21) - File Transfer
 
-If you look back up at the Python application, you will notice that in this
-line
+These are the normal ports for these applications.  Sometimes servers will
+make applications avaialbe at non-standard ports.  If you are doing web development,
+you may run a web server at a standard port like 3000, 8080, or 8888.  If you see
+a URL like:
 
-    mysock.connect(('www.py4inf.com', 80))
+	http://testing.example.com:8080/login
 
-we have specified that we are connecting to the application that is listening
-for incoming connections on port 80 on the host www.py4inf.com. By choosing
-port 80 we are indicating that we want to talk to a World Wide Web server on
-that host and are expecting to communicate with that server using the HyperText
-Transport Protocol.
-
-Each client/server application has its own protocol. Building and using
-application protocols is the problem that we solve in the Application layer.
+The "8080" indicates that your browser is to use the web protocols to interact
+with the server but connect to port 8080 instead of port 80.
 
 Summary
 -------
 
 In a sense, the purpose of the Transport layer is to compensate for the fact
-that the Link and Internet Protocol layers might lose data. When the two
+that the Link and Internetworking layers might lose data. When the two
 lower layers lose or reroute packets, the Transport layer works to reassemble
 and/or retransmit data to compensate for the lower layer. The existence of
 the Transport layer makes it possible for the two lower layers to ignore
@@ -263,27 +232,16 @@ Glossary
 **acknowledgement**: When the receiving computer sends a notification back
 to the source computer indicating that data has been received.
 
-**buffering**: Temporarily holding on to data that has been sent or received until 
+**buffering**: Temporarily holding on to data that has been sent or received until
 the computer is sure the data is no longer needed.
-
-**flow control**: When a sending computer slows down make 
-sure not to overwhelm either the network or the destination computer.
-Flow control also causes the sending computer to increase the speed at which data 
-is sent when it is sure that the network and destination computer can handle the
-faster data rates.
 
 **listen**: When a server application is started and ready to accept
 incoming connections from client applications.
 
-**port**: A way to allow many different server applications to be waiting 
-for incoming connections on a single computer. Each application listens on 
+**port**: A way to allow many different server applications to be waiting
+for incoming connections on a single computer. Each application listens on
 a different port. Client applications make connections to well-known
 port numbers to make sure they are talking to the correct server application.
-
-**socket**: A software library available in many programming languages
-that makes creating a network connection and exchanging data 
-nearly as easy as opening and reading a file on your computer.
-
 
 
 
@@ -312,7 +270,7 @@ d) It determines what part of an IP address is the network number
 
 4. What happens when a sending computer receives an acknowledgement from the
 receiving computer?
-a) The sending computer resends the data to make sure it was 
+a) The sending computer resends the data to make sure it was
 transmitted accurately.
 b) The sending computer sends more data up to the window size
 c) The sending computer sends an "acknowledgment for the acknowledgment"
@@ -324,7 +282,7 @@ b) Network gateway
 c) Core Internet routers
 d) Receiving computer
 
-6. Which of these retains data packets so they can be retransmitted 
+6. Which of these retains data packets so they can be retransmitted
 if a packets lost?
 a) Sending computer
 b) Network gateway

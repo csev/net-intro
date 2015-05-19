@@ -28,16 +28,11 @@ Sharing the Air
 When your laptop or phone is using WiFi to connect to the Internet, it is 
 sending and receiving data with a small, low-powered radio. The radio in your
 computer can only send data about 300 meters, so your
-computer sends your packets to a "base station", which forwards the
-packets using a link to the rest of the Internet. The "base station" is
-sometimes called a "gateway" because your packets need to find their way to the
-gateway before they can get "onto" the Internet. The technical term in our
-Internet Architecture for the "base station" is a "router" because it routes
-your packets along their way from your computer to the destination computer and
-back.
+computer sends your packets to the router in your home, which forwards the
+packets using a link to the rest of the Internet.  Sometimes we call the first
+router that handles your comptuter's packets the "base station" or "gateway".
 
-The first problem that needs to be solved is how to make sure packets are sent
-to the correct computer. All computers that are close enough to the base station
+All computers that are close enough to the base station
 with their radios turned on receive all of the packets the base station transmits,
 regardless of which computer the packet is supposed to be sent to. They also 
 "hear" all the packets sent by every other nearby computer. So your computer
@@ -68,15 +63,9 @@ postcard) sent across the WiFi has a source and destination address, so all
 of the computers know which messages are theirs.
 
 When you turn on your computer and connect to a WiFi network, your computer
-can listen for a while, learn the serial numbers (MAC addresses) of the
-other computers on the network as data is being sent across the WiFi, and
-build a list of all the computers on the network.
-
-But when you are talking to the Internet, your computer is really not
-interested in the other local computers that are using the WiFi. What
-your computer really needs to know is the MAC address of the gateway router so
-it can send your packets to the gateway for forwarding to the rest of the
-Internet. And when you move from one location to another, your computer will
+needs to figure out which of the MAC addresses on the WiFi can be used
+to send packets to the router.
+When you move from one physical location to another, your computer will
 be talking to different gateways and each of those gateways will have a
 different serial number. So when you first connect to a new WiFi, your
 computer must discover the MAC address for the gateway of that particular WiFi.
@@ -142,7 +131,7 @@ send a packet listened to and heard the same silence and decided to
 start transmitting at exactly the same time? If two or more WiFi radios start
 transmitting at the same time, all of the data is corrupted and both packets are
 lost. So once your WiFi radio starts sending a packet it is important for it
-to listen to make sure it can receive its own data. If it is not "hearing" the
+to listen to make sure it can receive its own data. If it is not receiving the
 same thing that it is sending, your WiFi radio assumes that a collision has happened
 (this is called Collision Detection) and stops transmitting, since it knows that no
 data will be received by the destination WiFi radio.
@@ -175,8 +164,8 @@ that use this basic pattern of listen, transmit, listen, and optionally retry.
 Wired Ethernet, cellular telephone data, and even Short Message Service
 (SMS/Texting) all use this "try then retry" approach.
 
-Other Types of Link Layers
---------------------------
+Coordination in Other Link Layers
+---------------------------------
 
 Sometimes when a link layer has many transmitting stations and needs to operate
 at near 100% efficiency for long periods of time, the design takes a different
@@ -209,8 +198,9 @@ until the token comes back before you can send the next packet. If you are the
 only station that wants to send data, you spend a good bit of time waiting for
 the token to come back to you after passing through all of the other stations.
 
-The token approach is best suited when using a link medium that is expensive, such
-as a satellite link or a long-distance shared fiber optic link. The CSMA/CD
+The token approach is best suited when using a link medium where it might
+take too long or be too costly to detect a collision such as 
+as a satellite link or a undersea fiber optic link. The CSMA/CD
 (listen-try) is best suited when the medium is inexpensive, shorter distance,
 and there are a lot of stations sharing the medium that only send data in short
 bursts. So that is why WiFi (and CSMA/CD) is so effective for providing
@@ -235,6 +225,9 @@ works.
 
 Glossary
 --------
+
+**base station**: Another word for the first router that handles your
+packets as they are forwarded to the Internet.
 
 **broadcast**: Sending a packet in a way that all the stations connected
 to a local area network will receive the packet.

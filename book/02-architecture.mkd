@@ -2,19 +2,8 @@ Network Architecture
 ====================
 
 \index{NSFNet}
-Using the Internet seems pretty easy. We go to a web address and
-up comes a page. Or we go to our favorite social site and see pictures of our
-friends, families, and pets. But it takes a lot of complex software and
-hardware to make the Internet seem so simple. The design of the
-technologies that make today's Internet work started in the 1960s,
-and there were over 20 years of research into how to build
-internetworking technologies before the first "Internet" was built
-in the late 1980s by academics in a project called NSFNet.
-Since then, the research and development into improving network technologies
-has continued as networks have become far larger and faster and globally
-distributed with billions of computers.
-
-To engineer and build a system this complex, engineers try to break a single
+To engineer and build a system as complex as the Internet,
+engineers try to break a single
 challenging problem into a set of smaller problems that can be solved
 independently and then put back together to solve the original large problem.
 The engineers who built the first internets broke the overall problem into
@@ -23,7 +12,7 @@ groups.
 
 ![The Four-Layer Model](../images/layers)
 
-\index{TCP Model}
+
 \index{Link Layer}
 \index{Internetwork Layer}
 \index{Transport Layer}
@@ -37,13 +26,18 @@ computer to the local area network and the Application layer is what we as end
 users interact with.   A web browser is one example of an application in this
 Internet architecture.
 
+\index{TCP Model}
+We informally refer to this model the "TCP/IP model" in reference to
+the Transport Control Protocal (TCP) used to implement the Transport layer
+and Internet Protocol (IP) used to implement the Internetwork layer.
+
 We will take a quick look at each of the layers, starting from the "bottom" of
 the stack.
 
 The Link Layer
 --------------
 
-The Link layer concerns itself with connecting your computer to its local
+The Link layer is responsible for connecting your computer to its local
 network and moving the data across a single hop. The most common Link layer
 technology today is wireless networking. When you are using a wireless device,
 the device is only sending data a limited distance. A smartphone
@@ -57,7 +51,7 @@ shared amongst multiple computers at the same location.
 
 The Link layer needs to solve two basic problems when dealing with these
 shared local area networks. The first problem is how to encode and send data
-across the link. If the link is wireless, we must agree on which
+across the link. If the link is wireless, engineers must agree on which
 radio frequencies are to be used to transmit data and how the digital data is
 to be encoded in the radio signal. For wired connections, we must agree on
 what voltage to use on the wire and how fast to send the bits across the
@@ -68,7 +62,7 @@ In addition to agreeing on how to send data using a shared medium such as a
 wireless network, we also need to agree on how to cooperate with other
 computers that might want to send data at the same time. If all the computers
 on the network tried to transmit whenever they had data to send, their mesages
-would collide. The result would be chaos, and receiving stations would only hear
+would collide. The result would be chaos, and receiving stations would only receive
 noise. So we need to find a fair way to allow each station to wait its turn
 to use the shared network.
 
@@ -88,10 +82,11 @@ long name for a simple and elegant concept.  When your computer wants to
 send data, it first listens to see if another computer is already sending data
 on the network (Carrier Sense). If no other computer is sending data, your
 computer starts sending its data. As your computer is sending data it also
-listens to see if it can hear its own data. If your computer can hear its own
-data, it continues transmitting. But if your computer cannot hear its own data,
-this means that another computer has started transmitting at the same time
-(Collision Detection). Both computers stop transmitting, wait a bit, and retry
+listens to see if it receives its own data. If your computer receives its own
+data, it continues transmitting. But if two computers started sending at 
+about the same time, the data collides, and your computer does not
+receive its own data.
+When a collision is detected, both computers stop transmitting, wait a bit, and retry
 the transmission. The two computers that collided wait different lengths of time
 to retry their transmissions to reduce the chances of a second collision.
 
@@ -117,7 +112,8 @@ connected to the network. Other link layers like fiber optic cables and leased
 lines are generally not shared and are used for connections between routers.
 These non-shared connections are still part of the Link layer.
 
-The engineers working on Link layer technologies focus on transmitting data
+The engineers working on Link layer technologies focus solving the issues
+so computers can transmit data
 across a single link that ranges in distance from a few meters to as long as
 hundreds of kilometers. But to move data greater distances, we need to send our
 packets through multiple routers connected by multiple link layers. Each time
@@ -128,21 +124,22 @@ it a "hop". To send data halfway around the world, it will pass through about
 The Internetwork Layer (IP)
 ---------------------------
 
-Once your packet makes it across that first link layer, it will be in a router.
+Once your packet destined for the Internet makes it across the first link,
+it will be in a router.
 Your packet has a source address and destination address and the router needs
 to look at the destination address to figure out how to best move your packet
 towards its destination. It's rare for the source and destination
-computers to be connected to the same router, so the router that holds your
-packet usually needs to send your packet out the best of its outgoing Link
-layer connections to speed it towards its destination.
+computers to be connected to the same router, so the router that receives your
+packet usually needs to forward your packet out the best of its outgoing Link
+layer connections to another router in the right "direction" so the 
+packet eventually reaches its destination.
 
-We use the phrase "towards its destination" on purpose.  With
-each router handling packets destined for any of many billions of destination
+With each router handling packets destined for any of many billions of destination
 computers, it's not possible for every router to know the exact location and
 best route to every possible destination computer. So the router makes its
 best guess as to how to get your packet closer to its destination.
 
-Each of the 20 routers along the way also does its best to get your packet
+Each of the routers along the way also does its best to get your packet
 closer to the destination computer. As your packet gets closer to its final
 destination, the routers have a better idea of exactly where your packet
 needs to go. When the packet reaches the last link in its journey, the
@@ -177,7 +174,7 @@ that require a change in plans as your packets are sent across the network.
 
 ![A Multi-Step Trip](../sketchnote/Multiple_step_trip)
 
-Routers work hard to inform each other about any kind of traffic delay or
+Routers work exchange special messages to inform each other about any kind of traffic delay or
 network outage so that packets can be switched from a route that is no longer
 working to a different route. The routers that make up the core of the
 Internet are smart and adapt quickly to both small and large outages
@@ -207,7 +204,9 @@ computer can reconstruct the original message even if the packets were received
 out of order.
 
 \index{acknowledgements}
-As the destination computer reconstructs the message, it periodically sends an
+\index{ACK}
+As the destination computer reconstructs the message and delivers it to
+the recekving application, it periodically sends an
 acknowledgement back to the source computer indicating how much of the message it
 has received and reconstructed. But if the destination computer finds that parts
 of the reconstructed message are missing, this probably means that these packets were
@@ -288,7 +287,8 @@ When we develop the server half and the client half of a networked application,
 we must also define an "application protocol" that describes how the two
 halves of the application will exchange messages over the network. The protocols
 used for each application are quite different and specialized to meet the needs
-of the particular application.
+of the particular application.  Later we will explore some of these application
+layer protocols.
 
 Stacking the Layers
 -------------------
@@ -299,7 +299,8 @@ Application) stacked on top of each other with the Application layer at the top
 and the Link layer at the bottom. The reason we show them this way is because
 each layer makes use of the layers below it to achieve networked communications.
 
-All four layers run in your computer where you run the client application, and
+All four layers run in your computer where you run the client application
+( like a browser), and
 all four layers also run in the destination computer where the application server
 is running. You as the end user interact with the applications that make up the
 top layer of the stack, and the bottom layer represents the WiFi, cellular, or

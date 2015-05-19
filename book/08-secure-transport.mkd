@@ -6,17 +6,18 @@ Secure Transport Layer
 In the early days of the Internet, networks were small and all of the
 routers were in secure locations. As long as each computer connected
 to the Internet protected itself from unwanted incoming connections,
-it was felt that there was no need to also encrypt traffic while it was
-crossing the network. So the Link, Internetwork, and Transport layers
-were not designed with encryption in mind. They were focused on the
+it was felt that there was no need to protect data from prying eyes
+while it was crossing the network.
+
+So the Link, Internetwork, and Transport layers were focused on the
 efficient movement of data and solving the problems of a large-scale
-shared distributed network.
+shared distributed network witout worrying about the privacy of that data.
 
 But as the use of the Internet grew rapidly in the late 1980s and literally
-exploded when the Web became mainstream in 1994, security and encryption of
+exploded when the Web became mainstream in 1994, security and privacy of
 network traffic became very important problems to solve. When we began
 using the Internet to conduct commerce and credit cards and bank account
-numbers were being routinely sent across the network, security and encryption
+numbers were being routinely sent across the network, securing data
 became essential. And when we started using wireless technologies like WiFi,
 security became necessary for even the simplest uses of the Internet.
 
@@ -32,8 +33,6 @@ sooner or later a mistake will be made. And once WiFi was added to the mix
 and your packets went over radio waves, a network attacker could just sit
 in a coffee shop and intercept packets as they passed through the air.
 
-\index{encrypt}
-\index{decrypt}
 Under these conditions, the only reasonable solution is to encrypt data in
 your computer before it is sent across its first physical link, and then decrypt
 the data in the destination computer after it arrives. Using this approach, we
@@ -41,14 +40,51 @@ assume that an attacker can see all of the packets that you send, but they
 cannot decrypt the data that they have captured. The encryption also guarantees
 that there is no way to alter your data while it is crossing the Internet.
 
+Encrypting and Decrypting Data
+------------------------------
+
+\index{Caeser Cipher}
+\index{plain text}
+\index{cipher text}
+The concept of protecting information so it cannot be read while it is being
+transported over an insecure medium is thousands of years old. The leaders
+in Roman armies sent coded messages to each other using a code called the
+Caeser Cipher.  The simplest version of this approach is to take each of the
+characters of the actual message (we call this "plain text") and shift
+each character a fixed distance down the alphabet to produce the
+scrambled message or "cipher text".
+
+Then we send the ciphertext via the courier or other insecure transport to
+the other person.  The courier cannot read the message because it appears
+to be random characters unless you know the technique used to encode the
+message.
+
+As long as the person receiving the message knew the number used to
+shift the message, they could unshift the characters in the encoded message
+to reproduce the original message.
+
+Here is a simple example of plain text and cipher text using a shift of one:
+
+    Plain text:  Go to the river
+    Cipher text: Hp up uif sjwfs
+
+\index{encrypt}
+\index{decrypt}
+We user the word "encrypt" to describe transforming the plain text to the
+cipher text and "decrypt" to describe the reverse process.
+
+The Caeser Cipher is very simple to defeat but it was used to protect
+important messages until about 150 years ago.   Modern encryption techniques
+are far more sophisticated than a simple character shift, but all
+encryption systems depend on some kind of a secret key that both parties are
+aware of so they can decrypt received data.
+
 Two Kinds of Secrets
 --------------------
 
 \index{shared secret}
-The approach to encrypting messages so that anyone might see the
-encrypted message while it is being transported but only the correct receiver
-of the message can decrypt the message is well understood. The traditional
-way to encrypt transmissions is using a secret that only the sending and
+The traditional way to encrypt transmissions is using a shared secret
+that only the sending and
 receiving parties know. With the secret, it is easy to decrypt the received
 data, but if you received the data without possessing the secret, it would be
 effectively impossible to decrypt the message.
@@ -108,7 +144,7 @@ Secure Sockets Layer (SSL)
 \index{SSL}
 \index{TLS}
 \index{Transport Layer Security}
-Since we were adding network security nearly 20 years after the Internet
+Since they decided to add security nearly 20 years after the Internet
 protocols were developed, it was important not to break any existing Internet
 protocols or architecture. The solution was to add an optional partial layer
 between the Transport layer and the Application layer. We called this
@@ -139,9 +175,10 @@ Since web browsers and web servers operate at the application layer, we barely
 notice when we are using encrypted or unencrypted connections. Web browsers
 use the URL convention of replacing "http:" with "https:" to indicate that the
 browser is to communicate with the web server using the Secure Transport Layer
-instead of the unencrypted Transport layer.
+instead of the unencrypted Transport layer.   Your browser will usually show a 
+"lock" icon in the address bar to let you know that you are communicating with
+a secure web site.
 
-For a while, some web applications did not use secure HTTP on all pages.
 There is a small overhead in setting up the https connections and a small cost
 to encrypt and decrypt the data that is being sent. Since https was slightly
 more costly, for a while it was used only for pages that contained passwords,
@@ -150,7 +187,7 @@ bank account numbers, or other sensitive data.
 But over time as networks have become faster and the https implementations have
 gotten much more efficient, there is a trend toward encrypting all web server
 interactions whenever you are interacting with a web server where you have an
-account.
+account.  The current trend is towards using HTTPS for all web traffic.
 
 Certificates and Certificate Authorities
 ----------------------------------------
@@ -195,7 +232,9 @@ Since the Internet was nearly 20 years old before we needed broadly deployed
 security, we needed to find a way to add security to the already existing
 four-layer model. The perfect place to add security was as an option in the
 Transport layer. This is why we call secure connections on the Internet
-"Secure Sockets Layer" (SSL) or "Transport Layer Security" (TLS).
+"Secure Sockets Layer" (SSL) or "Transport Layer Security" (TLS).  There
+are subtle diffferences between SSL and TLS but they both encrypt data
+at the Transport layer.
 
 The invention of public/private key encryption was well timed in that it solved
 the key distribution problem of shared-secret encryption approaches. With
@@ -204,7 +243,7 @@ insecure media.  This means we can use an unencrypted connection to exchange
 data and upgrade the connection to a secure connection.
 
 By inserting the secure layer at the top of the Transport layer, we were able to
-avoid changing the Application, Internetwork, and Link layers while still 
+avoid changing the Application, Internetwork, and Link layers while still
 easily securing any Transport layer connection. This approach
 ensures that all data being sent across a connection is encrypted before it
 leaves your computer.  Given that many of us use wireless connections like WiFi,
@@ -226,13 +265,24 @@ Glossary
 --------
 
 **assymetric key**: An approach to encryption where one (public) key is used
-to encrypt data prior transmission and a different (private) key is used to 
+to encrypt data prior transmission and a different (private) key is used to
 decrypt data once it is received.
 
-**certificate authority**: An organization that digitally signs public keys 
-after assuring that the name listed in the public key is actually the person 
+**certificate authority**: An organization that digitally signs public keys
+after assuring that the name listed in the public key is actually the person
 or organization
 in posession of the public key.
+
+**cipher text**: A scrambled verison of a message that cannot be read without
+knowing the decryption key and technique.
+
+**decrypt**: The act of transforming a cipher text message to a plain text message
+using a secret or key.
+
+**encrypt**: The act of transforming a plain text message to a cipher text message
+using a secret or key.
+
+**plain text**: A readable message that is about to be encrypted before being sent.
 
 **private key**: The portion of a key pair that is used to decrypt transmissions.
 
@@ -241,8 +291,8 @@ in posession of the public key.
 **shared secret**: An approach to encryption that uses the same key for encryption
 and decryption.
 
-**SSL**: Secure Sockets Layer.  An approach that allows an application to 
-request that a Transport layer connection is to be encrypted as it 
+**SSL**: Secure Sockets Layer.  An approach that allows an application to
+request that a Transport layer connection is to be encrypted as it
 crosses the network. Similar to Transport Layer Security (TLS).
 
 **TLS**: Transport Layer Security. An approach that allows an application to
@@ -304,15 +354,15 @@ c) They are encrypted in your computer and decrypted in the server
 d) They are encrypted in the WiFi gateway and decrypted in the
 last router before the destination computer
 
-8. What changes to the IP layer were needed to make secure 
+8. What changes to the IP layer were needed to make secure
 socket layer (SSL) work?
 a) No changes were needed
 b) We had to add support for Secure IP (IPSEC)
 c) We needed to support longer packets in IP
 d) The Time-To-Live (TTL) value needed to be encrypted
 
-9. If a rogue element was able to monitor all packets going through an 
-undersea cable and you were using public/private key encryption properly, 
+9. If a rogue element was able to monitor all packets going through an
+undersea cable and you were using public/private key encryption properly,
 which of the following would be the most difficult for them to obtain?
 a) What servers you were communicating with
 b) How often you used the servers
@@ -334,6 +384,20 @@ b) By using encryption at the Link layer
 c) By making sure no one could access the physical links
 d) By only using secure WiFi routers
 
+12. Which of these answers is "Security is fun" encrypted with a Caeser
+Cipher shift of 1.
+
+a) Ptsjduao rt dii
+b) Wentudhs di dju
+c) Tfdvsjuz jt gvo
+d) Asdfghjk qw zxc
+
+13. What Caeser Cipher shift was used to encrypt "V yvxr frphevgl"?
+
+a) 1
+b) 6
+c) 13
+d) 24
 
 
 

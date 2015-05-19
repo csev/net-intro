@@ -3,14 +3,18 @@ Application Layer
 
 \index{Application Layer}
 \index{Layer!Application}
-We are now at the top layer of our four-layer model that governs the design of
-the current Internet. The Transport layer makes use of the Internetwork and
-Link layers to reliably deliver a message or stream of data across the
-Internet. The Application layer is both the source and destination of these
-messages. The simplest and most common examples of networked applications
-would be a web browser or a mail reading application.
+We have been working from the bottom to the top of our four-layer network model
+and we are finally at the top.  The Application layer is where the networked software
+like web browsers, mail programs, video players, or networked video players operate.
+We as users interact with these applications and the applications interact
+with the network on our behalf.
 
-It is important to understand that two parts are required for a networked
+![The Four-Layer Model](../images/layers)
+
+Client and Server Applications
+------------------------------
+
+It is important to review that two parts are required for a networked
 application to function. The architecture for a networked application is
 called "client/server". The server portion of the application runs somewhere
 on the Internet and has the information that users want to view or interact with.
@@ -69,10 +73,12 @@ conversation. Computers like precision.
 ![Application Protocols](../sketchnote/Protocols)
 
 \index{RFC-7230 HTTP}
-Many diferent networked applications are found in the Application layer
+There are many different networked applications
 and it is important that each networked application have a well-documented
 protocol so that all servers and clients can interoperate. Some of these
-protocols are intricate and complex. The protocol that describes how a
+protocols are intricate and complex.
+
+The protocol that describes how a
 web browser communicates with a web server is described in a number of large
 documents starting with this one:
 
@@ -118,15 +124,15 @@ according to one of the earliest standards for the Internet:
 \index{NSFNet}
 This standard is only five pages long and at this point, you probably can
 easily read and understand most of what is in the document. The telnet
-command is so old that it is effectively a "dinosaur", as it comes from
+client application is so old that it is effectively a "dinosaur", as it comes from
 "prehistoric" times in terms of the age of the Internet. The Internet
 was created in 1985 by the NSFNet project and the precursor to the NSFNet
 called the ARPANET was brought up in 1969. Telnet was designed and built
 even before the first TCP/IP network was in production.
 
-Interestingly, the telnet command is still present in most modern operating
+Interestingly, the telnet application is still present in most modern operating
 systems. You can access telnet from the terminal (command line) in Macintosh
-and Linux. The telnet command was also present in Windows 95 through Windows
+and Linux. The telnet application was also present in Windows 95 through Windows
 XP, but is not included in later versions of Windows. If you have a later
 version of Windows, you can download and install a telnet client to
 do the examples in this section.
@@ -161,7 +167,7 @@ is an example of things not going well:
     </body></html>
     Connection closed by foreign host.
 
-We type the telnet command in the terminal requesting a connection to port 80
+We typed 'telnet' in the terminal requesting a connection to port 80
 (the web server) on the host www.dr-chuck.com.  You can see as our transport
 layer is looking up the domain name, finding that the actual address is
 "198.251.66.43", and then making a successful connection to that server. Once
@@ -209,14 +215,20 @@ series of headers describing the document, followed by a blank line, then it
 sends the actual document.  
 
 \index{HTTP status code!200}
-\index{HTTP status code!403}
+\index{HTTP status code!301}
 \index{HTTP status code!404}
 The headers communicate metadata (data about data) about the document that we
 have asked to retrieve. For example, the first line contains a status code.
+
 In this example, the status code of "200" means that things went well. A status
 code of "404" in the first line of the headers indicates that the requested 
-document was "not found". A status code of "403" indicates that the document
+document was "not found". A status code of "301" indicates that the document
 has moved to a new location.
+
+The status codes for HTTP are grouped into ranges: 
+2XX codes indicate success, 3XX codes are for redirecting, 
+4XX codes indicate that the client application did something wrong,
+and 5xx codes indicate that the server did something wrong.
 
 This is a HyperText Markup Language (HTML) document, so it is marked up
 with tags like \<h1\> and \<p\>. When your browser receives
@@ -298,8 +310,6 @@ When the window fills up, the web server is paused until the Transport
 layer on the destination computer has started to receive and acknowledge
 packets.
 
-![Window Size](../sketchnote/Windows_Size)
-
 As the Transport layer on the destination computer starts to receive packets,
 reconstruct the stream of data, and acknowledge packets, it delivers the
 reconstructed stream of packets to the web browser application display on
@@ -313,17 +323,21 @@ now it looks like this:
 
 ![Buffering in the Application and Transport Layers](../images/application-transport-buffer)
 
-The web server is reading the image file and sending it as a stream to the web
+The web server is reading the image file ('F') and sending it as a stream to the web
 browser as quickly as it can send the data.  The source Transport layer has
 broken the stream into packets and used IP to send the packets to the
-destination computer. The Transport layer has sent six packets and has stopped
+destination computer. 
+
+The Transport layer has sent six packets ('S') and has stopped
 sending because it has reached its window size and paused the web server.
 Three of those six packets have made it to the Transport layer on the
-destination computer and three of the packets are still making their way
-across the Internet. As the destination Transport layer pieces the stream
-back together, it both sends an acknowledgement and delivers the data to the
+destination computer ('R') and three of the packets are still making their way
+across the Internet ('S'). 
+
+As the destination Transport layer pieces the stream
+back together, it both sends an acknowledgement (ACK) and delivers the data to the
 receiving application (the web browser). The web browser reconstructs
-the image and displays it on the user's display as the data is received.
+the image ('A') and displays it on the user's display as the data is received.
 
 A key thing to notice in this picture is that the transport layers do not keep
 the packets for the entire file. They only retain packets that are "in transit"
@@ -343,8 +357,43 @@ flow control, they just try to send or receive data as quickly as possible and
 the two transport layers start and stop the applications as needed based on the
 speed and reliability of the network.
 
-Once again, we see how a higher-level layer uses the capabilities of
-the lower layer in the model to make its job much simpler.
+Writing Networked Applications
+------------------------------
+
+\index{socket}
+The applications which send and receive data over the network are written
+in one or more programming languages.   Many programming languages have
+libraries of code that make it quite simple to write application code to
+send and receive data across the network.
+With a good programming library, making a connection to an application
+running on a server, sending data to the server, and receiving data
+from the server is generally as easy as reading and writing a file.
+
+\index{programming sockets}
+As an example, the code below is all it takes in the Python
+programming language to make a connection to a web server
+and retrieve a document:
+
+![Programming with Sockets in Python](../images/python-socket)
+
+While you may or not know the Python programming language, the key point is
+that it only takes ten lines of application code to make and use a network
+connection. This code is simple because the Transport, Internetwork, and Link
+layers so effectively solve the problems at each of their layers that
+applications using the network can ignore nearly all of the details of how the
+network is implemented.
+
+In the Python application, in this line of code
+
+    mysock.connect(('www.py4inf.com', 80))
+
+we have specified that we are connecting to the application that is listening
+for incoming connections on port 80 on the remote computer www.py4inf.com.
+
+By choosing
+port 80 we are indicating that we want to connect to a World Wide Web server on
+that host and are expecting to communicate with that server using the HyperText
+Transport Protocol.
 
 Summary
 -------
@@ -374,6 +423,16 @@ that allows web browsers to retrieve web documents from web servers.
 
 **IMAP**: Internet Message Access Protocol.  A protocol that allows
 mail clients to log into and retrieve mail from IMAP-enabled mail servers.
+
+**flow control**: When a sending computer slows down make
+sure not to overwhelm either the network or the destination computer.
+Flow control also causes the sending computer to increase the speed at which data
+is sent when it is sure that the network and destination computer can handle the
+faster data rates.
+
+**socket**: A software library available in many programming languages
+that makes creating a network connection and exchanging data
+nearly as easy as opening and reading a file on your computer.
 
 **status code**: One aspect of the HTTP protocol that indicates the overall 
 success or failure of a request for a document. The most well-known
