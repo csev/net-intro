@@ -45,7 +45,13 @@ be able to communicate? We can't run 100-kilometer wires from each home
 to a single central office. What the telephone companies did instead was to have
 many central offices and run a few wires between the central offices, then
 share connections between central offices. For long distances, a connection
-might run through a number of central offices.
+might run through a number of central offices.  Before the advent of fiber optic,
+long distance telephone calls were carried between cities on poles with lots
+of separate wires.  The number of separate wires on the poles represented 
+the number of possible simultaneous long distance phone calls that could 
+use those wires.
+
+![Long Distance Telephone Poles](../photos/telephone_pole_photo.jpg)
 
 Since the cost of the wires went up as the length of the wire increased, these
 longer connections between offices were quite expensive to install and maintain,
@@ -55,6 +61,11 @@ and they were charged by the minute. This made sense because each minute you
 talked on a long-distance call, your use of the long-distance wires meant no
 one else could use them. The telephone companies wanted you to keep your calls
 short so their long-distance lines would be available for other customers.
+
+When telephone companies started using fiber optic, more advanced techniques 
+were used to carry many simultaneous long distance conversations on a single
+fiber.  When you look at an old photo and see lots of wires on a single pole,
+it generally means they were telephone wires and not used to carry electricity.
 
 Computers Communicate Differently
 ---------------------------------
