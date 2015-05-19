@@ -300,7 +300,7 @@ and the Link layer at the bottom. The reason we show them this way is because
 each layer makes use of the layers below it to achieve networked communications.
 
 All four layers run in your computer where you run the client application
-( like a browser), and
+(like a browser), and
 all four layers also run in the destination computer where the application server
 is running. You as the end user interact with the applications that make up the
 top layer of the stack, and the bottom layer represents the WiFi, cellular, or

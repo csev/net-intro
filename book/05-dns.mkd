@@ -90,13 +90,13 @@ Summary
 While the Domain Name System is not one of our four layers in the model, it is
 an important part of making the Internet easier to use. Domain names allow
 end users to use symbolic names for servers instead of numeric Internet
-Protocol addresses. By adding a service that maps Domain names to IP
+Protocol addresses. By adding a service that maps domain names to IP
 addresses, we can move servers from one Internet connection to another
 connection without requiring users to manually change their configurations
 to connect to a server.
 
 \index{Domain Name Registrar}
-If you would like to purchase a domain for yourself or your company you can 
+If you would like to purchase a domain name for yourself or your company you can 
 choose from any number of domain name registrars.
 
 Glossary

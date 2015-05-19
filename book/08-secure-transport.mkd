@@ -11,7 +11,7 @@ while it was crossing the network.
 
 So the Link, Internetwork, and Transport layers were focused on the
 efficient movement of data and solving the problems of a large-scale
-shared distributed network witout worrying about the privacy of that data.
+shared distributed network without worrying about the privacy of that data.
 
 But as the use of the Internet grew rapidly in the late 1980s and literally
 exploded when the Web became mainstream in 1994, security and privacy of
@@ -49,7 +49,7 @@ Encrypting and Decrypting Data
 The concept of protecting information so it cannot be read while it is being
 transported over an insecure medium is thousands of years old. The leaders
 in Roman armies sent coded messages to each other using a code called the
-Caeser Cipher.  The simplest version of this approach is to take each of the
+"Caeser Cipher".  The simplest version of this approach is to take each of the
 characters of the actual message (we call this "plain text") and shift
 each character a fixed distance down the alphabet to produce the
 scrambled message or "cipher text".
@@ -187,7 +187,7 @@ bank account numbers, or other sensitive data.
 But over time as networks have become faster and the https implementations have
 gotten much more efficient, there is a trend toward encrypting all web server
 interactions whenever you are interacting with a web server where you have an
-account.  The current trend is towards using HTTPS for all web traffic.
+account.  The current trend is towards using https for all web traffic.
 
 Certificates and Certificate Authorities
 ----------------------------------------

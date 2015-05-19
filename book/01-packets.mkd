@@ -42,7 +42,7 @@ are hundreds or thousands of people.
 
 Using wires, microphones and speakers is how early telephone systems
 from the 1900s allowed people to make phone calls.  
-Because we could not have a separte wire between all pairs of telephones, 
+Because we could not have a separate wire between all pairs of telephones, 
 these systems did not allow all pairs of people to be connected at the same time.
 Each person had a single connection to a human "operator". The operator
 would connect two wires together to allow a pair of people to talk,

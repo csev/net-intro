@@ -202,7 +202,7 @@ of well-known default ports for various server applications:
 * FTP (21) - File Transfer
 
 These are the normal ports for these applications.  Sometimes servers will
-make applications avaialbe at non-standard ports.  If you are doing web development,
+make applications available at non-standard ports.  If you are doing web development,
 you may run a web server at a standard port like 3000, 8080, or 8888.  If you see
 a URL like:
 

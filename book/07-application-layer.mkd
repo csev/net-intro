@@ -3,13 +3,13 @@ Application Layer
 
 \index{Application Layer}
 \index{Layer!Application}
-We have been working from the bottom to the top of our four-layer network model
+We have been working from the bottom to the top of our four-layer TCP/IP network model
 and we are finally at the top.  The Application layer is where the networked software
 like web browsers, mail programs, video players, or networked video players operate.
 We as users interact with these applications and the applications interact
 with the network on our behalf.
 
-![The Four-Layer Model](../images/layers)
+![The Four-Layer TCP/IP Model](../images/layers)
 
 Client and Server Applications
 ------------------------------
