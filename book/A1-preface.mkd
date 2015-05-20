@@ -1,24 +1,43 @@
-*Draft - Copyright All Rights Reserved - Charles R. Severance.
-Please do not reproduce or redistribute.*
 \thispagestyle{empty}
+
+Credits
+-------
 
     Illustrations: Mauro Toselli
     Editorial Support: Sue Blumenberg
+    Cover Design: Aimee Andrion
 
-The figures for the book were drawn with OmniGraffle and the SketchNotes
-were converted from image to vector format using www.vectormagic.com.
+The SketchNote illustrations were drawn using XXXX-Software and
+converted from PNG to SVG and EPS vector formats using www.vectormagic.com.
+The technical figures for the book were drawn with OmniGraffle.
 
-Printing history:
+Printing History
+----------------
 
-*TBD* Original Printing.
+2015-May-21 Original Printing.
 
-*Copyright Notes*
+Copyright Details
+-----------------
 
-Once this work has been completed and I have published it,
-I will switch the license to a CC-BY-NC with exceptions as I have done
-in my other book: http://www.py4inf.com/
+This book is Copyright Charles R. Severance.
 
-Please contact me if you have any questions or comments.
+The paper/print version of this book is licensed under a 
+Creative Commons Attribution-NonCommercial 4.0 International License.
+Permission is specifically granted to make copies as 
+necessary of all or part of the materials in this book 
+as part of a course or course packet.
+
+http://creativecommons.org/licenses/by-nc/4.0/x
+
+Electronic copies of this book in EPUB, PDF, and HTML 
+are licensed under a
+Creative Commons Attribution 4.0 International License.
+
+http://creativecommons.org/licenses/by/4.0/
+
+if you are interested in translating this book into a language
+other than English, please contact me. I am willing to 
+give different license terms to a responsible translation.
 
 \cleardoublepage
 
@@ -31,6 +50,12 @@ the technical design and architecture of the Internet.
 The book is aimed at all audiences - even those with absolutely no prior
 technical experience or math skills.  The Internet is an amazingly beautiful
 design and should be understood by all who use it.
+
+I want to thank Pamela Fox of Khan Academy for coming up with 
+the idea of an introductory network technology course using open
+materials.  While this book is not about Network+ or the CCNA
+certifications, I hope it serves as a way to give students
+interested in these certifications a good starting point.
 
 I initally developed this material as a single week's lecture in
 the *SI502 - Networked Computing* course that I taught at the
@@ -48,11 +73,6 @@ Sue in 2012 when they became volunteer Community Teaching Assistants (CTAs)
 for my IHTS course on Coursera.  Over the three years we have become
 friends and colleagues.   It is a great example of how open education
 can bring people together.
-
-The book does not assume any previous background.  It is suitable
-for use in high schools, community college classes, early college classes, or
-adult education.  We hope to give anyone with an interest insight into how
-the network they use every day actually works.
 
 There is supporting material for this book at
 

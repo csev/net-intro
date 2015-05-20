@@ -162,5 +162,3 @@ d) Assign an IP address to the domain or subdomain
 
 
 
-*Draft - Copyright All Rights Reserved - Charles R. Severance.
-Please do not reproduce or redistribute.*
