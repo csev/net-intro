@@ -47,7 +47,7 @@ Preface
 
 The goal of this textbook is to provide a basic understanding of
 the technical design and architecture of the Internet.
-The book is aimed at all audiences - even those with absolutely no prior
+The book is aimed at all audiences -- even those with absolutely no prior
 technical experience or math skills.  The Internet is an amazingly beautiful
 design and should be understood by all who use it.
 
@@ -70,7 +70,7 @@ that focuses on the Internet's architecture.
 This book has been particularly fun in that it is a collaboration
 with my friends Mauro Toselli and Sue Blumenberg.  I met Mauro and
 Sue in 2012 when they became volunteer Community Teaching Assistants (CTAs)
-for my IHTS course on Coursera.  Over the three years we have become
+for my IHTS course on Coursera.  Over the past three years we have become
 friends and colleagues.   It is a great example of how open education
 can bring people together.
 
