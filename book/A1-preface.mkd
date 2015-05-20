@@ -7,37 +7,40 @@ Credits
     Editorial Support: Sue Blumenberg
     Cover Design: Aimee Andrion
 
-The SketchNote illustrations were drawn using XXXX-Software and
-converted from PNG to SVG and EPS vector formats using www.vectormagic.com.
+The SketchNote illustrations were drawn on an iPad using
+*Paper* by www.fiftythree.com using a dedicated stylus pencil.
+The illustrations were converted from PNG to
+SVG and EPS vector formats using www.vectormagic.com.
 The technical figures for the book were drawn with OmniGraffle.
 
 Printing History
 ----------------
 
-2015-May-21 Original Printing.
+2015-May-25 Original Printing - CreateSpace
 
 Copyright Details
 -----------------
 
 This book is Copyright Charles R. Severance.
 
-The paper/print version of this book is licensed under a 
+The paper/print version of this book is licensed under a
 Creative Commons Attribution-NonCommercial 4.0 International License.
-Permission is specifically granted to make copies as 
-necessary of all or part of the materials in this book 
+Permission is specifically granted to make copies as
+necessary of all or part of the materials in this book
 as part of a course or course packet.
 
-http://creativecommons.org/licenses/by-nc/4.0/x
+http://creativecommons.org/licenses/by-nc/4.0
 
-Electronic copies of this book in EPUB, PDF, and HTML 
+Electronic copies of this book in EPUB, PDF, and HTML
 are licensed under a
 Creative Commons Attribution 4.0 International License.
 
 http://creativecommons.org/licenses/by/4.0/
 
-if you are interested in translating this book into a language
-other than English, please contact me. I am willing to 
-give different license terms to a responsible translation.
+If you are interested in translating this book into a language
+other than English, please contact me. I am willing to
+give commercial print distribution rights for a complete and
+responsible translation.
 
 \cleardoublepage
 
@@ -45,17 +48,19 @@ Preface
 =======
 \thispagestyle{empty}
 
-The goal of this textbook is to provide a basic understanding of
+The goal of this book is to provide a basic understanding of
 the technical design and architecture of the Internet.
 The book is aimed at all audiences -- even those with absolutely no prior
 technical experience or math skills.  The Internet is an amazingly beautiful
 design and should be understood by all who use it.
 
-I want to thank Pamela Fox of Khan Academy for coming up with 
-the idea of an introductory network technology course using open
-materials.  While this book is not about Network+ or the CCNA
+While this book is not about the Network+ or CCNA
 certifications, I hope it serves as a way to give students
 interested in these certifications a good starting point.
+
+I want to thank Pamela Fox of Khan Academy for coming up with
+the idea of an introductory network technology course using open
+materials.
 
 I initally developed this material as a single week's lecture in
 the *SI502 - Networked Computing* course that I taught at the
@@ -68,7 +73,7 @@ text that can be read for enjoyment or used to support an introductory course
 that focuses on the Internet's architecture.
 
 This book has been particularly fun in that it is a collaboration
-with my friends Mauro Toselli and Sue Blumenberg.  I met Mauro and
+with my friends Mauro Toselli (@xlontrax) and Sue Blumenberg.  I met Mauro and
 Sue in 2012 when they became volunteer Community Teaching Assistants (CTAs)
 for my IHTS course on Coursera.  Over the past three years we have become
 friends and colleagues.   It is a great example of how open education
@@ -79,9 +84,10 @@ There is supporting material for this book at
 http://www.net-intro.com/
 
 If you like the book, let us know.  Send us a tweet with your thoughts.
+You can also send a tweet if you find an error in the book.
 
     Charles R. Severance (@drchuck)
     www.dr-chuck.com
     Ann Arbor, MI USA
-    Fri Mar 20, 2015
+    May 20, 2015
 
