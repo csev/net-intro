@@ -18,7 +18,7 @@ has continued as networks have become far larger and faster and globally
 distributed with billions of computers.
 
 In order to better understand how today's Internet works, we will take a look
-at how humans and computers have communicated uring technology over the years.
+at how humans and computers have communicated using technology over the years.
 
 Communicating at a Distance
 ---------------------------
@@ -40,10 +40,10 @@ and enough pieces of wire to connect all the microphones and speakers.
 This is a problem with five people and it gets far worse when there
 are hundreds or thousands of people.
 
-Using wires, microphones and speakers is how early telephone systems
-from the 1900s allowed people to make phone calls.  
-Because we could not have a separate wire between all pairs of telephones, 
-these systems did not allow all pairs of people to be connected at the same time.
+Using wires, microphones, and speakers is how early telephone systems
+from the 1900s allowed people to make phone calls.  Because they could not
+have separate wires between every pair of telephones, these systems did
+not allow all pairs of people to be connected at the same time.
 Each person had a single connection to a human "operator". The operator
 would connect two wires together to allow a pair of people to talk,
 and then disconnect them when the conversation was finished.
@@ -59,13 +59,12 @@ be able to communicate? We can't run 100-kilometer wires from each home
 to a single central office. What the telephone companies did instead was to have
 many central offices and run a few wires between the central offices, then
 share connections between central offices. For long distances, a connection
-might run through a number of central offices.  Before the advent of fiber optic,
-long distance telephone calls were carried between cities on poles with lots
-of separate wires.  The number of separate wires on the poles represented
-the number of possible simultaneous long distance phone calls that could
-use those wires.
+might run through a number of central offices. Before the advent of fiber optic,
+long-distance telephone calls were carried between cities on poles with lots
+of separate wires. The number of wires on the poles represented the number of
+possible simultaneous long-distance phone calls that could use those wires.
 
-![Long Distance Telephone Poles](../photos/telephone_pole_photo.jpg)
+![Long-Distance Telephone Poles](../photos/telephone_pole_photo.jpg)
 
 Since the cost of the wires went up as the length of the wire increased, these
 longer connections between offices were quite expensive to install and maintain,
@@ -77,8 +76,8 @@ one else could use them. The telephone companies wanted you to keep your calls
 short so their long-distance lines would be available for other customers.
 
 When telephone companies started using fiber optic, more advanced techniques
-were used to carry many simultaneous long distance conversations on a single
-fiber.  When you look at an old photo and see lots of wires on a single pole,
+were used to carry many simultaneous long-distance conversations on a single
+fiber. When you look at an old photo and see lots of wires on a single pole,
 it generally means they were telephone wires and not used to carry electricity.
 
 Computers Communicate Differently
@@ -87,13 +86,12 @@ Computers Communicate Differently
 When humans talk on the phone, they make a call, talk for a while, and then
 hang up. Statistically, most of the time, humans are not talking on the phone.
 At least they weren't before everyone had smartphones. But computers, including
-applications on your smartphone, communicate differently than humans.
-Sometimes computers send 
-short messages to check if another computer is available.  Computers sometimes
-send medium-sized information like a single picture or a long email message. And
-sometimes computers send a lot of information like a whole movie or a piece of
-software to install that might take minutes or even hours to download. So messages
-between computers can be short, medium, or long.
+the applications on your smartphone, communicate differently than humans do.
+Sometimes computers send short messages to check if another computer is available.
+Computers sometimes send medium-sized information like a single picture or a
+long email message. And sometimes computers send a lot of information like a
+whole movie or a piece of software to install that might take minutes or even
+hours to download. So messages between computers can be short, medium, or long.
 
 In the earliest days of connecting computers to one another, pairs of computers
 were connected with wires. The simplest way to send data from one
@@ -117,10 +115,8 @@ When the computers were even farther away, in different cities, the leased
 lines were extended using the longer wires connecting the central offices.
 Since there were so few wires between central offices, these
 long-distance leased lines were quite expensive and their cost increased
-dramatically as the length of the leased line increased.
-
-But if you had enough money, you could lease direct connections between your
-computers so they could
+dramatically as the length of the leased line increased. But if you had enough
+money, you could lease direct connections between your computers so they could
 exchange data. This worked pretty well as long as you were only using one brand
 of computers, because each computer company had their own way of using
 telephone wires to connect their computers together and send data.
@@ -148,14 +144,13 @@ patient.  Along the way, after your message reached one computer, it
 would have to wait until its turn came to be sent to the next computer along
 the route. A message would arrive at an intermediate computer, be stored for a
 while (perhaps hours, depending on traffic), and then be forwarded one more
-connection (or "hop"). Sending entire messages one-at-a-time,
-a message might take minutes,
-hours, or even days to arrive at its ultimate destination, depending on the
-traffic at each of the hops.
+connection (or "hop").
 
-Even if it took a few hours for an email message to find its way from one part
-of the country to another, this was still much quicker and easier than sending a
-letter or postcard.
+Sending entire messages one at a time this way, a message might take minutes,
+hours, or even days to arrive at its ultimate destination, depending on the
+traffic at each of the hops.  But even if it took a few hours for an email
+message to find its way from one part of the country to another, this was
+still much quicker and easier than sending a letter or postcard.
 
 Packets and Routers
 -------------------
@@ -165,8 +160,8 @@ The most important innovation that allowed messages to move more quickly across
 a multi-hop network was to break each message into small fragments and send
 each fragment individually. In networking terms, these pieces of messages are
 called "packets". The idea of breaking a message into packets was pioneered 
-in the 1960s but it was not widely used until the 1980s because it required
-more computing power and more sophisitcated networking software.
+in the 1960s, but it was not widely used until the 1980s because it required
+more computing power and more sophisticated networking software.
 
 When messages are broken into packets and each packet is sent separately,
 if a short message was sent after a large message had
@@ -188,17 +183,17 @@ their turns on the outbound link.
 \index{IMP}
 \index{Interface Message Processor}
 \index{router}
-As networks moved away from the store and forward approach, they started to
+As networks moved away from the store-and-forward approach, they started to
 include special-purpose computers that specialized in moving packets. These
 were initially called "Interface Message Processors" or "IMPs" because
-they acted as the interface between a general-purpose computer and the
+they acted as the interface between general-purpose computers and the
 rest of the network. Later these computers dedicated to communications were
 called "routers" because their purpose was to route the packets they received
 towards their ultimate destination.
 
 By building routers that specialized in moving packets across multiple
 hops, it became simpler to connect computers from multiple vendors to the same
-network. To connect any computer to the network all, now you needed to do was
+network. To connect any computer to the network, now all you needed to do was
 connect it to one router and then the rest of the communication details were
 handled by the other routers.
 
@@ -213,7 +208,7 @@ local area network could send data across the "Wide Area Network" (or WAN).
 Addressing and Packets
 ----------------------
 
-In the early store and forward networks it was important to know the source and
+In the early store-and-forward networks it was important to know the source and
 destination computers for every message. Each computer was given a unique name
 or number that was called the "address" of the computer. To send a message
 to another computer, you needed to add the source and destination address to
@@ -298,7 +293,7 @@ The typical maximum packet size is between 1000 and 3000 characters.
 packets on many links and quickly forward the packets on the best outbound
 link to speed the packet to its destination.
 
-**store-and-forward network**: A network where data is send from one
+**store-and-forward network**: A network where data is sent from one
 computer to another with the message being stored for relatively long periods
 of time in an intermediate computer waiting for an outbound network connection
 to become available.
@@ -322,7 +317,7 @@ You can take this quiz online at http://www.net-intro.com/quiz/
 a) Maintained cell phone towers
 b) Connected pairs of wires to allow people to talk
 c) Installed copper wire between cities
-d) Sorted packets as they went to the corerect destination
+d) Sorted packets as they went to the correct destination
 
 2. What is a leased line?
 a) A boundary between leased and owned telephone equipment
@@ -347,7 +342,7 @@ d) The amount of data that could be stored on an early punched card
 a) A mail sorting facility
 b) A refrigerator
 c) A high-speed train
-d) An undersea telecommunicaitons cable
+d) An undersea telecommunications cable
 
 6. What was the name given to early network routers?
 a) Interfaith Message Processors
@@ -364,7 +359,7 @@ d) A small tracking unit like a GPS to find lost messages
 
 8. Why is it virtually free to send messages around the world
 using the Internet?
-a) Beause governments pay for all the connections
+a) Because governments pay for all the connections
 b) Because advertising pays for all the connections
 c) Because so many people share all the resources
 d) Because it is illegal to charge for long-distance connections
