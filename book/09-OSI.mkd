@@ -232,7 +232,7 @@ b) TCP Internetwork Layer and OSI Network Layer
 c) TCP Transport Layer and OSI Transport Layer
 d) TCP Application Layer and OSI Session Layer
 
-5. Wheat layer does the TCP/IP Secure Sockets Layer map to in the OSI network model?
+5. What layer does the TCP/IP Secure Sockets Layer map to in the OSI network model?
 a) Secure Data Link Layer (SDLL)
 b) Secure Network Layer (SNL)
 c) Secure Transport Layer (STL)
