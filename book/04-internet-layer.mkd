@@ -161,7 +161,7 @@ except the ones that can no longer be contacted due to the broken link.
 
 ![Dynamic Routing](../sketchnote/Routing)
 
-Packets are routed more slowly for a while as router tables are rebuilt
+Packets are routed more slowly for a while as routing tables are rebuilt
 that reflect the new network configuration, but after a while things are
 humming along nicely.
 
@@ -177,7 +177,7 @@ are disconnected completely.
 
 At some point the broken link is repaired or a new link is brought up, and the
 router wants to make best use of the new links. The router is always interested in
-improving its router tables, and looks for opportunities to improve its routing
+improving its routing tables, and looks for opportunities to improve its routing
 tables in its spare time. When there is a lull in communication, a router will
 ask a neighboring router for all or part of its routing table. The router
 looks through the neighbor's tables and if it looks like the other router
