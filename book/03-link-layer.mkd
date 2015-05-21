@@ -30,7 +30,7 @@ sending and receiving data with a small, low-powered radio. The radio in your
 computer can only send data about 300 meters, so your
 computer sends your packets to the router in your home, which forwards the
 packets using a link to the rest of the Internet.  Sometimes we call the first
-router that handles your comptuter's packets the "base station" or "gateway".
+router that handles your computer's packets the "base station" or "gateway".
 
 All computers that are close enough to the base station
 with their radios turned on receive all of the packets the base station transmits,
@@ -96,7 +96,7 @@ If there are no replies, your computer waits a few seconds and
 then assumes there is no gateway for this network. When there is no
 gateway, your computer might show a different WiFi icon or not show the WiFi icon
 at all. Sometimes there can be more than one gateway, but we will ignore that
-for a while because it is not very common and a little complex.
+for a while because it is a little complex and not very common.
 
 Once your computer receives a message with the MAC address of the gateway, it can
 use that address to send packets that it wants the gateway to forward to the Internet.
@@ -109,7 +109,7 @@ Courtesy and Coordination
 -------------------------
 
 \index{collision detection}
-Because many computers are sharing the same frequencies, it's important to
+Because many computers are sharing the same radio frequencies, it's important to
 coordinate how they send data. When there's a crowd of people in a room,
 they can't all talk at the same time or everything will be garbled. The same 
 thing happens when multiple WiFi radios transmit at the same time on the same
@@ -185,7 +185,7 @@ as possible.
 
 A group of people sitting around a meeting could communicate without ever
 interrupting each other by having a small ball that they pass around in
-a circle and only allowing someone to talk when they have the ball. When you
+a circle and only allowing the person who has the ball to speak. When you
 get the ball and have something to say you talk for a short period (transmit
 a packet of words) and then pass the ball on.
 
@@ -198,9 +198,9 @@ until the token comes back before you can send the next packet. If you are the
 only station that wants to send data, you spend a good bit of time waiting for
 the token to come back to you after passing through all of the other stations.
 
-The token approach is best suited when using a link medium where it might
-take too long or be too costly to detect a collision such as 
-as a satellite link or a undersea fiber optic link. The CSMA/CD
+The token approach is best suited when using a link medium such as 
+as a satellite link or a undersea fiber optic link where it might
+take too long or be too costly to detect a collision. The CSMA/CD
 (listen-try) is best suited when the medium is inexpensive, shorter distance,
 and there are a lot of stations sharing the medium that only send data in short
 bursts. So that is why WiFi (and CSMA/CD) is so effective for providing
@@ -291,7 +291,7 @@ b) Wait until told by the gateway that the collision is over
 c) Immediately restart transmitting the message at the beginning
 d) Stop transmitting and wait a random amount of time before restarting
 
-7. When a station wants to send data across a "token" style network,
+7. When a station wants to send data across a "token"-style network,
 what is the first thing it must do?
 a) Listen to see if other computers are sending data
 b) Just start sending the data
