@@ -44,10 +44,10 @@ Corporation for Assigned Network Names (ICANN). ICANN chooses the top-level
 domains (TLDs) like .com, .edu, and .org and assigns those to other organizations to
 manage.  Recently a new set of TLDs like .club and .help have been made available.
 
-ICANN also assigns two-letter country code top level domain names like .us, .za,
+ICANN also assigns two-letter country code top-level domain names like .us, .za,
 .nl, and .jp to countries around the world
 We call these Country-Code Top-Level Domain Names (ccTLDs).  Countries often add 
-second level TLDs like .co.uk for commercial organizations within the UK.  Policies
+second-level TLDs, like .co.uk for commercial organizations within the UK.  Policies
 for applying for domain names with any particular ccTLD vary widely from one country
 to another.
 
@@ -67,7 +67,7 @@ their domain and create subdomains under it for their own use or use by others.
 Reading Domain Names
 --------------------
 
-When we look at an IP address like "212.78.1.25" the left prefix is the
+When we look at an IP address like "212.78.1.25", the left prefix is the
 "Network Number", so in a sense we read IP addresses from left to right, where
 the left part of the IP address is the most general part of the address and
 right part of the address is most specific:
@@ -80,7 +80,7 @@ For domain names, we read from right to left:
     drchuck.personal.si.umich.edu
     Narrow       <---       Broad
 
-The most general part of this domain name is ".edu" which means higher
+The most general part of this domain name is ".edu", which means higher
 education institutions. The subdomain "umich.edu" is a particular higher
 education institution.
 
@@ -96,7 +96,7 @@ connection without requiring users to manually change their configurations
 to connect to a server.
 
 \index{Domain Name Registrar}
-If you would like to purchase a domain name for yourself or your company you can 
+If you would like to purchase a domain name for yourself or your company, you can 
 choose from any number of domain name registrars.
 
 Glossary
@@ -104,16 +104,16 @@ Glossary
 
 **DNS**: Domain Name System.  A system of protocols and servers
 that allow networked applications to look up domain names
-and retrieve the corresponding IP Address for the domain name.
+and retrieve the corresponding IP address for the domain name.
 
 **domain name**: A name that is assigned within a top-level domain.
 For example, khanacademy.org is a domain that is assigned within
-the ".org" top level domain.
+the ".org" top-level domain.
 
 **ICANN**: International Corporation for Assigned Network Names.
 Assigns and manages the top-level domains for the Internet.
 
-**registrar**: A copany that can register, sell, and host
+**registrar**: A company that can register, sell, and host
 domain names.
 
 **subdomain**: A name that is created "below" a domain name.
