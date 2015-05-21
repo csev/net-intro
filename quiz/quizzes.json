@@ -4,18 +4,18 @@
         "questions": [
             {
                 "question": "What did early telephone operators do?",
-                "answer": 869109983,
+                "answer": 390456983,
                 "answers": [
                     "Maintained cell phone towers",
                     "Connected pairs of wires to allow people to talk",
                     "Installed copper wire between cities",
-                    "Sorted packets as they went to the corerect destination"
+                    "Sorted packets as they went to the correct destination"
                 ],
-                "md5": "76275ac882ff0b2004899fb5c21c9629"
+                "md5": "24114dedd7c90b3c4d1d4ba47857a2ac"
             },
             {
                 "question": "What is a leased line?",
-                "answer": 732353983,
+                "answer": 388476983,
                 "answers": [
                     "A boundary between leased and owned telephone equipment",
                     "A connection between a keyboard and monitor",
@@ -25,19 +25,19 @@
                 "md5": "0ae2812b83d73d0db4768d18023a8c28"
             },
             {
-                "question": "How long might a message be stored in an intermediate computer for a store and forward network?",
-                "answer": 931544983,
+                "question": "How long might a message be stored in an intermediate computer for a store-and-forward network?",
+                "answer": 606496983,
                 "answers": [
                     "less than a second",
                     "no more than four seconds",
                     "less than a minute",
                     "possibly as long as several hours"
                 ],
-                "md5": "6bacd1d8b74e074bff0632d836c4f53b"
+                "md5": "48c76e62fab7bfd54fdfd254f7fc3a67"
             },
             {
                 "question": "What is a packet?",
-                "answer": 643162983,
+                "answer": 343880983,
                 "answers": [
                     "A technique for wrapping items for shipping",
                     "A small box used for storage",
@@ -48,18 +48,18 @@
             },
             {
                 "question": "Which of these is most like a router?",
-                "answer": 770999983,
+                "answer": 581718983,
                 "answers": [
                     "A mail sorting facility",
                     "A refrigerator",
                     "A high-speed train",
-                    "An undersea telecommunicaitons cable"
+                    "An undersea telecommunications cable"
                 ],
-                "md5": "f2b5c152d35703bdd2eae9e2912d97bd"
+                "md5": "07597ef4a10050b4df5f234e4607c0a3"
             },
             {
                 "question": "What was the name given to early network routers?",
-                "answer": 316133983,
+                "answer": 153609983,
                 "answers": [
                     "Interfaith Message Processors",
                     "Internet Motion Perceptrons",
@@ -70,25 +70,25 @@
             },
             {
                 "question": "In addition to breaking large messages into smaller segments to be sent, what else was needed to properly route each message segment?",
-                "answer": 159552983,
+                "answer": 759107983,
                 "answers": [
                     "A source and destination address on each message segment",
-                    "And ID and password for each message segment",
+                    "An ID and password for each message segment",
                     "A small battery to maintain the storage for each message segment",
                     "A small tracking unit like a GPS to find lost messages"
                 ],
-                "md5": "1719347ee7542c374df2a5e2093d4ccd"
+                "md5": "3edbe33e98f60a1446bed1d14b0d8dfd"
             },
             {
                 "question": "Why is it virtually free to send messages around the world using the Internet?",
-                "answer": 535142983,
+                "answer": 909741983,
                 "answers": [
-                    "Beause governments pay for all the connections",
+                    "Because governments pay for all the connections",
                     "Because advertising pays for all the connections",
                     "Because so many people share all the resources",
                     "Because it is illegal to charge for long-distance connections"
                 ],
-                "md5": "556d3bb0b438bee8d122744a9b282920"
+                "md5": "0d5c828de5ece7bba509a2b24770a0b4"
             }
         ]
     },
@@ -97,7 +97,7 @@
         "questions": [
             {
                 "question": "Why do engineers use a \"model\" to organize their approach to solving a large and complex problem?",
-                "answer": 920642983,
+                "answer": 228924983,
                 "answers": [
                     "Because it allows them to build something small and test it in a wind tunnel",
                     "Because talking about a model delays the actual start of the hard work",
@@ -108,7 +108,7 @@
             },
             {
                 "question": "Which is the top layer of the network model used by TCP/IP networks?",
-                "answer": 433068983,
+                "answer": 975145983,
                 "answers": [
                     "Application",
                     "Transport",
@@ -119,7 +119,7 @@
             },
             {
                 "question": "Which of the layers concerns itself with getting a packet of data across a single physical connection?",
-                "answer": 447936983,
+                "answer": 675866983,
                 "answers": [
                     "Application",
                     "Transport",
@@ -130,7 +130,7 @@
             },
             {
                 "question": "What does CSMA/CD stand for?",
-                "answer": 374599983,
+                "answer": 687755983,
                 "answers": [
                     "Carrier Sense Multiple Access with Collision Detection",
                     "Collision Sense Media Access with Continuous Direction",
@@ -140,19 +140,19 @@
                 "md5": "819d8875bccac443145330fc45126013"
             },
             {
-                "question": "What is the goal of the Internetwork Layer?",
-                "answer": 934515983,
+                "question": "What is the goal of the Internetwork layer?",
+                "answer": 215049983,
                 "answers": [
                     "Insure that no data is lost while enroute",
                     "Get a packet of data moved across multiple networks from its source to its destination",
                     "Make sure that only logged-in users can use the Internet",
                     "Insure than WiFi is fairly shared across multiple computers"
                 ],
-                "md5": "ab1a290900d5bc8d39b8542460c93655"
+                "md5": "789fd46b2b575cd680d70a4ec259e76a"
             },
             {
                 "question": "In addition to the data, source, and destination addresses, what else is needed to make sure that a message can be reassembled when it reaches its destination?",
-                "answer": 649106983,
+                "answer": 708566983,
                 "answers": [
                     "An offset of where the packet belongs relative to the beginning of the message",
                     "A location to send the data to if the destination computer is down",
@@ -163,7 +163,7 @@
             },
             {
                 "question": "What is \"window size\"?",
-                "answer": 560910983,
+                "answer": 258655983,
                 "answers": [
                     "The sum of the length and width of a packet",
                     "The maximum size of a single packet",
@@ -173,19 +173,19 @@
                 "md5": "ef96a8b1f3bb711f4475ae4a91246ba3"
             },
             {
-                "question": "In a typical networked client-server application, where does the client application run?",
-                "answer": 587664983,
+                "question": "In a typical networked client/server application, where does the client application run?",
+                "answer": 498474983,
                 "answers": [
                     "On your laptop, desktop, or mobile computer",
                     "On a wireless access point",
                     "On the closest router",
                     "In an undersea fiber optic cable"
                 ],
-                "md5": "9a770fa474a3938b625fcea1b709a4fe"
+                "md5": "5be24618a819e9550c241dd84fde5ef5"
             },
             {
                 "question": "What does URL stand for?",
-                "answer": 548026983,
+                "answer": 412259983,
                 "answers": [
                     "Universal Routing Linkage",
                     "Uniform Retransmission Logic",
@@ -201,7 +201,7 @@
         "questions": [
             {
                 "question": "When using a WiFi network to talk to the Internet, where does your computer send its packets?",
-                "answer": 136759983,
+                "answer": 334959983,
                 "answers": [
                     "A gateway",
                     "A satellite",
@@ -212,7 +212,7 @@
             },
             {
                 "question": "How is the link/physical address for a network device assigned?",
-                "answer": 407304983,
+                "answer": 527215983,
                 "answers": [
                     "By the cell tower",
                     "By the Internet Assignment Numbers Authority (IANA)",
@@ -223,7 +223,7 @@
             },
             {
                 "question": "Which of these is a link address?",
-                "answer": 752170983,
+                "answer": 467753983,
                 "answers": [
                     "0f:2a:b3:1f:b3:1a",
                     "192.168.3.14",
@@ -234,7 +234,7 @@
             },
             {
                 "question": "How does your computer find the gateway on a WiFi network?",
-                "answer": 237842983,
+                "answer": 612440983,
                 "answers": [
                     "It has a gateway address installed by the manufacturer",
                     "It broadcasts a request for the address of the gateway",
@@ -245,7 +245,7 @@
             },
             {
                 "question": "When your computer wants to send data across WiFi, what is the first thing it must do?",
-                "answer": 431086983,
+                "answer": 708566983,
                 "answers": [
                     "Listen to see if other computers are sending data",
                     "Just start sending the data",
@@ -255,26 +255,26 @@
                 "md5": "395004bae92a99084de2728d9e04ac89"
             },
             {
-                "question": "What does a WiFi-connected workstation do when it tries to send data and senses a collision has happenned?",
-                "answer": 819561983,
+                "question": "What does a WiFi-connected workstation do when it tries to send data and senses a collision has happened?",
+                "answer": 338926983,
                 "answers": [
                     "Keep sending the message so part of the message makes it through",
                     "Wait until told by the gateway that the collision is over",
                     "Immediately restart transmitting the message at the beginning",
                     "Stop transmitting and wait a random amount of time before restarting"
                 ],
-                "md5": "3802362ff05ccef027106931de67d4ba"
+                "md5": "85fc7379e44ec6c067d92589717c5135"
             },
             {
-                "question": "When a station wants to send data across a \"token\" style network, what is the first thing it must do?",
-                "answer": 317124983,
+                "question": "When a station wants to send data across a \"token\"-style network, what is the first thing it must do?",
+                "answer": 411269983,
                 "answers": [
                     "Listen to see if other computers are sending data",
                     "Just start sending the data",
                     "Send a message to the gateway asking for permission to transmit",
                     "Wait until informed that it is your turn to transmit"
                 ],
-                "md5": "2f938e46770f13dbff38bbbb91f49aaa"
+                "md5": "281c0e30d504ea240393cc04777c02e1"
             }
         ]
     },
@@ -282,19 +282,19 @@
         "title": "Internetworking Layer (IP)",
         "questions": [
             {
-                "question": "What is the goal of the Internetworking Layer?",
-                "answer": 334959983,
+                "question": "What is the goal of the Internetworking layer?",
+                "answer": 852261983,
                 "answers": [
                     "Move packets across multiple hops from a source to destination computer",
                     "Move packets across a single physical connection",
                     "Deal with web server failover",
                     "Deal with encryption of sensitive data"
                 ],
-                "md5": "ab1bcf369b2f8533d224cdd2909b427e"
+                "md5": "d516cfba481c8a921cd6b55f092a862d"
             },
             {
                 "question": "How many different physical links does a typical packet cross from its source to its destination on the Internet?",
-                "answer": 383520983,
+                "answer": 704604983,
                 "answers": [
                     "1",
                     "4",
@@ -305,7 +305,7 @@
             },
             {
                 "question": "Which of these is an IP address?",
-                "answer": 234869983,
+                "answer": 862172983,
                 "answers": [
                     "0f:2a:b3:1f:b3:1a",
                     "192.168.3.14",
@@ -316,7 +316,7 @@
             },
             {
                 "question": "Why is it necessary to move from IPv4 to IPv6?",
-                "answer": 550999983,
+                "answer": 963255983,
                 "answers": [
                     "Because IPv6 has smaller routing tables",
                     "Because IPv6 reduces the number of hops a packet must go across",
@@ -327,7 +327,7 @@
             },
             {
                 "question": "What is a network number?",
-                "answer": 696674983,
+                "answer": 473699983,
                 "answers": [
                     "A group of IP addresses with the same prefix",
                     "The GPS coordinates of a particular LAN",
@@ -338,7 +338,7 @@
             },
             {
                 "question": "How many computers can have addresses within network number \"218.78\"?",
-                "answer": 420187983,
+                "answer": 920642983,
                 "answers": [
                     "650",
                     "6500",
@@ -349,7 +349,7 @@
             },
             {
                 "question": "How do routers determine the path taken by a packet across the Internet?",
-                "answer": 943434983,
+                "answer": 219013983,
                 "answers": [
                     "The routes are controlled by the IRG (Internet Routing Group)",
                     "Each router looks at a packet and forwards it based on its best guess as to the correct outbound link",
@@ -360,7 +360,7 @@
             },
             {
                 "question": "What is a routing table?",
-                "answer": 115951983,
+                "answer": 184330983,
                 "answers": [
                     "A list of IP addresses mapped to link addresses",
                     "A list of IP addresses mapped to GPS coordinates",
@@ -371,7 +371,7 @@
             },
             {
                 "question": "How does a newly connected router fill its routing tables?",
-                "answer": 579739983,
+                "answer": 120906983,
                 "answers": [
                     "By consulting the IANA (Internet Assigned Numbers Authority)",
                     "By downloading the routing RFC (Request for Comments)",
@@ -382,7 +382,7 @@
             },
             {
                 "question": "What does a router do when a physical link goes down?",
-                "answer": 401356983,
+                "answer": 275499983,
                 "answers": [
                     "Throws away all of the routing table entries for that link",
                     "Consults the Internet Map (IMAP) service",
@@ -393,18 +393,18 @@
             },
             {
                 "question": "Why is it good to have at least a \"two-connected\" network?",
-                "answer": 290367983,
+                "answer": 529198983,
                 "answers": [
-                    "Because router tables are much smaller",
+                    "Because routing tables are much smaller",
                     "Because it removes the need for network numbers",
                     "Because it supports more IPv4 addresses",
                     "Because it continues to function even when a single link goes down"
                 ],
-                "md5": "cf498e1f07bb44bc43dce7bb041979e6"
+                "md5": "a0f22c27daf32dc6668fec5974440e88"
             },
             {
                 "question": "Do all packets from a message take the same route across the Internet?",
-                "answer": 170454983,
+                "answer": 577755983,
                 "answers": [
                     "Yes",
                     "No"
@@ -413,7 +413,7 @@
             },
             {
                 "question": "How do routers discover new routes and improve their routing tables?",
-                "answer": 878028983,
+                "answer": 397393983,
                 "answers": [
                     "Each day at midnight they download a new Internet map from IMAP",
                     "They periodically ask neighboring routers for their network tables",
@@ -424,7 +424,7 @@
             },
             {
                 "question": "What is the purpose of the \"Time to Live\" field in a packet?",
-                "answer": 566853983,
+                "answer": 889919983,
                 "answers": [
                     "To make sure that packets do not end up in an \"infinite loop\"",
                     "To track how many minutes it takes for a packet to get through the network",
@@ -435,7 +435,7 @@
             },
             {
                 "question": "How does the \"traceroute\" command work?",
-                "answer": 368653983,
+                "answer": 383518983,
                 "answers": [
                     "It sends a series of packets with low TTL values so it can get a picture of where the packets get dropped",
                     "It loads a network route from the Internet Map (IMAP)",
@@ -446,7 +446,7 @@
             },
             {
                 "question": "About how long does it take for a packet to cross the Pacific Ocean via an undersea fiber optic cable?",
-                "answer": 739288983,
+                "answer": 929560983,
                 "answers": [
                     "0.0025 Seconds",
                     "0.025 Seconds",
@@ -457,7 +457,7 @@
             },
             {
                 "question": "On a WiFi network, how does a computer get an Internetworking (IP) address?",
-                "answer": 336941983,
+                "answer": 870099983,
                 "answers": [
                     "Using the DHCP protocol",
                     "Using the DNS protocol",
@@ -468,18 +468,18 @@
             },
             {
                 "question": "What is Network Address Translation (NAT)?",
-                "answer": 596586983,
+                "answer": 357755983,
                 "answers": [
                     "It looks up the IP address associated with text names like \"www.dr-chuck.com\"",
                     "It allows IPv6 traffic to go across IPv4 networks",
                     "It looks up the best outbound link for a particular router and network number",
-                    "It re-uses special network numbers like \"192.168\" across multiple network gateways at multiple locations"
+                    "It reuses special network numbers like \"192.168\" across multiple network gateways at multiple locations"
                 ],
-                "md5": "f58c3abf32915521eb973a8af8448ff9"
+                "md5": "eaa761f59ea35ae7cf02cb4725c7d5e3"
             },
             {
                 "question": "How are IP addresses and network numbers managed globally?",
-                "answer": 863162983,
+                "answer": 354779983,
                 "answers": [
                     "There are five top-level registries that manage network numbers in five geographic areas",
                     "IP addresses are assigned worldwide randomly in a lottery",
@@ -490,7 +490,7 @@
             },
             {
                 "question": "How much larger are IPv6 addresses than IPv4 addresses?",
-                "answer": 705595983,
+                "answer": 255681983,
                 "answers": [
                     "They are the same size",
                     "IPv6 addresses are 50% larger than IPv4 addresses",
@@ -501,7 +501,7 @@
             },
             {
                 "question": "What does it mean when your computer receives an IP address that starts with \"169..\"?",
-                "answer": 705595983,
+                "answer": 967219983,
                 "answers": [
                     "Your connection to the Internet supports the Multicast protocol",
                     "The gateway is mappping your local address to a global address using NAT",
@@ -511,19 +511,8 @@
                 "md5": "6307d194f1b4504f5dc18c3f0899a2e9"
             },
             {
-                "question": "What does it mean when your computer receives an IP address that starts with \"192..\"?",
-                "answer": 799739983,
-                "answers": [
-                    "Your connection to the Internet supports the Multicast protocol",
-                    "The gateway is mappping your local address to a global address using NAT",
-                    "There was no gateway available to forward your packets to the Internet",
-                    "The gateway for this network is a low-speed gateway with a small window size"
-                ],
-                "md5": "e10ff26a7d6ee937c7d9fde70b0ba13e"
-            },
-            {
                 "question": "If you were starting an Internet Service Provider in Poland, which Regional Internet Registry (RIR) would assign you a block of IP addresses.",
-                "answer": 715505983,
+                "answer": 114959983,
                 "answers": [
                     "ARIN",
                     "LACNIC",
@@ -541,18 +530,18 @@
         "questions": [
             {
                 "question": "What does the Domain Name System accomplish?",
-                "answer": 707575983,
+                "answer": 127840983,
                 "answers": [
-                    "It allows network connect computers to use a textual name for a computer and look up its IP address",
+                    "It allows network-connected computers to use a textual name for a computer and look up its IP address",
                     "It keeps track of the GPS coordinates of all servers",
                     "It allows Regional Internet Registries (RIRs) to manage IP addresses on the various continents",
                     "It assigns different IP addresses to portable computers as they move from one WiFi to another"
                 ],
-                "md5": "ad25aed066497f41d5f71d16befc74c0"
+                "md5": "fb65a9c3881a90c7c71989b21f70500a"
             },
             {
                 "question": "What organization assigns top-level domains like \".com\", \".org\", and \".club\"?",
-                "answer": 940462983,
+                "answer": 143698983,
                 "answers": [
                     "IANA - Internet Assigned Numbers Authority",
                     "IETF - Internet Engineering Task Force",
@@ -563,7 +552,7 @@
             },
             {
                 "question": "Which of these is a domain address?",
-                "answer": 111986983,
+                "answer": 170455983,
                 "answers": [
                     "0f:2a:b3:1f:b3:1a",
                     "192.168.3.14",
@@ -573,15 +562,15 @@
                 "md5": "47c0676fb9be6fc9f7fe9cc8dc6908f1"
             },
             {
-                "question": "Which of these is *not* something a domain owner do with their domain?",
-                "answer": 785866983,
+                "question": "Which of these is *not* something a domain owner can do with their domain?",
+                "answer": 154599983,
                 "answers": [
                     "Create subdomains",
                     "Sell subdomains",
                     "Create new top-level domains",
                     "Assign an IP address to the domain or subdomain"
                 ],
-                "md5": "240d496ce865a49bfb1dbb9643c092f7"
+                "md5": "c42f24c6e2bcf69d939aa60a6e02a58e"
             }
         ]
     },
@@ -589,19 +578,19 @@
         "title": "Transport Layer",
         "questions": [
             {
-                "question": "What is the primary problem the Transport (TCP) layer supposed to solve?",
-                "answer": 888930983,
+                "question": "What is the primary problem the Transport (TCP) layer is supposed to solve?",
+                "answer": 227933983,
                 "answers": [
                     "Move packets across multiple hops from a source to destination computer",
                     "Move packets across a single physical connection",
                     "Deal with lost and out-of-order packets",
                     "Deal with encryption of sensitive data"
                 ],
-                "md5": "d85594095d377cc0b34ef5ae81dabe1d"
+                "md5": "aeb09167e06fba4b301c3b731c6535b3"
             },
             {
                 "question": "What is in the TCP header?",
-                "answer": 745235983,
+                "answer": 270546983,
                 "answers": [
                     "Physical address",
                     "IP Address and Time to Live",
@@ -612,7 +601,7 @@
             },
             {
                 "question": "Why is \"window size\" important for the proper functioning of the network?",
-                "answer": 525232983,
+                "answer": 939470983,
                 "answers": [
                     "Because packets that are too large will clog fiber optic connections",
                     "It prevents a fast computer from sending too much data on a slow connection",
@@ -623,7 +612,7 @@
             },
             {
                 "question": "What happens when a sending computer receives an acknowledgement from the receiving computer?",
-                "answer": 140724983,
+                "answer": 773973983,
                 "answers": [
                     "The sending computer resends the data to make sure it was transmitted accurately.",
                     "The sending computer sends more data up to the window size",
@@ -634,7 +623,7 @@
             },
             {
                 "question": "Which of these detects and takes action when packets are lost?",
-                "answer": 962265983,
+                "answer": 169465983,
                 "answers": [
                     "Sending computer",
                     "Network gateway",
@@ -645,7 +634,7 @@
             },
             {
                 "question": "Which of these retains data packets so they can be retransmitted if a packets lost?",
-                "answer": 913703983,
+                "answer": 931541983,
                 "answers": [
                     "Sending computer",
                     "Network gateway",
@@ -655,30 +644,8 @@
                 "md5": "f688bc1335f084132aac11d6faf62b06"
             },
             {
-                "question": "What is a \"socket\" on the Internet?",
-                "answer": 600550983,
-                "answers": [
-                    "A way for devices to get wireless power",
-                    "A way for devices to get an IP address",
-                    "An entry in  a router table",
-                    "A two-way data connection between a pair of client and server applications"
-                ],
-                "md5": "e8a7b30a92f95e9c3b753e2f05485509"
-            },
-            {
-                "question": "What must an application know to make a socket connection in software?",
-                "answer": 902802983,
-                "answers": [
-                    "The address of the server and the port number on the server",
-                    "The route between the source and destination computers",
-                    "Which part of the IP address is the network number",
-                    "The initial size of the TCP window during transmission"
-                ],
-                "md5": "9fe6573b8714f4de24fc6155c03ac342"
-            },
-            {
                 "question": "Which of these is most similar to a TCP port?",
-                "answer": 514331983,
+                "answer": 210094983,
                 "answers": [
                     "Train station",
                     "Undersea network cable",
@@ -689,7 +656,7 @@
             },
             {
                 "question": "Which half of the client/server application must start first?",
-                "answer": 734332983,
+                "answer": 470726983,
                 "answers": [
                     "Client",
                     "Server"
@@ -698,7 +665,7 @@
             },
             {
                 "question": "What is the port number for the Domain Name System?",
-                "answer": 589648983,
+                "answer": 447935983,
                 "answers": [
                     "22",
                     "80",
@@ -709,7 +676,7 @@
             },
             {
                 "question": "What is the port number for the IMAP mail retrieval protocol?",
-                "answer": 772984983,
+                "answer": 385503983,
                 "answers": [
                     "22",
                     "80",
@@ -725,7 +692,7 @@
         "questions": [
             {
                 "question": "Which layer is right below the Application layer?",
-                "answer": 364689983,
+                "answer": 168471983,
                 "answers": [
                     "Transport",
                     "Internetworking",
@@ -736,7 +703,7 @@
             },
             {
                 "question": "What kind of document is used to describe widely used Application layer prototcols?",
-                "answer": 494511983,
+                "answer": 285410983,
                 "answers": [
                     "DHCP",
                     "RFC",
@@ -747,7 +714,7 @@
             },
             {
                 "question": "Which of these is an idea that was invented in the Application layer?",
-                "answer": 257664983,
+                "answer": 743254983,
                 "answers": [
                     "0f:2a:b3:1f:b3:1a",
                     "192.168.3.14",
@@ -758,18 +725,18 @@
             },
             {
                 "question": "Which of the following is *not* something that the Application layer worries about?",
-                "answer": 547035983,
+                "answer": 830461983,
                 "answers": [
                     "Whether the client or server starts talking first",
                     "The format of the commands and responses exchanged across a socket",
                     "How the window size changes as data is sent across a socket",
-                    "How data is represented as it is sent across the network to assue interoperability."
+                    "How data is represented as it is sent across the network to assure interoperability."
                 ],
-                "md5": "d6730de0157de5ee298f4808e322ee58"
+                "md5": "94a4e1d8f9eb5782052c3f0f6111e92f"
             },
             {
                 "question": "Which of these is an Application layer protocol?",
-                "answer": 897847983,
+                "answer": 759107983,
                 "answers": [
                     "HTTP",
                     "TCP",
@@ -780,7 +747,7 @@
             },
             {
                 "question": "What port would typically be used to talk to a web server?",
-                "answer": 165499983,
+                "answer": 231896983,
                 "answers": [
                     "23",
                     "80",
@@ -791,7 +758,7 @@
             },
             {
                 "question": "What is the command that a web browser sends to a web server to retrieve an web document?",
-                "answer": 791813983,
+                "answer": 181357983,
                 "answers": [
                     "RETR",
                     "DOCUMENT",
@@ -802,7 +769,7 @@
             },
             {
                 "question": "What is the purpose of the \"Content-type:\" header when you retrieve a document over the web protocol?",
-                "answer": 535141983,
+                "answer": 262616983,
                 "answers": [
                     "Tells the browser how to display the retrieved document",
                     "Tells the browser where to go if the document cannot be found",
@@ -813,7 +780,7 @@
             },
             {
                 "question": "What common UNIX command can be used to send simple commands to a web server?",
-                "answer": 159555983,
+                "answer": 810642983,
                 "answers": [
                     "ftp",
                     "ping",
@@ -824,7 +791,7 @@
             },
             {
                 "question": "What does an HTTP status code of \"404\" mean?",
-                "answer": 614424983,
+                "answer": 351809983,
                 "answers": [
                     "Document has moved",
                     "Successful document retrieval",
@@ -835,7 +802,7 @@
             },
             {
                 "question": "What characters are used to mark up HTML documents?",
-                "answer": 164507983,
+                "answer": 232886983,
                 "answers": [
                     "Less-then and greater-than signs < >",
                     "Exclamation points !",
@@ -846,7 +813,7 @@
             },
             {
                 "question": "What is a common application protocol for retrieving mail?",
-                "answer": 367665983,
+                "answer": 746227983,
                 "answers": [
                     "RFC",
                     "HTML",
@@ -857,7 +824,7 @@
             },
             {
                 "question": "What application protocol does RFC15 describe?",
-                "answer": 615412983,
+                "answer": 383518983,
                 "answers": [
                     "telnet",
                     "ping",
@@ -868,7 +835,7 @@
             },
             {
                 "question": "What happens to a server application that is sending a large file when the TCP layer has sent enough data to fill the window size and has not yet received an acknowledgement?",
-                "answer": 447935983,
+                "answer": 748208983,
                 "answers": [
                     "The application switches its transmission to a new socket",
                     "The application crashes and must be restarted",
@@ -876,6 +843,28 @@
                     "The closest gateway router starts to discard packets that would exceed the window size"
                 ],
                 "md5": "9a81757f694557e6dfb363acd6c681f2"
+            },
+            {
+                "question": "What is a \"socket\" on the Internet?",
+                "answer": 388476983,
+                "answers": [
+                    "A way for devices to get wireless power",
+                    "A way for devices to get an IP address",
+                    "An entry in a routing table",
+                    "A two-way data connection between a pair of client and server applications"
+                ],
+                "md5": "362785f58e3ba596097610b0c6be88d7"
+            },
+            {
+                "question": "What must an application know to make a socket connection in software?",
+                "answer": 716494983,
+                "answers": [
+                    "The address of the server and the port number on the server",
+                    "The route between the source and destination computers",
+                    "Which part of the IP address is the network number",
+                    "The initial size of the TCP window during transmission"
+                ],
+                "md5": "9fe6573b8714f4de24fc6155c03ac342"
             }
         ]
     },
@@ -884,7 +873,7 @@
         "questions": [
             {
                 "question": "How do we indicate that we want a secure connection when using a web browser?",
-                "answer": 575772983,
+                "answer": 767035983,
                 "answers": [
                     "Use https:// in the URL",
                     "Use a secure web browser",
@@ -895,7 +884,7 @@
             },
             {
                 "question": "Why is a shared-secret approach not suitable for use on the Internet?",
-                "answer": 341897983,
+                "answer": 113967983,
                 "answers": [
                     "Because people would lose or misplace the secret",
                     "It is difficult to distribute the secrets",
@@ -906,7 +895,7 @@
             },
             {
                 "question": "What is the underlying mathematical concept that makes public/private key encryption secure?",
-                "answer": 590640983,
+                "answer": 285412983,
                 "answers": [
                     "Continuous functions",
                     "Taylor series",
@@ -916,30 +905,30 @@
                 "md5": "32e34bfd2a523457c110831f14f881dc"
             },
             {
-                "question": "Which of the keys can be send across the internet in plain text without compromising security?",
-                "answer": 895865983,
+                "question": "Which of the keys can be sent across the internet in plain text without compromising security?",
+                "answer": 110002983,
                 "answers": [
                     "Encryption key",
-                    "Decription Key",
+                    "Decryption Key",
                     "Shared Secret",
                     "Univerally Safe Key (USK)"
                 ],
-                "md5": "83781077be496bac44d04d73e78f012e"
+                "md5": "a0e1affe34deaec8f129da026a9781a2"
             },
             {
-                "question": "Where does the Secure Sockets Layer (SSL) fit in the four layer architecture?",
-                "answer": 750191983,
+                "question": "Where does the Secure Sockets Layer (SSL) fit in the four-layer Internet architecture?",
+                "answer": 257664983,
                 "answers": [
                     "Below the Link layer",
                     "Between the Link and Internetworking layers",
                     "Between the Internetworking and Transport layers",
                     "Between the Transport and Application layers"
                 ],
-                "md5": "d9dd8c22d97f4e14ed6eb2b742fd1ce0"
+                "md5": "af243ec7d9ddcd5be3aa9306c595f594"
             },
             {
                 "question": "If you were properly using https in a browser over WiFi in a cafe, which of the following is the greatest risk to your losing cradit card information when making an online purchase?",
-                "answer": 345863983,
+                "answer": 729380983,
                 "answers": [
                     "Someone captured the packets that were sent across the WiFi",
                     "Someone captured the packets in the gateway router",
@@ -950,7 +939,7 @@
             },
             {
                 "question": "With the Secure Sockets Layer, where are packets encrypted and decrypted?",
-                "answer": 545053983,
+                "answer": 881002983,
                 "answers": [
                     "They are encrypted and decrypted as they pass through router",
                     "Each physical link has its own separate encryption",
@@ -961,7 +950,7 @@
             },
             {
                 "question": "What changes to the IP layer were needed to make secure socket layer (SSL) work?",
-                "answer": 728386983,
+                "answer": 341896983,
                 "answers": [
                     "No changes were needed",
                     "We had to add support for Secure IP (IPSEC)",
@@ -972,7 +961,7 @@
             },
             {
                 "question": "If a rogue element was able to monitor all packets going through an undersea cable and you were using public/private key encryption properly, which of the following would be the most difficult for them to obtain?",
-                "answer": 619379983,
+                "answer": 485594983,
                 "answers": [
                     "What servers you were communicating with",
                     "How often you used the servers",
@@ -983,7 +972,7 @@
             },
             {
                 "question": "What is the purpose of a Certificate Authority in public/private key encryption?",
-                "answer": 203158983,
+                "answer": 869110983,
                 "answers": [
                     "To make sure people do not forge badges for learning activities",
                     "To make sure packets get routed to the correct destination computer",
@@ -994,14 +983,36 @@
             },
             {
                 "question": "The ARPANET network was in operation starting in the 1960s. Secure Sockets Layer (SSL) was not invented util the 1980s. How did the ARPANET insure the security of the data on its network?",
-                "answer": 977129983,
+                "answer": 505413983,
                 "answers": [
                     "By using public/private keys and encrypting all transmissions",
-                    "By using encryption at the link layer",
+                    "By using encryption at the Link layer",
                     "By making sure no one could access the physical links",
                     "By only using secure WiFi routers"
                 ],
-                "md5": "b3baf677b5c76a191b0511084e67b23c"
+                "md5": "e72d824aea4937e3ff9626af277c1e4c"
+            },
+            {
+                "question": "Which of these answers is \"Security is fun\" encrypted with a Caeser Cipher shift of 1.",
+                "answer": 480638983,
+                "answers": [
+                    "Ptsjduao rt dii",
+                    "Wentudhs di dju",
+                    "Tfdvsjuz jt gvo",
+                    "Asdfghjk qw zxc"
+                ],
+                "md5": "a8e8059130c7cbe604b32bdd6414b6e6"
+            },
+            {
+                "question": "What Caeser Cipher shift was used to encrypt \"V yvxr frphevgl\"?",
+                "answer": 651090983,
+                "answers": [
+                    "1",
+                    "6",
+                    "13",
+                    "24"
+                ],
+                "md5": "13fbe3cde7c293ba294464cbc1af7043"
             }
         ]
     },
@@ -1010,7 +1021,7 @@
         "questions": [
             {
                 "question": "What is the primary value of the OSI network model?",
-                "answer": 517304983,
+                "answer": 924605983,
                 "answers": [
                     "OSI networks are used in the southern hemisphere",
                     "The OSI approach can be use to analyze many different network models",
@@ -1021,7 +1032,7 @@
             },
             {
                 "question": "How many layers does the OSI model have?",
-                "answer": 527215983,
+                "answer": 468746983,
                 "answers": [
                     "Four",
                     "Six",
@@ -1032,7 +1043,7 @@
             },
             {
                 "question": "Which of the OSI layers deals with the shape of connectors for network connections?",
-                "answer": 252706983,
+                "answer": 772981983,
                 "answers": [
                     "Physical",
                     "Data Link",
@@ -1043,7 +1054,7 @@
             },
             {
                 "question": "Which of the layers is most similar between the OSI and TCP network models?",
-                "answer": 181355983,
+                "answer": 423159983,
                 "answers": [
                     "TCP Link Layer and OSI Data Link Layer",
                     "TCP Internetwork Layer and OSI Network Layer",
@@ -1053,26 +1064,26 @@
                 "md5": "0b49c8857e0bdc75793126d50efc9735"
             },
             {
-                "question": "Where for the TCP/IP Secure Sockets Layer map to in the OSI network model?",
-                "answer": 762083983,
+                "question": "What layer does the TCP/IP Secure Sockets Layer map to in the OSI network model?",
+                "answer": 705596983,
                 "answers": [
                     "Secure Data Link Layer (SDLL)",
                     "Secure Network Layer (SNL)",
                     "Secure Transport Layer (STL)",
                     "Session and Presentation Layers"
                 ],
-                "md5": "fb1fd3a0b6297181ca60174cfe1ba5d1"
+                "md5": "deb22be366bbf929811830b07c88b361"
             },
             {
-                "question": "Why does the TCP model combine the OSI Data Link and Physical Layers into a single Link Layer?",
-                "answer": 578747983,
+                "question": "Why does the TCP model combine the OSI Data Link and Physical layers into a single Link Layer?",
+                "answer": 499467983,
                 "answers": [
-                    "Because the TCP model does not worry about the Physical Layer",
+                    "Because the TCP model does not worry about the Physical layer",
                     "Because the TCP model designers were ignored at the 1981 OSI meeting in Utrect, Netherlands",
                     "Because quite often the design of Data Link and Physical layers are tightly connected for a particular technology",
                     "To make the TCP model easier to understand by end users"
                 ],
-                "md5": "58919be933116b0fbbba5b4c603c1bc0"
+                "md5": "868db9b91f19e3be80c5171672633b6f"
             }
         ]
     }

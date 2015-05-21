@@ -89,7 +89,7 @@ for f in sorted(os.listdir(pth)):
             continue
         if not inquestions : continue
         if line.strip() == '' : continue
-        queslist = re.findall('[0-9]*\. (.*)',line)
+        queslist = re.findall('^[0-9]*\. (.*)',line)
         anslist = re.findall('^[a-z]*\) (.*)',line)
         # print(line)
         if len(queslist) > 0 : 
@@ -98,6 +98,7 @@ for f in sorted(os.listdir(pth)):
 
             if question is not False : 
                 questions.append(question)
+
             question = OrderedDict()
             # The first entry in the question array is the question
             answer = queslist[0].rstrip()

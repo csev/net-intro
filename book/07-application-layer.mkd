@@ -551,6 +551,17 @@ that it has received some of the data
 d) The closest gateway router starts to discard packets that 
 would exceed the window size
 
+15. What is a "socket" on the Internet?
+a) A way for devices to get wireless power
+b) A way for devices to get an IP address
+c) An entry in a routing table
+d) A two-way data connection between a pair of client and server applications
+
+16. What must an application know to make a socket connection in software?
+a) The address of the server and the port number on the server
+b) The route between the source and destination computers
+c) Which part of the IP address is the network number
+d) The initial size of the TCP window during transmission
 
 
 

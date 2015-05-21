@@ -289,35 +289,23 @@ b) Network gateway
 c) Core Internet routers
 d) Receiving computer
 
-7. What is a "socket" on the Internet?
-a) A way for devices to get wireless power
-b) A way for devices to get an IP address
-c) An entry in a routing table
-d) A two-way data connection between a pair of client and server applications
-
-8. What must an application know to make a socket connection in software?
-a) The address of the server and the port number on the server
-b) The route between the source and destination computers
-c) Which part of the IP address is the network number
-d) The initial size of the TCP window during transmission
-
-9. Which of these is most similar to a TCP port?
+7. Which of these is most similar to a TCP port?
 a) Train station
 b) Undersea network cable
 c) Apartment number
 d) Sculpture garden
 
-10. Which half of the client/server application must start first?
+8. Which half of the client/server application must start first?
 a) Client
 b) Server
 
-11. What is the port number for the Domain Name System?
+9. What is the port number for the Domain Name System?
 a) 22
 b) 80
 c) 53
 d) 143
 
-12. What is the port number for the IMAP mail retrieval protocol?
+10. What is the port number for the IMAP mail retrieval protocol?
 a) 22
 b) 80
 c) 53
