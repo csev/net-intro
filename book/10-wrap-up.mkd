@@ -37,7 +37,7 @@ retransmitted and packets that arrive out of order are put back into order
 before being passed on to the receiving application. The Transport layer also
 acts as flow control between the sending and receiving applications to make
 sure that data is moved quickly when the network is fast and the links are
-not overloaded, and slow the transfer of data when using slower or heavily
+not overloaded, and to slow the transfer of data when using slower or heavily
 loaded links. The data flow and rate limitation in the Transport layer allow
 the Internet to continue to function smoothly even when it is heavily loaded.
 
