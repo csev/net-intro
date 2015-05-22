@@ -13,6 +13,9 @@ link layers that can transmit data about a kilometer. Fiber optic cables,
 particularly those under the oceans, can transmit data up to thousands of
 kilometers. Satellite links can also send data over long distances.
 
+
+![The Link Layer](../images/layers-link)
+
 Regardless of the distance we can send the data, it is still traveling over
 a single link, and to reach the ultimate destination computer requires forwarding
 packets across multiple links. In this section we will look at how one of

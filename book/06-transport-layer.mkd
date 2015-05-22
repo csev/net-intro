@@ -9,7 +9,7 @@ A key element of the Internetworking layer is that it does not attempt
 to guarantee delivery of any particular packet.   The Internetworking layer
 is nearly perfect, but sometimes packets can be lost or misrouted.
 
-![The Four-Layer Model](../images/layers)
+![The Transport Layer](../images/layers-transport)
 
 But users of the network want to reliably send entire files or messages across the
 Internet. A network is not much good to us if all it can do is send packets

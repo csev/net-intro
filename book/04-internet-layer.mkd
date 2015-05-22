@@ -64,6 +64,8 @@ the system would need to track each individual computer as it moved from one
 location to another. And with billions of computers on the network, using the
 link layer address to make routing decisions would be slow and inefficient.
 
+![The Internetwork Layer](../images/layers-internetwork)
+
 \index{IPv4}
 To make this easier, we assign another address to every computer based on where
 the computer is connected to the network. There are two different versions of

@@ -10,7 +10,7 @@ The engineers who built the first internets broke the overall problem into
 four basic subproblems that could be worked on independently by different
 groups.
 
-![The Four-Layer Model](../images/layers)
+![The Four-Layer TCP/IP Model](../images/layers)
 
 
 \index{Link Layer}
