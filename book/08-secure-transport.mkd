@@ -43,19 +43,19 @@ that there is no way to alter your data while it is crossing the Internet.
 Encrypting and Decrypting Data
 ------------------------------
 
-\index{Caeser Cipher}
+\index{Caesar Cipher}
 \index{plain text}
 \index{cipher text}
 The concept of protecting information so it cannot be read while it is being
 transported over an insecure medium is thousands of years old. The leaders
 in Roman armies sent coded messages to each other using a code called the
-"Caeser Cipher".  The simplest version of this approach is to take each of the
+"Caesar Cipher". The simplest version of this approach is to take each of the
 characters of the actual message (we call this "plain text") and shift
 each character a fixed distance down the alphabet to produce the
-scrambled message or "cipher text".
+scrambled message or "ciphertext".
 
 Then we send the ciphertext via the courier or other insecure transport to
-the other person.  The courier cannot read the message because it appears
+the other person. The courier cannot read the message because it appears
 to be random characters unless you know the technique used to encode the
 message.
 
@@ -63,7 +63,7 @@ As long as the person receiving the message knew the number used to
 shift the message, they could unshift the characters in the encoded message
 to reproduce the original message.
 
-Here is a simple example of plain text and cipher text using a shift of one:
+Here is a simple example of plain text and ciphertext using a shift of one:
 
     Plain text:  Go to the river
     Cipher text: Hp up uif sjwfs
@@ -71,10 +71,10 @@ Here is a simple example of plain text and cipher text using a shift of one:
 \index{encrypt}
 \index{decrypt}
 We user the word "encrypt" to describe transforming the plain text to the
-cipher text and "decrypt" to describe the reverse process.
+ciphertext and "decrypt" to describe the reverse process.
 
-The Caeser Cipher is very simple to defeat but it was used to protect
-important messages until about 150 years ago.   Modern encryption techniques
+The Caesar Cipher is very simple to defeat, but it was used to protect
+important messages until about 150 years ago. Modern encryption techniques
 are far more sophisticated than a simple character shift, but all
 encryption systems depend on some kind of a secret key that both parties are
 aware of so they can decrypt received data.
@@ -144,10 +144,10 @@ Secure Sockets Layer (SSL)
 \index{SSL}
 \index{TLS}
 \index{Transport Layer Security}
-Since they decided to add security nearly 20 years after the Internet
+Since network engineers decided to add security nearly 20 years after the Internet
 protocols were developed, it was important not to break any existing Internet
-protocols or architecture. The solution was to add an optional partial layer
-between the Transport layer and the Application layer. We called this
+protocols or architecture. Their solution was to add an optional partial layer
+between the Transport layer and the Application layer. They called this
 partial layer the Secure Sockets Layer (SSL) or Transport Layer Security (TLS).
 
 ![Where Encryption and Decryption Happens](../sketchnote/Encr_Decr)
@@ -162,7 +162,7 @@ non-encrypted. The applications making the connections were also spared the
 details of how encryption and decryption worked.
 
 Since encryption was a simple and transparent addition to the Transport layer,
-there was no need to change routers that operate at the Internetwork and
+there was no need to change the routers that operate at the Internetwork and
 Link layers. There was no need to change any Link layer hardware to make
 encryption work. And applications did not need to be modified except to
 request that a connection be encrypted when appropriate.
@@ -172,7 +172,7 @@ Encrypting Web Browser Traffic
 
 \index{https}
 Since web browsers and web servers operate at the application layer, we barely
-notice when we are using encrypted or unencrypted connections. Web browsers
+notice whether we are using encrypted or unencrypted connections. Web browsers
 use the URL convention of replacing "http:" with "https:" to indicate that the
 browser is to communicate with the web server using the Secure Transport Layer
 instead of the unencrypted Transport layer.   Your browser will usually show a 
@@ -222,14 +222,14 @@ receives a public key that is not signed by one of its trusted certificate
 authorities, it will warn you before sending your data using the key.
 
 If you see a warning message about an untrusted certificate, you should
-probably say 'no' and figure out why your network traffic is not being routed
+probably say "no" and figure out why your network traffic is not being routed
 to the server that you think it is going to before sending any sensitive data.
 
 Summary
 -------
 
 Since the Internet was nearly 20 years old before we needed broadly deployed
-security, we needed to find a way to add security to the already existing
+security, we had to find a way to add security to the already existing
 four-layer model. The perfect place to add security was as an option in the
 Transport layer. This is why we call secure connections on the Internet
 "Secure Sockets Layer" (SSL) or "Transport Layer Security" (TLS).  There
@@ -239,7 +239,7 @@ at the Transport layer.
 The invention of public/private key encryption was well timed in that it solved
 the key distribution problem of shared-secret encryption approaches. With
 public/private keys, the public encryption key can be routinely shared across
-insecure media.  This means we can use an unencrypted connection to exchange
+insecure media. This means we can use an unencrypted connection to exchange
 data and upgrade the connection to a secure connection.
 
 By inserting the secure layer at the top of the Transport layer, we were able to
@@ -265,21 +265,20 @@ Glossary
 --------
 
 **assymetric key**: An approach to encryption where one (public) key is used
-to encrypt data prior transmission and a different (private) key is used to
+to encrypt data prior to transmission and a different (private) key is used to
 decrypt data once it is received.
 
 **certificate authority**: An organization that digitally signs public keys
-after assuring that the name listed in the public key is actually the person
-or organization
-in posession of the public key.
+after verifying that the name listed in the public key is actually the person
+or organization in posession of the public key.
 
-**cipher text**: A scrambled verison of a message that cannot be read without
+**ciphertext**: A scrambled version of a message that cannot be read without
 knowing the decryption key and technique.
 
-**decrypt**: The act of transforming a cipher text message to a plain text message
+**decrypt**: The act of transforming a ciphertext message to a plain text message
 using a secret or key.
 
-**encrypt**: The act of transforming a plain text message to a cipher text message
+**encrypt**: The act of transforming a plain text message to a ciphertext message
 using a secret or key.
 
 **plain text**: A readable message that is about to be encrypted before being sent.
@@ -309,13 +308,13 @@ You can take this quiz online at http://www.net-intro.com/quiz/
 web browser?
 a) Use https:// in the URL
 b) Use a secure web browser
-c) Open an icognito window
+c) Open an incognito window
 d) Manually encode the address of the server using SHA1
 
 2. Why is a shared-secret approach not suitable for use on the Internet?
 a) Because people would lose or misplace the secret
 b) It is difficult to distribute the secrets
-c) Encryption and decruption with shared secrets are too easily broken
+c) Encryption and decryption with shared secrets are too easily broken
 d) Encryption and decryption with shared secrets take too much compute power
 
 3. What is the underlying mathematical concept that makes public/private key
@@ -325,7 +324,7 @@ b) Taylor series
 c) Karnaugh Maps
 d) Prime numbers
 
-4. Which of the keys can be sent across the internet in plain text without
+4. Which of the keys can be sent across the Internet in plain text without
 compromising security?
 a) Encryption key
 b) Decryption Key
@@ -348,7 +347,7 @@ c) Someone captured the packets as they passed through a core Intenet router
 d) You have a virus on your computer that is capturing keystrokes
 
 7. With the Secure Sockets Layer, where are packets encrypted and decrypted?
-a) They are encrypted and decrypted as they pass through router
+a) They are encrypted and decrypted as they pass through the router
 b) Each physical link has its own separate encryption
 c) They are encrypted in your computer and decrypted in the server
 d) They are encrypted in the WiFi gateway and decrypted in the
@@ -384,7 +383,7 @@ b) By using encryption at the Link layer
 c) By making sure no one could access the physical links
 d) By only using secure WiFi routers
 
-12. Which of these answers is "Security is fun" encrypted with a Caeser
+12. Which of these answers is "Security is fun" encrypted with a Caesar
 Cipher shift of 1.
 
 a) Ptsjduao rt dii
@@ -392,7 +391,7 @@ b) Wentudhs di dju
 c) Tfdvsjuz jt gvo
 d) Asdfghjk qw zxc
 
-13. What Caeser Cipher shift was used to encrypt "V yvxr frphevgl"?
+13. What Caesar Cipher shift was used to encrypt "V yvxr frphevgl"?
 
 a) 1
 b) 6
