@@ -338,7 +338,7 @@ computer will need a different IP address.
 
 This ability for your computer to get a different IP address when it is moved
 from one network to another uses a protocol called "Dynamic Host Configuration
-Protocol" (or DHCP for short).  DCHP is pretty simple. Going back to the Link
+Protocol" (or DHCP for short).  DHCP is pretty simple. Going back to the Link
 layer section, recall the first thing your computer does at the link level is
 ask "Is there a base station on this network?" by sending a message to a special
 broadcast address. Once your computer is successfully connected at the link
