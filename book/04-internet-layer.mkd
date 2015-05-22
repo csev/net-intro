@@ -248,7 +248,7 @@ This problem is worse than having someone trip over a fiber optic cable,
 since it can cause several routers to crash.
 
 To solve this problem, the Internet Protocol designers added a number to each
-packet that is called the Time-To-Live (TTL). This number starts out with
+packet that is called the Time To Live (TTL). This number starts out with
 a value of about 30. Each time an IP packet is forwarded down a link, the
 router subtracts 1 from the TTL value. So if the packet takes 15 hops to
 cross the Internet, it will emerge on the far end with a TTL of 15.
@@ -517,7 +517,7 @@ for the major geographical areas of the world.
 **routing tables**: Information maintained by each router that keeps track 
 of which outbound link should be used for each network number.
 
-**Time-To-Live (TTL)**: A number that is stored in every packet that 
+**Time To Live (TTL)**: A number that is stored in every packet that 
 is reduced by one as the packet passes through each router.  When the TTL
 reaches zero, the packet is discarded.
 
