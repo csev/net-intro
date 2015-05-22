@@ -7,7 +7,7 @@ Transport Layer
 The next layer up from the Internetworking layer is the Transport layer.
 A key element of the Internetworking layer is that it does not attempt
 to guarantee delivery of any particular packet.   The Internetworking layer
-is nearly perfect, but sometimes packets can be lost or mis-routed.
+is nearly perfect, but sometimes packets can be lost or misrouted.
 
 ![The Four-Layer Model](../images/layers)
 
@@ -131,11 +131,11 @@ enroute in the network at the same time.
 The Transport layer on the receiving computer has received and acknowledged ten
 packets and delivered them to the receiving application ('a').^[We talk about the
 Application layer in later material.] The Transport layer on the destination
-computer has received more three packets('R'), but one packet is out of order.
+computer has received more three packets ('R'), but one packet is out of order.
 Receiving a packet out of order is not a cause for concern if the missing
 packet arrives in a reasonably short amount of time. As long as all the
 packets are received, the receiving Transport layer will reconstruct the
-message, fitting the packets together like puzzle pieces and deliver them
+message, fitting the packets together like puzzle pieces, and deliver them
 to the receiving application.
 
 Application Clients and Servers
@@ -208,8 +208,8 @@ a URL like:
 
 	http://testing.example.com:8080/login
 
-The "8080" indicates that your browser is to use the web protocols to interact
-with the server but connect to port 8080 instead of port 80.
+the "8080" indicates that your browser is to use the web protocols to interact
+with the server, but connect to port 8080 instead of the default port 80.
 
 Summary
 -------
@@ -217,9 +217,9 @@ Summary
 In a sense, the purpose of the Transport layer is to compensate for the fact
 that the Link and Internetworking layers might lose data. When the two
 lower layers lose or reroute packets, the Transport layer works to reassemble
-and/or retransmit data to compensate for the lower layer. The existence of
-the Transport layer makes it possible for the two lower layers to ignore
-retransmission and rate limiting issues.
+and/or retransmit that data. The existence of the Transport layer makes it
+possible for the two lower layers to ignore retransmission and rate-limiting
+issues.
 
 Part of the goal of a layered architecture is to break an overly complex
 problem into smaller subproblems. Each layer focuses on solving part of the
