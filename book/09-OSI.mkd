@@ -45,7 +45,7 @@ Another problem solved at this layer is how to encode the bits
 (0's and 1's) that make up the data being sent across the
 medium.^["Manchester Encoding" is a common technique for encoding 
 bits for transmission across a wire.]
-The "bit encoding" (or modulation) also determines how fast data
+The "bit encoding" (or modulation) determines how fast data
 can be sent across the link.
 
 Data Link (Layer 2)
@@ -190,10 +190,10 @@ Glossary
 
 **abstract model**: A model and set of terminology that is used to generally
 understand a problem area and guide the development of standards and
-implementations to solve a problem.
+implementations to solve problems.
 
 **implementation model**: A model and set of terminology that is used to 
-guide the development of standards and an implementation to solve a parciular
+guide the development of standards and an implementation to solve a particular
 problem.
 
 **ISO**: International Organization for Standardization.  A worldwide body
@@ -238,7 +238,7 @@ b) Secure Network Layer (SNL)
 c) Secure Transport Layer (STL)
 d) Session and Presentation Layers
 
-6. Why does the TCP model combine the OSI Data Link and Physical layers into a single Link Layer?
+6. Why does the TCP model combine the OSI Data Link and Physical layers into a single Link layer?
 a) Because the TCP model does not worry about the Physical layer
 b) Because the TCP model designers were ignored at the 1981 OSI meeting in Utrect, Netherlands
 c) Because quite often the design of Data Link and Physical layers are tightly connected for a particular technology
