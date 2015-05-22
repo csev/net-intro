@@ -14,7 +14,7 @@ with the network on our behalf.
 Client and Server Applications
 ------------------------------
 
-It is important to review that two parts are required for a networked
+It is important to remember that two parts are required for a networked
 application to function. The architecture for a networked application is
 called "client/server". The server portion of the application runs somewhere
 on the Internet and has the information that users want to view or interact with.
@@ -54,7 +54,7 @@ Application Layer Protocols
 \index{server}
 Just like people talking on telephones, each pair of network
 applications needs a set of rules that govern the conversation. In most
-cultures, when your phone rings and you pick up the phone you say 'Hello'.
+cultures, when your phone rings and you pick up the phone you say "Hello".
 Normally the person who made the call (the client person) is silent until the
 person who picked up the phone (the server person) says "Hello". If you have
 ever called someone who does not follow this simple rule, it can be quite
@@ -87,7 +87,7 @@ documents starting with this one:
 \index{HyperText Transport Protocol}
 \index{HTTP}
 The formal name of the protocol between web clients and web servers is the
-"HyperText Transport Protocol" or "HTTP" for short. When you put "http:" or
+"HyperText Transport Protocol", or HTTP for short. When you put "http:" or
 "https:" on the beginning of a URL that you type into the browser, you are
 indicating that you would like to retrieve a document using the HTTP protocol.
 
@@ -124,7 +124,7 @@ according to one of the earliest standards for the Internet:
 \index{NSFNet}
 This standard is only five pages long and at this point, you probably can
 easily read and understand most of what is in the document. The telnet
-client application is so old that it is effectively a "dinosaur", as it comes from
+client application is so old that it is effectively a dinosaur, as it comes from
 "prehistoric" times in terms of the age of the Internet. The Internet
 was created in 1985 by the NSFNet project and the precursor to the NSFNet
 called the ARPANET was brought up in 1969. Telnet was designed and built
@@ -167,7 +167,7 @@ is an example of things not going well:
     </body></html>
     Connection closed by foreign host.
 
-We typed 'telnet' in the terminal requesting a connection to port 80
+We type "telnet" in the terminal requesting a connection to port 80
 (the web server) on the host www.dr-chuck.com.  You can see as our transport
 layer is looking up the domain name, finding that the actual address is
 "198.251.66.43", and then making a successful connection to that server. Once
@@ -222,7 +222,7 @@ have asked to retrieve. For example, the first line contains a status code.
 
 In this example, the status code of "200" means that things went well. A status
 code of "404" in the first line of the headers indicates that the requested 
-document was "not found". A status code of "301" indicates that the document
+document was not found. A status code of "301" indicates that the document
 has moved to a new location.
 
 The status codes for HTTP are grouped into ranges: 
@@ -337,7 +337,7 @@ across the Internet ('S').
 As the destination Transport layer pieces the stream
 back together, it both sends an acknowledgement (ACK) and delivers the data to the
 receiving application (the web browser). The web browser reconstructs
-the image ('A') and displays it on the user's display as the data is received.
+the image ('A') and displays it to the user as the data is received.
 
 A key thing to notice in this picture is that the transport layers do not keep
 the packets for the entire file. They only retain packets that are "in transit"
@@ -351,7 +351,7 @@ application and the web server continues to read data from the file and send it
 to the source Transport layer for transmission.
 
 This ability to start and stop the sending application to make sure we send
-data as quickly as possible without sending data so fast to clog up the
+data as quickly as possible without sending data so fast that they clog up the
 Internet is called "flow control". The applications are not responsible for
 flow control, they just try to send or receive data as quickly as possible and
 the two transport layers start and stop the applications as needed based on the
@@ -415,7 +415,7 @@ Glossary
 --------
 
 **HTML**: HyperText Markup Language.  A textual format that marks up 
-text using tags surrounded by less-than and greater then characters.
+text using tags surrounded by less-than and greater-than characters.
 Example HTML looks like: \<p\>This is \<strong\>nice\</strong\>\</p\>.
 
 **HTTP**: HyperText Transport Protocol.  An Application layer protocol
@@ -424,8 +424,8 @@ that allows web browsers to retrieve web documents from web servers.
 **IMAP**: Internet Message Access Protocol.  A protocol that allows
 mail clients to log into and retrieve mail from IMAP-enabled mail servers.
 
-**flow control**: When a sending computer slows down make
-sure not to overwhelm either the network or the destination computer.
+**flow control**: When a sending computer slows down to make
+sure that it does not overwhelm either the network or the destination computer.
 Flow control also causes the sending computer to increase the speed at which data
 is sent when it is sure that the network and destination computer can handle the
 faster data rates.
@@ -524,7 +524,7 @@ c) Protocol error
 d) Document not found
 
 11. What characters are used to mark up HTML documents?
-a) Less-then and greater-than signs < > 
+a) Less-than and greater-than signs < > 
 b) Exclamation points ! 
 c) Square brackets [ ]
 d) Curly brackets { }
