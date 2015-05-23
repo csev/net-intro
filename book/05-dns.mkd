@@ -145,7 +145,7 @@ and ".club"?
 a) IANA - Internet Assigned Numbers Authority
 b) IETF - Internet Engineering Task Force
 c) ICANN - International Corporation for Assigned Network Names
-d) IMAP - Internet Mapping Authoization Prototol
+d) IMAP - Internet Mapping Authorization Prototol
 
 3. Which of these is a domain address?
 a) 0f:2a:b3:1f:b3:1a
