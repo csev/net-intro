@@ -513,7 +513,7 @@ which local network the computer is connected to.
 loop because of errors in routing tables.
 
 **RIR**: Regional Internet Registry. The five RIRs roughly correspond 
-to the contenents of the world and allocate IP address 
+to the continents of the world and allocate IP address 
 for the major geographical areas of the world.
 
 **routing tables**: Information maintained by each router that keeps track 
@@ -669,7 +669,7 @@ d) IPv6 addresses are 10 times larger than IPv4 addresses
 
 21. What does it mean when your computer receives an IP address that starts with "169.."?
 a) Your connection to the Internet supports the Multicast protocol
-b) The gateway is mappping your local address to a global address using NAT
+b) The gateway is mapping your local address to a global address using NAT
 c) There was no gateway available to forward your packets to the Internet
 d) The gateway for this network is a low-speed gateway with a small window size
 

@@ -62,7 +62,7 @@ I want to thank Pamela Fox of Khan Academy for coming up with
 the idea of an introductory network technology course using open
 materials.
 
-I initally developed this material as a single week's lecture in
+I initially developed this material as a single week's lecture in
 the *SI502 - Networked Computing* course that I taught at the
 University of Michigan School of Information starting in 2008.
 I refined and expanded the material to be three weeks of the

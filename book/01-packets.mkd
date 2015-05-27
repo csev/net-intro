@@ -278,7 +278,7 @@ its destination.
 by the ability for an organization to run wires or the power of a radio
 transmitter.
 
-**leased line**: An "always up" connection that an organzization leased
+**leased line**: An "always up" connection that an organization leased
 from a telephone company or other utility to send data across longer
 distances.
 

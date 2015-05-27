@@ -464,7 +464,7 @@ c) Link Layer
 d) Obtuse layer
 
 2. What kind of document is used to describe widely used
-Application layer prototcols?
+Application layer protocols?
 a) DHCP
 b) RFC
 c) APPDOC

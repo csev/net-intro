@@ -61,7 +61,7 @@ frequencies of light to be used and how fast to send the data.
 In addition to agreeing on how to send data using a shared medium such as a
 wireless network, they also need to agree on how to cooperate with other
 computers that might want to send data at the same time. If all the computers
-on the network tried to transmit whenever they had data to send, their mesages
+on the network tried to transmit whenever they had data to send, their messages
 would collide. The result would be chaos, and receiving stations would only receive
 noise. So we need to find a fair way to allow each station to wait its turn
 to use the shared network.
@@ -291,7 +291,7 @@ Stacking the Layers
 We usually show the four different layers (Link, Internetwork, Transport, and
 Application) stacked on top of each other with the Application layer at the top
 and the Link layer at the bottom. The reason we show them this way is because
-each layer makes use of the layers above  aqnd below it to achieve networked
+each layer makes use of the layers above  and below it to achieve networked
 communications.
 
 All four layers run in your computer where you run the client application

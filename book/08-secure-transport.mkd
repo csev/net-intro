@@ -111,7 +111,7 @@ attacker while in transit.
 So shared secrets clearly would not work to solve the problem of securing
 network traffic between trillions of pairs of networked computers.
 
-\index{asymetric key}
+\index{asymmetric key}
 \index{private key}
 \index{public key}
 The solution to this problem came in the 1970s when the concept of asymmetric
@@ -233,7 +233,7 @@ security, we had to find a way to add security to the already existing
 four-layer model. The perfect place to add security was as an option in the
 Transport layer. This is why we call secure connections on the Internet
 "Secure Sockets Layer" (SSL) or "Transport Layer Security" (TLS).  There
-are subtle diffferences between SSL and TLS but they both encrypt data
+are subtle differences between SSL and TLS but they both encrypt data
 at the Transport layer.
 
 The invention of public/private key encryption was well timed in that it solved
@@ -264,13 +264,13 @@ of pairs of interacting computers.
 Glossary
 --------
 
-**assymetric key**: An approach to encryption where one (public) key is used
+**asymmetric key**: An approach to encryption where one (public) key is used
 to encrypt data prior to transmission and a different (private) key is used to
 decrypt data once it is received.
 
 **certificate authority**: An organization that digitally signs public keys
 after verifying that the name listed in the public key is actually the person
-or organization in posession of the public key.
+or organization in possession of the public key.
 
 **ciphertext**: A scrambled version of a message that cannot be read without
 knowing the decryption key and technique.
@@ -339,7 +339,7 @@ c) Between the Internetworking and Transport layers
 d) Between the Transport and Application layers
 
 6. If you were properly using https in a browser over WiFi in a cafe,
-which of the following is the greatest risk to your losing cradit
+which of the following is the greatest risk to your losing credit
 card information when making an online purchase?
 a) Someone captured the packets that were sent across the WiFi
 b) Someone captured the packets in the gateway router
@@ -372,7 +372,7 @@ d) Which documents you retrieved from the servers
 key encryption?
 a) To make sure people do not forge badges for learning activities
 b) To make sure packets get routed to the correct destination computer
-c) To assure us that a public key comes from the orgnization it claims to be from
+c) To assure us that a public key comes from the organization it claims to be from
 d) To choose when a particular country must switch from IPv4 to IPv6
 
 11. The ARPANET network was in operation starting in the 1960s. Secure
