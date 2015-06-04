@@ -39,9 +39,8 @@ that needs fixing.  Thanks in advance.</p>
           <p><a class="btn btn-primary" href="http://do1.dr-chuck.com/net-intro/EN_us/net-intro.pdf" target="_blank">PDF &raquo;</a>
           <a class="btn btn-primary" href="http://do1.dr-chuck.com/net-intro/EN_us/net-intro.epub" target="_blank">EPUB &raquo;</a>
           <a class="btn btn-primary" href="http://www-personal.umich.edu/~csev/books/net-intro/audio/" target="_blank">Audio &raquo;</a>
-</p>
 <a class="btn btn-primary" href="http://www.amazon.com/gp/product/1511654945/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1511654945&linkCode=as2&tag=drchu02-20&linkId=LUI4PZVNIMWUGOGS">Amazon &raquo;</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=drchu02-20&l=as2&o=1&a=1511654945" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
-
+</p>
         </div>
         <div class="col-lg-4">
           <h2>Slides</h2>
