@@ -68,7 +68,7 @@ to use the shared network.
 
 The idea of breaking a large message into packets and then sending each packet
 separately makes this sharing easier. If only one computer wants to send data, 
-it will send its packets one right another and move its data across the
+it will send its packets one right after another and move its data across the
 network as quickly as it can. But if three computers want to send data
 at the same time, each computer will send one packet and then wait while the other
 two computers send packets. After each of the other computers sends a packet, the
