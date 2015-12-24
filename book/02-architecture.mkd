@@ -205,7 +205,7 @@ acknowledgement back to the source computer indicating how much of the message i
 has received and reconstructed. But if the destination computer finds that parts
 of the reconstructed message are missing, this probably means that these packets were
 lost or badly delayed. After waiting a bit, the destination computer sends
-another message to the source computer to resend the missing packet or packets.
+a request to the source computer to resend the data that seems to be missing.
 
 The sending computer must store a copy of the parts of the original message
 that have been sent until the destination computer acknowledges successful receipt
