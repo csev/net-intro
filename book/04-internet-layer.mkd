@@ -1,58 +1,64 @@
-Internetworking Layer (IP)
-==========================
+Capa de Internet (IP)
+=====================
 
-\index{Internetworking(IP) Layer}
-\index{Layer!Internetworking(IP)}
-Now that we can move data across a single link, it's time to figure out how to
-move it across the country or around the world. To send data
-from your computer to any of a billion destinations, the data needs to move across
-multiple hops and across multiple networks.  When you travel from your home to a
-distant destination, you might walk from your home to a bus stop, take a train to
-the city, take another train to the airport, take a plane to a different airport,
-take a taxi into the city, then take a train to a smaller town, a bus to an even
-smaller town, and finally walk from the bus stop to your hotel. A packet also
-needs to take multiple forms of transportation to reach its destination. For a
-packet taking its "trip" to another country, the "walk", "bus", "train", and "plane"
-can be thought of as different link layers like WiFi, Ethernet, fiber optic,
-and satellite.
+\index{Capa de Internet(IP)}
+\index{Capa!Internet(IP)}
+Ahora que ya podemos mover los datos a través de un único enlace, es hora de
+averiguar cómo moverlos a través del país o alrededor del mundo. Para enviar
+datos desde tu computador hasta cualquiera de los billones de destinos posibles,
+los datos necesitan moverse a través de múltiples saltos y a través de múltiples
+redes. Cuando viajas desde tu casa hasta un destino lejano, puedes caminar desde tu
+casa hasta una parada de autobús, tomar un tren hasta la ciudad, tomar otro tren
+hasta el aeropuerto, tomar un avión hasta otro aeropuerto, tomar un taxi dentro de
+la ciudad, luego un tren hasta una ciudad más pequeña, un autobús hasta otra aún
+más pequeña y finalmente caminar desde la parada del autobús hasta tu hotel.
+Un paquete también necesita tomar múltiples medios de transporte para alcanzar
+suu destino. Para un paquete que esté realizando su "viaje" hasta otro país, el
+"caminar", ir en "autobús", "tren" y "avión" sería equivalente a usar las diferentes
+capas de conexión, es decir: WiFi, Ethernet, fibra óptica, y satélite.
 
-![Travelling Packets](../sketchnote/Traveling_Packets)
+![Paquetes viajando](../sketchnote/Traveling_Packets)
 
-At each point during the trip, you (or your packet) are being transported using a
-shared medium. There might be hundreds of other people on the same bus, train,
-or plane, but your trip is different from that of every other traveller because of
-the decisions that you make at the end of each of your "hops". For instance, when
-you arrive at a train station, you might get off one train, then walk through the
-station and select a particular outbound train to continue your journey. Travellers
-with different starting points and destinations make a different series of choices.
-All of the choices you make during your trip result in you following a series of links
-(or hops) along a route that takes you from your starting point to your destination.  
+En cada momento durante el viaje, tú (o tu paquete), estaréis usando un medio
+de transporte compartido. Puede haber cientos de personas en el mismo autobús,
+tren o avión, pero tu viaje es diferente del de cualquier otro viajero, dependiendo
+de las decisiones que vayas tomando al final de cada uno de los "saltos". Por ejemplo,
+Cuando llegues a la estación de tren, podrías bajarte del tren, luego caminar
+a través de la estación y elegir un determinado tren de salida para continuar
+con tu viaje. Los viajeros con diferentes puntos de partida y destino realizan
+una serie de elecciones diferentes. Todas las elecciones que realizas durante tu
+viaje dan como resultado el que sigas una serie de conexiones (o saltos) a lo
+largo de una ruta que te llevará desde tu punto de partida hasta tu destino.
 
-As your packet travels from its starting point to its destination, it also passes
-through a number of "stations" where a decision is made as to which output
-link your packet will be forwarded on. For packets, we call these places "routers".
-Like train stations, routers have many incoming and outgoing links.
-Some links may be fiber optic, others might be satellite, and still others might be 
-wireless. The job of the router is to make sure packets move through the router and
-end up on the correct outbound link layer. A typical packet passes through from
-five to 20 routers as it moves from its source to its destination.
+A medida que tu paquete viaja desde su punto de partida hacia su destino, también
+pasa a través de varias "estaciones", en cada una de las cuales se decide a cuál
+de las conexiones de salida será reenviado. En el caso de los paquetes, esas estaciones
+se llaman "routers". Como en las estaciones de tren, los routers tienen múltiples
+conexiones de entrada y salida. Algunas conexiones pueden ser de fibra óptica,
+otras pueden utilizar satélites, y otras pueden ser inalámbricas. El cometido del
+router es asegurarse de que los paquetes se desplazan a través de él y
+terminan en la capa de la conexión de salida correcta. Un paquete típico pasa
+a través de entre cinco y veinte routers cuando se mueve desde su origen hasta
+su destino.
 
-But unlike a train station where you need to look at displays to figure out the
-next train you need to take, the router looks at the destination address to decide
-which outbound link your packet needs to take. It is as if a train station employee
-met every single person getting off an inbound train, asked them where they were
-headed, and escorted them to their next train. If you were a packet, you would
-never have to look at another screen with a list of train departures and tracks!
+Pero a diferencia de una estación de trenes, donde tienes que mirar a las pantallas
+para averiguar cuál es el siguiente tren que debes tomar, el router se fija en
+la dirección de destino para decidir qué conexión de salida tiene que tomar
+tu paquete. Es como si un empleado de la estación de trenes se reuniera con cada
+persona que se bajase del tren, les preguntase a dónde se dirigen y les
+acompañase hasta su siguiente tren. ¡Si fueras un paquete, ya nunca más necesitarías
+mirar a otra pantalla con una lista de horarios de trenes y recorridos!
 
-\index{IP address}
-The router is able to quickly determine the outbound link for your packet
-because every single packet is marked with its ultimate destination address.
-This is called the Internet Protocol Address, or IP Address for short. We
-carefully construct IP addresses to make the router's job of forwarding packets
-as efficient as possible.
+\index{direcciones IP}
+El router es capaz de determinar rápidamente la conexión de salida para tu
+paquete porque cada uno de ellos lleva marcado cual es su dirección de destino
+final. Esto recibe el nombre de Dirección de Protocolo de Internet (*Internet
+Protocol Address*) o dirección IP, para abreviar. Las direcciones IP se
+construyen cuidadosamente para que el trabajo del router de reenviar paquetes
+sea lo más eficiente posible.
 
-Internet Protocol (IP) Addresses
---------------------------------
+Direcciones de Protocolo de Internet (IP)
+-----------------------------------------
 
 In the previous section where we talked about Link layer addresses, we said
 that link addresses were assigned when the hardware was manufactured and stayed

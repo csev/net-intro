@@ -1,371 +1,396 @@
-% Introduction to Networking
+% Introducción a las redes
 % Charles Severance
 %
 
-Introduction
+Introducción
 ============
 
-Using the Internet seems pretty easy. We go to a web address and
-up comes a page. Or we go to our favorite social site and see pictures of our
-friends, families, and pets. But it takes a lot of complex software and
-hardware to make the Internet seem so simple. The design of the
-technologies that make today's Internet work started in the 1960s,
-and there were over 20 years of research into how to build
-internetworking technologies before the first "Internet" was built
-in the late 1980s by academics in a project called NSFNet.
-Since then, the research and development into improving network technologies
-has continued as networks have become far larger and faster and globally
-distributed with billions of computers.
+Usar Internet parece bastante sencillo. Vamos a una dirección web y
+obtenemos una página. O podemos ir a nuestra red social favorita y ver las imágenes
+de nuestros amigos, familias y mascotas. Pero esa aparente simplicidad de Internet
+implica el uso de un montón de hardware y software complejos. El diseño de las
+tecnologías que hacen funcionar el Internet actual comenzó en los años 60 del
+pasado siglo, y transcurrieron más de 20 años de investigación sobre cómo construir
+tecnologías de redes antes de que el primer "Internet" fuese creado por académicos,
+a finales de los 80, en un proyecto llamado NSFNet.
+Desde entonces, la investigación y desarrollo de mejoras en las tecnologías de red
+han continuado, a medida que las redes han ido haciéndose más grandes, más rápidas
+y distribuídas globalmente, con miles de millones de dispositivos.
 
-In order to better understand how today's Internet works, we will take a look
-at how humans and computers have communicated using technology over the years.
+Para poder comprender mejor cómo funciona el Internet actual, echaremos un vistazo
+a la forma en que los humanos y las computadoras se han comunicado usando la
+tecnología a lo largo de los años.
 
-Communicating at a Distance
----------------------------
+Comunicación a distancia
+------------------------
 
-Imagine a group of five people in a room sitting in a circle. As long as they are
-courteous and don't have more than one conversation at the same time, it's quite
-natural for any person to talk to any other person in the room. They just need to
-be able to hear each other and coordinate how to use the shared space in the room.
+Imagina un grupo de cinco personas en una habitación, sentados en círculo. Si son
+educados y no mantienen más de una conversación al mismo tiempo, resultará bastante
+sencillo para cualquiera de ellos hablar con otra persona de la habitación. Tan
+sólo necesitan ser capaces de escucharse entre ellos y coordinar el uso del
+espacio compartido en la sala.
 
-But what if we put these people in different rooms so they can no longer
-see or hear each other? How could pairs of people communicate with each other
-then?  One way might be to run a wire between each pair of people with a
-microphone on one end and a speaker on the other end. Now everyone could still
-hear all the conversations. They would still need to be courteous to make sure
-that there was only one conversation going on at the same time.
+Pero, ¿qué ocurriría si pusiésemos a esas personas en habitaciones diferentes,
+de modo que no pudieran verse u oirse entre ellos? ¿Cómo podrían comunicarse
+entre si entonces los componentes de cada pareja? Una posibilidad podría ser
+tender un cable entre cada pareja, con un micrófono en un extremo y un altavoz
+en el otro. De ese modo, todos seguirían escuchando las conversaciones de los
+demás. Así que seguiría siendo necesario mantener el orden, para asegurarse
+de que no se produzca más de una conversación al mismo tiempo.
 
-Each person would need four speakers (one for each of the other people)
-and enough pieces of wire to connect all the microphones and speakers.
-This is a problem with five people and it gets far worse when there
-are hundreds or thousands of people.
+Cada persona necesitaría cuatro altavoces (uno para cada una de las otras personas),
+y trozos de cable suficientes como para conectar todos los micrófonos y altavoces.
+Eso puede llegar a ser un problema con cinco individuos, y se vuelve mucho más
+grave cuando hay cientos o miles de personas.
 
-Using wires, microphones, and speakers is how early telephone systems
-from the 1900s allowed people to make phone calls.  Because they could not
-have separate wires between every pair of telephones, these systems did
-not allow all pairs of people to be connected at the same time.
-Each person had a single connection to a human "operator". The operator
-would connect two wires together to allow a pair of people to talk,
-and then disconnect them when the conversation was finished.
+Los antiguos teléfonos de principios del siglo XX usaban precisamente hilos,
+micrófonos y altavoces para permitir a la gente hacer llamadas.
+Como no se podía tener cables separados entre cada par de teléfonos, esos
+sistemas no permitían a todas las personas estar conectados entre sí al mismo
+tiempo. Cada persona tenía una única conexión con un "operador" humano. El
+operador conectaba dos hilos juntos para permitir a una pareja de personas
+hablar, y luego los desconectaba, una vez finalizada la conversación.
 
-![Connecting Using Telephone Operators](../sketchnote/Distance_Comm)
+![Conexión a través de operadores telefónicos](../sketchnote/Distance_Comm)
 
-The first local telephone systems worked well when a customer's home or
-business was close to the operator's building and a wire could be strung
-directly from the operator's building to the person's home.
+Los primeros sistemas de teléfono locales funcionaban bien cuando la casa de un
+cliente o su negocio estaba cerca del edificio del operador y se podía tender
+directamente un cable desde el edificio del operador hasta la casa de esa persona.
 
-But what if thousands people who are hundreds of kilometers apart need to
-be able to communicate? We can't run 100-kilometer wires from each home
-to a single central office. What the telephone companies did instead was to have
-many central offices and run a few wires between the central offices, then
-share connections between central offices. For long distances, a connection
-might run through a number of central offices. Before the advent of fiber optic,
-long-distance telephone calls were carried between cities on poles with lots
-of separate wires. The number of wires on the poles represented the number of
-possible simultaneous long-distance phone calls that could use those wires.
+Pero, ¿qué ocurría cuando miles de personas, separados por cientos de kilómetros,
+necesitaban comunicarse? No podemos tender 100 kilómetros de cable desde cada casa
+hasta una única oficina central. En vez de eso, lo que hicieron las compañías
+telefónicas fue tener muchas oficinas centrales y tender unos pocos cables entre
+esas oficinas, compartiendo así las conexiones entre ellas. En el caso de
+comunicaciones de larga distancia, una conexión podía pasar a través de varias
+de esas oficinas centrales. Antes de la llegada de la fibra óptica, las llamadas
+telefónicas a larga distancia eran transportadas de una ciudad a otra mediante
+postes con montones de cables separados. El número de cables de esos postes
+representaba el número de llamadas telefónicas de larga distancia simultáneas
+que podían usar esos hilos.
 
-![Long-Distance Telephone Poles](../photos/telephone_pole_photo.jpg)
+![Postes de teléfono para larga distancia](../photos/telephone_pole_photo.jpg)
 
-Since the cost of the wires went up as the length of the wire increased, these
-longer connections between offices were quite expensive to install and maintain,
-and they were scarce. So in the early days of telephones, local calls
-were generally quite inexpensive. But long-distance calls were more expensive
-and they were charged by the minute. This made sense because each minute you
-talked on a long-distance call, your use of the long-distance wires meant no
-one else could use them. The telephone companies wanted you to keep your calls
-short so their long-distance lines would be available for other customers.
+Como el precio de los cables iba aumentando a medida que lo hacía la longitud
+del cable necesario, estas conexiones más largas entre oficinas eran bastante
+caras de instalar y mantener, de modo que escaseaban. Así que en los primeros
+días de la telefonía, las llamadas locales eran generalmente bastante baratas.
+Pero las llamadas de larga distancia eran más caras y se cobraba por minutos.
+Esto resultaba lógico, ya que cada minuto que alguien conversaba a través de
+una llamada de este tipo, mantenía en uso los cables de larga distancia, lo cual
+significaba que nadie más podía usarlos. Las compañías de teléfono buscaban que
+se hicieran llamadas cortas, para que sus líneas de larga distancia pudieran
+estar disponibles para otros clientes.
 
-When telephone companies started using fiber optic, more advanced techniques
-were used to carry many simultaneous long-distance conversations on a single
-fiber. When you look at an old photo and see lots of wires on a single pole,
-it generally means they were telephone wires and not used to carry electricity.
+Cuando las compañías de teléfono comenzaron a usar la fibra óptica, empezaron
+también a utilizar técnicas más avanzadas para transportar muchas conversaciones
+de larga distancia simultáneamente a través de un único cable de fibra. Cuando
+en una foto antigua veas montones de cables en un único poste, generalmente eso
+significa que se trata de cables telefónicos, y no de los que se usan para
+transportar electricidad.
 
-Computers Communicate Differently
----------------------------------
+Los computadores se comunican de forma diferente
+------------------------------------------------
 
-When humans talk on the phone, they make a call, talk for a while, and then
-hang up. Statistically, most of the time, humans are not talking on the phone.
-At least they weren't before everyone had smartphones. But computers, including
-the applications on your smartphone, communicate differently than humans do.
-Sometimes computers send short messages to check if another computer is available.
-Computers sometimes send medium-sized information like a single picture or a
-long email message. And sometimes computers send a lot of information like a
-whole movie or a piece of software to install that might take minutes or even
-hours to download. So messages between computers can be short, medium, or long.
+Cuando los humanos hablan por teléfono, realizan una llamada, hablan durante un
+rato, y finalmente cuelgan. Según las estadísticas, la mayor parte del tiempo
+los humanos no están hablando por teléfono. Al menos, no lo hacían antes de que
+todo el mundo tuviera smartphones. Pero los computadores, incluyendo las
+aplicaciones de tu smartphone, se comunican de forma diferente a los humanos.
+Algunas veces, los computadores envían mensajes cortos para comprobar si otro
+computador está disponible. Otras veces envían información de tamaño medio, como
+una única foto o un mensaje de correo grande. Y otras, los computadores envían
+un montón de información, como una película entera o un programa para instalar,
+que puede llevar minutos o incluso horas descargar. De modo que los mensajes
+entre computadores pueden ser breves, medios, o extensos.
 
-In the earliest days of connecting computers to one another, pairs of computers
-were connected with wires. The simplest way to send data from one
-computer to another was to line up the outgoing messages in a queue and send
-the messages one after another as fast as the computers and the wires could
-carry the data. Each message would wait for its turn until the messages
-ahead of it were sent, and then it would get its chance to be sent across
-the connection.
+Cuando se empezaron a conectar unos computadores con otros, cada uno se
+conectaba con su pareja mediante cables. El modo más sencillo de enviar datos
+desde un equipo hasta el otro era organizar los mensajes salientes en una cola,
+y enviar a continuación esos mensajes uno detrás del otro, tan rápido como el
+computador y los cables podían transportar los datos. Cada mensaje debía esperar
+su turno, hasta que el mensaje previo había sido enviado, y sólo entonces tenía
+su oportunidad para transitar a través de la conexión.
 
-\index{leased line}
-When the computers were in the same building, the building owner could run wires
-to connect them. If the computers were in the same town, the owners of
-the computers generally had to lease wires from the telephone companies to
-connect their computers. They often would have the phone company connect
-the wires together in their central office so that it was not necessary for one
-computer to "dial" the other computer to send data. These leased lines were
-convenient for computer communications because they were "always on", but they were
-also quite expensive because they were used 24 hours a day.
+\index{línea alquilada}
+Cuando los computadores estaban en el mismo edificio, su propietario podía
+tender cables para conectarlos entre si. Si los computadores estaban en la misma
+ciudad, su propietario generalmente tenía que alquilar cables a las compañías
+telefónicas para conectar sus máquinas. A menudo lo único que se necesitaba era
+que esas compañías telefónicas conectaran los cables juntos en su oficina
+central, de modo que no fuera necesaria que cada computador "marcara" el número
+del otro para poder enviarle datos. Esas líneas alquiladas eran cómodas para la
+comunicación entre equipos, dado que estaban "siempre activas", pero eran
+también bastante caras, ya que permanecían en uso durante las 24 horas del día.
 
-When the computers were even farther away, in different cities, the leased
-lines were extended using the longer wires connecting the central offices.
-Since there were so few wires between central offices, these
-long-distance leased lines were quite expensive and their cost increased
-dramatically as the length of the leased line increased. But if you had enough
-money, you could lease direct connections between your computers so they could
-exchange data. This worked pretty well as long as you were only using one brand
-of computers, because each computer company had their own way of using
-telephone wires to connect their computers together and send data.
+Cuando los computadores estaban todavía más lejos, en ciudades diferentes, las
+líneas alquiladas se extendían usando los cables más largos que conectaban las
+oficinas centrales. Dado que había pocos cables entre esas oficinas, las
+líneas de larga distancia alquiladas resultaban bastante caras, y su coste
+crecía dramáticamente conforme aumentaba la longitud de la línea necesaria. Pero
+si se disponía de dinero suficiente, se podían alquilar conexiones directas
+entre computadores, para que pudieran intercambiar datos. Esto funcionaba
+bastante bien mientras se utilizase el mismo tipo de computadores, porque cada
+marca tenía su propio modo de usar los cables telefónicos para conectar sus
+equipos y enviar datos entre ellos.
 
-Early Wide Area Store-and-Forward Networks
-------------------------------------------
+Primeras redes de Área Amplia de almacenamiento-y-reenvío
+----------------------------------------------------------
 
-\index{Early Networks}
-\index{Store and Forward Networks}
-In the 1970s and 1980s, people working at universities around the world wanted
-to send each other data and messages using these computer-to-computer
-connections. Since the cost for each connection was so high and increased
-with distance, computers generally only had connections to other nearby
-computers. But if the computer that you were
-connected to was connected to another computer and that computer in turn was
-connected to another computer, and so on, you could send a message a long
-distance as long as each of the computers along the route of the message agreed to
-store and forward your message.
+\index{Primeras redes}
+\index{Redes de almacenamiento y reenvío}
+En los años 70 y 80 del pasado siglo, la gente que trabajaba en universidades de
+todo el mundo deseaba enviar datos y mensajes a otros colegas, usando esas
+conexiones entre computadores. Dado que el coste de cada conexión era tan alto
+y que aumentaba con la distancia, los computadores generalmente sólo tenían
+conexiones con otros equipos cercanos. Pero si el computador con el que estabas
+conectado estaba conectado con otro, y ese a su vez con otro, y así
+sucesivamente, podías envías un mensaje a larga distancia, tan lejos como
+quisieras, siempre que los computadores a lo largo de la ruta del mensaje
+aceptasen almacenarlo y reenviarlo al siguiente equipo.
 
-![Store-and-Forward Networks](../sketchnote/Store_Fwd)
+![Redes de almacenamiento-y-reenvío](../sketchnote/Store_Fwd)
 
-Over time, with relatively few connections you could send data long
-distances across a patchwork of network connections as long as you were
-patient.  Along the way, after your message reached one computer, it
-would have to wait until its turn came to be sent to the next computer along
-the route. A message would arrive at an intermediate computer, be stored for a
-while (perhaps hours, depending on traffic), and then be forwarded one more
-connection (or "hop").
+Si se disponía de tiempo, con relativamente pocas conexiones era posible enviar
+datos a larga distancia a través de un mosaico de conexiones de redes, siempre
+que se tuviera suficiente paciencia. Durante ese viaje, cuando el mensaje
+llegaba a un computador, éste debía esperar hasta que le llegaba el turno para
+ser enviado al siguiente equipo a lo largo de la ruta. Un mensaje podía llegar
+a un computador intermedio, ser almacenado durante un rato (que podían ser horas,
+dependiendo del tráfico), y luego ser reenviado a la siguiente conexión (o
+"saltar").
 
-Sending entire messages one at a time this way, a message might take minutes,
-hours, or even days to arrive at its ultimate destination, depending on the
-traffic at each of the hops.  But even if it took a few hours for an email
-message to find its way from one part of the country to another, this was
-still much quicker and easier than sending a letter or postcard.
+Al enviar los mensajes completos, uno cada vez, de este modo, podían pasar
+minutos, horas, o incluso días hasta que un mensaje alcanzaba su destino final,
+dependiendo del tráfico que encontrase en cada uno de sus saltos. Pero incluso
+si un correo electrónico necesitaba unas cuantas horas para recorrer su camino
+desde una parte del país hasta la otra, eso resultaba aún mucho más rápido y
+práctico que enviar una carta o tarjeta postal.
 
-Packets and Routers
+Paquetes y routers
 -------------------
 
-\index{packet}
-The most important innovation that allowed messages to move more quickly across
-a multi-hop network was to break each message into small fragments and send
-each fragment individually. In networking terms, these pieces of messages are
-called "packets". The idea of breaking a message into packets was pioneered 
-in the 1960s, but it was not widely used until the 1980s because it required
-more computing power and more sophisticated networking software.
+\index{paquete}
+La innovación más importante, que permitió a los mensajes desplazarse más rápido
+a través de una red multi-salto, fue la división de cada mensaje en fragmentos
+más pequeños, y el envío posterior de cada fragmento de forma individual. En
+términos de red, estos trozos de mensaje se llaman "paquetes". La idea de
+dividir un mensaje en paquetes se ideó en los años 60, pero no fue ampliamente
+utilizada hasta la década de los 80, dado que requería más capacidad de
+computación y software de red más sofisticado.
 
-When messages are broken into packets and each packet is sent separately,
-if a short message was sent after a large message had
-begun, the short message did not have to wait until the entire long message
-was finished. The first packet of the short message only had to wait for
-the current packet of the large message to be finished. The system alternated
-sending packets from the long and short messages until after a while the
-short message was completely sent and the long message resumed
-making full use of the network connection.
+Cuando los mensajes se dividen en paquetes y luego son enviados de forma
+individual, si se quiere enviar un mensaje corto una vez que ha comenzado a
+procesarse uno extenso, el corto no tiene que esperar hasta que el extenso ha
+terminado de enviarse completo. El primer paquete del mensaje corto sólo tiene
+que esperar hasta que termina de procesarse el paquete en curso del mensaje
+extenso. El sistema va alternando el envío de paquetes del mensaje corto y del
+extenso, hasta que al cabo de un tiempo se termina el envío del mensaje corto, y
+a partir de ese momento el mensaje más extenso continúa haciendo uso de toda
+la conexión de red.
 
-Breaking the message into packets also greatly reduced the amount of storage
-needed in the intermediate computers because instead of needing to store an
-entire message for as long as a few hours, the intermediate computer only
-needed to store a few packets for a few seconds while the packets waited for
-their turns on the outbound link.
+Dividir el mensaje en paquetes tiene también la ventaja de reducir
+significativamente la cantidad de espacio de almacenamiento necesario en los
+computadores intermedios, ya que en lugar de necesitar guardar un mensaje entero
+durante unas cuantas horas, el computador intermedio tan sólo necesita almacenar
+unos pocos paquetes durante algunos segundos, mientras esos paquetes esperan su
+turno en la cola de salida.
 
-![Sending Packets](../sketchnote/Packets)
+![Envío de paquetes](../sketchnote/Packets)
 
 \index{IMP}
-\index{Interface Message Processor}
+\index{Interfaces de Procesamiento de Mensajes}
 \index{router}
-As networks moved away from the store-and-forward approach, they started to
-include special-purpose computers that specialized in moving packets. These
-were initially called "Interface Message Processors" or "IMPs" because
-they acted as the interface between general-purpose computers and the
-rest of the network. Later these computers dedicated to communications were
-called "routers" because their purpose was to route the packets they received
-towards their ultimate destination.
+\index{enrutador}
+A medida que las redes iban transformándose desde el antiguo sistema de
+almacenamiento-y-reenvío, se empezaron a incluir computadores con funciones
+especiales, especializados en el movimiento de paquetes. Éstos fueron llamados
+inicialmente "Interfaces de Procesamiento de Mensajes" (o "IMPs" por sus siglas
+en inglés, *Interface Message Processing*),
+ya que actuaban como un interfaz entre los computadores normales y el resto
+de la red. Más adelante, esos computadores dedicados a las comunicaciones
+recibieron el nombre de "routers" (o enrutadores), dado que su propósito era
+dirigir (enrutar) los paquetes que recibían hacia su destino final.
 
-By building routers that specialized in moving packets across multiple
-hops, it became simpler to connect computers from multiple vendors to the same
-network. To connect any computer to the network, now all you needed to do was
-connect it to one router and then the rest of the communication details were
-handled by the other routers.
+Al disponer de routers especializados en el movimiento de paquetes a través de
+múltiples saltos, se hizo más sencillo conectar computadores de distintas
+marcas en la misma red. Para conectar cualquier computador a la red, ahora ya
+tan sólo se necesitaba conectarlo a un router y a partir de ahí el resto de los
+detalles de la comunicación eran gestionados por los otros routers.
 
 \index{LAN}
-\index{Local Area Network}
-When multiple computers at one location were connected together in a
-"Local Area Network" (or LAN) using physical wiring,
-you would connect a router to the local area
-network. By sending data through the router, all the computers on the
-local area network could send data across the "Wide Area Network" (or WAN).
+\index{Red de Área Local}
+Cuando se conectan entre sí varios ordenadores en una misma ubicación, mediante
+el uso de cables físicos, formando una "Red de Área Local" (o LAN por sus siglas
+en inglés, *Local Area Network*), se necesita conectar también un router a esa
+red. Al enviar los datos a través de ese router, todos los computadores en la
+red de área local pueden transferir datos también a través de la
+"Red de Área Amplia" (o WAN por sus siglas en inglés, *Wide Area Network*).
 
-Addressing and Packets
-----------------------
+Direccionamiento y paquetes
+---------------------------
 
-In the early store-and-forward networks it was important to know the source and
-destination computers for every message. Each computer was given a unique name
-or number that was called the "address" of the computer. To send a message
-to another computer, you needed to add the source and destination address to
-the message before sending the message along its way. By having a source and
-destination address in each message, the computers that stored and forwarded
-the message would be able to pick the best path for the message if more than
-one path was available.
+En las primeras redes de almacenamiento-y-reenvío, era importante conocer el
+computador de origen y de destino para cada mensaje. Cada equipo disponía
+de un nombre único o un número que constituía la "dirección" de ese
+computador. Para enviar un mensaje a otro equipo, era necesario añadir las
+direcciones de origen y destino al mensaje antes de enviarlo a través de su ruta.
+Al disponer de las direcciones de origen y destino para cada mensaje, los
+computadores que almacenaban y enviaban esos mensajes eran capaces de elegir
+el mejor camino para cada uno de ellos, en aquellos casos es los que había más
+de una ruta disponible.
 
-When a long message was split into much smaller packets and each packet was
-sent individually, the source and destination addresses had to be added to each
-packet, so that routers could choose the best path to forward each packet of the
-message. In addition to the source and destination addresses, it was also necessary
-to add data to each packet indicating the "offset" or position of the packet in the
-overall message so that the receiving computer could put the packets back
-together in the right order to reconstruct the original message.
+Cuando un mensaje extenso era divido en paquetes más pequeños y cada paquete
+se enviaba de forma individual, las direcciones de origen y destino debían
+añadirse en cada uno de los paquetes, de modo que los routers pudieran elegir
+el mejor camino para reenviar cada paquete del mensaje. Además de las direcciones
+de origen y destino, era necesario también añadir datos en cada paquete indicando
+el "*offset*", o posición del paquete dentro del mensaje completo, de modo que el
+computador que lo recibiera pudiera volver a juntar los paquetes en el orden
+correcto para reconstruir el mensaje original.
 
-Putting It All Together
------------------------
+Juntando todo
+-------------
 
-So when we combine all this together we can understand the basic operation of
-today's Internet. We have specialized computers called "routers" that know
-how to route packets along a path from a source to a destination. Each packet
-will pass through multiple routers during its journey from the source computer
-to the destination computer.
+Si juntamos todo lo que hemos visto hasta ahora, podremos entender el
+funcionamiento básico del Internet actual. Disponemos de computadores
+especializados, llamados "routers" o "enrutadores", que saben cómo dirigir los
+paquetes a través de un camino desde un origen hasta un destino. Cada paquete
+pasará a través de múltiples routers durante su viaje desde el equipo de origen
+hasta alcanzar el de destino.
 
-Even though the packets may be part of a larger message, the routers forward
-each packet separately based on its source and destination addresses.
-Different packets from the same message may take different routes from the
-source to the destination. And sometimes packets even arrive out of order; a
-later packet might arrive before an earlier packet, perhaps because of a data
-"traffic jam". Each packet contains an "offset" from the beginning of the
-message so that the destination computer can reassemble the packets in the
-correct order to reconstruct the original message.
+A pesar de que los paquetes pueden ser partes de un mensaje más grande, los
+routers reenvían cada paquete de forma separada, en base a sus direcciones de
+origen y destino. Paquetes diferentes de un mismo mensaje pueden seguir rutas
+distintas desde el origen hasta el destino. Y algunas veces los paquetes
+llegarán incluso desordenados; un paquete enviado más tarde puede llegar antes
+que uno anterior, quizá por un "embotellamiento" en el tráfico de datos. Cada
+paquete contiene un "offset" (identificador de posición) respecto al comienzo
+del mensaje, de modo que el computador de destino pueda reensamblar los paquetes
+en el orden adecuado para reconstruir el mensaje original.
 
-![Connecting Around the World](../sketchnote/Conn_around_world_HOP)
+![Conexión alrededor del mundo](../sketchnote/Conn_around_world_HOP)
 
-By creating a network using multiple short hops, the
-overall cost of communicating across a large geographical area could be spread
-across a large number of connecting groups and individuals. Normally,
-packets would find the shortest path between the source and destination, but if
-a link on that path was an overloaded or broken, the routers could cooperate and
-reroute traffic to take slightly longer paths that would get packets from a
-source to a destination as quickly as possible.
+Al crear una red usando múltiples saltos cortos, el coste total de
+la comunicación a través de un área geográfica extensa puede repartirse entre
+un gran número de grupos de conexión e individuos. Normalmente, los paquetes
+encontrarán la ruta más corta entre el origen y el destino, pero si un enlace
+o un camino está sobrecargado o bloqueado, los routers podrían cooperar y
+reorganizar el tráfico para usar caminos ligeramente más largos, que
+pudieran enviar los paquetes desde el origen hasta el destino tan rápido como
+fuera posible.
 
-The core of the Internet is a set of cooperating routers that move packets from
-many sources to many destinations at the same time. Each computer or local
-area network is connected to a router that forwards the traffic from its
-location to the various destinations on the Internet. A router might handle
-data from a single computer like a smartphone, from several
-computers in the same building, or from thousands of computers connected
-to a university campus network. The term "Internet" comes from the idea of
-"internetworking", which captures the idea of connecting many networks together.
-Our computers connect to local networks and the Internet connects the local
-networks together so all of our computers can talk to each other.
+El núcleo de Internet es un conjunto de routers cooperando, que mueven paquetes
+desde múltiples orígenes hasta múltiples destinos al mismo tiempo. Cada
+computador o área de red local está conectada a un router que reenvía el tráfico
+desde su ubicación hasta los distintos destinos de Internet. Un router puede
+manejar datos de un computador individual, como un smartphone, de varios
+computadores en el mismo edificio, o de miles de computadores conectados a una
+red de un campus universitario. El término "Internet" proviene de la idea de
+"interconectar", que capta el concepto de conectar muchas redes entre sí.
+Nuestros computadores se conectan a redes locales, e Internet conecta las redes
+locales entre sí para que nuestros computadores puedan comunicarse con
+todos los demás.
 
-Glossary
+Glosario
 --------
 
-**address**: A number that is assigned to a computer so that messages
-can be routed to the computer.
+**dirección**: Un número que es asignado a un computador, para que los mensajes
+puedan ser enviados hasta él.
 
-**hop**: A single physical network connection.  A packet on the Internet
-will typically make several "hops" to get from its source computer to
-its destination.
+**LAN**: Local Area Network (Red de Área Local). Una red que cubre un área que
+está limitado por la capacidad de una organización para tender cables o la
+potencia de un emisor de radio.
 
-**LAN**: Local Area Network.  A network covering an area that is limited
-by the ability for an organization to run wires or the power of a radio
-transmitter.
+**línea alquilada**: Una conexión "siempre activa" que una organización
+alquila a una compañía telefónica o a otra empresa para enviar datos a través
+de largas distancias.
 
-**leased line**: An "always up" connection that an organization leased
-from a telephone company or other utility to send data across longer
-distances.
+**operador (telefónico)**: Una persona que trabaja en una compañía telefónica
+y ayuda a la gente a realizar llamadas por teléfono.
 
-**operator (telephone)**: A person who works for a telephone company
-and helps people make telephone calls.
+**paquete**: Un fragmento de tamaño limitado de un mensaje extenso. Los mensajes
+extensos o archivos son divididos en muchos paquetes y enviados a través de
+Internet. El tamaño máximo habitual de los paquetes suele estar entre los 1000 y
+los 3000 caracteres.
 
-**packet**: A limited-size fragment of a large message. Large messages or
-files are split into many packets and sent across the Internet.
-The typical maximum packet size is between 1000 and 3000 characters.
+**red de almacenamiento-y-reenvío**: Una red en la cual los datos son enviados
+de un computador a otro mediante el almacenamiento del mensaje en equipos
+intermedios durante periodos de tiempo relativamente largos, mientras se
+espera a que una conexión a través de la red de salida esté disponible.
 
-**router**: A specialized computer that is designed to receive incoming
-packets on many links and quickly forward the packets on the best outbound
-link to speed the packet to its destination.
+**router o enrutador**: Un computador especializado, que está diseñado para
+recibir paquetes de entrada a través de múltiples conexiones y reenviar
+rápidamente esos paquetes a través de la mejor conexión de salida disponible,
+para hacer llegar rápidamente cada paquete a su destino.
 
-**store-and-forward network**: A network where data is sent from one
-computer to another with the message being stored for relatively long periods
-of time in an intermediate computer waiting for an outbound network connection
-to become available.
+**salto**: Una única conexión física de red. Un paquete en Internet realizará
+normalmente varios "saltos" para llegar desde su computador de origen hasta
+su destino.
 
 \index{WAN}
-\index{Wide Area Network}
-**WAN**: Wide Area Network.  A network that covers longer distances, up to
-sending data completely around the world.  A WAN is generally constructed
-using communication links owned and managed by a number of
-different organizations.
+\index{Red de Área Amplia}
+**WAN**: Wide Area Network (Red de Área Amplia). Una red que cubre largas
+distancias, posibilitando enviar datos alrededor de todo el mundo. Una WAN
+se construye normalmente usando enlaces de comunicación que pertenecen y
+gestionan varias organizaciones diferentes.
 
 
 
 
-Questions
+Preguntas
 ---------
 
-You can take this quiz online at http://www.net-intro.com/quiz/
+Puedes realizar este cuestionario online en http://www.net-intro.com/quiz/
 
-1. What did early telephone operators do?
-a) Maintained cell phone towers
-b) Connected pairs of wires to allow people to talk
-c) Installed copper wire between cities
-d) Sorted packets as they went to the correct destination
+1. ¿Qué hacían los primeros operadores telefónicos?
+a) Mantenían las torres de telefonía móvil
+b) Conectaban pares de cables para permitir a la gente hablar
+c) Instalaban cable de cobre entre ciudades
+d) Ordenaban los paquetes para que llegasen al destino correcto
 
-2. What is a leased line?
-a) A boundary between leased and owned telephone equipment
-b) A connection between a keyboard and monitor
-c) A wire that ran from one phone company office to another
-d) An "always on" telephone connection
+2. ¿Qué es una línea alquilada?
+a) Una frontera entre el equipamiento telefónico alquilado y el propio
+b) Una conexión entre un teclado y un monitor
+c) Un cable tendido entre una oficina de una compañía telefónica y otra
+d) Una conexión telefónica "siempre activa"
 
-3. How long might a message be stored in an intermediate computer
-for a store-and-forward network?
-a) less than a second
-b) no more than four seconds
-c) less than a minute
-d) possibly as long as several hours
+3. ¿Durante cuánto tiempo puede ser almacenado un mensaje en un computador
+intermedio en una red de almacenamiento-y-reenvío?
+a) Menos de un segundo
+b) No más de cuatro segundos
+c) Menos de un minuto
+d) Posiblemente hasta varias horas
 
-4. What is a packet?
-a) A technique for wrapping items for shipping
-b) A small box used for storage
-c) A portion of a larger message that is sent across a network
-d) The amount of data that could be stored on an early punched card
+4. ¿Qué es un paquete?
+a) Una técnica de envasado de artículos para su envío
+b) Una caja pequeña usada para almacenar cosas
+c) Un trozo de un mensaje más extenso, que se envía a través de una red
+d) La cantidad de datos que podían almacenarse en una antigua tarjeta perforada
 
-5. Which of these is most like a router?
-a) A mail sorting facility
-b) A refrigerator
-c) A high-speed train
-d) An undersea telecommunications cable
+5. ¿Cuál de las siguiente opciones se parece más a un router?
+a) Las instalaciones de un sistema de clasificación de correo
+b) Una nevera o refrigerador
+c) Un tren de alta velocidad
+d) Un cable de telecomunicaciones submarino
 
-6. What was the name given to early network routers?
-a) Interfaith Message Processors
-b) Internet Motion Perceptrons
-c) Instant Message Programs
-d) Interface Message Processors
+6. ¿Cuál fue el nombre elegido para los routers de las primeras redes?
+a) Procesadores de Mensajes Interconfiables
+b) Perceptrones de Movimientos de Internet
+c) Programas de Mensajería Instantánea
+d) Interfaces de Procesamiento de Mensajes
 
-7. In addition to breaking large messages into smaller segments to be
-sent, what else was needed to properly route each message segment?
-a) A source and destination address on each message segment
-b) An ID and password for each message segment
-c) A small battery to maintain the storage for each message segment
-d) A small tracking unit like a GPS to find lost messages
+7. Además de dividir los mensajes extensos en segmentos más pequeños para ser
+enviados, ¿qué más se necesitó para encaminar correctamente cada segmento de
+mensaje?
+a) Una dirección de origen y de destino para cada segmento del mensaje
+b) Un identificador y contraseña para cada segmento del mensaje
+c) Una pequeña batería para mantener el almacenamiento de cada segmento del mensaje
+d) Una pequeña unidad de seguimiento, como un GPS, para encontrar los mensajes perdidos
 
-8. Why is it virtually free to send messages around the world
-using the Internet?
-a) Because governments pay for all the connections
-b) Because advertising pays for all the connections
-c) Because so many people share all the resources
-d) Because it is illegal to charge for long-distance connections
-
-
-
-
-
-
+8. ¿Por qué resulta virtualmente gratuito enviar mensajes alrededor del mundo
+usando Internet?
+a) Porque los gobiernos pagan por todas las conexiones
+b) Porque la publicidad paga por todas las conexiones
+c) Porque mucha gente comparte todos los recursos
+d) Porque es ilegal cobrar por conexiones de larga distancia

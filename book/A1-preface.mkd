@@ -1,93 +1,93 @@
 \thispagestyle{empty}
 
-Credits
+Créditos
 -------
 
-    Illustrations: Mauro Toselli
-    Editorial Support: Sue Blumenberg
-    Cover Design: Aimee Andrion
+    Ilustraciones: Mauro Toselli
+    Soporte editorial: Sue Blumenberg
+    Diseño de portada: Aimee Andrion
 
-The SketchNote illustrations were drawn on an iPad using
-*Paper* by www.fiftythree.com using a dedicated stylus pencil.
-The illustrations were converted from PNG to
-SVG and EPS vector formats using www.vectormagic.com.
-The technical figures for the book were drawn with OmniGraffle.
+Las ilustraciones SketchNote fueron creadas en un iPad usando
+*Paper* de www.fiftythree.com, utilizando un lápiz dedicado.
+Las ilustraciones han sido convertidas desde PNG a
+formatos vectoriales SVG y EPS, usando www.vectormagic.com.
+Las ilustraciones técnicas del libro se han creado con OmniGraffle.
 
-Printing History
-----------------
+Historial de impresiones
+------------------------
 
-2015-May-25 Original Printing - CreateSpace
+25-Mayo-2015 Impresión original - CreateSpace
 
-Copyright Details
------------------
+Detalles sore el copyright
+--------------------------
 
-This book is Copyright Charles R. Severance.
+Los derechos de reproducción de este libro pertenecen a Charles R. Severance.
 
-The paper/print version of this book is licensed under a
-Creative Commons Attribution-NonCommercial 4.0 International License.
-Permission is specifically granted to make copies as
-necessary of all or part of the materials in this book
-as part of a course or course packet.
+La versión en papel/impresa de este libro ha sido licenciada bajo una
+licencia internacional Creative Commons Attribution-NonCommercial 4.0.
+Se concede permiso específicamente para realizar copias si es
+necesario de la totalidad o una parte de los materiales de este libro
+para utilizarlos como parte de un curso o material para un curso.
 
 http://creativecommons.org/licenses/by-nc/4.0
 
-Electronic copies of this book in EPUB, PDF, and HTML
-are licensed under a
-Creative Commons Attribution 4.0 International License.
+Las copias electrónicas de este libro en EPUB, PDF, y HTML
+están protegidas con una licencia internacional
+Creative Commons Attribution 4.0.
 
 http://creativecommons.org/licenses/by/4.0/
 
-If you are interested in translating this book into a language
-other than English, please contact me. I am willing to
-give commercial print distribution rights for a complete and
-responsible translation.
+Si estás interesado en traducir este libro a un idioma
+distinto del inglés, por favor ponte en contacto conmigo. Estoy dispuesto
+a ceder los derechos de distribución de impresión comercial sobre una
+traducción completa y de confianza.
 
 \cleardoublepage
 
-Preface
-=======
+Prefacio
+========
 \thispagestyle{empty}
 
-The goal of this book is to provide a basic understanding of
-the technical design and architecture of the Internet.
-The book is aimed at all audiences -- even those with absolutely no prior
-technical experience or math skills.  The Internet is an amazingly beautiful
-design and should be understood by all who use it.
+El objetivo de este libro es proporcionar una comprensión básica del
+diseño técnico y la arquitectura de Internet.
+El libro está dirigido a todo tipo de audiencias -- incluso a aquellos que no
+disponen de ninguna experiencia previa en temas técnicos o matemáticas.
+Internet tiene un diseño increíblemente hermoso y debería ser comprendido
+por cualquiera que lo use.
 
-While this book is not about the Network+ or CCNA
-certifications, I hope it serves as a way to give students
-interested in these certifications a good starting point.
+A pesar de que este libro no trata sobre los certificados Network+ ni
+CCNA, espero que sirva para que los estudiantes interesados en esos
+certificados dispongan de un buen punto de partida.
 
-I want to thank Pamela Fox of Khan Academy for coming up with
-the idea of an introductory network technology course using open
-materials.
+Quiero hacer constar mi agradecimiento a Pamela Fox, de la Khan Academy, por
+haber tenido la idea de realizar un curso de introducción a la tecnología de
+redes usando materiales libres.
 
-I initially developed this material as a single week's lecture in
-the *SI502 - Networked Computing* course that I taught at the
-University of Michigan School of Information starting in 2008.
-I refined and expanded the material to be three weeks of the
-Internet History, Technology, and Security (IHTS) course
-that I have taught to over 100,000 students on Coursera
-starting in 2012. This book adds further detail to create a standalone
-text that can be read for enjoyment or used to support an introductory course
-that focuses on the Internet's architecture.
+Este material fue desarrollado inicialmente por mí como unas clases de una
+semana para el curso *SI502 - Networked Computing* (Redes Informáticas), que
+comencé a impartir en el 2008 en la Escuela de Información de la Universidad de
+Michigan. Posteriormente mejoré y amplié el material hasta cubrir las tres
+semanas de duración del curso sobre la Historia de Internet, Tecnología y
+Seguridad (IHTS), que he impartido a más de 100.000 estudiantes en Cursera,
+desde el año 2012. Este libro añade detalles adicionales para crear un texto
+independiente, que pueda ser leído por placer o usado como apoyo en
+cualquier curso de introducción centrado en la arquitectura de Internet.
 
-This book has been particularly fun in that it is a collaboration
-with my friends Mauro Toselli (@xlontrax) and Sue Blumenberg.  I met Mauro and
-Sue in 2012 when they became volunteer Community Teaching Assistants (CTAs)
-for my IHTS course on Coursera.  Over the past three years we have become
-friends and colleagues.   It is a great example of how open education
-can bring people together.
+Trabajar en este libro ha sido particularmente divertido, ya que se trata de una
+colaboración con mis amigos Mauro Toselli (@xlontrax) y Sue Blumenberg. Conocí
+a Mauro y a Sue en 2012, cuando se convirtieron en asistentes técnicos
+voluntarios de la comunidad (CTAs) de mi curso IHTS en Coursera. A lo largo
+de los tres últimos años se han convertido en mis amigos y colegas. Se trata de
+un gran ejemplo sobre cómo la educación abierta puede reunir a la gente.
 
-There is supporting material for this book at
+Existe material de apoyo para este libro en
 
 http://www.net-intro.com/
 
-If you like the book, let us know.  Send us a tweet with your thoughts.
-You can also send a tweet if you find an error in the book.
+Si te gusta el libro, háznoslo saber. Envíanos un tweet contándonos lo que
+opinas. Puedes también enviarnos un tweet si encuentras algún error en el libro.
 
     Charles R. Severance (@drchuck)
     www.dr-chuck.com
     Ann Arbor, MI USA
     May 20, 2015
-

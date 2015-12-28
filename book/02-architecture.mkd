@@ -1,414 +1,444 @@
-Network Architecture
-====================
+Arquitectura de red
+===================
 
 \index{NSFNet}
-To engineer and build a system as complex as the Internet,
-engineers try to break a single
-challenging problem into a set of smaller problems that can be solved
-independently and then put back together to solve the original large problem.
-The engineers who built the first internets broke the overall problem into
-four basic subproblems that could be worked on independently by different
-groups.
+Para diseñar y construir un sistema tan complejo como Internet,
+los ingenieros intentan dividir un único problema realmente complejo en un
+conjunto de problemas más pequeños, de modo que puedan ser resueltos de forma
+independiente y luego unidos de nuevo para resolver la cuestión original.
+Los ingenieros que construyeron los primeros internets, dividieron el problema
+principal en cuatro subproblemas básicos, sobre los que pudieran trabajar de
+forma independiente distintos grupos.
 
-![The Four-Layer TCP/IP Model](../images/layers)
+![El modelo de cuatro capas TCP/IP](../images/layers)
 
 
-\index{Link Layer}
-\index{Internetwork Layer}
-\index{Transport Layer}
-\index{Application Layer}
-They gave these four areas of engineering the following
-names: (1) Link, (2) Internetwork, (3) Transport, and (4) Application.  We
-visualize these different areas as layers stacked on top of each other,
-with the Link layer on the bottom and the Application layer on the top.  The
-Link layer deals with the wired or wireless connection from your
-computer to the local area network and the Application layer is what we as end
-users interact with.   A web browser is one example of an application in this
-Internet architecture.
+\index{Capa de Acceso a la red}
+\index{Capa de Internet}
+\index{Capa de Transporte}
+\index{Capa de Aplicación}
+Esas cuatro áreas de diseño recibieron los siguientes nombres:
+(1) Acceso a la red, (2) Internet, (3) Transporte, y (4) Aplicación.
+Se representan esas áreas diferentes como capas apiladas unas encima de otras,
+con la capa de Acceso en la base y la capa de Aplicación en la cima. La capa
+de Acceso gestiona la conexión cableada o inalámbrica desde tu equipo
+hasta la red de área local, y la capa de Aplicación es aquella con la que
+nosotros, como usuarios finales, interactuamos. Un navegador web es un ejemplo
+de una aplicación en esta arquitectura de Internet.
 
-\index{TCP Model}
-We informally refer to this model as the "TCP/IP model" in reference to
-the Transport Control Protocol (TCP) used to implement the Transport layer
-and Internet Protocol (IP) used to implement the Internetwork layer.
+\index{Modelo TCP}
+De forma informal, se denomina este modelo como "modelo TCP/IP", haciendo
+referencia al Protocolo de Control de Transporte (TCP), usado para implementar
+la capa de Transporte, y al Protocolo de Internet (IP), que se utiliza para
+implementar la capa de Internet.
 
-We will take a quick look at each of the layers, starting from the "bottom" of
-the stack.
+Echaremos a continuación un vistazo rápido a cada una de las capas, comenzando
+por la "base" de la pila.
 
-The Link Layer
---------------
+La capa de Acceso a la red
+--------------------------
 
-The Link layer is responsible for connecting your computer to its local
-network and moving the data across a single hop. The most common Link layer
-technology today is wireless networking. When you are using a wireless device,
-the device is only sending data a limited distance. A smartphone
-communicates with a tower that is a few kilometers away. If you are using your
-smartphone on a train, it needs to switch to a new tower every few minutes
-when the train is moving. A laptop that is connected to a WiFi network is
-usually communicating with a base station within 200 meters. A desktop
-computer that is connected using a wired connection is usually using a cable
-that is 100 meters long or shorter. Link layer technologies are often
-shared amongst multiple computers at the same location.
+La capa de Acceso a la red es la encargada de conectar tu computador con su
+red local, y de mover los datos a través de un único salto. La tecnología
+actual más habitual para la capa de Acceso es la red inalámbrica. Cuando se está
+utilizando un dispositivo inalámbrico, el dispositivo sólo es capaz de enviar
+datos a una distancia limitada. Un smartphone se comunica con una torre que está
+a sólo unos pocos kilómetros de distancia. Si se usa un smartphone en un tren,
+necesitará estar cambiando de torre cada pocos minutos, a medida que el tren se
+va desplazando. Un portátil (laptop) que esté conectado a una red WiFi, se
+comunica normalmente con una estación base en un radio de 200 metros. Un
+computador que se conecta usando una conexión cableada, normalmente utiliza un
+cable de 100 metros de longitud o menos. Las tecnologías utilizadas por la
+capa de Acceso a menudo se comparten entre múltiples equipos en la misma
+ubicación.
 
-The Link layer needs to solve two basic problems when dealing with these
-shared local area networks. The first problem is how to encode and send data
-across the link. If the link is wireless, engineers must agree on which
-radio frequencies are to be used to transmit data and how the digital data is
-to be encoded in the radio signal. For wired connections, they must agree on
-what voltage to use on the wire and how fast to send the bits across the
-wire. For Link layer technologies that use fiber optics, they must agree on the
-frequencies of light to be used and how fast to send the data.
+La capa de Acceso necesita resolver dos problemas básicos en su gestión de esas
+redes de área local compartidas. El primer problema consiste en determinar cómo
+codificar y enviar datos a través de la conexión. Si el enlace es inalámbrico,
+los ingenieros deben ponerse de acuerdo sobre cuáles son las frecuencias de
+radio a utilizar para transmitir los datos, y también en el modo en que los datos
+digitales deben ser codificados en la señal de radio. En las conexiones
+cableadas, deben ponerse de acuerdo acerca del voltaje que debe usar el cable
+y la velocidad de envío de los bits a través del medio. Para las tecnologías
+de la capa de Acceso que usan fibra óptica, deben acordar cuáles son las
+frecuencia de luz a utilizar y la velocidad de envío de los datos.
 
-In addition to agreeing on how to send data using a shared medium such as a
-wireless network, they also need to agree on how to cooperate with other
-computers that might want to send data at the same time. If all the computers
-on the network tried to transmit whenever they had data to send, their messages
-would collide. The result would be chaos, and receiving stations would only receive
-noise. So we need to find a fair way to allow each station to wait its turn
-to use the shared network.
+Además de ponerse de acuerdo en cómo enviar los datos usando un medio compartido,
+como puede ser una red inalámbrica, también es necesario acordar cómo deben cooperar
+entre sí los equipos que quieran enviar datos al mismo tiempo. Si todos los
+computadores de la red intentan transmitir cada vez que tengan datos para enviar,
+sus mensajes colisionarán unos con otros. El resultado podría ser el caos, y los
+puestos de recepción sólo recibirían ruido. De modo que necesitamos encontrar un
+método fiable que permita a cada puesto esperar su turno para usar la red compartida.
 
-The idea of breaking a large message into packets and then sending each packet
-separately makes this sharing easier. If only one computer wants to send data, 
-it will send its packets one right after another and move its data across the
-network as quickly as it can. But if three computers want to send data
-at the same time, each computer will send one packet and then wait while the other
-two computers send packets. After each of the other computers sends a packet, the
-first computer will send its next packet. This way the computers are sharing
-access to the network in a fair way.
+La idea de dividir cada mensaje extenso en paquetes y luego enviar cada paquete de
+forma independiente, hace que sea más sencillo compartir la red. Si sólo hubiera un
+equipo que quisiera enviar datos, enviaría sus paquetes uno detrás del otro, y haría
+circular esos datos a través de la red tan rápido como pudiera. Pero si tres computadores
+quieren enviar datos al mismo tiempo, cada uno de ellos deberá enviar un paquete y luego
+esperar mientras los otros dos equipos hacen lo mismo. Después de que los otros
+computadores hayan enviado sus propios paquetes, el primero realizaría su siguiente
+envío. De este modo, los equipos estarían compartiendo el acceso a la red de un
+modo adecuado.
 
-But how does a computer know if other computers want to send data at the same
-time?  Engineers designed an ingenious method to solve this problem called 
-"Carrier Sense Multiple Access with Collision Detection", or CSMA/CD. It is a
-long name for a simple and elegant concept.  When your computer wants to
-send data, it first listens to see if another computer is already sending data
-on the network (Carrier Sense). If no other computer is sending data, your
-computer starts sending its data. As your computer is sending data it also
-listens to see if it can receive its own data. If your computer receives its own
-data, it knows that the channel is still clear and continues transmitting. But
-if two computers started sending at about the same time, the data collides, and
-your computer does not receive its own data. When a collision is detected, both
-computers stop transmitting, wait a bit, and retry the transmission. The two
-computers that collided wait different lengths of time to retry their
-transmissions to reduce the chances of a second collision.
+Pero, ¿cómo sabe un computador si otros equipos quieren enviar datos al mismo tiempo
+que él? Los ingenieros han diseñado un método ingenioso para resolver este problema,
+llamado "Acceso Múltiple con Escucha de Portadora y Detección de Colisiones" (*Carrier
+Sense Multiple Access with Collision Detection*), o CSMA/CD. Se trata de un nombre largo
+para designar un concepto simple y elegante. Cuando tu computador quiere enviar datos,
+primero escucha si otro equipo está ya enviando información a través de la red (Escucha
+de Portadora). Si nadie está enviando datos, tu computador comienza a enviar los suyos.
+Al mismo tiempo que lo hace, va escuchando para comprobar si puede recibir su propia
+información. Si los datos recibidos son los mismos que ha enviado, sabe que el canal
+sigue despejado y continúa transmitiendo. Pero si dos equipos comienzan a enviar datos
+al mismo tiempo, los datos colisionan, y tu computador no será capaz de recibir lo mismo
+que ha enviado. Cuando se detecta una colisión, ambos equipos dejan de transmitir,
+esperan un poco, y luego reintentan la transmisión. Los dos equipos que colisionan
+esperan distintos periodos de tiempo antes de reintentar sus transmisiones, para
+reducir las posibilidades de que se produzca una segunda colisión.
 
-![Carrier Sense/Collision Detection](../sketchnote/Link_CSMA)
+![Escucha de Portadora/Detección de Colisiones](../sketchnote/Link_CSMA)
 
-When your computer finishes sending a packet of data, it pauses to
-give other computers that have been waiting a chance to send data.
-If another computer senses that your computer has stopped
-sending data (Carrier Sense) and starts sending its own packet, your computer
-will detect the other computer's use of the network and wait until that
-computer's packet is complete before attempting to send its next packet.
+Cuando tu computador termina de enviar un paquete de datos, se detiene temporalmente
+para dar a otros equipos que puedan estar esperando la oportunidad de enviar sus
+propios datos. Si otro computador se da cuenta de que el el tuyo ha dejado de enviar
+datos (Escucha de Portadora), y comienza a enviar su propio paquete, tu equipo
+detectará el uso de la red que está haciendo ese computador y esperará hasta que
+se haya completado el envío del paquete que está en marcha antes de intentar enviar su
+siguiente bloque.
 
-This simple mechanism works well when only one computer wants to send data.
-It also works well when many computers want to send data at the same time. When
-only one computer is sending data, that computer can make good use of the shared
-network by sending packets one after another, and when many computers want to use
-the shared network at the same time, each computer gets a fair share of the link.
+Este sencillo mecanismo funciona correctamente cuando sólo hay un equipo que quiere
+enviar datos. También funciona bien cuando hay muchos equipos que pretenden enviar
+datos al mismo tiempo. Cuando hay un único computador enviando datos, ese equipo
+puede hacer un buen uso de la red compartida, enviando sus paquetes uno detrás del
+otro. Y cuando muchos computadores quieren usar la red compartida a la vez, cada
+equipo consigue una parte equitativa de la conexión.
 
-Some link layers, like a cellular connection for a smartphone, a WiFi
-connection, or a satellite or cable modem, are shared connections and need
-techniques like CSMA/CD to insure fair access to the many different computers
-connected to the network. Other link layers like fiber optic cables and leased
-lines are generally not shared and are used for connections between routers.
-These non-shared connections are still part of the Link layer.
+Algunas capas de acceso, como una conexión móvil (celular) para un smartphone, una
+conexión WiFi, o un satélite o módem de cable, son conexiones compartidas, y necesitan
+usar técnicas como CSMA/CD para asegurar un acceso equitativo para muchos posibles
+equipos diferentes conectados a la red. Otras capas de acceso, como los cables de
+fibra óptica y las líneas alquiladas, generalmente no se comparten y se usan para
+realizar conexiones directas entre routers. Estas conexiones no compartidas forman
+también parte de la capa de Acceso.
 
-The engineers working on Link layer technologies focus solving the issues
-so computers can transmit data
-across a single link that ranges in distance from a few meters to as long as
-hundreds of kilometers. But to move data greater distances, we need to send our
-packets through multiple routers connected by multiple link layers. Each time
-our packet passes through another link layer from one router to another we call
-it a "hop". To send data halfway around the world, it will pass through about
-20 routers, or make 20 "hops".
+Los ingenieros que trabajan en las tecnologías para la capa de Acceso se han centrado
+en resolver los inconvenientes, para que los computadores puedan transmitir
+datos a través de una única conexión que pueda abarcar gran variedad de distancias,
+desde unos pocos metros hasta cientos de kilómetros. Pero parar desplazar los datos
+a través de distancias mayores, necesitamos enviar nuestros paquetes a través de
+múltiples routers, conectados a múltiples capas de acceso. Cada vez que un paquete
+pasa a través de la capa de acceso de un router a otro, se dice que realiza un "salto"
+(*hop*). Para enviar datos al otro lado del mundo, éstos pasarían a través de unos
+20 routers, es decir, realizarían unos 20 "saltos".
 
-The Internetwork Layer (IP)
+La Capa de Internet (IP)
+---------------------------
+Una vez que un paquete destinado a Internet ha realizado su recorrido a través de la
+primera conexión, pasará a encontrarse dentro un router. El paquete tiene una
+dirección de origen y otra de destino, y el router necesita fijarse en la dirección
+de destino para averiguar cuál puede ser el mejor movimiento para dirigir ese paquete
+hacia su destino. Con cada router gestionando paquetes cuyo destino puede ser cualquiera
+de los muchos billones de computadores de destino, no resulta viable que cada
+router conozca la ubicación exacta ni cual sería la mejor ruta para cualquier posible
+equipo de destino. De modo que el router hace lo que puede para intentar adivinar cómo
+dejar tu paquete lo más cerca posible de su destino.
+
+Cada uno de los demás routers por los que va pasando a lo largo del camino van
+haciendo también lo que pueden para dejar el paquete lo más cerca posible del
+computador de destino. A medida que el paquete va acercándose a su destino
+definitivo, los routers tienen una idea más precisa de dónde necesitan enviar el
+paquete. Cuando el paquete alcanza la última conexión de su viaje,
+la capa de acceso ya sabe exactamente dónde debe enviarlo.
+
+Las personas usamos un método parecido para viajar cuando salimos de vacaciones. Un
+viaje para ir de vacaciones tiene también muchos saltos. A lo mejor el primer salto
+consiste en conducir tu coche o coger un taxi o autobús para ir a la estación de trenes.
+Luego puedes tomar un tren de cercanías que te lleve desde la pequeña ciudad donde vives
+hasta otra más grande. En la ciudad grande, tomarías un tren de larga distancia hasta
+una ciudad grande en otro país. Luego, tomarías otro tren de cercanías hasta el
+pueblecito donde fueras a pasar tus vacaciones. Al bajarte del tren, tomarías
+de nuevo un autobús, y al bajar del autobús, caminarías hasta tu hotel.
+
+Si cuando estabas en el tren entre las dos grandes ciudades hubieses preguntado
+al conductor por la ubicación exacta de tu hotel en el pueblecito, posiblemente
+el conductor no lo hubiera sabido. Él sólo sabe cómo dejarte cerca de tu destino,
+y dado que estás en un tren de largo recorrido, eso es lo importante. Cuando subas
+al autobús en tu pueblo de destino, podrás preguntar al conductor del autobús cuál
+es la parada más cercana a tu hotel. Y cuando bajes del autobús en la parada correcta,
+seguramente puedas preguntar a alguien en la calle cómo encontrar el hotel y obtener
+una respuesta precisa.
+
+Cuando más lejos te encuentres de tu destino, menos necesidad tienes de conocer los
+detalles exactos acerca de cómo llegar hasta allí. Cuando estás lejos, todo lo que
+necesitas saber es cómo llegar "más cerca" de tu destino. Los routers en Internet
+funcionan del mismo modo. Sólo los routers que se encuentran más cerca del
+equipo de destino saben cuál es el camino exacto hasta ese computador. Todos los
+routers que se van cruzando por el camino trabajan para ir acercando el mensaje a
+su destino.
+
+Pero, igual que cuando se viaja, pueden aparecer problemas inesperados o retrasos,
+que requieran de un cambio de planes mientras los paquetes están siendo enviados
+a través de la red.
+
+![Un recorrido multi-salto](../sketchnote/Multiple_step_trip)
+
+Los routers intercambian entre sí mensajes especiales para informar a los demás
+acerca de cualquier tipo de retraso en el tráfico o corte en la red, de modo que
+los paquetes puedan ser desviados desde una ruta inviable hacia otra diferente.
+Los routers que forman el corazón de Internet son inteligentes y se adaptan
+rápidamente tanto a pequeños cortes como a otros más largos, o a fallos en las
+conexiones de red. Algunas veces una conexión se ralentiza por sobrecarga. Otras veces
+una conexión queda interrumpida de forma física, cuando un equipo de construcción
+excava por error cerca de un cable enterrado y lo rompe. A veces hay desastres
+naturales, como huracanes o tifones, que desconectan los routers y conexiones en un área
+geográfica extensa. Los routers detectan rápidamente esos cortes y redirigen el
+tráfico por otro lado, cuando es posible hacerlo.
+
+Pero algunas veces las cosas van mal y se pierden algunos paquetes. La gestión de
+los paquetes perdidos es el cometido de la siguiente capa de nuestra arquitectura.
+
+La Capa de Transporte (TCP)
 ---------------------------
 
-Once your packet destined for the Internet makes it across the first link,
-it will be in a router. Your packet has a source address and destination
-address and the router needs to look at the destination address to figure
-out how to best move your packet towards its destination. With each router
-handling packets destined for any of many billions of destination
-computers, it's not possible for every router to know the exact location and
-best route to every possible destination computer. So the router makes its
-best guess as to how to get your packet closer to its destination.
+La capa de Internet es a la vez simple y compleja. Se fija en la dirección de
+destino de un paquete y busca un camino a través de múltiples saltos de red
+para entregar el paquete al equipo de destino. Para a veces esos paquetes
+se pierden o se retrasan demasiado. Otras veces los paquetes llegan a su destino
+desordenados, debido a que un paquete posterior encuentra un camino más rápido
+a través de la red que uno previo. Cada paquete contiene la dirección del
+computador de origen y la del equipo de destino, y un *offset* o índice, que indica la
+posición relativa de ese paquete respecto al comienzo del mensaje. Al conocer el
+índice relativo de cada paquete respecto al comienzo del mensaje y la longitud del
+mismo, el computador de destino puede reconstruir el mensaje original, incluso si
+los paquetes se reciben desordenados.
 
-Each of the other routers along the way also does its best to get your packet
-closer to the destination computer. As your packet gets closer to its final
-destination, the routers have a better idea of exactly where your packet
-needs to go. When the packet reaches the last link in its journey, the
-link layer knows exactly where to send your packet.
-
-We use a similar approach to route ourselves when going on holiday. A
-holiday trip also has many hops. Perhaps the first hop is driving your car or
-taking a cab or bus to a train station. Then you take a local train from your small
-town to a larger city. In the larger city you take a long-distance train to a
-large city in another country. Then you take another local train to the small
-village where you will stay for your holiday. When you get off the train, you
-take a bus, and when you get off the bus, you walk to your hotel.
-
-If you were on the train between the two large cities and you asked the
-conductor the exact location of your hotel in the small village, the conductor
-would not know. The conductor only knows how to get you closer to your
-destination, and while you are on the long-distance train that is all that
-matters. When you get on the bus at your destination village, you can ask the
-bus driver which stop is closest to your hotel. And when you get off the
-bus at the right bus stop, you can probably ask a person on the street where
-to find the hotel and get an exact answer.
-
-The further you are from your destination, the less you need to know the
-exact details of how to get there. When you are far away, all you need to
-know is how to get "closer" to your destination. Routers on the Internet
-work the same way. Only the routers that are closest to the destination
-computer know the exact path to that computer. All of the routers in the
-middle of the journey work to get your message closer to its destination.
-
-But just like when you are traveling, unexpected problems or delays can come up
-that require a change in plans as your packets are sent across the network.
-
-![A Multi-Step Trip](../sketchnote/Multiple_step_trip)
-
-Routers exchange special messages to inform each other about any kind of
-traffic delay or network outage so that packets can be switched from a route
-that is no longer working to a different route. The routers that make up the
-core of the Internet are smart and adapt quickly to both small and large outages
-or failures of network connections. Sometimes a connection
-slows down because it is overloaded. Other times a connection is
-physically broken when a construction crew mistakenly digs up a buried wire and
-cuts it. Sometimes there is a natural disaster like a hurricane or typhoon
-that shuts down the routers and links in a large geographical area. The
-routers quickly detect these outages and reroute around them if possible.
-
-But sometimes things go wrong and packets are lost. Dealing with
-lost packets is the reason for the next layer in our architecture.
-
-The Transport Layer (TCP)
--------------------------
-
-The Internetwork layer is both simple and complex. It looks at a
-packet's destination address and finds a path across multiple network hops to
-deliver the packet to the destination computer. But sometimes these packets
-get lost or badly delayed. Other times the packets arrive at their destination
-out of order because a later packet found a quicker path through the network
-than an earlier packet. Each packet contains the source computer's address,
-the destination computer's address, and an offset of where this packet "fits"
-relative to the beginning of the message. Knowing the offset of each packet
-from the beginning of the message and the length of the packet, the destination
-computer can reconstruct the original message even if the packets were received
-out of order.
-
-\index{acknowledgements}
+\index{acuse de recibo}
+\index{confirmación}
 \index{ACK}
-As the destination computer reconstructs the message and delivers it to
-the receiving application, it periodically sends an
-acknowledgement back to the source computer indicating how much of the message it
-has received and reconstructed. But if the destination computer finds that parts
-of the reconstructed message are missing, this probably means that these packets were
-lost or badly delayed. After waiting a bit, the destination computer sends
-another message to the source computer to resend the missing packet or packets.
+A medida que el computador de destino va reconstruyendo el mensaje y se lo entrega a la
+aplicación de destino, va también enviando periódicamente mensajes de acuse de recibo
+o confirmación al equipo de origen, indicándole qué cantidad del mensaje ha
+recibido y reconstruido. Pero si el computador de destino se da cuenta de que falta
+parte del mensaje que está reconstruyendo, eso probablemente significaría que esos
+paquetes se habrían perdido o se habrían retrasado demasiado. Después de esperar un
+rato, el equipo de destino enviaría entonces una solicitud al de origen para pedirle
+que reenviara los datos perdidos.
 
-The sending computer must store a copy of the parts of the original message
-that have been sent until the destination computer acknowledges successful receipt
-of the packets. Once the source computer receives the acknowledgment of
-successful receipt of a portion of the message, it can discard the data that
-has been acknowledged and send some more data.
+El equipo de origen debe almacenar una copia de las partes del mensaje
+original que ya han sido enviadas, hasta que el computador de destino confirma
+la recepción con éxito de los paquetes. Una vez que el equipo de origen recibe la
+confirmación de la recepción con éxito de una porción del mensaje, puede descartar
+los datos que ya han sido confirmados y seguir enviando los siguientes.
 
-\index{window size}
-\index{courtesy}
-The amount of data that the source computer sends before waiting for an
-acknowledgement is called the "window size". If the window size is too small,
-the data transmission is slowed because the source computer is always waiting
-for acknowledgments. If the source computer sends too much data before waiting
-for an acknowledgment, it can unintentionally cause traffic problems by
-overloading routers or long-distance communication lines. This problem is
-solved by keeping the window size small at the beginning and timing how
-long it takes to receive the first acknowledgements. If the acknowledgments
-come back quickly, the source computer slowly increases the window size and if
-the acknowledgements come back slowly, the source computer keeps the window
-size small so as not to overload the network. Just like at the Link layer, a
-little courtesy on the Internet goes a long way toward ensuring good use of the
-shared network infrastructure.
 
-\index{flow control}
-This strategy means that when the network has high-speed connections and is
-lightly loaded the data will be sent quickly, and if the network is
-heavily loaded or has slow connections the data will be slowed down to match
-the limitations of the network connections between the source and destination
-computers.
+\index{tamaño de ventana}
+\index{cortesía}
+La cantidad de datos que el computador de origen envía antes de esperar una
+confirmación o acuse de recibo, recibe el nombre de "tamaño de ventana". Si
+el tamaño de ventana es demasiado pequeño, la transmisión de datos se vuelve lenta,
+ya que el computador de origen está siempre esperando mensajes de confirmación. Si
+el equipo de origen envía demasiados datos antes de esperar confirmación, puede
+provocar problemas en el tráfico de forma inintencionada, por sobrecargar los routers
+o las líneas de comunicación de larga distancia. Este problema se soluciona
+manteniendo el tamaño de la ventana pequeño al principio y cronometrando el
+tiempo que lleva recibir el primer mensaje de confirmación. Si la confirmación
+llega enseguida, el computador de origen va aumentando poco a poco el tamaño de
+ventana, y si las confirmaciones tardan en llegar, se mantiene el tamaño de
+ventana pequeño, aunque no tanto como para sobrecargar la red. Como ocurría en la
+capa de Acceso, unas pequeñas reglas de cortesía en Internet sirven de mucho
+para asegurar un buen uso de la infraestructura de red compartida. 
 
-The Application Layer
+\index{control de flujo}
+Esta estrategia permite que cuando la red disponga de conexiones de alta
+velocidad y esté poco cargada, los datos se envíen rápidamente, mientra que si la red
+está muy cargada o tiene conexiones lentas, los datos irán siendo enviados más
+lentamente, para adaptarse a las limitaciones de las conexiones de red entre
+los equipos de origen y destino.
+
+La Capa de Aplicación
 ---------------------
 
-\index{Application Layer}
-\index{Layer!Application}
-The Link, Internetwork, and Transport layers work together to quickly and
-reliably move data between two computers across a shared network of networks.
-With this capability to move data reliably, the next question is what
-networked applications will be built to make use of these network connections.
+\index{Capa de Aplicación}
+\index{Capa!Aplicación}
+Las capas de Acceso, Internet y Transporte trabajan juntas para hacer llegar los datos
+de forma rápida y segura de un computador a otro, a través de una red compartida de
+redes. Con esta capacidad para mover los datos de forma fiable, la cuestión siguiente
+es qué aplicaciones de red se pueden construir para hacer buen uso de esas conexiones
+de red.
 
-\index{remote log in}
-When the first widely used Internet came into being in the mid-1980s, the first
-networked applications allowed users to log in to remote computers, transfer files
-between computers, send mail between computers, and even do real-time text chats
-between computers.
+\index{inicio de sesión remoto}
+Cuando, a mediados de los años 80, se empezó a utilizar ampliamente Internet, la
+primeras aplicaciones permitían a los usuarios iniciar sesión en computadores remotos,
+transferir archivos entre equipos, enviar correo entre ellos, e incluso realizar
+charlas mediante texto (*chats*) entre computadores diferentes.
 
 \index{Web}
 \index{CERN}
-In the early 1990s, as the Internet came to more people and computers' abilities
-to handle images improved, the World Wide Web application was developed by
-scientists at the CERN high-energy physics facility. The web was focused on
-reading and editing networked hypertext documents with images. Today the web is
-the most common network application in use around the world.  But all the other
-older Internet applications are still in wide use.
+A principios de los 90, a medida que Internet llegaba a más gente y las capacidades
+de los computadores para manejar imágenes iban mejorando, los científicos de los
+laboratorios de física de alta energía CERN desarrollaron la aplicación World Wide Web.
+La web estaba orientada a la lectura y edición en red de documentos de hipertexto con
+imágenes. Hoy en día la web es la aplicación en red más habitual que se utiliza en
+todo el mundo. Pero todas las demás aplicaciones anteriores de Internet aún se siguen
+utilizando ampliamente.
 
-\index{client}
-\index{server}
-\index{client-server}
+\index{cliente}
+\index{servidor}
+\index{cliente-servidor}
 \index{URL}
 \index{Uniform Resource Locator}
-Each application is generally broken into two halves. One half of the
-application is called the "server". It runs on the destination computer and
-waits for incoming networking connections. The other half of the application
-is called the "client" and runs on the source computer. When you are browsing
-the web using software like Firefox, Chrome, or Internet Explorer, you are
-running a "web client" application which is making connections to web servers
-and displaying the pages and documents stored on those web servers. The
-Uniform Resource Locators (URLs) that your web browser shows in its address bar
-are the web servers that your client is contacting to retrieve documents for
-you to view.
+\index{Localizador Uniforme de Recursos}
+Generalmente, cada aplicación está dividida en dos partes. Una parte de la aplicación
+recibe el nombre de "servidor". Se ejecuta en el computador de destino y aguarda a que
+se reciban conexiones de entrada a través de la red. La otra parte de la aplicación se
+denomina "cliente", y se ejecuta en el equipo de origen. Cuando se navega por la web
+usando un programa como Firefox, Chrome, o Internet Explorer, se está ejecutando una
+aplicación "cliente web", que realiza conexiones con los servidores web y muestra las
+páginas y documentos almacenados en esos servidores. Los Localizadores Uniformes de
+Recursos (*Uniform Resource Locators* o URLs), que muestra el navegador web en su barra
+de direcciones, son los servidores web con los que el cliente va contactando para
+recuperar los documentos que muestra.
 
-When we develop the server half and the client half of a networked application,
-we must also define an "application protocol" that describes how the two
-halves of the application will exchange messages over the network. The protocols
-used for each application are quite different and specialized to meet the needs
-of the particular application.  Later we will explore some of these Application
-layer protocols.
+Cuando se desarrolla la parte del servidor y la parte del cliente en una aplicación
+en red, se debe definir también un "protocolo de aplicación", que describa cómo van
+a intercambiar mensajes a través de la red las dos partes de esa aplicación. Los
+protocolos que usa cada aplicación son diferentes de los que utilizan las demás, ya
+que están especializados para adaptarse a las necesidades particulares de esa
+aplicación en concreto. Más adelante revisaremos algunos de esos protocolos utilizados
+en la capa de Aplicación.
 
-Stacking the Layers
--------------------
+Apilado de Capas
+----------------
 
-\index{Layered Model}
-We usually show the four different layers (Link, Internetwork, Transport, and
-Application) stacked on top of each other with the Application layer at the top
-and the Link layer at the bottom. The reason we show them this way is because
-each layer makes use of the layers above  and below it to achieve networked
-communications.
+\index{Modelo de Capas}
+Habitualmente se representan las cuatro capas (Acceso a la red, Internet, Transporte y
+Aplicación), apiladas una encima de otra, con la capa de Aplicación arriba del
+todo, y la capa de Acceso en el fondo. La razón de que se representen de este modo
+es que cada una de las capas utiliza las que están por encima y por debajo de ella
+para lograr establecer la comunicación a través de la red.
 
-All four layers run in your computer where you run the client application
-(like a browser), and
-all four layers also run in the destination computer where the application server
-is running. You as the end user interact with the applications that make up the
-top layer of the stack, and the bottom layer represents the WiFi, cellular, or
-wired connection between your computer and the rest of the Internet.
+Todas las capas se ejecutan en la computadora donde corre la aplicación
+cliente (por ejemplo, un navegador web), y
+todas las capas se ejecutan también en el equipo de destino, donde está corriendo
+el servidor de la aplicación. Tú, como usuario final, interactúas con las aplicaciones
+que forman la capa superior de la pila, y la capa del fondo representa el WiFi,
+red móvil (celular), o la conexión cableada entre tu computador y el resto de
+Internet.
 
-The routers that forward your packets from one to another to move your packets
-towards their destination have no understanding of either the Transport or
-Application layers. Routers operate at the Internetwork and Link layers. The
-source and destination addresses at the Internetwork layer are all that is
-needed for routers to move your packets across the series of links (hops) to get
-them to the destination. The Transport and Application layers only come into play
-after the Internetwork layer delivers your packets to the destination computer.
+Los routers que reenvían los paquetes de un sitio a otro para dirigirlos hacia
+su destino, no tienen en cuenta ni a la capas de Transporte ni a la de Aplicación.
+Los routers operan con las capas de Internet y Acceso. Las direcciones de
+origen y destino de la capa de Internet son todo lo que necesitan esos routers
+para enviar los paquetes a través de una serie de conexiones (saltos), hasta
+hacerlos llegar a su destino. Las capas de Transporte y Aplicación sólo entran
+en juego después de que la capa de Internet haya entregado los paquetes en el
+equipo de destino.
 
-If you wanted to write your own networked application, you would likely
-only talk to the Transport layer and be completely unconcerned about the
-Internetwork and Link layers. They are essential to the function of the Transport
-layer, but as you write your program, you do not need to be aware of any of the
-lower-layer details. The layered network model makes it simpler to write
-networked applications because so many of the complex details of moving data
-from one computer to another can be ignored.
+Si quisieras escribir tu propia aplicación en red, probablemente sólo necesitarías
+comunicarte con la capa de Transporte, y podrías desentenderte por completo de las
+capas de Internet y de Acceso. Éstas son esenciales para el funcionamiento de la
+capa de Transporte, pero cuando se escribe un programa, no es necesario preocuparse de
+ninguno de los detalles de bajo nivel. El modelo de capas de red logra que resulte
+más sencillo escribir aplicaciones en red, ya que se pueden ignorar muchos de los
+detalles complejos relativos al movimiento de datos desde un computador a otro.
 
-Up next, we will talk about these four layers in more detail.
+A continuación, hablaremos acerca de estas cuatro capas con mayor detalle.
 
-Glossary
+Glosario
 --------
 
-**client**:
-In a networked application, the client application is the one that requests
-services or initiates connections.
+**cliente**:
+En una aplicación en red, la aplicación cliente es aquella que solicita servicios
+o inicia las conexiones.
 
-**fiber optic**:
-A data transmission technology that encodes data using light and sends the
-light down a very long strand of thin glass or plastic. Fiber optic
-connections are fast and can cover very long distances.
+**fibra óptica**:
+Una tecnología de transmisión de datos que codifica información utilizando luz
+y envía esa luz a través de un filamento muy largo de vidrio fino o plástico. Las
+conexiones de fibra óptica son rápidas y pueden cubrir distancias muy largas.
 
-**offset**: The relative position of a packet within an overall message
-or stream of data.
+**índice u offset**: La posición relativa de un paquete dentro de un mensaje
+completo o de una cadena de datos.
 
-**server**:
-In a networked application, the server application is the one that responds
-to requests for services or waits for incoming connections.
+**servidor*:
+En una aplicación en red, la aplicación servidor es aquella que responde a las
+peticiones de servicios o espera la recepción de conexiones de entrada.
 
-**window size**: The amount of data that the sending computer is allowed to 
-send before waiting for an acknowledgement.
+**tamaño de ventana**: La cantidad de datos que puede enviar el equipo
+emisor antes de que deba detenerse y esperar una confirmación (del equipo receptor).
 
 
-Questions
+Preguntas
 ---------
 
-You can take this quiz online at http://www.net-intro.com/quiz/
+Puedes realizar este cuestionario online en http://www.net-intro.com/quiz/
 
-1. Why do engineers use a "model" to organize their approach to 
-solving a large and complex problem?
-a) Because it allows them to build something small and test it in a wind tunnel
-b) Because talking about a model delays the actual start of the hard work
-c) Because they can break a problem down into a set of smaller problems that can 
-be solved independently
-d) Because it helps in developing marketing materials
+1. ¿Por qué los ingenieros usan un "modelo" para organizar su modo de
+resolver un problema extenso y complejo?
+a) Porque les permite construir algo pequeño y probarlo en un túnel de viento
+b) Porque discutir sobre un modelo les permite retrasar el comienzo del
+trabajo duro de verdad
+c) Porque pueden dividir un problema en un conjunto de problemas más pequeños
+que pueden ser resueltos cada uno de forma independiente
+d) Porque les ayuda a desarrollar herramientas de marketing
 
-2. Which is the top layer of the network model used by TCP/IP networks?
-a) Application
-b) Transport
-c) Internetwork
-d) Link
+2. ¿Cual es la capa superior del modelo de red usado en las redes TCP/IP?
+a) Aplicación
+b) Transporte
+c) Internet
+d) Acceso a la red
 
-3. Which of the layers concerns itself with getting a packet of data
-across a single physical connection?
-a) Application
-b) Transport
-c) Internetwork
-d) Link
+3. ¿Cuál de las capas se ocupa de recibir un paquete de datos
+a través de una única conexión física? 
+a) Aplicación
+b) Transporte
+c) Internet
+d) Acceso a la red
 
-4. What does CSMA/CD stand for?
-a) Carrier Sense Multiple Access with Collision Detection
-b) Collision Sense Media Access with Continuous Direction
-c) Correlated Space Media Allocation with Constant Division
-d) Constant State Multiple Address Channel Divison
+4. ¿Qué significa CSMA/CD?
+a) Acceso Múltiple con Escucha de Portadora y Detección de Colisiones (*Carrier
+Sense Multiple Access with Collision Detection*)
+b) Acceso al Medio con Escucha de Colisiones y Dirección Continua (*Collision Sense
+Media Access with Continuous Direction*)
+c) Distribución del Medio con Espacio Correlativo y División Constante (*Correlated
+Space Media Allocation with Constant Division*)
+d) Direccionamiento Múltiple de la División del Canal de Estado Constante (*Constant
+State Multiple Address Channel Divison*)
 
-5. What is the goal of the Internetwork layer?
-a) Insure that no data is lost while enroute
-b) Get a packet of data moved across multiple networks from its source to its destination
-c) Make sure that only logged-in users can use the Internet
-d) Insure than WiFi is fairly shared across multiple computers
+5. ¿Cual es la función de la capa de Internet?
+a) Asegurarse de que no se pierden datos durante el enrutamiento
+b) Hacer que un paquete de datos se mueva a través de múltiples redes desde su origen
+hasta su destino
+c) Asegurarse de que sólo pueden usar Internet aquellos usuarios que han iniciado
+sesión
+d) Asegurarse de que el WiFi se comparte correctamente entre múltiples equipos
 
-6. In addition to the data, source, and destination addresses, what else
-is needed to make sure that a message can be reassembled when it reaches
-its destination?
-a) An offset of where the packet belongs relative to the beginning of the message
-b) A location to send the data to if the destination computer is down
-c) A compressed and uncompressed version of the data in the packet
-d) The GPS coordinates of the destination computer
+6. Además de los datos y direcciones de origen y destino, ¿qué más se necesita para
+asegurarse de que un mensaje pueda ser reconstruido cuando alcanza su destino?
+a) Un offset o índice que indique a dónde pertenece el paquete, en relación con el
+comienzo del mensaje
+b) Una ubicación a la que enviar los datos si el equipo de destino está apagado
+c) Una versión comprimida y otra sin comprimir de los datos del paquete
+d) Las coordenadas GPS del equipo de destino
 
-7. What is "window size"?
-a) The sum of the length and width of a packet
-b) The maximum size of a single packet
-c) The maximum number of packets that can make up a message
-d) The maximum amount of data a computer can send before receiving an acknowledgement
-
-  
-
-9. In a typical networked client/server application, where does the client
-application run?
-a) On your laptop, desktop, or mobile computer
-b) On a wireless access point
-c) On the closest router
-d) In an undersea fiber optic cable
-
-10. What does URL stand for?
-a) Universal Routing Linkage
-b) Uniform Retransmission Logic
-c) Uniform Resource Locator
-d) Unified Recovery List
+7. ¿Qué es el "tamaño de la ventana"?
+a) La suma de la longitud y anchura de un paquete
+b) El tamaño máximo de un único paquete
+c) El número máximo de paquetes que pueden formar un mensaje
+d) La cantidad máxima de datos que un equipo puede enviar antes de recibir una
+confirmación de recepción
 
 
 
+9. En una aplicación de red típica cliente/servidor, ¿dónde corre la aplicación
+cliente?
+a) En tu portátil (laptop), computador o móvil (celular)
+b) En un punto de acceso inalámbrico
+c) En el router más cercano
+d) En un cable de fibra óptica submarino
 
+10. ¿Qué significa URL?
+a) Enlace de Enrutamiento Universal (*Universal Routing Linkage*)
+b) Lógica de Retransmisión Uniforme (*Uniform Retransmission Logic*)
+c) Localizador Uniforme de Recursos (*Uniform Resource Locator*)
+d) Lista de Recuperación Unificada (*Unified Recovery List*)
