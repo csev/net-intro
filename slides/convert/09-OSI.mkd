@@ -1,0 +1,15 @@
+#  The OSI Model
+#  Physical (Layer 1)
+#  Data Link (Layer 2)
+#  Network (Layer 3)
+#  Transport (Layer 4)
+#  Session (Layer 5)
+#  Presentation (Layer 6)
+#  Application (Layer 7)
+#[Comparing the TCP and OSI Models](../images/iso-tcp.png)
+#  Comparing the OSI and TCP/IP Models
+#  Link Layer (TCP/IP)
+#  Internetwork Layer (TCP/IP)
+#  Transport Layer (TCP/IP)
+#  Application Layer (TCP/IP)
+#  Conclusion

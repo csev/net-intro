@@ -1,0 +1,12 @@
+#  Introduction
+#  Communicating at a Distance
+#[Connecting Using Telephone Operators](../sketchnote/Distance_Comm.png)
+#[Long-Distance Telephone Poles](../photos/telephone_pole_photo.jpg.png)
+#  Computers Communicate Differently
+#  Early Wide Area Store-and-Forward Networks
+#[Store-and-Forward Networks](../sketchnote/Store_Fwd.png)
+#  Packets and Routers
+#[Sending Packets](../sketchnote/Packets.png)
+#  Addressing and Packets
+#  Putting It All Together
+#[Connecting Around the World](../sketchnote/Conn_around_world_HOP.png)

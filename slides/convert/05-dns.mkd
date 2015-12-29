@@ -1,0 +1,11 @@
+#  The Domain Name System
+#  Allocating Domain Names
+#[Domain Names](../sketchnote/DNS.png)
+#  Reading Domain Names
+
+    212.78.1.25
+    Broad ----> Narrow
+
+    drchuck.personal.si.umich.edu
+    Narrow       <---       Broad
+

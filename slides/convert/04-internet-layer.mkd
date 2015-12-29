@@ -1,0 +1,26 @@
+#  Internetworking Layer (IP)
+#[Travelling Packets](../sketchnote/Traveling_Packets.png)
+#  Internet Protocol (IP) Addresses
+#[The Internetwork Layer](../images/layers-internetwork.png)
+
+    212.78.1.25
+
+    2001:0db8:85a3:0042:1000:8a2e:0370:7334
+
+    Network Number: 212.78
+    Host Identifier: 1.25
+
+    212.78.*.*
+
+#  How Routers Determine the Routes
+#  When Things Get Worse and Better
+#[Dynamic Routing](../sketchnote/Routing.png)
+#  Determining Your Route
+#[Routing Vortex](../images/router-loop.png)
+#[Traceroute from Michigan to Stanford](../images/traceroute-stanford.png)
+#[Notifications of Dropped Packets](../sketchnote/Dropped_packet.png)
+#[Traceroute from Michigan to Peking University](../images/traceroute-peking.png)
+#  Getting an IP Address
+#[Getting an IP Address via DHCP](../sketchnote/Dhcp.png)
+#  A Different Kind of Address Reuse
+#  Global IP Address Allocation

@@ -1,0 +1,13 @@
+#  Secure Transport Layer
+#  Encrypting and Decrypting Data
+
+    Plain text:  Go to the river
+    Cipher text: Hp up uif sjwfs
+
+#  Two Kinds of Secrets
+#[Shared Versus Asymmetric Keys](../sketchnote/Shared_vs_Asymmetric.png)
+#  Secure Sockets Layer (SSL)
+#[Where Encryption and Decryption Happens](../sketchnote/Encr_Decr.png)
+#  Encrypting Web Browser Traffic
+#  Certificates and Certificate Authorities
+#[Certificate Authorities and Public Keys](../sketchnote/Certificate_Authorities3.png)

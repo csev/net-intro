@@ -1,0 +1,9 @@
+#  Network Architecture
+#[The Four-Layer TCP/IP Model](../images/layers.png)
+#  The Link Layer
+#[Carrier Sense/Collision Detection](../sketchnote/Link_CSMA.png)
+#  The Internetwork Layer (IP)
+#[A Multi-Step Trip](../sketchnote/Multiple_step_trip.png)
+#  The Transport Layer (TCP)
+#  The Application Layer
+#  Stacking the Layers

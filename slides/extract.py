@@ -10,9 +10,10 @@ quizzes = OrderedDict()
 for f in sorted(os.listdir(pth)):
     if ( f[0] < '0' or f[0] > '9' ) : continue
     if ( not f.endswith('.mkd') ) : continue
+    out_file = os.path.join(os.getcwd(),'convert',f)
     try:
-        fhand = open(f)
-        print(f, 'already exists in this directory - skipped')
+        fhand = open(outfile)
+        print(f, 'already exists in the convert directory - skipped')
         fhand.close()
         continue
     except:
@@ -21,7 +22,7 @@ for f in sorted(os.listdir(pth)):
     print('Parsing',f)
     fname = os.path.join(os.getcwd(),'..','book',f)
     lines = open(fname).read().split('\n')
-    outf = open(f,'w')
+    outf = open(out_file,'w')
     title = False
     prevline = False
     incode = False
