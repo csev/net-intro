@@ -13,7 +13,7 @@ hasta el aeropuerto, tomar un avión hasta otro aeropuerto, tomar un taxi dentro
 la ciudad, luego un tren hasta una ciudad más pequeña, un autobús hasta otra aún
 más pequeña y finalmente caminar desde la parada del autobús hasta tu hotel.
 Un paquete también necesita tomar múltiples medios de transporte para alcanzar
-suu destino. Para un paquete que esté realizando su "viaje" hasta otro país, el
+su destino. Para un paquete que esté realizando su "viaje" hasta otro país, el
 "caminar", ir en "autobús", "tren" y "avión" sería equivalente a usar las diferentes
 capas de conexión, es decir: WiFi, Ethernet, fibra óptica, y satélite.
 
@@ -28,7 +28,7 @@ a través de la estación y elegir un determinado tren de salida para continuar
 con tu viaje. Los viajeros con diferentes puntos de partida y destino realizan
 una serie de elecciones diferentes. Todas las elecciones que realizas durante tu
 viaje dan como resultado el que sigas una serie de conexiones (o saltos) a lo
-largo de una ruta que te llevará desde tu punto de partida hasta tu destino.
+largo de una ruta que te llevarán desde tu punto de partida hasta tu destino.
 
 A medida que tu paquete viaja desde su punto de partida hacia su destino, también
 pasa a través de varias "estaciones", en cada una de las cuales se decide a cuál
@@ -75,9 +75,9 @@ de enrutamiento resultaría lento e ineficiente.
 ![La Capa de Internet](../images/layers-internetwork)
 
 \index{IPv4}
-Para hacerlo más sencillo, lo que se hace es asignar otra dirección a cada computador,
-basada en dónde está ese equipo conectado a la red. Existen dos versiones diferentes de las
-direcciones IP. Las antiguas (clásicas) direcciones IPv4 consisten en cuatro
+Para hacer todo esto más sencillo, lo que se hace es asignar otra dirección a cada
+computador, basada en dónde esté ese equipo conectado a la red. Existen dos versiones
+diferentes de las direcciones IP. Las antiguas (clásicas) direcciones IPv4 consisten en cuatro
 números separados por puntos, con un aspecto como este:
 
     212.78.1.25
@@ -123,8 +123,8 @@ los routers ya no necesitan tener localizados a billones de equipos individuales
 En vez de eso, tan solo necesitan realizar el seguimiento de quizás un millón
 o menos de direcciones de red diferentes.
 
-De modo que cuando tu paquete llega a un router y ese router tiene que decidir
-a qué conexión de salida debe enviar ese paquete concreto, no tiene que fijarse en la
+De modo que cuando un paquete llega a un router y ese router tiene que decidir
+a qué conexión de salida debe enviarlo, no tiene que fijarse en la
 dirección IP completa. Tan solo tiene que fijarse en la primera parte de la
 dirección para determinar cuál es la mejor conexión de salida.
 
@@ -135,7 +135,7 @@ A pesar de que la idea de concentrar muchas direcciones IP en una única direcci
 de red reduce enormemente el número de puntos de destino individuales que un router
 debe rastrear para dirigir correctamente los paquetes, cada router sigue necesitando
 un modo de averiguar el camino desde él mismo hasta cada una de las direcciones
-de red con los que pueda encontrarse.
+de red con las que pueda encontrarse.
 
 Cuando un router central nuevo se conecta a Internet, este no conoce todas las
 rutas. Puede conocer unas pocas que tenga pre-configuradas, pero para construir
@@ -157,10 +157,10 @@ router concreto.
 
 Cuando Internet funciona con normalidad, cada router dispone de una tabla de
 enrutamiento relativamente completa, y rara vez se encuentra con una dirección
-de red nueva. La primera vez que un router se encuentra con un paquete destinado
+de red nueva. La primera vez que un router se topa con un paquete destinado
 a una dirección de red nueva, averigua la ruta hacia esa dirección de red y ya
-no necesita redescubrir esa ruta más, a no ser que
-algo cambie o funcione mal. Esto quiere decir que el router realiza una búsqueda
+no necesita redescubrir esa ruta más, a no ser que se produzca algún cambio
+o algo vaya mal. Esto quiere decir que el router realiza una búsqueda
 para el primer paquete, pero luego puede dirigir los siguientes billones de
 paquetes hacia esa dirección de red sin más que usar la información de la
 que ya dispone en sus tablas de enrutamiento.
@@ -171,7 +171,7 @@ Cuando las cosas empeoran y mejoran
 A veces la red tiene problemas y un router debe buscar un camino alternativo
 para dirigir los datos evitando esos problemas. Un problema muy habitual es que
 alguna de las conexiones de salida falle. Tal vez porque alguien se haya tropezado
-con un cable y haya desenchufado una conexión de fibra óptica. En ese momento,
+con un cable y haya desenchufado una línea de fibra óptica. En ese momento,
 el router tiene un puñado de direcciones de red a las que intenta dirigir a
 través de esa conexión que ha fallado. La recuperación cuando un router pierde
 una conexión de salida es sorprendentemente simple. El router descarta todas las
@@ -184,7 +184,7 @@ contacto por culpa de la conexión perdida.
 ![Enrutamiento Dinámico](../sketchnote/Routing)
 
 Los paquetes son dirigidos más lentamente durante un rato, mientras que las tablas de
-enrutamiento están siendo reconstruidas para reflejar la nueva configuración de
+enrutamiento van siendo reconstruidas para reflejar la nueva configuración de
 la red, pero pasado un tiempo las cosas vuelven a discurrir con normalidad.
 
 Ese es el motivo por el cual es importante que existan siempre al menos dos caminos
@@ -219,7 +219,7 @@ routers también son capaces de detectar y dirigir dinámicamente los paquetes
 evitando las conexiones lentas o aquellas que están temporalmente sobrecargadas.
 
 Uno de los efectos secundarios del modo que tienen los routers de descubrir la
-estructura de la red es que la ruta que tus paquetes siguen desde el origen hasta
+estructura de la red es que la ruta que siguen los paquetes desde el origen hasta
 el destino puede cambiar a lo largo del tiempo. Incluso enviando un paquete
 inmediatamente a continuación del anterior, y debido al modo en que son dirigidos
 esos paquetes, el segundo puede llegar a su destino antes que el primero. La capa IP
@@ -241,16 +241,16 @@ completa que tomarán esos paquetes. Lo único que saben es a qué conexión
 deben enviar esos datos para acercarlos a su destino definitivo.
 
 Pero resulta que la mayoría de los computadores tiene una herramienta de
-diagnóstico de red llamada "traceroute" (o "tracert", dependiendo del sistema
+diagnóstico de red llamada "*traceroute*" (o "*tracert*", dependiendo del sistema
 operativo), que te permite trazar la ruta entre tu equipo y otro de destino.
 Dado que la ruta entre ambos computadores puede cambiar de un paquete
 a otro, cuando "trazamos" una ruta, se trata tan solo de una "suposición
 bastante precisa" de la ruta que el paquete actual tomaría.
 
-El comando traceroute en realidad no "traza la ruta" de ningún paquete. Lo que
+El comando *traceroute* en realidad no "traza la ruta" de ningún paquete. Lo que
 hace es aprovecharse de una característica del protocolo de red IP que fue diseñada
 para evitar que los paquetes se quedasen "atrapados" en la red sin poder alcanzar
-nunca su destino. Antes de que estudiemos el traceroute, echaremos un vistazo
+nunca su destino. Antes de que estudiemos esos trazados, echaremos un vistazo
 rápido a cómo un paquete puede quedar atrapado en la red para siempre y qué hace
 el protocolo IP para resolver ese problema.
 
@@ -300,18 +300,18 @@ paquete.
 
 Los lazos de redes en realidad son bastante raros, pero podemos usar esta
 notificación de que un paquete ha sido retirado para crear un mapa de la ruta
-aproximada que sigue un paquete a través de la red. El programa traceroute
+aproximada que sigue un paquete a través de la red. El programa *traceroute*
 envía paquetes trucados, para conseguir que los routers por los que pasan esos
-paquetes nos devuelvan notificaciones. Primero, el traceroute envía un paquete
+paquetes nos devuelvan notificaciones. Primero, el *traceroute* envía un paquete
 con un TTL de 1. Ese paquete llega al primer router, es descartado y tu
-equipo recibe una notificación desde ese primer router. Luego el traceroute
+equipo recibe una notificación desde ese primer router. Luego el *traceroute*
 envía un paquete con un TTL de 2. Ese paquete pasa a través del primer router
 y es retirado por el segundo router, que te envía una nota informando de que el
-paquete ha sido descartado. A continuación el traceroute envía otro paquete con
+paquete ha sido descartado. A continuación el *traceroute* envía otro paquete con
 un TTL de 3, y continúa incrementando el TTL hasta que el paquete realiza el
 recorrido completo hasta su destino.
 
-Gracias a este método, el traceroute construye una ruta aproximada del recorrido
+Gracias a este método, el *traceroute* construye una ruta aproximada del recorrido
 que siguen tus paquetes a través de la red.
 
 ![Traceroute desde Michigan hasta Stanford](../images/traceroute-stanford)
@@ -319,7 +319,7 @@ que siguen tus paquetes a través de la red.
 Se necesitan 14 saltos para ir desde Ann Arbor, Michigan hasta Palo Alto, California.
 Los paquetes pasan a través de Kansas, Texas, Los Angeles, y Oakland. Esta
 ruta puede no ser la mejor para viajar entre las dos ciudades si se está conduciendo
-un coche o desplazándose en tren, pero ese día, para los paquetes que viajaban entre
+un automóvil o desplazándose en tren, pero ese día, para los paquetes que viajaban entre
 las dos ciudades, esa resultó ser la mejor ruta a través de Internet.
 
 ![Notificaciones de Paquetes Retirados](../sketchnote/Dropped_packet)
@@ -329,10 +329,10 @@ origen hasta cada router, y luego desde el origen hasta el destino. Un milisegun
 (ms) es 1/1000 segundos. De modo que 77.317 ms es un poco menos de
 una décima de segundo. Esta red es bastante rápida.
 
-A veces un traceroute puede tardar un poco, hasta un minuto o dos. No todos
+A veces un trazado de ruta puede tardar un poco, hasta un minuto o dos. No todos
 los routers enviarán el mensaje de "He descartado tu paquete". En el ejemplo anterior,
 el router del salto 13 se deshace de tu paquete sin decir ni siquiera "Lo siento".
-El traceroute espera el mensaje y después de unos pocos segundos simplemente se da
+El *traceroute* espera el mensaje y después de unos pocos segundos simplemente se da
 por vencido y aumenta el valor del TTL para continuar más allá del router maleducado.
 
 Si ejecutas un trazado de ruta para una conexión que incluya un cable submarino,
@@ -375,8 +375,8 @@ que lo primero que hacía un computador en el nivel de acceso a la red era pregu
 "¿Hay una estación base en esta red?", enviando un mensaje a una dirección especial
 de difusión. Una vez que un equipo se ha conectado con éxito a la capa de acceso a
 través de la estación base, envía otro mensaje de difusión, esta vez preguntando
-"¿Existe una puerta de acceso conectada a esta red que pueda darme acceso a Internet?.
-Si es así, dígame cual es su dirección IP y también la dirección IP debo usar yo
+"¿Existe una puerta de acceso conectada a esta red que pueda darme salida a Internet?.
+Si es así, dígame cuál es su dirección IP y también la dirección IP debo usar yo
 en esta red".
 
 Cuando el router que funciona como puerta de acceso contesta, tu computador recibe
@@ -454,7 +454,7 @@ Asignación de direcciones IP globales
 Si quisieras conectar la red de una organización nueva a Internet, tendrías que
 contactar con un Proveedor de Servicios de Internet (*Internet Service Provider*)
 y contratar una conexión. Tu ISP te asignaría un rango de direcciones IP (por ejemplo,
-una o más direcciones de red), que podrías asignar a los equipos unidos a tu red.
+una o más direcciones de red), que podrías asignar a los equipos conectados a tu red.
 El ISP asigna tus direcciones de red cediéndote una parte de las direcciones de red
 que ellos reciben a su vez de un proveedor de servicios de Internet de nivel superior.
 
@@ -481,7 +481,7 @@ entonces que algún día tendríamos mil millones de equipos conectados a Intern
 Pero hoy día, con la expansión de Internet y el "Internet de las cosas", gracias
 al cual vehículos inteligentes, refrigeradores, termostatos y incluso luces
 utilizan direcciones IP, necesitamos conectar muchos más de mil millones de
-equipos a Internet. Para hacer posible la conexión de todos esos equipos nuevos a
+dispositivos a Internet. Para hacer posible la conexión de todos esos equipos nuevos a
 Internet, los ingenieros han diseñado una nueva generación del protocolo de
 Internet llamada "IPv6". Las direcciones IPv6 de 128-bits, son mucho más largas
 que las direcciones IPv4 de 32-bits.
@@ -504,11 +504,11 @@ paquetes eficazmente a través de Internet.
 
 La capa IP no es fiable al 100%. Los paquetes pueden perderse debido a cortes
 momentáneos, o porque la red se muestre puntualmente "confusa" acerca del recorrido que
-necesita seguir un paquete a través de la red. Los paquetes que tu sistema envía
+necesita seguir un paquete a través de ella. Los paquetes que tu sistema envía
 más tarde pueden encontrar una ruta más rápida a través de la red y llegar antes
 que los paquetes que el sistema había enviado primero.
 
-Podría resultar tentador designar la capa IP de modo que nunca perdiera paquetes
+Podría resultar tentador diseñar la capa IP de modo que nunca perdiera paquetes
 y que se asegurase de que los paquetes llegaran siempre en orden, pero esto haría casi
 imposible para la capa IP gestionar la extrema complejidad provocada al conectar
 tantos sistemas.
@@ -520,201 +520,215 @@ inmediatamente superior, la capa de Transporte.
 Glosario
 --------
 
-**core router**: A router that is forwarding traffic within the core of the 
-Internet.  
+**DHCP**: *Dynamic Host Configuration Protocol* (Protocolo de Configuración Dinámica
+de Host). El DHCP es lo que permite a un equipo portatil obtener una dirección IP
+cuando se desplaza a una nueva ubicación.
 
-**DHCP**: Dynamic Host Configuration Protocol. DHCP is how a portable computer
-gets an IP address when it is moved to a new location.
+**Dirección de red**: La parte de una dirección IP que se utiliza para identificar
+en qué red local está conectado un equipo.
 
-**edge router**: A router which provides a connection between a local network
-and the Internet.  Equivalent to "gateway".
+**Dirección IP**: Una dirección asignada globalmente que se adjudica a un equipo
+para que pueda comunicarse con otros que tengan direcciones IP y estén conectados
+a Internet. Para simplificar el enrutamiento en el núcleo de Internet, las direcciones
+IP están divididas en direcciones de red e identificadores de dispositivo (*host*).
+Un ejemplo de dirección IP podría ser: "212.78.1.25".
 
-**Host Identifier**: The portion of an IP address that is used to 
-identify a computer within a local area network.
+**Identificador de dispositivo o Host**: La parte de una dirección IP que se utiliza
+para identificar un equipo dentro de una red de área local.
 
-**IP Address**: A globally assigned address that is assigned to a computer
-so that it can communicate with other computers that have IP addresses and
-are connected to the Internet.  To simplify routing in the core of the Internet
-IP addresses are broken into Network Numbers and Host Identifiers.  An example
-IP address might be "212.78.1.25".
+**NAT**: *Network Address Translation* (Traducción de Direcciones de Red). Esta
+técnica permite a una única dirección IP global ser compartida por muchos equipos
+en una única red de área local.
 
-**NAT**: Network Address Translation. This technique allows a single global 
-IP address to be shared by many computers on a single local area network.
+**redes bi-conectadas**: Una situación en la cual existen al menos dos posibles
+caminos entre cualquier par de nodos de de una red. Una red bi-conectada puede
+perder una conexión cualquiera sin perder por ello la conectividad global.
 
-**Network Number**: The portion of an IP address that is used to identify
-which local network the computer is connected to.
+**RIR**: *Regional Internet Registry* (Registro Regional de Internet). Los cinco
+RIRs se corresponden más o menos con los continentes mundiales y asignan direcciones
+IP para las áreas geográficas más extensas del mundo.
 
-**packet vortex**: An error situation where a packet gets into an infinite 
-loop because of errors in routing tables.
+**router central**: Un router que está dirigiendo el tráfico dentro del núcleo de
+Internet
 
-**RIR**: Regional Internet Registry. The five RIRs roughly correspond 
-to the continents of the world and allocate IP address 
-for the major geographical areas of the world.
+**router de extremo**: Un router que proporciona una conexión entre una red local
+e Internet. Equivalente a "puerta de acceso".
 
-**routing tables**: Information maintained by each router that keeps track 
-of which outbound link should be used for each network number.
+**tablas de enrutamiento**: Información mantenida por cada router que permite hacer
+un seguimiento de qué conexiones de salida pueden usarse para alcanzar cada
+dirección de red.
 
-**Time To Live (TTL)**: A number that is stored in every packet that 
-is reduced by one as the packet passes through each router.  When the TTL
-reaches zero, the packet is discarded.
+**Tiempo de Vida (TTL)**: Un  número que se almacena en cada paquete y que va
+reduciéndose en una unidad cada vez que el paquete pasa a través de un router.
+Cuando el TTL llega a cero, se descarta ese paquete.
 
-**traceroute**: A command that is available on many Linux/UNIX systems that 
-attempts to map the path taken by a packet as it moves from its source to its
-destination.  May be called "tracert" on Windows systems.
+**traceroute**: Un comando disponible en muchos sistemas Linux/UNIX, que intenta
+realizar un mapa del camino tomado por un paquete a medida que este se mueve
+desde su origen hasta su destino. En sistemas Windows recibe el nombre de "tracert".
 
-**two-connected network**: A situation where there is at least two possible
-paths between any pair of nodes in a network.  A two-connected network can 
-lose any single link without losing overall connectivity.
+**vórtice de paquetes**: Una situación de error en la cual un paquete entra dentro
+de un bucle infinito, debido a errores en las tablas de enrutamiento.
 
 
-Questions
+Preguntas
 ---------
 
-You can take this quiz online at http://www.net-intro.com/quiz/
+Puedes realizar este cuestionario online en http://www.net-intro.com/quiz/
 
-1. What is the goal of the Internetworking layer?
-a) Move packets across multiple hops from a source to destination computer
-b) Move packets across a single physical connection
-c) Deal with web server failover
-d) Deal with encryption of sensitive data
+1. ¿Cuál es el cometido de la capa de Internet?
+a) Mover paquetes a través de múltiples saltos desde un equipo de origen hasta uno
+de destino
+b) Mover paquetes a través de una única conexión física
+c) Gestionar los fallos de los servidores web
+d) Gestionar la encriptación de datos sensibles
 
-2. How many different physical links does a typical packet cross from 
-its source to its destination on the Internet?
+2. ¿Cuántas conexiones diferentes usa un paquete típico cuando viaja desde su
+origen hasta su destino a través de Internet?
 a) 1
 b) 4
 c) 15
 d) 255
 
-3. Which of these is an IP address?
+3. ¿Cuál de las siguientes es una dirección IP?
 a) 0f:2a:b3:1f:b3:1a
 b) 192.168.3.14
 c) www.khanacademy.com
 d) @drchuck
 
-4. Why is it necessary to move from IPv4 to IPv6?
-a) Because IPv6 has smaller routing tables
-b) Because IPv6 reduces the number of hops a packet must go across
-c) Because we are running out of IPv4 addresses
-d) Because IPv6 addresses are chosen by network hardware manufacturers
+4. ¿Por qué es necesario cambiar de IPv4 a IPv6?
+a) Porque IPv6 tiene tablas de enrutamiento más pequeñas
+b) Porque IPv6 reduce al número de saltos que un paquete debe realizar
+c) Porque nos estamos quedando sin direcciones IPv4
+d) Porque las direcciones IPv6 han sido elegidas por los fabricantes de dispositivos
+de red
 
-5. What is a network number?
-a) A group of IP addresses with the same prefix
-b) The GPS coordinates of a particular LAN
-c) The number of hops it takes for a packet to cross the network
-d) The overall delay packets experience crossing the network
+5. ¿Qué es una dirección de red?
+a) Un grupo de direcciones IP con el mismo prefijo
+b) Las coordenadas GPS de una red de área local concreta
+c) El número de satos que necesita un paquete para cruzar la red
+d) El retraso medio que experimentan los paquetes que atraviesan la red
 
-6. How many computers can have addresses within network number "218.78"?
+6. ¿Cuántos equipos pueden tener direcciones IP dentro de una red cuya dirección es
+"218.78"?
 a) 650
 b) 6500
 c) 65000
 d) 650000
 
-7. How do routers determine the path taken by a packet across the Internet?
-a) The routes are controlled by the IRG (Internet Routing Group)
-b) Each router looks at a packet and forwards it based on its best guess 
-as to the correct outbound link
-c) Each router sends all packets on every outbound link (flooding algorithm)
-d) Each router holds on to a packet until a packet comes in from the 
-destination computer
+7. ¿Cómo determinan los routers el camino seguido por un paquete a través de Internet?
+a) Las rutas son controladas por el IRG (*Internet Routing Group* o Grupo de
+Enrutamiento de Internet)
+b) Cada router se fija en un paquete y lo reenvía basándose en la mejor predicción que
+es capaz de hacer acerca de cuál es la conexión de salida correcta.
+c) Cada router envía todos los paquetes a todas las conexiones de salida (algoritmo
+*flooding* o inundación)
+d) Cada router retiene un paquete hasta que llega otro desde el computador de destino
 
-8. What is a routing table?
-a) A list of IP addresses mapped to link addresses
-b) A list of IP addresses mapped to GPS coordinates
-c) A list of network numbers mapped to GPS coordinates
-d) A list of network numbers mapped to outbound links from the router
+8. ¿Qué es una tabla de enrutamiento?
+a) Una lista de direcciones IP asociadas con direcciones de conexiones
+b) Una lista de direcciones IP asociadas con coordenadas GPS
+c) Una lista de direcciones de red asociadas con coordenadas GPS
+d) Una lista de direcciones de red asociadas con conexiones de salida del router
 
-9. How does a newly connected router fill its routing tables?
-a) By consulting the IANA (Internet Assigned Numbers Authority)
-b) By downloading the routing RFC (Request for Comments)
-c) By contacting the Internet Engineering Task Force (IETF)
-d) By asking neighboring routers how they route packets
+9. ¿Cómo rellena sus tablas de enrutamiento un router recién conectado a la red?
+a) Consultando a la IANA (*Internet Assigned Numbers Authority*, o Autoridad de
+Asignación de Direcciones de Internet)
+b) Descargando el RFC de enrutamiento (*Request for Comments*, o Solicitud de
+Comentarios)
+c) Contactando con las Fuerzas Especiales de Ingenieros de Internet (*Internet
+Engineering Task Force* o IETF)
+d) Preguntando a los routers vecinos cómo dirigen ellos los paquetes
 
-10. What does a router do when a physical link goes down?
-a) Throws away all of the routing table entries for that link
-b) Consults the Internet Map (IMAP) service
-c) Does a Domain Name (DNS) looking for the IP address
-d) Sends all the packets for that link back to the source computer
+10. ¿Qué hace un router cuando una conexión física se interrumpe?
+a) Descarta todas las entradas de su tabla de enrutamiento que contengan esa conexión
+b) Consulta el servicio de mapeado de Internet (IMAP)
+c) Realiza una búsqueda de nombre de dominio (DNS) para esa dirección IP
+d) Envía todos los paquetes relativos a esa conexión de vuelta al equipo de origen
 
-11. Why is it good to have at least a "two-connected" network?
-a) Because routing tables are much smaller
-b) Because it removes the need for network numbers
-c) Because it supports more IPv4 addresses
-d) Because it continues to function even when a single link goes down
+11. ¿Por qué resulta deseable tener al menos una red "bi-conectada"?
+a) Porque las tablas de enrutamiento son mucho más pequeñas
+b) Porque se elimina la necesidad de tener direcciones de red
+c) Porque soporta más direcciones IPv4
+d) Porque continúa funcionando incluso cuando se interrumpe una conexión
 
-12. Do all packets from a message take the same route across the Internet?
-a) Yes
+12. ¿Toman todos los paquetes de un mensaje la misma ruta a través de Internet?
+a) Sí
 b) No
 
-13. How do routers discover new routes and improve their routing tables?
-a) Each day at midnight they download a new Internet map from IMAP
-b) They periodically ask neighboring routers for their network tables
-c) They randomly discard packets to trigger error-correction code within
-the Internet
-d) They are given transmission speed data by destination computers
+13. ¿Cómo descubren los routers nuevas rutas y mejoran sus tablas de enrutamiento?
+a) Cada día a medianoche descargan un nuevo mapa de Internet desde IMAP
+b) Preguntan periódicamente a los routers vecinos por sus propias tablas de enrutamiento
+c) Descartan paquetes al azar para activar el código de corrección de errores que
+existe dentro de Internet
+d) Reciben datos de velocidades de transmisión desde los equipos de destino
 
-14. What is the purpose of the "Time to Live" field in a packet?
-a) To make sure that packets do not end up in an "infinite loop"
-b) To track how many minutes it takes for a packet to get through the network
-c) To maintain a mapping between network numbers and GPS coordinates
-d) To tell the router the correct output link for a particular packet
+14. ¿Cual es el cometido del campo "Tiempo de vida" (*Time to Live* o TTL) en un
+paquete?
+a) Asegurarse de que los paquetes no terminen dentro de un "bucle infinito"
+b) Controlar cuántos minutos le lleva a un paquete atravesar la red
+c) Mantener una relación entre las direcciones de red y las coordenadas GPS
+d) Informar al router sobre la conexión de salida correcta para un paquete concreto
 
-15. How does the "traceroute" command work?
-a) It sends a series of packets with low TTL values so it can get a 
-picture of where the packets get dropped
-b) It loads a network route from the Internet Map (IMAP)
-c) It contacts a Domain Name Server to get the route for a 
-particular network number
-d) It asks routers to append route information to a packet as it is 
-routed from source to destination
+15. ¿Cómo funciona el comando "*traceroute*"?
+a) Envía una serie de paquetes con bajos valores de TTL, para conseguir hacerse
+una idea de dónde van siendo descartados esos paquetes
+b) Carga una ruta de red desde el Mapeado de Internet (IMAP)
+c) Contacta con un Servidor de Nombres de Dominio para obtener la ruta para una
+dirección de red concreta
+d) Le pide a los routers que añadan información de la ruta al paquete a medida que
+va siendo dirigido desde su origen hasta su destino
 
-16. About how long does it take for a packet to cross the Pacific Ocean
-via an undersea fiber optic cable?
-a) 0.0025 Seconds
-b) 0.025 Seconds
-c) 0.250 Seconds
-d) 2.5 Seconds
+16. ¿Cuánto tiempo le lleva aproximadamente a un paquete cruzar el océano Pacífico
+a través de un cable de fibra óptica submarino?
+a) 0.0025 segundos
+b) 0.025 segundos
+c) 0.250 segundos
+d) 2.5 segundos
 
-17. On a WiFi network, how does a computer get an Internetworking (IP) address?
-a) Using the DHCP protocol
-b) Using the DNS protocol
-c) Using the HTTP protocol
-d) Using the IMAP protocol
+17. En una red WiFi, ¿cómo obtiene un equipo una dirección de Internet (IP)?
+a) Usando el protocolo DHCP
+b) Usando el protocolo DNS
+c) Usando el protocolo HTTP
+d) Usando el protocolo IMAP
 
-18. What is Network Address Translation (NAT)?
-a) It looks up the IP address associated with text names 
-like "www.dr-chuck.com"
-b) It allows IPv6 traffic to go across IPv4 networks
-c) It looks up the best outbound link for a particular router 
-and network number
-d) It reuses special network numbers like "192.168" across multiple
-network gateways at multiple locations
+18. ¿Qué hace una Traducción de Direcciones de Red (*Network Address Translation* o
+NAT)?
+a) Averigua las direcciones IP asociadas con nombres de texto, como "www.dr-chuck.com"
+b) Permite que el tráfico IPv6 pase a través de redes IPv4
+c) Averigua cuál es la mejor conexión de salida para un router concreto
+y una dirección de red
+d) Reutiliza direcciones de red especiales, como "192.168", a través de múltiples
+puertas de acceso en múltiples ubicaciones
 
-19. How are IP addresses and network numbers managed globally?
-a) There are five top-level registries that manage network numbers in 
-five geographic areas
-b) IP addresses are assigned worldwide randomly in a lottery
-c) IP addresses are assigned by network equipment manufacturers
-d) IP addresses are based on GPS coordinates
+19. ¿Cómo se gestionan globalmente las direcciones IP y las direcciones de red?
+a) Existen cinco registradores de nivel-superior que gestionan las direcciones de red
+en cinco áreas geográficas
+b) Las direcciones IP son asignadas para todo el mundo aleatoriamente mediante un sorteo
+c) Las direcciones IP son asignadas por los fabricantes de equipamiento de red
+d) Las direcciones IP están basadas en coordenadas GPS
 
-20. How much larger are IPv6 addresses than IPv4 addresses?
-a) They are the same size
-b) IPv6 addresses are 50% larger than IPv4 addresses
-c) IPv6 addresses are twice as large as IPv4 addresses
-d) IPv6 addresses are 10 times larger than IPv4 addresses
+20. ¿Qué diferencia de longitud existe entre las direcciones IPv6 y las IPv4?
+a) Ambas tienen el mismo tamaño
+b) Las direcciones IPv6 son un 50% más largas que las IPv4
+c) Las direcciones IPv6 son el doble de largas que las IPv4
+d) Las direcciones IPv6 son 10 veces más largas que las IPv4
 
-21. What does it mean when your computer receives an IP address that starts with "169.."?
-a) Your connection to the Internet supports the Multicast protocol
-b) The gateway is mapping your local address to a global address using NAT
-c) There was no gateway available to forward your packets to the Internet
-d) The gateway for this network is a low-speed gateway with a small window size
+21. ¿Qué significa el que tu equipo reciba una dirección IP que empieza por "169.."?
+a) Tu conexión a Internet soporta el protocolo Multicast
+b) La puerta de acceso está asociando tu dirección local con una dirección global
+usando NAT
+c) No hay una puerta de acceso disponible para reenviar tus paquetes a Internet
+d) La puerta de acceso para esa red es de baja velocidad, con un tamaño de ventana
+pequeño
 
-22. If you were starting an Internet Service Provider in Poland, which Regional Internet Registry (RIR) would assign you a block of IP addresses.
+22. Si quisieras crear una empresa proveedora de servicios de Internet en Polonia,
+¿qué Registro Regional de Internet (RIR) te asignaría un bloque de direcciones IP?
 a) ARIN
 b) LACNIC
 c) RIPE NCC
 d) APNIC
 e) AFRNIC
-f) United Nations
+f) Naciones Unidas
 
 
 
