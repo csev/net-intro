@@ -1,34 +1,36 @@
-The Domain Name System
-======================
+El Sistema de Nombres de Dominio
+================================
 
 \index{Domain Name System}
+\index{Sistema de Nombres de Dominio}
 \index{DNS}
-The Domain Name System lets you access websites by their domain
-name like (www.khanacademy.org), so you don't have to
-keep a list of numeric Internet Protocol (IP) addresses like "212.78.1.25".
-IP address are determined
-by *where* your computer connects to the Internet. When you have a portable
-computer and you move from one location to another, you get
-a new IP address at each new location. Since no one connects to your portable
-computer, it does not matter if your IP address changes from time to time. But
-since so many people connect to a web server, it would be inconvenient if
-the server moved to a new location and needed to change its IP address. 
+El Sistema de Nombres de Dominio permite acceder a sitios web por su nombre de
+dominio, como (www.khanacademy.org), de modo que no necesites mantener una lista
+de direcciones de protocolo de Internet numéricas (IPs), como "212.78.1.25".
+Las direcciones IP están determinadas por *dónde* se conecta tu equipo a Internet.
+Cuando tienes un equipo portátil y te mueves de un sitio a otro, obtienes
+una dirección IP nueva en cada lugar. Mientras que nadie se conecte a tu equipo,
+no importará si tu dirección IP va cambiando de vez en cuando. Pero dado que hay
+mucha gente que se conecta a un servidor web, sería muy incómodo si el servidor
+se desplazase a una nueva ubicación y tuviera que cambiar su dirección IP.
 
-When your computer makes a connection to a system using a domain name address,
-the first thing your computer does is look up the IP address that corresponds
-to the domain name. Then your computer makes the connection using the IP
-address.
+Cuando un equipo realiza una conexión a un sistema usando una dirección de nombre
+de dominio, lo primero que hace es averiguar la dirección IP que se corresponde
+con ese nombre de dominio. Después, el equipo realiza la conexión usando la
+dirección IP obtenida.
 
-Adding the separate step of looking up the IP address for a DNS
-address also makes it easier to move a server from one location to another.
-The server is given a new IP address and the entry for the domain address is
-updated. Once the DNS entry is updated, new requests for the domain name are
-given the new IP address. Since end users access most servers using domain
-names and never see the IP address, a server can be moved to a new network
-connection without affecting the end user's ability to access the server.
+Al añadir el paso intermedio de averiguar cuál es la dirección IP para una
+dirección DNS, se facilita también el traslado de los servidores desde una ubicación
+a otra. El servidor recibe una nueva dirección IP y se actualiza la entrada
+correspondiente a la dirección del dominio. Una vez que la entrada DNS se hace
+actualizado, las peticiones siguientes relativas a ese nombre de dominio recibirán
+la nueva dirección IP. Como los usuarios finales acceden a la mayoría de los servidores
+usando nombres de dominio y nunca se fijan en las direcciones IP, un servidor podrá
+ser trasladado a una conexión de red nueva sin afectar a la capacidad del usuario
+final de acceder al mismo.
 
-Allocating Domain Names
------------------------
+Asignación de Nombres de Dominio
+--------------------------------
 
 \index{ICANN}
 \index{.com}
@@ -36,128 +38,138 @@ Allocating Domain Names
 \index{.edu}
 \index{TLD}
 \index{ccTLD}
-If you recall from the previous section, IP addresses are allocated based on
-where you connect a new network to the Internet. Domain names are allocated
-based on organizations that "own" the domain name. At the top of the domain
-name hierarchy is an organization called the International
-Corporation for Assigned Network Names (ICANN). ICANN chooses the top-level
-domains (TLDs) like .com, .edu, and .org and assigns those to other organizations to
-manage.  Recently a new set of TLDs like .club and .help have been made available.
+Si recuerdas lo tratado en los capítulos previos, las direcciones IP se asignan
+basándose en el lugar físico desde el que se produce la conexión a Internet. Los
+nombres de dominio se asignan en base a organizaciones que "poseen" esos nombres.
+En la cima de la jerarquía de nombres de dominio está una organización llamada la
+Corporación Internacional para Asignación de Nombres de Red (*International
+Corporation for Assigned Network Names* o ICANN). La ICANN elige los dominios de
+nivel superior (*Top Level Domains* o TLDs), como .com, .edu y .org, y se los
+asigna a otras organizaciones para que los gestionen. Recientemente se han
+añadido nuevos conjuntos de TLDs, como .club y .help.
 
-ICANN also assigns two-letter country code top-level domain names like .us, .za,
-.nl, and .jp to countries around the world
-We call these Country-Code Top-Level Domain Names (ccTLDs).  Countries often add 
-second-level TLDs, like .co.uk for commercial organizations within the UK.  Policies
-for applying for domain names with any particular ccTLD vary widely from one country
-to another.
+la ICANN también asigna los nombres de dominios basados en el código de dos letras
+de país, como .us, .za, .nl y .jp, para los países de todo el mundo.
+Esos dominios se denominan Nombres de Dominio de Nivel Superior de
+Código de País (*Country-Code Top-Level Domain Names* o ccTLDs). Los países
+a menudo añaden dominios de segundo nivel, como .co.uk para organizaciones comerciales
+dentro del Reino Unido (UK). Las normas que se aplican a los nombres de dominio
+para cada ccTLD concreto varían ampliamente de un país a otro.
 
-![Domain Names](../sketchnote/DNS)
+![Nombres de Dominio](../sketchnote/DNS)
 
-Once a domain name is assigned to an organization, the controlling organization
-is allowed to assign subdomains within the domain. As an example, the .edu
-top-level domain is assigned to the Educause organization. Educause assigns
-domains like umich.edu to higher education institutions. Once the University
-of Michigan is given control of umich.edu, it can make its own choices for
-subdomains within its new domain. Domains ending in .com and .org can be purchased
-by individuals. The individual owners of those domains are allowed to manage
-their domain and create subdomains under it for their own use or use by others.
+Cuando una organización recibe un nombre de dominio, está autorizada a
+asignar subdominios dentro de él. Por ejemplo, el dominio de nivel superior .edu
+está asignado a la organización Educause. Educause asigna dominios como umich.edu a
+instituciones de educación superior. Una vez que una institución, como la Universidad
+de Michigan, dispone del control de un dominio, como umich.edu, puede elegir qué
+subdominios desea crear dentro de él. Los dominios que terminan en .com y .org pueden
+ser adquiridos por particulares. Los propietarios individuales de esos dominios están
+autorizados a gestionar sus dominios y crear subdominios por debajo de ellos para su
+propio uso o el de otros.
 
 
 
-Reading Domain Names
---------------------
+Lectura de Nombres de Dominio
+-----------------------------
 
-When we look at an IP address like "212.78.1.25", the left prefix is the
-"Network Number", so in a sense we read IP addresses from left to right, where
-the left part of the IP address is the most general part of the address and
-right part of the address is most specific:
+Cuando nos fijamos en una dirección IP como "212.78.1.25", el prefijo izquierdo se
+corresponde con la "dirección de red", de modo que en cierto sentido la lectura de las
+direcciones IP se realiza de izquierda a derecha, ya que la parte izquierda de la
+dirección IP se corresponde con la parte más general de la dirección, mientras que
+la parte derecha es más específica:
 
     212.78.1.25
-    Broad ----> Narrow
+    General ----> Específico
 
-For domain names, we read from right to left:
+En el caso de los nombres de dominio, se leen de derecha a izquierda:
 
     drchuck.personal.si.umich.edu
-    Narrow       <---       Broad
+    Específico    <---    General
 
-The most general part of this domain name is ".edu", which means higher
-education institutions. The subdomain "umich.edu" is a particular higher
-education institution.
+La parte más general de este nombre de dominio es ".edu", que indica que se trata
+de una institución de educación superior. El subdominio "umich.edu" indica que es
+una institución de educación superior concreta.
 
-Summary
+Resumen
 -------
 
-While the Domain Name System is not one of our four layers in the model, it is
-an important part of making the Internet easier to use. Domain names allow
-end users to use symbolic names for servers instead of numeric Internet
-Protocol addresses. By adding a service that maps domain names to IP
-addresses, we can move servers from one Internet connection to another
-connection without requiring users to manually change their configurations
-to connect to a server.
+A pesar de que el Sistema de Nombres de Dominios no es una de nuestras cuatro capas
+del modelo, resulta ser una parte importante a la hora de conseguir un Internet
+más sencillo de utilizar. Los nombres de dominio permiten a los usuarios finales
+usar nombres simbólicos para los servidores en lugar de direcciones de protocolo
+de Internet numéricas (IPs). Al añadir un servicio que relaciona los nombres de los
+dominios con sus correspondientes direcciones IP, se pueden trasladar los servidores
+de una conexión de Internet a otra sin necesidad de que los usuarios cambien de forma
+manual sus configuraciones para conectarse al servidor.
 
-\index{Domain Name Registrar}
-If you would like to purchase a domain name for yourself or your company, you can 
-choose from any number of domain name registrars.
+\index{Registrador de Nombres de Dominios}
+Si deseas adquirir un nombre de dominio para ti o para una compañía, puedes
+elegir entre un gran número de registradores de nombres de dominios.
 
-Glossary
+Glosario
 --------
 
-**DNS**: Domain Name System.  A system of protocols and servers
-that allow networked applications to look up domain names
-and retrieve the corresponding IP address for the domain name.
+**DNS**: *Domain Name System* (Sistema de Nombres de Dominios). Un sistema de
+protocolos y servidores que permite a las aplicaciones en red buscar nombres
+de dominios y recuperar la dirección IP correspondiente para cada uno de esos nombres.
 
-**domain name**: A name that is assigned within a top-level domain.
-For example, khanacademy.org is a domain that is assigned within
-the ".org" top-level domain.
+**ICANN**: *International Corporation for Assigned Network Names* (Corporación
+Internacional para Asignación de Nombres de Red). Asigna y gestiona los dominios
+de nivel superior para Internet.
 
-**ICANN**: International Corporation for Assigned Network Names.
-Assigns and manages the top-level domains for the Internet.
+**nombre de dominio**: Un nombre que se asigna a un dominio de nivel superior.
+Por ejemplo, khanacademy.org es un dominio que está asignado dentro del
+dominio de nivel superior ".org".
 
-**registrar**: A company that can register, sell, and host
-domain names.
+**registrador**: Una compañía que puede registrar, vender y alojar nombres de dominios.
 
-**subdomain**: A name that is created "below" a domain name.
-For example, "umich.edu" is a domain name and
-both "www.umich.edu" and "mail.umich.edu"
-are subdomains within "umich.edu".
+**subdominio**: Un nombre que se crea "por debajo" de un nombre de dominio. Por
+ejemplo, "umich.edu" es un nombre de dominio, y tanto "www.umich.edu" como
+"mail.umich.edu" son subdominios dentro de "umich.edu".
 
-**TLD**: Top Level Domain.  The leftmost portion of the domain name.
-Example TLDs include ".com", ".org", and ".ru". Recently, new
-top-level domains like ".club" and ".help" were added.
+**TLD**: *Top Level Domain* (Dominio de Nivel Superior). La parte de la derecha
+de un nombre de dominio. Algunos ejemplos de TLDs son ".com", ".org", y ".ru".
+Recientemente se han añadido nuevos dominios de nivel superior, como ".club" y ".help".
 
 
-Questions
+Preguntas
 ---------
 
-You can take this quiz online at http://www.net-intro.com/quiz/
+Puedes realizar este cuestionario online en http://www.net-intro.com/quiz/
 
-1. What does the Domain Name System accomplish?
-a) It allows network-connected computers to use a textual name for
-a computer and look up its IP address
-b) It keeps track of the GPS coordinates of all servers
-c) It allows Regional Internet Registries (RIRs) to manage IP addresses
-on the various continents
-d) It assigns different IP addresses to portable computers
-as they move from one WiFi to another
+1. ¿Cuál de estas tareas es realizada por el Sistema de Nombres de Dominios?
+a) Permite a los equipos conectados a la red usar un nombre textual para otro
+equipo y averiguar su dirección IP
+b) Mantiene un registro de las coordenadas GPS de todos los servidores
+c) Permite a los Registradores Regionales de Internet (RIRs) gestionar las
+direcciones IP de los distintos continentes
+d) Asigna diferentes direcciones IP a los equipos portátiles a medida que se
+van desplazando de una red WiFi a otra
 
-2. What organization assigns top-level domains like ".com", ".org",
-and ".club"?
-a) IANA - Internet Assigned Numbers Authority
-b) IETF - Internet Engineering Task Force
-c) ICANN - International Corporation for Assigned Network Names
-d) IMAP - Internet Mapping Authorization Prototol
+2. ¿Qué organización asigna los dominios de nivel superior, como ".com", ".org",
+y ".club"?
+a) IANA - *Internet Assigned Numbers Authority* (Autoridad de Asignación de Direcciones
+de Internet)
+b) IETF - *Internet Engineering Task Force* (Fuerzas Especiales de Ingenieros de
+Internet)
+c) ICANN - *International Corporation for Assigned Network Names* (Corporación
+Internacional para la Asignación de Nombres de Red)
+d) IMAP - *Internet Mapping Authorization Protocol* (Protocolo de Autorización de
+Mapeado de Internet)
 
-3. Which of these is a domain address?
+3. ¿Cuál de estos es una dirección de dominio?
 a) 0f:2a:b3:1f:b3:1a
 b) 192.168.3.14
 c) www.khanacademy.org
 d) @drchuck
 
-4. Which of these is *not* something a domain owner can do with their domain?
-a) Create subdomains
-b) Sell subdomains
-c) Create new top-level domains
-d) Assign an IP address to the domain or subdomain
+4. ¿Cuál de las siguientes acciones es algo que el propietario de un dominio *no*
+puede hacer con ese dominio?
+a) Crear subdominios
+b) Vender subdominios
+c) Crear nuevos dominios de nivel superior
+d) Asignar una dirección IP al dominio o subdominio
 
 
 

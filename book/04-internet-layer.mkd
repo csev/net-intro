@@ -128,7 +128,7 @@ a qué conexión de salida debe enviarlo, no tiene que fijarse en la
 dirección IP completa. Tan solo tiene que fijarse en la primera parte de la
 dirección para determinar cuál es la mejor conexión de salida.
 
-Cómo los routers determinan las rutas
+Cómo determinan las rutas los routers
 -------------------------------------
 
 A pesar de que la idea de concentrar muchas direcciones IP en una única dirección
@@ -231,8 +231,8 @@ lo hacemos de modo similar a cuando depositamos un puñado de cartas en el corre
 la oficina postal. Los paquetes encontrarán cada uno su propio camino a través del
 sistema y llegarán a sus destinos.
 
-Determinando tu ruta
---------------------
+Trazando tu ruta
+----------------
 
 No hay ningún sitio en Internet que conozca de antemano la ruta que los paquetes
 seguirán desde tu equipo hasta un destino concreto. Incluso los routers que
