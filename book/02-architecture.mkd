@@ -41,9 +41,9 @@ La capa de Acceso a la red
 La capa de Acceso a la red es la encargada de conectar tu computador con su
 red local, y de mover los datos a través de un único salto. La tecnología
 actual más habitual para la capa de Acceso es la red inalámbrica. Cuando se está
-utilizando un dispositivo inalámbrico, el dispositivo sólo es capaz de enviar
+utilizando un dispositivo inalámbrico, el dispositivo solo es capaz de enviar
 datos a una distancia limitada. Un smartphone se comunica con una torre que está
-a sólo unos pocos kilómetros de distancia. Si se usa un smartphone en un tren,
+a solo unos pocos kilómetros de distancia. Si se usa un smartphone en un tren,
 necesitará estar cambiando de torre cada pocos minutos, a medida que el tren se
 va desplazando. Un portátil (laptop) que esté conectado a una red WiFi, se
 comunica normalmente con una estación base en un radio de 200 metros. Un
@@ -68,11 +68,11 @@ como puede ser una red inalámbrica, también es necesario acordar cómo deben c
 entre sí los equipos que quieran enviar datos al mismo tiempo. Si todos los
 computadores de la red intentan transmitir cada vez que tengan datos para enviar,
 sus mensajes colisionarán unos con otros. El resultado podría ser el caos, y los
-puestos de recepción sólo recibirían ruido. De modo que necesitamos encontrar un
+puestos de recepción solo recibirían ruido. De modo que necesitamos encontrar un
 método fiable que permita a cada puesto esperar su turno para usar la red compartida.
 
 La idea de dividir cada mensaje extenso en paquetes y luego enviar cada paquete de
-forma independiente, hace que sea más sencillo compartir la red. Si sólo hubiera un
+forma independiente, hace que sea más sencillo compartir la red. Si solo hubiera un
 equipo que quisiera enviar datos, enviaría sus paquetes uno detrás del otro, y haría
 circular esos datos a través de la red tan rápido como pudiera. Pero si tres computadores
 quieren enviar datos al mismo tiempo, cada uno de ellos deberá enviar un paquete y luego
@@ -107,7 +107,7 @@ detectará el uso de la red que está haciendo ese computador y esperará hasta 
 se haya completado el envío del paquete que está en marcha antes de intentar enviar su
 siguiente bloque.
 
-Este sencillo mecanismo funciona correctamente cuando sólo hay un equipo que quiere
+Este sencillo mecanismo funciona correctamente cuando solo hay un equipo que quiere
 enviar datos. También funciona bien cuando hay muchos equipos que pretenden enviar
 datos al mismo tiempo. Cuando hay un único computador enviando datos, ese equipo
 puede hacer un buen uso de la red compartida, enviando sus paquetes uno detrás del
@@ -153,7 +153,7 @@ la capa de acceso ya sabe exactamente dónde debe enviarlo.
 
 Las personas usamos un método parecido para viajar cuando salimos de vacaciones. Un
 viaje para ir de vacaciones tiene también muchos saltos. A lo mejor el primer salto
-consiste en conducir tu coche o coger un taxi o autobús para ir a la estación de trenes.
+consiste en conducir tu coche o tomar un taxi o autobús para ir a la estación de trenes.
 Luego puedes tomar un tren de cercanías que te lleve desde la pequeña ciudad donde vives
 hasta otra más grande. En la ciudad grande, tomarías un tren de larga distancia hasta
 una ciudad grande en otro país. Luego, tomarías otro tren de cercanías hasta el
@@ -162,7 +162,7 @@ de nuevo un autobús, y al bajar del autobús, caminarías hasta tu hotel.
 
 Si cuando estabas en el tren entre las dos grandes ciudades hubieses preguntado
 al conductor por la ubicación exacta de tu hotel en el pueblecito, posiblemente
-el conductor no lo hubiera sabido. Él sólo sabe cómo dejarte cerca de tu destino,
+el conductor no lo hubiera sabido. Él solo sabe cómo dejarte cerca de tu destino,
 y dado que estás en un tren de largo recorrido, eso es lo importante. Cuando subas
 al autobús en tu pueblo de destino, podrás preguntar al conductor del autobús cuál
 es la parada más cercana a tu hotel. Y cuando bajes del autobús en la parada correcta,
@@ -172,7 +172,7 @@ una respuesta precisa.
 Cuando más lejos te encuentres de tu destino, menos necesidad tienes de conocer los
 detalles exactos acerca de cómo llegar hasta allí. Cuando estás lejos, todo lo que
 necesitas saber es cómo llegar "más cerca" de tu destino. Los routers en Internet
-funcionan del mismo modo. Sólo los routers que se encuentran más cerca del
+funcionan del mismo modo. Solo los routers que se encuentran más cerca del
 equipo de destino saben cuál es el camino exacto hasta ese computador. Todos los
 routers que se van cruzando por el camino trabajan para ir acercando el mensaje a
 su destino.
@@ -331,11 +331,11 @@ su destino, no tienen en cuenta ni a la capas de Transporte ni a la de Aplicaci�
 Los routers operan con las capas de Internet y Acceso. Las direcciones de
 origen y destino de la capa de Internet son todo lo que necesitan esos routers
 para enviar los paquetes a través de una serie de conexiones (saltos), hasta
-hacerlos llegar a su destino. Las capas de Transporte y Aplicación sólo entran
+hacerlos llegar a su destino. Las capas de Transporte y Aplicación solo entran
 en juego después de que la capa de Internet haya entregado los paquetes en el
 equipo de destino.
 
-Si quisieras escribir tu propia aplicación en red, probablemente sólo necesitarías
+Si quisieras escribir tu propia aplicación en red, probablemente solo necesitarías
 comunicarte con la capa de Transporte, y podrías desentenderte por completo de las
 capas de Internet y de Acceso. Éstas son esenciales para el funcionamiento de la
 capa de Transporte, pero cuando se escribe un programa, no es necesario preocuparse de
@@ -409,7 +409,7 @@ State Multiple Address Channel Divison*)
 a) Asegurarse de que no se pierden datos durante el enrutamiento
 b) Hacer que un paquete de datos se mueva a través de múltiples redes desde su origen
 hasta su destino
-c) Asegurarse de que sólo pueden usar Internet aquellos usuarios que han iniciado
+c) Asegurarse de que solo pueden usar Internet aquellos usuarios que han iniciado
 sesión
 d) Asegurarse de que el WiFi se comparte correctamente entre múltiples equipos
 

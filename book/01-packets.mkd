@@ -27,7 +27,7 @@ Comunicación a distancia
 Imagina un grupo de cinco personas en una habitación, sentados en círculo. Si son
 educados y no mantienen más de una conversación al mismo tiempo, resultará bastante
 sencillo para cualquiera de ellos hablar con otra persona de la habitación. Tan
-sólo necesitan ser capaces de escucharse entre ellos y coordinar el uso del
+solo necesitan ser capaces de escucharse entre ellos y coordinar el uso del
 espacio compartido en la sala.
 
 Pero, ¿qué ocurriría si pusiésemos a esas personas en habitaciones diferentes,
@@ -109,7 +109,7 @@ conectaba con su pareja mediante cables. El modo más sencillo de enviar datos
 desde un equipo hasta el otro era organizar los mensajes salientes en una cola,
 y enviar a continuación esos mensajes uno detrás del otro, tan rápido como el
 computador y los cables podían transportar los datos. Cada mensaje debía esperar
-su turno, hasta que el mensaje previo había sido enviado, y sólo entonces tenía
+su turno, hasta que el mensaje previo había sido enviado, y solo entonces tenía
 su oportunidad para transitar a través de la conexión.
 
 \index{línea alquilada}
@@ -142,7 +142,7 @@ Primeras redes de Área Amplia de almacenamiento-y-reenvío
 En los años 70 y 80 del pasado siglo, la gente que trabajaba en universidades de
 todo el mundo deseaba enviar datos y mensajes a otros colegas, usando esas
 conexiones entre computadores. Dado que el coste de cada conexión era tan alto
-y que aumentaba con la distancia, los computadores generalmente sólo tenían
+y que aumentaba con la distancia, los computadores generalmente solo tenían
 conexiones con otros equipos cercanos. Pero si el computador con el que estabas
 conectado estaba conectado con otro, y ese a su vez con otro, y así
 sucesivamente, podías envías un mensaje a larga distancia, tan lejos como
@@ -154,7 +154,7 @@ aceptasen almacenarlo y reenviarlo al siguiente equipo.
 Si se disponía de tiempo, con relativamente pocas conexiones era posible enviar
 datos a larga distancia a través de un mosaico de conexiones de redes, siempre
 que se tuviera suficiente paciencia. Durante ese viaje, cuando el mensaje
-llegaba a un computador, éste debía esperar hasta que le llegaba el turno para
+llegaba a un computador, este debía esperar hasta que le llegaba el turno para
 ser enviado al siguiente equipo a lo largo de la ruta. Un mensaje podía llegar
 a un computador intermedio, ser almacenado durante un rato (que podían ser horas,
 dependiendo del tráfico), y luego ser reenviado a la siguiente conexión (o
@@ -182,7 +182,7 @@ computación y software de red más sofisticado.
 Cuando los mensajes se dividen en paquetes y luego son enviados de forma
 individual, si se quiere enviar un mensaje corto una vez que ha comenzado a
 procesarse uno extenso, el corto no tiene que esperar hasta que el extenso ha
-terminado de enviarse completo. El primer paquete del mensaje corto sólo tiene
+terminado de enviarse completo. El primer paquete del mensaje corto solo tiene
 que esperar hasta que termina de procesarse el paquete en curso del mensaje
 extenso. El sistema va alternando el envío de paquetes del mensaje corto y del
 extenso, hasta que al cabo de un tiempo se termina el envío del mensaje corto, y
@@ -192,7 +192,7 @@ la conexión de red.
 Dividir el mensaje en paquetes tiene también la ventaja de reducir
 significativamente la cantidad de espacio de almacenamiento necesario en los
 computadores intermedios, ya que en lugar de necesitar guardar un mensaje entero
-durante unas cuantas horas, el computador intermedio tan sólo necesita almacenar
+durante unas cuantas horas, el computador intermedio tan solo necesita almacenar
 unos pocos paquetes durante algunos segundos, mientras esos paquetes esperan su
 turno en la cola de salida.
 
@@ -215,7 +215,7 @@ dirigir (enrutar) los paquetes que recibían hacia su destino final.
 Al disponer de routers especializados en el movimiento de paquetes a través de
 múltiples saltos, se hizo más sencillo conectar computadores de distintas
 marcas en la misma red. Para conectar cualquier computador a la red, ahora ya
-tan sólo se necesitaba conectarlo a un router y a partir de ahí el resto de los
+tan solo se necesitaba conectarlo a un router y a partir de ahí el resto de los
 detalles de la comunicación eran gestionados por los otros routers.
 
 \index{LAN}

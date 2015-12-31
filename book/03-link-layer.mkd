@@ -7,7 +7,7 @@ La capa inferior de nuestra arquitectura de Internet es la capa de Acceso a la
 red. Le llamamos la "capa inferior" porque es la más próxima al medio físico de
 la red. Habitualmente, la capa de Acceso transmite datos usando un cable, fibra
 óptica, o una señal de radio. Un factor clave de la capa de Acceso es que
-habitualmente los datos sólo pueden ser transmitidos durante una parte del recorrido
+habitualmente los datos solo pueden ser transmitidos durante una parte del recorrido
 desde el computador de origen y el de destino. Una Ethernet cableada, el WiFi, y la
 red de telefonía móvil (celular) son ejemplos de capas de acceso que pueden transmitir
 datos a distancias de alrededor de un kilómetro. Los cables de fibra óptica, en
@@ -34,7 +34,7 @@ Compartiendo el aire
 \index{puerta de acceso}
 Cuando tu portátil (laptop) o teléfono usa el WiFi para conectarse a Internet, está
 enviando y recibiendo datos a través de un pequeño emisor/receptor de radio de baja
-potencia. El emisor de tu equipo sólo puede enviar datos a una distancia de alrededor
+potencia. El emisor de tu equipo solo puede enviar datos a una distancia de alrededor
 de 300 metros, de modo que tu computador envía los paquetes al router de tu casa, que
 a su vez los reenvía usando una conexión con el resto de Internet. A veces, ese
 primer router que gestiona los paquetes de tu computador recibe el nombre de
@@ -62,7 +62,7 @@ Todos los receptores WiFi de todos dispositivo construidos reciben un número de
 que usa el WiFi tiene su propio número de serie, y que el emisor de radio de la puerta
 de acceso dispone también de su propio número de serie. Normalmente es posible acceder
 a la pantalla de ajustes del dispositivo y averiguar cual es el número de serie del
-emisor WiFi del aparato. Generalmente tiene un aspecto similar a éste:
+emisor WiFi del aparato. Generalmente tiene un aspecto similar a este:
 
     0f:2a:b3:1f:b3:1a
 
@@ -138,11 +138,11 @@ La primera técnica recibe el nombre de "Escucha de Portadora", o "*Carrier Sens
 Esta técnica consiste en escuchar primero si hay una transmisión, y si ya existe
 una en marcha en ese momento, esperar hasta que ésta finaliza. Puede parecer que
 habría que esperar mucho tiempo, pero dado que todos los mensajes se dividen en
-paquetes, normalmente tu computador sólo tiene que esperar hasta que el equipo que
+paquetes, normalmente tu computador solo tiene que esperar hasta que el equipo que
 está enviando datos en ese momento finaliza un paquete, y en cuanto eso sucede tu
 computador dispone de la oportunidad de enviar sus propios datos.
 
-Si el receptor WiFi de tu computador se pone a la escucha, y sólo detecta silencio,
+Si el receptor WiFi de tu computador se pone a la escucha, y solo detecta silencio,
 puede comenzar a transmitir. Pero, ¿qué ocurre si el emisor WiFi de otro equipo
 también quiere enviar un paquete, detecta el mismo silencio y decide comenzar a
 transmitir exactamente al mismo tiempo? Si dos o más emisores WiFi comienzan a
@@ -208,7 +208,7 @@ tan rápidamente como sea posible.
 
 Un grupo de gente reunidos, sentados en círculo uno al lado de otro, podrían
 comunicarse sin interrumpir a los demás usando una bola pequeña, que irían pasando
-de unos a otros, de modo que sólo aquella persona que tuviera la bola dispondría de
+de unos a otros, de modo que solo aquella persona que tuviera la bola dispondría de
 permiso para hablar. Cuando te llegase la bola, si tuvieras algo que decir, podrías
 hablar durante un corto periodo de tiempo (transmitir un paquete de palabras), y
 luego le pasarías la bola al siguiente.
@@ -219,7 +219,7 @@ moderada. Pero en una red de tipo testigo, si en un momento determinado nadie
 está enviando datos y se quiere enviar un paquete, habría que esperar de todos modos
 un rato antes de recibir el testigo y poder comenzar la transmisión. Al terminar el
 envío, habría que esperar de nuevo hasta que el testigo volviera, antes de poder
-enviar el siguiente paquete. Si sólo hay un puesto enviando datos, se emplearía
+enviar el siguiente paquete. Si solo hay un puesto enviando datos, se emplearía
 una buena cantidad de tiempo esperando a que el testigo volviera a él, después de
 haber pasado por todos los demás puestos.
 
@@ -227,7 +227,7 @@ El método del testigo es el más adecuado cuando se utiliza una conexión media
 un enlace de satélite, o un cable submarino de fibra óptica, en los cuales se puede
 tardar mucho o resultar excesivamente costoso detectar una colisión. El método
 CSMA/CD (escuchar-intentar) es el más adecuado cuando el medio es económico, se trata
-de cortas distancias, y hay un montón de puestos compartiendo el medio que sólo envían
+de cortas distancias, y hay un montón de puestos compartiendo el medio que solo envían
 datos en ráfagas cortas. Por eso el WiFi (y CSMA/CD) resulta tan efectivo para proveer
 acceso de red en cafeterías, hogares o aulas en un colegio.
 
