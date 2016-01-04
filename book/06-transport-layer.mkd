@@ -1,316 +1,319 @@
-Transport Layer
-===============
-\index{Transport Layer}
-\index{Layer!Transport}
+Capa de Transporte
+==================
+\index{Capa de Transporte}
+\index{Capa!Transporte}
 \index{TCP}
 
-The next layer up from the Internetworking layer is the Transport layer.
-A key element of the Internetworking layer is that it does not attempt
-to guarantee delivery of any particular packet.   The Internetworking layer
-is nearly perfect, but sometimes packets can be lost or misrouted.
+La capa inmediatamente por encima de la capa de Internet es la de Transporte.
+Un elemento clave de la capa de Internet es que esta no intenta garantizar la entrega
+de ningún paquete concreto. La capa de Internet es casi perfecta, pero a veces
+los paquetes pueden perderse o ser enviados fuera de su ruta.
 
-![The Transport Layer](../images/layers-transport)
+![La Capa de Transporte](../images/layers-transport)
 
-But users of the network want to reliably send entire files or messages across the
-Internet. A network is not much good to us if all it can do is send packets
-that are received most of the time.
-For the network to be useful, all of the packets need to be reassembled into the
-right order to reconstruct the message on the receiving system. The network
-must also deal with packets that arrive out of order or never arrive at all.
-The Transport layer is where we handle reliability and message reconstruction on the
-destination computer.
+Sin embargo, los usuarios de la red quieren poder enviar archivos enteros
+o mensajes a través de Internet con fiabilidad. Una red no nos resulta demasiado útil
+si lo único que puede hacer es enviar paquetes que son recibidos la mayor parte del
+tiempo. Para que la red sea útil, todos los paquetes deben ser reensamblados en
+el orden correcto para reconstruir el mensaje en el sistema receptor. La red
+también debe gestionar los paquetes que llegan desordenados, o aquellos que ni siquiera
+llegan. La capa de Transporte es donde se gestiona la exactitud y la reconstrucción de
+los mensajes en el equipo de destino.
 
-Just like the IP layer,
-the Transport layer adds a small amount of data to each packet to help solve
-the problems of packet reassembly and retransmission.
+Como ocurría en la capa IP, la capa de Transporte añade una pequeña cantidad de datos
+a cada paquete para ayudar a resolver los problemas de reensamblado y reenvío de
+paquetes
 
-Packet Headers
---------------
+Cabeceras de Paquetes
+---------------------
 
-If you were to look at a packet going across one of many links
-between its source and destination computers, you would see a link header,
-an IP header, and a Transport Control Protocol (TCP) header, along with the
-actual data in the packet.
+Si revisaras un paquete que estuviera viajando a través de múltiples conexiones
+entre los equipos de origen y destino, verías una cabecera de acceso, una cabecera
+de IP, y una cabecera del Protocolo de Control de Transporte (TCP), junto con los
+datos reales del paquete.
 
-![Headers and Data](../images/headers)
+![Cabeceras y Datos](../images/headers)
 
-The link header is removed when the packet is received on one link and a
-new link header is added when the packet is sent out on the next link on its
-journey. The IP and TCP headers stay with a packet as it is going across each
-link in its journey. Remember that a packet may go across several types of link
-layers as it is routed through the Internet.
+Cuando el paquete es recibido en una conexión, se elimina su cabecera de acceso,
+y cuando el paquete es enviado hacia la siguiente conexión de su viaje, se le añade
+una cabecera de acceso nueva. Las cabeceras IP y TCP permanecen en el paquete durante
+todo su viaje. Recuerda que un paquete puede pasar a través de varios tipos de capas
+de acceso a medida que es dirigido a través de Internet.
 
-The IP header holds the source and destination Internet Protocol (IP) addresses
-as well as the Time to Live (TTL) for the packet. The IP header is set on the
-source computer and is unchanged (other than the TTL) as the packet moves
-through the various routers on its journey.
+La cabecera IP contiene las direcciones del Protocolo de Internet de origen y destino
+(IP), así como el Tiempo De Vida (TTL) del paquete. La cabecera IP es creada por el
+equipo de origen y no se modifica (salvo el TTL) a medida que el paquete se mueve
+a través de los distintos routers de su viaje. 
 
-The TCP headers indicate where the data in each packet belongs. As the source
-computer breaks the message or file into packets, it keeps track of the position
-of each packet relative to the beginning of the message or file and places the
-offset in each packet that is created and sent.
+Las cabeceras TCP indican a dónde pertenecen los datos de cada paquete. A medida
+que el equipo de origen divide el mensaje o archivo en paquetes, mantiene un
+seguimiento de la posición de cada paquete, relativo al comienzo del mensaje o
+archivo y coloca ése índice (*offset*) en cada paquete que crea y envía.
 
-Packet Reassembly and Retransmission
-------------------------------------
+Reensamblado y reenvío de paquetes
+----------------------------------
 
-As the destination computer receives the packets, it looks at the offset
-position from the beginning of the message so it can put the packet into the
-proper place in the reassembled message. Simply by making sure to put the
-packet data at the correct position relative to the beginning of the message,
-the Transport layer easily handles packets that arrive out of order.  If it
-receives a packet further down a message, it places that packet in a buffer,
-keeping track of the fact that there is now a gap in the message that is being
-reconstructed. When the earlier packet arrives a moment later, it fits
-perfectly into the gap in the reassembled data.
+Cuando el equipo de destino recibe los paquetes, se fija en el índice de posición
+respecto al comienzo del mensaje (*offset*), de modo que puede colocar el paquete en su
+lugar correcto del mensaje reconstruido. Simplemente asegurándose de colocar los
+datos del paquete en la posición correcta respecto al comienzo del mensaje, la
+capa de Transporte es capaz de gestionar con facilidad los paquetes que llegan
+desordenados. Si recibe un paquete adelantado respecto a la posición del mensaje,
+lo coloca en un buffer, controlando la circunstancia de
+que ahora existe un hueco dentro del mensaje que está siendo reconstruido.
+Cuando, posteriormente, llega el paquete anterior, éste encaja
+perfectamente en el hueco dejado dentro de los datos reconstruidos.
 
-\index{window size}
-To avoid overwhelming the network, the Transport layer in the sending
-computer only sends a certain amount of data before waiting for an
-acknowledgement from the Transport layer on the destination computer that the
-packets were received. The amount of data that the sending computer will send
-before pausing to wait for an acknowledgment is called the "window size".
+\index{tamaño de ventana}
+Para evitar sobrecargar la red, la capa de Transporte en el equipo de origen
+sólo envía una cierta cantidad de datos antes de esperar una confirmación desde
+la capa de Transporte del equipo de destino de que esos paquetes se han recibido.
+La cantidad de datos que el equipo de origen enviará antes de hacer una pausa
+y esperar una confirmación, recibe el nombre de "tamaño de ventana".
 
-The sending computer keeps track of how quickly it starts to receive
-acknowledgements from the receiving computer. If the acknowledgments come back
-quickly, the sending computer increases its window size, but if the
-acknowledgments come back slowly, the sending computer transmits less data. By
-adjusting the window size, transmitting computers can send large amounts of
-data quickly over fast connections that have light loads. When sending data
-over slow or heavily loaded links, they can send the data in a way that does
-not overwhelm the network.
+El equipo emisor controla el tiempo que tarda en empezar a recibir mensajes de
+confirmación desde el equipo receptor. Si las confirmaciones llegan rápido,
+el equipo emisor aumentará su tamaño de ventana, pero si las confirmaciones tardan
+en llegar, entonces el equipo emisor transmitirá menos datos. Gracias al ajuste
+del tamaño de ventana, los equipos pueden enviar gran cantidad de datos rápidamente
+a través de conexiones rápidas que tengan poca carga. Y cuando envían datos a
+través de conexiones lentas o enlaces saturados, lo harán de modo que no sobrecarguen
+la red.
 
-If a packet is lost, it will never arrive at the destination computer and so
-the destination computer will never send an acknowledgment for that data.
-Because the sending computer does not receive an acknowledgment, it quickly
-reaches the point where it has sent enough unacknowledged data to fill up the
-window and stops sending new packets.
+Cuando se pierde un paquete, este nunca llega al equipo de destino, de modo que
+ese equipo no enviará nunca la confirmación de recepción de esos datos.
+Dado que el equipo emisor no recibe la confirmación, se llega rápidamente a un
+punto en el cual se han enviado suficientes datos sin confirmar para llenar la
+ventana y el emisor deja de enviar paquetes nuevos.
 
-At this point, both computers are waiting. The sending computer is waiting
-for an acknowledgement for a lost packet that will never come and the receiving
-computer is waiting for a lost packet that will never come. To make sure that
-the computers do not wait forever, the destination computer keeps track of the
-amount of time since it received the last packet of data. At some point, the
-receiving computer decides too much time has passed and sends a packet to the
-sending computer indicating where in the stream the receiving computer has last
-received data. When the sending computer receives this message, it "backs up"
-and resends data from the last position that the receiving computer had
-successfully received.
+En ese momento, ambos equipos están esperando. El emisor está esperando la confirmación
+de recepción de un paquete perdido que nunca llegará y el equipo receptor está
+esperando un paquete perdido que tampoco llegará nunca. Para asegurarse de que
+los equipos no se quedan esperando para siempre, el equipo de destino controla
+la cantidad de tiempo transcurrida desde la recepción del último paquete de datos.
+En algún momento, el equipo receptor decide que ya ha pasado demasiado tiempo y
+envía un paquete al equipo emisor, indicándole en qué punto del mensaje recibió
+datos por última vez. Cuando el equipo emisor recibe ese mensaje, "retrocede"
+y vuelve a enviar datos desde la última posición en la que el equipo receptor le
+informa de que recibió datos con éxito.
 
-![Waiting for a Lost Packet](../sketchnote/Transport)
+![Esperando un paquete perdido](../sketchnote/Transport)
 
-The combination of the receiving computer acknowledging received data, not
-allowing the transmitting computer to get too far ahead (window size), and the
-receiving computer requesting the sending computer to "back up and restart"
-when it appears that data has been lost creates a relatively simple method to
-reliably send large messages or files across a network.
+La confirmación de recepción de datos por parte del equipo receptor, no permitiendo
+al equipo emisor continuar el envío (tamaño de ventana), combinado con las peticiones
+del equipo receptor al emisor para que "vuelva atrás y empiece de nuevo" cuando se
+sospecha que los datos se han perdido, constituyen un método relativamente simple
+para enviar con fiabilidad mensajes extensos o archivos a través de la red.
 
-While the Transport layer is sending a stream of data, it continuously monitors
-how quickly it receives acknowledgements and dynamically adjusts its window size.
-This ensures that data is sent rapidly when the connection between two
-computers is fast and much more slowly when the connection has slow links or
-a heavy load.
+La capa de Transporte, durante el envío de una cadena de datos,
+monitoriza constantemente la velocidad de recepción de confirmaciones y ajusta
+dinámicamente su tamaño de ventana. Esto asegura que los datos se envíen rápidamente
+cuando la conexión entre dos equipos es rápida, y mucho más lentamente cuando la
+conexión tiene enlaces lentos o una gran carga.
 
-The Transport Layer In Operation
---------------------------------
+La Capa de Transporte En Funcionamiento
+---------------------------------------
 
-One of the key elements of the Transport layer is that the sending computer
-must hold on to all of the data it is sending until the data has been
-acknowledged. Once the receiving computer acknowledges the
-data, the sending computer can discard the sent data.  We can look at this
-graphically when a message is broken into many packets. Here, the first ten packets
-of the message have been sent and acknowledged by the destination computer ('a').
-The sending computer has sent six more packets ('S'), and then stopped because it
-reached its window size.
+Uno de los elementos clave de la capa de Transporte es que el equipo emisor
+debe mantener todos los datos que está enviando hasta que su recepción haya sido
+confirmada. Una vez que el equipo receptor confirma la recepción de los datos, el
+emisor puede descartar los datos enviados. Podemos verlo gráficamente cuando un
+mensaje se divide en muchos paquetes. Aquí, los diez primeros paquetes del mensaje
+han sido enviados y confirmados por el equipo de destino ('a'). El equipo emisor
+ha enviado seis paquetes más ('S') y luego se ha detenido por haber alcanzado
+su tamaño de ventana.
 
-![Buffering in the Transport Layer](../images/transport-buffer)
+![Almacenando en Buffer en la Capa de Transporte](../images/transport-buffer)
 
-There are three packets that have been sent but not yet received ("S").  Since there
-are many hops in the network, it is very common for more than one packet to be
-enroute in the network at the same time.
+Existen tres paquetes que han sido enviados pero aún no han sido recibidos ("S"). Dado
+que hay muchos saltos en la red, resulta muy habitual que más de un paquete esté en
+camino a través de la red al mismo tiempo.
 
-The Transport layer on the receiving computer has received and acknowledged ten
-packets and delivered them to the receiving application ('a').^[We talk about the
-Application layer in later material.] The Transport layer on the destination
-computer has received more three packets ('R'), but one packet is out of order.
-Receiving a packet out of order is not a cause for concern if the missing
-packet arrives in a reasonably short amount of time. As long as all the
-packets are received, the receiving Transport layer will reconstruct the
-message, fitting the packets together like puzzle pieces, and deliver them
-to the receiving application.
+La capa de Transporte en el equipo receptor ha recibido y confirmado diez paquetes
+y se los ha entregado a la aplicación receptora ('a').^[Hablaremos acerca
+de la capa de Aplicación en el próximo capítulo.] La capa de Transporte en el
+equipo de destino ha recibido tres paquetes más ('R'), pero un paquete está
+desordenado. La recepción de un paquete desordenado no es algo preocupante,
+siempre que los paquetes perdidos lleguen en un periodo de tiempo razonablemente
+breve. En cuanto se reciban todos los paquetes, la capa de Transporte
+reconstruirá el mensaje, encajando los paquetes entre sí como piezas de un puzzle,
+y se lo entregará a la aplicación receptora.
 
-Application Clients and Servers
+Aplicaciones Clientes y Servidores
+----------------------------------
+
+\index{cliente}
+\index{servidor}
+El propósito de la capa de Transporte es proporcionar conexiones fiables entre
+aplicaciones en red, de modo que esas aplicaciones puedan enviar y recibir cadenas
+de datos. Para una aplicación, resulta tan sencillo como pedir a la capa de Transporte
+que realice una conexión a una aplicación que se esté ejecutando en un equipo
+remoto. La aplicación que inicia la conexión desde el ordenador local recibe el
+nombre de "cliente", y a la aplicación que responde a la petición de conexión se le llama
+"servidor". A la combinación de las dos aplicaciones en red desde ambos extremos de
+la conexión se le denomina aplicación "cliente/servidor", dado que las dos partes de
+la aplicación deben trabajar juntas.
+
+Se ha realizado un montón de trabajo de ingeniería sobre las tres capas inferiores de
+nuestra arquitectura para conseguir que resulte fácil abrir una conexión hacia un
+equipo remoto y luego enviar y recibir datos a través de esa conexión.
+
+Aplicaciones Servidor y Puertos
 -------------------------------
 
-\index{client}
-\index{server}
-The purpose of the Transport layer is to provide reliable connections between
-networked applications so those applications can send and receive streams of
-data. For an application, this is as simple as asking the Transport layer
-to make a connection to an application running on a remote host. We
-call the application that initiates the connection on the local computer the
-"client" and the application that responds to the connection request the
-"server". We call the combination of the two networked applications at the
-ends of the connection a "client/server" application because the two pieces of
-the application must work together.
+Cuando una aplicación cliente quiere realizar una conexión con un equipo remoto,
+resulta importante que la conexión se establezca con la aplicación servidor
+correcta en ese equipo remoto. Un computador remoto puede disponer de un número
+indeterminado de aplicaciones servidor diferentes funcionando al mismo tiempo.
+Algunos ejemplos de aplicaciones servidor pueden ser:
 
-A lot of engineering has gone into the lower three layers of our architecture
-to make it easy to open a connection to a remote computer and then send
-and receive data over that connection.
+* Servidor Web
+* Servidor de Vídeo
+* Servidor de Correo
 
-Server Applications and Ports
------------------------------
+![Puertos TCP](../sketchnote/Ports)
 
-When a client application wants to make a connection to a remote computer,
-it is important that the connection is made to the correct server application
-on that remote computer.  A remote computer might have any
-number of different server applications running at the same time. Example
-server applications would include:
+Por ejemplo, un cliente web (un navegador) debe conectarse al servidor web que
+esté funcionando en el equipo remoto. De modo que una aplicación cliente no sólo
+necesita saber a qué equipo remoto conectarse, también necesita elegir una
+aplicación concreta para interactuar con ella en ese equipo remoto.
 
-* Web Server
-* Video Server
-* Mail Server
+Se utiliza un concepto llamado "puertos" para permitir a la aplicación cliente
+elegir con qué aplicación servidor quiere interactuar. Los puertos son como
+extensiones telefónicas. Todas las extensiones tienen el mismo número de teléfono
+(Dirección IP), pero cada extensión (aplicación servidor) dispone de un número
+de extensión diferente (número de puerto).
 
-![TCP Ports](../sketchnote/Ports)
+Cuando una aplicación servidor se inicia, se pone a la "escucha" de conexione entrantes
+en el puerto especificado. Una vez que la aplicación servidor ha informado de que está
+preparada para recibir conexiones entrantes, espera hasta que se produce la primera
+conexión.
 
-For instance, a web client (a browser) needs to connect to
-the web server running on the remote computer. So a client application not only
-needs to know which remote computer to connect to, it also needs to choose a particular
-application to interact with on that remote computer.
+Para que las aplicaciones cliente sepan a qué puerto deben conectarse, existe
+una lista de puertos por defecto habituales para varias aplicaciones servidor:
 
-We use a concept called "ports" to allow a client application to choose which
-server application it wants to interact with. Ports are like telephone
-extensions. All of the extensions have the same phone number (IP Address) but
-each extension (server application) has a different extension number (port
-number).
-
-When a server application starts up, it "listens" for incoming connections on
-the specified port. Once the server application has registered that it is
-ready to receive incoming connections, it waits until the first
-connection is made.
-
-So that client applications know which port to connect to, there is a list
-of well-known default ports for various server applications:
-
-* Telnet (23) - Login
-* SSH (22) - Secure Login
+* Telnet (23) - Inicio de sesión (*Login*)
+* SSH (22) - Inicio de sesión segura (*Secure Login*)
 * HTTP (80) - World Wide Web
-* HTTPS (443) - Secure Web
-* SMTP (25) (Incoming Mail)
-* IMAP (143/220/993) - Mail Retrieval
-* POP (109/110) - Mail Retrieval
-* DNS (53) - Domain Name Resolution
-* FTP (21) - File Transfer
+* HTTPS (443) - Web Segura (*Secure Web*)
+* SMTP (25) - Correo Entrante (*Incoming Mail*)
+* IMAP (143/220/993) - Recuperación de Correo (*Mail Retrieval*)
+* POP (109/110) - Recuperación de Correo (*Mail Retrieval*)
+* DNS (53) - Resolución de Nombres de Dominio (*Domain Name Resolution*)
+* FTP (21) - Transferencia de archivos (*File Transfer*)
 
-These are the normal ports for these applications.  Sometimes servers will
-make applications available at non-standard ports.  If you are doing web development,
-you may run a web server at a standard port like 3000, 8080, or 8888.  If you see
-a URL like:
+Estos son los puertos habituales para esas aplicaciones. Pero algunas veces los
+servidores pueden hacer que las aplicaciones escuchen en puertos no-estándar.
+Si realizas desarrollo web, puedes ejecutar un servidor web en puertos no
+estándar, como 3000, 8000, o 8888. Si te encuentras una URL como:
 
-	http://testing.example.com:8080/login
+	http://prueba.ejemplo.com:8080/acceder
 
-the "8080" indicates that your browser is to use the web protocols to interact
-with the server, but connect to port 8080 instead of the default port 80.
+el "8080" indica que tu navegador va a usar los protocolos web para interactuar
+con el servidor, pero conectándose al puerto 8080 en vez de hacerlo al puerto por
+defecto, que sería el 80.
 
-Summary
+Resumen
 -------
 
-In a sense, the purpose of the Transport layer is to compensate for the fact
-that the Link and Internetworking layers might lose data. When the two
-lower layers lose or reroute packets, the Transport layer works to reassemble
-and/or retransmit that data. The existence of the Transport layer makes it
-possible for the two lower layers to ignore retransmission and rate-limiting
-issues.
+En cierto sentido, el propósito de la capa de Transporte es subsanar la circunstancia
+de que las capas de Conexión e Internet pueden perder datos. Cuando las dos
+capas inferiores pierden o desvían los paquetes, la capa de Transporte entra en
+funcionamiento para reconstruir y/o reenviar esos datos. La existencia
+de la capa de Transporte hace posible que las dos capas inferiores puedan ignorar
+los problemas de reenvío y límite de velocidad.
 
-Part of the goal of a layered architecture is to break an overly complex
-problem into smaller subproblems. Each layer focuses on solving part of the
-overall problem and assumes that the other layers solve the problems they are
-supposed to solve.
+Parte del objetivo de una arquitectura en capas es dividir un problema demasiado
+complejo en otros subproblemas más pequeños. Cada capa se centra en resolver parte
+del problema general y asume que las otras capas resuelven a su vez los problemas
+que se supone que deben resolver.
 
-Glossary
+Glosario
 --------
 
-**acknowledgement**: When the receiving computer sends a notification back
-to the source computer indicating that data has been received.
+**almacenar en buffer**: Mantener temporalmente los datos que han sido enviados o
+recibidos, hasta que el equipo está seguro de que esos datos ya no se necesitan.
 
-**buffering**: Temporarily holding on to data that has been sent or received until
-the computer is sure the data is no longer needed.
+**confirmación**: Cuando el equipo receptor envía una notificación de vuelta al
+equipo de origen, indicando que los datos han sido recibidos.
 
-**listen**: When a server application is started and ready to accept
-incoming connections from client applications.
+**escucha**: Cuando una aplicación servidor está funcionando y preparada para
+aceptar conexiones entrantes desde aplicaciones cliente.
 
-**port**: A way to allow many different server applications to be waiting
-for incoming connections on a single computer. Each application listens on
-a different port. Client applications make connections to well-known
-port numbers to make sure they are talking to the correct server application.
+**puerto**: Un modo de permitir que muchas aplicaciones servidor diferentes esperen
+conexiones entrantes en un mismo equipo. Cada aplicación escucha en un puerto
+diferente. Las aplicaciones cliente realizan las conexiones a números de puerto
+conocidos, para asegurarse de que están comunicándose con la aplicación servidor
+adecuada.
 
 
 
-Questions
+Preguntas
 ---------
 
-You can take this quiz online at http://www.net-intro.com/quiz/
+Puedes realizar este cuestionario online en http://www.net-intro.com/quiz/
 
-1. What is the primary problem the Transport (TCP) layer is supposed to solve?
-a) Move packets across multiple hops from a source to destination computer
-b) Move packets across a single physical connection
-c) Deal with lost and out-of-order packets
-d) Deal with encryption of sensitive data
+1. ¿Cuál es el principal problema que se supone que resuelve la capa de
+Transporte (TCP)?
+a) El movimiento de paquetes a través de múltiples saltos desde un equipo de origen
+hasta uno de destino
+b) El movimiento de paquetes a través de una única conexión física
+c) Gestionar los paquetes perdidos y desordenados
+d) Gestionar la encriptación de datos sensibles
 
-2. What is in the TCP header?
-a) Physical address
-b) IP Address and Time to Live
-c) Port number and offset
-d) Which document is being requested
+2. ¿Qué contiene la cabecera TCP?
+a) La dirección física
+b) La dirección IP y el Tiempo de Vida (TTL)
+c) El número de puerto y el índice de posición del paquete (*offset*)
+d) Qué documento está siendo solicitado
 
-3. Why is "window size" important for the proper functioning of the network?
-a) Because packets that are too large will clog fiber optic connections
-b) It prevents a fast computer from sending too much data on a slow connection
-c) It limits the number of hops a packet can take before it is dropped
-d) It determines what part of an IP address is the network number
+3. ¿Por qué es importante el "tamaño de ventana" para el funcionamiento adecuado de
+la red?
+a) Porque los paquetes demasiado grandes atascan las conexiones de fibra óptica
+b) Evita que un equipo rápido envíe demasiados datos a través de una conexión lenta
+c) Limita el número de saltos que un paquete puede dar antes de ser desechado
+d) Determina qué parte de una dirección IP se corresponde con la dirección de red
 
-4. What happens when a sending computer receives an acknowledgement from the
-receiving computer?
-a) The sending computer resends the data to make sure it was
-transmitted accurately.
-b) The sending computer sends more data up to the window size
-c) The sending computer sends an "acknowledgment for the acknowledgment"
-d) The sending computer sends the acknowledgement to the Internet Map (IMAP)
+4. ¿Qué ocurre cuando un equipo emisor recibe una confirmación desde el equipo
+receptor?
+a) El equipo emisor vuelve a enviar los datos para asegurarse de que se han
+transmitido correctamente
+b) El equipo emisor envía más datos, hasta alcanzar el tamaño de ventana
+c) El equipo emisor envía una "confirmación de recepción de la confirmación"
+d) El equipo emisor envía la confirmación al Mapa de Internet (IMAP)
 
-5. Which of these detects and takes action when packets are lost?
-a) Sending computer
-b) Network gateway
-c) Core Internet routers
-d) Receiving computer
+5. ¿Cuál de estos elementos detecta y toma medidas cuando se pierden paquetes?
+a) Equipo emisor
+b) Puerta de acceso de la red
+c) Routers centrales de Internet
+d) Equipo receptor
 
-6. Which of these retains data packets so they can be retransmitted
-if a packets lost?
-a) Sending computer
-b) Network gateway
-c) Core Internet routers
-d) Receiving computer
+6. Cuál de estos elementos retiene paquetes de datos para que puedan ser enviados
+de nuevo si un paquete se pierde?
+a) Equipo emisor
+b) Puerta de acceso de la red
+c) Routers centrales de Internet
+d) Equipo receptor
 
-7. Which of these is most similar to a TCP port?
-a) Train station
-b) Undersea network cable
-c) Apartment number
-d) Sculpture garden
+7. ¿Cuál de estos elementos es más parecido a un puerto TCP?
+a) Una estación de tren
+b) Un cable de red submarino
+c) El número de un apartamento
+d) Un jardín de esculturas
 
-8. Which half of the client/server application must start first?
-a) Client
-b) Server
+8. ¿Qué parte de una aplicación cliente/servidor debe iniciarse primero?
+a) Cliente
+b) Servidor
 
-9. What is the port number for the Domain Name System?
+9. ¿Cuál es el número de puerto que utiliza el Sistema de Nombres de Dominios (DNS)?
 a) 22
 b) 80
 c) 53
 d) 143
 
-10. What is the port number for the IMAP mail retrieval protocol?
+10. ¿Cuál es el número de puerto que utiliza el protocolo de recuperación de
+mensajes IMAP?
 a) 22
 b) 80
 c) 53
 d) 143
-
-
-
-
