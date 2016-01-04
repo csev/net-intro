@@ -121,7 +121,7 @@ For example, "umich.edu" is a domain name and
 both "www.umich.edu" and "mail.umich.edu"
 are subdomains within "umich.edu".
 
-**TLD**: Top Level Domain.  The leftmost portion of the domain name.
+**TLD**: Top Level Domain.  The rightmost portion of the domain name.
 Example TLDs include ".com", ".org", and ".ru". Recently, new
 top-level domains like ".club" and ".help" were added.
 
@@ -145,7 +145,7 @@ and ".club"?
 a) IANA - Internet Assigned Numbers Authority
 b) IETF - Internet Engineering Task Force
 c) ICANN - International Corporation for Assigned Network Names
-d) IMAP - Internet Mapping Authorization Prototol
+d) IMAP - Internet Mapping Authorization Protocol
 
 3. Which of these is a domain address?
 a) 0f:2a:b3:1f:b3:1a
