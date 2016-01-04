@@ -401,7 +401,7 @@ home network and it works perfectly well on the overall Internet?  This is
 because your home router/gateway/base station is doing something we call
 "Network Address Translation", or "NAT". The gateway has a single routable IP
 address that it is sharing across multiple workstations that are connected to
-the gateway. Your computer uses its non-routable address like "192.160.0.5" to
+the gateway. Your computer uses its non-routable address like "192.168.0.5" to
 send its packets, but as the packets move across the gateway, the gateway
 replaces the address with its actual routable address. When packets come back
 to your workstation, the router puts your workstation's non-routable address
