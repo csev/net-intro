@@ -1,159 +1,161 @@
-Application Layer
-=================
+Capa de Aplicación
+==================
 
-\index{Application Layer}
-\index{Layer!Application}
-We have been working from the bottom to the top of our four-layer TCP/IP network model
-and we are finally at the top.  The Application layer is where the networked software
-like web browsers, mail programs, video players, or networked video players operate.
-We as users interact with these applications and the applications interact
-with the network on our behalf.
+\index{Capa de Aplicación}
+\index{Capa!Aplicación}
+Hemos ido estudiando nuestro modelo de red de cuatro capas TCP/IP desde abajo hacia
+arriba, y por fin nos encontramos en la cima. La capa de Aplicación es el lugar
+donde opera el software de red, como navegadores web, programas de correo o
+reproductores de vídeo. Nosotros como usuarios interactuamos con esas aplicaciones
+y las aplicaciones interactúan con la red para nuestro provecho.
 
-![The Application Layer](../images/layers-application)
+![La Capa de Aplicación](../images/layers-application)
 
-Client and Server Applications
-------------------------------
+Aplicaciones Cliente y Servidor
+-------------------------------
 
-It is important to remember that two parts are required for a networked
-application to function. The architecture for a networked application is
-called "client/server". The server portion of the application runs somewhere
-on the Internet and has the information that users want to view or interact with.
-The client portion of the application makes connections to the server application,
-retrieves information, and shows it to the user. These applications
-use the Transport layer on each of their computers to exchange data.
+Es importante recordar que se necesitan dos partes para que una aplicación de red
+funcione. La arquitectura de una aplicación de red recibe el nombre de
+"cliente/servidor". La parte servidor de la aplicación se ejecuta en algún punto
+de Internet y tiene la información que los usuarios quieren ver o con la que desean
+interactuar. La parte cliente de la aplicación realiza las conexiones con la
+aplicación servidor, recupera la información y se la muestra al usuario. Estas
+aplicaciones utilizan la capa de Transporte en cada uno de sus equipos para
+intercambiar datos.
 
-![Client/Server Applications](../sketchnote/Client_Server)
+![Aplicaciones Cliente/Servidor](../sketchnote/Client_Server)
 
-To browse a web address like www.khanacademy.org, you must have a
-web application running on your computer. When you type an address into your
-web browser, it connects to the appropriate web server, retrieves
-pages for you to view, and then shows you the pages.
+Para navegar por una dirección web, como www.khanacademy.org, necesitas tener
+una aplicación web funcionando en tu equipo. Cuando tecleas una dirección en tu
+navegador web, este se conecta con el servidor web adecuado, recupera las páginas
+para ti, y luego te las muestra.
 
-The web browser on your computer sends a request to connect to
-www.khanacademy.org. Your computer looks up the domain name to find the
-corresponding IP address for the server and makes a transport connection to
-that IP address, then begins to request data from the server over that
-network connection. When the data is received, the web browser shows it to you.
-Sometimes web browsers display a small animated icon to let you know that the
-data is being retrieved across the network.
+El servidor web de tu equipo envía una petición de conexión a www.khanacademy.org.
+Tu equipo usa el nombre de domino para localizar la dirección IP correspondiente
+al servidor y realizar una conexión de transporte con esa IP, luego comienza a
+solicitar datos desde el servidor a través de la conexión red. Cuando se reciben
+los datos, el navegador te los muestra. A veces los navegadores web muestran un
+pequeño icono animado para informarte de que los datos están siendo recuperados
+a través de la red.
 
-On the other end of the connection is another application called a
-"web server". The web server program is always up and waiting for incoming
-connections. So when you want to see a web page, you are connecting to a
-server application that is already running and waiting for your connection.
+En el otro extremo de la conexión hay otra aplicación llamada "servidor web".
+El programa que hace de servidor web está siempre activo y esperando conexiones
+de entrada. De modo que cuando quieres ver una página web, estás conectándote a
+una aplicación servidor que está siempre en marcha y esperando tus conexiones.
 
-In a sense, the Transport, Internetwork, and Link layers, along with the Domain
-Name System, are like a telephone network for networked applications. They "dial
-up" different server applications on the network and have "conversations"
-with those applications to exchange data.
+En cierto sentido, las capas de Acceso, Trasporte e Internet, junto con el Sistema
+de Nombres de Dominio (DNS), son como una red telefónica para aplicaciones en red.
+Ellas "marcan el número" de diferentes aplicaciones servidor de la red y mantienen
+"conversaciones" con esas aplicaciones para intercambiar datos.
 
-Application Layer Protocols
----------------------------
+Protocolos de la Capa de Aplicación
+-----------------------------------
 
-\index{client}
-\index{server}
-Just like people talking on telephones, each pair of network
-applications needs a set of rules that govern the conversation. In most
-cultures, when your phone rings and you pick up the phone you say "Hello".
-Normally the person who made the call (the client person) is silent until the
-person who picked up the phone (the server person) says "Hello". If you have
-ever called someone who does not follow this simple rule, it can be quite
-confusing. You probably would assume that the connection was not working, hang
-up, and retry the call.
+\index{cliente}
+\index{servidor}
+Igual que la gente que habla por teléfono, cada par de aplicaciones de red
+necesita fijar un conjunto de reglas que gobiernen la conversación. En la mayoría
+de las culturas, cuando el teléfono suena y alguien lo coge es habitual saludar.
+Normalmente, la persona que realiza la llamada (la persona cliente) permanece
+callada hasta que la persona que responde al teléfono (la persona servidor) dice
+"Hola". Si alguna vez has llamado a alguien que no sigue esta sencilla regla,
+puede resultar bastante desconcertante. Probablemente, en ese caso terminarías por
+llegar a la conclusión de que la conexión no estaba funcionando, colgarías y
+repetirías la llamada.
 
-\index{protocol}
-A set of rules that govern how we communicate is called a "protocol". The
-definition of the word protocol is "a rule which describes how an activity
-should be performed, especially in the field of diplomacy." The idea is
-that in formal situations, we should behave according to a precise
-set of rules. We use this word to describe networked applications, because
-without precise rules, applications have no way to establish and manage a
-conversation. Computers like precision.
+\index{protocolo}
+Un conjunto de reglas que gobiernan cómo nos comunicamos reciben el nombre de
+"protocolo". La definición de la palabra protocolo es "una regla que describe cómo
+debe ser realizada una actividad, especialmente en el campo de la diplomacia". La
+idea es que en situaciones formales, debemos comportarnos de acuerdo con un conjunto
+preciso de reglas. Usamos esa palabra para describir aplicaciones de red, porque
+sin reglas precisas, las aplicaciones no tienen forma de establecer y gestionar
+una conversación. A los computadores les gusta la precisión.
 
-![Application Protocols](../sketchnote/Protocols)
+![Protocolos de Aplicación](../sketchnote/Protocols)
 
 \index{RFC-7230 HTTP}
-There are many different networked applications
-and it is important that each networked application have a well-documented
-protocol so that all servers and clients can interoperate. Some of these
-protocols are intricate and complex.
+Existen muchas aplicaciones de red diferentes, y resulta importante que cada
+aplicación de red disponga de un protocolo bien documentado, para que todos los
+servidores y clientes puedan operar unos con otros. Algunos de esos protocolos
+resultan enrevesados y complejos.
 
-The protocol that describes how a
-web browser communicates with a web server is described in a number of large
-documents starting with this one:
+El protocolo que describe cómo se comunica un navegador web con un servidor web
+aparece descrito en multitud de documentos, empezando por este mismo:
 
 [https://tools.ietf.org/html/rfc7230](../https://tools.ietf.org/html/rfc7230)
 
 \index{HyperText Transport Protocol}
+\index{Protocolo de Transporte de Hipertexto}
 \index{HTTP}
-The formal name of the protocol between web clients and web servers is the
-"HyperText Transport Protocol", or HTTP for short. When you put "http:" or
-"https:" on the beginning of a URL that you type into the browser, you are
-indicating that you would like to retrieve a document using the HTTP protocol.
+El nombre formal del protocolo entre clientes y servidores web es el "Protocolo de
+Transporte de Hipertexto" (*HyperText Transport Protocol*), o HTTP para abreviar.
+Cuando pones "http:" o "https:" al comienzo de una URL que escribes en un navegador,
+estás indicando que quieres recuperar un documento usando el protocolo HTTP.
 
-If you were to read the above document, and go to section 5.3.2 on page 41, you
-find the exact text of what a web client is supposed to send to a web server:
+Si revisas el documento anterior y vas a la sección 5.3.2 de la página 41,
+encontrarás el texto exacto que se supone que un cliente envía a un servidor web:
 
     GET http://www.example.org/pub/WWW/TheProject.html HTTP/1.1
 
-One of the reasons that HTTP is so successful is that it is relatively
-simple compared to most client/server protocols. Even though the basic use of
-HTTP is relatively simple, there is a lot of detail that allows web clients and
-servers communicate efficiently and transfer a wide range of information and
-data. Six different documents describe the HTTP protocol, in a total of 305
-pages. That might seem like a lot of detail, but the key in designing protocols
-is to think through all possible uses of the protocol and describe each scenario
-carefully.
+Una de las razones de que el HTTP tenga tanto éxito consiste en que es relativamente
+simple comparado con la mayoría de los protocolos cliente/servidor. A pesar de que el
+uso básico del HTTP es relativamente simple, existe montones de detalles que permiten
+a los clientes y servidores web comunicarse de forma eficiente y transferir una
+amplia variedad de información y datos. El protocolo HTTP está descrito en seis
+documentos diferentes, a lo largo de un total de 305 páginas. Eso puede parecer dar un
+montón de detalles, pero la clave en el diseño de protocolos está en pensar en todos
+los usos posibles del protocolo y en describir cada escenario cuidadosamente.
 
-Exploring the HTTP Protocol
----------------------------
+Exploración del Protocolo HTTP
+------------------------------
 
-In this section we will manually exercise the HTTP protocol by pretending to
-be a web browser and sending HTTP commands to a web server to retrieve data.
-To play with the HTTP protocol, we will use one of the earliest Internet
-applications ever built.
+En esta sección vamos a ejercitar manualmente el protocolo HTTP, simulando ser un
+navegador web y enviando comandos HTTP a un servidor web para recuperar datos.
+Para jugar con el protocolo HTTP, usaremos una de las primeras aplicaciones que
+se crearon para Internet.
 
 \index{RFC-15 Telnet}
 \index{telnet}
-The "telnet" application was first developed in 1968, and was developed
-according to one of the earliest standards for the Internet:
+La aplicación "*telnet*" fue desarrollada por primera vez en 1968, y ese desarrollo
+se realizó de acuerdo a uno de los primeros estándares de Internet:
 
 [https://tools.ietf.org/html/rfc15](../https://tools.ietf.org/html/rfc15)
 
 \index{ARPANET}
 \index{NSFNet}
-This standard is only five pages long and at this point, you probably can
-easily read and understand most of what is in the document. The telnet
-client application is so old that it is effectively a dinosaur, as it comes from
-"prehistoric" times in terms of the age of the Internet. The Internet
-was created in 1985 by the NSFNet project and the precursor to the NSFNet
-called the ARPANET was brought up in 1969. Telnet was designed and built
-even before the first TCP/IP network was in production.
+Este estándar sólo tiene una extensión de cinco páginas y a estas alturas, seguramente
+seas capaz de leer y comprender fácilmente la mayoría de lo que hay en el documento.
+La aplicación cliente de *telnet* es tan antigua como un dinosaurio,
+ya que viene de tiempos "prehistóricos", si hablamos en términos de la edad de
+Internet. Internet fue creado en 1985 por el proyecto NSFNet y el precursor del
+NSFNet, llamado ARPANET, fue iniciado en 1969. *Telnet* se diseñó y creó antes
+incluso de que estuviera en funcionamiento la primera red TCP/IP.
 
-Interestingly, the telnet application is still present in most modern operating
-systems. You can access telnet from the terminal (command line) in Macintosh
-and Linux. The telnet application was also present in Windows 95 through Windows
-XP, but is not included in later versions of Windows. If you have a later
-version of Windows, you can download and install a telnet client to
-do the examples in this section.
+Curiosamente, la aplicación *telnet* sigue presente en la mayoría de los sistemas
+operativos modernos. Puedes acceder a *telnet* desde el terminal (línea de comandos)
+en Macintosh y Linux. La aplicación *telnet* estaba también presente desde Windows 95
+hasta Windows XP, pero ya no está incluida en las últimas versiones de Windows. Si
+tienes una versión más moderna de Windows, puedes descargar e instalar un cliente
+*telnet* para realizar los ejemplos de esta sección.
 
-Telnet is a simple application.  Run telnet from the command line (or
-terminal) and type the following command:
+*Telnet* es una aplicación muy sencilla. Ejecuta *telnet* desde la línea de comandos
+(o terminal), y teclea el siguiente comando:
 
     telnet www.dr-chuck.com 80
 
-\index{TCP ports}
-\index{port 80}
-The first parameter is a domain name (an IP address would work here as well)
-and a port to connect to on that host. We use the port to indicate which
-application server we would like to connect to. Port 80 is where we typically
-expect to find an HTTP (web) server application on a host. If there is no web
-server listening on port 80, our connection will time out and fail. But if
-there is a web server, we will be connected to that web server and whatever we
-type on our keyboard will be sent directly to the server. At this point, we
-need to know the HTTP protocol and type the commands precisely as expected.
-If we don't know the protocol, the web server will not be too friendly. Here
-is an example of things not going well:
+\index{puertos TCP}
+\index{puerto 80}
+El primer parámetro es un nombre de dominio (se puede usar también una dirección IP)
+y un puerto al que conectarse en ese equipo. Usamos el puerto para indicar a qué
+servidor de aplicación queremos conectarnos. El puerto 80 es donde normalmente
+esperaríamos encontrar una aplicación servidor HTTP (web) en un equipo. Si no hay
+un servidor web escuchando en el puerto 80, se agotará el tiempo de conexión y se
+producirá un error. Pero si existe un servidor web, conectaremos con él y cualquier
+cosa que escribamos en nuestro teclado será enviada directamente al servidor. En este
+punto, necesitamos conocer el protocolo HTTP y escribir los comandos precisamente como
+se esperan. Si no conocemos el protocolo, el servidor web no se mostrará muy amistoso.
+Aquí vemos un ejemplo de lo que ocurre cuando las cosas no van bien:
 
     telnet www.dr-chuck.com 80
     Trying 198.251.66.43...
@@ -167,19 +169,20 @@ is an example of things not going well:
     </body></html>
     Connection closed by foreign host.
 
-We type "telnet" in the terminal requesting a connection to port 80
-(the web server) on the host www.dr-chuck.com.  You can see as our transport
-layer is looking up the domain name, finding that the actual address is
-"198.251.66.43", and then making a successful connection to that server. Once
-we are connected, the server waits for us to type a command followed by
-the enter or return key. Since we don't know the protocol, we type
-"HELP" and enter. The server is not pleased, gives us an error message, and
-then closes the connection. We do not get a second chance. If we do not know
-the protocol, the web server does not want to talk to us.
 
-\index{Hacking HTTP}
-But let's go back and read section 5.3.2 of the RFC-7230 document and try again
-to request a document using the correct syntax:
+Escribimos "telnet" en el terminal solicitando una conexión al puerto 80 (el servidor
+web) del equipo www.dr-chuck.com. Puedes ver cómo nuestra capa de transporte comienza
+investigando el nombre de dominio, y encuentra que la dirección real es "198.251.66.43",
+realizando a continuación una conexión con éxito a ese servidor. Una vez que estamos
+conectados, el servidor espera que escribamos un comando seguido por la tecla intro
+(*enter*) o retorno (*return*). Como no conocemos el protocolo, tecleamos "HELP" (ayuda)
+e intro. Al servidor no le gusta, nos envía un mensaje de error y luego cierra la
+conexión. No disponemos de un segunda oportunidad. Si no conocemos el protocolo, el
+servidor web no quiere hablar con nosotros.
+
+\index{Pirateando HTTP}
+Pero volvamos atrás y leamos la sección 5.3.2 del documento RFC-7230 antes de probar
+de nuevo a solicitar un documento usando la sintaxis correcta:
 
     telnet www.dr-chuck.com 80
     Trying 198.251.66.43...
@@ -200,66 +203,69 @@ to request a document using the correct syntax:
     </p>
     Connection closed by foreign host.
 
-We make the connection to the web browser again using telnet, then we send a
-GET command that indicates which document we want to retrieve. We use
-version 1.0 of the HTTP protocol because it is simpler than HTTP 1.1.
-Then we send a blank line by pressing "return" or "enter" to indicate that
-we are done with our request.
+Realizamos la conexión con el navegador web de nuevo usando *telnet*, luego enviamos
+un comando GET que indica qué documento queremos recuperar. Usamos la versión 1.0
+del protocolo HTTP porque es más sencilla que la HTTP 1.1. Luego enviamos una línea
+en blanco pulsando "retorno" o "intro" para indicar que hemos terminado con nuestra
+petición.
 
-![Hacking HTTP By Hand](../sketchnote/Hacking_HTTP)
+![Pirateando HTTP de forma manual](../sketchnote/Hacking_HTTP)
 
 \index{HTML}
 \index{HyperText Markup Language}
-Since we have sent the proper request, the host responds with a
-series of headers describing the document, followed by a blank line, then it
-sends the actual document.  
+\index{Lenguaje de Marcas de HiperTexto}
+Como le hemos enviado la petición correcta, el equipo remoto responde con una series
+de cabeceras describiendo el documento, seguido por una línea en blanco, y luego
+envía el documento real.
 
-\index{HTTP status code!200}
-\index{HTTP status code!301}
-\index{HTTP status code!404}
-The headers communicate metadata (data about data) about the document that we
-have asked to retrieve. For example, the first line contains a status code.
+\index{código de estado HTTP!200}
+\index{código de estado HTTP!301}
+\index{código de estado HTTP!404}
+Las cabeceras comunican metadatos (datos acerca de los datos) del documento que
+hemos solicitado. Por ejemplo, la primera línea contiene un código de estado (*status
+code*).
 
-In this example, the status code of "200" means that things went well. A status
-code of "404" in the first line of the headers indicates that the requested 
-document was not found. A status code of "301" indicates that the document
-has moved to a new location.
+En este ejemplo, el código de estado "200" significa que las cosas han ido bien.
+Un código de estado "404" en la primera línea de las cabeceras indicaría que el
+documento solicitado no se ha encontrado. Un código de estado "301" indicaría que
+el documento se ha movido a una nueva ubicación.
 
-The status codes for HTTP are grouped into ranges: 
-2XX codes indicate success, 3XX codes are for redirecting, 
-4XX codes indicate that the client application did something wrong,
-and 5xx codes indicate that the server did something wrong.
+Los códigos de estado de HTTP están divididos en rangos:
+Los códigos 2XX indican éxito, los códigos 3XX son para redirigir, 
+los códigos 4XX indican que la aplicación cliente hizo algo incorrecto,
+y los códigos 5xxx indican que el servidor hizo algo incorrecto.
 
-This is a HyperText Markup Language (HTML) document, so it is marked up
-with tags like \<h1\> and \<p\>. When your browser receives
-the document in HTML format, it looks at the markup in the document, interprets
-it, and presents you a formatted version of the document.
+Como se trata de un documento de Lenguaje de Marcas de HiperTexto (HTML), dispone de
+marcas como \<h1\> y \<p\>. Cuando es un navegador quien recibe el documento en formato
+HTML, se fija en las marcas del documento, las interpreta y nos presenta una versión
+del documento con formato.
 
-The IMAP Protocol for Retrieving Mail
--------------------------------------
+El Protocolo IMAP para Recuperación de Correo
+---------------------------------------------
 
-The HTTP protocol is only one of many client/server application protocols used on the
-Internet. Another common protocol is used so that a mail application running
-on your computer can retrieve mail from a central server. Since your personal
-computer might not be turned on at all times, when mail is sent to you it is
-sent to a server and stored on that server until you turn on your computer and
-retrieve any new email.
+El protocolo HTTP sólo es uno más de los muchos protocolos de aplicación
+cliente/servidor utilizados en Internet. Otro protocolo habitual se usa para que una
+aplicación de correo que se esté ejecutando en tu equipo pueda recuperar correo desde
+un servidor central. Dado de que tu computador personal puede no estar encendido
+todo el tiempo, cuando alguien te envía un correo en realidad es dirigido a un servidor
+y almacenado allí hasta que enciendas tu equipo y recuperes cualquier correo nuevo.
 
 \index{RFC-3501 IMAP}
-\index{mail protocol}
+\index{protocolo de correo}
 \index{IMAP}
-Like many application standards, the Internet Message Access Protocol (IMAP) is
-described in a series of Request For Comment (RFC) documents starting with this
-RFC:
+Como muchas aplicaciones estándar, el Protocolo de Acceso a Mensajes de Internet
+(*Internet Message Access Protocol* o IMAP) está descrito en una serie de documentos
+de Peticiones de Comentarios (*Request For Comment* o RFC), comenzando por este:
 
     https://tools.ietf.org/html/rfc3501
 
-IMAP is a more complicated protocol than the web protocol, so we won't be able
-to use the telnet command to fake the protocol. But if you were going to
-develop a mail reading application, you could carefully read this document and
-develop code to have a successful conversation with a standards-compliant IMAP
-server. Here is a simple example from section 6.3.1 of the above document
-showing what the client (C:) sends and how the server (S:) responds:
+El IMAP es un protocolo más complicado que el protocolo web, de modo que no seríamos
+capaces de usar comandos *telnet* para simular ese protocolo. Pero si fueras a
+desarrollar una aplicación de lectura de correo, podrías estudiar cuidadosamente
+el documento y crear código para mantener una conversación con éxito con un servidor
+que cumpla con los estándares IMAP. He aquí un ejemplo sencillo de la sección 6.3.1
+del documento anterior, donde se muestra lo que el cliente (C:) envía y cómo responde
+el servidor (S:):
 
     C: A142 SELECT INBOX
     S: * 172 EXISTS
@@ -271,298 +277,303 @@ showing what the client (C:) sends and how the server (S:) responds:
     S: * OK [PERMANENTFLAGS (\Deleted \Seen \*)] Limited
     S: A142 OK [READ-WRITE] SELECT completed
 
-The messages that are sent by the client and server are not designed to be
-viewed by an end user so they are not particularly descriptive. These messages
-are precisely formatted and are sent in a precise order so that they can be
-generated and read by networked computer applications on each end of the
-connection.
+Los mensajes que se envían entre sí el cliente y el servidor no están diseñados para ser
+visualizados por un usuario final, de modo que no son particularmente descriptivos.
+Estos mensajes están formateados con precisión y son enviados en un orden exacto para
+que puedan ser generados y leídos por aplicaciones informáticas en red desde cada
+extremo de la conexión.
 
-Flow Control
-------------
+Control de Flujo
+----------------
 
-\index{flow control}
-\index{window size}
-When we looked at the Transport layer, we talked about the "window size", which
-was the amount of data that the Transport layer on the sending computer will send
-before pausing to wait for an acknowledgement.
+\index{control de flujo}
+\index{tamaño de ventana}
+Cuando estudiamos la capa de Transporte, hablamos acerca del "tamaño de ventana", que
+era la cantidad de datos que enviará la capa de Transporte en el equipo emisor
+antes de detenerse y esperar una confirmación.
 
-![Buffering in the Transport Layer](../images/transport-buffer)
+![Almacenamiento en Buffer en la Capa de Transporte](../images/transport-buffer)
 
-In this figure, we see a message broken into packets, with some of the 
-packets sent and acknowledged. Six packets have been sent but not yet
-acknowledged and the sending Transport layer has reached the limit of
-the transmit window, so it is pausing until it receives an acknowledgement
-from the receiving computer's Transport layer. The receiving computer
-has received three packets, one of which is out of order.
+En esta figura, vemos un mensaje dividido en paquetes, con algunos de los paquetes
+ya enviados y confirmados. Seis paquetes han sido enviados pero aún no han sido
+confirmados, y la capa de Transporte del emisor ha alcanzado el límite de su ventana
+de transmisión, de modo que está detenido hasta que reciba una confirmación desde la
+capa de Transporte del equipo receptor. El equipo receptor ha recibido tres paquetes,
+uno de los cuales está desordenado.
 
-When we were looking at this example before from the point of view of the
-Transport layer, we ignored where the packets to be sent were coming from
-and where the packets were going to in the receiving computer. Now that
-we are looking at the Application layer, we can add the two applications
-that are the source and the destination of the stream of data.
+Cuando examinamos antes este ejemplo desde el punto de vista de la capa de Transporte,
+ignorábamos de dónde venían los paquetes enviados y a dónde se dirigían esos
+paquetes dentro del equipo receptor. Ahora que estamos considerando la capa de
+Aplicación, podemos incluir las dos aplicaciones que son el origen y el destino de
+la cadena de datos.
 
-Let's assume the web browser has made a transport connection to the web server
-and has started downloading an image file. The web server has opened the
-image file and is sending the data from the file to its Transport layer as
-quickly as possible. But the Transport layer must follow the rules of
-window size, so it can only send a certain amount of data at a time.
-When the window fills up, the web server is paused until the Transport
-layer on the destination computer has started to receive and acknowledge
-packets.
+Supongamos que el navegador web ha realizado una conexión de transporte con el
+servidor web y ha comenzado a descargar un fichero de imagen. El servidor web habrá
+abierto el archivo de imagen y estará enviando los datos desde el fichero hacia su
+capa de Transporte tan rápido como le sea posible. Pero la capa de Transporte debe
+seguir las reglas del tamaño de ventana, de modo que sólo podrá enviar una cierta
+cantidad de datos cada vez. Cuando la ventana se llene, el servidor web se
+detendrá hasta que la capa de Transporte en el equipo de destino empiece
+a recibir y a enviar confirmaciones de los paquetes.
 
-As the Transport layer on the destination computer starts to receive packets,
-reconstruct the stream of data, and acknowledge packets, it delivers the
-reconstructed stream of packets to the web browser application display on
-the user's screen. Sometimes on a slow connection you can see your browser
-"paint" pictures as the data is downloaded. On a fast connection the data
-comes so quickly that the pictures appear instantaneously.
+A medida que la capa de Transporte del equipo de destino comienza a recibir paquetes,
+reconstruye la cadena de datos, envía confirmaciones de recepción y entrega la
+cadena de paquetes reconstruida a la ventana de visualización del navegador web en
+la pantalla del usuario. A veces, en una conexión lenta, se puede ver al navegador
+"pintar" las imágenes a medida que se descargan los datos. En conexiones rápidas los
+datos llegan tan velozmente que las imágenes aparecen de forma instantánea.
 
-If we redraw our picture of packets in the Transport layer, adding both
-of the application layers where the packets are in the middle of an image,
-now it looks like this:
+Si volvemos a dibujar el esquema de los paquetes en la capa de Transporte,
+añadiendo ahora ambas capas de aplicación, y teniendo en cuenta que los paquetes que
+están en el medio serían parte de una imagen, resultaría algo como esto:
 
-![Buffering in the Application and Transport Layers](../images/application-transport-buffer)
+![Almacenamiento en Buffer en las Capas de Aplicación y Transporte](../images/application-transport-buffer)
 
-The web server is reading the image file ('F') and sending it as a stream to the web
-browser as quickly as it can send the data.  The source Transport layer has
-broken the stream into packets and used IP to send the packets to the
-destination computer. 
+El servidor web está leyendo el fichero de imagen ('F') y enviándolo como una cadena
+hacia el navegador web, tan rápido como se le permite enviar esos datos. La capa de
+Transporte del origen ha dividido la cadena en paquetes y usa IP para enviar los
+paquetes hacia el equipo de destino.
 
-The Transport layer has sent six packets ('S') and has stopped
-sending because it has reached its window size and paused the web server.
-Three of those six packets have made it to the Transport layer on the
-destination computer ('R') and three of the packets are still making their way
-across the Internet ('S'). 
+La capa de Transporte ha enviado seis paquetes ('S') y luego ha dejado de enviar,
+por haber alcanzado su tamaño de ventana y el servidor web se ha puesto a la espera.
+Tres de esos seis paquetes han llegado a la capa de Transporte del equipo de destino
+('R'), y los otros tres están aún realizando su viaje a través de Internet ('S').
 
-As the destination Transport layer pieces the stream
-back together, it both sends an acknowledgement (ACK) and delivers the data to the
-receiving application (the web browser). The web browser reconstructs
-the image ('A') and displays it to the user as the data is received.
+A medida que la capa de Transporte de destino va uniendo de nuevo los trozos de la
+cadena, envía una confirmación (ACK) y entrega los datos a la aplicación receptora (el
+navegador web). El navegador web reconstruye la imagen ('A') y la muestra al usuario a
+medida que se van recibiendo los datos.
 
-A key thing to notice in this picture is that the transport layers do not keep
-the packets for the entire file. They only retain packets that are "in transit"
-and unacknowledged. Once packets are acknowledged and delivered to the
-destination application, there is no reason for either the source or destination
-Transport layer to hold on to the packets.
+Un detalle clave en el que fijarse en este dibujo es que las capas de transporte
+no conservan los paquetes del fichero completo. Sólo retienen los paquetes que están
+"en tránsito" y sin confirmar. Una vez que los paquetes son confirmados y entregados
+a la aplicación de destino, no hay ninguna razón para que ninguna de las capas de
+Transporte (ni la de origen ni la de destino) mantengan esos paquetes.
 
-When the acknowledgment flows back from the destination computer to the source
-computer, the Transport layer on the source computer unpauses the web server
-application and the web server continues to read data from the file and send it
-to the source Transport layer for transmission.
+Cuando la confirmación llega desde el equipo de destino hasta el de origen,
+la capa de Transporte del equipo de origen activa de nuevo la aplicación servidor
+web y el servidor continúa leyendo datos desde el archivo y enviándolos hacia
+la capa de Transporte de origen para que esta los transmita a través de la red.
 
-This ability to start and stop the sending application to make sure we send
-data as quickly as possible without sending data so fast that they clog up the
-Internet is called "flow control". The applications are not responsible for
-flow control, they just try to send or receive data as quickly as possible and
-the two transport layers start and stop the applications as needed based on the
-speed and reliability of the network.
+Esta capacidad de iniciar y detener la aplicación que emite los datos para asegurarse
+de enviarlos lo más rápido posible sin llegar a colapsar Internet recibe
+el nombre de "control de flujo". Las aplicaciones no son
+responsables del control de flujo, ellas sólo tratan de enviar o recibir datos
+tan rápidamente como les sea posible, y las dos capas de transporte inician y
+detienen las aplicaciones a medida que lo necesitan, basándose en la velocidad
+y fiabilidad de la red.
 
-Writing Networked Applications
-------------------------------
+Escritura de Aplicaciones en Red
+--------------------------------
 
 \index{socket}
-The applications which send and receive data over the network are written
-in one or more programming languages.   Many programming languages have
-libraries of code that make it quite simple to write application code to
-send and receive data across the network.
-With a good programming library, making a connection to an application
-running on a server, sending data to the server, and receiving data
-from the server is generally as easy as reading and writing a file.
+Las aplicaciones que envían y reciben datos a través de la red están escritas
+en uno o más lenguajes de programación. Muchos lenguajes de programación tienen
+librerías[^1] de código que hacen que resulte bastante sencillo escribir
+código para enviar y recibir datos a través de la red.
+Con una buena librería de programación, realizar una conexión con una aplicación
+que esté corriendo en un servidor, y enviar y recibir datos de ese servidor
+resulta generalmente tan sencillo como leer y escribir un fichero.
 
-\index{programming sockets}
-As an example, the code below is all it takes in the Python
-programming language to make a connection to a web server
-and retrieve a document:
+\index{sockets en programación}
+Como ejemplo, el siguiente código es todo lo que se necesita en el lenguaje de
+programación Python para realizar una conexión con un servidor web y
+recuperar un documento:
 
-![Programming with Sockets in Python](../images/python-socket)
+![Programación con Sockets en Python](../images/python-socket)
 
-While you may or not know the Python programming language, the key point is
-that it only takes ten lines of application code to make and use a network
-connection. This code is simple because the Transport, Internetwork, and Link
-layers so effectively solve the problems at each of their layers that
-applications using the network can ignore nearly all of the details of how the
-network is implemented.
+Aunque tal vez no conozcas el lenguaje de programación Python, el detalle clave
+es que sólo se necesitan diez líneas de código para establecer y usar una conexión
+de red. Este código es sencillo porque las capas de Transporte, Internet y Acceso
+resuelven los problemas en cada una de sus capas tan eficazmente que las aplicaciones
+que usan la red pueden ignorar casi todos los detalles acerca de cómo está
+implementada esa red.
 
-In the Python application, in this line of code
+En la aplicación Python, en esta línea de código
 
     mysock.connect(('www.py4inf.com', 80))
 
-we have specified that we are connecting to the application that is listening
-for incoming connections on port 80 on the remote computer www.py4inf.com.
+hemos especificado que estamos conectándonos a la aplicación que está escuchando
+las conexiones entrantes en el puerto 80 del equipo remoto www.py4inf.com.
 
-By choosing
-port 80 we are indicating that we want to connect to a World Wide Web server on
-that host and are expecting to communicate with that server using the HyperText
-Transport Protocol.
+Al elegir
+el puerto 80 estamos indicando que queremos conectarnos a un servidor World Wide Web
+en ese equipo y que esperamos comunicarnos con ese servidor usando el Protocolo de
+Transporte de HiperTexto (HTTP).
 
-Summary
+Resumen
 -------
 
-The entire purpose of the lower three layers (Transport, Internetwork, and
-Link) is to make it so that applications running in the Application layer can
-focus the application problem that needs to be solved and leave
-virtually all of the complexity of moving data across a network to be
-handled by the lower layers of the network model.
+El objetivo del conjunto de las tres capas inferiores (Transporte, Internet y
+Conexión) es conseguir que la aplicación que se ejecute en la capa de Aplicación
+pueda centrarse en los problemas que esa aplicación concreta necesita resolver,
+y deje virtualmente que toda la complejidad del movimiento de datos a través de la red
+sea gestionado por las capas inferiores del modelo de red.
 
-Because this approach makes it so simple to build networked applications, we
-have seen a wide range of networked applications including web browsers, mail
-applications, networked video games, network-based telephony applications, and
-many others. And what is even more exciting is that it is easy to experiment
-and build whole new types of networked applications to solve problems that
-have not yet been imagined.
+Gracias a que este método proporciona una gran facilidad para crear aplicaciones de red,
+disponemos de una amplia variedad de aplicaciones en red, como navegadores web,
+aplicaciones de correo, vídeo-juegos en red, aplicaciones de telefonía basadas
+en red, y muchas otras. Y lo que resulta aún más excitante es que sea sencillo
+experimentar y crear cualquier tipo nuevo de aplicación en red para resolver
+problemas que quizás no han sido ni siquiera imaginados aún.
 
-Glossary
+Glosario
 --------
 
-**HTML**: HyperText Markup Language.  A textual format that marks up 
-text using tags surrounded by less-than and greater-than characters.
-Example HTML looks like: \<p\>This is \<strong\>nice\</strong\>\</p\>.
+**código de estado**: Un aspecto del protocolo HTTP que indica el éxito o fracaso
+general de la solicitud de un documento. El código de estado HTTP más conocido
+es el "404", que es la forma que tiene un servidor HTTP de decirle al cliente
+(por ejemplo, un navegador) que el documento solicitado no se ha podido encontrar.
 
-**HTTP**: HyperText Transport Protocol.  An Application layer protocol
-that allows web browsers to retrieve web documents from web servers.
+**control de flujo**: Cuando un equipo emisor reduce la velocidad para asegurarse
+de que no satura ni la red ni el equipo de destino. El control de flujo también
+consigue que el equipo emisor aumente la velocidad a la que envía los datos
+cuando está seguro de que la red y el equipo de destino pueden gestionar
+velocidades de trasmisión de datos más rápidas.
 
-**IMAP**: Internet Message Access Protocol.  A protocol that allows
-mail clients to log into and retrieve mail from IMAP-enabled mail servers.
+**HTML**: *HyperText Markup Language* (Lenguaje de Marcas de HiperTexto). Un formato
+textual que resalta texto usando etiquetas rodeadas de los símbolos menor-que y
+mayor-que. 
+Un ejemplo de HTML podría tener este aspecto: \<p\>Esto es \<strong\>bonito\</strong\>\</p\>.
 
-**flow control**: When a sending computer slows down to make
-sure that it does not overwhelm either the network or the destination computer.
-Flow control also causes the sending computer to increase the speed at which data
-is sent when it is sure that the network and destination computer can handle the
-faster data rates.
+**HTTP**: *HyperText Transport Protocol* (Protocolo de Transporte de HiperTexto).
+Un protocolo de capa de Aplicación que permite a los navegadores web recuperar
+documentos desde los servidores web.
 
-**socket**: A software library available in many programming languages
-that makes creating a network connection and exchanging data
-nearly as easy as opening and reading a file on your computer.
+**IMAP**: *Internet Message Access Protocol* (Protocolo de Acceso a Mensajes
+de Internet). Un protocolo que permite a los clientes de correo iniciar sesión
+y recuperar correo desde los servidores de correo que permitan IMAP.
 
-**status code**: One aspect of the HTTP protocol that indicates the overall 
-success or failure of a request for a document. The most well-known
-HTTP status code is "404", which is how an HTTP server tells an 
-HTTP client (i.e., a browser) that it the requested document 
-could not be found.
+**navegador web**: Una aplicación cliente que se ejecuta en tu equipo para
+recuperar y mostrar páginas web.
 
-**telnet**: A simple client application that makes TCP connections
-to various address/port combinations and allows typed data to be sent across
-the connection.  In the early days of the Internet, telnet was used
-to remotely log in to a computer across the network.
+**servidor web**: Una aplicación que envía (sirve) páginas web.
 
-**web browser**: A client application that you run on your computer
-to retrieve and display web pages.
+**socket**: Una librería de software disponible en muchos lenguajes de programación
+que consigue que crear una conexión de red e intercambiar datos a través de ella
+resulte casi tan sencillo como abrir y leer un fichero del mismo equipo.
 
-**web server**: An application that deliver (serves up) Web pages
+**telnet**: Una sencilla aplicación cliente que realiza conexiones TCP con diversas
+combinaciones de dirección/puerto, y que permite teclear datos para ser enviados
+a través de la conexión. En los primeros días de Internet, *telnet* se usaba
+para iniciar sesión remotamente en un equipo a través de la red.
 
 
 
-Questions
+Preguntas
 ---------
 
-You can take this quiz online at http://www.net-intro.com/quiz/
+Puedes realizar este cuestionario online en http://www.net-intro.com/quiz/
 
-1. Which layer is right below the Application layer?
-a) Transport
-b) Internetworking
-c) Link Layer
-d) Obtuse layer
+1. ¿Qué capa está justo debajo de la capa de Aplicación?
+a) Transporte
+b) Internet
+c) Capa de Acceso
+d) Capa Obtusa
 
-2. What kind of document is used to describe widely used
-Application layer protocols?
+2. ¿Qué tipo de documentos se usan para describir en detalle los protocolos
+usados por la capa de Aplicación?
 a) DHCP
 b) RFC
 c) APPDOC
 d) ISO 9000
 
-3. Which of these is an idea that was invented in the Application layer?
+3. ¿Cuál de las siguientes es una idea que fue inventada en la capa de Aplicación?
 a) 0f:2a:b3:1f:b3:1a
 b) 192.168.3.14
 c) www.khanacademy.com
 d) http://www.dr-chuck.com/
 
-4. Which of the following is *not* something that the Application layer
-worries about?
-a) Whether the client or server starts talking first
-b) The format of the commands and responses exchanged across a socket
-c) How the window size changes as data is sent across a socket
-d) How data is represented as it is sent across the network to 
-assure interoperability.
+4. ¿Cuál de los siguientes es un tema del que *no* debe preocuparse la capa
+de Aplicación?
+a) Cuál de los equipos (cliente o servidor) inicia la comunicación
+b) El formato de los comandos y respuestas intercambiados a través de un *socket*
+c) Cómo va cambiando el tamaño de ventana a medida que los datos van siendo enviados
+a través de un socket
+d) El modo en el que se representan los datos al ser enviados a través de la red para
+garantizar la interoperabilidad.
 
-5. Which of these is an Application layer protocol?
+5. ¿Cuál de los siguientes es un protocolo de la capa de Aplicación?
 a) HTTP
 b) TCP
 c) DHCP
 d) Ethernet
 
-6. What port would typically be used to talk to a web server?
+6. ¿Qué puerto se utiliza habitualmente para comunicarse con un servidor web?
 a) 23
 b) 80
 c) 103
 d) 143
 
-7. What is the command that a web browser sends to a web server
-to retrieve an web document?
+7. ¿Cuál es el comando que envía un navegador a un servidor web para recuperar
+un documento web?
 a) RETR
 b) DOCUMENT
 c) 404
 d) GET
 
-8. What is the purpose of the "Content-type:" header when you
-retrieve a document over the web protocol?
-a) Tells the browser how to display the retrieved document
-b) Tells the browser where to go if the document cannot be found
-c) Tells the browser whether or not the retrieved document is empty
-c) Tells the browser where the headers end and the content starts
+8. ¿Cuál es la función de la cabecera "Content-type" cuando se recupera un
+documento a través del protocolo web?
+a) Decirle al navegador cómo mostrar el documento recuperado
+b) Decirle al navegador dónde ir si no se puede encontrar el documento
+c) Decirle al navegador si el documento recuperado está vacío o no
+c) Decirle al navegador dónde terminan las cabeceras y empieza el contenido
 
-9. What common UNIX command can be used to send simple commands to 
-a web server?
+9. ¿Qué comando habitual en UNIX se puede utilizar para enviar comandos sencillos
+a un servidor web?
 a) ftp
 b) ping
 c) traceroute
 d) telnet
 
-10. What does an HTTP status code of "404" mean?
-a) Document has moved
-b) Successful document retrieval
-c) Protocol error
-d) Document not found
+10. ¿Qué significa un código de estado HTTP "404"?
+a) El documento ha cambiado de ubicación
+b) Recuperación de documento correcta
+c) Error de protocolo
+d) Documento no encontrado
 
-11. What characters are used to mark up HTML documents?
-a) Less-than and greater-than signs < > 
-b) Exclamation points ! 
-c) Square brackets [ ]
-d) Curly brackets { }
+11. ¿Qué símbolos se utilizan para resaltar la sintaxis en los documentos HTML?
+a) Los símbolos menor-que y mayor-que < > 
+b) Símbolos de exclamación ! 
+c) Paréntesis cuadrados (corchetes) [ ]
+d) Llaves { }
 
-12. What is a common application protocol for retrieving mail?
+12. ¿Cuál de los siguientes es un protocolo usado habitualmente para recuperar correo?
 a) RFC
 b) HTML
 c) ICANN
 d) IMAP
 
-13. What application protocol does RFC15 describe?
+13. ¿Qué protocolo de aplicación describe el RFC15?
 a) telnet
 b) ping
 c) traceroute
 d) www
 
-14. What happens to a server application that is sending a large
-file when the TCP layer has sent enough data to fill the window size
-and has not yet received an acknowledgement?
-a) The application switches its transmission to a new socket
-b) The application crashes and must be restarted
-c) The application is paused until the remote computer acknowledges
-that it has received some of the data
-d) The closest gateway router starts to discard packets that 
-would exceed the window size
+14. ¿Qué le ocurre a una aplicación servidor que está enviando un fichero extenso
+cuando la capa TCP ha enviado datos suficientes para llenar el tamaño de ventana
+y no ha recibido aún una confirmación de recepción?
+a) La aplicación cambia su transmisión a un socket nuevo
+b) La aplicación falla y debe ser reiniciada
+c) La aplicación se queda en pausa hasta que el equipo remoto confirma que ha recibido
+parte de los datos
+d) El router más cercano que haga de puerta de acceso empieza a descartar los paquetes
+que excederían el tamaño de la ventana
 
-15. What is a "socket" on the Internet?
-a) A way for devices to get wireless power
-b) A way for devices to get an IP address
-c) An entry in a routing table
-d) A two-way data connection between a pair of client and server applications
+15. ¿Qué es un "socket" en Internet?
+a) Un modo de que los dispositivos obtengan energía de forma inalámbrica
+b) Un modo de que los dispositivos obtengan una dirección IP
+c) Una entrada en una tabla de enrutamiento
+d) Una conexión bi-direccional entre un par de aplicaciones cliente y servidor
 
-16. What must an application know to make a socket connection in software?
-a) The address of the server and the port number on the server
-b) The route between the source and destination computers
-c) Which part of the IP address is the network number
-d) The initial size of the TCP window during transmission
+16. ¿Qué debe conocer el código de una aplicación para realizar una conexión a
+través de un socket?
+a) La dirección del servidor y el número de puerto en ese servidor
+b) La ruta entre los equipos de origen y destino
+c) Qué parte de la dirección IP se corresponde con la dirección de red
+d) El tamaño inicial de la ventana TCP durante la transmisión
 
 
-
-
+[^1]: Aunque la traducción correcta de *libraries of code* sería *bibliotecas de
+código*, resulta bastante habitual entre la comunidad de programadores llamarles
+*librerías de código*, por lo que he decidido utilizar ese término. (Nota del trad.)

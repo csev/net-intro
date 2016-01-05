@@ -1,88 +1,91 @@
-Secure Transport Layer
-======================
+Capa de Transporte Seguro
+=========================
 
-\index{Transport Layer}
-\index{Layer!Transport}
-In the early days of the Internet, networks were small and all of the
-routers were in secure locations. As long as each computer connected
-to the Internet protected itself from unwanted incoming connections,
-it was felt that there was no need to protect data from prying eyes
-while it was crossing the network.
+\index{Capa de Transporte}
+\index{Capa!Transporte}
+En los primeros días de Internet, las redes eran pequeñas y todos los routers estaban
+en ubicaciones seguras. Con tal que cada equipo conectado a Internet se protegiera
+a sí mismo frente a conexiones entrantes no deseadas, no parecía necesario
+proteger los datos frente a ojos curiosos mientras atravesaban la red.
 
-So the Link, Internetwork, and Transport layers were focused on the
-efficient movement of data and solving the problems of a large-scale
-shared distributed network without worrying about the privacy of that data.
+De modo que las capas de Acceso, Internet y Transporte estaban centradas en conseguir
+el movimiento eficiente de los datos y en resolver los problemas de las
+redes distribuidas compartidas a gran escala, sin preocuparse acerca de la privacidad
+de esos datos.
 
-But as the use of the Internet grew rapidly in the late 1980s and literally
-exploded when the Web became mainstream in 1994, security and privacy of
-network traffic became very important problems to solve. When we began
-using the Internet to conduct commerce and credit cards and bank account
-numbers were being routinely sent across the network, securing data
-became essential. And when we started using wireless technologies like WiFi,
-security became necessary for even the simplest uses of the Internet.
+Pero a medida que el uso de Internet iba creciendo con rapidez a finales de los 80,
+y cuando literalmente sufrió una explosión con la popularización de la Web en 1994,
+la seguridad y la privacidad del tráfico de red se convirtieron en problemas muy
+importantes que resolver. Cuando se empezó a utilizar Internet como vehículo para el
+comercio y las tarjetas de crédito y números de cuentas bancarias empezaron a circular
+de forma cotidiana por la red, asegurar esos datos se convirtió en esencial.
+Y cuando se empezaron a utilizar tecnologías inalámbricas como el WiFi, la seguridad
+se convirtió en algo necesario incluso para los usos más básicos de Internet.
 
-\index{physical security}
-There are two general approaches to securing network activity. The first
-makes sure that all of the network hardware (routers and links) is in
-physically secure locations so it is not possible for someone to sneak in
-and monitor traffic while it is crossing the Internet. This approach is not
-practical for hundreds of thousands of network routers owned and operated by
-many different organizations. While you might be able to ensure that some of
-the router operators adhered to strict security procedures and policies,
-sooner or later a mistake will be made. And once WiFi was added to the mix
-and your packets went over radio waves, a network attacker could just sit
-in a coffee shop and intercept packets as they passed through the air.
+\index{seguridad física}
+Existen dos métodos generales para asegurar la actividad en la red. El primero se
+basa en asegurarse de que todo el hardware de red (routers y conexiones) se encuentre
+en ubicaciones físicamente seguras, de modo que no sea posible que alguien se cuele
+y monitorice el tráfico que circula por Internet. Este método no resulta práctico
+para cientos de miles de routers de red que pertenecen y son operados por muchas
+organizaciones diferentes. Aunque fueras capaz de asegurarte de que algunos de los
+operadores de los routers sigan estrictas normas y procedimientos de seguridad,
+tarde o temprano alguien cometerá un error. Y en cuanto el WiFi se añadió a la
+mezcla y los paquetes empezaron a viajar a través de ondas de radio, un atacante
+de la red ya podía simplemente sentarse en una cafetería e interceptar paquetes,
+a medida que pasaban por el aire.
 
-Under these conditions, the only reasonable solution is to encrypt data in
-your computer before it is sent across its first physical link, and then decrypt
-the data in the destination computer after it arrives. Using this approach, we
-assume that an attacker can see all of the packets that you send, but they
-cannot decrypt the data that they have captured. The encryption also guarantees
-that there is no way to alter your data while it is crossing the Internet.
+En esas condiciones, la única solución razonable pasa por encriptar los datos en
+tu equipo antes de enviarlos a través de su primera conexión física, y luego
+desencriptar esos datos en el equipo de destino después de su recepción. Al usar
+este método, asumimos que un atacante puede ver todos los paquetes que se envían,
+pero no puede desencriptar los datos que ha capturado. La encriptación también
+garantiza que no haya forma de alterar tus datos durante su viaje a través de
+Internet.
 
-Encrypting and Decrypting Data
-------------------------------
+Encriptación y Desencriptación de Datos
+---------------------------------------
 
-\index{Caesar Cipher}
-\index{plain text}
-\index{cipher text}
-The concept of protecting information so it cannot be read while it is being
-transported over an insecure medium is thousands of years old. The leaders
-in Roman armies sent coded messages to each other using a code called the
-"Caesar Cipher". The simplest version of this approach is to take each of the
-characters of the actual message (we call this "plain text") and shift
-each character a fixed distance down the alphabet to produce the
-scrambled message or "ciphertext".
+\index{Cifrado César}
+\index{texto plano}
+\index{texto cifrado}
+La idea de proteger la información para que no pueda ser leída cuando está siendo
+transportada a través de un medio inseguro tiene cientos de años de antigüedad.
+Los generales de las legiones romanas se enviaban entre ellos mensajes codificados
+usando un código llamado "Cifrado César". La versión más simple de este método
+consiste en coger cada una de las letras del mensaje real (que llamaremos "texto
+plano"), y desplazarla una distancia fija hacia delante en el alfabeto, para
+producir el mensaje codificado o "texto cifrado".
 
-Then we send the ciphertext via the courier or other insecure transport to
-the other person. The courier cannot read the message because it appears
-to be random characters unless you know the technique used to encode the
-message.
+Luego se envía el texto cifrado hacia otra persona, a través de un mensajero o
+utilizando otro transporte inseguro. El mensajero no puede leer el mensaje, ya
+que parece tratarse de una serie de caracteres aleatorios, a menos que sepas cual
+ha sido la técnica utilizada para codificar el mensaje.
 
-As long as the person receiving the message knew the number used to
-shift the message, they could unshift the characters in the encoded message
-to reproduce the original message.
+Con tal de que la persona que reciba el mensaje sepa cuál ha sido el número utilizado
+para desplazar las letras, podrá decodificarlas para reproducir el mensaje original.
 
-Here is a simple example of plain text and ciphertext using a shift of one:
+Aquí podemos ver un ejemplo sencillo de texto plano y texto cifrado usando un
+desplazamiento de una posición:
 
-    Plain text:  Go to the river
-    Cipher text: Hp up uif sjwfs
+    Texto plano:   Id hacia el río
+    Texto cifrado: Je ibdjb fm sjp
 
-\index{encrypt}
-\index{decrypt}
-We user the word "encrypt" to describe transforming the plain text to the
-ciphertext and "decrypt" to describe the reverse process.
+\index{encriptar}
+\index{desencriptar}
+Se utiliza la palabra "encriptar" para describir la transformación del texto plano
+en texto cifrado, y "desencriptar" para describir el proceso contrario.
 
-The Caesar Cipher is very simple to defeat, but it was used to protect
-important messages until about 150 years ago. Modern encryption techniques
-are far more sophisticated than a simple character shift, but all
-encryption systems depend on some kind of a secret key that both parties are
-aware of so they can decrypt received data.
+El Cifrado Cesar resulta muy sencillo de romper, pero fue usado para proteger
+mensajes importantes hasta hace unos 150 años. Las técnicas de encriptación modernas
+son mucho más sofisticadas que un simple desplazamiento de letras, pero todos los
+sistemas de encriptación dependen en cierto modo de una clave secreta que ambas
+partes deben conocer para poder desencriptar los datos recibidos.
 
-Two Kinds of Secrets
---------------------
+Dos Tipos de Secretos
+---------------------
 
-\index{shared secret}
+\index{secreto compartido}
 The traditional way to encrypt transmissions is using a shared secret
 that only the sending and
 receiving parties know. With the secret, it is easy to decrypt the received
