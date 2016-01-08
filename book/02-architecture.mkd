@@ -153,7 +153,7 @@ la capa de acceso ya sabe exactamente dónde debe enviarlo.
 
 Las personas usamos un método parecido para viajar cuando salimos de vacaciones. Un
 viaje para ir de vacaciones tiene también muchos saltos. A lo mejor el primer salto
-consiste en conducir tu automóvil o tomar un taxi o autobús para ir a la estación de trenes.
+consiste en conducir tu coche o tomar un taxi o autobús para ir a la estación de trenes.
 Luego puedes tomar un tren de cercanías que te lleve desde la pequeña ciudad donde vives
 hasta otra más grande. En la ciudad grande, tomarías un tren de larga distancia hasta
 una ciudad grande en otro país. Luego, tomarías otro tren de cercanías hasta el
@@ -428,16 +428,14 @@ c) El número máximo de paquetes que pueden formar un mensaje
 d) La cantidad máxima de datos que un equipo puede enviar antes de recibir una
 confirmación de recepción
 
-
-
-9. En una aplicación de red típica cliente/servidor, ¿dónde corre la aplicación
+8. En una aplicación de red típica cliente/servidor, ¿dónde corre la aplicación
 cliente?
 a) En tu portátil (laptop), computador o móvil (celular)
 b) En un punto de acceso inalámbrico
 c) En el router más cercano
 d) En un cable de fibra óptica submarino
 
-10. ¿Qué significa URL?
+9. ¿Qué significa URL?
 a) Enlace de Enrutamiento Universal (*Universal Routing Linkage*)
 b) Lógica de Retransmisión Uniforme (*Uniform Retransmission Logic*)
 c) Localizador Uniforme de Recursos (*Uniform Resource Locator*)
