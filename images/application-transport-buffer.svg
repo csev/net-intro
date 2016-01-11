@@ -1,3 +1,485 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="7 -2 535 166" width="535pt" height="166pt" xmlns:dc="http://purl.org/dc/elements/1.1/"><metadata> Produced by OmniGraffle 6.0.5 <dc:date>2015-04-26 01:32Z</dc:date></metadata><defs><font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.683594" underline-thickness="49.316406" slope="0" x-height="522.94922" cap-height="717.28516" ascent="770.01953" descent="-229.98047" font-weight="500"><font-face-src><font-face-name name="Helvetica"/></font-face-src></font-face><font-face font-family="Courier" font-size="16" units-per-em="1000" underline-position="-178.22266" underline-thickness="57.617188" slope="0" x-height="462.40234" cap-height="594.72656" ascent="753.90625" descent="-246.09375" font-weight="500"><font-face-src><font-face-name name="Courier"/></font-face-src></font-face></defs><g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1"><title>Canvas 1</title><rect fill="white" width="1004" height="843"/><g><title>Layer 1</title><rect x="18" y="18" width="108" height="54" fill="white"/><rect x="18" y="18" width="108" height="54" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><text transform="translate(23 31)" fill="black"><tspan font-family="Helvetica" font-size="12" font-weight="500" x="17.429688" y="11" textLength="11.326172">W</tspan><tspan font-family="Helvetica" font-size="12" font-weight="500" x="28.544922" y="11" textLength="52.02539">eb Server</tspan><tspan font-family="Helvetica" font-size="12" font-weight="500" x="19.647461" y="25" textLength="58.705078">Application</tspan></text><rect x="126" y="18" width="108" height="54" fill="white"/><rect x="126" y="18" width="108" height="54" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><text transform="translate(131 38)" fill="black"><tspan font-family="Helvetica" font-size="12" font-weight="500" x="23.543945" y="11" textLength="7.330078">T</tspan><tspan font-family="Helvetica" font-size="12" font-weight="500" x="30.43457" y="11" textLength="44.021484">ransport</tspan></text><rect x="315" y="18" width="108" height="54" fill="white"/><rect x="315" y="18" width="108" height="54" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><text transform="translate(320 38)" fill="black"><tspan font-family="Helvetica" font-size="12" font-weight="500" x="23.543945" y="11" textLength="7.330078">T</tspan><tspan font-family="Helvetica" font-size="12" font-weight="500" x="30.43457" y="11" textLength="44.021484">ransport</tspan></text><rect x="423" y="18" width="108" height="54" fill="white"/><rect x="423" y="18" width="108" height="54" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><text transform="translate(428 31)" fill="black"><tspan font-family="Helvetica" font-size="12" font-weight="500" x="13.09668" y="11" textLength="11.326172">W</tspan><tspan font-family="Helvetica" font-size="12" font-weight="500" x="24.211914" y="11" textLength="60.691406">eb Browser</tspan><tspan font-family="Helvetica" font-size="12" font-weight="500" x="19.647461" y="25" textLength="58.705078">Application</tspan></text><path d="M 232.75329 48.86712 C 213.84375 45 221.3844 12.4452 251.54934 18 C 254.34798 7.17192 289.42575 8.92944 289.19643 18 C 311.19126 6.39864 339.29934 29.53152 320.44596 41.13288 C 343.06908 46.75752 320.16048 77.06232 301.59375 72 C 300.10785 80.43768 266.91612 83.3904 264.00282 72 C 245.20794 84.1644 206.01762 65.46096 232.75329 48.86712 Z" fill="white"/><path d="M 232.75329 48.86712 C 213.84375 45 221.3844 12.4452 251.54934 18 C 254.34798 7.17192 289.42575 8.92944 289.19643 18 C 311.19126 6.39864 339.29934 29.53152 320.44596 41.13288 C 343.06908 46.75752 320.16048 77.06232 301.59375 72 C 300.10785 80.43768 266.91612 83.3904 264.00282 72 C 245.20794 84.1644 206.01762 65.46096 232.75329 48.86712 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><text transform="translate(240.05 24)" fill="black"><tspan font-family="Helvetica" font-size="12" font-weight="500" x="2.9353516" y="11" textLength="69.36328">Internetwork </tspan><tspan font-family="Helvetica" font-size="12" font-weight="500" x="13.26543" y="25" textLength="45.36914">and Link</tspan><tspan font-family="Helvetica" font-size="12" font-weight="500" x="17.941211" y="39" textLength="36.017578">Layers</tspan></text><path d="M 401 51.75 L 401 38.25 L 425 38.25 L 425 31.5 L 437 45 L 425 58.5 L 425 51.75 Z" fill="white"/><path d="M 401 51.75 L 401 38.25 L 425 38.25 L 425 31.5 L 437 45 L 425 58.5 L 425 51.75 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><path d="M 111 51.75 L 111 38.25 L 135 38.25 L 135 31.5 L 147 45 L 135 58.5 L 135 51.75 Z" fill="white"/><path d="M 111 51.75 L 111 38.25 L 135 38.25 L 135 31.5 L 147 45 L 135 58.5 L 135 51.75 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><text transform="translate(142 86)" fill="black"><tspan font-family="Courier" font-size="16" font-weight="500" x=".29296875" y="15" textLength="28.804688">..a</tspan><tspan font-family="Courier" font-size="16" font-weight="500" fill="#218041" x="29.097656" y="15" textLength="19.203125">SS</tspan><tspan font-family="Courier" font-size="16" font-weight="500" fill="#984a27" x="48.30078" y="15" textLength="9.6015625">S</tspan><tspan font-family="Courier" font-size="16" font-weight="500" fill="#218041" x="57.902344" y="15" textLength="9.6015625">S</tspan><tspan font-family="Courier" font-size="16" font-weight="500" fill="#984a27" x="67.503906" y="15" textLength="19.203125">SS</tspan></text><text transform="translate(329 86)" fill="black"><tspan font-family="Courier" font-size="16" font-weight="500" x=".39453125" y="15" textLength="28.804688">..a</tspan><tspan font-family="Courier" font-size="16" font-weight="500" fill="#218041" x="29.199219" y="15" textLength="38.40625">RR R</tspan></text><rect x="450" y="81" width="63" height="54" fill="white"/><rect x="450" y="81" width="63" height="54" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><text transform="translate(455 79.5)" fill="black"><tspan font-family="Courier" font-size="16" font-weight="500" x="0" y="15" textLength="38.40625">AAAA</tspan><tspan font-family="Courier" font-size="16" font-weight="500" x="0" y="34" textLength="38.40625">AAAA</tspan><tspan font-family="Courier" font-size="16" font-weight="500" x="0" y="53" textLength="38.40625">AA..</tspan></text><path d="M 22.5 126.5 L 22.5 90.5 C 22.5 88.016 44.676 86 72 86 C 99.324 86 121.5 88.016 121.5 90.5 L 121.5 126.5 C 121.5 128.984 99.324 131 72 131 C 44.676 131 22.5 128.984 22.5 126.5" fill="white"/><path d="M 22.5 126.5 L 22.5 90.5 C 22.5 88.016 44.676 86 72 86 C 99.324 86 121.5 88.016 121.5 90.5 L 121.5 126.5 C 121.5 128.984 99.324 131 72 131 C 44.676 131 22.5 128.984 22.5 126.5 M 22.5 90.5 C 22.5 92.984 44.676 95 72 95 C 99.324 95 121.5 92.984 121.5 90.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><text transform="translate(27.5 101.25)" fill="black"><tspan font-family="Courier" font-size="16" font-weight="500" x="6.09375" y="15" textLength="76.8125">...FFFFF</tspan></text><path d="M 78.75 90 L 65.25 90 L 65.25 75 L 58.5 75 L 72 63 L 85.5 75 L 78.75 75 Z" fill="white"/><path d="M 78.75 90 L 65.25 90 L 65.25 75 L 58.5 75 L 72 63 L 85.5 75 L 78.75 75 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><path d="M 240 108 L 240 90 L 300 90 L 300 81 L 312 99 L 300 117 L 300 108 Z" fill="white"/><path d="M 240 108 L 240 90 L 300 90 L 300 81 L 312 99 L 300 117 L 300 108 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><text transform="translate(245 89.5)" fill="#984a27"><tspan font-family="Courier" font-size="16" font-weight="500" fill="#984a27" x="6.9960938" y="15" textLength="48.007812">S S S</tspan></text><path d="M 312 126 L 312 144 L 252 144 L 252 153 L 240 135 L 252 117 L 252 126 Z" fill="white"/><path d="M 312 126 L 312 144 L 252 144 L 252 153 L 240 135 L 252 117 L 252 126 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><text transform="translate(245 125.5)" fill="#1d5aab"><tspan font-family="Courier" font-size="16" font-weight="500" fill="#1d5aab" x="16.597656" y="15" textLength="28.804688">ACK</tspan></text></g></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   viewBox="7 -2 535 166"
+   width="535pt"
+   height="166pt"
+   id="svg6985"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="application-transport-buffer.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview7127"
+     showgrid="false"
+     inkscape:zoom="1.4760689"
+     inkscape:cx="342.2202"
+     inkscape:cy="63.083168"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6985" />
+  <metadata
+     id="metadata6987"> Produced by OmniGraffle 6.0.5 <dc:date>2015-04-26 01:32Z</dc:date>
+<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <defs
+     id="defs6989">
+    <font-face
+       font-family="Helvetica"
+       font-size="12"
+       units-per-em="1000"
+       underline-position="-75.683594"
+       underline-thickness="49.316406"
+       slope="0"
+       x-height="522.94922"
+       cap-height="717.28516"
+       ascent="770.01953"
+       descent="-229.98047"
+       font-weight="500"
+       id="font-face6991">
+      <font-face-src>
+        <font-face-name
+           name="Helvetica" />
+      </font-face-src>
+    </font-face>
+    <font-face
+       font-family="Courier"
+       font-size="16"
+       units-per-em="1000"
+       underline-position="-178.22266"
+       underline-thickness="57.617188"
+       slope="0"
+       x-height="462.40234"
+       cap-height="594.72656"
+       ascent="753.90625"
+       descent="-246.09375"
+       font-weight="500"
+       id="font-face6993">
+      <font-face-src>
+        <font-face-name
+           name="Courier" />
+      </font-face-src>
+    </font-face>
+  </defs>
+  <g
+     stroke="none"
+     stroke-opacity="1"
+     stroke-dasharray="none"
+     fill="none"
+     fill-opacity="1"
+     id="g6995">
+    <title
+       id="title6997">Canvas 1</title>
+    <rect
+       fill="white"
+       width="1004"
+       height="843"
+       id="rect6999" />
+    <g
+       id="g7001">
+      <title
+         id="title7003">Layer 1</title>
+      <rect
+         x="18"
+         y="18"
+         width="108"
+         height="54"
+         fill="white"
+         id="rect7005" />
+      <rect
+         x="18"
+         y="18"
+         width="108"
+         height="54"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="rect7007" />
+      <rect
+         x="126"
+         y="18"
+         width="108"
+         height="54"
+         fill="white"
+         id="rect7017" />
+      <rect
+         x="126"
+         y="18"
+         width="108"
+         height="54"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="rect7019" />
+      <rect
+         x="315"
+         y="18"
+         width="108"
+         height="54"
+         fill="white"
+         id="rect7027" />
+      <rect
+         x="315"
+         y="18"
+         width="108"
+         height="54"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="rect7029" />
+      <rect
+         x="423"
+         y="18"
+         width="108"
+         height="54"
+         fill="white"
+         id="rect7037" />
+      <rect
+         x="423"
+         y="18"
+         width="108"
+         height="54"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="rect7039" />
+      <path
+         d="M 232.75329 48.86712 C 213.84375 45 221.3844 12.4452 251.54934 18 C 254.34798 7.17192 289.42575 8.92944 289.19643 18 C 311.19126 6.39864 339.29934 29.53152 320.44596 41.13288 C 343.06908 46.75752 320.16048 77.06232 301.59375 72 C 300.10785 80.43768 266.91612 83.3904 264.00282 72 C 245.20794 84.1644 206.01762 65.46096 232.75329 48.86712 Z"
+         fill="white"
+         id="path7049" />
+      <path
+         d="M 232.75329 48.86712 C 213.84375 45 221.3844 12.4452 251.54934 18 C 254.34798 7.17192 289.42575 8.92944 289.19643 18 C 311.19126 6.39864 339.29934 29.53152 320.44596 41.13288 C 343.06908 46.75752 320.16048 77.06232 301.59375 72 C 300.10785 80.43768 266.91612 83.3904 264.00282 72 C 245.20794 84.1644 206.01762 65.46096 232.75329 48.86712 Z"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="path7051" />
+      <path
+         d="M 401 51.75 L 401 38.25 L 425 38.25 L 425 31.5 L 437 45 L 425 58.5 L 425 51.75 Z"
+         fill="white"
+         id="path7061" />
+      <path
+         d="M 401 51.75 L 401 38.25 L 425 38.25 L 425 31.5 L 437 45 L 425 58.5 L 425 51.75 Z"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="path7063" />
+      <path
+         d="M 111 51.75 L 111 38.25 L 135 38.25 L 135 31.5 L 147 45 L 135 58.5 L 135 51.75 Z"
+         fill="white"
+         id="path7065" />
+      <path
+         d="M 111 51.75 L 111 38.25 L 135 38.25 L 135 31.5 L 147 45 L 135 58.5 L 135 51.75 Z"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="path7067" />
+      <text
+         transform="translate(142 86)"
+         fill="black"
+         id="text7069">
+        <tspan
+           font-family="Courier"
+           font-size="16"
+           font-weight="500"
+           x=".29296875"
+           y="15"
+           textLength="28.804688"
+           id="tspan7071">..a</tspan>
+        <tspan
+           font-family="Courier"
+           font-size="16"
+           font-weight="500"
+           fill="#218041"
+           x="29.097656"
+           y="15"
+           textLength="19.203125"
+           id="tspan7073">SS</tspan>
+        <tspan
+           font-family="Courier"
+           font-size="16"
+           font-weight="500"
+           fill="#984a27"
+           x="48.30078"
+           y="15"
+           textLength="9.6015625"
+           id="tspan7075">S</tspan>
+        <tspan
+           font-family="Courier"
+           font-size="16"
+           font-weight="500"
+           fill="#218041"
+           x="57.902344"
+           y="15"
+           textLength="9.6015625"
+           id="tspan7077">S</tspan>
+        <tspan
+           font-family="Courier"
+           font-size="16"
+           font-weight="500"
+           fill="#984a27"
+           x="67.503906"
+           y="15"
+           textLength="19.203125"
+           id="tspan7079">SS</tspan>
+      </text>
+      <text
+         transform="translate(329 86)"
+         fill="black"
+         id="text7081">
+        <tspan
+           font-family="Courier"
+           font-size="16"
+           font-weight="500"
+           x=".39453125"
+           y="15"
+           textLength="28.804688"
+           id="tspan7083">..a</tspan>
+        <tspan
+           font-family="Courier"
+           font-size="16"
+           font-weight="500"
+           fill="#218041"
+           x="29.199219"
+           y="15"
+           textLength="38.40625"
+           id="tspan7085">RR R</tspan>
+      </text>
+      <rect
+         x="450"
+         y="81"
+         width="63"
+         height="54"
+         fill="white"
+         id="rect7087" />
+      <rect
+         x="450"
+         y="81"
+         width="63"
+         height="54"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="rect7089" />
+      <text
+         transform="translate(455 79.5)"
+         fill="black"
+         id="text7091">
+        <tspan
+           font-family="Courier"
+           font-size="16"
+           font-weight="500"
+           x="0"
+           y="15"
+           textLength="38.40625"
+           id="tspan7093">AAAA</tspan>
+        <tspan
+           font-family="Courier"
+           font-size="16"
+           font-weight="500"
+           x="0"
+           y="34"
+           textLength="38.40625"
+           id="tspan7095">AAAA</tspan>
+        <tspan
+           font-family="Courier"
+           font-size="16"
+           font-weight="500"
+           x="0"
+           y="53"
+           textLength="38.40625"
+           id="tspan7097">AA..</tspan>
+      </text>
+      <path
+         d="M 22.5 126.5 L 22.5 90.5 C 22.5 88.016 44.676 86 72 86 C 99.324 86 121.5 88.016 121.5 90.5 L 121.5 126.5 C 121.5 128.984 99.324 131 72 131 C 44.676 131 22.5 128.984 22.5 126.5"
+         fill="white"
+         id="path7099" />
+      <path
+         d="M 22.5 126.5 L 22.5 90.5 C 22.5 88.016 44.676 86 72 86 C 99.324 86 121.5 88.016 121.5 90.5 L 121.5 126.5 C 121.5 128.984 99.324 131 72 131 C 44.676 131 22.5 128.984 22.5 126.5 M 22.5 90.5 C 22.5 92.984 44.676 95 72 95 C 99.324 95 121.5 92.984 121.5 90.5"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="path7101" />
+      <text
+         transform="translate(27.5 101.25)"
+         fill="black"
+         id="text7103">
+        <tspan
+           font-family="Courier"
+           font-size="16"
+           font-weight="500"
+           x="6.09375"
+           y="15"
+           textLength="76.8125"
+           id="tspan7105">...FFFFF</tspan>
+      </text>
+      <path
+         d="M 78.75 90 L 65.25 90 L 65.25 75 L 58.5 75 L 72 63 L 85.5 75 L 78.75 75 Z"
+         fill="white"
+         id="path7107" />
+      <path
+         d="M 78.75 90 L 65.25 90 L 65.25 75 L 58.5 75 L 72 63 L 85.5 75 L 78.75 75 Z"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="path7109" />
+      <path
+         d="M 240 108 L 240 90 L 300 90 L 300 81 L 312 99 L 300 117 L 300 108 Z"
+         fill="white"
+         id="path7111" />
+      <path
+         d="M 240 108 L 240 90 L 300 90 L 300 81 L 312 99 L 300 117 L 300 108 Z"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="path7113" />
+      <text
+         transform="translate(245 89.5)"
+         fill="#984a27"
+         id="text7115">
+        <tspan
+           font-family="Courier"
+           font-size="16"
+           font-weight="500"
+           fill="#984a27"
+           x="6.9960938"
+           y="15"
+           textLength="48.007812"
+           id="tspan7117">S S S</tspan>
+      </text>
+      <path
+         d="M 312 126 L 312 144 L 252 144 L 252 153 L 240 135 L 252 117 L 252 126 Z"
+         fill="white"
+         id="path7119" />
+      <path
+         d="M 312 126 L 312 144 L 252 144 L 252 153 L 240 135 L 252 117 L 252 126 Z"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="path7121" />
+      <text
+         transform="translate(245 125.5)"
+         fill="#1d5aab"
+         id="text7123">
+        <tspan
+           font-family="Courier"
+           font-size="16"
+           font-weight="500"
+           fill="#1d5aab"
+           x="16.597656"
+           y="15"
+           textLength="28.804688"
+           id="tspan7125">ACK</tspan>
+      </text>
+    </g>
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="482.07571"
+     y="41.984962"
+     id="text6880"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan6882"
+       x="482.07571"
+       y="41.984962"
+       style="text-align:center;text-anchor:middle">Aplicación</tspan><tspan
+       sodipodi:role="line"
+       x="482.07571"
+       y="56.984962"
+       id="tspan6884"
+       style="text-align:center;text-anchor:middle">Navegador Web</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="279.34149"
+     y="34.2062"
+     id="text6892"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan6894"
+       x="279.34149"
+       y="34.2062">Capas de</tspan><tspan
+       sodipodi:role="line"
+       x="279.34149"
+       y="49.2062"
+       id="tspan6896">Internet y</tspan><tspan
+       sodipodi:role="line"
+       x="279.34149"
+       y="64.2062"
+       id="tspan6898">Acceso</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="183.65959"
+     y="49.100216"
+     id="text7714"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan7716"
+       x="183.65959"
+       y="49.100216">Transporte</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="364.77917"
+     y="49.003601"
+     id="text7714-6"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan7716-6"
+       x="364.77917"
+       y="49.003601">Transporte</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="63.877815"
+     y="42.01923"
+     id="text6880-9"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan6882-1"
+       x="63.877815"
+       y="42.01923"
+       style="text-align:center;text-anchor:middle">Aplicación</tspan><tspan
+       sodipodi:role="line"
+       x="63.877815"
+       y="57.01923"
+       id="tspan6884-9"
+       style="text-align:center;text-anchor:middle">Servidor Web</tspan></text>
+</svg>

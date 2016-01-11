@@ -1,3 +1,270 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="15 -9 518 83" width="518pt" height="83pt" xmlns:dc="http://purl.org/dc/elements/1.1/"><metadata> Produced by OmniGraffle 6.0.5 <dc:date>2015-03-08 19:21Z</dc:date></metadata><defs><font-face font-family="Helvetica" font-size="15" units-per-em="1000" underline-position="-75.683594" underline-thickness="49.316406" slope="0" x-height="522.94922" cap-height="717.28516" ascent="770.01953" descent="-229.98047" font-weight="500"><font-face-src><font-face-name name="Helvetica"/></font-face-src></font-face><font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.99585" descent="-212.99744" font-weight="500"><font-face-src><font-face-name name="HelveticaNeue"/></font-face-src></font-face></defs><g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1"><title>Canvas 1</title><rect fill="white" width="1004" height="843"/><g><title>Layer 1</title><rect x="27" y="27" width="90" height="36" fill="white"/><rect x="27" y="27" width="90" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><text transform="translate(32 36)" fill="black"><tspan font-family="Helvetica" font-size="15" font-weight="500" x="8.597412" y="15" textLength="47.226562">From | </tspan><tspan font-family="Helvetica" font-size="15" font-weight="500" x="55.560303" y="15" textLength="9.1625977">T</tspan><tspan font-family="Helvetica" font-size="15" font-weight="500" x="63.060303" y="15" textLength="8.342285">o</tspan></text><text transform="translate(29 6)" fill="black"><tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".38" y="15" textLength="86.24">Link Header</tspan></text><rect x="117" y="27" width="117" height="36" fill="white"/><rect x="117" y="27" width="117" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><text transform="translate(122 36)" fill="black"><tspan font-family="Helvetica" font-size="15" font-weight="500" x="2.7797852" y="15" textLength="47.226562">From | </tspan><tspan font-family="Helvetica" font-size="15" font-weight="500" x="49.742676" y="15" textLength="9.1625977">T</tspan><tspan font-family="Helvetica" font-size="15" font-weight="500" x="57.242676" y="15" textLength="20.57373">o | </tspan><tspan font-family="Helvetica" font-size="15" font-weight="500" x="77.552734" y="15" textLength="26.66748">TTL</tspan></text><text transform="translate(138.5 6)" fill="black"><tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".448" y="15" textLength="71.104">IP Header</tspan></text><rect x="234" y="27" width="99" height="36" fill="white"/><rect x="234" y="27" width="99" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><text transform="translate(239 36)" fill="black"><tspan font-family="Helvetica" font-size="15" font-weight="500" x="4.755127" y="15" textLength="55.576172">Port | Of</tspan><tspan font-family="Helvetica" font-size="15" font-weight="500" x="60.067627" y="15" textLength="24.177246">fset</tspan></text><text transform="translate(238.5 6)" fill="black"><tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".152" y="15" textLength="87.696">TCP Header</tspan></text><rect x="333" y="27" width="189" height="36" fill="white"/><rect x="333" y="27" width="189" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><text transform="translate(338 36)" fill="black"><tspan font-family="Helvetica" font-size="15" font-weight="500" x="0" y="15" textLength="34.16748">…….</tspan></text><text transform="translate(338 6)" fill="black"><tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".288" y="15" textLength="87.424">Data Packet</tspan></text></g></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   viewBox="15 -9 518 83"
+   width="518pt"
+   height="83pt"
+   id="svg7757"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="headers.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview7837"
+     showgrid="false"
+     inkscape:zoom="1.5245113"
+     inkscape:cx="269.68406"
+     inkscape:cy="18.112183"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g7767" />
+  <metadata
+     id="metadata7759"> Produced by OmniGraffle 6.0.5 <dc:date>2015-03-08 19:21Z</dc:date>
+<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <defs
+     id="defs7761">
+    <font-face
+       font-family="Helvetica"
+       font-size="15"
+       units-per-em="1000"
+       underline-position="-75.683594"
+       underline-thickness="49.316406"
+       slope="0"
+       x-height="522.94922"
+       cap-height="717.28516"
+       ascent="770.01953"
+       descent="-229.98047"
+       font-weight="500"
+       id="font-face7763">
+      <font-face-src>
+        <font-face-name
+           name="Helvetica" />
+      </font-face-src>
+    </font-face>
+    <font-face
+       font-family="Helvetica Neue"
+       font-size="16"
+       panose-1="2 0 5 3 0 0 0 2 0 4"
+       units-per-em="1000"
+       underline-position="-100"
+       underline-thickness="50"
+       slope="0"
+       x-height="517"
+       cap-height="714"
+       ascent="951.99585"
+       descent="-212.99744"
+       font-weight="500"
+       id="font-face7765">
+      <font-face-src>
+        <font-face-name
+           name="HelveticaNeue" />
+      </font-face-src>
+    </font-face>
+  </defs>
+  <g
+     stroke="none"
+     stroke-opacity="1"
+     stroke-dasharray="none"
+     fill="none"
+     fill-opacity="1"
+     id="g7767">
+    <title
+       id="title7769">Canvas 1</title>
+    <rect
+       fill="white"
+       width="1004"
+       height="843"
+       id="rect7771"
+       style="" />
+    <g
+       id="g7773">
+      <title
+         id="title7775">Layer 1</title>
+      <rect
+         x="27"
+         y="27"
+         width="90"
+         height="36"
+         fill="white"
+         id="rect7777" />
+      <rect
+         x="27"
+         y="27"
+         width="90"
+         height="36"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="rect7779" />
+      <rect
+         x="117"
+         y="27"
+         width="117"
+         height="36"
+         fill="white"
+         id="rect7793" />
+      <rect
+         x="117"
+         y="27"
+         width="117"
+         height="36"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="rect7795" />
+      <rect
+         x="234"
+         y="27"
+         width="99"
+         height="36"
+         fill="white"
+         id="rect7811" />
+      <rect
+         x="234"
+         y="27"
+         width="99"
+         height="36"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="rect7813" />
+      <rect
+         x="333"
+         y="27"
+         width="189"
+         height="36"
+         fill="white"
+         id="rect7825" />
+      <rect
+         x="333"
+         y="27"
+         width="189"
+         height="36"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="rect7827" />
+      <text
+         transform="translate(338 36)"
+         fill="black"
+         id="text7829">
+        <tspan
+           font-family="Helvetica"
+           font-size="15"
+           font-weight="500"
+           x="0"
+           y="15"
+           textLength="34.16748"
+           id="tspan7831">…….</tspan>
+      </text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="69.590302"
+       y="50.318993"
+       id="text8395"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8397"
+         x="69.590302"
+         y="50.318993"
+         style="font-size:14px">De | Para</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="175.27274"
+       y="50.396164"
+       id="text8399"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8401"
+         x="175.27274"
+         y="50.396164"
+         style="font-size:14px">De | Para | TTL</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="282.7554"
+       y="50.499054"
+       id="text8403"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8405"
+         x="282.7554"
+         y="50.499054">Puerto|Offset</tspan></text>
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="71.318916"
+     y="21.297857"
+     id="text8379"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan8381"
+       x="71.318916"
+       y="21.297857"
+       style="font-size:14px">Cabecera Acceso</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:14px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="179.49652"
+     y="21.400755"
+     id="text8383"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan8385"
+       x="179.49652"
+       y="21.400755">Cabecera IP</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:14px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="283.57257"
+     y="20.999409"
+     id="text8387"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan8389"
+       x="283.57257"
+       y="20.999409">Cabecera TCP</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:14px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="401.19638"
+     y="20.999407"
+     id="text8391"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan8393"
+       x="401.19638"
+       y="20.999407">Datos del paquete</tspan></text>
+</svg>

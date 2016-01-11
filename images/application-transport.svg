@@ -1,3 +1,371 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="7 4 535 161" width="535pt" height="161pt" xmlns:dc="http://purl.org/dc/elements/1.1/"><metadata> Produced by OmniGraffle 6.0.5 <dc:date>2015-04-26 01:32Z</dc:date></metadata><defs><font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.99585" descent="-212.99744" font-weight="500"><font-face-src><font-face-name name="HelveticaNeue"/></font-face-src></font-face><font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.683594" underline-thickness="49.316406" slope="0" x-height="522.94922" cap-height="717.28516" ascent="770.01953" descent="-229.98047" font-weight="500"><font-face-src><font-face-name name="Helvetica"/></font-face-src></font-face><font-face font-family="Courier" font-size="16" units-per-em="1000" underline-position="-178.22266" underline-thickness="57.617188" slope="0" x-height="462.40234" cap-height="594.72656" ascent="753.90625" descent="-246.09375" font-weight="500"><font-face-src><font-face-name name="Courier"/></font-face-src></font-face></defs><g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1"><title>Canvas 1</title><rect fill="white" width="1004" height="843"/><g><title>Layer 1</title><text transform="translate(68 19)" fill="black"><tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".076" y="15" textLength="33.776">Sour</tspan><tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="33.564" y="15" textLength="93.36">ce Computer</tspan></text><rect x="18" y="45" width="108" height="54" fill="white"/><rect x="18" y="45" width="108" height="54" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><text transform="translate(23 58)" fill="black"><tspan font-family="Helvetica" font-size="12" font-weight="500" x="13.09668" y="11" textLength="11.326172">W</tspan><tspan font-family="Helvetica" font-size="12" font-weight="500" x="24.211914" y="11" textLength="60.691406">eb Browser</tspan><tspan font-family="Helvetica" font-size="12" font-weight="500" x="19.647461" y="25" textLength="58.705078">Application</tspan></text><rect x="126" y="45" width="108" height="54" fill="white"/><rect x="126" y="45" width="108" height="54" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><text transform="translate(131 58)" fill="black"><tspan font-family="Helvetica" font-size="12" font-weight="500" x="23.543945" y="11" textLength="7.330078">T</tspan><tspan font-family="Helvetica" font-size="12" font-weight="500" x="30.43457" y="11" textLength="44.021484">ransport</tspan><tspan font-family="Helvetica" font-size="12" font-weight="500" x="33.99121" y="25" textLength="30.017578">Layer</tspan></text><rect x="315" y="45" width="108" height="54" fill="white"/><rect x="315" y="45" width="108" height="54" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><text transform="translate(320 58)" fill="black"><tspan font-family="Helvetica" font-size="12" font-weight="500" x="23.543945" y="11" textLength="7.330078">T</tspan><tspan font-family="Helvetica" font-size="12" font-weight="500" x="30.43457" y="11" textLength="44.021484">ransport</tspan><tspan font-family="Helvetica" font-size="12" font-weight="500" x="33.99121" y="25" textLength="30.017578">Layer</tspan></text><rect x="423" y="45" width="108" height="54" fill="white"/><rect x="423" y="45" width="108" height="54" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><text transform="translate(428 58)" fill="black"><tspan font-family="Helvetica" font-size="12" font-weight="500" x="17.429688" y="11" textLength="11.326172">W</tspan><tspan font-family="Helvetica" font-size="12" font-weight="500" x="28.544922" y="11" textLength="52.02539">eb Server</tspan><tspan font-family="Helvetica" font-size="12" font-weight="500" x="19.647461" y="25" textLength="58.705078">Application</tspan></text><text transform="translate(339 19)" fill="black"><tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".108" y="15" textLength="156.784">Destination Computer</tspan></text><path d="M 224.59995 75.86712 C 202.78125 72 211.482 39.4452 246.2877 45 C 249.5169 34.17192 289.99125 35.92944 289.72665 45 C 315.1053 33.39864 347.5377 56.53152 325.7838 68.13288 C 351.8874 73.75752 325.4544 104.06232 304.03125 99 C 302.31675 107.43768 264.0186 110.3904 260.6571 99 C 238.9707 111.1644 193.7511 92.46096 224.59995 75.86712 Z" fill="white"/><path d="M 224.59995 75.86712 C 202.78125 72 211.482 39.4452 246.2877 45 C 249.5169 34.17192 289.99125 35.92944 289.72665 45 C 315.1053 33.39864 347.5377 56.53152 325.7838 68.13288 C 351.8874 73.75752 325.4544 104.06232 304.03125 99 C 302.31675 107.43768 264.0186 110.3904 260.6571 99 C 238.9707 111.1644 193.7511 92.46096 224.59995 75.86712 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><text transform="translate(232.25 51)" fill="black"><tspan font-family="Helvetica" font-size="12" font-weight="500" x="9.2353516" y="11" textLength="69.36328">Internetwork </tspan><tspan font-family="Helvetica" font-size="12" font-weight="500" x="19.56543" y="25" textLength="45.36914">and Link</tspan><tspan font-family="Helvetica" font-size="12" font-weight="500" x="24.241211" y="39" textLength="36.017578">Layers</tspan></text><path d="M 405 72 L 420 58.5 L 420 65.25 L 426 65.25 L 426 58.5 L 441 72 L 426 85.5 L 426 78.75 L 420 78.75 L 420 85.5 Z" fill="white"/><path d="M 405 72 L 420 58.5 L 420 65.25 L 426 65.25 L 426 58.5 L 441 72 L 426 85.5 L 426 78.75 L 420 78.75 L 420 85.5 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><path d="M 108 72 L 123 58.5 L 123 65.25 L 129 65.25 L 129 58.5 L 144 72 L 129 85.5 L 129 78.75 L 123 78.75 L 123 85.5 Z" fill="white"/><path d="M 108 72 L 123 58.5 L 123 65.25 L 129 65.25 L 129 58.5 L 144 72 L 129 85.5 L 129 78.75 L 123 78.75 L 123 85.5 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/><text transform="translate(334 113)" fill="black"><tspan font-family="Courier" font-size="16" font-weight="500" x=".28515625" y="15" textLength="182.42969">www.khanacademy.org</tspan><tspan font-family="Courier" font-size="16" font-weight="500" x="29.089844" y="34" textLength="124.82031">72.14.249.132</tspan></text><text transform="translate(68 113)" fill="black"><tspan font-family="Courier" font-size="16" font-weight="500" x=".08984375" y="15" textLength="124.82031">Your computer</tspan><tspan font-family="Courier" font-size="16" font-weight="500" x="9.691406" y="34" textLength="105.61719">192.168.0.5</tspan></text></g></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   viewBox="7 4 535 161"
+   width="535pt"
+   height="161pt"
+   id="svg6760"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="application-transport.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview6872"
+     showgrid="false"
+     inkscape:zoom="2"
+     inkscape:cx="325.39313"
+     inkscape:cy="98.368289"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g6772" />
+  <metadata
+     id="metadata6762"> Produced by OmniGraffle 6.0.5 <dc:date>2015-04-26 01:32Z</dc:date>
+<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:title></dc:title>
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <defs
+     id="defs6764">
+    <font-face
+       font-family="Helvetica Neue"
+       font-size="16"
+       panose-1="2 0 5 3 0 0 0 2 0 4"
+       units-per-em="1000"
+       underline-position="-100"
+       underline-thickness="50"
+       slope="0"
+       x-height="517"
+       cap-height="714"
+       ascent="951.99585"
+       descent="-212.99744"
+       font-weight="500"
+       id="font-face6766">
+      <font-face-src>
+        <font-face-name
+           name="HelveticaNeue" />
+      </font-face-src>
+    </font-face>
+    <font-face
+       font-family="Helvetica"
+       font-size="12"
+       units-per-em="1000"
+       underline-position="-75.683594"
+       underline-thickness="49.316406"
+       slope="0"
+       x-height="522.94922"
+       cap-height="717.28516"
+       ascent="770.01953"
+       descent="-229.98047"
+       font-weight="500"
+       id="font-face6768">
+      <font-face-src>
+        <font-face-name
+           name="Helvetica" />
+      </font-face-src>
+    </font-face>
+    <font-face
+       font-family="Courier"
+       font-size="16"
+       units-per-em="1000"
+       underline-position="-178.22266"
+       underline-thickness="57.617188"
+       slope="0"
+       x-height="462.40234"
+       cap-height="594.72656"
+       ascent="753.90625"
+       descent="-246.09375"
+       font-weight="500"
+       id="font-face6770">
+      <font-face-src>
+        <font-face-name
+           name="Courier" />
+      </font-face-src>
+    </font-face>
+  </defs>
+  <g
+     stroke="none"
+     stroke-opacity="1"
+     stroke-dasharray="none"
+     fill="none"
+     fill-opacity="1"
+     id="g6772">
+    <title
+       id="title6774">Canvas 1</title>
+    <rect
+       fill="white"
+       width="1004"
+       height="843"
+       id="rect6776" />
+    <g
+       id="g6778">
+      <title
+         id="title6780">Layer 1</title>
+      <rect
+         x="18"
+         y="45"
+         width="108"
+         height="54"
+         fill="white"
+         id="rect6788" />
+      <rect
+         x="18"
+         y="45"
+         width="108"
+         height="54"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="rect6790" />
+      <rect
+         x="126"
+         y="45"
+         width="108"
+         height="54"
+         fill="white"
+         id="rect6800" />
+      <rect
+         x="126"
+         y="45"
+         width="108"
+         height="54"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="rect6802" />
+      <rect
+         x="315"
+         y="45"
+         width="108"
+         height="54"
+         fill="white"
+         id="rect6812" />
+      <rect
+         x="315"
+         y="45"
+         width="108"
+         height="54"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="rect6814" />
+      <rect
+         x="423"
+         y="45"
+         width="108"
+         height="54"
+         fill="white"
+         id="rect6824" />
+      <rect
+         x="423"
+         y="45"
+         width="108"
+         height="54"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="rect6826" />
+      <path
+         d="M 224.59995 75.86712 C 202.78125 72 211.482 39.4452 246.2877 45 C 249.5169 34.17192 289.99125 35.92944 289.72665 45 C 315.1053 33.39864 347.5377 56.53152 325.7838 68.13288 C 351.8874 73.75752 325.4544 104.06232 304.03125 99 C 302.31675 107.43768 264.0186 110.3904 260.6571 99 C 238.9707 111.1644 193.7511 92.46096 224.59995 75.86712 Z"
+         fill="white"
+         id="path6840" />
+      <path
+         d="M 224.59995 75.86712 C 202.78125 72 211.482 39.4452 246.2877 45 C 249.5169 34.17192 289.99125 35.92944 289.72665 45 C 315.1053 33.39864 347.5377 56.53152 325.7838 68.13288 C 351.8874 73.75752 325.4544 104.06232 304.03125 99 C 302.31675 107.43768 264.0186 110.3904 260.6571 99 C 238.9707 111.1644 193.7511 92.46096 224.59995 75.86712 Z"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="path6842" />
+      <path
+         d="M 405 72 L 420 58.5 L 420 65.25 L 426 65.25 L 426 58.5 L 441 72 L 426 85.5 L 426 78.75 L 420 78.75 L 420 85.5 Z"
+         fill="white"
+         id="path6852" />
+      <path
+         d="M 405 72 L 420 58.5 L 420 65.25 L 426 65.25 L 426 58.5 L 441 72 L 426 85.5 L 426 78.75 L 420 78.75 L 420 85.5 Z"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="path6854" />
+      <path
+         d="M 108 72 L 123 58.5 L 123 65.25 L 129 65.25 L 129 58.5 L 144 72 L 129 85.5 L 129 78.75 L 123 78.75 L 123 85.5 Z"
+         fill="white"
+         id="path6856" />
+      <path
+         d="M 108 72 L 123 58.5 L 123 65.25 L 129 65.25 L 129 58.5 L 144 72 L 129 85.5 L 129 78.75 L 123 78.75 L 123 85.5 Z"
+         stroke="black"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1"
+         id="path6858" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="127.6489"
+         y="126.49413"
+         id="text6874"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan6876"
+           x="127.6489"
+           y="126.49413"
+           style="font-size:16px;text-align:center;text-anchor:middle">Tu equipo</tspan><tspan
+           sodipodi:role="line"
+           x="127.6489"
+           y="146.49414"
+           id="tspan6878"
+           style="font-size:16px;text-align:center;text-anchor:middle">192.168.0.5</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="66.73864"
+         y="69.573784"
+         id="text6880"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan6882"
+           x="66.73864"
+           y="69.573784"
+           style="text-align:center;text-anchor:middle">Aplicación</tspan><tspan
+           sodipodi:role="line"
+           x="66.73864"
+           y="84.573784"
+           id="tspan6884"
+           style="text-align:center;text-anchor:middle">Navegador Web</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="177.82628"
+         y="69.674179"
+         id="text6886"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan6888"
+           x="177.82628"
+           y="69.674179"
+           style="text-align:center;text-anchor:middle">Capa de</tspan><tspan
+           sodipodi:role="line"
+           x="177.82628"
+           y="84.674179"
+           id="tspan6890"
+           style="text-align:center;text-anchor:middle">Transporte</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="272.00369"
+         y="62.029995"
+         id="text6892"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan6894"
+           x="272.00369"
+           y="62.029995">Capas de</tspan><tspan
+           sodipodi:role="line"
+           x="272.00369"
+           y="77.029991"
+           id="tspan6896">Internet y</tspan><tspan
+           sodipodi:role="line"
+           x="272.00369"
+           y="92.029991"
+           id="tspan6898">Acceso</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="372.49878"
+         y="69.709572"
+         id="text6886-3"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan6888-4"
+           x="372.49878"
+           y="69.709572"
+           style="text-align:center;text-anchor:middle">Capa de</tspan><tspan
+           sodipodi:role="line"
+           x="372.49878"
+           y="84.709572"
+           id="tspan6890-0"
+           style="text-align:center;text-anchor:middle">Transporte</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="483.34341"
+         y="69.649002"
+         id="text6880-5"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan6882-0"
+           x="483.34341"
+           y="69.649002"
+           style="text-align:center;text-anchor:middle">Aplicación</tspan><tspan
+           sodipodi:role="line"
+           x="483.34341"
+           y="84.649002"
+           id="tspan6884-2"
+           style="text-align:center;text-anchor:middle">Servidor Web</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:16px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="135.40002"
+         y="34.200005"
+         id="text6942"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan6944"
+           x="135.40002"
+           y="34.200005">Equipo de origen</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:16px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="405.71082"
+         y="34.225784"
+         id="text6942-9"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan6944-5"
+           x="405.71082"
+           y="34.225784">Equipo de destino</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="422.08939"
+       y="126.32265"
+       id="text6874-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6876-0"
+         x="422.08939"
+         y="126.32265"
+         style="font-size:16px;text-align:center;text-anchor:middle">www.khanacademy.org</tspan><tspan
+         sodipodi:role="line"
+         x="422.08939"
+         y="146.32265"
+         id="tspan6878-3"
+         style="font-size:16px;text-align:center;text-anchor:middle">72.14.249.132</tspan></text>
+  </g>
+</svg>
