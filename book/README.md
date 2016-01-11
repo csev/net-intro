@@ -10,6 +10,16 @@ or
 <a href="http://do1.dr-chuck.com/net-intro/EN_us/net-intro.epub" target="_blank">EPUB</a>
 (rebuilt hourly)
 
+To produce the PDF of the book, you will need to install LaTeX on your 
+system.  For Linux:
+
+    apt-get install texlive-full
+
+For Macintosh,
+
+    https://www.tug.org/mactex/
+    https://www.tug.org/mactex/mactextras.html
+
 To build the book yourself, install *pandoc* and run
 
     pandoc --default-image-extension=svg --epub-stylesheet=epub.css *.mkd -o x.epub

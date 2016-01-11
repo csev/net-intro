@@ -1,4 +1,6 @@
 #  Introduction
+# Why Study Networks?
+
 #[Communicating at a Distance](../sketchnote/Distance_Comm.png)
 #[Computer Communication](../sketchnote/Comp_Comm.png)
 #[Store and Forward Networks](../sketchnote/Store_Fwd.png)
