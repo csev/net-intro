@@ -89,48 +89,48 @@ en una foto antigua veas montones de cables en un único poste, generalmente eso
 significa que se trata de cables telefónicos, y no de los que se usan para
 transportar electricidad.
 
-Los computadores se comunican de forma diferente
+Las computadoras se comunican de forma diferente
 ------------------------------------------------
 
 Cuando los humanos hablan por teléfono, realizan una llamada, hablan durante un
 rato, y finalmente cuelgan. Según las estadísticas, la mayor parte del tiempo
 los humanos no están hablando por teléfono. Al menos, no lo hacían antes de que
-todo el mundo tuviera smartphones. Pero los computadores, incluyendo las
+todo el mundo tuviera smartphones. Pero las computadoras, incluyendo las
 aplicaciones de tu smartphone, se comunican de forma diferente a los humanos.
-Algunas veces, los computadores envían mensajes cortos para comprobar si otro
-computador está disponible. Otras veces envían información de tamaño medio, como
-una única foto o un mensaje de correo grande. Y otras, los computadores envían
+Algunas veces, las computadoras envían mensajes cortos para comprobar si otra
+computadora está disponible. Otras veces envían información de tamaño medio, como
+una única foto o un mensaje de correo grande. Y otras, las computadoras envían
 un montón de información, como una película entera o un programa para instalar,
 que puede llevar minutos o incluso horas descargar. De modo que los mensajes
-entre computadores pueden ser breves, medios, o extensos.
+entre computadoras pueden ser breves, medios, o extensos.
 
-Cuando se empezaron a conectar unos computadores con otros, cada uno se
+Cuando se empezaron a conectar unas computadoras con otras, cada una se
 conectaba con su pareja mediante cables. El modo más sencillo de enviar datos
 desde un equipo hasta el otro era organizar los mensajes salientes en una cola,
-y enviar a continuación esos mensajes uno detrás del otro, tan rápido como el
-computador y los cables podían transportar los datos. Cada mensaje debía esperar
+y enviar a continuación esos mensajes uno detrás del otro, tan rápido como la
+computadora y los cables podían transportar los datos. Cada mensaje debía esperar
 su turno, hasta que el mensaje previo había sido enviado, y solo entonces tenía
 su oportunidad para transitar a través de la conexión.
 
 \index{línea alquilada}
-Cuando los computadores estaban en el mismo edificio, su propietario podía
-tender cables para conectarlos entre si. Si los computadores estaban en la misma
+Cuando las computadoras estaban en el mismo edificio, su propietario podía
+tender cables para conectarlos entre si. Si las computadoras estaban en la misma
 ciudad, su propietario generalmente tenía que alquilar cables a las compañías
 telefónicas para conectar sus máquinas. A menudo lo único que se necesitaba era
 que esas compañías telefónicas conectaran los cables juntos en su oficina
-central, de modo que no fuera necesaria que cada computador "marcara" el número
+central, de modo que no fuera necesaria que cada computadora "marcara" el número
 del otro para poder enviarle datos. Esas líneas alquiladas eran cómodas para la
 comunicación entre equipos, dado que estaban "siempre activas", pero eran
 también bastante caras, ya que permanecían en uso durante las 24 horas del día.
 
-Cuando los computadores estaban todavía más lejos, en ciudades diferentes, las
+Cuando las computadoras estaban todavía más lejos, en ciudades diferentes, las
 líneas alquiladas se extendían usando los cables más largos que conectaban las
 oficinas centrales. Dado que había pocos cables entre esas oficinas, las
 líneas de larga distancia alquiladas resultaban bastante caras, y su coste
 crecía dramáticamente conforme aumentaba la longitud de la línea necesaria. Pero
 si se disponía de dinero suficiente, se podían alquilar conexiones directas
-entre computadores, para que pudieran intercambiar datos. Esto funcionaba
-bastante bien mientras se utilizase el mismo tipo de computadores, porque cada
+entre computadoras, para que pudieran intercambiar datos. Esto funcionaba
+bastante bien mientras se utilizase el mismo tipo de computadoras, porque cada
 marca tenía su propio modo de usar los cables telefónicos para conectar sus
 equipos y enviar datos entre ellos.
 
@@ -141,12 +141,12 @@ Primeras redes de Área Amplia de almacenamiento-y-reenvío
 \index{Redes de almacenamiento y reenvío}
 En los años 70 y 80 del pasado siglo, la gente que trabajaba en universidades de
 todo el mundo deseaba enviar datos y mensajes a otros colegas, usando esas
-conexiones entre computadores. Dado que el coste de cada conexión era tan alto
-y que aumentaba con la distancia, los computadores generalmente solo tenían
-conexiones con otros equipos cercanos. Pero si el computador con el que estabas
-conectado estaba conectado con otro, y ese a su vez con otro, y así
+conexiones entre computadoras. Dado que el coste de cada conexión era tan alto
+y que aumentaba con la distancia, las computadoras generalmente solo tenían
+conexiones con otros equipos cercanos. Pero si la computadora con la que estabas
+conectado estaba conectado con otra, y esa a su vez con otra, y así
 sucesivamente, podías envías un mensaje a larga distancia, tan lejos como
-quisieras, siempre que los computadores a lo largo de la ruta del mensaje
+quisieras, siempre que las computadoras a lo largo de la ruta del mensaje
 aceptasen almacenarlo y reenviarlo al siguiente equipo.
 
 ![Redes de almacenamiento-y-reenvío](../sketchnote/Store_Fwd)
@@ -154,9 +154,9 @@ aceptasen almacenarlo y reenviarlo al siguiente equipo.
 Si se disponía de tiempo, con relativamente pocas conexiones era posible enviar
 datos a larga distancia a través de un mosaico de conexiones de redes, siempre
 que se tuviera suficiente paciencia. Durante ese viaje, cuando el mensaje
-llegaba a un computador, este debía esperar hasta que le llegaba el turno para
+llegaba a una computadora, esta debía esperar hasta que le llegaba el turno para
 ser enviado al siguiente equipo a lo largo de la ruta. Un mensaje podía llegar
-a un computador intermedio, ser almacenado durante un rato (que podían ser horas,
+a una computadora intermedia, ser almacenado durante un rato (que podían ser horas,
 dependiendo del tráfico), y luego ser reenviado a la siguiente conexión (o
 "saltar").
 
@@ -190,9 +190,9 @@ a partir de ese momento el mensaje más extenso continúa haciendo uso de toda
 la conexión de red.
 
 Dividir el mensaje en paquetes tiene también la ventaja de reducir
-significativamente la cantidad de espacio de almacenamiento necesario en los
-computadores intermedios, ya que en lugar de necesitar guardar un mensaje entero
-durante unas cuantas horas, el computador intermedio tan solo necesita almacenar
+significativamente la cantidad de espacio de almacenamiento necesario en las
+computadoras intermedias, ya que en lugar de necesitar guardar un mensaje entero
+durante unas cuantas horas, la computadora intermedia tan solo necesita almacenar
 unos pocos paquetes durante algunos segundos, mientras esos paquetes esperan su
 turno en la cola de salida.
 
@@ -203,18 +203,18 @@ turno en la cola de salida.
 \index{router}
 \index{enrutador}
 A medida que las redes iban transformándose desde el antiguo sistema de
-almacenamiento-y-reenvío, se empezaron a incluir computadores con funciones
+almacenamiento-y-reenvío, se empezaron a incluir computadoras con funciones
 especiales, especializados en el movimiento de paquetes. Éstos fueron llamados
 inicialmente "Interfaces de Procesamiento de Mensajes" (o "IMPs" por sus siglas
 en inglés, *Interface Message Processing*),
-ya que actuaban como un interfaz entre los computadores normales y el resto
-de la red. Más adelante, esos computadores dedicados a las comunicaciones
+ya que actuaban como un interfaz entre las computadoras normales y el resto
+de la red. Más adelante, esas computadoras dedicados a las comunicaciones
 recibieron el nombre de "routers" (o enrutadores), dado que su propósito era
 dirigir (enrutar) los paquetes que recibían hacia su destino final.
 
 Al disponer de routers especializados en el movimiento de paquetes a través de
-múltiples saltos, se hizo más sencillo conectar computadores de distintas
-marcas en la misma red. Para conectar cualquier computador a la red, ahora ya
+múltiples saltos, se hizo más sencillo conectar computadoras de distintas
+marcas en la misma red. Para conectar cualquier computadora a la red, ahora ya
 tan solo se necesitaba conectarlo a un router y a partir de ahí el resto de los
 detalles de la comunicación eran gestionados por los otros routers.
 
@@ -223,20 +223,20 @@ detalles de la comunicación eran gestionados por los otros routers.
 Cuando se conectan entre sí varios ordenadores en una misma ubicación, mediante
 el uso de cables físicos, formando una "Red de Área Local" (o LAN por sus siglas
 en inglés, *Local Area Network*), se necesita conectar también un router a esa
-red. Al enviar los datos a través de ese router, todos los computadores en la
+red. Al enviar los datos a través de ese router, todas las computadoras en la
 red de área local pueden transferir datos también a través de la
 "Red de Área Amplia" (o WAN por sus siglas en inglés, *Wide Area Network*).
 
 Direccionamiento y paquetes
 ---------------------------
 
-En las primeras redes de almacenamiento-y-reenvío, era importante conocer el
-computador de origen y de destino para cada mensaje. Cada equipo disponía
-de un nombre único o un número que constituía la "dirección" de ese
-computador. Para enviar un mensaje a otro equipo, era necesario añadir las
+En las primeras redes de almacenamiento-y-reenvío, era importante conocer la
+computadora de origen y de destino para cada mensaje. Cada equipo disponía
+de un nombre único o un número que constituía la "dirección" de esa
+computadora. Para enviar un mensaje a otro equipo, era necesario añadir las
 direcciones de origen y destino al mensaje antes de enviarlo a través de su ruta.
-Al disponer de las direcciones de origen y destino para cada mensaje, los
-computadores que almacenaban y enviaban esos mensajes eran capaces de elegir
+Al disponer de las direcciones de origen y destino para cada mensaje, las
+computadoras que almacenaban y enviaban esos mensajes eran capaces de elegir
 el mejor camino para cada uno de ellos, en aquellos casos es los que había más
 de una ruta disponible.
 
@@ -245,16 +245,16 @@ se enviaba de forma individual, las direcciones de origen y destino debían
 añadirse en cada uno de los paquetes, de modo que los routers pudieran elegir
 el mejor camino para reenviar cada paquete del mensaje. Además de las direcciones
 de origen y destino, era necesario también añadir datos en cada paquete indicando
-el "*offset*", o posición del paquete dentro del mensaje completo, de modo que el
-computador que lo recibiera pudiera volver a juntar los paquetes en el orden
+el "*offset*", o posición del paquete dentro del mensaje completo, de modo que la
+computadora que lo recibiera pudiera volver a juntar los paquetes en el orden
 correcto para reconstruir el mensaje original.
 
 Juntando todo
 -------------
 
 Si juntamos todo lo que hemos visto hasta ahora, podremos entender el
-funcionamiento básico del Internet actual. Disponemos de computadores
-especializados, llamados "routers" o "enrutadores", que saben cómo dirigir los
+funcionamiento básico del Internet actual. Disponemos de computadoras
+especializadas, llamados "routers" o "enrutadores", que saben cómo dirigir los
 paquetes a través de un camino desde un origen hasta un destino. Cada paquete
 pasará a través de múltiples routers durante su viaje desde el equipo de origen
 hasta alcanzar el de destino.
@@ -266,7 +266,7 @@ distintas desde el origen hasta el destino. Y algunas veces los paquetes
 llegarán incluso desordenados; un paquete enviado más tarde puede llegar antes
 que uno anterior, quizá por un "embotellamiento" en el tráfico de datos. Cada
 paquete contiene un "offset" (identificador de posición) respecto al comienzo
-del mensaje, de modo que el computador de destino pueda reensamblar los paquetes
+del mensaje, de modo que la computadora de destino pueda reensamblar los paquetes
 en el orden adecuado para reconstruir el mensaje original.
 
 ![Conexión alrededor del mundo](../sketchnote/Conn_around_world_HOP)
@@ -282,21 +282,21 @@ fuera posible.
 
 El núcleo de Internet es un conjunto de routers cooperando, que mueven paquetes
 desde múltiples orígenes hasta múltiples destinos al mismo tiempo. Cada
-computador o área de red local está conectada a un router que reenvía el tráfico
+computadora o área de red local está conectada a un router que reenvía el tráfico
 desde su ubicación hasta los distintos destinos de Internet. Un router puede
-manejar datos de un computador individual, como un smartphone, de varios
-computadores en el mismo edificio, o de miles de computadores conectados a una
+manejar datos de una computadora individual, como un smartphone, de varias
+computadoras en el mismo edificio, o de miles de computadoras conectadas a una
 red de un campus universitario. El término "Internet" proviene de la idea de
 "interconectar", que capta el concepto de conectar muchas redes entre sí.
-Nuestros computadores se conectan a redes locales, e Internet conecta las redes
-locales entre sí para que nuestros computadores puedan comunicarse con
-todos los demás.
+Nuestras computadoras se conectan a redes locales, e Internet conecta las redes
+locales entre sí para que nuestras computadoras puedan comunicarse con
+todas los demás.
 
 Glosario
 --------
 
-**dirección**: Un número que es asignado a un computador, para que los mensajes
-puedan ser enviados hasta él.
+**dirección**: Un número que es asignado a una computadora, para que los mensajes
+puedan ser enviados hasta ella.
 
 **LAN**: Local Area Network (Red de Área Local). Una red que cubre un área que
 está limitado por la capacidad de una organización para tender cables o la
@@ -315,17 +315,17 @@ Internet. El tamaño máximo habitual de los paquetes suele estar entre los 1000
 los 3000 caracteres.
 
 **red de almacenamiento-y-reenvío**: Una red en la cual los datos son enviados
-de un computador a otro mediante el almacenamiento del mensaje en equipos
+de una computadora a otra mediante el almacenamiento del mensaje en equipos
 intermedios durante periodos de tiempo relativamente largos, mientras se
 espera a que una conexión a través de la red de salida esté disponible.
 
-**router o enrutador**: Un computador especializado, que está diseñado para
+**router o enrutador**: Una computadora especializado, que está diseñado para
 recibir paquetes de entrada a través de múltiples conexiones y reenviar
 rápidamente esos paquetes a través de la mejor conexión de salida disponible,
 para hacer llegar rápidamente cada paquete a su destino.
 
 **salto**: Una única conexión física de red. Un paquete en Internet realizará
-normalmente varios "saltos" para llegar desde su computador de origen hasta
+normalmente varios "saltos" para llegar desde su computadora de origen hasta
 su destino.
 
 \index{WAN}
@@ -355,8 +355,8 @@ b) Una conexión entre un teclado y un monitor
 c) Un cable tendido entre una oficina de una compañía telefónica y otra
 d) Una conexión telefónica "siempre activa"
 
-3. ¿Durante cuánto tiempo puede ser almacenado un mensaje en un computador
-intermedio en una red de almacenamiento-y-reenvío?
+3. ¿Durante cuánto tiempo puede ser almacenado un mensaje en una computadora
+intermedia en una red de almacenamiento-y-reenvío?
 a) Menos de un segundo
 b) No más de cuatro segundos
 c) Menos de un minuto
