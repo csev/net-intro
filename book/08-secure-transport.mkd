@@ -70,7 +70,7 @@ Here is a simple example of plain text and ciphertext using a shift of one:
 
 \index{encrypt}
 \index{decrypt}
-We user the word "encrypt" to describe transforming the plain text to the
+We use the word "encrypt" to describe transforming the plain text to the
 ciphertext and "decrypt" to describe the reverse process.
 
 The Caesar Cipher is very simple to defeat, but it was used to protect
@@ -83,8 +83,8 @@ Two Kinds of Secrets
 --------------------
 
 \index{shared secret}
-The traditional way to encrypt transmissions is using a shared secret
-that only the sending and
+The traditional way to encrypt transmissions is using a 
+shared secret (a password, a sentence, a number) that only the sending and
 receiving parties know. With the secret, it is easy to decrypt the received
 data, but if you received the data without possessing the secret, it would be
 effectively impossible to decrypt the message.
@@ -123,7 +123,7 @@ the computer that will be sending the data. The sending computer encrypts the
 data and sends it across the network. The receiving computer uses the
 decryption key to decrypt the data.
 
-We call the encryption key the "public" key because it is can be widely shared.
+We call the encryption key the "public" key because it can be widely shared.
 We call the decryption key the "private" key because it never leaves the
 computer where it was created. Another name for asymmetric keys is
 public/private keys.
