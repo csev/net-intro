@@ -1,76 +1,76 @@
-Wrap Up
-=======
+Conclusiones
+============
 
-It has been said that building the Internet solved the world's most complex
-engineering problem to date. The design and engineering of the Internet
-started well over 50 years ago. It has been continuously improving
-and evolving over the past 50 years and will continue to evolve in the future.
+Se ha dicho que la construcción de Internet resolvió el problema de ingeniería
+más complejo planteado hasta la fecha. El diseño e ingeniería de Internet comenzó hace
+más de 50 años. Durante ese tiempo ha ido continuamente mejorando y evolucionando,
+y continuará haciéndolo en el futuro.
 
-The Internet now connects billions of computers using many thousands of routers
-and link-level connections. The Internet is so complex that it is never fully
-operational, The Internet is less about being "perfect" and more about
-adapting to problems, outages, errors, lost data, and many other unforeseen
-problems. The Internet is designed to be flexible and adapt to whatever
-problems are encountered.
+Internet hoy conecta miles de millones de equipos usando muchos miles de routers
+y conexiones de enlace entre ellos. Internet resulta tan complejo que nunca está
+plenamente operativo, Internet no trata de ser "perfecto", sino de adaptarse
+a los problemas, cortes, errores, pérdida de datos, y muchos otros
+problemas imprevistos. Internet está diseñado para ser flexible y adaptarse a
+cualquier problema que pueda surgir.
 
-![The Four-Layer Model](../images/layers)
+![El Modelo de Cuatro Capas](../images/layers)
 
-In order to build an overall solution that works at scale, it was important to
-break the Internet engineering problems down into four distinct layers:
+Con el objetivo de crear una solución que funcionara a escala global, resultó de
+gran importancia dividir los problemas de diseño de Internet en cuatro capas
+distintas:
 
-* The Link/Physical layer includes all of the complex engineering
-required to move data across a single "hop", whether the hop is a wireless WiFi,
-wired Ethernet, fiber optic, or satellite connection.
+* La capa Física/de Acceso incluye toda la compleja ingeniería necesaria para mover
+los datos a través de un único "salto", sin importar si el salto es a través de una
+red WiFi inalámbrica, Ethernet cableado, fibra óptica o conexión mediante satélite.
 
-* The Internetwork Protocol (IP) layer is how data is routed
-across a series of hops to get quickly and efficiently from one of a billion
-source computers to any of a billion destination computers. The IP layer
-dynamically adjusts and reroutes data based on network load, link performance,
-or network outages. While the IP layer is highly reliable and fast, at
-times it loses or even throws away data. The IP layer is not responsible for
-insuring the overall reliability of the network. It just moves the data the
-best that it can.
+* La capa de Protocolo de Internet (IP) sirve para dirigir los datos a través de
+una serie de saltos para viajar de forma rápida y eficiente desde uno de los miles
+de millones de equipos de origen hasta uno de los miles de millones de equipos de
+destino. La capa IP ajusta dinámicamente y redirige los datos en base a la carga
+de la red, el rendimiento de la conexión o los cortes de red. A pesar de que la
+capa IP es sumamente fiable y rápida, a veces pierde o incluso desecha datos. La
+capa IP no es la responsable de asegurar la fiabilidad global de la red.
+Simplemente, mueve los datos lo mejor que puede.
 
-* The Transport layer compensates for any imperfections in the IP
-or Link layers. The Transport layer makes sure that any lost packets are
-retransmitted and packets that arrive out of order are put back into order
-before being passed on to the receiving application. The Transport layer also
-acts as flow control between the sending and receiving applications to make
-sure that data is moved quickly when the network is fast and the links are
-not overloaded, and to slow the transfer of data when using slower or heavily
-loaded links. The data flow and rate limitation in the Transport layer allow
-the Internet to continue to function smoothly even when it is heavily loaded.
+* La capa de Transporte compensa cualquier imperfección de las capas IP o de Acceso.
+La capa de Transporte se asegura de que cualquier paquete perdido sea vuelto a
+enviar y de que los paquetes que llegan desordenados sean colocados en orden
+antes de ser pasados a la aplicación receptora. La capa de Transporte también
+actúa como control de flujo entre las aplicaciones emisora y receptora para
+asegurarse de que los datos se muevan rápidamente cuando la red sea rápida y
+las conexiones no estén sobrecargadas, y de reducir el envío de datos cuando
+se utilicen conexiones lentas o densamente cargadas. El flujo de datos y la
+limitación de velocidad en la capa de Transporte permiten a Internet seguir
+funcionando con fluidez incluso cuando está densamente cargado.
 
-* The other three layers make the use of the network very simple
-for the Application Layer. An application can make a network connection and
-send/receive data on that connection with just a few lines of code. By making the
-use of the network simple, applications can focus on solving the end-user
-problems they need to solve. Because it is so easy for applications to use
-the network in new and different ways, we have seen the emergence of a wide
-range of highly innovative applications that work without any changes required to
-the Internet protocols.
+* Las otras tres capas hacen que el uso de la red sea algo muy sencillo para
+la capa de Aplicación. Una aplicación puede realizar una conexión de red y
+enviar/recibir datos en esa conexión con sólo unas pocas líneas de código.
+Al convertir el uso de la red en algo sencillo, las aplicaciones pueden centrarse
+en resolver los problemas de los que los usuarios finales necesitan que se ocupen.
+Dado que resulta tan fácil para las aplicaciones usar la red de modos nuevos y
+diferentes, hemos podido presenciar la emergencia de una amplia variedad de aplicaciones
+sumamente innovadoras que funcionan sin necesidad de realizar ningún cambio en los
+protocolos de Internet.
 
-Without breaking the problem of engineering and building the Internet into
-these four distinct layers, it would be far more difficult to build and deploy
-ever-improving versions of the network. And if every single application needed
-to be fully aware of all of the complex details required to use the Internet,
-it would greatly limit the richness and diversity of the networked applications
-that we have today.
+Si no se hubiera dividido el problema de diseño y construcción de Internet en esas
+cuatro capas diferentes, hubiera resultado mucho más difícil crear y desplegar
+versiones cada vez mejores de la red. Y si cada aplicación tuviera que ocuparse
+por si misma de todos los complejos detalles necesarios para usar Internet, se
+hubiera limitado enormemente la riqueza y diversidad de las aplicaciones en red
+que tenemos actualmente.
 
-It is amazing to realize what has been accomplished in building the Internet
-over the past 50 years. But in a way, we have only just begun the engineering
-journey of building networked applications. It does not take much to imagine
-an Internet where every light switch, lightbulb, refrigerator, table, automobile,
-roadway, flying drone, and chair has an Internet address and they all want to
-communicate with one another. New engineering issues will have to be solved,
-and perhaps even the four-layer network model will need to evolve to meet these
-new engineering challenges.
+Resulta asombroso darse cuenta de todo lo que se ha conseguido respecto a la
+construcción de Internet a lo largo de los últimos 50 años. Pero en cierto modo,
+sólo hemos comenzado el viaje de ingeniería para la construcción de aplicaciones
+de red. No cuesta mucho imaginarse un Internet donde cada interruptor, bombilla,
+refrigerador, mesa, automóvil, carretera, drone volador, y silla dispongan de
+una dirección de Internet y puedan comunicarse unos con otros. Aparecerán nuevos
+problemas de diseño que deberán ser resueltos, y tal vez incluso el modelo
+de cuatro capas deba evolucionar para satisfacer esos nuevos retos de ingeniería.
 
-But just like brilliant engineers designed and evolved network protocols to
-move from hundreds of network-connected computers to billions of 
-network-connected computers, our present and future engineers will certainly
-solve the problems and challenges we will face as the network evolves to connect
-trillions of computers.
-
-
-
+Pero, al igual que ingenieros brillantes diseñaron e hicieron evolucionar
+protocolos de red para conseguir pasar de tener cientos de equipos conectados a la red a
+tener miles de millones de equipos conectado, nuestros actuales y futuros ingenieros
+serán capaces sin duda de resolver los problemas y retos con los que nos enfrentaremos
+a medida que la red evolucione para permitir que se conecten billones de equipos.

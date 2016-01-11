@@ -18,13 +18,13 @@ Historial de impresiones
 
 25-Mayo-2015 Impresión original - CreateSpace
 
-Detalles sore el copyright
+Detalles sobre el copyright
 --------------------------
 
 Los derechos de reproducción de este libro pertenecen a Charles R. Severance.
 
-La versión en papel/impresa de este libro ha sido licenciada bajo una
-licencia internacional Creative Commons Attribution-NonCommercial 4.0.
+La versión en papel/impresa de este libro ha sido licenciada bajo una licencia
+Creative Commons Attribution-NonCommercial 4.0 International License.
 Se concede permiso específicamente para realizar copias si es
 necesario de la totalidad o una parte de los materiales de este libro
 para utilizarlos como parte de un curso o material para un curso.
@@ -32,8 +32,8 @@ para utilizarlos como parte de un curso o material para un curso.
 http://creativecommons.org/licenses/by-nc/4.0
 
 Las copias electrónicas de este libro en EPUB, PDF, y HTML
-están protegidas con una licencia internacional
-Creative Commons Attribution 4.0.
+están protegidas con una licencia
+Creative Commons Attribution 4.0 International License.
 
 http://creativecommons.org/licenses/by/4.0/
 

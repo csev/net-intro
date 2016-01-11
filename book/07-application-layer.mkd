@@ -369,7 +369,10 @@ Escritura de Aplicaciones en Red
 \index{socket}
 Las aplicaciones que envían y reciben datos a través de la red están escritas
 en uno o más lenguajes de programación. Muchos lenguajes de programación tienen
-librerías[^1] de código que hacen que resulte bastante sencillo escribir
+librerías^[Aunque la traducción correcta de *libraries of code* sería *bibliotecas de
+código*, resulta bastante habitual entre la comunidad de programadores llamarles
+*librerías de código*, por lo que he decidido utilizar ese término. (Nota del trad.)]
+de código que hacen que resulte bastante sencillo escribir
 código para enviar y recibir datos a través de la red.
 Con una buena librería de programación, realizar una conexión con una aplicación
 que esté corriendo en un servidor, y enviar y recibir datos de ese servidor
@@ -572,8 +575,3 @@ a) La dirección del servidor y el número de puerto en ese servidor
 b) La ruta entre los equipos de origen y destino
 c) Qué parte de la dirección IP se corresponde con la dirección de red
 d) El tamaño inicial de la ventana TCP durante la transmisión
-
-
-[^1]: Aunque la traducción correcta de *libraries of code* sería *bibliotecas de
-código*, resulta bastante habitual entre la comunidad de programadores llamarles
-*librerías de código*, por lo que he decidido utilizar ese término. (Nota del trad.)

@@ -1,247 +1,247 @@
-The OSI Model
+El modelo OSI
 =============
 
-So far we have spent all of our time describing the four-layer model
-used to design and implement the TCP/IP protocols and applications that
-make up the Internet. However, the TCP/IP  model is not the only model
-we can use to help us understand how networks work. The other
-model commonly used to make sense of network design is called
-the Open System Interconnection (OSI) model. While the TCP/IP model
-was designed and evolved as the TCP/IP protocols were developed,
-deployed, and changed, the OSI model was the result of a careful design
-process by many networking experts who worked to develop a general
-approach to network models.
+Hasta ahora hemos estado todo el tiempo describiendo el modelo de cuatro capas
+usado para diseñar e implementar los protocolos TCP/IP y las aplicaciones que
+forman Internet. Sin embargo, el modelo TCP/IP no es el único que podemos
+utilizar para entender cómo funcionan las redes. El otro modelo que se usa
+habitualmente para dar sentido al diseño de redes se llama el modelo de Interconexión
+de Sistemas Abiertos (*Open System Interconnection* u OSI). Mientras que el modelo
+TCP/IP fue diseñado y evolucionó a medida que los protocolos TCP/IP se iban
+desarrollando, desplegando y cambiando, el modelo OSI fue el resultado de un proceso
+de cuidadoso diseño por parte de muchos expertos en redes, que trabajaron para
+desarrollar una teoría general de los modelos de redes.
 
-In today's networked world, the OSI model and the TCP/IP model serve two
-different purposes.^[This, of course, is an oversimplification. Prior to 1990,
-there *were* operational network implementations based on ISO specifications
-that followed the OSI network model very closely. But today, those ISO/OSI 
-network implementations no longer are in broad use.]
-The TCP/IP model is an *implementation* model, in that it provides the
-guidance for those who would build TCP/IP-compatible network hardware
-or software. The OSI model is more of an *abstract* model that 
-can be used to understand a wide range of network architectures.
+En el mundo de las redes actual, el modelo OSI y el modelo TCP/IP se utilizan para
+propósitos diferentes.^[Esto, por supuesto, es una simplificación. Antes de 1990,
+*había* implementaciones de redes operativas basadas en las especificaciones ISO
+que seguían fielmente el modelo de redes OSI. Pero hoy día, esas implementaciones de
+red ISO/OSI generalmente ya no se usan.]
+El modelo TCP/IP es un modelo de *implementación* o *ejecución*, en el cual se
+proporcionan las directrices para aquellos que quieran crear hardware o software de
+red compatible con TCP/IP. El modelo OSI es más un modelo *abstracto* que puede usarse
+para entender una amplia variedad de arquitecturas de red.
 
-While TCP/IP is the most widely used network technology today, many
-different types of networks have been implemented and deployed 
-over the past 50 years. And as we continue to improve and evolve networking, 
-new implementation models may emerge.
+A pesar de que la tecnología de red TCP/IP es la más ampliamente utilizada hoy día,
+a lo largo de los últimos 50 años se han implementado y desplegado muchos tipos
+de redes diferentes. Y a medida que continuemos mejorando y haciendo evolucionar las
+redes, pueden surgir nuevos modelos de implementación.
 
-The OSI model has seven layers instead of the four layers of the
-TCP/IP model. Starting at the bottom (nearest the physical
-connections) of the OSI model, the layers are: (1) Physical, (2) Data
-Link, (3) Network, (4) Transport, (5) Session, (6) Presentation,
-and (7) Application. We will look at each layer in the OSI model
-in turn, starting with the Physical layer.
+El modelo OSI tiene siete capas en lugar de las cuatro del modelo TCP/IP.
+Si comenzamos por la base (más cerca de las conexiones físicas) del modelo OSI,
+las capas son: (1) Física, (2) Enlace de datos, (3) Red, (4) Transporte, (5) Sesión
+(6) Presentación, y (7) Aplicación. Iremos revisando las capas del modelo OSI
+de una en una, comenzando por la capa Física.
 
-Physical (Layer 1)
---------------------
+Física (Capa 1)
+---------------
 
-The OSI Physical layer deals with the physical attributes of the
-actual wired, wireless, fiber optic, or other connection that is
-used to transport data across a single link. The Physical layer also
-defines the shapes of the connectors and type of media which can be used.
-Another problem solved at this layer is how to encode the bits
-(0's and 1's) that make up the data being sent across the
-medium.^["Manchester Encoding" is a common technique for encoding 
-bits for transmission across a wire.]
-The "bit encoding" (or modulation) determines how fast data
-can be sent across the link.
+La capa Física OSI trata con los atributos físicos reales de los
+cables, red inalámbrica, fibra óptica, u otras conexiones que se usen para transportar
+datos a través de un único enlace. La capa Física también define las
+formas de los conectores y los tipos de materiales que pueden utilizarse.
+Otro problema del que se ocupa esta capa es de la forma de codificar los bits (ceros y
+unos) que componen los datos que se están siendo enviados a través del medio.^[La
+"Codificación Manchester" es una técnica habitual para codificar los bits a la
+hora de enviarlos a través de un cable.]
+La "codificación de bits" (o modulación) determina la velocidad a la que se pueden
+enviar los datos a través de la conexión.
 
-Data Link (Layer 2)
----------------------
-
-The OSI Data Link layer is concerned with how the systems using
-a physical link cooperate with one another. When data is broken
-into packets, the Data Link layer defines special sequences to
-indicate the beginning and end of each packet. The stations
-communicating using the physical connection are assigned addresses
-to allow for effective use of the media. Sometimes multiple stations
-are sharing the same media (as on a wireless network) and the
-Data Link layer defines how those stations will share the connections
-with the other systems connected to the network. Most Data Link
-layers also have some form of checksum to detect and/or correct for
-errors in the transmitted data.
-
-The design problems solved in the Physical and Data Link layers of
-the OSI model are addressed by the Link layer of the TCP/IP model.
-
-Network (Layer 3)
--------------------
-
-Like the Internetwork Layer (IP) in the TCP/IP model, the OSI
-Network layer deals with the global assignment of "routable"
-addresses to the various systems connected to the network. The
-Network layer governs how routers forward packets across multiple
-hops to get from their source to their destination. Like the IP
-layer, The OSI Network layer does not attempt to be error free,
-as it assumes that lost data will be detected and retransmitted at
-the next layer up.
-
-Transport (Layer 4)
----------------------
-
-The Transport layer in the OSI model manages packet loss and
-retransmission as well as flow control and window size. The
-rest of the functionality of the TCP/IP Transport layer is handled
-in the Session layer in the OSI model.
-
-Session (Layer 5)
--------------------
-
-The OSI Session layer handles establishing connections between
-applications. The Session layer deals with "ports" so that a
-connecting client application can "find" the correct server
-application on a particular system. Some aspects of secure
-transmission are also handled in the OSI Session layer.
-
-Presentation (Layer 6)
+Enlace de Datos (Capa 2)
 ------------------------
 
-The Presentation layer focuses on how data is represented and
-encoded for transmission across the network. As an example,
-the Presentation layer would describe how to encode the pixels
-of an image so that the receiving application can properly
-decode the data. The Presentation layer also handles data
-encryption and decryption.
+La capa de Enlace de Datos OSI se ocupa de cómo cooperan entre sí
+los sistemas que utilizan una conexión física. Cuando los datos se dividen en
+paquetes, la capa de Enlace de Datos define cuáles son las secuencias especiales
+que indican el principio y el final de cada paquete. Los equipos que se comunican
+usando la conexión física disponen de direcciones asignadas para permitirles
+realizar un uso efectivo del medio. Algunas veces varios equipos comparten el
+mismo medio (como ocurre en una red inalámbrica), y la capa de Enlace de Datos
+define cómo deben compartir las conexiones esos equipos con los demás sistemas
+conectados a la red. La mayoría de las capas de Enlace de Datos disponen también
+de algún tipo de mecanismo de *checksum* (suma de verificación) para detectar
+y/o corregir los errores en los datos transmitidos.
 
-Application (Layer 7)
+Los problemas de los que se ocupan las capas Física y de Enlace de Datos en el modelo
+OSI son gestionados por la capa de Acceso en el modelo TCP/IP.
+
+Red (Capa 3)
+------------
+
+Al igual que hacía la capa de Internet (IP) en el modelo TCP/IP, la capa de Red
+OSI trata con la asignación global de direcciones "enrutables" para los
+diversos sistemas conectados a la red. La capa de Red dirige el modo en que los
+routers reenvían los paquetes a través de múltiples saltos para llevarlos desde su
+origen hasta su destino. Al igual que la capa IP, la capa de Red OSI no intenta estar
+libre de errores, ya que asume que si se produce alguna pérdida de datos, esta será
+detectada y subsanada por la capa inmediatamente por encima de ella.
+
+Transporte (Capa 4)
+-------------------
+
+La capa de Transporte OSI gestiona la pérdida de paquetes y su reenvío,
+así como el control de flujo y el tamaño de ventana. El resto de las funciones
+de la capa de capa de Transporte TCP/IP son realizada por la capa de Sesión en el
+modelo OSI.
+
+Sesión (Capa 5)
+---------------
+
+La capa de Sesión OSI se encarga de establecer las conexiones entre aplicaciones.
+La capa de Sesión trata con los "puertos" para que una aplicación cliente que
+quiera conectarse pueda "encontrar" la aplicación servidor correcta en un sistema
+concreto. Algunos aspectos relativos a las transmisiones seguras son también
+gestionados en la capa de Sesión OSI.
+
+Presentación (Capa 6)
+---------------------
+
+La capa de Presentación se centra en cómo se representan los datos y se codifican
+para su transmisión a través de la red. Por ejemplo, la capa de Presentación podría
+describir cómo codificar los pixeles de una imagen para que la aplicación receptora
+pudiera decodificar correctamente los datos. La capa de Presentación también se
+encarga de la encriptación y desencriptado de los datos.
+
+Aplicación (Capa 7)
+-------------------
+
+La capa de Aplicación OSI se parece mucho a la capa de Aplicación en el modelo
+TCP/IP, en el sentido de que también contiene a las propias aplicaciones.
+Algunas aplicaciones son clientes que inician las conexiones, y otras son
+servidores que responden a esas peticiones de conexión. Los diversos pares de
+aplicaciones tienen protocolos estándar que definen la interoperabilidad entre
+múltiples clientes y múltiples servidores de distintos vendedores.
+
+![Comparación de los Modelos TCP y OSI](../images/iso-tcp)
+
+Comparación de los Modelos OSI y TCP/IP
+---------------------------------------
+
+Podemos usar el modelo OSI para proporcionar una "visión" alternativa del modelo
+TCP/IP, comparando cómo se divide la funcionalidad de la red según el
+modelo OSI en sus capas, y cómo se hace lo mismo según el modelo TCP/IP.
+
+Capa de Acceso (TCP/IP)
 -----------------------
 
-The OSI Application Layer is very similar to the Application layer
-in the TCP/IP model, in that it contains the applications themselves.
-Some applications are client applications that initiate connections,
-and other applications are the server applications that respond to
-those connection requests. The various pairs of applications
-have protocol standards that define interoperability between multiple
-clients and multiple servers from different vendors.
+La capa de Acceso TCP/IP combina las capas Física y de Enlace de Datos del modelo
+OSI. Las capas Física y de Enlace de Datos normalmente están integradas en el
+hardware. Productos como Ethernet, WiFi, conexión por satélite o fibra óptica van
+a menudo implementados en una tarjeta controladora de red que se conecta en la parte
+posterior de un computador o router. La tarjeta controladora de red generalmente
+integra en el hardware tanto los aspectos físicos como de enlace de datos relativos
+a la conexión. En la mayoría de los casos, las capas de
+enlace de datos están adaptadas a las limitaciones y requerimientos de sus capas
+físicas correspondientes. De modo que en los sistemas reales, resulta bastante
+raro para una capa de enlace de datos concreta estar emparejada arbitrariamente
+con cualquier número de capas físicas. Dado que puede resultar complicado separar
+los aspectos físicos y de enlace de datos para una tecnología de acceso concreta,
+el modelo TCP las combina dentro de una única capa para simplificar.
 
-![Comparing the TCP and OSI Models](../images/iso-tcp)
+Capa de Internet (TCP/IP)
+-------------------------
 
-Comparing the OSI and TCP/IP Models
------------------------------------
+Una parte en la que coinciden con bastaste exactitud ambos modelos es en la capa de
+red OSI y la capa de Internet TCP/IP. Ambas realizan las mismas funciones, consistentes
+en crear un espacio global de direcciones enrutables y preparar a los routers para
+asegurarse de que los paquetes encuentren su camino de forma adecuada desde el origen
+hasta el destino a través de múltiples saltos.
 
-We can use the OSI model to provide an alternative "view" of the
-TCP/IP model by comparing how the OSI model breaks network
-functionality into its layers and how the TCP/IP model breaks
-its functionality into layers.
-
-Link Layer (TCP/IP)
--------------------
-
-The TCP/IP Link layer combines the Physical and Data Link layers
-from the OSI model. The Physical and Data Link layers are usually
-implemented in hardware.  Products like Ethernet, WiFi, satellite,
-or fiber optic often are implemented in a network driver card that
-plugs into the back of a computer or router. The network driver
-card generally implements both the physical and the data link aspects
-of the connection in the hardware on the card.  In most cases, the data
-link layers are tuned to the limitations and requirements of their
-corresponding physical layers. So in real systems, it is somewhat
-rare for a particular data link layer to be arbitrarily paired with
-any number of physical layers. Since it can be hard to separate the
-physical and data link aspects for a particular link technology, the 
-TCP model combines them into a single layer for simplicity.
-
-Internetwork Layer (TCP/IP)
+Capa de Transporte (TCP/IP)
 ---------------------------
 
-One place that maps pretty cleanly between the two models is
-the OSI Network and TCP/IP Internetwork layers. They perform the
-same functions of creating a globally routable address space and
-building routers to insure that packets properly find their way
-from the source to the destination across multiple hops.
+Las características de la capa de Transporte en TCP/IP se reparten entre las capas
+de Transporte y la de Sesión en el modelo OSI. La capa de Transporte OSI se ocupa
+del control de flujo y el reenvío de paquetes, mientras que la capa de Presentación
+OSI gestiona que múltiples aplicaciones puedan funcionar a la vez en múltiples puertos,
+y también se encarga del establecimiento y finalización de sesión.
 
-Transport Layer (TCP/IP)
-------------------------
+La Capa de Sockets Seguros (SSL) del modelo TCP/IP se corresponde con ciertas
+partes de las capas de Sesión y Presentación en el modelo OSI.
 
-The features of the Transport layer in TCP/IP are spread across the
-Transport and Session layers of the OSI model.  The OSI Transport
-layer deals with flow control and packet retransmission,
-while the OSI Presentation layer deals with multiple applications
-running on multiple ports as well as session establishment and teardown.
+Capa de Aplicación (TCP/IP)
+---------------------------
 
-The Secure Sockets Layer (SSL) in the TCP/IP model corresponds to
-parts of the Session and Presentation layers in the OSI model.
+La capa de Aplicación TCP/IP combina los aspectos no relativos a la seguridad
+de las capas de Presentación y Aplicación OSI. Aunque muchas aplicaciones
+TCP/IP se ocupan de cuestiones como la codificación y decodificación de varios
+tipos de datos, el modelo TCP/IP no ve el formateo de datos como una "capa"
+separada. En las aplicaciones TCP/IP se utilizan varias tecnologías de codificación
+y decodificación de datos, pero TCP/IP tiende a tratar esas capacidades como
+librerías de código que las aplicaciones utilizan según sus necesidades.
 
-Application Layer (TCP/IP)
---------------------------
-
-The TCP/IP Application Layer combines the non-security aspects of the
-OSI Presentation layer and the OSI Application layer. While
-many TCP/IP applications deal with issues like encoding and decoding
-various types of data, the TCP/IP model does not see data formatting
-as a separate "layer". Various data encoding and decoding technologies
-are used in TCP/IP applications, but TCP/IP tends to treat these
-capabilities as library code that applications make use of as needed
-for the application.
-
-Conclusion
+Conclusión
 ----------
 
-While the TCP/IP model described in this book is widely used to guide
-the implementation of TCP/IP networks, hardware, and software, the
-OSI model can help us look at and compare a wide range of network
-architectures ranging from openly developed networks to proprietary
-vendor-specific networks.
+A pesar de que el modelo TCP/IP descrito en este libro es ampliamente utilizado
+como guía de implementación práctica para la creación de las redes TCP/IP, hardware y
+software, el modelo OSI puede resultarnos útil para estudiar y comparar una gran
+variedad de arquitecturas de red, desde redes de desarrollo abierto (libres) hasta
+redes propietarias de un proveedor específico.
 
-Glossary
+Glosario
 --------
 
-**abstract model**: A model and set of terminology that is used to generally
-understand a problem area and guide the development of standards and
-implementations to solve problems.
+**modelo abstracto**: Un modelo y conjunto de terminología que se usa para comprender
+de forma general un área problemático y guiar el desarrollo de estándares e
+implementaciones para resolver los problemas.
 
-**implementation model**: A model and set of terminology that is used to 
-guide the development of standards and an implementation to solve a particular
-problem.
+**modelo de implementación**: Un modelo y conjunto de terminología que se usa para
+guiar el desarrollo de estándares y una implementación práctica para resolver un
+problema concreto.
 
-**ISO**: International Organization for Standardization.  A worldwide body
-that develops standards in computing, networking, and many other areas.
+**ISO**: International Organization for Standardization (Organización Internacional
+para la Estandarización). Un organismo internacional que desarrolla estándares en
+informática, redes, y otras muchas áreas.
 
-**OSI**: Open System Interconnection.  A seven-layer model used to help organize 
-the design of various approaches to network architecture.
+**OSI**: Open System Interconnection (Interconexión de Sistemas Abiertos). Un modelo
+de siete capas usado para ayudar a organizar el diseño de varias estrategias de
+arquitectura de red.
 
 
-Questions
+Preguntas
 ---------
 
-You can take this quiz online at http://www.net-intro.com/quiz/
+Puedes realizar este cuestionario online en http://www.net-intro.com/quiz/
 
-1. What is the primary value of the OSI network model?
-a) OSI networks are used in the southern hemisphere
-b) The OSI approach can be use to analyze many different network models
-c) OSI networks make better use of limited bandwidth
-d) OSI networks are more secure
+1. ¿Cuál es el valor principal del modelo de red OSI?
+a) Las redes OSI se utilizan en el hemisferio Sur
+b) El enfoque OSI puede ser usado para analizar muchos modelos de redes diferentes
+c) Las redes OSI hacen un uso mejor del ancho de banda cuando este está limitado
+d) Las redes OSI son más seguras
 
-2. How many layers does the OSI model have?
-a) Four
-b) Six
-c) Seven
-c) Nine
+2. ¿Cuántas capas tiene el modelo OSI?
+a) Cuatro
+b) Seis
+c) Siete
+c) Nueve
 
-3. Which of the OSI layers deals with the shape of connectors for network connections?
-a) Physical
-b) Data Link
-c) Network
-d) Transport
+3. ¿Cuál de las capas OSI se ocupa de la forma de los conectores para las conexiones
+de red?
+a) Física
+b) Enlace de Datos
+c) Red
+d) Transporte
 
-4. Which of the layers is most similar between the OSI and TCP network models?
-a) TCP Link Layer and OSI Data Link Layer
-b) TCP Internetwork Layer and OSI Network Layer
-c) TCP Transport Layer and OSI Transport Layer
-d) TCP Application Layer and OSI Session Layer
+4. ¿Cuáles de las capas son más parecidas entre sí en los modelos de red OSI y TCP?
+a) La capa de Acceso TCP y la capa de Enlace de Datos OSI
+b) La capa de Internet TCP y la capa de Red OSI
+c) La capa de Transporte TCP y la capa de Transporte OSI
+d) La capa de Aplicación TCP y la capa de Sesión OSI
 
-5. What layer does the TCP/IP Secure Sockets Layer map to in the OSI network model?
-a) Secure Data Link Layer (SDLL)
-b) Secure Network Layer (SNL)
-c) Secure Transport Layer (STL)
-d) Session and Presentation Layers
+5. ¿Qué capa equivaldría a la Capa de Sockets Seguros (SSL) de TCP/IP en el modelo de
+red OSI?
+a) Capa de Acceso a Datos Seguro (*Secure Data Link Layer* o SDLL)
+b) Capa de Red Segura (*Secure Network Layer* o SNL)
+c) Capa de Transporte Seguro (*Secure Transport Layer* o STL)
+d) Capas de Sesión y Presentación
 
-6. Why does the TCP model combine the OSI Data Link and Physical layers into a single Link layer?
-a) Because the TCP model does not worry about the Physical layer
-b) Because the TCP model designers were ignored at the 1981 OSI meeting in Utrect, Netherlands
-c) Because quite often the design of Data Link and Physical layers are tightly connected for a particular technology
-d) To make the TCP model easier to understand by end users
-
-
+6. ¿Por qué el modelo TCP combina las capas OSI de Acceso a Datos y la Física
+en una única capa de Acceso?
+a) Porque el modelo TCP no se preocupa de la capa Física
+b) Porque los diseñadores del modelo TCP fueron ignorados en el congreso OSI de 1981,
+en Utrect, Países Bajos
+c) Porque resulta bastante habitual que el diseño de las capas de Enlace de Datos y
+Física estén estrechamente relacionados para una tecnología concreta
+d) Para conseguir que el modelo TCP sea más sencillo de entender por los usuarios
+finales

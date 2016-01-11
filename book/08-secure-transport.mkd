@@ -280,25 +280,13 @@ escala de miles de millones de parejas de equipos interactuando entre sí.
 Glosario
 --------
 
-**clave asimétrica**: Un sistema de encriptación en el cual se usa una clave (pública)
-para encriptar los datos antes de transmitirlos, y una clave diferente (privada) para
-desencriptar esos datos una vez recibidos.
-
 **autoridad de certificación**: Una organización que firma digitalmente claves públicas
 después de verificar que el nombre que figura en cada clave pública corresponde
 de verdad a la persona u organización que posee esa clave pública.
 
-**texto cifrado**: Una versión codificada de un mensaje que no puede ser leída sin
-conocer la clave de decodificado y la técnica.
-
-**desencriptar, decodificar o descifrar**: La acción de transformar un texto cifrado en
-un mensaje de texto plano usando un secreto o clave.
-
-**encriptar, codificar o cifrar**: La acción de transformar un mensaje de texto plano
-en un mensaje de texto cifrado usando un secreto o clave.
-
-**texto plano**: Un mensaje legible que está a punto de ser encriptado antes de ser
-enviado.
+**clave asimétrica**: Un sistema de encriptación en el cual se usa una clave (pública)
+para encriptar los datos antes de transmitirlos, y una clave diferente (privada) para
+desencriptar esos datos una vez recibidos.
 
 **clave privada**: La parte de una pareja de claves que se utiliza para desencriptar
 transmisiones.
@@ -306,12 +294,24 @@ transmisiones.
 **clave pública**: La parte de una pareja de claves que se utiliza para encriptar
 transmisiones.
 
+**desencriptar, decodificar o descifrar**: La acción de transformar un texto cifrado en
+un mensaje de texto plano usando un secreto o clave.
+
+**encriptar, codificar o cifrar**: La acción de transformar un mensaje de texto plano
+en un mensaje de texto cifrado usando un secreto o clave.
+
 **secreto compartido**: Un sistema de cifrado que usa la misma clave para encriptar
 y desencriptar.
 
 **SSL**: Secure Sockets Layer (Capa de Sockets Seguros). Un sistema que permite a una
 aplicación solicitar que la capa de Transporte de una conexión sea cifrada cuando
 cruza la red. Es similar a la Seguridad de Capa de Transporte (TLS).
+
+**texto cifrado**: Una versión codificada de un mensaje que no puede ser leída sin
+conocer la clave de decodificado y la técnica.
+
+**texto plano**: Un mensaje legible que está a punto de ser encriptado antes de ser
+enviado.
 
 **TLS**: Transport Layer Security (Seguridad de Capa de Transporte). Un sistema que
 permite a una aplicación solicitar que la capa de Transporte de una conexión sea

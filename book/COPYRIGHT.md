@@ -1,25 +1,25 @@
-Copyright Details
------------------
+Detalles sobre el copyright
+---------------------------
 
-This book is Copyright Charles R. Severance.
+Los derechos de reproducción de este libro pertenecen a Charles R. Severance.
 
-The paper/print version of this book is licensed under a
+La versión en papel/impresa de este libro ha sido licenciada bajo una licencia
 Creative Commons Attribution-NonCommercial 4.0 International License.
-Permission is specifically granted to make copies as
-necessary of all or part of the materials in this book
-as part of a course or course packet.
+Se concede permiso específicamente para realizar copias si es
+necesario de la totalidad o una parte de los materiales de este libro
+para utilizarlos como parte de un curso o material para un curso.
 
 http://creativecommons.org/licenses/by-nc/4.0
 
-Electronic copies of this book in EPUB, PDF, and HTML
-are licensed under a
+Las copias electrónicas de este libro en EPUB, PDF, y HTML
+están protegidas con una licencia
 Creative Commons Attribution 4.0 International License.
 
 http://creativecommons.org/licenses/by/4.0/
 
-If you are interested in translating this book into a language
-other than English, please contact me. I am willing to
-give commercial print distribution rights for a complete and
-responsible translation.
+Si estás interesado en traducir este libro a un idioma
+distinto del inglés, por favor ponte en contacto conmigo. Estoy dispuesto
+a ceder los derechos de distribución de impresión comercial sobre una
+traducción completa y de confianza.
 
 
