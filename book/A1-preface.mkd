@@ -6,12 +6,13 @@ Créditos
     Ilustraciones: Mauro Toselli
     Soporte editorial: Sue Blumenberg
     Diseño de portada: Aimee Andrion
+	Traducción al español: Fernando Tardío
 
 Las ilustraciones SketchNote fueron creadas en un iPad usando
-*Paper* de www.fiftythree.com, utilizando un lápiz dedicado.
+*Paper* de www.fiftythree.com, utilizando un stylus (lápiz óptico) dedicado.
 Las ilustraciones han sido convertidas desde PNG a
 formatos vectoriales SVG y EPS, usando www.vectormagic.com.
-Las ilustraciones técnicas del libro se han creado con OmniGraffle.
+Los esquemas técnicos del libro se crearon con OmniGraffle.
 
 Historial de impresiones
 ------------------------
@@ -25,9 +26,9 @@ Los derechos de reproducción de este libro pertenecen a Charles R. Severance.
 
 La versión en papel/impresa de este libro ha sido licenciada bajo una licencia
 Creative Commons Attribution-NonCommercial 4.0 International License.
-Se concede permiso específicamente para realizar copias si es
+Se concede permiso específicamente para realizar copias cuando sea
 necesario de la totalidad o una parte de los materiales de este libro
-para utilizarlos como parte de un curso o material para un curso.
+para utilizarlos como parte de un curso o como material para un curso.
 
 http://creativecommons.org/licenses/by-nc/4.0
 
@@ -40,7 +41,7 @@ http://creativecommons.org/licenses/by/4.0/
 Si estás interesado en traducir este libro a un idioma
 distinto del inglés, por favor ponte en contacto conmigo. Estoy dispuesto
 a ceder los derechos de distribución de impresión comercial sobre una
-traducción completa y de confianza.
+traducción seria y completa.
 
 \cleardoublepage
 
@@ -52,8 +53,8 @@ El objetivo de este libro es proporcionar una comprensión básica del
 diseño técnico y la arquitectura de Internet.
 El libro está dirigido a todo tipo de audiencias -- incluso a aquellos que no
 disponen de ninguna experiencia previa en temas técnicos o matemáticas.
-Internet tiene un diseño increíblemente hermoso y debería ser comprendido
-por cualquiera que lo use.
+Internet tiene un diseño increíblemente hermoso y este debería ser entendido
+por cualquiera que lo utilice.
 
 A pesar de que este libro no trata sobre los certificados Network+ ni
 CCNA, espero que sirva para que los estudiantes interesados en esos
@@ -68,9 +69,9 @@ semana para el curso *SI502 - Networked Computing* (Redes Informáticas), que
 comencé a impartir en el 2008 en la Escuela de Información de la Universidad de
 Michigan. Posteriormente mejoré y amplié el material hasta cubrir las tres
 semanas de duración del curso sobre la Historia de Internet, Tecnología y
-Seguridad (IHTS), que he impartido a más de 100.000 estudiantes en Cursera,
+Seguridad (IHTS), que he impartido a más de 100.000 estudiantes en Coursera,
 desde el año 2012. Este libro añade detalles adicionales para crear un texto
-independiente, que pueda ser leído por placer o usado como apoyo en
+independiente, que pueda ser leído por diversión o usado como apoyo en
 cualquier curso de introducción centrado en la arquitectura de Internet.
 
 Trabajar en este libro ha sido particularmente divertido, ya que se trata de una
@@ -91,3 +92,32 @@ opinas. Puedes también enviarnos un tweet si encuentras algún error en el libr
     www.dr-chuck.com
     Ann Arbor, MI USA
     May 20, 2015
+	
+Acerca de la traducción al español
+==================================
+No resulta fácil traducir a otro idioma un libro sobre informática. Hay muchos
+términos técnicos, y muchas veces surge la duda de si es mejor traducirlos al
+español o dejarlos en inglés, ya que mucha gente hispanohablante los conoce así.
+También está el problema de cómo traducir esos términos, ya que en ocasiones hay
+palabras cuya traducción puede ser diferente dependiendo del país. El ejemplo más
+obvio es la palabra *computer*, que en la mayor parte del mundo hispanohablante se
+traduce como "computadora", pero en algunos países se utiliza el género masculino
+(computador), y en otros se utiliza un término completamente diferente (ordenador).
+
+A lo largo de este libro, siempre que me ha sido posible, he intentado utilizar
+el término más común que he sido capaz de encontrar (o el que yo he estimado que
+era más común). Siguiendo con el ejemplo anterior, en todo el libro se usa el
+término *computadora*, que puede no resultar familiar a una parte de los lectores,
+pero que creo que es el más extendido entre la comunidad hispanohablante. Para
+ciertos términos técnicos he usado la traducción que se puede encontrar en wikipedia, y
+generalmente lo he acompañado del término original en inglés para evitar confusiones.
+Y para palabras cuya traducción difiere dependiendo del país, a veces he optado por
+incluir traducciones alternativas entre paréntesis, para dejar claro a qué se refiere.
+
+Mi intención en todo momento ha sido intentar que la traducción pudiera resultarle útil
+a cualquier persona hispanohablante, por lo que he tratado siempre de unificar términos
+y huir de modismos y expresiones locales. Seguramente no lo habré conseguido al 100%,
+pero me conformo si he conseguido ayudar a salvar la barrera del idioma a cualquier
+persona interesada en conocer de verdad *cómo funciona Internet*.
+
+	Fernando Tardío.
