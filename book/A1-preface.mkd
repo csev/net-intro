@@ -99,18 +99,18 @@ No resulta fácil traducir a otro idioma un libro sobre informática. Hay muchos
 términos técnicos, y muchas veces surge la duda de si es mejor traducirlos al
 español o dejarlos en inglés, ya que mucha gente hispanohablante los conoce así.
 También está el problema de cómo traducir esos términos, ya que en ocasiones hay
-palabras cuya traducción puede ser diferente dependiendo del país. El ejemplo más
-obvio es la palabra *computer*, que en la mayor parte del mundo hispanohablante se
-traduce como "computadora", pero en algunos países se utiliza el género masculino
-(computador), y en otros se utiliza un término completamente diferente (ordenador).
+palabras cuya traducción puede ser diferente en distintos ámbitos geográficos.
+El ejemplo más obvio es la palabra *computer*, que dependiendo del país
+puede ser traducido como "computadora", "computador", u "ordenador".
+En ese caso concreto he optado por utilizar el término común *equipo*, o bien
+*computadora*, que si bien puede no resultar del todo familiar a una parte de los
+lectores, creo que es el más extendido entre la comunidad hispanohablante.
 
-A lo largo de este libro, siempre que me ha sido posible, he intentado utilizar
-el término más común que he sido capaz de encontrar (o el que yo he estimado que
-era más común). Siguiendo con el ejemplo anterior, en todo el libro se usa el
-término *computadora*, que puede no resultar familiar a una parte de los lectores,
-pero que creo que es el más extendido entre la comunidad hispanohablante. Para
-ciertos términos técnicos he usado la traducción que se puede encontrar en wikipedia, y
-generalmente lo he acompañado del término original en inglés para evitar confusiones.
+A lo largo de este libro, siempre que ha sido posible, he intentado utilizar
+los términos más comunes que he sido capaz de encontrar (o los que yo he estimado que
+eran más comunes). Para ciertos términos técnicos he usado como traducción "oficial"
+la que se puede encontrar en wikipedia, y
+generalmente la he acompañado del término original en inglés para evitar confusiones.
 Y para palabras cuya traducción difiere dependiendo del país, a veces he optado por
 incluir traducciones alternativas entre paréntesis, para dejar claro a qué se refiere.
 
@@ -120,4 +120,4 @@ y huir de modismos y expresiones locales. Seguramente no lo habré conseguido al
 pero me conformo si he conseguido ayudar a salvar la barrera del idioma a cualquier
 persona interesada en conocer de verdad *cómo funciona Internet*.
 
-	Fernando Tardío.
+	Fernando Tardío (@ftardio)
