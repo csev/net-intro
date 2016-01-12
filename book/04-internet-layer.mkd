@@ -5,7 +5,7 @@ Capa de Internet (IP)
 \index{Capa!Internet(IP)}
 Ahora que ya podemos mover los datos a través de un único enlace, es hora de
 averiguar cómo moverlos a través del país o alrededor del mundo. Para enviar
-datos desde tu computador hasta cualquiera de los billones de destinos posibles,
+datos desde tu computadora hasta cualquiera de los miles de millones de destinos posibles,
 los datos necesitan moverse a través de múltiples saltos y a través de múltiples
 redes. Cuando viajas desde tu casa hasta un destino lejano, puedes caminar desde tu
 casa hasta una parada de autobús, tomar un tren hasta la ciudad, tomar otro tren
@@ -65,7 +65,7 @@ capa de Acceso, dijimos que las direcciones de acceso eran asignadas durante el
 proceso de fabricación del hardware, y que se conservaban constantes durante toda
 la vida del equipo. No se pueden usar las direcciones de capa de acceso para dirigir
 paquetes a través de varias redes, ya que no existe relación entre una dirección
-de capa de acceso y la ubicación física en la cual ese computador está conectado a la
+de capa de acceso y la ubicación física en la cual esa computadora está conectado a la
 red. Con equipos portátiles y teléfonos móviles (celulares) moviéndose
 constantemente, el sistema necesitaría rastrear cada equipo individual a medida
 que se va moviendo de un sitio a otro. Y con billones de equipos conectados a
@@ -76,7 +76,7 @@ de enrutamiento resultaría lento e ineficiente.
 
 \index{IPv4}
 Para hacer todo esto más sencillo, lo que se hace es asignar otra dirección a cada
-computador, basada en dónde esté ese equipo conectado a la red. Existen dos versiones
+computadora, basada en dónde esté ese equipo conectado a la red. Existen dos versiones
 diferentes de las direcciones IP. Las antiguas (clásicas) direcciones IPv4 consisten en cuatro
 números separados por puntos, con un aspecto como este:
 
@@ -106,12 +106,12 @@ una dirección IPv4 en dos partes, tendríamos lo siguiente:
     Dirección de Red: 212.78
     Identificador de Dispositivo: 1.25
 
-La idea es que muchos computadores puedan estar conectados a Internet a través de
+La idea es que muchos computadoras puedan estar conectadas a Internet a través de
 una única conexión. Un campus universitario entero, una escuela o un negocio
 podrían conectarse usando una única dirección de red, o solo unas pocas.
 En el ejemplo anterior, 65.536 equipos podrían conectarse
 a la red usando la dirección de red "212.78". Como para el resto de Internet
-todos esos computadores aparecerían como una única conexión, todos los paquetes
+todos esas computadoras aparecerían como una única conexión, todos los paquetes
 con una dirección IP del tipo:
 
     212.78.*.*
@@ -240,10 +240,10 @@ participan reenviando los paquetes a través de Internet ignoran la ruta
 completa que tomarán esos paquetes. Lo único que saben es a qué conexión
 deben enviar esos datos para acercarlos a su destino definitivo.
 
-Pero resulta que la mayoría de los computadores tiene una herramienta de
+Pero resulta que la mayoría de las computadoras tiene una herramienta de
 diagnóstico de red llamada "*traceroute*" (o "*tracert*", dependiendo del sistema
 operativo), que te permite trazar la ruta entre tu equipo y otro de destino.
-Dado que la ruta entre ambos computadores puede cambiar de un paquete
+Dado que la ruta entre ambos computadoras puede cambiar de un paquete
 a otro, cuando "trazamos" una ruta, se trata tan solo de una "suposición
 bastante precisa" de la ruta que el paquete actual tomaría.
 
@@ -357,21 +357,21 @@ direcciones IP en los extremos.
 Obteniendo una dirección IP
 ---------------------------
 
-Cada vez más, los computadores son portátiles o móviles. Acabamos de señalar la
+Cada vez más, las computadoras son portátiles o móviles. Acabamos de señalar la
 gran importancia que tiene para la capa IP el tener localizados grupos extensos de
 equipos usando direcciones de red, en vez de localizar cada único equipo de forma
 individual. Pero, dado que esas direcciones de red indican una conexión física
-concreta a la red, cuando un computador se mueve de una ubicación a otra, necesitará
+concreta a la red, cuando una computadora se mueve de una ubicación a otra, necesitará
 una dirección IP nueva. Recuerda que la dirección de la capa de acceso queda fijada
 cuando se construye un equipo, y no cambia nunca durante la vida del mismo.
 Si bajas la pantalla de tu portátil (laptop) en una cafetería y la vuelves a levantar
 en tu casa, usando tu WiFi doméstica, tu equipo necesitará una dirección IP diferente.
 
-La capacidad de tu computador de obtener una dirección IP diferente cuando se mueve
+La capacidad de tu computadora de obtener una dirección IP diferente cuando se mueve
 de una red a otra se basa en un protocolo llamado "Protocolo de Configuración Dinámica
 de Host" (*Dynamic Host Configuration Protocol*, o DHCP para abreviar). El DHCP es
 bastante sencillo. Como vimos en el capítulo dedicado a la capa de Acceso, recuerda
-que lo primero que hacía un computador en el nivel de acceso a la red era preguntar
+que lo primero que hacía una computadora en el nivel de acceso a la red era preguntar
 "¿Hay una estación base en esta red?", enviando un mensaje a una dirección especial
 de difusión. Una vez que un equipo se ha conectado con éxito a la capa de acceso a
 través de la estación base, envía otro mensaje de difusión, esta vez preguntando
@@ -379,15 +379,15 @@ través de la estación base, envía otro mensaje de difusión, esta vez pregunt
 Si es así, dígame cuál es su dirección IP y también la dirección IP debo usar yo
 en esta red".
 
-Cuando el router que funciona como puerta de acceso contesta, tu computador recibe
+Cuando el router que funciona como puerta de acceso contesta, tu computadora recibe
 una dirección IP temporal para utilizar en esa red (por ejemplo, mientras estés en
 la cafetería). Si el router se queda sin noticias de tu equipo durante un buen rato,
 determina que te has marchado y cede la dirección IP a otro equipo.
 
-Si este proceso de reutilización de una dirección IP cedida va mal, dos computadores
+Si este proceso de reutilización de una dirección IP cedida va mal, dos computadoras
 pueden terminar teniendo la misma dirección IP dentro de la misma red. Quizás has
 visto alguna vez un mensaje en tu equipo del tipo de: "Otro equipo está usando
-192.168.0.5, hemos dejado de utilizar esta dirección". Tu computador ha
+192.168.0.5, hemos dejado de utilizar esta dirección". Tu computadora ha
 descubierto a otro equipo con una dirección de acceso distinta a la suya utilizando
 la misma dirección IP que él creía tener asignada para sí.
 
@@ -402,7 +402,7 @@ esa ubicación.
 En ciertos sistemas operativos, cuando un equipo se conecta a una red, envía una
 petición DHCP y no obtiene respuesta, decide asignarse a sí mismo una dirección IP
 de todos modos. A menudo esas direcciones auto-asignadas comienzan por "169...".
-Cuando tu computador tiene una de esas direcciones IP auto-asignadas, cree que
+Cuando tu computadora tiene una de esas direcciones IP auto-asignadas, cree que
 está conectado a una red y que tiene una dirección IP, pero sin una puerta de acceso,
 no puede conseguir que sus paquetes sean dirigidos a través de la
 red local y salgan a Internet. Lo más que se puede lograr es que unos pocos
@@ -427,12 +427,12 @@ Las direcciones que comienzan por "192.168." reciben el nombre de direcciones
 desde la que enviar o recibir datos a través del núcleo de la red. Sólo pueden ser
 utilizadas dentro de una red local individual, pero no se usan en la red global.
 
-Pero entonces, ¿cómo es que tu computador recibe una dirección como "192.168.0.5"
+Pero entonces, ¿cómo es que tu computadora recibe una dirección como "192.168.0.5"
 en tu red doméstica y puede acceder sin problemas a todo Internet? Esto se debe
 a que tu router/puerta de acceso/estación base doméstica está haciendo algo que
 se denomina "Traducción de Direcciones de Red" (*Network Address Translation* o NAT).
 La puerta de acceso tiene una única dirección IP rutable (o externa), que comparte con
-los múltiples equipos conectados a esa puerta de acceso. Tu computador usa su
+los múltiples equipos conectados a esa puerta de acceso. Tu computadora usa su
 dirección no-rutable (o interna), por ejemplo, "192.168.0.5" para enviar sus paquetes,
 pero como los paquetes pasan a través de la puerta de acceso, ésta reemplaza la
 dirección con su dirección rutable real (la externa). Cuando los paquete vuelven hacia
@@ -476,7 +476,7 @@ Europa (RIPE NCC), Asia-Pacífico (APNIC) y África (AFRNIC).
 \index{IPv4}
 \index{IPv6}
 Cuando se inventaron las direcciones IPv4 clásicas, como "212.78.1.25", sólo
-había unos pocos cientos de computadores conectados a Internet. Nadie se imaginaba
+había unos pocos cientos de computadoras conectadas a Internet. Nadie se imaginaba
 entonces que algún día tendríamos mil millones de equipos conectados a Internet.
 Pero hoy día, con la expansión de Internet y el "Internet de las cosas", gracias
 al cual vehículos inteligentes, refrigeradores, termostatos y incluso luces
@@ -494,10 +494,10 @@ Resumen
 -------
 La capa de Protocolo de Internet extiende nuestra red desde un único salto
 (capa de Acceso) hasta una serie de saltos, lo que se traduce en una serie de paquetes
-siendo dirigidos rápida y eficientemente desde tu computador hasta una dirección IP
+siendo dirigidos rápida y eficientemente desde tu computadora hasta una dirección IP
 de destino y de vuelta hasta tu equipo. La capa IP ha sido diseñada para reaccionar
 y determinar las rutas salvando los cortes en la red y manteniendo recorridos casi
-ideales para los paquetes, que se mueven entre billones de computadores sin ningún
+ideales para los paquetes, que se mueven entre billones de computadoras sin ningún
 tipo de repositorio central de enrutamiento. Cada router averigua su posición respecto
 al conjunto de la red y, en cooperación con sus routers vecinos, ayuda a mover los
 paquetes eficazmente a través de Internet. 
@@ -622,7 +622,7 @@ b) Cada router se fija en un paquete y lo reenvía basándose en la mejor predic
 es capaz de hacer acerca de cuál es la conexión de salida correcta.
 c) Cada router envía todos los paquetes a todas las conexiones de salida (algoritmo
 *flooding* o inundación)
-d) Cada router retiene un paquete hasta que llega otro desde el computador de destino
+d) Cada router retiene un paquete hasta que llega otro desde la computadora de destino
 
 8. ¿Qué es una tabla de enrutamiento?
 a) Una lista de direcciones IP asociadas con direcciones de conexiones

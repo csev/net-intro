@@ -163,7 +163,7 @@ Aplicaciones Servidor y Puertos
 
 Cuando una aplicación cliente quiere realizar una conexión con un equipo remoto,
 resulta importante que la conexión se establezca con la aplicación servidor
-correcta en ese equipo remoto. Un computador remoto puede disponer de un número
+correcta en ese equipo remoto. Una computadora remota puede disponer de un número
 indeterminado de aplicaciones servidor diferentes funcionando al mismo tiempo.
 Algunos ejemplos de aplicaciones servidor pueden ser:
 

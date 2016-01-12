@@ -70,7 +70,7 @@ debe ser realizada una actividad, especialmente en el campo de la diplomacia". L
 idea es que en situaciones formales, debemos comportarnos de acuerdo con un conjunto
 preciso de reglas. Usamos esa palabra para describir aplicaciones de red, porque
 sin reglas precisas, las aplicaciones no tienen forma de establecer y gestionar
-una conversación. A los computadores les gusta la precisión.
+una conversación. A las computadoras les gusta la precisión.
 
 ![Protocolos de Aplicación](../sketchnote/Protocols)
 
@@ -246,7 +246,7 @@ El Protocolo IMAP para Recuperación de Correo
 El protocolo HTTP sólo es uno más de los muchos protocolos de aplicación
 cliente/servidor utilizados en Internet. Otro protocolo habitual se usa para que una
 aplicación de correo que se esté ejecutando en tu equipo pueda recuperar correo desde
-un servidor central. Dado de que tu computador personal puede no estar encendido
+un servidor central. Dado de que tu computadora personal puede no estar encendida
 todo el tiempo, cuando alguien te envía un correo en realidad es dirigido a un servidor
 y almacenado allí hasta que enciendas tu equipo y recuperes cualquier correo nuevo.
 

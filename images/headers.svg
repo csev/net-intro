@@ -28,12 +28,12 @@
      id="namedview7837"
      showgrid="false"
      inkscape:zoom="1.5245113"
-     inkscape:cx="269.68406"
+     inkscape:cx="148.66167"
      inkscape:cy="18.112183"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g7767" />
+     inkscape:current-layer="svg7757" />
   <metadata
      id="metadata7759"> Produced by OmniGraffle 6.0.5 <dc:date>2015-03-08 19:21Z</dc:date>
 <rdf:RDF>
@@ -225,46 +225,49 @@
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="71.318916"
+     x="76.118912"
      y="21.297857"
      id="text8379"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan8381"
-       x="71.318916"
+       x="76.118912"
        y="21.297857"
-       style="font-size:14px">Cabecera Acceso</tspan></text>
+       style="font-size:12px">Cabecera Acceso</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:14px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="179.49652"
+     x="169.89648"
      y="21.400755"
      id="text8383"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan8385"
-       x="179.49652"
-       y="21.400755">Cabecera IP</tspan></text>
+       x="169.89648"
+       y="21.400755"
+       style="font-size:12px">Cabecera IP</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:14px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="283.57257"
+     x="278.77255"
      y="20.999409"
      id="text8387"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan8389"
-       x="283.57257"
-       y="20.999409">Cabecera TCP</tspan></text>
+       x="278.77255"
+       y="20.999409"
+       style="font-size:12px">Cabecera TCP</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:14px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="401.19638"
+     x="394.79636"
      y="20.999407"
      id="text8391"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan8393"
-       x="401.19638"
-       y="20.999407">Datos del paquete</tspan></text>
+       x="394.79636"
+       y="20.999407"
+       style="font-size:12px">Datos del paquete</tspan></text>
 </svg>

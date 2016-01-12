@@ -128,7 +128,7 @@ La capa de Acceso TCP/IP combina las capas Física y de Enlace de Datos del mode
 OSI. Las capas Física y de Enlace de Datos normalmente están integradas en el
 hardware. Productos como Ethernet, WiFi, conexión por satélite o fibra óptica van
 a menudo implementados en una tarjeta controladora de red que se conecta en la parte
-posterior de un computador o router. La tarjeta controladora de red generalmente
+posterior de una computadora o router. La tarjeta controladora de red generalmente
 integra en el hardware tanto los aspectos físicos como de enlace de datos relativos
 a la conexión. En la mayoría de los casos, las capas de
 enlace de datos están adaptadas a las limitaciones y requerimientos de sus capas

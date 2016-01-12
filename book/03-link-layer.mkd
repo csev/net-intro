@@ -8,7 +8,7 @@ red. Le llamamos la "capa inferior" porque es la más próxima al medio físico 
 la red. Habitualmente, la capa de Acceso transmite datos usando un cable, fibra
 óptica, o una señal de radio. Un factor clave de la capa de Acceso es que
 habitualmente los datos solo pueden ser transmitidos durante una parte del recorrido
-desde el computador de origen y el de destino. Una Ethernet cableada, el WiFi, y la
+desde la computadora de origen y la de destino. Una Ethernet cableada, el WiFi, y la
 red de telefonía móvil (celular) son ejemplos de capas de acceso que pueden transmitir
 datos a distancias de alrededor de un kilómetro. Los cables de fibra óptica, en
 particular los tendidos bajo los océanos, pueden transmitir datos a distancias de
@@ -19,7 +19,7 @@ distancias.
 ![La capa de Acceso](../images/layers-link)
 
 Independientemente de la distancia a la que podamos enviar los datos, éstos están
-viajando aún a través una única conexión, y para alcanzar el computador de destino
+viajando aún a través una única conexión, y para alcanzar la computadora de destino
 final necesitarán ser reeenviados en forma de paquetes a través de múltiples
 conexiones. En esta sección veremos en detalle cómo funciona una de las capas de
 acceso más habituales. El WiFi es un buen ejemplo para estudiar los muchos problemas
@@ -35,20 +35,20 @@ Compartiendo el aire
 Cuando tu portátil (laptop) o teléfono usa el WiFi para conectarse a Internet, está
 enviando y recibiendo datos a través de un pequeño emisor/receptor de radio de baja
 potencia. El emisor de tu equipo solo puede enviar datos a una distancia de alrededor
-de 300 metros, de modo que tu computador envía los paquetes al router de tu casa, que
+de 300 metros, de modo que tu computadora envía los paquetes al router de tu casa, que
 a su vez los reenvía usando una conexión con el resto de Internet. A veces, ese
-primer router que gestiona los paquetes de tu computador recibe el nombre de
+primer router que gestiona los paquetes de tu computadora recibe el nombre de
 "estación base", "puerta de acceso" o "gateway".
 
-Todos los computadores que estén lo suficientemente cerca de la estación base,
+Todos las computadoras que estén lo suficientemente cerca de la estación base,
 con sus receptores de radio encendidos, reciben todos los paquetes que transmite la
-estación base, independientemente de a qué computador vaya supuestamente dirigido
+estación base, independientemente de a qué computadora vaya supuestamente dirigido
 cada uno. También pueden "captar" todos los paquetes enviados por cualquier equipo
-cercano. De modo que tu computador necesita un modo de saber qué paquetes le
+cercano. De modo que tu computadora necesita un modo de saber qué paquetes le
 corresponde gestionar a él y cuáles van dirigidos a otros equipos y puede ignorar
 tranquilamente.
 
-Un efecto secundario interesante, derivado del hecho de que todos los computadores
+Un efecto secundario interesante, derivado del hecho de que todos las computadoras
 dentro del rango de cobertura puedan captar todos los paquetes, es que
 un equipo malintencionado puede también estar escuchando y capturando tus paquetes,
 incluso recibiendo datos importantes como números de cuenta bancaria o contraseñas
@@ -58,7 +58,7 @@ protección de datos frente a ojos y oídos curiosos.
 \index{dirección MAC}
 \index{direcciones de Acceso}
 Todos los receptores WiFi de todos dispositivo construidos reciben un número de serie
-único en el momento de su fabricación. Esto significa que cada uno de los computadores
+único en el momento de su fabricación. Esto significa que cada uno de las computadoras
 que usa el WiFi tiene su propio número de serie, y que el emisor de radio de la puerta
 de acceso dispone también de su propio número de serie. Normalmente es posible acceder
 a la pantalla de ajustes del dispositivo y averiguar cual es el número de serie del
@@ -71,11 +71,11 @@ pertenece al emisor WiFi del aparato. También recibe el nombre de "Control de A
 al Medio" o dirección "MAC", por sus siglas en inglés (*Media Access Control*). Una
 dirección MAC es como el "remite" o "destino" en una postal. Cada paquete (postal
 de radio) enviado a través del WiFi tiene una dirección de origen y otra de destino,
-de modo que todos los computadores saben qué mensajes son suyos.
+de modo que todos las computadoras saben qué mensajes son suyos.
 
-Cuando enciendes tu computador y conectas a una red WiFi, tu equipo necesita
+Cuando enciendes tu computadora y conectas a una red WiFi, tu equipo necesita
 averiguar cuál de las direcciones MAC del WiFi puede utilizar para enviar paquetes
-al router. Cuando te desplazas desde una ubicación física a otra, tu computador irá
+al router. Cuando te desplazas desde una ubicación física a otra, tu computadora irá
 comunicándose con diferentes puertas de acceso, y cada una de ellas tendrá un número
 de serie diferente. De modo que cuando te conectas por primera vez a una red WiFi
 nueva, tu equipo debe descubrir cual es la dirección MAC de la puerta de acceso de
@@ -84,9 +84,9 @@ ese WiFi en concreto.
 \index{dirección de difusión}
 \index{gateway}
 \index{puerta de acceso}
-Para ello, tu computador envía un mensaje especial a la dirección de difusión,
+Para ello, tu computadora envía un mensaje especial a la dirección de difusión,
 haciéndole esta pregunta en concreto: "¿Quién es el encargado de este WiFi?".
-Como tu computador ya sabe que él mismo no es la puerta de acceso, envía un mensaje
+Como tu computadora ya sabe que él mismo no es la puerta de acceso, envía un mensaje
 de difusión con su propio número de serie como dirección del "remitente" (*from*), y
 con la dirección de difusión como la de "destino" (*to*), para preguntar si hay
 alguna puerta de acceso (*gateway*) presente en la red WiFi.
@@ -96,22 +96,22 @@ alguna puerta de acceso (*gateway*) presente en la red WiFi.
     Data: Who is the MAC-Gateway
         for this network?
 
-Si hay una puerta de acceso en la red, ésta envía un mensaje de vuelta a nuestro
-computador, indicando cuál es su número de serie.
+Si hay una puerta de acceso en la red, ésta envía un mensaje de vuelta a nuestra
+computadora, indicando cuál es su número de serie.
 
     From: 98:2f:4e:78:c1:b4
     To: 0f:2a:b3:1f:b3:1a
     Data: I am the gateway
        Welcome to my network
 
-Si no se obtiene respuesta, tu computador espera unos cuantos segundos y luego
+Si no se obtiene respuesta, tu computadora espera unos cuantos segundos y luego
 asume que no existe puerta de acceso para esa red. Cuando no hay puerta de acceso,
-tu computador puede mostrar un icono WiFi diferente u ocultar el icono
+tu computadora puede mostrar un icono WiFi diferente u ocultar el icono
 correspondiente al WiFi. Algunas veces existe más de una puerta de acceso, pero de
 momento vamos a pasar ese caso por alto, porque se trataría de una situación un
 poco más compleja y no demasiado habitual.
 
-Una vez que tu computador recibe un mensaje con la dirección MAC de la puerta de
+Una vez que tu computadora recibe un mensaje con la dirección MAC de la puerta de
 acceso, ya puede usar esa dirección para enviarle aquellos paquetes que desea que la
 puerta de acceso reenvíe hacia Internet. A partir de ese momento, todos los paquetes
 de nuestro ordenador disponen ya del número de serie real del destinatario. Se
@@ -123,7 +123,7 @@ Cortesía y coordinación
 -------------------------
 
 \index{detección de colisiones}
-Dado que muchos computadores comparten las mismas frecuencias de radio, es importante
+Dado que muchas computadoras comparten las mismas frecuencias de radio, es importante
 coordinar el modo en que envían los datos. Cuando hay una multitud de gente en una
 habitación, no pueden hablar todos al mismo tiempo, o nadie se enterará de nada. Lo
 mismo ocurre cuando múltiples emisores WiFi transmiten al mismo tiempo en la misma
@@ -138,11 +138,11 @@ La primera técnica recibe el nombre de "Escucha de Portadora", o "*Carrier Sens
 Esta técnica consiste en escuchar primero si hay una transmisión, y si ya existe
 una en marcha en ese momento, esperar hasta que ésta finaliza. Puede parecer que
 habría que esperar mucho tiempo, pero dado que todos los mensajes se dividen en
-paquetes, normalmente tu computador solo tiene que esperar hasta que el equipo que
+paquetes, normalmente tu computadora solo tiene que esperar hasta que el equipo que
 está enviando datos en ese momento finaliza un paquete, y en cuanto eso sucede tu
-computador dispone de la oportunidad de enviar sus propios datos.
+computadora dispone de la oportunidad de enviar sus propios datos.
 
-Si el receptor WiFi de tu computador se pone a la escucha, y solo detecta silencio,
+Si el receptor WiFi de tu computadora se pone a la escucha, y solo detecta silencio,
 puede comenzar a transmitir. Pero, ¿qué ocurre si el emisor WiFi de otro equipo
 también quiere enviar un paquete, detecta el mismo silencio y decide comenzar a
 transmitir exactamente al mismo tiempo? Si dos o más emisores WiFi comienzan a
@@ -162,7 +162,7 @@ una y otra vez, y cada una de las personas dirá "No, tú" repetidamente, para i
 averiguar cuándo reanudar la conversación. Puede resultar incluso cómico a veces.
 
 \index{retransmitir}
-Los emisores WiFi de dos computadores que envían paquetes que colisionan, son
+Los emisores WiFi de dos computadoras que envían paquetes que colisionan, son
 capaces de resolver ese problema mucho mejor que la gente. Cuando los emisores
 WiFi detectan una colisión o una transmisión fallida, esperan una cantidad de tiempo
 calculado aleatoriamente antes de volver a iniciar la transmisión. La reglas para
@@ -201,7 +201,7 @@ a que les llegue su turno.
 Cuando un puesto recibe el testigo y tiene un paquete para enviar, realiza el envío.
 Una vez enviado el paquete, ese puesto cede el turno y espera
 hasta que le corresponde de nuevo el testigo. Si ninguno de los puestos tiene
-ningún dato para enviar, el testigo se va moviendo de un computador al siguiente
+ningún dato para enviar, el testigo se va moviendo de una computadora a la siguiente
 tan rápidamente como sea posible.
 
 ![Comunicación con testigo](../sketchnote/Token)
@@ -262,12 +262,12 @@ red, durante la fabricación de ese dispositivo.
 y los reenvía hacia Internet.
 
 **puerta de acceso (gateway)**: Un router que conecta una red de área local con una
-red de área amplia, como puede ser Internet. Los computadores que quieran enviar
+red de área amplia, como puede ser Internet. Las computadoras que quieran enviar
 datos más allá de la red local deben enviar sus paquetes a la puerta de acceso,
 para que ésta los reenvíe al exterior.
 
-**testigo (token)**: Una tecnología que permite a muchos computadores compartir el
-mismo medio físico sin colisiones. Cada computador debe esperar hasta que recibe el
+**testigo (token)**: Una tecnología que permite a muchas computadoras compartir el
+mismo medio físico sin colisiones. Cada computadora debe esperar hasta que recibe el
 testigo antes de poder enviar datos.
 
 
@@ -278,7 +278,7 @@ Preguntas
 Puedes realizar este cuestionario online en http://www.net-intro.com/quiz/
 
 1. Cuando se usa una red WiFi para comunicarse con Internet, ¿a dónde envía
-sus paquetes tu computador?
+sus paquetes tu computadora?
 a) A la puerta de acceso (*gateway*)
 b) Al satélite
 c) A la torre de telefonía móvil (celular)
@@ -303,7 +303,7 @@ c) Envía un mensaje de forma repetida a todas las posibles direcciones de puert
 acceso, hasta que encuentra una que funciona
 d) El usuario debe introducir la dirección de la puerta de acceso manualmente
 
-5. Cuando un computador quiere enviar datos a través de una red WiFi, ¿qué es lo
+5. Cuando una computadora quiere enviar datos a través de una red WiFi, ¿qué es lo
 primero que debe hacer?
 a) Escuchar para comprobar si otros equipos están enviando datos
 b) Simplemente, empezar a enviar los datos sin más
