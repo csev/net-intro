@@ -6,7 +6,7 @@ Para diseñar y construir un sistema tan complejo como Internet,
 los ingenieros intentan dividir un único problema realmente complejo en un
 conjunto de problemas más pequeños, de modo que puedan ser resueltos de forma
 independiente y luego unidos de nuevo para resolver la cuestión original.
-Los ingenieros que construyeron los primeros internets, dividieron el problema
+Los ingenieros que crearon los primeros internets, dividieron el problema
 principal en cuatro subproblemas básicos, sobre los que pudieran trabajar de
 forma independiente distintos grupos.
 
@@ -19,9 +19,9 @@ forma independiente distintos grupos.
 \index{Capa de Aplicación}
 Esas cuatro áreas de diseño recibieron los siguientes nombres:
 (1) Acceso a la red, (2) Internet, (3) Transporte, y (4) Aplicación.
-Se representan esas áreas diferentes como capas apiladas unas encima de otras,
+Se representan esas áreas diferenciadas como capas apiladas unas encima de otras,
 con la capa de Acceso en la base y la capa de Aplicación en la cima. La capa
-de Acceso gestiona la conexión cableada o inalámbrica desde tu equipo
+de Acceso gestiona la conexión cableada o inalámbrica desde un equipo
 hasta la red de área local, y la capa de Aplicación es aquella con la que
 nosotros, como usuarios finales, interactuamos. Un navegador web es un ejemplo
 de una aplicación en esta arquitectura de Internet.
@@ -33,12 +33,12 @@ la capa de Transporte, y al Protocolo de Internet (IP), que se utiliza para
 implementar la capa de Internet.
 
 Echaremos a continuación un vistazo rápido a cada una de las capas, comenzando
-por la "base" de la pila.
+por la "base" de la torre.
 
 La capa de Acceso a la red
 --------------------------
 
-La capa de Acceso a la red es la encargada de conectar tu computadora con su
+La capa de Acceso a la red es la encargada de conectar un equipo con su
 red local, y de mover los datos a través de un único salto. La tecnología
 actual más habitual para la capa de Acceso es la red inalámbrica. Cuando se está
 utilizando un dispositivo inalámbrico, el dispositivo solo es capaz de enviar
@@ -47,7 +47,7 @@ a solo unos pocos kilómetros de distancia. Si se usa un smartphone en un tren,
 necesitará estar cambiando de torre cada pocos minutos, a medida que el tren se
 va desplazando. Un portátil (laptop) que esté conectado a una red WiFi, se
 comunica normalmente con una estación base en un radio de 200 metros. Una
-computadora que se conecta usando una conexión cableada, normalmente utiliza un
+computadora que se conecte usando una conexión cableada, normalmente utilizará un
 cable de 100 metros de longitud o menos. Las tecnologías utilizadas por la
 capa de Acceso a menudo se comparten entre múltiples equipos en la misma
 ubicación.
@@ -64,9 +64,9 @@ de la capa de Acceso que usan fibra óptica, deben acordar cuáles son las
 frecuencia de luz a utilizar y la velocidad de envío de los datos.
 
 Además de ponerse de acuerdo en cómo enviar los datos usando un medio compartido,
-como puede ser una red inalámbrica, también es necesario acordar cómo deben cooperar
-entre sí los equipos que quieran enviar datos al mismo tiempo. Si todas las
-computadoras de la red intentan transmitir cada vez que tengan datos para enviar,
+como puede ser una red inalámbrica, también necesitan acordar cómo deben cooperar
+entre sí los equipos que quieran enviar datos al mismo tiempo. Si todos los
+equipos de la red intentan transmitir cada vez que tengan datos para enviar,
 sus mensajes colisionarán unos con otros. El resultado podría ser el caos, y los
 puestos de recepción solo recibirían ruido. De modo que necesitamos encontrar un
 método fiable que permita a cada puesto esperar su turno para usar la red compartida.
@@ -74,36 +74,36 @@ método fiable que permita a cada puesto esperar su turno para usar la red compa
 La idea de dividir cada mensaje extenso en paquetes y luego enviar cada paquete de
 forma independiente, hace que sea más sencillo compartir la red. Si solo hubiera un
 equipo que quisiera enviar datos, enviaría sus paquetes uno detrás del otro, y haría
-circular esos datos a través de la red tan rápido como pudiera. Pero si tres computadoras
+circular esos datos a través de la red tan rápido como pudiera. Pero si tres equipos
 quieren enviar datos al mismo tiempo, cada uno de ellos deberá enviar un paquete y luego
 esperar mientras los otros dos equipos hacen lo mismo. Después de que los otros
-computadoras hayan enviado sus propios paquetes, el primero realizaría su siguiente
+hayan enviado sus propios paquetes, el primero realizaría su siguiente
 envío. De este modo, los equipos estarían compartiendo el acceso a la red de un
 modo adecuado.
 
 Pero, ¿cómo sabe una computadora si otros equipos quieren enviar datos al mismo tiempo
-que él? Los ingenieros han diseñado un método ingenioso para resolver este problema,
+que ella? Los ingenieros han diseñado un método imaginativo para resolver este problema,
 llamado "Acceso Múltiple con Escucha de Portadora y Detección de Colisiones" (*Carrier
 Sense Multiple Access with Collision Detection*), o CSMA/CD. Se trata de un nombre largo
 para designar un concepto simple y elegante. Cuando tu computadora quiere enviar datos,
 primero escucha si otro equipo está ya enviando información a través de la red (Escucha
-de Portadora). Si nadie está enviando datos, tu computadora comienza a enviar los suyos.
+de Portadora). Si nadie está enviando datos, tu equipo comienza a enviar los suyos.
 Al mismo tiempo que lo hace, va escuchando para comprobar si puede recibir su propia
 información. Si los datos recibidos son los mismos que ha enviado, sabe que el canal
 sigue despejado y continúa transmitiendo. Pero si dos equipos comienzan a enviar datos
-al mismo tiempo, los datos colisionan, y tu computadora no será capaz de recibir lo mismo
-que ha enviado. Cuando se detecta una colisión, ambos equipos dejan de transmitir,
+al mismo tiempo, los datos colisionan, y tu computadora no recibiría lo
+mismo que ha enviado. Cuando se detecta una colisión, ambos equipos dejan de transmitir,
 esperan un poco, y luego reintentan la transmisión. Los dos equipos que colisionan
 esperan distintos periodos de tiempo antes de reintentar sus transmisiones, para
 reducir las posibilidades de que se produzca una segunda colisión.
 
 ![Escucha de Portadora/Detección de Colisiones](../sketchnote/Link_CSMA)
 
-Cuando tu computadora termina de enviar un paquete de datos, se detiene temporalmente
+Cuando tu equipo termina de enviar un paquete de datos, se detiene temporalmente
 para dar a otros equipos que puedan estar esperando la oportunidad de enviar sus
-propios datos. Si otra computadora se da cuenta de que el el tuyo ha dejado de enviar
+propios datos. Si otro equipo se da cuenta de que el el tuyo ha dejado de enviar
 datos (Escucha de Portadora), y comienza a enviar su propio paquete, tu equipo
-detectará el uso de la red que está haciendo esa computadora y esperará hasta que
+detectará el uso de la red que está haciendo ese equipo y esperará hasta que
 se haya completado el envío del paquete que está en marcha antes de intentar enviar su
 siguiente bloque.
 
@@ -116,14 +116,14 @@ equipo consigue una parte equitativa de la conexión.
 
 Algunas capas de acceso, como una conexión móvil (celular) para un smartphone, una
 conexión WiFi, o un satélite o módem de cable, son conexiones compartidas, y necesitan
-usar técnicas como CSMA/CD para asegurar un acceso equitativo para muchos posibles
+usar técnicas como CSMA/CD para asegurar un acceso equitativo para los muchos posibles
 equipos diferentes conectados a la red. Otras capas de acceso, como los cables de
-fibra óptica y las líneas alquiladas, generalmente no se comparten y se usan para
+fibra óptica y las líneas arrendadas, generalmente no se comparten y se usan para
 realizar conexiones directas entre routers. Estas conexiones no compartidas forman
 también parte de la capa de Acceso.
 
 Los ingenieros que trabajan en las tecnologías para la capa de Acceso se han centrado
-en resolver los inconvenientes, para que las computadoras puedan transmitir
+en resolver los inconvenientes para que las computadoras puedan transmitir
 datos a través de una única conexión que pueda abarcar gran variedad de distancias,
 desde unos pocos metros hasta cientos de kilómetros. Pero parar desplazar los datos
 a través de distancias mayores, necesitamos enviar nuestros paquetes a través de
@@ -138,16 +138,16 @@ Una vez que un paquete destinado a Internet ha realizado su recorrido a través 
 primera conexión, pasará a encontrarse dentro un router. El paquete tiene una
 dirección de origen y otra de destino, y el router necesita fijarse en la dirección
 de destino para averiguar cuál puede ser el mejor movimiento para dirigir ese paquete
-hacia su destino. Con cada router gestionando paquetes cuyo destino puede ser cualquiera
-de los muchos billones de computadoras de destino, no resulta viable que cada
+hacia su destino. Con cada router gestionando paquetes destinados a cualquiera de los
+muchos miles de millones de equipos de destino, no resulta viable que cada
 router conozca la ubicación exacta ni cual sería la mejor ruta para cualquier posible
 equipo de destino. De modo que el router hace lo que puede para intentar adivinar cómo
-dejar tu paquete lo más cerca posible de su destino.
+dejar tu paquete lo más cerca posible de su objetivo.
 
 Cada uno de los demás routers por los que va pasando a lo largo del camino van
-haciendo también lo que pueden para dejar el paquete lo más cerca posible de la
-computadora de destino. A medida que el paquete va acercándose a su destino
-definitivo, los routers tienen una idea más precisa de dónde necesitan enviar el
+haciendo también lo que pueden para dejar el paquete lo más cerca posible del
+equipo de destino. A medida que el paquete va acercándose a su destino
+definitivo, los routers tienen una idea más precisa de a dónde debe ir el
 paquete. Cuando el paquete alcanza la última conexión de su viaje,
 la capa de acceso ya sabe exactamente dónde debe enviarlo.
 
@@ -169,11 +169,11 @@ es la parada más cercana a tu hotel. Y cuando bajes del autobús en la parada c
 seguramente puedas preguntar a alguien en la calle cómo encontrar el hotel y obtener
 una respuesta precisa.
 
-Cuando más lejos te encuentres de tu destino, menos necesidad tienes de conocer los
+Cuanto más lejos te encuentres de tu destino, menos necesidad tienes de conocer los
 detalles exactos acerca de cómo llegar hasta allí. Cuando estás lejos, todo lo que
 necesitas saber es cómo llegar "más cerca" de tu destino. Los routers en Internet
 funcionan del mismo modo. Solo los routers que se encuentran más cerca del
-equipo de destino saben cuál es el camino exacto hasta esa computadora. Todos los
+equipo de destino saben cuál es el camino exacto hasta ese equipo. Todos los
 routers que se van cruzando por el camino trabajan para ir acercando el mensaje a
 su destino.
 
@@ -187,9 +187,9 @@ Los routers intercambian entre sí mensajes especiales para informar a los demá
 acerca de cualquier tipo de retraso en el tráfico o corte en la red, de modo que
 los paquetes puedan ser desviados desde una ruta inviable hacia otra diferente.
 Los routers que forman el corazón de Internet son inteligentes y se adaptan
-rápidamente tanto a pequeños cortes como a otros más largos, o a fallos en las
+rápidamente tanto a pequeños cortes como a otros más grandes, o a fallos en las
 conexiones de red. Algunas veces una conexión se ralentiza por sobrecarga. Otras veces
-una conexión queda interrumpida de forma física, cuando un equipo de construcción
+una conexión queda interrumpida de forma física, cuando una cuadrilla de obreros
 excava por error cerca de un cable enterrado y lo rompe. A veces hay desastres
 naturales, como huracanes o tifones, que desconectan los routers y conexiones en un área
 geográfica extensa. Los routers detectan rápidamente esos cortes y redirigen el
@@ -206,27 +206,27 @@ destino de un paquete y busca un camino a través de múltiples saltos de red
 para entregar el paquete al equipo de destino. Para a veces esos paquetes
 se pierden o se retrasan demasiado. Otras veces los paquetes llegan a su destino
 desordenados, debido a que un paquete posterior encuentra un camino más rápido
-a través de la red que uno previo. Cada paquete contiene la dirección de la
-computadora de origen y la del equipo de destino, y un *offset* o índice, que indica la
+a través de la red que un paquete previo. Cada paquete contiene la dirección de los
+equipos de origen y de destino, y un *offset* o índice, que indica la
 posición relativa de ese paquete respecto al comienzo del mensaje. Al conocer el
 índice relativo de cada paquete respecto al comienzo del mensaje y la longitud del
-mismo, la computadora de destino puede reconstruir el mensaje original, incluso si
+mismo, el equipo de destino puede reconstruir el mensaje original, incluso si
 los paquetes se reciben desordenados.
 
 \index{acuse de recibo}
 \index{confirmación}
 \index{ACK}
-A medida que la computadora de destino va reconstruyendo el mensaje y se lo entrega a la
-aplicación de destino, va también enviando periódicamente mensajes de acuse de recibo
-o confirmación al equipo de origen, indicándole qué cantidad del mensaje ha
-recibido y reconstruido. Pero si la computadora de destino se da cuenta de que falta
-parte del mensaje que está reconstruyendo, eso probablemente significaría que esos
+A medida que el equipo de destino va reconstruyendo el mensaje y se lo entrega a la
+aplicación a la que va dirigido, va también enviando periódicamente mensajes de acuse
+de recibo o confirmación al equipo de origen, indicándole qué cantidad del mensaje ha
+recibido y reconstruido. Pero si el equipo de destino se da cuenta de que falta
+parte del mensaje que está reconstruyendo, eso probablemente significa que esos
 paquetes se habrían perdido o se habrían retrasado demasiado. Después de esperar un
 rato, el equipo de destino enviaría entonces una solicitud al de origen para pedirle
-que reenviara los datos perdidos.
+que le reenviara los datos perdidos.
 
 El equipo de origen debe almacenar una copia de las partes del mensaje
-original que ya han sido enviadas, hasta que la computadora de destino confirma
+original que ya han sido enviadas, hasta que el equipo de destino confirma
 la recepción con éxito de los paquetes. Una vez que el equipo de origen recibe la
 confirmación de la recepción con éxito de una porción del mensaje, puede descartar
 los datos que ya han sido confirmados y seguir enviando los siguientes.
@@ -234,20 +234,20 @@ los datos que ya han sido confirmados y seguir enviando los siguientes.
 
 \index{tamaño de ventana}
 \index{cortesía}
-La cantidad de datos que la computadora de origen envía antes de esperar una
+La cantidad de datos que el equipo de origen envía antes de esperar una
 confirmación o acuse de recibo, recibe el nombre de "tamaño de ventana". Si
 el tamaño de ventana es demasiado pequeño, la transmisión de datos se vuelve lenta,
-ya que la computadora de origen está siempre esperando mensajes de confirmación. Si
+ya que el equipo de origen está siempre esperando mensajes de confirmación. Si
 el equipo de origen envía demasiados datos antes de esperar confirmación, puede
-provocar problemas en el tráfico de forma inintencionada, por sobrecargar los routers
+provocar problemas en el tráfico de forma no intencionada, al sobrecargar los routers
 o las líneas de comunicación de larga distancia. Este problema se soluciona
-manteniendo el tamaño de la ventana pequeño al principio y cronometrando el
-tiempo que lleva recibir el primer mensaje de confirmación. Si la confirmación
-llega enseguida, la computadora de origen va aumentando poco a poco el tamaño de
+manteniendo un tamaño de ventana pequeño al principio y cronometrando el
+tiempo que se tarda en recibir el primer mensaje de confirmación. Si la confirmación
+llega enseguida, el equipo de origen va aumentando poco a poco el tamaño de
 ventana, y si las confirmaciones tardan en llegar, se mantiene el tamaño de
 ventana pequeño, aunque no tanto como para sobrecargar la red. Como ocurría en la
-capa de Acceso, unas pequeñas reglas de cortesía en Internet sirven de mucho
-para asegurar un buen uso de la infraestructura de red compartida. 
+capa de Acceso, unas pequeñas reglas de cortesía en Internet sirven de gran ayuda
+a la hora de asegurar el uso adecuado de la infraestructura de red compartida. 
 
 \index{control de flujo}
 Esta estrategia permite que cuando la red disponga de conexiones de alta
@@ -261,17 +261,16 @@ La Capa de Aplicación
 
 \index{Capa de Aplicación}
 \index{Capa!Aplicación}
-Las capas de Acceso, Internet y Transporte trabajan juntas para hacer llegar los datos
-de forma rápida y segura de una computadora a otra, a través de una red compartida de
-redes. Con esta capacidad para mover los datos de forma fiable, la cuestión siguiente
-es qué aplicaciones de red se pueden construir para hacer buen uso de esas conexiones
-de red.
+Las capas de Acceso, Internet y Transporte colaboran juntas para hacer llegar los datos
+de forma rápida y segura de un equipo a otro, a través de una red de redes compartidas.
+Con esta capacidad para mover los datos de forma fiable, la cuestión siguiente
+es qué aplicaciones de red se pueden crear para utilizar esas conexiones de red.
 
 \index{inicio de sesión remoto}
-Cuando, a mediados de los años 80, se empezó a utilizar ampliamente Internet, la
-primeras aplicaciones permitían a los usuarios iniciar sesión en computadoras remotas,
+Cuando, a mediados de los años 80, se empezó a utilizar ampliamente Internet, las
+primeras aplicaciones permitían a los usuarios iniciar sesión en equipos remotos,
 transferir archivos entre equipos, enviar correo entre ellos, e incluso realizar
-charlas mediante texto (*chats*) entre computadoras diferentes.
+charlas mediante texto (*chats*) entre equipos diferentes.
 
 \index{Web}
 \index{CERN}
@@ -279,7 +278,7 @@ A principios de los 90, a medida que Internet llegaba a más gente y las capacid
 de las computadoras para manejar imágenes iban mejorando, los científicos de los
 laboratorios de física de alta energía CERN desarrollaron la aplicación World Wide Web.
 La web estaba orientada a la lectura y edición en red de documentos de hipertexto con
-imágenes. Hoy en día la web es la aplicación en red más habitual que se utiliza en
+imágenes. Hoy en día la web es la aplicación en red de uso más habitual en
 todo el mundo. Pero todas las demás aplicaciones anteriores de Internet aún se siguen
 utilizando ampliamente.
 
@@ -290,7 +289,7 @@ utilizando ampliamente.
 \index{Uniform Resource Locator}
 \index{Localizador Uniforme de Recursos}
 Generalmente, cada aplicación está dividida en dos partes. Una parte de la aplicación
-recibe el nombre de "servidor". Se ejecuta en la computadora de destino y aguarda a que
+recibe el nombre de "servidor". Se ejecuta en el equipo de destino y aguarda a que
 se reciban conexiones de entrada a través de la red. La otra parte de la aplicación se
 denomina "cliente", y se ejecuta en el equipo de origen. Cuando se navega por la web
 usando un programa como Firefox, Chrome, o Internet Explorer, se está ejecutando una
@@ -313,21 +312,21 @@ Apilado de Capas
 
 \index{Modelo de Capas}
 Habitualmente se representan las cuatro capas (Acceso a la red, Internet, Transporte y
-Aplicación), apiladas una encima de otra, con la capa de Aplicación arriba del
-todo, y la capa de Acceso en el fondo. La razón de que se representen de este modo
-es que cada una de las capas utiliza las que están por encima y por debajo de ella
+Aplicación), apiladas unas encima de otras, con la capa de Aplicación arriba del
+todo, y la capa de Acceso en la base. La razón de que se representen de este modo
+es que cada una de las capas utiliza a las que están por encima y por debajo de ella
 para lograr establecer la comunicación a través de la red.
 
-Todas las capas se ejecutan en la computadora donde corre la aplicación
+Todas las capas se ejecutan en el equipo donde corre la aplicación
 cliente (por ejemplo, un navegador web), y
 todas las capas se ejecutan también en el equipo de destino, donde está corriendo
 el servidor de la aplicación. Tú, como usuario final, interactúas con las aplicaciones
-que forman la capa superior de la pila, y la capa del fondo representa el WiFi,
+que componen la capa superior de la torre, y la capa del fondo representa el WiFi,
 red móvil (celular), o la conexión cableada entre tu computadora y el resto de
 Internet.
 
 Los routers que reenvían los paquetes de un sitio a otro para dirigirlos hacia
-su destino, no tienen en cuenta ni a la capas de Transporte ni a la de Aplicación.
+su destino, no tienen en cuenta ni a la capa de Transporte ni a la de Aplicación.
 Los routers operan con las capas de Internet y Acceso. Las direcciones de
 origen y destino de la capa de Internet son todo lo que necesitan esos routers
 para enviar los paquetes a través de una serie de conexiones (saltos), hasta
@@ -337,13 +336,13 @@ equipo de destino.
 
 Si quisieras escribir tu propia aplicación en red, probablemente solo necesitarías
 comunicarte con la capa de Transporte, y podrías desentenderte por completo de las
-capas de Internet y de Acceso. Éstas son esenciales para el funcionamiento de la
+capas de Internet y de Acceso. Estas son esenciales para el funcionamiento de la
 capa de Transporte, pero cuando se escribe un programa, no es necesario preocuparse de
 ninguno de los detalles de bajo nivel. El modelo de capas de red logra que resulte
 más sencillo escribir aplicaciones en red, ya que se pueden ignorar muchos de los
-detalles complejos relativos al movimiento de datos desde una computadora a otra.
+complejos detalles relativos al movimiento de datos desde un equipo hasta otro.
 
-A continuación, hablaremos acerca de estas cuatro capas con mayor detalle.
+En los siguientes capítulos, hablaremos acerca de estas cuatro capas con mayor detalle.
 
 Glosario
 --------
@@ -355,14 +354,13 @@ o inicia las conexiones.
 **fibra óptica**:
 Una tecnología de transmisión de datos que codifica información utilizando luz
 y envía esa luz a través de un filamento muy largo de vidrio fino o plástico. Las
-conexiones de fibra óptica son rápidas y pueden cubrir distancias muy largas.
+conexiones de fibra óptica son rápidas y pueden cubrir grandes distancias.
 
 **índice u offset**: La posición relativa de un paquete dentro de un mensaje
 completo o de una cadena de datos.
 
-**servidor*:
-En una aplicación en red, la aplicación servidor es aquella que responde a las
-peticiones de servicios o espera la recepción de conexiones de entrada.
+**servidor*: En una aplicación en red, la aplicación servidor es aquella que responde a
+las peticiones de servicios o aguarda la recepción de conexiones de entrada.
 
 **tamaño de ventana**: La cantidad de datos que puede enviar el equipo
 emisor antes de que deba detenerse y esperar una confirmación (del equipo receptor).
@@ -428,16 +426,14 @@ c) El número máximo de paquetes que pueden formar un mensaje
 d) La cantidad máxima de datos que un equipo puede enviar antes de recibir una
 confirmación de recepción
 
-
-
-9. En una aplicación de red típica cliente/servidor, ¿dónde corre la aplicación
+8. En una aplicación de red típica cliente/servidor, ¿dónde se ejecuta la aplicación
 cliente?
 a) En tu portátil (laptop), computadora o móvil (celular)
 b) En un punto de acceso inalámbrico
 c) En el router más cercano
 d) En un cable de fibra óptica submarino
 
-10. ¿Qué significa URL?
+9. ¿Qué significa URL?
 a) Enlace de Enrutamiento Universal (*Universal Routing Linkage*)
 b) Lógica de Retransmisión Uniforme (*Uniform Retransmission Logic*)
 c) Localizador Uniforme de Recursos (*Uniform Resource Locator*)

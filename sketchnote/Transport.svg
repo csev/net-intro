@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -8,17 +6,13 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   id="svg11296"
-   version="1.1"
-   inkscape:version="0.91 r13725"
-   width="2560"
-   height="1920"
    viewBox="0 0 2560 1920"
-   sodipodi:docname="Transport.svg">
+   height="1920"
+   width="2560"
+   version="1.1"
+   id="svg4136">
   <metadata
-     id="metadata11302">
+     id="metadata4142">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -30,31 +24,11 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs11300" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="760"
-     inkscape:window-height="480"
-     id="namedview11298"
-     showgrid="false"
-     inkscape:zoom="0.12291667"
-     inkscape:cx="1280"
-     inkscape:cy="960"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg11296" />
+     id="defs4140" />
   <image
-     width="2560"
-     height="1920"
-     preserveAspectRatio="none"
+     y="0"
+     x="0"
+     id="image4144"
      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAACAAAAAYACAYAAADimKhtAAAABmJLR0QA9QD0APB2501CAAAACXBI
 WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AELDC4Dq+W+YQAAIABJREFUeNrs3Xd8XNWZ//HvLTMj
 aWTLsmzjQrEBg216hxAILUDKbhYTNiHJbkhIdkNC2R8JCRAIhLTdzaZsCiGksCEFUiCUhLahmQ6m
@@ -7411,7 +7385,7 @@ gsx/ACABB8GwbVuu68qyLNZ1AAAdx44WEqXZ4KpSqUiSstls4O+PiQfQeUnaRB8ZGZEk9fX18cED
 3J8AeIQAUe63QahUKqrVHGWzGeaNAMj8BwAAwHmxYgF4iMz/6Jt9hg0LuwgTNgWB5sj8BxBXZP4D
 AOA9AqkQBNYYAQB++v/cDd1svrB6eQAAAABJRU5ErkJggg==
 "
-     id="image11304"
-     x="0"
-     y="0" />
+     preserveAspectRatio="none"
+     height="1920"
+     width="2560" />
 </svg>
