@@ -195,7 +195,7 @@ of well-known default ports for various server applications:
 * SSH (22) - Secure Login
 * HTTP (80) - World Wide Web
 * HTTPS (443) - Secure Web
-* SMTP (25) (Incoming Mail)
+* SMTP (25) - Incoming Mail
 * IMAP (143/220/993) - Mail Retrieval
 * POP (109/110) - Mail Retrieval
 * DNS (53) - Domain Name Resolution
@@ -203,12 +203,12 @@ of well-known default ports for various server applications:
 
 These are the normal ports for these applications.  Sometimes servers will
 make applications available at non-standard ports.  If you are doing web development,
-you may run a web server at a standard port like 3000, 8080, or 8888.  If you see
+you may run a web server at a non-standard port like 3000, 8080, or 8888.  If you see
 a URL like:
 
 	http://testing.example.com:8080/login
 
-the "8080" indicates that your browser is to use the web protocols to interact
+the "8080" indicates that your browser is going to use the web protocols to interact
 with the server, but connect to port 8080 instead of the default port 80.
 
 Summary
@@ -271,7 +271,7 @@ d) It determines what part of an IP address is the network number
 4. What happens when a sending computer receives an acknowledgement from the
 receiving computer?
 a) The sending computer resends the data to make sure it was
-transmitted accurately.
+transmitted accurately
 b) The sending computer sends more data up to the window size
 c) The sending computer sends an "acknowledgment for the acknowledgment"
 d) The sending computer sends the acknowledgement to the Internet Map (IMAP)

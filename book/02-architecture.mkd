@@ -394,16 +394,14 @@ b) The maximum size of a single packet
 c) The maximum number of packets that can make up a message
 d) The maximum amount of data a computer can send before receiving an acknowledgement
 
-  
-
-9. In a typical networked client/server application, where does the client
+8. In a typical networked client/server application, where does the client
 application run?
 a) On your laptop, desktop, or mobile computer
 b) On a wireless access point
 c) On the closest router
 d) In an undersea fiber optic cable
 
-10. What does URL stand for?
+9. What does URL stand for?
 a) Universal Routing Linkage
 b) Uniform Retransmission Logic
 c) Uniform Resource Locator
