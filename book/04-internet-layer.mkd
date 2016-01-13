@@ -1,40 +1,40 @@
-Capa de Internet (IP)
-=====================
+La Capa de Internet (IP)
+========================
 
 \index{Capa de Internet(IP)}
 \index{Capa!Internet(IP)}
-Ahora que ya podemos mover los datos a través de un único enlace, es hora de
-averiguar cómo moverlos a través del país o alrededor del mundo. Para enviar
-datos desde tu computadora hasta cualquiera de los miles de millones de destinos posibles,
-los datos necesitan moverse a través de múltiples saltos y a través de múltiples
-redes. Cuando viajas desde tu casa hasta un destino lejano, puedes caminar desde tu
-casa hasta una parada de autobús, tomar un tren hasta la ciudad, tomar otro tren
-hasta el aeropuerto, tomar un avión hasta otro aeropuerto, tomar un taxi dentro de
+Ahora que ya podemos mover los datos a través de un único enlace, es el momento de
+averiguar cómo desplazarlos hasta la otra parte del país o alrededor del mundo. Para
+enviar datos desde un equipo hasta cualquiera de los miles de millones de destinos
+posibles, los datos necesitan moverse a través de múltiples saltos y a través de
+múltiples redes. Cuando viajas desde tu hogar hasta un destino lejano, puedes caminar
+desde tu casa hasta una parada de autobús, tomar un tren hasta la ciudad, tomar otro
+tren hasta el aeropuerto, tomar un avión hasta otro aeropuerto, tomar un taxi dentro de
 la ciudad, luego un tren hasta una ciudad más pequeña, un autobús hasta otra aún
-más pequeña y finalmente caminar desde la parada del autobús hasta tu hotel.
-Un paquete también necesita tomar múltiples medios de transporte para alcanzar
+más pequeña y finalmente caminar desde la parada del autobús hasta el hotel.
+Un paquete también necesitará tomar múltiples medios de transporte para alcanzar
 su destino. Para un paquete que esté realizando su "viaje" hasta otro país, el
 "caminar", ir en "autobús", "tren" y "avión" sería equivalente a usar las diferentes
 capas de conexión, es decir: WiFi, Ethernet, fibra óptica, y satélite.
 
 ![Paquetes viajando](../sketchnote/Traveling_Packets)
 
-En cada momento durante el viaje, tú (o tu paquete), estaréis usando un medio
+En cada fase del viaje, tú (o tu paquete), estaréis usando un medio
 de transporte compartido. Puede haber cientos de personas en el mismo autobús,
 tren o avión, pero tu viaje es diferente del de cualquier otro viajero, dependiendo
 de las decisiones que vayas tomando al final de cada uno de los "saltos". Por ejemplo,
 Cuando llegues a la estación de tren, podrías bajarte del tren, luego caminar
 a través de la estación y elegir un determinado tren de salida para continuar
-con tu viaje. Los viajeros con diferentes puntos de partida y destino realizan
+con tu viaje. Los viajeros con diferentes puntos de partida y de destino realizarán
 una serie de elecciones diferentes. Todas las elecciones que realizas durante tu
 viaje dan como resultado el que sigas una serie de conexiones (o saltos) a lo
-largo de una ruta que te llevarán desde tu punto de partida hasta tu destino.
+largo de una ruta que te lleva desde tu punto de partida hasta tu destino.
 
 A medida que tu paquete viaja desde su punto de partida hacia su destino, también
 pasa a través de varias "estaciones", en cada una de las cuales se decide a cuál
 de las conexiones de salida será reenviado. En el caso de los paquetes, esas estaciones
 se llaman "routers". Como en las estaciones de tren, los routers tienen múltiples
-conexiones de entrada y salida. Algunas conexiones pueden ser de fibra óptica,
+conexiones de entrada y de salida. Algunas conexiones pueden ser de fibra óptica,
 otras pueden utilizar satélites, y otras pueden ser inalámbricas. El cometido del
 router es asegurarse de que los paquetes se desplazan a través de él y
 terminan en la capa de la conexión de salida correcta. Un paquete típico pasa
@@ -47,14 +47,14 @@ la dirección de destino para decidir qué conexión de salida tiene que tomar
 tu paquete. Es como si un empleado de la estación de trenes se reuniera con cada
 persona que se bajase del tren, les preguntase a dónde se dirigen y les
 acompañase hasta su siguiente tren. ¡Si fueras un paquete, ya nunca más necesitarías
-mirar a otra pantalla con una lista de horarios de trenes y recorridos!
+consultar otra pantalla con la lista de horarios de trenes y recorridos!
 
 \index{direcciones IP}
 El router es capaz de determinar rápidamente la conexión de salida para tu
 paquete porque cada uno de ellos lleva marcado cual es su dirección de destino
-final. Esto recibe el nombre de Dirección de Protocolo de Internet (*Internet
+final. Esta recibe el nombre de Dirección de Protocolo de Internet (*Internet
 Protocol Address*) o dirección IP, para abreviar. Las direcciones IP se
-construyen cuidadosamente para que el trabajo del router de reenviar paquetes
+eligen con cuidado para que el trabajo del router de reenviar paquetes
 sea lo más eficiente posible.
 
 Direcciones de Protocolo de Internet (IP)
@@ -65,10 +65,10 @@ capa de Acceso, dijimos que las direcciones de acceso eran asignadas durante el
 proceso de fabricación del hardware, y que se conservaban constantes durante toda
 la vida del equipo. No se pueden usar las direcciones de capa de acceso para dirigir
 paquetes a través de varias redes, ya que no existe relación entre una dirección
-de capa de acceso y la ubicación física en la cual esa computadora está conectado a la
+de capa de acceso y la ubicación física en la cual ese equipo está conectado a la
 red. Con equipos portátiles y teléfonos móviles (celulares) moviéndose
 constantemente, el sistema necesitaría rastrear cada equipo individual a medida
-que se va moviendo de un sitio a otro. Y con billones de equipos conectados a
+que se va moviendo de un sitio a otro. Y con miles de millones de equipos conectados a
 la red, usar las direcciones de la capa de acceso para tomar decisiones
 de enrutamiento resultaría lento e ineficiente.
 
@@ -76,7 +76,7 @@ de enrutamiento resultaría lento e ineficiente.
 
 \index{IPv4}
 Para hacer todo esto más sencillo, lo que se hace es asignar otra dirección a cada
-computadora, basada en dónde esté ese equipo conectado a la red. Existen dos versiones
+computadora, basada en dónde está ese equipo conectado a la red. Existen dos versiones
 diferentes de las direcciones IP. Las antiguas (clásicas) direcciones IPv4 consisten en cuatro
 números separados por puntos, con un aspecto como este:
 
@@ -96,7 +96,7 @@ los conceptos se pueden aplicar tanto a las direcciones IPv4 como a las IPv6.
 \index{identificador de dispositivo}
 \index{network number}
 \index{host identifier}
-Lo más importante acerca de las direcciones IP es que pueden dividirse en
+El aspecto más importante acerca de las direcciones IP es que pueden dividirse en
 dos partes.^[Una dirección IP se puede dividir de muchas maneras diferentes para
 obtener su "Dirección de red" (*Network Number*) e "Identificador de Dispositivo"
 (*Host Identifier*) - en este ejemplo, tan solo partiremos la dirección por la mitad.]
@@ -106,21 +106,21 @@ una dirección IPv4 en dos partes, tendríamos lo siguiente:
     Dirección de Red: 212.78
     Identificador de Dispositivo: 1.25
 
-La idea es que muchos computadoras puedan estar conectadas a Internet a través de
+La idea es que muchos equipos puedan estar conectados a Internet a través de
 una única conexión. Un campus universitario entero, una escuela o un negocio
 podrían conectarse usando una única dirección de red, o solo unas pocas.
 En el ejemplo anterior, 65.536 equipos podrían conectarse
 a la red usando la dirección de red "212.78". Como para el resto de Internet
-todos esas computadoras aparecerían como una única conexión, todos los paquetes
+todos esas equipos aparecerían como una única conexión, todos los paquetes
 con una dirección IP del tipo:
 
     212.78.*.*
 
-podrían ser dirigidos a la misma ubicación.
+podrían ser dirigidos hacia la misma ubicación.
 
-Usando este método de la dirección de red y el identificador de dispositivo,
-los routers ya no necesitan tener localizados a billones de equipos individuales.
-En vez de eso, tan solo necesitan realizar el seguimiento de quizás un millón
+Al usar este método de la dirección de red y el identificador de dispositivo, los
+routers ya no necesitan tener localizados a miles de millones de equipos individuales.
+En vez de eso, tan solo necesitan realizar el seguimiento de tal vez un millón
 o menos de direcciones de red diferentes.
 
 De modo que cuando un paquete llega a un router y ese router tiene que decidir
@@ -134,8 +134,8 @@ Cómo determinan las rutas los routers
 A pesar de que la idea de concentrar muchas direcciones IP en una única dirección
 de red reduce enormemente el número de puntos de destino individuales que un router
 debe rastrear para dirigir correctamente los paquetes, cada router sigue necesitando
-un modo de averiguar el camino desde él mismo hasta cada una de las direcciones
-de red con las que pueda encontrarse.
+un modo de averiguar el camino desde su propia ubicación hasta cada una de las
+direcciones de red con las que puede encontrarse.
 
 Cuando un router central nuevo se conecta a Internet, este no conoce todas las
 rutas. Puede conocer unas pocas que tenga pre-configuradas, pero para construir
@@ -145,7 +145,7 @@ que aún no sabe cómo dirigir, pregunta a los routers que son sus "vecinos". Lo
 routers vecinos que conocen la ruta hacia esa dirección de red, envían sus
 datos de vuelta hacia el router que les ha preguntado. Algunas veces los routers
 vecinos tienen que preguntar a su vez a sus propios vecinos, y así sucesivamente
-hasta que se encuentra una ruta viable y ésta se envía de vuelta al router que
+hasta que se encuentra una ruta viable y esta se envía de vuelta al router que
 la solicitó.
 
 En el caso más simple, un router central nuevo se conectaría a Internet e iría
@@ -161,7 +161,7 @@ de red nueva. La primera vez que un router se topa con un paquete destinado
 a una dirección de red nueva, averigua la ruta hacia esa dirección de red y ya
 no necesita redescubrir esa ruta más, a no ser que se produzca algún cambio
 o algo vaya mal. Esto quiere decir que el router realiza una búsqueda
-para el primer paquete, pero luego puede dirigir los siguientes billones de
+para el primer paquete, pero luego puede dirigir los siguientes miles de millones de
 paquetes hacia esa dirección de red sin más que usar la información de la
 que ya dispone en sus tablas de enrutamiento.
 
@@ -172,10 +172,10 @@ A veces la red tiene problemas y un router debe buscar un camino alternativo
 para dirigir los datos evitando esos problemas. Un problema muy habitual es que
 alguna de las conexiones de salida falle. Tal vez porque alguien se haya tropezado
 con un cable y haya desenchufado una línea de fibra óptica. En ese momento,
-el router tiene un puñado de direcciones de red a las que intenta dirigir a
+el router tiene un puñado de direcciones de red a las que intenta acceder a
 través de esa conexión que ha fallado. La recuperación cuando un router pierde
-una conexión de salida es sorprendentemente simple. El router descarta todas las
-entradas en su tabla de enrutamiento que están siendo dirigidas a través de esa
+una conexión de salida resulta sorprendentemente simple. El router descarta todas las
+entradas de su tabla de enrutamiento que están siendo dirigidas a través de esa
 conexión. A medida que van llegando más paquetes para esas direcciones de red, el router
 realiza de nuevo el proceso de descubrimiento de rutas, esta vez preguntando a
 todos los routers vecinos excepto a aquellos con los que se ha interrumpido el
@@ -190,41 +190,41 @@ la red, pero pasado un tiempo las cosas vuelven a discurrir con normalidad.
 Ese es el motivo por el cual es importante que existan siempre al menos dos caminos
 independientes desde una red de origen hasta otra de destino dentro del núcleo de la red.
 Si existen siempre al menos dos posibles rutas independientes, se dice que una red es
-una "red bi-conectada". Una red bi-conectada puede recuperarse de cualquier caída
-de una única conexión. En lugares donde hay muchas conexiones de red, como en la
-costa Este de los Estados Unidos, la red puede perder muchas conexiones sin llegar
-nunca a quedar completamente desconectada. Pero cuando estás en tu casa o colegio y
-solo dispones de una conexión, si esa conexión se interrumpe quedas desconectado por
-completo.
+una "red bi-conectada" (*two-connected network*). Una red bi-conectada puede
+recuperarse de cualquier corte en una de sus conexiones. En lugares donde hay muchas
+conexiones de red, como en la costa Este de los Estados Unidos, la red puede perder
+muchas conexiones sin llegar nunca a quedar completamente desconectada.
+Pero cuando estás en tu casa o colegio y solo dispones de una conexión,
+si esa conexión se interrumpe quedas desconectado por completo.
 
 En algún momento la conexión interrumpida será reparada o se establecerá una nueva,
 y el router querrá hacer un uso mejor de esas nuevas conexiones. El router siempre
-está interesado en mejorar sus tablas de enrutamiento, y busca oportunidades de
-mejorar esas tablas durante su tiempo libre. Cuando las comunicaciones están en
+está interesado en mejorar sus tablas de enrutamiento, y aprovecha cualquier oportunidad
+para hacerlo durante su tiempo libre. Cuando las comunicaciones están en
 calma, un router pedirá a algún otro vecino todas o parte de sus tablas de enrutamiento.
 El router buscará dentro de las tablas del vecino y, si le parece que el otro router
 dispone de alguna ruta mejor para una dirección de red concreta, actualizará su
 propia tabla de redes para reenviar los paquetes destinados a esa dirección de red
-a través de la conexión hacia el router que disponga de una ruta mejor.
+a través de la conexión que le ha proporcionado el otro router.
 
 Con estas soluciones para los cortes y el intercambio de la información de la
 tabla de enrutamiento, los routers pueden reaccionar rápidamente ante los cortes en
 la red y redirigir los paquetes desde conexiones caídas o lentas hacia aquellas
-que están activas y/o son más rápidas. Todo el tiempo, cada ruter está comunicándose
+que están activas y/o son más rápidas. Al mismo tiempo, cada router está comunicándose
 con otros routers vecinos para buscar modos de mejorar su propia tabla de enrutamiento.
 Aunque no hay un dispositivo central que les diga cual es la "mejor ruta"
 desde cualquier origen hasta cualquier destino, los routers son capaces casi
-siempre de determinar el camino más rápido desde un origen hasta un destino. Los
+siempre de determinar el camino más rápido entre esos dos puntos. Los
 routers también son capaces de detectar y dirigir dinámicamente los paquetes
-evitando las conexiones lentas o aquellas que están temporalmente sobrecargadas.
+evitando las conexiones lentas o aquellas que estén temporalmente sobrecargadas.
 
 Uno de los efectos secundarios del modo que tienen los routers de descubrir la
 estructura de la red es que la ruta que siguen los paquetes desde el origen hasta
 el destino puede cambiar a lo largo del tiempo. Incluso enviando un paquete
-inmediatamente a continuación del anterior, y debido al modo en que son dirigidos
+seguido inmediatamente por otro, y debido al modo en que son dirigidos
 esos paquetes, el segundo puede llegar a su destino antes que el primero. La capa IP
-no es la encargada de preocuparse del orden de los paquetes; ya tiene bastante
-de lo que preocuparse sin eso.
+no es la encargada de preocuparse por el orden de los paquetes; ya tiene bastante
+de lo que ocuparse sin eso.
 
 Cuando lanzamos a Internet nuestros paquetes con sus direcciones IP de origen y destino,
 lo hacemos de modo similar a cuando depositamos un puñado de cartas en el correo en
@@ -234,33 +234,34 @@ sistema y llegarán a sus destinos.
 Trazando tu ruta
 ----------------
 
-No hay ningún sitio en Internet que conozca de antemano la ruta que los paquetes
-seguirán desde tu equipo hasta un destino concreto. Incluso los routers que
+No hay ningún sitio en Internet que conozca de antemano la ruta que seguirán
+los paquetes desde tu equipo hasta un destino concreto. Incluso los routers que
 participan reenviando los paquetes a través de Internet ignoran la ruta
-completa que tomarán esos paquetes. Lo único que saben es a qué conexión
-deben enviar esos datos para acercarlos a su destino definitivo.
+completa que tomarán estos. Lo único que saben es a qué conexión
+deben enviar los paquetes para acercarlos a su destino definitivo.
 
-Pero resulta que la mayoría de las computadoras tiene una herramienta de
+Pero resulta que la mayoría de los equipos disponen de una herramienta de
 diagnóstico de red llamada "*traceroute*" (o "*tracert*", dependiendo del sistema
 operativo), que te permite trazar la ruta entre tu equipo y otro de destino.
-Dado que la ruta entre ambos computadoras puede cambiar de un paquete
+Dado que la ruta entre ambos equipos puede cambiar de un paquete
 a otro, cuando "trazamos" una ruta, se trata tan solo de una "suposición
-bastante precisa" de la ruta que el paquete actual tomaría.
+bastante precisa" de la ruta real que tomarían los paquetes.
 
 El comando *traceroute* en realidad no "traza la ruta" de ningún paquete. Lo que
 hace es aprovecharse de una característica del protocolo de red IP que fue diseñada
 para evitar que los paquetes se quedasen "atrapados" en la red sin poder alcanzar
-nunca su destino. Antes de que estudiemos esos trazados, echaremos un vistazo
+nunca su destino. Antes de que estudiemos esos trazados de rutas, echaremos un vistazo
 rápido a cómo un paquete puede quedar atrapado en la red para siempre y qué hace
 el protocolo IP para resolver ese problema.
 
-Recuerda que la información de cada router individual es imperfecta y se trata
-solo de una aproximación acerca de cual sería la mejor conexión de salida para
+Recuerda que la información de la que dispone cada router individual es imperfecta,
+ya que se trata tan solo de una aproximación acerca de cual sería
+la mejor conexión de salida para
 alcanzar una dirección de red concreta, y que cada router no tiene forma de saber
 lo que van a hacer los demás routers. Pero, ¿qué ocurriría si tuviésemos tres routers
 con entradas en su tabla de enrutamiento que formaran un bucle infinito?
 
-![Vórtice de Enrutamiento](../images/router-loop)
+![Vórtice de enrutamiento](../images/router-loop)
 
 Cada uno de los routers cree conocer la mejor conexión de salida para las direcciones
 IP que comienzan con "212.78". Pero de algún modo los routers están un poco
@@ -270,9 +271,9 @@ en círculo a través de las tres conexiones para siempre. No habría salida. A 
 que llegaran más paquetes con el mismo prefijo, irían siendo añadidos al
 "vórtice de paquetes infinito". Muy pronto las conexiones estarían llenas de
 tráfico dando vueltas y más vueltas, los routers se saturarían con paquetes
-esperando ser enviados, y los tres routers terminarían por fallar.
+esperando ser enviados, y finalmente los tres routers terminarían por fallar.
 Este problema es peor que cuando alguien se tropieza con un cable de fibra
-óptica, ya que puede provocar que varios routers se bloqueen.
+óptica, ya que en este caso se puede terminar con varios routers bloqueados.
 
 Para resolver este problema, los diseñadores del protocolo de Internet añadieron
 un número a cada paquete, denominado "Tiempo De Vida" (*Time To Live* o TTL). Este
@@ -291,7 +292,7 @@ caer áreas enteras de la red.
 Se trata de un pequeña parte del diseño del protocolo de red que resulta genial.
 Para detectar y recuperarse de los lazos en las rutas, tan solo insertamos un
 número, restamos 1 a ese número en cada conexión, y cuando el número llega a cero
-desecharemos el paquete.
+desechamos el paquete.
 
 Además, resulta que cuando el router desecha un paquete, normalmente envía de
 vuelta una notificación de cortesía, algo como "Perdón, he tenido que deshacerme
@@ -299,15 +300,15 @@ de tu paquete". El mensaje incluye la dirección IP del router que desechó del
 paquete.
 
 Los lazos de redes en realidad son bastante raros, pero podemos usar esta
-notificación de que un paquete ha sido retirado para crear un mapa de la ruta
+notificación de que un paquete ha sido desechado para crear un mapa de la ruta
 aproximada que sigue un paquete a través de la red. El programa *traceroute*
 envía paquetes trucados, para conseguir que los routers por los que pasan esos
 paquetes nos devuelvan notificaciones. Primero, el *traceroute* envía un paquete
-con un TTL de 1. Ese paquete llega al primer router, es descartado y tu
+con un TTL de 1. Ese paquete llega al primer router, es desechado y tu
 equipo recibe una notificación desde ese primer router. Luego el *traceroute*
 envía un paquete con un TTL de 2. Ese paquete pasa a través del primer router
-y es retirado por el segundo router, que te envía una nota informando de que el
-paquete ha sido descartado. A continuación el *traceroute* envía otro paquete con
+y es desechado por el segundo router, que te envía una nota informando de que el
+paquete ha sido retirado. A continuación el *traceroute* envía otro paquete con
 un TTL de 3, y continúa incrementando el TTL hasta que el paquete realiza el
 recorrido completo hasta su destino.
 
@@ -322,7 +323,7 @@ ruta puede no ser la mejor para viajar entre las dos ciudades si se está conduc
 un automóvil o desplazándose en tren, pero ese día, para los paquetes que viajaban entre
 las dos ciudades, esa resultó ser la mejor ruta a través de Internet.
 
-![Notificaciones de Paquetes Retirados](../sketchnote/Dropped_packet)
+![Notificaciones de paquetes retirados](../sketchnote/Dropped_packet)
 
 También se puede ver cuánto tardan los paquetes en hacer el recorrido desde el
 origen hasta cada router, y luego desde el origen hasta el destino. Un milisegundo
@@ -339,7 +340,7 @@ Si ejecutas un trazado de ruta para una conexión que incluya un cable submarino
 podrás ver a qué velocidad se mueven los datos bajo el mar. Aquí tenemos un
 trazado de ruta entre la Universidad de Michigan y la Universidad de Pekín en China.
 
-![Trazado de ruta entre las Universidades de Michigan y Pekín](../images/traceroute-peking)
+![Trazado de ruta entre las universidades de Michigan y Pekín](../images/traceroute-peking)
 
 Puedes ver cómo el paquete encuentra un largo cable submarino en los saltos siete
 y ocho. El tiempo pasa de menos de 1/10 de segundo a casi 1/4 de segundo.
@@ -357,17 +358,17 @@ direcciones IP en los extremos.
 Obteniendo una dirección IP
 ---------------------------
 
-Cada vez más, las computadoras son portátiles o móviles. Acabamos de señalar la
-gran importancia que tiene para la capa IP el tener localizados grupos extensos de
-equipos usando direcciones de red, en vez de localizar cada único equipo de forma
+Cada vez con más frecuencia, los equipos son portátiles o móviles. Acabamos de señalar
+la gran importancia que tiene para la capa IP el tener localizados grupos extensos de
+equipos usando direcciones de red, en vez de localizar cada equipo de forma
 individual. Pero, dado que esas direcciones de red indican una conexión física
-concreta a la red, cuando una computadora se mueve de una ubicación a otra, necesitará
+concreta a la red, cuando un equipo se mueve de una ubicación a otra, necesitará
 una dirección IP nueva. Recuerda que la dirección de la capa de acceso queda fijada
-cuando se construye un equipo, y no cambia nunca durante la vida del mismo.
+cuando se construye el dispositivo, y no cambia nunca durante la vida del mismo.
 Si bajas la pantalla de tu portátil (laptop) en una cafetería y la vuelves a levantar
-en tu casa, usando tu WiFi doméstica, tu equipo necesitará una dirección IP diferente.
+en tu casa, usando tu WiFi doméstica, el equipo necesitará una dirección IP diferente.
 
-La capacidad de tu computadora de obtener una dirección IP diferente cuando se mueve
+La capacidad de tu equipo de obtener una dirección IP diferente cuando se mueve
 de una red a otra se basa en un protocolo llamado "Protocolo de Configuración Dinámica
 de Host" (*Dynamic Host Configuration Protocol*, o DHCP para abreviar). El DHCP es
 bastante sencillo. Como vimos en el capítulo dedicado a la capa de Acceso, recuerda

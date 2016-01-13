@@ -371,8 +371,8 @@ Preguntas
 
 Puedes realizar este cuestionario online en http://www.net-intro.com/quiz/
 
-1. ¿Por qué los ingenieros usan un "modelo" para organizar su modo de
-resolver un problema extenso y complejo?
+1. ¿Por qué los ingenieros utilizan un "modelo" para organizar su enfoque a la hora
+de resolver un problema grande y complejo?
 a) Porque les permite construir algo pequeño y probarlo en un túnel de viento
 b) Porque discutir sobre un modelo les permite retrasar el comienzo del
 trabajo duro de verdad
@@ -386,7 +386,7 @@ b) Transporte
 c) Internet
 d) Acceso a la red
 
-3. ¿Cuál de las capas se ocupa de recibir un paquete de datos
+3. ¿Cuál de las capas se ocupa de trasladar un paquete de datos
 a través de una única conexión física? 
 a) Aplicación
 b) Transporte
@@ -404,22 +404,22 @@ d) Direccionamiento Múltiple de la División del Canal de Estado Constante (*Co
 State Multiple Address Channel Divison*)
 
 5. ¿Cual es la función de la capa de Internet?
-a) Asegurarse de que no se pierden datos durante el enrutamiento
+a) Asegurarse de que no se pierden datos durante el recorrido
 b) Hacer que un paquete de datos se mueva a través de múltiples redes desde su origen
 hasta su destino
 c) Asegurarse de que solo pueden usar Internet aquellos usuarios que han iniciado
 sesión
-d) Asegurarse de que el WiFi se comparte correctamente entre múltiples equipos
+d) Garantizar que el WiFi se comparta correctamente entre varios equipos
 
 6. Además de los datos y direcciones de origen y destino, ¿qué más se necesita para
 asegurarse de que un mensaje pueda ser reconstruido cuando alcanza su destino?
-a) Un offset o índice que indique a dónde pertenece el paquete, en relación con el
-comienzo del mensaje
+a) Un offset o índice que indique la posición que ocupa el paquete respecto al
+inicio del mensaje
 b) Una ubicación a la que enviar los datos si el equipo de destino está apagado
 c) Una versión comprimida y otra sin comprimir de los datos del paquete
 d) Las coordenadas GPS del equipo de destino
 
-7. ¿Qué es el "tamaño de la ventana"?
+7. ¿Qué es el "tamaño de ventana"?
 a) La suma de la longitud y anchura de un paquete
 b) El tamaño máximo de un único paquete
 c) El número máximo de paquetes que pueden formar un mensaje
