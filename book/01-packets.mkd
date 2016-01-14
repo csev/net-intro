@@ -203,6 +203,7 @@ turno en la cola de salida.
 \index{Interfaces de Procesamiento de Mensajes}
 \index{router}
 \index{enrutador}
+\index{encaminador}
 A medida que las redes iban transformándose desde el antiguo sistema de
 almacenamiento-y-reenvío, se empezaron a incluir equipos con funciones
 especiales, especializados en el movimiento de paquetes. Éstos fueron llamados
@@ -210,8 +211,8 @@ inicialmente "Interfaces de Procesamiento de Mensajes" (o "IMPs" por sus siglas
 en inglés, *Interface Message Processing*),
 ya que actuaban como un interfaz entre las computadoras normales y el resto
 de la red. Más adelante, esos equipos dedicados a las comunicaciones
-recibieron el nombre de "routers" (o enrutadores), dado que su propósito era
-dirigir (enrutar) los paquetes que recibían hacia su destino final.
+recibieron el nombre de "routers" (enrutadores o encaminadores), dado que su propósito
+era encaminar (enrutar) los paquetes que recibían hacia su destino final.
 
 Al disponer de routers especializados en el movimiento de paquetes a través de
 múltiples saltos, se hizo más sencillo conectar computadoras de distintas
@@ -320,7 +321,7 @@ de un equipo a otro mediante el almacenamiento del mensaje en equipos
 intermedios durante periodos de tiempo relativamente largos, mientras se
 espera a que una conexión a través de la red de salida esté disponible.
 
-**router o enrutador**: Un equipo especializado, que está diseñado para
+**router, enrutador o encaminador**: Un equipo especializado, que está diseñado para
 recibir paquetes de entrada a través de múltiples conexiones y reenviar
 rápidamente esos paquetes a través de la mejor conexión de salida disponible,
 para hacerlos llegar rápidamente a su destino.

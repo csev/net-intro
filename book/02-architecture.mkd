@@ -1,5 +1,5 @@
-Arquitectura de red
-===================
+La arquitectura de la red
+=========================
 
 \index{NSFNet}
 Para diseñar y construir un sistema tan complejo como Internet,
@@ -297,7 +297,7 @@ aplicación "cliente web", que realiza conexiones con los servidores web y muest
 páginas y documentos almacenados en esos servidores. Los Localizadores Uniformes de
 Recursos (*Uniform Resource Locators* o URLs), que muestra el navegador web en su barra
 de direcciones, son los servidores web con los que el cliente va contactando para
-recuperar los documentos que muestra.
+descargar los documentos que muestra.
 
 Cuando se desarrolla la parte del servidor y la parte del cliente en una aplicación
 en red, se debe definir también un "protocolo de aplicación", que describa cómo van

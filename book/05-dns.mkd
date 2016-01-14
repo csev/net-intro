@@ -5,8 +5,8 @@ El Sistema de Nombres de Dominio
 \index{Sistema de Nombres de Dominio}
 \index{DNS}
 El Sistema de Nombres de Dominio permite acceder a sitios web por su nombre de
-dominio, como (www.khanacademy.org), de modo que no necesites mantener una lista
-de direcciones de protocolo de Internet numéricas (IPs), como "212.78.1.25".
+dominio, como (www.khanacademy.org), de modo que el usuario no necesite mantener
+una lista de direcciones de protocolo de Internet numéricas (IPs), como "212.78.1.25".
 Las direcciones IP están determinadas por *dónde* se conecta tu equipo a Internet.
 Cuando tienes un equipo portátil y te mueves de un sitio a otro, obtienes
 una dirección IP nueva en cada lugar. Mientras que nadie se conecte a tu equipo,
@@ -22,12 +22,12 @@ dirección IP obtenida.
 Al añadir el paso intermedio de averiguar cuál es la dirección IP para una
 dirección DNS, se facilita también el traslado de los servidores desde una ubicación
 a otra. El servidor recibe una nueva dirección IP y se actualiza la entrada
-correspondiente a la dirección del dominio. Una vez que la entrada DNS se hace
+correspondiente a la dirección del dominio. Una vez que la entrada DNS se ha
 actualizado, las peticiones siguientes relativas a ese nombre de dominio recibirán
 la nueva dirección IP. Como los usuarios finales acceden a la mayoría de los servidores
 usando nombres de dominio y nunca se fijan en las direcciones IP, un servidor podrá
 ser trasladado a una conexión de red nueva sin afectar a la capacidad del usuario
-final de acceder al mismo.
+final para acceder al mismo.
 
 Asignación de Nombres de Dominio
 --------------------------------
@@ -56,7 +56,7 @@ a menudo añaden dominios de segundo nivel, como .co.uk para organizaciones come
 dentro del Reino Unido (UK). Las normas que se aplican a los nombres de dominio
 para cada ccTLD concreto varían ampliamente de un país a otro.
 
-![Nombres de Dominio](../sketchnote/DNS)
+![Nombres de dominio](../sketchnote/DNS)
 
 Cuando una organización recibe un nombre de dominio, está autorizada a
 asignar subdominios dentro de él. Por ejemplo, el dominio de nivel superior .edu
@@ -66,16 +66,16 @@ de Michigan, dispone del control de un dominio, como umich.edu, puede elegir qu�
 subdominios desea crear dentro de él. Los dominios que terminan en .com y .org pueden
 ser adquiridos por particulares. Los propietarios individuales de esos dominios están
 autorizados a gestionar sus dominios y crear subdominios por debajo de ellos para su
-propio uso o el de otros.
+uso propio o por otros.
 
 
 
-Lectura de Nombres de Dominio
------------------------------
+Lectura de nombres de dominios
+------------------------------
 
 Cuando nos fijamos en una dirección IP como "212.78.1.25", el prefijo izquierdo se
 corresponde con la "dirección de red", de modo que en cierto sentido la lectura de las
-direcciones IP se realiza de izquierda a derecha, ya que la parte izquierda de la
+direcciones IP se realiza de izquierda a derecha. La parte izquierda de la
 dirección IP se corresponde con la parte más general de la dirección, mientras que
 la parte derecha es más específica:
 
@@ -138,13 +138,13 @@ Preguntas
 
 Puedes realizar este cuestionario online en http://www.net-intro.com/quiz/
 
-1. ¿Cuál de estas tareas es realizada por el Sistema de Nombres de Dominios?
+1. ¿Qué hace el Sistema de Nombres de Dominios (DNS)?
 a) Permite a los equipos conectados a la red usar un nombre textual para otro
 equipo y averiguar su dirección IP
 b) Mantiene un registro de las coordenadas GPS de todos los servidores
 c) Permite a los Registradores Regionales de Internet (RIRs) gestionar las
 direcciones IP de los distintos continentes
-d) Asigna diferentes direcciones IP a los equipos portátiles a medida que se
+d) Asigna direcciones IP distintas a los equipos portátiles a medida que se
 van desplazando de una red WiFi a otra
 
 2. ¿Qué organización asigna los dominios de nivel superior, como ".com", ".org",
@@ -158,7 +158,7 @@ Internacional para la Asignación de Nombres de Red)
 d) IMAP - *Internet Mapping Authorization Protocol* (Protocolo de Autorización de
 Mapeado de Internet)
 
-3. ¿Cuál de estos es una dirección de dominio?
+3. ¿Cuál de estas es una dirección de dominio?
 a) 0f:2a:b3:1f:b3:1a
 b) 192.168.3.14
 c) www.khanacademy.org

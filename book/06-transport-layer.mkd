@@ -1,5 +1,5 @@
-Capa de Transporte
-==================
+La Capa de Transporte
+=====================
 \index{Capa de Transporte}
 \index{Capa!Transporte}
 \index{TCP}
@@ -13,37 +13,37 @@ los paquetes pueden perderse o ser enviados fuera de su ruta.
 
 Sin embargo, los usuarios de la red quieren poder enviar archivos enteros
 o mensajes a través de Internet con fiabilidad. Una red no nos resulta demasiado útil
-si lo único que puede hacer es enviar paquetes que son recibidos la mayor parte del
-tiempo. Para que la red sea útil, todos los paquetes deben ser reensamblados en
+si lo único que puede hacer es enviar paquetes que son recibidos sólo a veces.
+Para que la red sea útil, todos los paquetes deben ser reensamblados en
 el orden correcto para reconstruir el mensaje en el sistema receptor. La red
 también debe gestionar los paquetes que llegan desordenados, o aquellos que ni siquiera
-llegan. La capa de Transporte es donde se gestiona la exactitud y la reconstrucción de
-los mensajes en el equipo de destino.
+llegan. La capa de Transporte es la que se ocupa de la fiabilidad del envío y de la
+reconstrucción de los mensajes en el equipo de destino.
 
 Como ocurría en la capa IP, la capa de Transporte añade una pequeña cantidad de datos
 a cada paquete para ayudar a resolver los problemas de reensamblado y reenvío de
-paquetes
+paquetes perdidos.
 
-Cabeceras de Paquetes
+Cabeceras de paquetes
 ---------------------
 
 Si revisaras un paquete que estuviera viajando a través de múltiples conexiones
-entre los equipos de origen y destino, verías una cabecera de acceso, una cabecera
+entre sus equipos de origen y destino, verías una cabecera de acceso, una cabecera
 de IP, y una cabecera del Protocolo de Control de Transporte (TCP), junto con los
 datos reales del paquete.
 
-![Cabeceras y Datos](../images/headers)
+![Cabeceras y datos](../images/headers)
 
-Cuando el paquete es recibido en una conexión, se elimina su cabecera de acceso,
-y cuando el paquete es enviado hacia la siguiente conexión de su viaje, se le añade
-una cabecera de acceso nueva. Las cabeceras IP y TCP permanecen en el paquete durante
+Cuando el paquete se recibe en un nodo (router), se elimina su cabecera de acceso,
+y se le añade una cabecera de acceso nueva al ser enviado hacia el siguiente nodo.
+Las cabeceras IP y TCP permanecen en el paquete durante
 todo su viaje. Recuerda que un paquete puede pasar a través de varios tipos de capas
-de acceso a medida que es dirigido a través de Internet.
+de acceso a medida que es encaminado a través de Internet.
 
 La cabecera IP contiene las direcciones del Protocolo de Internet de origen y destino
 (IP), así como el Tiempo De Vida (TTL) del paquete. La cabecera IP es creada por el
 equipo de origen y no se modifica (salvo el TTL) a medida que el paquete se mueve
-a través de los distintos routers de su viaje. 
+a través de los distintos routers durante su viaje. 
 
 Las cabeceras TCP indican a dónde pertenecen los datos de cada paquete. A medida
 que el equipo de origen divide el mensaje o archivo en paquetes, mantiene un
@@ -56,20 +56,20 @@ Reensamblado y reenvío de paquetes
 Cuando el equipo de destino recibe los paquetes, se fija en el índice de posición
 respecto al comienzo del mensaje (*offset*), de modo que puede colocar el paquete en su
 lugar correcto del mensaje reconstruido. Simplemente asegurándose de colocar los
-datos del paquete en la posición correcta respecto al comienzo del mensaje, la
+datos del paquete en la posición correcta, la
 capa de Transporte es capaz de gestionar con facilidad los paquetes que llegan
-desordenados. Si recibe un paquete adelantado respecto a la posición del mensaje,
-lo coloca en un buffer, controlando la circunstancia de
-que ahora existe un hueco dentro del mensaje que está siendo reconstruido.
-Cuando, posteriormente, llega el paquete anterior, éste encaja
+desordenados. Si recibe un paquete adelantado respecto a su posición dentro del
+mensaje, lo coloca en un buffer, controlando
+la circunstancia de que ahora existe un hueco dentro del mensaje que está siendo
+reconstruido. Cuando, posteriormente, llega el paquete retrasado, éste encaja
 perfectamente en el hueco dejado dentro de los datos reconstruidos.
 
 \index{tamaño de ventana}
 Para evitar sobrecargar la red, la capa de Transporte en el equipo de origen
 sólo envía una cierta cantidad de datos antes de esperar una confirmación desde
 la capa de Transporte del equipo de destino de que esos paquetes se han recibido.
-La cantidad de datos que el equipo de origen enviará antes de hacer una pausa
-y esperar una confirmación, recibe el nombre de "tamaño de ventana".
+La cantidad de datos que el equipo emisor enviará antes de hacer una pausa
+y esperar una confirmación recibe el nombre de "tamaño de ventana".
 
 El equipo emisor controla el tiempo que tarda en empezar a recibir mensajes de
 confirmación desde el equipo receptor. Si las confirmaciones llegan rápido,
@@ -94,52 +94,51 @@ la cantidad de tiempo transcurrida desde la recepción del último paquete de da
 En algún momento, el equipo receptor decide que ya ha pasado demasiado tiempo y
 envía un paquete al equipo emisor, indicándole en qué punto del mensaje recibió
 datos por última vez. Cuando el equipo emisor recibe ese mensaje, "retrocede"
-y vuelve a enviar datos desde la última posición en la que el equipo receptor le
-informa de que recibió datos con éxito.
+y vuelve a enviar datos a partir de la posición informada por el equipo receptor.
 
 ![Esperando un paquete perdido](../sketchnote/Transport)
 
 La confirmación de recepción de datos por parte del equipo receptor, no permitiendo
 al equipo emisor continuar el envío (tamaño de ventana), combinado con las peticiones
 del equipo receptor al emisor para que "vuelva atrás y empiece de nuevo" cuando se
-sospecha que los datos se han perdido, constituyen un método relativamente simple
-para enviar con fiabilidad mensajes extensos o archivos a través de la red.
+sospecha que parte de los datos se han perdido, constituyen un método relativamente
+simple para enviar con fiabilidad mensajes extensos o archivos a través de la red.
 
 La capa de Transporte, durante el envío de una cadena de datos,
-monitoriza constantemente la velocidad de recepción de confirmaciones y ajusta
+controla constantemente la frecuencia de recepción de confirmaciones y ajusta
 dinámicamente su tamaño de ventana. Esto asegura que los datos se envíen rápidamente
-cuando la conexión entre dos equipos es rápida, y mucho más lentamente cuando la
-conexión tiene enlaces lentos o una gran carga.
+cuando la conexión entre los dos equipos es rápida, y mucho más lentamente cuando la
+conexión tiene enlaces lentos o se encuentra muy cargada.
 
-La Capa de Transporte En Funcionamiento
+La Capa de Transporte en funcionamiento
 ---------------------------------------
 
-Uno de los elementos clave de la capa de Transporte es que el equipo emisor
+Uno de los aspectos clave de la capa de Transporte consiste en que el equipo emisor
 debe mantener todos los datos que está enviando hasta que su recepción haya sido
-confirmada. Una vez que el equipo receptor confirma la recepción de los datos, el
+confirmada. Una vez que el equipo receptor confirma la recepción, el
 emisor puede descartar los datos enviados. Podemos verlo gráficamente cuando un
 mensaje se divide en muchos paquetes. Aquí, los diez primeros paquetes del mensaje
 han sido enviados y confirmados por el equipo de destino ('a'). El equipo emisor
 ha enviado seis paquetes más ('S') y luego se ha detenido por haber alcanzado
 su tamaño de ventana.
 
-![Almacenando en Buffer en la Capa de Transporte](../images/transport-buffer)
+![Almacenando en la Capa de Transporte](../images/transport-buffer)
 
 Existen tres paquetes que han sido enviados pero aún no han sido recibidos ("S"). Dado
-que hay muchos saltos en la red, resulta muy habitual que más de un paquete esté en
-camino a través de la red al mismo tiempo.
+que hay muchos saltos en la red, resulta muy habitual que haya más de un paquete
+viajando a través de la red al mismo tiempo.
 
 La capa de Transporte en el equipo receptor ha recibido y confirmado diez paquetes
 y se los ha entregado a la aplicación receptora ('a').^[Hablaremos acerca
 de la capa de Aplicación en el próximo capítulo.] La capa de Transporte en el
 equipo de destino ha recibido tres paquetes más ('R'), pero un paquete está
 desordenado. La recepción de un paquete desordenado no es algo preocupante,
-siempre que los paquetes perdidos lleguen en un periodo de tiempo razonablemente
+siempre que los paquetes retrasados lleguen en un periodo de tiempo razonablemente
 breve. En cuanto se reciban todos los paquetes, la capa de Transporte
 reconstruirá el mensaje, encajando los paquetes entre sí como piezas de un puzzle,
 y se lo entregará a la aplicación receptora.
 
-Aplicaciones Clientes y Servidores
+Aplicaciones clientes y servidores
 ----------------------------------
 
 \index{cliente}
@@ -147,23 +146,23 @@ Aplicaciones Clientes y Servidores
 El propósito de la capa de Transporte es proporcionar conexiones fiables entre
 aplicaciones en red, de modo que esas aplicaciones puedan enviar y recibir cadenas
 de datos. Para una aplicación, resulta tan sencillo como pedir a la capa de Transporte
-que realice una conexión a una aplicación que se esté ejecutando en un equipo
+que realice una conexión con otra aplicación que se está ejecutando en un equipo
 remoto. La aplicación que inicia la conexión desde el ordenador local recibe el
-nombre de "cliente", y a la aplicación que responde a la petición de conexión se le llama
-"servidor". A la combinación de las dos aplicaciones en red desde ambos extremos de
-la conexión se le denomina aplicación "cliente/servidor", dado que las dos partes de
+nombre de "cliente", y a la aplicación que responde a la petición de conexión se le
+llama "servidor". A la combinación de las dos, operando una desde cada extremo de la
+de la conexión se les denomina aplicación "cliente/servidor", dado que las dos partes de
 la aplicación deben trabajar juntas.
 
-Se ha realizado un montón de trabajo de ingeniería sobre las tres capas inferiores de
-nuestra arquitectura para conseguir que resulte fácil abrir una conexión hacia un
-equipo remoto y luego enviar y recibir datos a través de esa conexión.
+El duro trabajo de diseño realizado sobre las tres capas inferiores de
+nuestra arquitectura permiten que resulte sencillo abrir una conexión hacia un
+equipo remoto y luego enviar y recibir datos a través de ella.
 
 Aplicaciones Servidor y Puertos
 -------------------------------
 
 Cuando una aplicación cliente quiere realizar una conexión con un equipo remoto,
-resulta importante que la conexión se establezca con la aplicación servidor
-correcta en ese equipo remoto. Una computadora remota puede disponer de un número
+resulta de vital importancia que la conexión se establezca con la aplicación servidor
+correcta dentro de ese equipo remoto. Un equipo remoto puede disponer de un número
 indeterminado de aplicaciones servidor diferentes funcionando al mismo tiempo.
 Algunos ejemplos de aplicaciones servidor pueden ser:
 
@@ -176,7 +175,7 @@ Algunos ejemplos de aplicaciones servidor pueden ser:
 Por ejemplo, un cliente web (un navegador) debe conectarse al servidor web que
 esté funcionando en el equipo remoto. De modo que una aplicación cliente no sólo
 necesita saber a qué equipo remoto conectarse, también necesita elegir una
-aplicación concreta para interactuar con ella en ese equipo remoto.
+aplicación concreta para interactuar con ella dentro de ese equipo remoto.
 
 Se utiliza un concepto llamado "puertos" para permitir a la aplicación cliente
 elegir con qué aplicación servidor quiere interactuar. Los puertos son como
@@ -184,9 +183,9 @@ extensiones telefónicas. Todas las extensiones tienen el mismo número de telé
 (Dirección IP), pero cada extensión (aplicación servidor) dispone de un número
 de extensión diferente (número de puerto).
 
-Cuando una aplicación servidor se inicia, se pone a la "escucha" de conexione entrantes
+Cuando una aplicación servidor se inicia, se pone a la "escucha" de conexiones entrantes
 en el puerto especificado. Una vez que la aplicación servidor ha informado de que está
-preparada para recibir conexiones entrantes, espera hasta que se produce la primera
+preparada para recibir conexiones entrantes, aguarda hasta que se produce la primera
 conexión.
 
 Para que las aplicaciones cliente sepan a qué puerto deben conectarse, existe
@@ -197,42 +196,42 @@ una lista de puertos por defecto habituales para varias aplicaciones servidor:
 * HTTP (80) - World Wide Web
 * HTTPS (443) - Web Segura (*Secure Web*)
 * SMTP (25) - Correo Entrante (*Incoming Mail*)
-* IMAP (143/220/993) - Recuperación de Correo (*Mail Retrieval*)
-* POP (109/110) - Recuperación de Correo (*Mail Retrieval*)
+* IMAP (143/220/993) - Descarga de Correo (*Mail Retrieval*)
+* POP (109/110) - Descarga de Correo (*Mail Retrieval*)
 * DNS (53) - Resolución de Nombres de Dominio (*Domain Name Resolution*)
 * FTP (21) - Transferencia de archivos (*File Transfer*)
 
 Estos son los puertos habituales para esas aplicaciones. Pero algunas veces los
 servidores pueden hacer que las aplicaciones escuchen en puertos no-estándar.
-Si realizas desarrollo web, puedes ejecutar un servidor web en puertos no
-estándar, como 3000, 8000, o 8888. Si te encuentras una URL como:
+Si estás desarrollando una web, puede que quieras hacer funcionar un servidor web en
+puertos no estándar, como 3000, 8000, o 8888. Si te encuentras con una URL como:
 
 	http://prueba.ejemplo.com:8080/acceder
 
-el "8080" indica que tu navegador va a usar los protocolos web para interactuar
+el "8080" indica que el navegador va a usar los protocolos web para interactuar
 con el servidor, pero conectándose al puerto 8080 en vez de hacerlo al puerto por
 defecto, que sería el 80.
 
 Resumen
 -------
 
-En cierto sentido, el propósito de la capa de Transporte es subsanar la circunstancia
-de que las capas de Conexión e Internet pueden perder datos. Cuando las dos
-capas inferiores pierden o desvían los paquetes, la capa de Transporte entra en
-funcionamiento para reconstruir y/o reenviar esos datos. La existencia
+En cierto sentido, la capa de Transporte sirve para subsanar el problema de la
+pérdida de datos que puede producirse en las capas de Conexión e Internet. Cuando las
+dos capas inferiores pierden o encaminan mal los paquetes, la capa de Transporte entra
+en acción para reconstruir y/o reenviar esos datos. La existencia
 de la capa de Transporte hace posible que las dos capas inferiores puedan ignorar
-los problemas de reenvío y límite de velocidad.
+todo lo relativo al reenvío de paquetes perdidos y a los ajustes de velocidad.
 
 Parte del objetivo de una arquitectura en capas es dividir un problema demasiado
 complejo en otros subproblemas más pequeños. Cada capa se centra en resolver parte
 del problema general y asume que las otras capas resuelven a su vez los problemas
-que se supone que deben resolver.
+de los que se supone que deben encargarse.
 
 Glosario
 --------
 
 **almacenar en buffer**: Mantener temporalmente los datos que han sido enviados o
-recibidos, hasta que el equipo está seguro de que esos datos ya no se necesitan.
+recibidos, hasta que el equipo está seguro de que esos datos ya no se necesitarán más.
 
 **confirmación**: Cuando el equipo receptor envía una notificación de vuelta al
 equipo de origen, indicando que los datos han sido recibidos.
@@ -240,10 +239,10 @@ equipo de origen, indicando que los datos han sido recibidos.
 **escucha**: Cuando una aplicación servidor está funcionando y preparada para
 aceptar conexiones entrantes desde aplicaciones cliente.
 
-**puerto**: Un modo de permitir que muchas aplicaciones servidor diferentes esperen
-conexiones entrantes en un mismo equipo. Cada aplicación escucha en un puerto
-diferente. Las aplicaciones cliente realizan las conexiones a números de puerto
-conocidos, para asegurarse de que están comunicándose con la aplicación servidor
+**puerto**: Un modo de permitir que muchas aplicaciones servidor diferentes puedan
+quedarse aguardando conexiones entrantes en un mismo equipo. Cada aplicación escucha en
+un puerto diferente. Las aplicaciones cliente realizan las conexiones a números de
+puerto conocidos, para asegurarse de que están comunicándose con la aplicación servidor
 adecuada.
 
 
@@ -311,7 +310,7 @@ b) 80
 c) 53
 d) 143
 
-10. ¿Cuál es el número de puerto que utiliza el protocolo de recuperación de
+10. ¿Cuál es el número de puerto que utiliza el protocolo de descarga de
 mensajes IMAP?
 a) 22
 b) 80
