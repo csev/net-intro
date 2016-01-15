@@ -2,7 +2,7 @@ Conclusiones
 ============
 
 Se ha dicho que la construcción de Internet resolvió el problema de ingeniería
-más complejo planteado hasta la fecha. El diseño e ingeniería de Internet comenzó hace
+más complejo planteado hasta ahora. El diseño e ingeniería de Internet comenzó hace
 más de 50 años. Durante ese tiempo ha ido continuamente mejorando y evolucionando,
 y continuará haciéndolo en el futuro.
 
@@ -13,7 +13,7 @@ a los problemas, cortes, errores, pérdida de datos, y muchos otros
 problemas imprevistos. Internet está diseñado para ser flexible y adaptarse a
 cualquier problema que pueda surgir.
 
-![El Modelo de Cuatro Capas](../images/layers)
+![El modelo de cuatro capas](../images/layers)
 
 Con el objetivo de crear una solución que funcionara a escala global, resultó de
 gran importancia dividir los problemas de diseño de Internet en cuatro capas
@@ -26,20 +26,20 @@ red WiFi inalámbrica, Ethernet cableado, fibra óptica o conexión mediante sat
 * La capa de Protocolo de Internet (IP) sirve para dirigir los datos a través de
 una serie de saltos para viajar de forma rápida y eficiente desde uno de los miles
 de millones de equipos de origen hasta uno de los miles de millones de equipos de
-destino. La capa IP ajusta dinámicamente y redirige los datos en base a la carga
-de la red, el rendimiento de la conexión o los cortes de red. A pesar de que la
-capa IP es sumamente fiable y rápida, a veces pierde o incluso desecha datos. La
-capa IP no es la responsable de asegurar la fiabilidad global de la red.
+destino. La capa IP ajusta dinámicamente y redirige los datos basándose en la carga
+soportada por la red, el rendimiento de la conexión o los posibles cortes. A pesar de
+que la capa IP es sumamente fiable y rápida, a veces pierde o incluso desecha datos.
+La capa IP no es la responsable de asegurar la fiabilidad global de la red.
 Simplemente, mueve los datos lo mejor que puede.
 
 * La capa de Transporte compensa cualquier imperfección de las capas IP o de Acceso.
 La capa de Transporte se asegura de que cualquier paquete perdido sea vuelto a
 enviar y de que los paquetes que llegan desordenados sean colocados en orden
-antes de ser pasados a la aplicación receptora. La capa de Transporte también
+antes de ser trasladados a la aplicación receptora. La capa de Transporte también
 actúa como control de flujo entre las aplicaciones emisora y receptora para
 asegurarse de que los datos se muevan rápidamente cuando la red sea rápida y
 las conexiones no estén sobrecargadas, y de reducir el envío de datos cuando
-se utilicen conexiones lentas o densamente cargadas. El flujo de datos y la
+se utilicen conexiones lentas o muy saturadas. El flujo de datos y la
 limitación de velocidad en la capa de Transporte permiten a Internet seguir
 funcionando con fluidez incluso cuando está densamente cargado.
 
@@ -62,15 +62,16 @@ que tenemos actualmente.
 
 Resulta asombroso darse cuenta de todo lo que se ha conseguido respecto a la
 construcción de Internet a lo largo de los últimos 50 años. Pero en cierto modo,
-sólo hemos comenzado el viaje de ingeniería para la construcción de aplicaciones
+tan sólo hemos iniciado el recorrido técnico para la creación de aplicaciones
 de red. No cuesta mucho imaginarse un Internet donde cada interruptor, bombilla,
 refrigerador, mesa, automóvil, carretera, drone volador, y silla dispongan de
 una dirección de Internet y puedan comunicarse unos con otros. Aparecerán nuevos
 problemas de diseño que deberán ser resueltos, y tal vez incluso el modelo
-de cuatro capas deba evolucionar para satisfacer esos nuevos retos de ingeniería.
+de cuatro capas deba evolucionar para satisfacer esos nuevos retos técnicos.
 
 Pero, al igual que ingenieros brillantes diseñaron e hicieron evolucionar
 protocolos de red para conseguir pasar de tener cientos de equipos conectados a la red a
-tener miles de millones de equipos conectado, nuestros actuales y futuros ingenieros
+tener miles de millones de equipos conectados, nuestros actuales y futuros ingenieros
 serán capaces sin duda de resolver los problemas y retos con los que nos enfrentaremos
-a medida que la red evolucione para permitir que se conecten billones de equipos.
+a medida que la red vaya evolucionando para permitir que se conecten
+billones de dispositivos.

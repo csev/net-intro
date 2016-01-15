@@ -1,17 +1,17 @@
-Capa de Transporte Seguro
-=========================
+La Capa de Transporte Seguro
+============================
 
 \index{Capa de Transporte}
 \index{Capa!Transporte}
 En los primeros días de Internet, las redes eran pequeñas y todos los routers estaban
-en ubicaciones seguras. Bastaba con que cada equipo conectado a Internet se protegiera
-a sí mismo frente a conexiones entrantes no deseadas, no parecía necesario
-proteger los datos frente a ojos curiosos mientras atravesaban la red.
+situados en ubicaciones seguras. Bastaba con que cada equipo conectado a Internet se
+protegiera a sí mismo frente a conexiones entrantes no deseadas, se creía que no había
+necesidad de proteger los datos frente a miradas curiosas mientras atravesaban la red.
 
 De modo que las capas de Acceso, Internet y Transporte estaban centradas en conseguir
 el movimiento eficiente de los datos y en resolver los problemas de las
 redes distribuidas compartidas a gran escala, sin preocuparse acerca de la privacidad
-de esos datos.
+de los datos que transportaban.
 
 Pero a medida que el uso de Internet iba creciendo con rapidez a finales de los años 80,
 y cuando literalmente sufrió una explosión con la popularización de la Web en 1994,
@@ -28,8 +28,8 @@ primero se basa en asegurarse de que todo el hardware de red (routers y conexion
 encuentre en ubicaciones físicamente seguras, de modo que no sea posible que alguien se
 cuele y monitorice el tráfico que circula por Internet. Este método no resulta práctico
 para cientos de miles de routers de red que pertenecen y son operados por muchas
-organizaciones diferentes. Aunque fueras capaz de asegurarte de que algunos de los
-operadores de los routers siguen estrictas normas y procedimientos de seguridad,
+compañías diferentes. Aunque se pudiera garantizar que algunos de los
+operadores de los routers siguieran estrictas normas y procedimientos de seguridad,
 tarde o temprano alguien cometería un error. Y en cuanto el WiFi se añadió a la
 mezcla y los paquetes empezaron a viajar a través de ondas de radio, un atacante
 de la red ya podía simplemente sentarse en una cafetería e interceptar paquetes,
@@ -43,8 +43,8 @@ pero no puede desencriptar los datos que ha capturado. La encriptación también
 garantiza que no haya forma de alterar los datos durante su viaje a través de
 Internet.
 
-Encriptación y Desencriptación de Datos
----------------------------------------
+Encriptación y desencriptado de datos
+-------------------------------------
 
 \index{Cifrado César}
 \index{texto plano}
@@ -59,10 +59,10 @@ producir el mensaje codificado o "texto cifrado".
 
 Luego se envía el texto cifrado hacia otra persona, a través de un mensajero o
 utilizando otro medio de transporte inseguro. El mensajero no puede leer el mensaje, ya
-que parece tratarse de una serie de letras aleatorias, a menos que sepas cual
-ha sido la técnica utilizada para codificar el mensaje.
+que este parece estar compuesto solamente por una serie de letras aleatorias, a menos
+que se conozca cuál ha sido la técnica utilizada para codificar el mensaje.
 
-Con tal de que la persona que reciba el mensaje sepa cuál ha sido el número utilizado
+Siempre que la persona que reciba el mensaje sepa cuál ha sido el número utilizado
 para desplazar las letras, podrá decodificarlas para reproducir el mensaje original.
 
 Aquí podemos ver un ejemplo sencillo de texto plano y texto cifrado usando un
@@ -83,7 +83,7 @@ son mucho más sofisticadas que un simple desplazamiento de letras, pero todos l
 sistemas de encriptación dependen en cierto modo de una clave secreta que ambas
 partes deben conocer para poder desencriptar los datos recibidos.
 
-Dos Tipos de Secretos
+Dos tipos de secretos
 ---------------------
 
 \index{secreto compartido}
@@ -93,15 +93,15 @@ y receptor. Con el secreto, resulta sencillo desencriptar los datos recibidos, p
 recibes los datos sin tener el secreto, sería prácticamente imposible desencriptar el
 mensaje.
 
-![Claves Compartidas Frente a Asimétricas](../sketchnote/Shared_vs_Asymmetric)
+![Clave compartida frente a asimétrica](../sketchnote/Shared_vs_Asymmetric)
 
 En los primeros días de Internet, dos personas podían enviarse entre sí correos
-encriptados si una de las persona llamaba primero a la otra por teléfono y le daba el
-secreto para desencriptar. Esto funcionaba bien cuando sólo había unos pocos
+encriptados si una de las personas llamaba primero a la otra por teléfono y le contaba
+cual era el secreto para desencriptar. Esto funcionaba bien cuando sólo había unos pocos
 usuarios en la red, pero no sería posible aplicar la misma solución a una compañía que
-puede tener millones de clientes y no puede permitirse realizar una llamada de
-teléfono a cada cliente para establecer un secreto compartido antes de que puedan
-realizar una compra.
+puede tener millones de clientes y no puede permitirse el tener que realizar una llamada
+de teléfono a cada cliente para establecer un secreto compartido con ellos cada vez que
+quieran realizar, por ejemplo, una compra.
 
 El distribuir los secretos compartidos a través de Internet puede parecer una
 buena idea, pero si suponemos que los atacantes están monitorizando y capturando
@@ -121,7 +121,7 @@ de parejas de equipos interconectados.
 \index{clave privada}
 \index{clave pública}
 La solución a este problema llegó en los años 70, con el desarrollo del concepto de
-cifrado de clave asimétrica. El principio en que se basa el cifrado de
+cifrado de clave asimétrica. El principio en el que se basa el cifrado de
 clave asimétrica consiste en el uso de una clave para encriptar el mensaje y otra
 diferente para desencriptarlo. El equipo que va a recibir los datos encriptados
 elige ambas claves: la de cifrado y la de descifrado. Después envía la
@@ -129,8 +129,8 @@ clave de cifrado al equipo que va a enviar los datos. El equipo emisor
 encripta los datos y los envía a través de la red. El equipo receptor usa la clave
 de descifrado para desencriptar los datos. 
 
-La clave de cifrado recibe el nombre de clave "pública", porque puede ser ampliamente
-compartida. A la clave de descifrado se le llama clave "privada", porque nunca
+La clave de cifrado recibe el nombre de clave "pública", porque puede ser compartida
+con cualquiera. A la clave de descifrado se le llama clave "privada", porque nunca
 sale del equipo donde ha sido creada. Las claves asimétricas también reciben en
 ocasiones el nombre de claves pública/privada.
 
@@ -152,7 +152,7 @@ Capa de Sockets Seguros (SSL)
 \index{TLS}
 \index{Seguridad de la Capa de Transporte}
 En el momento en que los ingenieros de la red decidieron añadir seguridad habían
-transcurrido ya 20 años desde que se desarrollaran los protocolos de Internet,
+transcurrido ya 20 años desde el desarrollo de los protocolos de Internet,
 de modo que resultaba crucial no alterar ninguno de los protocolos y arquitecturas de
 Internet ya existentes. Su solución consistió en añadir una capa parcial opcional
 entre la capa de Transporte
@@ -160,7 +160,7 @@ y la de Aplicación. Esta capa parcial recibió el nombre de Capa de Sockets Seg
 (*Secure Sockets Layer o SSL), o Seguridad de la Capa de Transporte (Transport
 Layer Security o TLS).
 
-![Dónde se Produce la Encriptación y Desencriptado](../sketchnote/Encr_Decr)
+![Dónde se produce la encriptación y desencriptado](../sketchnote/Encr_Decr)
 
 Cuando una aplicación solicitaba que la capa de Transporte realizara una conexión con
 un equipo remoto, podría solicitar que esa conexión fuera cifrada o bien
@@ -169,15 +169,15 @@ los datos antes de dividir la cadena en paquetes. Esto quiere decir que la
 capa de Transporte, la capa de Internet y las capas físicas (conexiones) podían seguir
 actuando exactamente del mismo modo estuvieran los paquetes encriptados o no. Las
 aplicaciones que realizaban las conexiones se ahorraban también los detalles sobre
-cómo funcionaba ese encriptado y desencriptado.
+cómo funcionaban el encriptado y desencriptado.
 
 Como el cifrado fue un añadido simple y transparente a la capa de Transporte,
-no fue necesario cambiar los routers que operan en las capas de Internet y Acceso.
-No fue necesario cambiar ningún hardware de la capa de Acceso para que el cifrado
+no fue necesario cambiar los routers que operaban en las capas de Internet y Acceso.
+No fue necesario reemplazar ningún hardware de la capa de Acceso para que el cifrado
 funcionara. Y las aplicaciones tampoco necesitaron ser modificadas, salvo para
 solicitar que una conexión fuera encriptada cuando correspondiera.
 
-Cifrado del Tráfico del Navegador Web
+Cifrado del tráfico del navegador web
 -------------------------------------
 
 \index{https}
@@ -195,16 +195,17 @@ enviados. Dado que https resultaba ligeramente más costoso en recursos, durante
 tiempo sólo se utilizó para páginas que contenían contraseñas, números de cuentas
 bancarias u otros datos sensibles.
 
-Pero con el tiempo, a medida que las redes han ido haciéndose más rápidas y se han
-conseguido implementaciones https mucho más eficientes, existe una tendencia a
-cifrar todas las interacciones con servidores web, cada vez que se interactúe
-con un servidor donde se tenga una cuenta. Actualmente se tiende cada vez más
+Pero con el tiempo, a medida que las redes se fueron haciendo más rápidas y se
+consiguieron implementaciones https mucho más eficientes, hubo una tendencia a
+cifrar todas las interacciones con aquellos servidores web donde cada usuario
+operara a través de una cuenta de usuario propia. Actualmente se tiende cada vez más
 hacia el uso de https para todo el tráfico web.
 
 Certificados y Autoridades de Certificación
 -------------------------------------------
 
 \index{CA}
+\index{Certificate Authority}
 \index{Autoridad de Certificación}
 Aunque el cifrado mediante claves pública/privada es eficaz para permitir la
 distribución de las claves de cifrado a través de redes inseguras y el uso de esas
@@ -212,7 +213,7 @@ claves para cifrar las transmisiones, existe aún el problema de saber si la
 clave pública que recibes cuando te conectas a un servidor corresponde realmente
 a la organización de la que asegura proceder.
 
-![Autoridades de Certificación y Claves Públicas](../sketchnote/Certificate_Authorities3)
+![Autoridades de Certificación y claves públicas](../sketchnote/Certificate_Authorities3)
 
 Tal vez creas que estás conectando a www.amazon.com, pero un equipo malintencionado
 intercepta tu tráfico, asegura ser www.amazon.com y te da una clave pública para que
@@ -226,10 +227,11 @@ datos recibidos y desaparecer con tu información bancaria.
 \index{clave firmada}
 Así que un equipo necesita saber de quién procede realmente la clave que recibe.
 Esto se consigue enviando a ese equipo una clave pública que esta firmada digitalmente
-por una Autoridad de Certificación (CA). Cuando se instala por primera vez un equipo
-o navegador, dispone de un número determinado de autoridades de certificación conocidas.
+por una Autoridad de Certificación (*Certificate Authority* o CA).
+Cuando se instala por primera vez un equipo
+o navegador, dispone de una serie de autoridades de certificación conocidas.
 Si el navegador recibe una clave pública que está firmada por una de esas autoridades
-de certificación conocidas, confía en la clave y la usa para encriptar y enviar los
+de certificación, confía en la clave y la usa para encriptar y enviar los
 datos. Si por el contrario el equipo recibe una clave pública que no está firmada
 por ninguna de las autoridades de certificación de confianza, avisará al usuario
 antes de enviar los datos usando esa clave.
@@ -243,8 +245,8 @@ Resumen
 
 Dado que Internet ya tenía casi 20 años antes de que se hiciera necesario
 implementar seguridad en las comunicaciones a nivel general, hubo que encontrar un modo
-de añadir seguridad al modelo de cuatro capas ya existente. El sitio perfecto
-para añadir seguridad fue incluirlo como una opción en la capa de Transporte.
+de añadir seguridad al modelo de cuatro capas ya existente. El lugar perfecto
+para añadirlo fue incluirlo como una opción adicional en la capa de Transporte.
 Por eso llamamos a las conexiones seguras en Internet "Capa de Sockets Seguros"
 (*Secure Sockets Layer* o SSL), o "Seguridad de la Capa de Transporte" (*Tranport
 Layer Security o TLS). Hay sutiles diferencias entre SSL y TLS, pero ambas encriptan
@@ -274,7 +276,7 @@ para darte la seguridad de que la clave que recibes corresponde de verdad
 a la organización que esperabas. 
 
 El diseño de la Capa de Transporte Seguro proporciona un mecanismo seguro y aún
-así sencillo de usar para asegurar las comunicaciones a través de Internet a una
+así sencillo de usar para asegurar las comunicaciones a través de Internet en una
 escala de miles de millones de parejas de equipos interactuando entre sí.
 
 Glosario
@@ -289,10 +291,10 @@ para encriptar los datos antes de transmitirlos, y una clave diferente (privada)
 desencriptar esos datos una vez recibidos.
 
 **clave privada**: La parte de una pareja de claves que se utiliza para desencriptar
-transmisiones.
+o descifrar transmisiones.
 
 **clave pública**: La parte de una pareja de claves que se utiliza para encriptar
-transmisiones.
+o cifrar transmisiones.
 
 **desencriptar, decodificar o descifrar**: La acción de transformar un texto cifrado en
 un mensaje de texto plano usando un secreto o clave.
@@ -318,10 +320,8 @@ permite a una aplicación solicitar que la capa de Transporte de una conexión s
 cifrada cuando cruza la red. Es similar a la Capa de Sockets Seguros (SSL).
 
 
-Preguntas
----------
-
-Puedes realizar este cuestionario online en http://www.net-intro.com/quiz/
+Cuestionario
+------------
 
 1. Cuando utilizamos un navegador, ¿cómo podemos indicar que queremos utilizar
 una conexión segura?
@@ -331,7 +331,7 @@ c) Abriendo una ventana privada
 d) Codificando manualmente la dirección del servidor usando SHA1
 
 2. ¿Por qué un sistema de secreto compartido no es adecuado para su uso en Internet?
-a) Porque la gente podría perder o extraviar el secreto
+a) Porque la gente podría perder o traspapelar el secreto
 b) Resulta difícil distribuir los secretos
 c) La encriptación y desencriptado con secretos compartidos se pueden vencer muy
 fácilmente
@@ -368,7 +368,7 @@ c) Que alguien capture los paquetes cuando pasen a través de un router central 
 Internet
 d) Que tengas un virus en tu equipo que capture las pulsaciones de tu teclado
 
-7. Si se usa la Capa de Sockets Seguros (SSL), dónde son encriptados y desencriptados
+7. Si se usa la Capa de Sockets Seguros (SSL), ¿dónde son encriptados y desencriptados
 los paquetes?
 a) Son encriptados y desencriptados a medida que van pasando por el router
 b) Cada conexión física dispone de su propia encriptación independiente
@@ -384,7 +384,7 @@ c) Debemos soportar paquetes más grandes en la IP
 d) Debe encriptarse el valor del Tiempo de Vida de los paquetes (TTL)
 
 9. Si un sujeto malintencionado es capaz de monitorizar todos los paquetes que
-circulen a través de un cable submarino y tú estás usando correctamente el cifrado
+circulan a través de un cable submarino y tú estás usando correctamente el cifrado
 mediante clave pública/privada, ¿cuál de los siguientes datos le resultará más difícil
 obtener?
 a) Los servidores con los que estás comunicándote
@@ -398,11 +398,11 @@ a) Asegurarse de que la gente no falsifique títulos de actividades de enseñanz
 b) Asegurarse de que los paquetes sean dirigidos hacia el equipo de destino correcto
 c) Garantizarnos que una clave pública procede realmente de la organización de la que
 asegura proceder
-d) Elegir cuándo un determinado país debe cambiar de IPv4 a IPv6
+d) Elegir cuándo debe cambiar de IPv4 a IPv6 un determinado país
 
 11. La red ARPANET llevaba funcionando desde principios de la década de los 60. La Capa
 de Sockets Seguros (SLL) no se inventó hasta los años 80. ¿Cómo logró ARPANET asegurar
-la seguridad de los datos en sus redes?
+la seguridad de los datos en su rede?
 a) Utilizando claves públicas/privadas y cifrando todas las transmisiones
 b) Utilizando cifrado en la capa de Acceso
 c) Asegurándose de que nadie pudiera acceder a las conexiones físicas

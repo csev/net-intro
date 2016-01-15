@@ -152,8 +152,8 @@ En el caso más simple, un router central nuevo se conectaría a Internet e irí
 construyendo poco a poco un mapa, relacionando direcciones de red con conexiones
 de salida, de modo que pudiera encaminar adecuadamente los datos, basándose en la
 dirección IP de cada uno de los paquetes de entrada. Ese mapa que relaciona direcciones
-de red con conexiones de salida recibe el nombre de "tabla de enrutamiento" de un
-router concreto.
+de red con conexiones de salida recibe el nombre de "tabla de enrutamiento" o
+"tabla de encaminamiento" de un router concreto.
 
 Cuando Internet funciona con normalidad, cada router dispone de una tabla de
 enrutamiento relativamente completa, y rara vez se encuentra con una dirección
@@ -181,7 +181,7 @@ realiza de nuevo el proceso de descubrimiento de rutas, esta vez preguntando a
 todos los routers vecinos excepto a aquellos con los que se ha interrumpido el
 contacto por culpa de la conexión perdida.
 
-![Enrutamiento Dinámico](../sketchnote/Routing)
+![Enrutamiento dinámico](../sketchnote/Routing)
 
 Los paquetes son encaminados más lentamente durante un rato, mientras que las tablas de
 enrutamiento van siendo reconstruidas para reflejar la nueva configuración de
@@ -572,10 +572,8 @@ desde su origen hasta su destino. En sistemas Windows recibe el nombre de "trace
 de un bucle infinito, debido a errores en las tablas de enrutamiento.
 
 
-Preguntas
----------
-
-Puedes realizar este cuestionario online en http://www.net-intro.com/quiz/
+Cuestionario
+------------
 
 1. ¿Cuál es el cometido de la capa de Internet?
 a) Mover paquetes a través de múltiples saltos desde un equipo de origen hasta uno

@@ -29,7 +29,7 @@ usando nombres de dominio y nunca se fijan en las direcciones IP, un servidor po
 ser trasladado a una conexión de red nueva sin afectar a la capacidad del usuario
 final para acceder al mismo.
 
-Asignación de Nombres de Dominio
+Asignación de nombres de dominio
 --------------------------------
 
 \index{ICANN}
@@ -133,10 +133,8 @@ de un nombre de dominio. Algunos ejemplos de TLDs son ".com", ".org", y ".ru".
 Recientemente se han añadido nuevos dominios de nivel superior, como ".club" y ".help".
 
 
-Preguntas
----------
-
-Puedes realizar este cuestionario online en http://www.net-intro.com/quiz/
+Cuestionario
+------------
 
 1. ¿Qué hace el Sistema de Nombres de Dominios (DNS)?
 a) Permite a los equipos conectados a la red usar un nombre textual para otro

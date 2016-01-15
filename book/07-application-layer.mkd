@@ -1,5 +1,5 @@
-Capa de Aplicación
-==================
+La Capa de Aplicación
+=====================
 
 \index{Capa de Aplicación}
 \index{Capa!Aplicación}
@@ -107,7 +107,7 @@ documentos diferentes, a lo largo de un total de 305 páginas. Puede parecer que
 entrar en demasiados detalles, pero la clave en el diseño de protocolos está en pensar
 en todos los usos posibles del protocolo y en describir cada escenario cuidadosamente.
 
-Exploración del Protocolo HTTP
+Exploración del protocolo HTTP
 ------------------------------
 
 En esta sección vamos a probar el protocolo HTTP de forma manual, simulando ser un
@@ -240,7 +240,7 @@ contiene marcas como \<h1\> y \<p\>. Cuando es un navegador quien recibe un docu
 en formato HTML, se fija en las marcas del documento, las interpreta y nos presenta
 una versión del documento con formato.
 
-El Protocolo IMAP para Descarga de Correo
+El protocolo IMAP para descarga de correo
 -----------------------------------------
 
 El protocolo HTTP sólo es uno más de los muchos protocolos de aplicación
@@ -284,7 +284,7 @@ Estos mensajes están formateados con precisión y son enviados en un orden exac
 que puedan ser generados y leídos por aplicaciones informáticas de red, una en cada
 extremo de la conexión.
 
-Control de Flujo
+Control de flujo
 ----------------
 
 \index{control de flujo}
@@ -465,10 +465,8 @@ para iniciar sesión remotamente en un equipo a través de la red.
 
 
 
-Preguntas
----------
-
-Puedes realizar este cuestionario online en http://www.net-intro.com/quiz/
+Cuestionario
+------------
 
 1. ¿Qué capa está justo debajo de la capa de Aplicación?
 a) Transporte

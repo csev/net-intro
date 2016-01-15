@@ -276,10 +276,8 @@ testigo antes de poder enviar datos.
 
 
 
-Preguntas
----------
-
-Puedes realizar este cuestionario online en http://www.net-intro.com/quiz/
+Cuestionario
+------------
 
 1. Cuando se usa una red WiFi para comunicarse con Internet, ¿a dónde envía
 sus paquetes tu equipo?

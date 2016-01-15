@@ -157,7 +157,7 @@ El duro trabajo de diseño realizado sobre las tres capas inferiores de
 nuestra arquitectura permiten que resulte sencillo abrir una conexión hacia un
 equipo remoto y luego enviar y recibir datos a través de ella.
 
-Aplicaciones Servidor y Puertos
+Aplicaciones servidor y puertos
 -------------------------------
 
 Cuando una aplicación cliente quiere realizar una conexión con un equipo remoto,
@@ -247,10 +247,8 @@ adecuada.
 
 
 
-Preguntas
----------
-
-Puedes realizar este cuestionario online en http://www.net-intro.com/quiz/
+Cuestionario
+------------
 
 1. ¿Cuál es el principal problema que se supone que resuelve la capa de
 Transporte (TCP)?

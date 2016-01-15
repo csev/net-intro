@@ -340,10 +340,8 @@ gestionan varias organizaciones diferentes.
 
 
 
-Preguntas
----------
-
-Puedes realizar este cuestionario online en http://www.net-intro.com/quiz/
+Cuestionario
+------------
 
 1. ¿Qué hacían los primeros operadores telefónicos?
 a) Mantenían las torres de telefonía móvil

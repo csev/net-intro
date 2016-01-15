@@ -366,10 +366,8 @@ las peticiones de servicios o aguarda la recepción de conexiones de entrada.
 emisor antes de que deba detenerse y esperar una confirmación (del equipo receptor).
 
 
-Preguntas
----------
-
-Puedes realizar este cuestionario online en http://www.net-intro.com/quiz/
+Cuestionario
+------------
 
 1. ¿Por qué los ingenieros utilizan un "modelo" para organizar su enfoque a la hora
 de resolver un problema grande y complejo?

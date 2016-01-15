@@ -5,7 +5,7 @@ Hasta ahora hemos estado todo el tiempo describiendo el modelo de cuatro capas
 usado para diseñar e implementar los protocolos TCP/IP y las aplicaciones que
 forman Internet. Sin embargo, el modelo TCP/IP no es el único que podemos
 utilizar para entender cómo funcionan las redes. El otro modelo que se usa
-habitualmente para dar sentido al diseño de redes se llama el modelo de Interconexión
+habitualmente para dar sentido al diseño de redes se llama modelo de Interconexión
 de Sistemas Abiertos (*Open System Interconnection* u OSI). Mientras que el modelo
 TCP/IP fue diseñado y evolucionó a medida que los protocolos TCP/IP se iban
 desarrollando, desplegando y cambiando, el modelo OSI fue el resultado de un proceso
@@ -20,7 +20,8 @@ red ISO/OSI generalmente ya no se usan.]
 El modelo TCP/IP es un modelo de *implementación* o *ejecución*, en el cual se
 proporcionan las directrices para aquellos que quieran crear hardware o software de
 red compatible con TCP/IP. El modelo OSI es más un modelo *abstracto* que puede usarse
-para entender una amplia variedad de arquitecturas de red.
+para entender desde el punto de vista teórico una amplia variedad de arquitecturas de
+red.
 
 A pesar de que la tecnología de red TCP/IP es la más ampliamente utilizada hoy día,
 a lo largo de los últimos 50 años se han implementado y desplegado muchos tipos
@@ -37,7 +38,7 @@ Física (Capa 1)
 ---------------
 
 La capa Física OSI trata con los atributos físicos reales de los
-cables, red inalámbrica, fibra óptica, u otras conexiones que se usen para transportar
+cables, red inalámbrica, fibra óptica, u otras conexiones que se usan para transportar
 datos a través de un único enlace. La capa Física también define las
 formas de los conectores y los tipos de materiales que pueden utilizarse.
 Otro problema del que se ocupa esta capa es de la forma de codificar los bits (ceros y
@@ -72,7 +73,7 @@ Al igual que hacía la capa de Internet (IP) en el modelo TCP/IP, la capa de Red
 OSI trata con la asignación global de direcciones "enrutables" para los
 diversos sistemas conectados a la red. La capa de Red dirige el modo en que los
 routers reenvían los paquetes a través de múltiples saltos para llevarlos desde su
-origen hasta su destino. Al igual que la capa IP, la capa de Red OSI no intenta estar
+origen hasta su destino. Al igual que la capa IP, la capa de Red OSI no pretende estar
 libre de errores, ya que asume que si se produce alguna pérdida de datos, esta será
 detectada y subsanada por la capa inmediatamente por encima de ella.
 
@@ -81,8 +82,8 @@ Transporte (Capa 4)
 
 La capa de Transporte OSI gestiona la pérdida de paquetes y su reenvío,
 así como el control de flujo y el tamaño de ventana. El resto de las funciones
-de la capa de capa de Transporte TCP/IP son realizada por la capa de Sesión en el
-modelo OSI.
+de la capa de capa de Transporte TCP/IP son realizada en el modelo OSI por la capa
+de Sesión.
 
 Sesión (Capa 5)
 ---------------
@@ -97,22 +98,22 @@ Presentación (Capa 6)
 ---------------------
 
 La capa de Presentación se centra en cómo se representan los datos y se codifican
-para su transmisión a través de la red. Por ejemplo, la capa de Presentación podría
-describir cómo codificar los pixeles de una imagen para que la aplicación receptora
-pudiera decodificar correctamente los datos. La capa de Presentación también se
+para su transmisión a través de la red. Por ejemplo, la capa de Presentación
+describiría cómo codificar los píxeles de una imagen para que la aplicación receptora
+pueda decodificar correctamente los datos. La capa de Presentación también se
 encarga de la encriptación y desencriptado de los datos.
 
 Aplicación (Capa 7)
 -------------------
 
 La capa de Aplicación OSI se parece mucho a la capa de Aplicación en el modelo
-TCP/IP, en el sentido de que también contiene a las propias aplicaciones.
+TCP/IP, en el sentido de que también está formada por las propias aplicaciones.
 Algunas aplicaciones son clientes que inician las conexiones, y otras son
 servidores que responden a esas peticiones de conexión. Los diversos pares de
 aplicaciones tienen protocolos estándar que definen la interoperabilidad entre
-múltiples clientes y múltiples servidores de distintos vendedores.
+múltiples clientes y múltiples servidores de distintos proveedores.
 
-![Comparación de los Modelos TCP y OSI](../images/iso-tcp)
+![Comparación de los modelos TCP y OSI](../images/iso-tcp)
 
 Comparación de los Modelos OSI y TCP/IP
 ---------------------------------------
@@ -134,15 +135,15 @@ a la conexión. En la mayoría de los casos, las capas de
 enlace de datos están adaptadas a las limitaciones y requerimientos de sus capas
 físicas correspondientes. De modo que en los sistemas reales, resulta bastante
 raro para una capa de enlace de datos concreta estar emparejada arbitrariamente
-con cualquier número de capas físicas. Dado que puede resultar complicado separar
+con cualquier cantidad de capas físicas. Dado que puede resultar complicado separar
 los aspectos físicos y de enlace de datos para una tecnología de acceso concreta,
 el modelo TCP las combina dentro de una única capa para simplificar.
 
 Capa de Internet (TCP/IP)
 -------------------------
 
-Una parte en la que coinciden con bastaste exactitud ambos modelos es en la capa de
-red OSI y la capa de Internet TCP/IP. Ambas realizan las mismas funciones, consistentes
+Un sitio en la que coinciden con bastante exactitud ambos modelos es en las capas de
+red OSI y de Internet TCP/IP. Ambas realizan las mismas funciones, consistentes
 en crear un espacio global de direcciones enrutables y preparar a los routers para
 asegurarse de que los paquetes encuentren su camino de forma adecuada desde el origen
 hasta el destino a través de múltiples saltos.
@@ -150,9 +151,9 @@ hasta el destino a través de múltiples saltos.
 Capa de Transporte (TCP/IP)
 ---------------------------
 
-Las características de la capa de Transporte en TCP/IP se reparten entre las capas
-de Transporte y la de Sesión en el modelo OSI. La capa de Transporte OSI se ocupa
-del control de flujo y el reenvío de paquetes, mientras que la capa de Presentación
+Las características de la capa de Transporte en TCP/IP se distribuyen por las capas
+de Transporte y de Sesión en el modelo OSI. La capa de Transporte OSI se ocupa
+del control de flujo y del reenvío de paquetes, mientras que la capa de Presentación
 OSI gestiona que múltiples aplicaciones puedan funcionar a la vez en múltiples puertos,
 y también se encarga del establecimiento y finalización de sesión.
 
@@ -166,14 +167,14 @@ La capa de Aplicación TCP/IP combina los aspectos no relativos a la seguridad
 de las capas de Presentación y Aplicación OSI. Aunque muchas aplicaciones
 TCP/IP se ocupan de cuestiones como la codificación y decodificación de varios
 tipos de datos, el modelo TCP/IP no ve el formateo de datos como una "capa"
-separada. En las aplicaciones TCP/IP se utilizan varias tecnologías de codificación
+separada. En las aplicaciones TCP/IP se utilizan varios métodos de codificación
 y decodificación de datos, pero TCP/IP tiende a tratar esas capacidades como
 librerías de código que las aplicaciones utilizan según sus necesidades.
 
 Conclusión
 ----------
 
-A pesar de que el modelo TCP/IP descrito en este libro es ampliamente utilizado
+A pesar de que el modelo TCP/IP descrito en este libro se utiliza ampliamente
 como guía de implementación práctica para la creación de las redes TCP/IP, hardware y
 software, el modelo OSI puede resultarnos útil para estudiar y comparar una gran
 variedad de arquitecturas de red, desde redes de desarrollo abierto (libres) hasta
@@ -182,29 +183,27 @@ redes propietarias de un proveedor específico.
 Glosario
 --------
 
+**ISO**: International Organization for Standardization (Organización Internacional
+para la Estandarización). Un organismo internacional que desarrolla estándares en
+informática, redes, y muchas otras áreas.
+
 **modelo abstracto**: Un modelo y conjunto de terminología que se usa para comprender
-de forma general un área problemático y guiar el desarrollo de estándares e
+de forma general un área problemática y guiar el desarrollo de estándares e
 implementaciones para resolver los problemas.
 
 **modelo de implementación**: Un modelo y conjunto de terminología que se usa para
-guiar el desarrollo de estándares y una implementación práctica para resolver un
-problema concreto.
-
-**ISO**: International Organization for Standardization (Organización Internacional
-para la Estandarización). Un organismo internacional que desarrolla estándares en
-informática, redes, y otras muchas áreas.
+guiar el desarrollo de estándares y realizar una implementación práctica para resolver
+un problema concreto.
 
 **OSI**: Open System Interconnection (Interconexión de Sistemas Abiertos). Un modelo
-de siete capas usado para ayudar a organizar el diseño de varias estrategias de
+de siete capas usado para ayudar a organizar el diseño de varios modelos de
 arquitectura de red.
 
 
-Preguntas
----------
+Cuestionario
+------------
 
-Puedes realizar este cuestionario online en http://www.net-intro.com/quiz/
-
-1. ¿Cuál es el valor principal del modelo de red OSI?
+1. ¿Cuál es la principal utilidad del modelo de red OSI?
 a) Las redes OSI se utilizan en el hemisferio Sur
 b) El enfoque OSI puede ser usado para analizar muchos modelos de redes diferentes
 c) Las redes OSI hacen un uso mejor del ancho de banda cuando este está limitado
@@ -216,8 +215,8 @@ b) Seis
 c) Siete
 c) Nueve
 
-3. ¿Cuál de las capas OSI se ocupa de la forma de los conectores para las conexiones
-de red?
+3. ¿Cuál de las capas OSI se ocupa de la forma que deben tener los conectores para las
+conexiones de red?
 a) Física
 b) Enlace de Datos
 c) Red
@@ -231,12 +230,12 @@ d) La capa de Aplicación TCP y la capa de Sesión OSI
 
 5. ¿Qué capa equivaldría a la Capa de Sockets Seguros (SSL) de TCP/IP en el modelo de
 red OSI?
-a) Capa de Acceso a Datos Seguro (*Secure Data Link Layer* o SDLL)
-b) Capa de Red Segura (*Secure Network Layer* o SNL)
-c) Capa de Transporte Seguro (*Secure Transport Layer* o STL)
-d) Capas de Sesión y Presentación
+a) La Capa de Acceso Seguro a Datos (*Secure Data Link Layer* o SDLL)
+b) La Capa de Red Segura (*Secure Network Layer* o SNL)
+c) La Capa de Transporte Seguro (*Secure Transport Layer* o STL)
+d) Las Capas de Sesión y Presentación
 
-6. ¿Por qué el modelo TCP combina las capas OSI de Acceso a Datos y la Física
+6. ¿Por qué el modelo TCP combina las capas OSI de Acceso a Datos y Física
 en una única capa de Acceso?
 a) Porque el modelo TCP no se preocupa de la capa Física
 b) Porque los diseñadores del modelo TCP fueron ignorados en el congreso OSI de 1981,
