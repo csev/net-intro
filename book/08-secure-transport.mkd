@@ -390,7 +390,7 @@ obtener?
 a) Los servidores con los que estás comunicándote
 b) La frecuencia con la que utilizas los servidores
 c) La cantidad de datos que recibes desde los servidores
-d) Qué documentos recuperas desde los servidores
+d) Qué documentos descargas desde los servidores
 
 10. ¿Cual es la función de una Autoridad Certificadora en un cifrado mediante
 clave pública/privada?

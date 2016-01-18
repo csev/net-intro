@@ -5,7 +5,7 @@
 Introducción
 ============
 
-El uso de Internet parece bastante sencillo. Vamos a una dirección web y
+Utilizar Internet es aparentemente bastante fácil. Vamos a una dirección web y
 obtenemos una página. O podemos ir a nuestra red social favorita y ver las imágenes
 de nuestros amigos, familias y mascotas. Pero esa aparente simplicidad de Internet
 implica el uso de un montón de hardware y software complejos. El diseño de las
@@ -31,7 +31,7 @@ solo necesitan ser capaces de escucharse entre ellos y coordinar el uso del
 espacio compartido en la sala.
 
 Pero, ¿qué ocurriría si pusiésemos a esas personas en habitaciones diferentes,
-de modo que no pudieran verse u oírse entre ellos? ¿Cómo podrían comunicarse
+de modo que no pudieran verse ni oírse entre ellos? ¿Cómo podrían comunicarse
 entre sí entonces los componentes de cada pareja? Una posibilidad podría ser
 tender un cable entre cada pareja, con un micrófono en un extremo y un altavoz
 en el otro. De ese modo, todos seguirían escuchando las conversaciones de los
@@ -45,7 +45,7 @@ grave cuando hay cientos o miles de personas implicadas.
 
 Los antiguos teléfonos de principios del siglo XX usaban precisamente hilos,
 micrófonos y altavoces para permitir a la gente hacer llamadas.
-Como no se podía tener cables separados entre cada par de teléfonos, esos
+Como no se podía tener cables independientes para conectar cada par de teléfonos, esos
 sistemas no permitían a todas las personas estar conectados entre sí al mismo
 tiempo. Cada persona tenía una única conexión con un "operador" humano. El
 operador conectaba dos hilos juntos para permitir a una pareja de personas
@@ -71,13 +71,13 @@ que podían llevarse a cabo usando esos hilos.
 
 ![Postes de teléfono para larga distancia](../photos/telephone_pole_photo.jpg)
 
-Como el precio de los cables iba aumentando a medida que lo hacía la longitud
-del cable necesario, estas conexiones más largas entre oficinas eran bastante
+Como el precio de las instalaciones iba aumentando a medida que lo hacía la
+longitud del cable necesario, estas conexiones más largas entre oficinas eran bastante
 caras de instalar y mantener, de modo que escaseaban. Así que en los primeros
 días de la telefonía, las llamadas locales eran generalmente bastante baratas.
 Pero las llamadas de larga distancia eran más caras y se cobraba por minutos.
 Esto resultaba lógico, ya que cada minuto que alguien conversaba a través de
-una llamada de este tipo, mantenía en uso los cables de larga distancia, lo cual
+una llamada de este tipo, mantenía ocupados los cables de larga distancia, lo cual
 significaba que nadie más podía usarlos. Las compañías de teléfono buscaban que
 se hicieran llamadas cortas, para que sus líneas de larga distancia pudieran
 estar disponibles para otros clientes.
@@ -97,8 +97,8 @@ rato, y finalmente cuelgan. Según las estadísticas, la mayor parte del tiempo
 los humanos no están hablando por teléfono. Al menos, no lo hacían antes de que
 todo el mundo tuviera smartphones. Pero las computadoras, incluyendo las
 aplicaciones de tu smartphone, se comunican de forma diferente a los humanos.
-Algunas veces, las computadoras envían mensajes cortos para comprobar si otra
-computadora está disponible. Otras veces envían información de tamaño medio, como
+Algunas veces, las computadoras envían mensajes cortos para comprobar si otro
+equipo está disponible. Otras veces envían información de tamaño medio, como
 una única foto o un mensaje de correo grande. Y otras, las computadoras envían
 un montón de información, como una película entera o un programa para instalar,
 que puede llevar minutos o incluso horas descargar. De modo que los mensajes
@@ -119,24 +119,24 @@ tender cables para conectarlos entre si. Si los equipos estaban en la misma
 ciudad, su propietario generalmente tenía que arrendar cables a las compañías
 telefónicas para conectar sus máquinas. A menudo lo único que se necesitaba era
 que esas compañías telefónicas conectaran los cables juntos en su oficina
-central, de modo que no fuera necesaria que cada equipo "marcara" el número
+central, de modo que no fuera necesario que cada equipo "marcara" el número
 del otro para poder enviarle datos. Esas líneas arrendadas eran cómodas para la
 comunicación entre equipos, dado que estaban "siempre activas", pero eran
-también bastante caras, ya que permanecían en uso durante las 24 horas del día.
+también bastante caras, ya que permanecían ocupadas durante las 24 horas del día.
 
-Cuando los equipos estaban todavía más lejos, en ciudades diferentes, las
+Cuando los equipos estaban aún más lejos, en ciudades diferentes, las
 líneas arrendadas se extendían usando los cables más largos que conectaban las
 oficinas centrales. Dado que había pocos cables entre esas oficinas, las
 líneas de larga distancia arrendadas resultaban bastante caras, y su coste
 crecía dramáticamente conforme aumentaba la longitud de la línea necesaria. Pero
 si se disponía de dinero suficiente, se podían arrendar conexiones directas
 entre equipos, para que pudieran intercambiar datos. Esto funcionaba
-bastante bien mientras se utilizase el mismo tipo de computadoras, porque cada
+bastante bien siempre que se utilizase el mismo tipo de computadoras, porque cada
 marca tenía su propio modo de usar los cables telefónicos para conectar sus
 equipos y enviar datos entre ellos.
 
-Primeras redes de Área Amplia de almacenamiento-y-reenvío
-----------------------------------------------------------
+Primeras redes de área amplia de almacenamiento-y-reenvío
+---------------------------------------------------------
 
 \index{Primeras redes}
 \index{Redes de almacenamiento y reenvío}
@@ -159,9 +159,9 @@ llegaba a una computadora, debía esperar hasta que le llegaba el turno para
 ser enviado al siguiente equipo a lo largo de la ruta. Un mensaje podía llegar
 a un equipo intermedio, ser almacenado durante un rato (que podían ser horas,
 dependiendo del tráfico), y luego ser reenviado a la siguiente conexión (o
-"saltar").
+"salto" - *hop*).
 
-Al enviar los mensajes completos, uno cada vez, de este modo, podían pasar
+Al usar esta forma de enviar los mensajes completos y de uno en uno, podían pasar
 minutos, horas, o incluso días hasta que un mensaje alcanzaba su destino final,
 dependiendo del tráfico que encontrase en cada uno de sus saltos. Pero incluso
 si un correo electrónico necesitaba unas cuantas horas para recorrer su camino
@@ -178,15 +178,15 @@ más pequeños, y el envío posterior de cada fragmento de forma individual. En
 términos de red, estos trozos de mensaje se llaman "paquetes". La idea de
 dividir un mensaje en paquetes se ideó en los años 60, pero no fue ampliamente
 utilizada hasta la década de los 80, dado que requería más capacidad de
-computación y software de red más sofisticado.
+cálculo y software de red más sofisticado.
 
 Cuando los mensajes se dividen en paquetes y luego son enviados de forma
 individual, si se quiere enviar un mensaje corto una vez que ha comenzado a
-procesarse uno extenso, el corto no tiene que esperar hasta que el extenso ha
+procesarse uno largo, el corto no tiene que esperar hasta que el largo ha
 terminado de enviarse completo. El primer paquete del mensaje corto solo tiene
 que esperar hasta que termina de procesarse el paquete en curso del mensaje
 extenso. El sistema va alternando el envío de paquetes del mensaje corto y del
-extenso, hasta que al cabo de un tiempo se termina el envío del mensaje corto, y
+largo, hasta que al cabo de un tiempo se termina el envío del mensaje corto, y
 a partir de ese momento el mensaje más extenso continúa haciendo uso de toda
 la conexión de red.
 
@@ -200,6 +200,7 @@ turno en la cola de salida.
 ![Envío de paquetes](../sketchnote/Packets)
 
 \index{IMP}
+\index{Interface Message Processor}
 \index{Interfaces de Procesamiento de Mensajes}
 \index{router}
 \index{enrutador}
@@ -209,8 +210,8 @@ almacenamiento-y-reenvío, se empezaron a incluir equipos con funciones
 especiales, especializados en el movimiento de paquetes. Éstos fueron llamados
 inicialmente "Interfaces de Procesamiento de Mensajes" (o "IMPs" por sus siglas
 en inglés, *Interface Message Processing*),
-ya que actuaban como un interfaz entre las computadoras normales y el resto
-de la red. Más adelante, esos equipos dedicados a las comunicaciones
+ya que actuaban como un interfaz o punto de interconexión entre las computadoras
+normales y el resto de la red. Más adelante, esos equipos dedicados a las comunicaciones
 recibieron el nombre de "routers" (enrutadores o encaminadores), dado que su propósito
 era encaminar (enrutar) los paquetes que recibían hacia su destino final.
 
@@ -242,7 +243,7 @@ equipos que almacenaban y enviaban esos mensajes eran capaces de elegir
 el mejor camino para cada uno de ellos, en aquellos casos es los que había más
 de una ruta disponible.
 
-Cuando un mensaje extenso era divido en paquetes más pequeños y cada paquete
+Cuando un mensaje extenso era dividido en paquetes más pequeños y cada paquete
 se enviaba de forma individual, las direcciones de origen y de destino debían
 añadirse en cada uno de los paquetes, de modo que los routers pudieran elegir
 el mejor camino para reenviar cada paquete del mensaje. Además de las direcciones
@@ -279,8 +280,7 @@ un gran número de grupos de conexión e individuos. Normalmente, los paquetes
 encontrarán la ruta más corta entre el origen y el destino, pero si un enlace
 o un camino estuviera sobrecargado o bloqueado, los routers podrían cooperar y
 reorganizar el tráfico para usar caminos ligeramente más largos, que
-pudieran enviar los paquetes desde el origen hasta el destino tan rápido como
-fuera posible.
+trasladarían los paquetes desde el origen hasta el destino lo más rápido posible.
 
 El núcleo de Internet es un conjunto de routers cooperando, que mueven paquetes
 desde múltiples orígenes hasta múltiples destinos al mismo tiempo. Cada
@@ -324,7 +324,7 @@ espera a que una conexión a través de la red de salida esté disponible.
 **router, enrutador o encaminador**: Un equipo especializado, que está diseñado para
 recibir paquetes de entrada a través de múltiples conexiones y reenviar
 rápidamente esos paquetes a través de la mejor conexión de salida disponible,
-para hacerlos llegar rápidamente a su destino.
+para dirigirlos a gran velocidad hacia su destino.
 
 **salto**: Una única conexión física de red. Un paquete en Internet realizará
 normalmente varios "saltos" para llegar desde su equipo de origen hasta
@@ -350,7 +350,7 @@ c) Instalaban cable de cobre entre ciudades
 d) Ordenaban los paquetes para que llegasen al destino correcto
 
 2. ¿Qué es una línea arrendada (o dedicada)?
-a) Una frontera entre el equipamiento telefónico arrendado y el propio
+a) Una frontera entre el equipamiento telefónico alquilado y el propio
 b) Una conexión entre un teclado y un monitor
 c) Un cable tendido entre una oficina de una compañía telefónica y otra
 d) Una conexión telefónica "siempre activa"
