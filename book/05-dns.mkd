@@ -8,11 +8,11 @@ El Sistema de Nombres de Dominio permite acceder a sitios web por su nombre de
 dominio, como (www.khanacademy.org), de modo que el usuario no necesite mantener
 una lista de direcciones de protocolo de Internet numéricas (IPs), como "212.78.1.25".
 Las direcciones IP están determinadas por *dónde* se conecta tu equipo a Internet.
-Cuando tienes un equipo portátil y te mueves de un sitio a otro, obtienes
-una dirección IP nueva en cada lugar. Mientras que nadie se conecte a tu equipo,
+Cuando tienes un dispositivo portátil y te mueves de un sitio a otro, obtienes
+una dirección IP nueva en cada lugar. Mientras que ningún otro equipo se conecte al tuyo,
 no importará si tu dirección IP va cambiando de vez en cuando. Pero dado que hay
 mucha gente que se conecta a un servidor web, sería muy incómodo si el servidor
-se desplazase a una nueva ubicación y tuviera que cambiar su dirección IP.
+se desplazase a una nueva ubicación y su dirección IP tuviera que cambiar también.
 
 Cuando un equipo realiza una conexión a un sistema usando una dirección de nombre
 de dominio, lo primero que hace es averiguar la dirección IP que se corresponde
@@ -22,7 +22,7 @@ dirección IP obtenida.
 Al añadir el paso intermedio de averiguar cuál es la dirección IP para una
 dirección DNS, se facilita también el traslado de los servidores desde una ubicación
 a otra. El servidor recibe una nueva dirección IP y se actualiza la entrada
-correspondiente a la dirección del dominio. Una vez que la entrada DNS se ha
+correspondiente a la dirección de ese dominio. Una vez que la entrada DNS se ha
 actualizado, las peticiones siguientes relativas a ese nombre de dominio recibirán
 la nueva dirección IP. Como los usuarios finales acceden a la mayoría de los servidores
 usando nombres de dominio y nunca se fijan en las direcciones IP, un servidor podrá
@@ -40,7 +40,7 @@ Asignación de nombres de dominio
 \index{ccTLD}
 Si recuerdas lo tratado en los capítulos previos, las direcciones IP se asignan
 basándose en el lugar físico desde el que se produce la conexión a Internet. Los
-nombres de dominio se asignan en base a organizaciones que "poseen" esos nombres.
+nombres de dominio se asignan según las organizaciones que "poseen" esos nombres.
 En la cima de la jerarquía de nombres de dominio está una organización llamada la
 Corporación Internacional para Asignación de Nombres de Red (*International
 Corporation for Assigned Network Names* o ICANN). La ICANN elige los dominios de
@@ -54,7 +54,7 @@ Esos dominios se denominan Nombres de Dominio de Nivel Superior de
 Código de País (*Country-Code Top-Level Domain Names* o ccTLDs). Los países
 a menudo añaden dominios de segundo nivel, como .co.uk para organizaciones comerciales
 dentro del Reino Unido (UK). Las normas que se aplican a los nombres de dominio
-para cada ccTLD concreto varían ampliamente de un país a otro.
+para cada ccTLD concreto varían enormemente de un país a otro.
 
 ![Nombres de dominio](../sketchnote/DNS)
 
@@ -66,7 +66,7 @@ de Michigan, dispone del control de un dominio, como umich.edu, puede elegir qu�
 subdominios desea crear dentro de él. Los dominios que terminan en .com y .org pueden
 ser adquiridos por particulares. Los propietarios individuales de esos dominios están
 autorizados a gestionar sus dominios y crear subdominios por debajo de ellos para su
-uso propio o por otros.
+uso propio o el de otros.
 
 
 
@@ -94,7 +94,7 @@ una institución de educación superior concreta.
 Resumen
 -------
 
-A pesar de que el Sistema de Nombres de Dominios no es una de nuestras cuatro capas
+A pesar de que el Sistema de Nombres de Dominio no es una de nuestras cuatro capas
 del modelo, resulta ser una parte importante a la hora de conseguir un Internet
 más sencillo de utilizar. Los nombres de dominio permiten a los usuarios finales
 usar nombres simbólicos para los servidores en lugar de direcciones de protocolo
@@ -103,14 +103,14 @@ dominios con sus correspondientes direcciones IP, se pueden trasladar los servid
 de una conexión de Internet a otra sin necesidad de que los usuarios cambien de forma
 manual sus configuraciones para conectarse al servidor.
 
-\index{Registrador de Nombres de Dominios}
+\index{Registrador de Nombres de Dominio}
 Si deseas adquirir un nombre de dominio para ti o para una compañía, puedes
-elegir entre un gran número de registradores de nombres de dominios.
+elegir entre un gran número de registradores de nombres de dominio.
 
 Glosario
 --------
 
-**DNS**: *Domain Name System* (Sistema de Nombres de Dominios). Un sistema de
+**DNS**: *Domain Name System* (Sistema de Nombres de Dominio). Un sistema de
 protocolos y servidores que permite a las aplicaciones en red buscar nombres
 de dominios y recuperar la dirección IP correspondiente para cada uno de esos nombres.
 

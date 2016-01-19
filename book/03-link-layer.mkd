@@ -6,7 +6,7 @@ La Capa de Acceso al medio
 La capa inferior de nuestra arquitectura de Internet es la capa de Acceso al
 medio. Le llamamos la "capa inferior" porque es la más próxima al medio físico de
 la red. Habitualmente, la capa de Acceso transmite datos usando un cable, fibra
-óptica, o una señal de radio. Un factor clave relativo a la capa de Acceso es que
+óptica, o una señal de radio. Un aspecto clave de la capa de Acceso es que
 habitualmente los datos solo pueden ser transmitidos durante una parte del recorrido
 desde el equipo de origen hasta el de destino. Una Ethernet cableada, el WiFi, y la
 red de telefonía móvil (celular) son ejemplos de capas de acceso que pueden transmitir
@@ -18,14 +18,14 @@ distancias.
 
 ![La capa de Acceso al medio](../images/layers-link)
 
-Independientemente de la distancia a la que podamos enviar los datos, éstos estarán
+Independientemente de la distancia a la que podamos enviar los datos, estos estarán
 viajando tan solo a través una única conexión, y para alcanzar el equipo de destino
-final necesitarán ser reeenviados luego en forma de paquetes a través de múltiples
-conexiones. En esta sección veremos en detalle cómo funciona una de las capas de
-acceso más habituales. El WiFi es un buen ejemplo para estudiar los múltiples
+final necesitarán que se produzca posteriormente el reenvío de los paquetes a través de
+múltiples conexiones. En esta sección veremos en detalle cómo funciona una de las
+capas de acceso más habituales. El WiFi es un buen ejemplo para estudiar los múltiples
 problemas que deben resolverse en la capa de acceso.^[Durante la descripción,
 simplificaremos parte de los detalles técnicos para que sean más fáciles de
-comprender.]
+entender.]
 
 Compartiendo el aire
 --------------------
@@ -36,7 +36,7 @@ Compartiendo el aire
 Cuando tu portátil (laptop) o teléfono usan el WiFi para conectarse a Internet, están
 enviando y recibiendo datos a través de un pequeño emisor/receptor de radio de baja
 potencia. El emisor de tu equipo solo puede enviar datos a una distancia de alrededor
-de 300 metros, de modo que tu computadora envía los paquetes al router de tu casa, que
+de 300 metros, de modo que el dispositivo envía los paquetes al router de tu casa, que
 a su vez los reenvía usando una conexión con el resto de Internet. A veces, ese
 primer router que gestiona los paquetes de tu equipo recibe el nombre de
 "estación base", "puerta de acceso" o "gateway".
@@ -45,8 +45,8 @@ Todos los equipos que estén lo suficientemente cerca de la estación base,
 con sus receptores de radio encendidos, reciben todos los paquetes que transmite la
 estación base, independientemente de a qué equipo vaya supuestamente dirigido
 cada uno. También pueden "captar" todos los paquetes enviados por cualquier equipo
-cercano. De modo que tu computadora necesita un modo de saber qué paquetes le
-corresponde gestionar a ella y cuáles van dirigidos a otros equipos y puede ignorar
+cercano. De modo que tu dispositivo necesita un modo de saber qué paquetes le
+corresponde gestionar a él y cuáles van dirigidos a otros equipos y puede ignorar
 tranquilamente.
 
 Un efecto secundario interesante, derivado del hecho de que todos los equipos
@@ -62,7 +62,7 @@ Todos los receptores WiFi de todos los dispositivos construidos reciben un núme
 serie único en el momento de su fabricación.
 Esto significa que cada uno de los equipos
 que usa el WiFi tiene su propio número de serie, y que el emisor de radio de la puerta
-de acceso dispone también de su propio número. Normalmente es posible acceder
+de acceso dispone también de su propio identificador. Normalmente es posible acceder
 a la pantalla de ajustes del dispositivo y averiguar cual es el número de serie del
 emisor WiFi del aparato. Generalmente se muestra de un modo similar a este:
 
@@ -108,7 +108,7 @@ un mensaje que indica cuál es su número de serie.
 
 Si no se obtiene respuesta, tu equipo espera unos cuantos segundos y luego
 asume que no existe puerta de acceso para esa red. Cuando no hay puerta de acceso,
-el equipo puede mostrar un icono WiFi diferente u ocultar el icono
+el dispositivo puede mostrar un icono WiFi diferente u ocultar el icono
 correspondiente al WiFi. Algunas veces existe más de una puerta de acceso, pero de
 momento vamos a pasar ese caso por alto, porque se trataría de una situación un
 poco más compleja y no demasiado habitual.
@@ -119,7 +119,7 @@ puerta de acceso reenvíe hacia Internet. A partir de ese momento, todos los paq
 de nuestro equipo disponen ya del número de serie real del destinatario. Se
 intenta usar la dirección de difusión lo menos posible, ya que todos los equipos
 conectados a la red WiFi reciben y procesan todos los mensajes enviados a esa
-dirección, para asegurarse de que esos mensajes no van destinados a ellos.
+dirección, para asegurarse de que dichos mensajes no van destinados a ellos.
 
 Cortesía y coordinación
 -------------------------
@@ -137,11 +137,11 @@ los métodos técnicos que se utilizan para evitar la pérdidas de datos debidas
 \index{carrier sense}
 \index{escucha de portadora}
 La primera técnica recibe el nombre de "Escucha de Portadora", o "*Carrier Sense*".
-Esta técnica consiste en escuchar primero si hay una transmisión, y si ya existe
-una en marcha en ese momento, esperar hasta que finalice. Puede parecer que
+Esta técnica consiste en escuchar primero si hay una transmisión, y si existe
+una en marcha en ese momento, esperar hasta que esta finaliza. Puede parecer que
 habría que esperar mucho tiempo, pero dado que todos los mensajes se dividen en
 paquetes, normalmente un equipo solo tiene que esperar hasta que el equipo que
-está enviando datos en ese momento finaliza un paquete, y en cuanto eso sucede el
+está enviando datos en ese momento termina con un paquete, y en cuanto eso sucede el
 primero dispone de la oportunidad de enviar sus propios datos.
 
 Si el receptor WiFi de un equipo se pone a la escucha, y solo detecta silencio,
@@ -156,12 +156,12 @@ colisión (esto recibe el nombre de Detección de Colisiones), y deja de transmi
 ya que sabe que el receptor WiFi de destino no recibirá los datos correctos.
 
 Los humanos hacemos algo parecido en una habitación llena de gente. Cuando dos
-personas empiezan a hablar al mismo tiempo, se dan cuenta rápidamente si hay otra
-persona hablando a la vez, y en ese caso los dos se callan enseguida. Pero el problema
-viene a la hora de reanudar la conversación. Después de una pausa larga, es habitual
+personas empiezan a hablar al mismo tiempo, se dan cuenta enseguida de que hay
+otra persona hablando, y ambos se callan enseguida. Pero el problema
+viene a la hora de reanudar la conversación. Después de una larga pausa, es habitual
 que ambas personas comiencen a hablar exactamente al mismo tiempo *de nuevo*. Esto
 puede ocurrir una y otra vez, y cada una de las personas dirá "No, tú primero" varias
-veces, para intentar averiguar cómo reanudar la conversación. Puede resultar incluso
+veces, para intentar reanudar de nuevo la conversación. Puede resultar incluso
 cómico a veces.
 
 \index{retransmitir}
@@ -170,8 +170,8 @@ capaces de resolver ese problema mucho mejor que la gente. Cuando los emisores
 WiFi detectan una colisión o una transmisión fallida, esperan un periodo de tiempo
 calculado aleatoriamente antes de volver a iniciar la transmisión. La reglas para
 calcular ese tiempo de espera aleatorio fueron establecidas para asegurarse de que
-dos emisores que colisionan eligen diferentes periodos de espera antes
-de intentar volver a transmitir de nuevo el paquete.
+los dos emisores que han colisionado eligen diferentes periodos de espera antes
+de intentar volver a transmitir de nuevo sus paquetes.
 
 \index{CSMA/CD}
 El proceso de escuchar, transmitir, escuchar, esperar y reintentar si
@@ -193,7 +193,7 @@ Coordinación en otras capas de Acceso
 
 A veces, cuando una capa de acceso tienen muchos equipos transmitiendo a la vez
 y necesita operar a casi el 100% de eficiencia durante largos periodos de tiempo,
-el método de diseño utilizado es un poco diferente.
+el diseño elige un método distinto.
 Según ese método, existe un "testigo" (*token*) que indica
 cuándo se le concede a cada puesto la oportunidad para transmitir sus datos. Los
 puestos no pueden iniciar una transmisión a menos que tengan el testigo. En vez de
@@ -213,15 +213,15 @@ tan rápido como se pueda.
 Un grupo de gente reunidos, sentados en círculo uno al lado de otro, podrían
 comunicarse sin interrumpir a los demás usando una bola pequeña, que irían pasando
 de unos a otros, de modo que solo aquella persona que tuviera la bola dispondría de
-permiso para hablar. Cuando te llegase la bola y tuvieras algo que decir, podrías
+permiso para hablar. Cuando te llegase la bola, si tuvieras algo que decir podrías
 hablar durante un corto periodo de tiempo (transmitir un paquete de palabras), y
 luego le pasarías la bola al siguiente.
 
 El método de "probar y volver a probar" CSMA/CD funciona muy bien cuando no
 existen datos en circulación o se está enviado una cantidad de datos entre baja y
-moderada. Pero en una red de tipo testigo, si en un momento determinado nadie
-está enviando datos y se quiere enviar un paquete, habría que esperar de todos modos
-un rato antes de recibir el testigo y poder comenzar la transmisión. Al terminar el
+moderada. Pero en una red de tipo testigo o *token*, si en un momento determinado nadie
+está enviando datos y se quiere enviar un paquete, habría que esperar un rato de todos
+modos antes de recibir el testigo y poder comenzar la transmisión. Al terminar el
 envío, habría que esperar de nuevo hasta que el testigo volviera, antes de poder
 enviar el siguiente paquete. Si solo hay un equipo enviando datos, se emplearía
 una buena cantidad de tiempo esperando a que el testigo volviera a él, después de
@@ -241,7 +241,7 @@ Resumen
 Hasta el momento, hemos examinado la capa "inferior" de nuestro modelo de cuatro
 capas. Y simplemente hemos echado un vistazo a la forma en que funciona la Capa de
 Acceso al medio. Existen muchos más detalles a tener en cuenta al diseñar una capa de
-acceso, como la distancia de conexión, el voltaje, la frecuencia, la velocidad, y
+acceso, como son la distancia de conexión, el voltaje, la frecuencia, la velocidad, y
 muchos otros.
 
 Una ventaja clave del modelo de capas es que los ingenieros que diseñan y construyen
@@ -250,36 +250,36 @@ las demás capas que están por encima de ella. Esto les permite centrarse en co
 la mejor solución posible para hacer circular los datos a través de un único "salto".
 Las capas de acceso actuales, como WiFi, satélite, módems de cable, Ethernet, y
 tecnología para móviles (celulares), están muy bien desarrolladas. Los datos circulan
-tan eficaz y rápidamente que una vez que se consigue conexión, rara vez hay que volver
-a preocuparse por la capa de Acceso. Simplemente, funciona.
+tan eficaz y rápidamente que una vez que se consigue establecer la conexión, rara vez
+hay que volver a preocuparse por la capa de Acceso. Simplemente, funciona.
 
 Glosario
 --------
 
-**difusión**: Envío de un paquete de modo que todos los equipos conectados a una
-red de área local lo reciban.
+**difusión**: Envío de un paquete de un modo "especial", que consigue que todos los
+equipos conectados a una red de área local lo reciban.
 
 **dirección MAC**: Una dirección que se asigna a un componente físico de una
 red durante la fabricación de ese dispositivo.
 
 **estación base**: Otro modo de llamar al primer router que gestiona los paquetes
-y los reenvía hacia Internet.
+cuando estos son reenviados hacia Internet.
 
 **puerta de acceso (gateway)**: Un router que conecta una red de área local con una
 red de área amplia, como puede ser Internet. Los equipos que quieran enviar
 datos más allá de la red local deben enviar sus paquetes a la puerta de acceso,
-para que ésta los reenvíe al exterior.
+para que esta los reenvíe al exterior.
 
-**testigo (token)**: Una tecnología que permite a muchos equipos compartir el
-mismo medio físico sin colisiones. Cada equipo debe esperar hasta que recibe el
-testigo antes de poder enviar datos.
+**testigo (token)**: Una técnica que permite que múltiples equipos puedan compartir
+el mismo medio físico evitando las colisiones. Cada equipo debe esperar hasta que
+recibe el testigo o *token* antes de poder enviar datos.
 
 
 
 Cuestionario
 ------------
 
-1. Cuando se usa una red WiFi para comunicarse con Internet, ¿a dónde envía
+1. Cuando utilizas una red WiFi para comunicarse con Internet, ¿a dónde envía
 sus paquetes tu equipo?
 a) A la puerta de acceso (*gateway*)
 b) Al satélite
@@ -292,7 +292,7 @@ b) La Autoridad de Asignación de Números de Internet (IANA)
 c) El fabricante del dispositivo de conexión
 d) El gobierno
 
-3. ¿Cuál de los siguientes es una dirección de acceso?
+3. ¿Cuál de las siguientes es una dirección de acceso?
 a) 0f:2a:b3:1f:b3:1a
 b) 192.168.3.14
 c) www.khanacademy.com
@@ -300,7 +300,7 @@ d) @drchuck
 
 4. ¿Cómo localiza un equipo la puerta de acceso de una red WiFi?
 a) Dispone de una dirección de puerta de acceso, instalada por el fabricante
-b) Retransmite una petición, pidiendo la dirección de la puerta de acceso
+b) Retransmite una petición, solicitando la dirección de la puerta de acceso
 c) Envía un mensaje de forma repetida a todas las posibles direcciones de puertas de
 acceso, hasta que encuentra una que funciona
 d) El usuario debe introducir la dirección de la puerta de acceso manualmente
@@ -314,7 +314,7 @@ d) Esperar hasta que reciba aviso de que ha llegado su turno para transmitir
 
 6. ¿Qué hace un puesto conectado a una red WiFi cuando intenta enviar datos y
 se da cuenta de que se ha producido una colisión?
-a) Continúa enviando el mensaje para que de todos modos llegue parte de él
+a) Continúa enviando el mensaje para que de todos modos llegue al menos una parte
 b) Espera hasta que la puerta de acceso le informa de que la colisión ha terminado
 c) Reinicia inmediatamente la transmisión del mensaje desde el principio
 d) Deja de transmitir y espera un periodo de tiempo aleatorio antes de reiniciar
