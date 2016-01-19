@@ -1,7 +1,7 @@
 \thispagestyle{empty}
 
 Créditos
--------
+--------
 
     Ilustraciones: Mauro Toselli
     Soporte editorial: Sue Blumenberg
@@ -9,10 +9,10 @@ Créditos
 	Traducción al español: Fernando Tardío
 
 Las ilustraciones SketchNote fueron creadas en un iPad usando
-*Paper* de www.fiftythree.com, utilizando un stylus (lápiz óptico) dedicado.
+*Paper* de www.fiftythree.com, con ayuda de un stylus (lápiz óptico).
 Las ilustraciones han sido convertidas desde PNG a
 formatos vectoriales SVG y EPS, usando www.vectormagic.com.
-Los esquemas técnicos del libro se crearon con OmniGraffle.
+Los esquemas técnicos del libro se han creado con OmniGraffle.
 
 Historial de impresiones
 ------------------------
@@ -20,7 +20,7 @@ Historial de impresiones
 25-Mayo-2015 Impresión original - CreateSpace
 
 Detalles sobre el copyright
---------------------------
+---------------------------
 
 Los derechos de reproducción de este libro pertenecen a Charles R. Severance.
 
@@ -51,8 +51,8 @@ Prefacio
 
 El objetivo de este libro es proporcionar una comprensión básica del
 diseño técnico y la arquitectura de Internet.
-El libro está dirigido a todo tipo de audiencias -- incluso a aquellos que no
-disponen de ninguna experiencia previa en temas técnicos o matemáticas.
+El libro está dirigido a todo tipo de lectores -- incluso a aquellos que no
+disponen de ninguna experiencia previa en temas técnicos o sin conocimientos matemáticos.
 Internet tiene un diseño increíblemente hermoso y este debería ser entendido
 por cualquiera que lo utilice.
 
@@ -64,8 +64,8 @@ Quiero hacer constar mi agradecimiento a Pamela Fox, de la Khan Academy, por
 haber tenido la idea de realizar un curso de introducción a la tecnología de
 redes usando materiales libres.
 
-Este material fue desarrollado inicialmente por mí como unas clases de una
-semana para el curso *SI502 - Networked Computing* (Redes Informáticas), que
+Este material fue desarrollado inicialmente por mí como las lecciones de una de
+las semanas del curso *SI502 - Networked Computing* (Redes Informáticas), que
 comencé a impartir en el 2008 en la Escuela de Información de la Universidad de
 Michigan. Posteriormente mejoré y amplié el material hasta cubrir las tres
 semanas de duración del curso sobre la Historia de Internet, Tecnología y
@@ -98,7 +98,7 @@ Acerca de la traducción al español
 No resulta fácil traducir a otro idioma un libro sobre informática. Hay muchos
 términos técnicos, y muchas veces surge la duda de si es mejor traducirlos al
 español o dejarlos en inglés, ya que mucha gente hispanohablante los conoce así.
-También está el problema de cómo traducir esos términos, ya que en ocasiones hay
+También está el problema de cómo traducir esos términos, porque en ocasiones hay
 palabras cuya traducción puede ser diferente en distintos ámbitos geográficos.
 El ejemplo más obvio es la palabra *computer*, que dependiendo del país
 puede ser traducido como "computadora", "computador", u "ordenador".

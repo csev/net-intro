@@ -4,8 +4,8 @@ La Capa de Transporte
 \index{Capa!Transporte}
 \index{TCP}
 
-La capa inmediatamente por encima de la capa de Internet es la de Transporte.
-Un elemento clave de la capa de Internet es que esta no intenta garantizar la entrega
+La capa situada inmediatamente por encima de la de Internet es la capa de Transporte.
+Un aspecto clave de la capa de Internet es que esta no intenta garantizar la entrega
 de ningún paquete concreto. La capa de Internet es casi perfecta, pero a veces
 los paquetes pueden perderse o ser enviados fuera de su ruta.
 
@@ -27,7 +27,7 @@ paquetes perdidos.
 Cabeceras de paquetes
 ---------------------
 
-Si revisaras un paquete que estuviera viajando a través de múltiples conexiones
+Si analizaras un paquete que estuviera viajando a través de múltiples conexiones
 entre sus equipos de origen y destino, verías una cabecera de acceso, una cabecera
 de IP, y una cabecera del Protocolo de Control de Transporte (TCP), junto con los
 datos reales del paquete.
@@ -47,8 +47,8 @@ a través de los distintos routers durante su viaje.
 
 Las cabeceras TCP indican a dónde pertenecen los datos de cada paquete. A medida
 que el equipo de origen divide el mensaje o archivo en paquetes, mantiene un
-seguimiento de la posición de cada paquete, relativo al comienzo del mensaje o
-archivo y coloca ése índice (*offset*) en cada paquete que crea y envía.
+indicador de la posición de cada paquete relativo al comienzo del mensaje o
+archivo, y coloca ese índice u *offset* en cada paquete que crea y envía.
 
 Reensamblado y reenvío de paquetes
 ----------------------------------
@@ -62,7 +62,7 @@ desordenados. Si recibe un paquete adelantado respecto a su posición dentro del
 mensaje, lo coloca en un buffer, controlando
 la circunstancia de que ahora existe un hueco dentro del mensaje que está siendo
 reconstruido. Cuando, posteriormente, llega el paquete retrasado, éste encaja
-perfectamente en el hueco dejado dentro de los datos reconstruidos.
+perfectamente en el hueco dejado dentro de los datos reensamblados.
 
 \index{tamaño de ventana}
 Para evitar sobrecargar la red, la capa de Transporte en el equipo de origen
@@ -87,7 +87,7 @@ punto en el cual se han enviado suficientes datos sin confirmar para llenar la
 ventana y el emisor deja de enviar paquetes nuevos.
 
 En ese momento, ambos equipos están esperando. El emisor está esperando la confirmación
-de recepción de un paquete perdido que nunca llegará y el equipo receptor está
+de recepción de un paquete perdido que nunca llegará y el receptor está
 esperando un paquete perdido que tampoco llegará nunca. Para asegurarse de que
 los equipos no se quedan esperando para siempre, el equipo de destino controla
 la cantidad de tiempo transcurrida desde la recepción del último paquete de datos.
@@ -99,7 +99,7 @@ y vuelve a enviar datos a partir de la posición informada por el equipo recepto
 ![Esperando un paquete perdido](../sketchnote/Transport)
 
 La confirmación de recepción de datos por parte del equipo receptor, no permitiendo
-al equipo emisor continuar el envío (tamaño de ventana), combinado con las peticiones
+al emisor continuar el envío (tamaño de ventana), combinado con las peticiones
 del equipo receptor al emisor para que "vuelva atrás y empiece de nuevo" cuando se
 sospecha que parte de los datos se han perdido, constituyen un método relativamente
 simple para enviar con fiabilidad mensajes extensos o archivos a través de la red.
@@ -147,7 +147,7 @@ El propósito de la capa de Transporte es proporcionar conexiones fiables entre
 aplicaciones en red, de modo que esas aplicaciones puedan enviar y recibir cadenas
 de datos. Para una aplicación, resulta tan sencillo como pedir a la capa de Transporte
 que realice una conexión con otra aplicación que se está ejecutando en un equipo
-remoto. La aplicación que inicia la conexión desde el ordenador local recibe el
+remoto. La aplicación que inicia la conexión desde el equipo local recibe el
 nombre de "cliente", y a la aplicación que responde a la petición de conexión se le
 llama "servidor". A la combinación de las dos, operando una desde cada extremo de la
 de la conexión se les denomina aplicación "cliente/servidor", dado que las dos partes de
@@ -189,7 +189,7 @@ preparada para recibir conexiones entrantes, aguarda hasta que se produce la pri
 conexión.
 
 Para que las aplicaciones cliente sepan a qué puerto deben conectarse, existe
-una lista de puertos por defecto habituales para varias aplicaciones servidor:
+una lista de puertos por defecto habituales para varias aplicaciones de tipo servidor:
 
 * Telnet (23) - Inicio de sesión (*Login*)
 * SSH (22) - Inicio de sesión segura (*Secure Login*)
@@ -203,7 +203,7 @@ una lista de puertos por defecto habituales para varias aplicaciones servidor:
 
 Estos son los puertos habituales para esas aplicaciones. Pero algunas veces los
 servidores pueden hacer que las aplicaciones escuchen en puertos no-estándar.
-Si estás desarrollando una web, puede que quieras hacer funcionar un servidor web en
+Si estás desarrollando una web, puede que te convenga hacer funcionar un servidor web en
 puertos no estándar, como 3000, 8000, o 8888. Si te encuentras con una URL como:
 
 	http://prueba.ejemplo.com:8080/acceder

@@ -14,8 +14,8 @@ y las aplicaciones interactúan con la red por nosotros.
 Aplicaciones cliente y servidor
 -------------------------------
 
-Es importante recordar que se necesitan dos partes para que una aplicación de red
-funcione. La arquitectura de una aplicación de red recibe el nombre de
+Es importante recordar que se necesitan dos partes para que una aplicación en red
+funcione. La arquitectura de una aplicación en red recibe el nombre de
 "cliente/servidor". La parte servidor de la aplicación se ejecuta en algún punto
 de Internet y tiene la información que los usuarios quieren ver o con la que desean
 interactuar. La parte cliente de la aplicación realiza las conexiones con la
@@ -33,15 +33,15 @@ para ti, y luego te las muestra.
 El servidor web de tu equipo envía una petición de conexión a www.khanacademy.org.
 Tu equipo usa el nombre de domino para localizar la dirección IP correspondiente
 al servidor y realizar una conexión de transporte con esa IP, luego comienza a
-solicitar datos desde el servidor a través de la conexión red. Cuando se reciben
-los datos, el navegador te los muestra. A veces los navegadores web muestran un
-pequeño icono animado para informarte de que los datos están siendo descargados
-a través de la red.
+solicitar datos desde el servidor a través de la conexión de red. Cuando se reciben
+los datos, el navegador te los presenta en la pantalla. A veces los navegadores web
+muestran un pequeño icono animado para informarte de que los datos están siendo
+descargados a través de la red.
 
 En el otro extremo de la conexión hay otra aplicación llamada "servidor web".
 El programa que hace de servidor web está siempre activo y esperando conexiones
 de entrada. De modo que cuando quieres ver una página web, estás conectándote a
-una aplicación servidor que está siempre en marcha y aguardando tus conexiones.
+una aplicación servidor que ya estaba activa y aguardando tus conexiones.
 
 En cierto sentido, las capas de Acceso, Trasporte e Internet, junto con el Sistema
 de Nombres de Dominio (DNS), son como una red telefónica para aplicaciones en red.
@@ -53,32 +53,32 @@ Protocolos de la Capa de Aplicación
 
 \index{cliente}
 \index{servidor}
-Igual que las personas que hablan por teléfono, cada par de aplicaciones de red
+Igual que las personas que hablan por teléfono, cada pareja de aplicaciones en red
 necesita fijar un conjunto de reglas que gobiernen la conversación. En la mayoría
 de las culturas, cuando el teléfono suena y alguien lo coge es habitual saludar.
 Normalmente, la persona que realiza la llamada (la persona cliente) permanece
 callada hasta que la persona que responde al teléfono (la persona servidor) dice
 "Hola". Si alguna vez has llamado a alguien que no sigue esta sencilla regla,
-puede resultar bastante desconcertante. Probablemente, en ese caso terminarías por
-llegar a la conclusión de que la conexión no estaba funcionando, colgarías y
+puede llegar a resultar bastante desconcertante. Probablemente, terminarías por
+llegar a la conclusión de que la conexión no funcionaba correctamente, colgarías y
 repetirías la llamada.
 
 \index{protocolo}
-Un conjunto de reglas que gobiernan cómo nos comunicamos reciben el nombre de
-"protocolo". La definición de la palabra protocolo es "una regla que describe cómo
+Llamamos "protocolo" a un conjunto de reglas que gobiernan cómo nos comunicamos.
+La definición de la palabra protocolo es "una regla que describe cómo
 debe ser realizada una actividad, especialmente en el campo de la diplomacia". La
 idea es que en situaciones formales, debemos comportarnos según un conjunto
-concreto de reglas. Usamos esa palabra para describir aplicaciones de red, porque
+concreto de reglas. Usamos esa palabra para describir aplicaciones en red, porque
 sin reglas precisas, las aplicaciones no tienen forma de establecer y gestionar
-una conversación. A las computadoras les gusta la precisión.
+una conversación. A las máquinas les gusta la precisión.
 
 ![Protocolos de aplicación](../sketchnote/Protocols)
 
 \index{RFC-7230 HTTP}
-Existen muchas aplicaciones de red diferentes, y resulta de suma importancia que cada
+Existen muchas aplicaciones en red diferentes, y resulta de suma importancia que cada
 aplicación de red disponga de un protocolo bien documentado, para que todos los
 servidores y clientes puedan operar entre ellos. Algunos de esos protocolos
-resultan enrevesados y complejos.
+son enrevesados y complejos.
 
 El protocolo que describe cómo se comunica un navegador web con un servidor web
 aparece descrito en multitud de documentos, empezando por este mismo:
@@ -90,7 +90,7 @@ aparece descrito en multitud de documentos, empezando por este mismo:
 \index{HTTP}
 El nombre formal del protocolo entre clientes y servidores web es el "Protocolo de
 Transporte de Hipertexto" (*HyperText Transport Protocol*), o HTTP para abreviar.
-Cuando pones "http:" o "https:" al comienzo de una URL que escribes en un navegador,
+Cuando pones "http:" o "https:" al principio de una URL que escribes en un navegador,
 estás indicando que quieres descargar un documento usando el protocolo HTTP.
 
 Si revisas el documento anterior y vas a la sección 5.3.2 de la página 41,
@@ -104,8 +104,8 @@ uso básico del HTTP es relativamente sencillo, existen montones de detalles que
 a los clientes y servidores web comunicarse de forma eficiente y transferir una
 amplia variedad de información y datos. El protocolo HTTP está descrito en seis
 documentos diferentes, a lo largo de un total de 305 páginas. Puede parecer que eso es
-entrar en demasiados detalles, pero la clave en el diseño de protocolos está en pensar
-en todos los usos posibles del protocolo y en describir cada escenario cuidadosamente.
+detallar demasiado, pero la clave en el diseño de protocolos está en prever
+todos los usos posibles del protocolo y en describir cada escenario cuidadosamente.
 
 Exploración del protocolo HTTP
 ------------------------------
@@ -152,8 +152,8 @@ a qué servidor de aplicación queremos conectarnos. El puerto 80 es donde norma
 esperaríamos encontrar una aplicación servidor HTTP (web) en un equipo. Si no hay
 un servidor web escuchando en el puerto 80, se agotará el tiempo de conexión y se
 producirá un error. Pero si existe un servidor web, conectaremos con él y cualquier
-cosa que escribamos en nuestro teclado será enviada directamente al servidor. En este
-punto, necesitamos conocer el protocolo HTTP y escribir los comandos precisamente como
+cosa que escribamos en nuestro teclado será enviada directamente al servidor. En ese
+punto, necesitaremos conocer el protocolo HTTP y escribir los comandos exactamente como
 se esperan. Si no conocemos el protocolo, el servidor web no se mostrará muy amistoso.
 Aquí vemos un ejemplo de lo que ocurre cuando las cosas no van bien:
 
@@ -180,7 +180,7 @@ e intro. Al servidor no le gusta, nos envía un mensaje de error y luego cierra 
 conexión. No disponemos de un segunda oportunidad. Si no conocemos el protocolo, el
 servidor web no quiere hablar con nosotros.
 
-\index{Pirateando HTTP}
+\index{Hackeando HTTP}
 Pero volvamos atrás y leamos la sección 5.3.2 del documento RFC-7230 antes de probar
 de nuevo a solicitar un documento usando la sintaxis correcta:
 
@@ -226,9 +226,9 @@ hemos solicitado. Por ejemplo, la primera línea contiene un código de estado (
 code*).
 
 En este ejemplo, el código de estado "200" significa que las cosas han ido bien.
-Un código de estado "404" en la primera línea de las cabeceras indicaría que el
-documento solicitado no se ha encontrado. Un código de estado "301" indicaría que
-el documento habría cambiado de sitio y estaría en una ubicación diferente.
+Un código de estado "404" en la primera línea de las cabeceras indica que el
+documento solicitado no se ha encontrado. Un código de estado "301" indica que
+el documento ha cambiado de sitio y está en una ubicación diferente.
 
 Los códigos de estado de HTTP están divididos en rangos:
 Los códigos 2XX indican éxito, los códigos 3XX son para redirigir, 
@@ -237,7 +237,7 @@ y los códigos 5xxx indican que el servidor hizo algo incorrecto.
 
 Como se ha solicitado un documento de Lenguaje de Marcas de HiperTexto (HTML), este
 contiene marcas como \<h1\> y \<p\>. Cuando es un navegador quien recibe un documento
-en formato HTML, se fija en las marcas del documento, las interpreta y nos presenta
+en formato HTML, tiene en cuenta las marcas del documento, las interpreta y nos muestra
 una versión del documento con formato.
 
 El protocolo IMAP para descarga de correo
@@ -280,8 +280,8 @@ el servidor (S:):
 
 Los mensajes que se envían entre sí el cliente y el servidor no están diseñados para ser
 visualizados por un usuario final, de modo que no son particularmente descriptivos.
-Estos mensajes están formateados con precisión y son enviados en un orden exacto para
-que puedan ser generados y leídos por aplicaciones informáticas de red, una en cada
+Estos mensajes tienen un formato concreto y son enviados en un orden determinado para
+que puedan ser generados y leídos por aplicaciones informáticas en red, una en cada
 extremo de la conexión.
 
 Control de flujo
@@ -295,7 +295,7 @@ antes de detenerse y esperar una confirmación.
 
 ![Almacenamiento en la Capa de Transporte](../images/transport-buffer)
 
-En esta figura, vemos un mensaje dividido en paquetes, con algunos de los paquetes
+En esta figura, vemos un mensaje dividido en paquetes, con algunos de esos paquetes
 ya enviados y confirmados. Seis paquetes han sido enviados pero aún no han sido
 confirmados, y la capa de Transporte del emisor ha alcanzado el límite de su ventana
 de transmisión, de modo que está detenido hasta que reciba una confirmación desde la
@@ -309,8 +309,8 @@ Aplicación, podemos incluir las dos aplicaciones que son el origen y el destino
 la cadena de datos.
 
 Supongamos que el navegador web ha realizado una conexión de transporte con el
-servidor web y ha comenzado a descargar un fichero de imagen. El servidor web habrá
-abierto el archivo de imagen y estará enviando los datos desde el fichero hacia su
+servidor web y ha comenzado a descargar el fichero de una imagen. El servidor web habrá
+abierto el archivo de la imagen y estará enviando los datos desde el fichero hacia su
 capa de Transporte tan rápido como le sea posible. Pero la capa de Transporte debe
 seguir las reglas del tamaño de ventana, de modo que sólo podrá enviar una cierta
 cantidad de datos cada vez. Cuando la ventana se llene, el servidor web se
@@ -329,7 +329,7 @@ añadiendo ahora ambas capas de Aplicación, y teniendo en cuenta que los paquet
 están en medio corresponderían a la imagen que se está enviando, quedaría algo como
 esto:
 
-![Almacenamiento en las Capas de Aplicación y Transporte](../images/application-transport-buffer)
+![Almacenamiento en las capas de Aplicación y Transporte](../images/application-transport-buffer)
 
 El servidor web está leyendo el fichero de imagen ('F') y enviándolo como una cadena
 hacia el navegador web, tan rápido como puede. La capa de
@@ -337,7 +337,7 @@ Transporte de origen ha dividido la cadena en paquetes y ha usado la IP del equi
 destino para enviar los paquetes hacia él.
 
 La capa de Transporte ha enviado seis paquetes ('S') y luego ha dejado de enviar,
-por haber alcanzado su tamaño de ventana y ha detenido el servidor web.
+por haber alcanzado su tamaño de ventana y ha pausado el servidor web.
 Tres de esos seis paquetes han llegado a la capa de Transporte del equipo de destino
 ('R'), y los otros tres están aún realizando el viaje a través de Internet ('S').
 
@@ -350,7 +350,7 @@ Un detalle clave en el que fijarse en este dibujo es que las capas de transporte
 no conservan los paquetes del fichero completo. Sólo retienen los paquetes que están
 "en tránsito" y sin confirmar. Una vez que los paquetes son confirmados y entregados
 a la aplicación de destino, no hay ninguna razón para que ninguna de las capas de
-Transporte (ni la de origen ni la de destino) mantengan esos paquetes.
+Transporte (ni la de origen ni la de destino) conserven esos paquetes.
 
 Cuando la confirmación llega desde el equipo de destino hasta el de origen,
 la capa de Transporte del equipo de origen activa de nuevo la aplicación servidor
@@ -361,11 +361,11 @@ Esta capacidad de iniciar y detener la aplicación que emite los datos para aseg
 de enviarlos lo más rápido posible sin llegar a colapsar Internet recibe
 el nombre de "control de flujo". Las aplicaciones no son
 responsables del control de flujo, ellas sólo tratan de enviar o recibir datos
-tan rápidamente como les sea posible, y las dos capas de transporte inician y
+tan rápido como pueden, y las dos capas de transporte inician y
 detienen las aplicaciones a medida que lo necesitan, basándose en la velocidad
 y fiabilidad de la red.
 
-Creación de aplicaciones de red
+Creación de aplicaciones en red
 -------------------------------
 
 \index{socket}
@@ -373,7 +373,8 @@ Las aplicaciones que envían y reciben datos a través de la red están escritas
 en uno o más lenguajes de programación. Muchos lenguajes de programación tienen
 librerías de código^[Aunque la traducción correcta de *libraries of code* sería *bibliotecas de
 código*, resulta bastante habitual entre la comunidad de programadores llamarles
-*librerías de código*, por lo que he decidido utilizar ese término. (Nota del trad.)]
+*librerías de código*, por lo que es el término que se utilizará en este libro.
+(Nota del trad.)]
 que hacen que resulte bastante sencillo escribir
 código de aplicación para enviar y recibir datos a través de la red.
 Con una buena librería de programación, realizar una conexión con una aplicación
@@ -385,7 +386,7 @@ Como ejemplo, el siguiente código es todo lo que se necesita en el lenguaje de
 programación Python para realizar una conexión con un servidor web y
 descargar un documento:
 
-![Programación con Sockets en Python](../images/python-socket)
+![Programación con sockets en Python](../images/python-socket)
 
 Aunque tal vez no conozcas el lenguaje de programación Python, el detalle clave
 es que sólo se necesitan diez líneas de código para establecer y usar una conexión
@@ -410,16 +411,16 @@ Resumen
 -------
 
 El objetivo del conjunto de las tres capas inferiores (Transporte, Internet y
-Conexión) es conseguir que la aplicación que se ejecute en la capa de Aplicación
-pueda centrarse en los problemas que esa aplicación concreta necesita resolver,
+Conexión) es conseguir que la aplicación que se ejecuta en la capa de Aplicación
+pueda centrarse en los problemas concretos que esa aplicación tiene que resolver,
 y deje que virtualmente toda la complejidad del movimiento de datos a través de la red
 sea gestionado por las capas inferiores del modelo de red.
 
-Gracias a que este método proporciona una gran facilidad para crear aplicaciones de red,
+Gracias a que este método proporciona una gran facilidad para crear aplicaciones en red,
 disponemos de una amplia variedad de programas de este tipo, como navegadores web,
 aplicaciones de correo, vídeo-juegos en red, aplicaciones de telefonía basadas
 en red, y muchas otras. Y lo que resulta aún más excitante es que resulta sencillo
-experimentar y crear cualquier tipo nuevo de aplicación de red para resolver
+experimentar y crear cualquier tipo nuevo de aplicación en red para resolver
 problemas que quizás no han sido ni siquiera imaginados aún.
 
 Glosario
@@ -431,7 +432,7 @@ es el "404", que es la forma que tiene un servidor HTTP de decirle al cliente
 (por ejemplo, un navegador) que el documento solicitado no se ha podido encontrar.
 
 **control de flujo**: Cuando un equipo emisor reduce la velocidad para asegurarse
-de que no satura ni a la red ni al equipo de destino. El control de flujo también
+de que no satura ni la red ni al equipo de destino. El control de flujo también
 consigue que el equipo emisor aumente la velocidad a la que envía los datos
 cuando está seguro de que la red y el equipo de destino pueden gestionar
 velocidades de trasmisión de datos más rápidas.
@@ -553,14 +554,14 @@ b) ping
 c) traceroute
 d) www
 
-14. ¿Qué le ocurre a una aplicación servidor que está enviando un fichero extenso
+14. ¿Qué le ocurre a una aplicación servidor que está enviando un fichero grande
 cuando la capa TCP ha enviado datos suficientes para llenar el tamaño de ventana
 y no ha recibido aún una confirmación de recepción?
 a) La aplicación cambia su transmisión a un socket nuevo
 b) La aplicación falla y debe ser reiniciada
-c) La aplicación se detiene hasta que el equipo remoto confirma que ha recibido
+c) La aplicación se pone en pausa hasta que el equipo remoto confirma que ha recibido
 parte de los datos
-d) El router más cercano que haga de puerta de acceso empieza a descartar los paquetes
+d) El router más cercano que ejerza de puerta de acceso empieza a descartar los paquetes
 que excederían el tamaño de ventana
 
 15. ¿Qué es un "socket" en Internet?
