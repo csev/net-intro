@@ -4,9 +4,9 @@ La Capa de Transporte Seguro
 \index{Capa de Transporte}
 \index{Capa!Transporte}
 En los primeros días de Internet, las redes eran pequeñas y todos los routers estaban
-situados en ubicaciones seguras. Bastaba con que cada equipo conectado a Internet se
+situados en lugares seguros. Bastaba con que cada equipo conectado a Internet se
 protegiera a sí mismo frente a conexiones entrantes no deseadas, se creía que no había
-necesidad de proteger los datos frente a miradas curiosas mientras atravesaban la red.
+necesidad de proteger los datos frente a espías mientras atravesaban la red.
 
 De modo que las capas de Acceso, Internet y Transporte estaban centradas en conseguir
 el movimiento eficiente de los datos y en resolver los problemas de las
@@ -16,9 +16,9 @@ de los datos que transportaban.
 Pero a medida que el uso de Internet iba creciendo con rapidez a finales de los años 80,
 y cuando literalmente sufrió una explosión con la popularización de la Web en 1994,
 la seguridad y la privacidad del tráfico de red se convirtieron en problemas muy
-importantes que resolver. Cuando se empezó a utilizar Internet como vehículo para el
-comercio y las tarjetas de crédito y números de cuentas bancarias empezaron a circular
-de forma cotidiana por la red, asegurar esos datos se convirtió en esencial.
+importantes que había que resolver. Cuando se empezó a utilizar Internet como vehículo
+para el comercio y las tarjetas de crédito y números de cuentas bancarias empezaron a
+circular de forma cotidiana por la red, asegurar esos datos se convirtió en esencial.
 Y cuando se comenzaron a utilizar tecnologías inalámbricas como el WiFi, la seguridad
 se convirtió en algo necesario incluso para los usos más básicos de Internet.
 
@@ -35,10 +35,10 @@ mezcla y los paquetes empezaron a viajar a través de ondas de radio, un atacant
 de la red ya podía simplemente sentarse en una cafetería e interceptar paquetes,
 a medida que pasaban por el aire.
 
-En esas condiciones, la única solución razonable pasa por encriptar los datos en
-tu equipo antes de enviarlos a través de su primera conexión física, y luego
-desencriptar esos datos en el equipo de destino después de su recepción. Al usar
-este método, asumimos que un atacante puede ver todos los paquetes que se envían,
+En esas condiciones, la única solución razonable pasa por encriptar o codificar los
+datos en tu equipo antes de enviarlos a través de su primera conexión física, y luego
+desencriptar o decodificar esos datos en el equipo de destino después de su recepción.
+Al usar este método, asumimos que un atacante puede ver todos los paquetes que se envían,
 pero no puede desencriptar los datos que ha capturado. La encriptación también
 garantiza que no haya forma de alterar los datos durante su viaje a través de
 Internet.
@@ -60,10 +60,11 @@ producir el mensaje codificado o "texto cifrado".
 Luego se envía el texto cifrado hacia otra persona, a través de un mensajero o
 utilizando otro medio de transporte inseguro. El mensajero no puede leer el mensaje, ya
 que este parece estar compuesto solamente por una serie de letras aleatorias, a menos
-que se conozca cuál ha sido la técnica utilizada para codificar el mensaje.
+que conozca cuál ha sido la técnica utilizada para codificarlo.
 
 Siempre que la persona que reciba el mensaje sepa cuál ha sido el número utilizado
-para desplazar las letras, podrá decodificarlas para reproducir el mensaje original.
+para alterar el mensaje, podrá decodificar las letras para reproducir el mensaje
+original.
 
 Aquí podemos ver un ejemplo sencillo de texto plano y texto cifrado usando un
 desplazamiento de una posición:
@@ -73,6 +74,8 @@ desplazamiento de una posición:
 
 \index{encriptar}
 \index{desencriptar}
+\index{cifrar}
+\index{descifrar}
 Se utiliza la palabra "encriptar" (o cifrar) para describir la transformación del texto
 plano en texto cifrado, y "desencriptar" (o descifrar) para describir el proceso
 contrario.
@@ -99,9 +102,9 @@ En los primeros días de Internet, dos personas podían enviarse entre sí corre
 encriptados si una de las personas llamaba primero a la otra por teléfono y le contaba
 cual era el secreto para desencriptar. Esto funcionaba bien cuando sólo había unos pocos
 usuarios en la red, pero no sería posible aplicar la misma solución a una compañía que
-puede tener millones de clientes y no puede permitirse el tener que realizar una llamada
-de teléfono a cada cliente para establecer un secreto compartido con ellos cada vez que
-quieran realizar, por ejemplo, una compra.
+puede tener millones de clientes y que no puede permitirse el tener que realizar una
+llamada de teléfono a cada cliente para establecer un secreto compartido con ellos
+cada vez que quieran realizar, por ejemplo, una compra.
 
 El distribuir los secretos compartidos a través de Internet puede parecer una
 buena idea, pero si suponemos que los atacantes están monitorizando y capturando
@@ -211,7 +214,7 @@ Aunque el cifrado mediante claves pública/privada es eficaz para permitir la
 distribución de las claves de cifrado a través de redes inseguras y el uso de esas
 claves para cifrar las transmisiones, existe aún el problema de saber si la
 clave pública que recibes cuando te conectas a un servidor corresponde realmente
-a la organización de la que asegura proceder.
+a la entidad de la que asegura proceder.
 
 ![Autoridades de Certificación y claves públicas](../sketchnote/Certificate_Authorities3)
 
@@ -225,11 +228,11 @@ datos recibidos y desaparecer con tu información bancaria.
 
 \index{firmas digitales}
 \index{clave firmada}
-Así que un equipo necesita saber de quién procede realmente la clave que recibe.
-Esto se consigue enviando a ese equipo una clave pública que esta firmada digitalmente
+Así que un dispositivo necesita saber de quién procede realmente la clave que recibe.
+Esto se consigue enviando a ese equipo una clave pública que está firmada digitalmente
 por una Autoridad de Certificación (*Certificate Authority* o CA).
 Cuando se instala por primera vez un equipo
-o navegador, dispone de una serie de autoridades de certificación conocidas.
+o navegador, dispone de una serie de autoridades de certificación oficiales.
 Si el navegador recibe una clave pública que está firmada por una de esas autoridades
 de certificación, confía en la clave y la usa para encriptar y enviar los
 datos. Si por el contrario el equipo recibe una clave pública que no está firmada
@@ -265,18 +268,18 @@ segura con facilidad la capa de Transporte de cualquier conexión. Este sistema
 asegura que todos los datos que son enviados a través de una conexión son
 encriptados antes de que salgan del equipo. Dado que muchos de nosotros usamos
 conexiones inalámbricas como WiFi, que pueden ser fácilmente monitorizadas por
-atacantes, es una buena idea encriptar los datos antes de enviarlos a través del
-WiFi.
+atacantes, es una buena idea encriptar los datos antes de enviarlos a través de
+las ondas.
 
 Los navegadores soportan conexiones seguras cambiando el prefijo de la URL de
 "http:" a "https:". Si se fijan en la URL, los usuarios finales pueden asegurarse
 de no enviar nunca datos sensibles a través de conexiones inseguras. Una serie
 de Autoridades de Certificación de confianza deben firmar las claves públicas
 para darte la seguridad de que la clave que recibes corresponde de verdad
-a la organización que esperabas. 
+a la organización de la que debería ser. 
 
 El diseño de la Capa de Transporte Seguro proporciona un mecanismo seguro y aún
-así sencillo de usar para asegurar las comunicaciones a través de Internet en una
+así sencillo de usar para asegurar las comunicaciones a través de Internet a una
 escala de miles de millones de parejas de equipos interactuando entre sí.
 
 Glosario
@@ -396,7 +399,7 @@ d) Qué documentos descargas desde los servidores
 clave pública/privada?
 a) Asegurarse de que la gente no falsifique títulos de actividades de enseñanza
 b) Asegurarse de que los paquetes sean dirigidos hacia el equipo de destino correcto
-c) Garantizarnos que una clave pública procede realmente de la organización de la que
+c) Garantizarnos que una clave pública procede realmente de la entidad de la que
 asegura proceder
 d) Elegir cuándo debe cambiar de IPv4 a IPv6 un determinado país
 

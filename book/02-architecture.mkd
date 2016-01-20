@@ -81,17 +81,17 @@ los otros hayan enviado sus propios paquetes, el primero realizaría su siguient
 envío. De este modo, los equipos estarían compartiendo el acceso a la red de un
 modo adecuado.
 
-Pero, ¿cómo sabe una computadora si otros equipos quieren enviar datos al mismo tiempo
-que ella? Los ingenieros han diseñado un método imaginativo para resolver este problema,
+Pero, ¿cómo sabe un dispositivo si otros equipos quieren enviar datos al mismo tiempo
+que él? Los ingenieros han diseñado un método imaginativo para resolver este problema,
 llamado "Acceso Múltiple con Escucha de Portadora y Detección de Colisiones" (*Carrier
 Sense Multiple Access with Collision Detection*), o CSMA/CD. Se trata de un nombre largo
-para designar un concepto simple y elegante. Cuando tu computadora quiere enviar datos,
+para designar un concepto simple y elegante. Cuando tu dispositivo quiere enviar datos,
 primero escucha si otro equipo está ya enviando información a través de la red (Escucha
 de Portadora). Si nadie está enviando datos, tu equipo comienza a enviar los suyos.
 Al mismo tiempo que lo hace, va escuchando para comprobar si puede recibir su propia
 información. Si los datos recibidos son los mismos que ha enviado, sabe que el canal
 sigue despejado y continúa transmitiendo. Pero si dos equipos comienzan a enviar datos
-al mismo tiempo, los datos colisionan, y tu computadora no recibiría lo
+al mismo tiempo, los datos colisionan, y tu dispositivo no recibiría lo
 mismo que ha enviado. Cuando se detecta una colisión, ambos equipos dejan de transmitir,
 esperan un poco, y luego reintentan el envío. Los dos equipos que colisionan
 esperan distintos periodos de tiempo antes de reintentar sus transmisiones, para
@@ -109,9 +109,9 @@ siguiente bloque.
 
 Este sencillo mecanismo funciona correctamente cuando solo hay un equipo que quiere
 enviar datos. También funciona bien cuando hay muchos equipos que pretenden enviar
-datos al mismo tiempo. Cuando hay una única computadora enviando datos, ese equipo
+datos al mismo tiempo. Cuando hay un único dispositivo enviando datos, ese equipo
 puede hacer un buen uso de la red compartida, enviando sus paquetes uno detrás del
-otro. Y cuando muchas computadoras quieren usar la red compartida a la vez, cada
+otro. Y cuando muchos dispositivos quieren usar la red compartida a la vez, cada
 equipo consigue una parte equitativa de la conexión.
 
 Algunas capas de acceso, como una conexión móvil (celular) para un smartphone, una

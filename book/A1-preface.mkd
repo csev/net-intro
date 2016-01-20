@@ -64,7 +64,7 @@ Quiero hacer constar mi agradecimiento a Pamela Fox, de la Khan Academy, por
 haber tenido la idea de realizar un curso de introducción a la tecnología de
 redes usando materiales libres.
 
-Este material fue desarrollado inicialmente por mí como las lecciones de una de
+Este texto fue desarrollado inicialmente por mí como material docente para una de
 las semanas del curso *SI502 - Networked Computing* (Redes Informáticas), que
 comencé a impartir en el 2008 en la Escuela de Información de la Universidad de
 Michigan. Posteriormente mejoré y amplié el material hasta cubrir las tres
@@ -98,21 +98,20 @@ Acerca de la traducción al español
 No resulta fácil traducir a otro idioma un libro sobre informática. Hay muchos
 términos técnicos, y muchas veces surge la duda de si es mejor traducirlos al
 español o dejarlos en inglés, ya que mucha gente hispanohablante los conoce así.
-También está el problema de cómo traducir esos términos, porque en ocasiones hay
-palabras cuya traducción puede ser diferente en distintos ámbitos geográficos.
-El ejemplo más obvio es la palabra *computer*, que dependiendo del país
+También está el problema de qué traducción concreta utilizar para esos términos, porque
+en ocasiones hay palabras cuya traducción puede ser diferente en distintos ámbitos
+geográficos. El ejemplo más obvio es la palabra *computer*, que dependiendo del país
 puede ser traducido como "computadora", "computador", u "ordenador".
-En ese caso concreto he optado por utilizar el término común *equipo*, o bien
-*computadora*, que si bien puede no resultar del todo familiar a una parte de los
-lectores, creo que es el más extendido entre la comunidad hispanohablante.
+En ese caso concreto he optado por utilizar el término común *equipo*, *dispositivo*,
+o bien *computadora*, que si bien puede no resultar del todo familiar a una parte de
+los lectores, creo que es el más extendido entre la comunidad hispanohablante.
 
 A lo largo de este libro, siempre que ha sido posible, he intentado utilizar
 los términos más comunes que he sido capaz de encontrar (o los que yo he estimado que
-eran más comunes). Para ciertos términos técnicos he usado como traducción "oficial"
-la que se puede encontrar en wikipedia, y
+eran más comunes), acompañados a veces por traducciones adicionales alternativas,
+para dejar claro a qué se refieren. Para ciertos términos
+técnicos he usado como traducción "oficial" la que se puede encontrar en wikipedia, y
 generalmente la he acompañado del término original en inglés para evitar confusiones.
-Y para palabras cuya traducción difiere dependiendo del país, a veces he optado por
-incluir traducciones alternativas entre paréntesis, para dejar claro a qué se refiere.
 
 Mi intención en todo momento ha sido intentar que la traducción pudiera resultarle útil
 a cualquier persona hispanohablante, por lo que he tratado siempre de unificar términos

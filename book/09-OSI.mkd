@@ -75,7 +75,7 @@ diversos sistemas conectados a la red. La capa de Red dirige el modo en que los
 routers reenvían los paquetes a través de múltiples saltos para llevarlos desde su
 origen hasta su destino. Al igual que la capa IP, la capa de Red OSI no pretende estar
 libre de errores, ya que asume que si se produce alguna pérdida de datos, esta será
-detectada y subsanada por la capa inmediatamente por encima de ella.
+detectada y subsanada por la capa situada inmediatamente por encima de ella.
 
 Transporte (Capa 4)
 -------------------
@@ -115,12 +115,12 @@ múltiples clientes y múltiples servidores de distintos proveedores.
 
 ![Comparación de los modelos TCP y OSI](../images/iso-tcp)
 
-Comparación de los Modelos OSI y TCP/IP
+Comparación de los modelos OSI y TCP/IP
 ---------------------------------------
 
 Podemos usar el modelo OSI para proporcionar una "visión" alternativa del modelo
-TCP/IP, comparando cómo se divide la funcionalidad de la red según el
-modelo OSI en sus capas, y cómo se hace lo mismo según el modelo TCP/IP.
+TCP/IP, comparando cómo se divide la funcionalidad de la red en sus distintas capas
+según el modelo OSI, y cómo se hace lo mismo según el modelo TCP/IP.
 
 Capa de Acceso (TCP/IP)
 -----------------------
@@ -142,8 +142,8 @@ el modelo TCP las combina dentro de una única capa para simplificar.
 Capa de Internet (TCP/IP)
 -------------------------
 
-Un sitio en la que coinciden con bastante exactitud ambos modelos es en las capas de
-red OSI y de Internet TCP/IP. Ambas realizan las mismas funciones, consistentes
+La capa de Red OSI y la de Internet TCP/IP coinciden con bastante exactitud en ambos
+modelos. Ambas realizan las mismas funciones, consistentes
 en crear un espacio global de direcciones enrutables y preparar a los routers para
 asegurarse de que los paquetes encuentren su camino de forma adecuada desde el origen
 hasta el destino a través de múltiples saltos.
@@ -168,7 +168,7 @@ de las capas de Presentación y Aplicación OSI. Aunque muchas aplicaciones
 TCP/IP se ocupan de cuestiones como la codificación y decodificación de varios
 tipos de datos, el modelo TCP/IP no ve el formateo de datos como una "capa"
 separada. En las aplicaciones TCP/IP se utilizan varios métodos de codificación
-y decodificación de datos, pero TCP/IP tiende a tratar esas capacidades como
+y decodificación de datos, pero TCP/IP tiende a gestionar esas cuestiones a través de
 librerías de código que las aplicaciones utilizan según sus necesidades.
 
 Conclusión
@@ -222,7 +222,7 @@ b) Enlace de Datos
 c) Red
 d) Transporte
 
-4. ¿Cuáles de las capas son más parecidas entre sí en los modelos de red OSI y TCP?
+4. ¿Cuáles de las capas son las que más se parecen entre los modelos de red OSI y TCP?
 a) La capa de Acceso TCP y la capa de Enlace de Datos OSI
 b) La capa de Internet TCP y la capa de Red OSI
 c) La capa de Transporte TCP y la capa de Transporte OSI

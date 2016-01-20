@@ -297,8 +297,8 @@ todos los demás.
 Glosario
 --------
 
-**dirección**: Un número que es asignado a una computadora, para que los mensajes
-puedan ser enviados hasta ella.
+**dirección**: Un número que es asignado a un dispositivo, para que los mensajes
+puedan ser enviados hasta él.
 
 **LAN**: Local Area Network (Red de Área Local). Una red que cubre un área que
 está limitado por la capacidad de una organización para tender cables o la

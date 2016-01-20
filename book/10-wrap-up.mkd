@@ -1,12 +1,12 @@
 Conclusiones
 ============
 
-Se ha dicho que la construcción de Internet resolvió el problema de ingeniería
-más complejo planteado hasta ahora. El diseño e ingeniería de Internet comenzó hace
+Se ha dicho que la construcción de Internet ha resuelto el problema de ingeniería
+más complejo planteado hasta la fecha. El diseño e ingeniería de Internet comenzó hace
 más de 50 años. Durante ese tiempo ha ido continuamente mejorando y evolucionando,
 y continuará haciéndolo en el futuro.
 
-Internet hoy conecta miles de millones de equipos usando muchos miles de routers
+Internet conecta actualmente miles de millones de equipos usando muchos miles de routers
 y conexiones de enlace entre ellos. Internet resulta tan complejo que nunca está
 plenamente operativo, Internet no trata de ser "perfecto", sino de adaptarse
 a los problemas, cortes, errores, pérdida de datos, y muchos otros
@@ -30,7 +30,7 @@ destino. La capa IP ajusta dinámicamente y redirige los datos basándose en la 
 soportada por la red, el rendimiento de la conexión o los posibles cortes. A pesar de
 que la capa IP es sumamente fiable y rápida, a veces pierde o incluso desecha datos.
 La capa IP no es la responsable de asegurar la fiabilidad global de la red.
-Simplemente, mueve los datos lo mejor que puede.
+Simplemente, desplaza los datos lo mejor que puede.
 
 * La capa de Transporte compensa cualquier imperfección de las capas IP o de Acceso.
 La capa de Transporte se asegura de que cualquier paquete perdido sea vuelto a
@@ -54,7 +54,7 @@ sumamente innovadoras que funcionan sin necesidad de realizar ningún cambio en 
 protocolos de Internet.
 
 Si no se hubiera dividido el problema de diseño y construcción de Internet en esas
-cuatro capas diferentes, hubiera resultado mucho más difícil crear y desplegar
+cuatro capas diferenciadas, hubiera resultado mucho más difícil crear y desplegar
 versiones cada vez mejores de la red. Y si cada aplicación tuviera que ocuparse
 por si misma de todos los complejos detalles necesarios para usar Internet, se
 hubiera limitado enormemente la riqueza y diversidad de las aplicaciones en red
@@ -63,7 +63,7 @@ que tenemos actualmente.
 Resulta asombroso darse cuenta de todo lo que se ha conseguido respecto a la
 construcción de Internet a lo largo de los últimos 50 años. Pero en cierto modo,
 tan sólo hemos iniciado el recorrido técnico para la creación de aplicaciones
-de red. No cuesta mucho imaginarse un Internet donde cada interruptor, bombilla,
+en red. No cuesta mucho imaginarse un Internet donde cada interruptor, bombilla,
 refrigerador, mesa, automóvil, carretera, drone volador, y silla dispongan de
 una dirección de Internet y puedan comunicarse unos con otros. Aparecerán nuevos
 problemas de diseño que deberán ser resueltos, y tal vez incluso el modelo
