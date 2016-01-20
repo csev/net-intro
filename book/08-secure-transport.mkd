@@ -1,8 +1,7 @@
 La Capa de Transporte Seguro
 ============================
 
-\index{Capa de Transporte}
-\index{Capa!Transporte}
+\index{Capa!de Transporte}
 En los primeros días de Internet, las redes eran pequeñas y todos los routers estaban
 situados en lugares seguros. Bastaba con que cada equipo conectado a Internet se
 protegiera a sí mismo frente a conexiones entrantes no deseadas, se creía que no había
@@ -150,7 +149,7 @@ Capa de Sockets Seguros (SSL)
 -----------------------------
 
 \index{Secure Sockets Layer}
-\index{Capa de Sockets Seguros}
+\index{Capa!de Sockets Seguros}
 \index{SSL}
 \index{TLS}
 \index{Seguridad de la Capa de Transporte}

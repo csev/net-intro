@@ -13,10 +13,10 @@ forma independiente distintos grupos.
 ![El modelo de cuatro capas TCP/IP](../images/layers)
 
 
-\index{Capa de Acceso al medio}
-\index{Capa de Internet}
-\index{Capa de Transporte}
-\index{Capa de Aplicación}
+\index{Capa!de Acceso al medio}
+\index{Capa!de Internet(IP)}
+\index{Capa!de Transporte}
+\index{Capa!de Aplicación}
 Esas cuatro áreas de diseño recibieron los siguientes nombres:
 (1) Acceso al medio, (2) Internet, (3) Transporte, y (4) Aplicación.
 Se representan las distintas áreas como capas, apiladas unas encima de otras,
@@ -259,8 +259,7 @@ los equipos de origen y destino.
 La Capa de Aplicación
 ---------------------
 
-\index{Capa de Aplicación}
-\index{Capa!Aplicación}
+\index{Capa!de Aplicación}
 Las capas de Acceso, Internet y Transporte colaboran juntas para hacer llegar los datos
 de forma rápida y segura de un equipo a otro, a través de una red de redes compartidas.
 Con esta capacidad para mover los datos de forma fiable, la cuestión siguiente

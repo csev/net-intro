@@ -1,8 +1,7 @@
 La Capa de Internet (IP)
 ========================
 
-\index{Capa de Internet(IP)}
-\index{Capa!Internet(IP)}
+\index{Capa!de Internet(IP)}
 Ahora que ya podemos mover los datos a través de un único enlace, es el momento de
 averiguar cómo desplazarlos hasta la otra parte del país o alrededor del mundo. Para
 enviar datos desde un equipo hasta cualquiera de los miles de millones de destinos
