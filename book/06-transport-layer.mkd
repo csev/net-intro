@@ -1,6 +1,7 @@
 La Capa de Transporte
 =====================
 \index{Capa!de Transporte}
+\index{Transporte, Capa de}
 \index{TCP}
 
 La capa situada inmediatamente por encima de la de Internet es la capa de Transporte.

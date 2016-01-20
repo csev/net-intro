@@ -2,6 +2,7 @@ La Capa de Aplicación
 =====================
 
 \index{Capa!de Aplicación}
+\index{Aplicación, Capa de}
 Hemos ido estudiando nuestro modelo de red de cuatro capas TCP/IP desde abajo hacia
 arriba, y por fin nos encontramos en la cima. La capa de Aplicación es el lugar
 donde opera el software de red, como navegadores web, programas de correo o

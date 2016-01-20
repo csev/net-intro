@@ -2,6 +2,7 @@ La Capa de Acceso al medio
 ==========================
 
 \index{Capa!de Acceso al medio}
+\index{Acceso al medio, Capa de}
 La capa inferior de nuestra arquitectura de Internet es la capa de Acceso al
 medio. Le llamamos la "capa inferior" porque es la más próxima al medio físico de
 la red. Habitualmente, la capa de Acceso transmite datos usando un cable, fibra

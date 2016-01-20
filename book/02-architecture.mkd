@@ -17,6 +17,10 @@ forma independiente distintos grupos.
 \index{Capa!de Internet(IP)}
 \index{Capa!de Transporte}
 \index{Capa!de Aplicación}
+\index{Acceso al medio, Capa de}
+\index{Internet(IP), Capa de}
+\index{Transporte, Capa de}
+\index{Aplicación, Capa de}
 Esas cuatro áreas de diseño recibieron los siguientes nombres:
 (1) Acceso al medio, (2) Internet, (3) Transporte, y (4) Aplicación.
 Se representan las distintas áreas como capas, apiladas unas encima de otras,
