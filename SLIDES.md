@@ -1,3 +1,3 @@
-Slides
-======
-Under construction
+Diapositivas
+============
+En construcción

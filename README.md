@@ -1,19 +1,19 @@
-Introduction to Networking
-===========================
+Introducción a las Redes
+========================
 
-This is my under-development book and website introducing 
-network technology.
+Este es mi libro (en desarrollo) y sitio web de introducción
+a la tecnología de red.
 
-The web site is under development.
+El sitio web está aún en desarrollo.
 
-You can view or view the latest version of the book in 
-<a href="http://do1.dr-chuck.com/net-intro/EN_us/net-intro.pdf" target="_blank">PDF</a>
-or
-<a href="http://do1.dr-chuck.com/net-intro/EN_us/net-intro.epub" target="_blank">EPUB</a>
-(rebuilt hourly)
+Puedes ver o descargar la última versión del libro en
+<a href="http://do1.dr-chuck.com/net-intro/ES_es/net-intro.pdf" target="_blank">PDF</a>
+o
+<a href="http://do1.dr-chuck.com/net-intro/ES_es/net-intro.epub" target="_blank">EPUB</a>
+(actualizados cada hora)
 
-You can explore the quizzes from the end-of-chapter questions 
-<a href="http://www.net-intro.com/quiz/" target="_blank">here</a>.
+Puedes realizar los cuestionarios del final de cada capítulo
+<a href="http://www.net-intro.com/quiz/" target="_blank">aquí</a>.
 
-You can check out this repo and find the book materials in the
-book folder.
+Puedes también explorar este repositorio y localizar el contenido del libro
+dentro de la carpeta book.
