@@ -1,16 +1,17 @@
-Introduction to Networking
-==========================
+Introducción a las Redes
+========================
 
-This is my under-development book on introduction to network
-technology.  
+Este es mi libro (en desarrollo) de introducción a la tecnología
+de redes.
 
-You can view or view the latest version of the book in 
+
+Puedes ver o descargar la última versión del libro en 
 <a href="http://do1.dr-chuck.com/net-intro/EN_us/net-intro.pdf" target="_blank">PDF</a>
-or
+o
 <a href="http://do1.dr-chuck.com/net-intro/EN_us/net-intro.epub" target="_blank">EPUB</a>
-(rebuilt hourly)
+(actualizado cada hora)
 
-To build the book yourself, install *pandoc* and run
+Para crear el libro tú mismo, instala *pandoc* y ejecuta
 
     pandoc --default-image-extension=svg --epub-stylesheet=epub.css *.mkd -o x.epub
 
@@ -18,31 +19,33 @@ To build the book yourself, install *pandoc* and run
 
     pandoc -s -N --toc --default-image-extension=eps -V fontsize:11pt -V documentclass:book --template=template.latex *.mkd -o x.pdf 
 
-Or some similar pandoc command.
+O algún comando de pandoc similar.
 
-You can also run the pdf through LaTeX using 
+También puedes obtener el pdf a través de LaTeX, usando
 
 	sh book.sh
+	
+Ten en cuenta que el índice necesita dos pasadas.
 
-Since the index requires two passes.
-
-You can also generate audio readings of all of the chapters in the audio folder
-using 
+También puedes generar archivos de audio con todos los capítulos en la carpeta
+audio, usando
 
 	sh audio.sh
 
-If you are on a Mac.
+Si usas un Mac.
 
-Spell checking:
+Comprobación de ortografía:
 
     aspell -c 09-OSI.mkd
 
-The illustrations for this book are being developed by Mauro Toselli
-and Sue Blumenberg is doing copy editing.
+Las ilustraciones de este libro han sido creadas por Mauro Toselli
+y Sue Blumenberg está realizando la edición de las copias.
 
-While this is under development, please do not reuse any of this material.
-The book is Copyright All Rights Reserved - Charles R. Severance and the 
-sketchnote figures are Copyright All Rights Reserved - Mauro Toselli.
+Por favor, no reutilices nada de este material, ya que está aún en desarrollo.
+El libro tiene los derechos de reproducción reservados por Charles R. Severance
+(Copyright All Rights Reserved - Charles R. Severance)
+y los derechos de reproducción de las figuras sketchnote corresponden a Mauro Toselli
+(Copyright All Rights Reserved - Mauro Toselli).
 
-When the book is completed and published we will put a more liberal copyright
-on all of the materials.
+Cuando el libro esté finalizado y publicado, pondré unos derechos de reproducción
+más liberales para todo su contenido.

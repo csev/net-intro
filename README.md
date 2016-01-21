@@ -12,7 +12,7 @@ o
 <a href="http://do1.dr-chuck.com/net-intro/ES_es/net-intro.epub" target="_blank">EPUB</a>
 (actualizados cada hora)
 
-Puedes realizar los cuestionarios del final de cada capítulo
+Puedes realizar los cuestionarios con las preguntas del final de cada capítulo
 <a href="http://www.net-intro.com/quiz/" target="_blank">aquí</a>.
 
 Puedes también explorar este repositorio y localizar el contenido del libro
