@@ -1,6 +1,6 @@
 config.php
 quiz_new.json
-*.pdf
+x.pdf
 *.mobi
 *.epub
 *.tex
