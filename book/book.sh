@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # For yucks make the epub
-pandoc --default-image-extension=svg --epub-stylesheet=epub.css *.mkd -o x.epub
+pandoc --default-image-extension=svg --epub-cover=cover/intro_networking_frontcover_final.png --epub-stylesheet=epub.css *.mkd -o x.epub
 
 rm tmp.* *.tmp *.aux
 pandoc A1-preface.mkd -o tmp.prefacex.tex
