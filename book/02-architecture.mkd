@@ -139,7 +139,7 @@ pasa a través de la capa de acceso de un router a otro, se dice que realiza un 
 La Capa de Internet (IP)
 ---------------------------
 Una vez que un paquete destinado a Internet ha realizado su recorrido a través de la
-primera conexión, pasará a encontrarse dentro un router. El paquete tiene una
+primera conexión, pasará a encontrarse dentro de un router. El paquete tiene una
 dirección de origen y otra de destino, y el router necesita fijarse en la dirección
 de destino para averiguar cuál puede ser el mejor movimiento para dirigir ese paquete
 hacia su destino. Con cada router gestionando paquetes destinados a cualquiera de los
@@ -148,10 +148,10 @@ router conozca la ubicación exacta ni cual sería la mejor ruta para cualquier 
 equipo de destino. De modo que el router hace lo que puede para intentar adivinar cómo
 dejar tu paquete lo más cerca posible de su objetivo.
 
-Cada uno de los demás routers por los que va pasando a lo largo del camino van
-haciendo también lo que pueden para dejar el paquete lo más cerca posible del
+Cada uno de los demás routers por los que el paquete va pasando a lo largo del camino
+van haciendo también lo que pueden para enviarlo lo más cerca posible del
 equipo de destino. A medida que el paquete va acercándose a su destino
-definitivo, los routers tienen una idea más precisa de a dónde debe ir el
+definitivo, los routers tienen una idea más precisa de a dónde debe ir ese
 paquete. Cuando el paquete alcanza la última conexión de su viaje,
 la capa de acceso ya sabe exactamente dónde debe enviarlo.
 
