@@ -153,7 +153,7 @@ van haciendo también lo que pueden para enviarlo lo más cerca posible del
 equipo de destino. A medida que el paquete va acercándose a su destino
 definitivo, los routers tienen una idea más precisa de a dónde debe ir ese
 paquete. Cuando el paquete alcanza la última conexión de su viaje,
-la capa de acceso ya sabe exactamente dónde debe enviarlo.
+la capa de acceso ya sabe exactamente a dónde debe enviarlo.
 
 Las personas usamos un método parecido para viajar cuando salimos de vacaciones. Un
 viaje para ir de vacaciones tiene también muchos saltos. A lo mejor el primer salto
