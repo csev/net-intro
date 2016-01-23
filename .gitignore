@@ -1,8 +1,7 @@
 config.php
 quiz_new.json
 x.pdf
-*.mobi
-*.epub
+x.epub
 *.tex
 *.html
 *.mp4
