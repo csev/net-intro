@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Introduction to Networking: How the Internet Works</title>
+<title>Introducción a las redes: Cómo funciona Internet</title>
 <?php require_once('head.php'); ?>
 </head>
 <body>
@@ -8,17 +8,17 @@
 
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1>Introduction to Networking: How the Internet Works</h1>
-        <p class="lead">This site is being built 
-as a source of Open Educational Resources to support my 
-<a target="_new" href="http://www.amazon.com/gp/product/1511654945/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1511654945&linkCode=as2&tag=drchu02-20&linkId=LUI4PZVNIMWUGOGS">textbook</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=drchu02-20&l=as2&o=1&a=1511654945" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
-on TCP/IP network technologies.  
-I am also exploring a new approach to bulding remixable 
-OER materials.
-You can see the course code for the book in my 
-<a href="https://github.com/csev/net-intro/commits/master" target="_blank">GitHub repository</a>.  
-Feel free to submit a pull request if you find something 
-that needs fixing.  Thanks in advance.</p>
+        <h1>Introducción a las redes: Cómo funciona Internet</h1>
+        <p class="lead">Este sitio está en construcción
+como fuente de recursos de Educación Abierta de apoyo para mi		
+<a target="_new" href="http://www.amazon.com/gp/product/1511654945/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1511654945&linkCode=as2&tag=drchu02-20&linkId=LUI4PZVNIMWUGOGS">libro de texto</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=drchu02-20&l=as2&o=1&a=1511654945" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+sobre tecnologías de red TCP/UP.
+También estoy probando un método nuevo para crear materiales
+OER reutilizables.
+Puedes ver el código actual del libro en mi
+<a href="https://github.com/csev/net-intro/commits/master" target="_blank">repositorio GitHub</a>.  
+Si encuentras algo que necesite ser corregido, tómate la
+libertad de enviar un "pull request". Gracias por adelantado.</p>
         <span style="float:right">
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
@@ -33,33 +33,33 @@ that needs fixing.  Thanks in advance.</p>
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-lg-4">
-          <h2>TextBook</h2>
-          <p>There is a cool textbook with 
-            sketchnote images by Mauro Toselli.  Electronic copies are free with a CC-BY
-             license and the print copy is CC-BY-NC.</p>
-          <p><a class="btn btn-primary" href="http://do1.dr-chuck.com/net-intro/EN_us/net-intro.pdf" target="_blank">PDF &raquo;</a>
-          <a class="btn btn-primary" href="http://do1.dr-chuck.com/net-intro/EN_us/net-intro.epub" target="_blank">EPUB &raquo;</a>
+          <h2>Libro de texto</h2>
+          <p>Existe un estupendo libro de texto con
+			imágenes sketchonte de Mauro Toselli. Las copias electrónicas son libres, con un
+			licencia CC-BY y las copias impresas son CC-BY-NC.</p>
+          <p><a class="btn btn-primary" href="http://do1.dr-chuck.com/net-intro/ES_es/net-intro.pdf" target="_blank">PDF &raquo;</a>
+          <a class="btn btn-primary" href="http://do1.dr-chuck.com/net-intro/ES_es/net-intro.epub" target="_blank">EPUB &raquo;</a>
           <a class="btn btn-primary" href="http://www-personal.umich.edu/~csev/books/net-intro/audio/" target="_blank">Audio &raquo;</a>
-<a class="btn btn-primary" href="http://www.amazon.com/gp/product/1511654945/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1511654945&linkCode=as2&tag=drchu02-20&linkId=LUI4PZVNIMWUGOGS">Amazon &raquo;</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=drchu02-20&l=as2&o=1&a=1511654945" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+<a class="btn btn-primary" href="http://www.amazon.com/Introduccion-las-redes-funciona-Internet/dp/1523627514/ref=sr_1_3?s=books&ie=UTF8&qid=1453645903&sr=1-3">Amazon &raquo;</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=drchu02-20&l=as2&o=1&a=1511654945" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 </p>
         </div>
         <div class="col-lg-4">
-          <h2>Slides</h2>
-          <p>The slides for the book will be produced using 
+          <h2>Diapositivas</h2>
+          <p>Las diapositivas de este libro se han creado utilizando 
 <a href="http://lab.hakim.se/reveal-js/#/" target="_blank">Reveal.JS</a>
-and
+y
 <a href="http://csev.github.io/dazzleSketch/" target="_blank">DazzleSketch</a>.
-For a fun time, Press CTRL-1 and hold down your mouse 
-to scribble on the slides.</p>
-          <p><a class="btn btn-primary" href="slides/index.php" role="button">View Sample Slides &raquo;</a>
+Si quieres divertirte, teclea CTRL-1 y mantén pulsado el botón del ratón
+para dibujar sobre las diapositivas.</p>
+          <p><a class="btn btn-primary" href="slides/index.php" role="button">Ver presentación con diapositivas &raquo;</a>
           </p>
        </div>
         <div class="col-lg-4">
-          <h2>Quizzes</h2>
-          <p>Each chapter has end-of-chapter questions.  Those questions
-are available as quizzes that can be taken online.
+          <h2>Cuestionarios</h2>
+          <p>Cada capítulo dispone de preguntas al final. Esas preguntas
+estás disponibles en forma de cuestionarios que pueden realizarse online.
 </p>
-          <p><a class="btn btn-primary" href="quiz/" role="button">Take a Quiz &raquo;</a></p>
+          <p><a class="btn btn-primary" href="quiz/" role="button">Realiza un cuestionario &raquo;</a></p>
         </div>
       </div>
 
@@ -85,7 +85,7 @@ are available as quizzes that can be taken online.
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+<noscript>Por favor, activa JavaScript para ver los <a href="https://disqus.com/?ref_noscript" rel="nofollow">comentarios gracias a Disqus.</a></noscript>
 </div>
 
 </body>

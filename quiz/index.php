@@ -24,14 +24,14 @@ $quizzes = json_decode(file_get_contents("quizzes.json"), true);
 <html>
 <head>
 <?php require_once('../head.php'); ?>
-<title>Quiz</title>
+<title>Cuestionario</title>
 </head>
 <body style="font-family: sans-serif;">
 <?php
 
 
 if ( ! isset($_REQUEST['quiz']) ) {
-    echo('<h1>Quizzes <small>(<a href="../index.php">Back to Net-Intro</a>)</small></h1>');
+    echo('<h1>Cuestionarios <small>(<a href="../index.php">Volver a Net-Intro</a>)</small></h1>');
     echo("<ol>\n");
     foreach ($quizzes as $file => $quiz ) {
         $f = str_replace(".mkd","",$file);
@@ -51,7 +51,7 @@ foreach ($quizzes as $file => $quiz ) {
 }
 
 if ( $thequiz === false ) {
-    echo("<p>Quiz not found</p>");
+    echo("<p>Cuestionario no encontrado</p>");
     exit();
 }
 
