@@ -1,1089 +1,1089 @@
 {
     "01-packets.mkd": {
-        "title": "Introduction",
+        "title": "Introducci\u00f3n",
         "questions": [
             {
-                "question": "What did early telephone operators do?",
-                "answer": 390456983,
+                "question": "\u00bfQu\u00e9 hac\u00edan los primeros operadores telef\u00f3nicos?",
+                "answer": 0,
                 "answers": [
-                    "Maintained cell phone towers",
-                    "Connected pairs of wires to allow people to talk",
-                    "Installed copper wire between cities",
-                    "Sorted packets as they went to the correct destination"
+                    "Manten\u00edan las torres de telefon\u00eda m\u00f3vil",
+                    "Conectaban pares de cables para permitir a la gente hablar",
+                    "Instalaban cable de cobre entre ciudades",
+                    "Ordenaban los paquetes para que llegasen al destino correcto"
                 ],
-                "md5": "24114dedd7c90b3c4d1d4ba47857a2ac"
+                "md5": "f97334cc3ee5659822c9690e178bf13c"
             },
             {
-                "question": "What is a leased line?",
-                "answer": 388476983,
+                "question": "\u00bfQu\u00e9 es una l\u00ednea arrendada (o dedicada)?",
+                "answer": 0,
                 "answers": [
-                    "A boundary between leased and owned telephone equipment",
-                    "A connection between a keyboard and monitor",
-                    "A wire that ran from one phone company office to another",
-                    "An \"always on\" telephone connection"
+                    "Una frontera entre el equipamiento telef\u00f3nico alquilado y el propio",
+                    "Una conexi\u00f3n entre un teclado y un monitor",
+                    "Un cable tendido entre una oficina de una compa\u00f1\u00eda telef\u00f3nica y otra",
+                    "Una conexi\u00f3n telef\u00f3nica \"siempre activa\""
                 ],
-                "md5": "0ae2812b83d73d0db4768d18023a8c28"
+                "md5": "6d0f652ef8862eb8da96eb8912dcf5d4"
             },
             {
-                "question": "How long might a message be stored in an intermediate computer for a store-and-forward network?",
-                "answer": 606496983,
+                "question": "\u00bfDurante cu\u00e1nto tiempo puede ser almacenado un mensaje en un equipo intermedio en una red de almacenamiento-y-reenv\u00edo?",
+                "answer": 0,
                 "answers": [
-                    "less than a second",
-                    "no more than four seconds",
-                    "less than a minute",
-                    "possibly as long as several hours"
+                    "Menos de un segundo",
+                    "No m\u00e1s de cuatro segundos",
+                    "Menos de un minuto",
+                    "Posiblemente hasta varias horas"
                 ],
-                "md5": "48c76e62fab7bfd54fdfd254f7fc3a67"
+                "md5": "df8963e7bb638bb212153c08371481e6"
             },
             {
-                "question": "What is a packet?",
-                "answer": 343880983,
+                "question": "\u00bfQu\u00e9 es un paquete?",
+                "answer": 0,
                 "answers": [
-                    "A technique for wrapping items for shipping",
-                    "A small box used for storage",
-                    "A portion of a larger message that is sent across a network",
-                    "The amount of data that could be stored on an early punched card"
+                    "Una t\u00e9cnica de envasado de art\u00edculos para su env\u00edo",
+                    "Una caja peque\u00f1a usada para almacenar cosas",
+                    "Un trozo de un mensaje m\u00e1s extenso, que se env\u00eda a trav\u00e9s de una red",
+                    "La cantidad de datos que pod\u00eda almacenarse en una antigua tarjeta perforada"
                 ],
-                "md5": "03b4a7a2ef191326b31d6917b20b2815"
+                "md5": "b3080ea8a793240c3ac0e62c71803db7"
             },
             {
-                "question": "Which of these is most like a router?",
-                "answer": 581718983,
+                "question": "\u00bfCu\u00e1l de las siguiente opciones se parece m\u00e1s a un router?",
+                "answer": 0,
                 "answers": [
-                    "A mail sorting facility",
-                    "A refrigerator",
-                    "A high-speed train",
-                    "An undersea telecommunications cable"
+                    "Las instalaciones de un sistema de clasificaci\u00f3n de correo",
+                    "Una nevera o refrigerador",
+                    "Un tren de alta velocidad",
+                    "Un cable de telecomunicaciones submarino"
                 ],
-                "md5": "07597ef4a10050b4df5f234e4607c0a3"
+                "md5": "6b625afd0afdf1cf43cb040f4c86d360"
             },
             {
-                "question": "What was the name given to early network routers?",
-                "answer": 153609983,
+                "question": "\u00bfCu\u00e1l fue el nombre elegido para los routers de las primeras redes?",
+                "answer": 0,
                 "answers": [
-                    "Interfaith Message Processors",
-                    "Internet Motion Perceptrons",
-                    "Instant Message Programs",
-                    "Interface Message Processors"
+                    "Procesadores de Mensajes Interconfiables",
+                    "Perceptrones de Movimientos de Internet",
+                    "Programas de Mensajer\u00eda Instant\u00e1nea",
+                    "Interfaces de Procesamiento de Mensajes"
                 ],
-                "md5": "d3ad5833ea699280676f8496350f0eae"
+                "md5": "1377d43a5d6686a2abdb27fc9b8435e1"
             },
             {
-                "question": "In addition to breaking large messages into smaller segments to be sent, what else was needed to properly route each message segment?",
-                "answer": 759107983,
+                "question": "Adem\u00e1s de dividir los mensajes extensos en segmentos m\u00e1s peque\u00f1os para ser enviados, \u00bfqu\u00e9 m\u00e1s se necesit\u00f3 para encaminar correctamente cada segmento de mensaje?",
+                "answer": 0,
                 "answers": [
-                    "A source and destination address on each message segment",
-                    "An ID and password for each message segment",
-                    "A small battery to maintain the storage for each message segment",
-                    "A small tracking unit like a GPS to find lost messages"
+                    "Una direcci\u00f3n de origen y de destino para cada segmento del mensaje",
+                    "Un identificador y contrase\u00f1a para cada segmento del mensaje",
+                    "Una peque\u00f1a bater\u00eda para mantener el almacenamiento de cada segmento del mensaje",
+                    "Una peque\u00f1a unidad de seguimiento, como un GPS, para encontrar los mensajes perdidos"
                 ],
-                "md5": "3edbe33e98f60a1446bed1d14b0d8dfd"
+                "md5": "61c7d4420d2122af8fb150cd64f807e1"
             },
             {
-                "question": "Why is it virtually free to send messages around the world using the Internet?",
-                "answer": 909741983,
+                "question": "\u00bfPor qu\u00e9 resulta virtualmente gratuito enviar mensajes alrededor del mundo usando Internet?",
+                "answer": 0,
                 "answers": [
-                    "Because governments pay for all the connections",
-                    "Because advertising pays for all the connections",
-                    "Because so many people share all the resources",
-                    "Because it is illegal to charge for long-distance connections"
+                    "Porque los gobiernos pagan por todas las conexiones",
+                    "Porque la publicidad paga por todas las conexiones",
+                    "Porque mucha gente comparte todos los recursos",
+                    "Porque es ilegal cobrar por conexiones de larga distancia"
                 ],
-                "md5": "0d5c828de5ece7bba509a2b24770a0b4"
+                "md5": "69314cf3aee2a33795bf97dcd184efcb"
             }
         ]
     },
     "02-architecture.mkd": {
-        "title": "Network Architecture",
+        "title": "La arquitectura de la red",
         "questions": [
             {
-                "question": "Why do engineers use a \"model\" to organize their approach to solving a large and complex problem?",
-                "answer": 228924983,
+                "question": "\u00bfPor qu\u00e9 los ingenieros utilizan un \"modelo\" a la hora de abordar la resoluci\u00f3n de un problema grande y complejo?",
+                "answer": 0,
                 "answers": [
-                    "Because it allows them to build something small and test it in a wind tunnel",
-                    "Because talking about a model delays the actual start of the hard work",
-                    "Because they can break a problem down into a set of smaller problems that can be solved independently",
-                    "Because it helps in developing marketing materials"
+                    "Porque les permite construir algo peque\u00f1o y probarlo en un t\u00fanel de viento",
+                    "Porque discutir sobre un modelo les permite retrasar el comienzo del trabajo duro de verdad",
+                    "Porque pueden dividir un problema en un conjunto de problemas m\u00e1s peque\u00f1os que pueden ser resueltos cada uno de forma independiente",
+                    "Porque les ayuda a desarrollar herramientas de marketing"
                 ],
-                "md5": "daddbcbf86c3758b667144fb3230d4ae"
+                "md5": "726f60513453e95c4bdc98cc721a388d"
             },
             {
-                "question": "Which is the top layer of the network model used by TCP/IP networks?",
-                "answer": 975145983,
+                "question": "\u00bfCual es la capa superior del modelo de red usado en las redes TCP/IP?",
+                "answer": 0,
                 "answers": [
-                    "Application",
-                    "Transport",
-                    "Internetwork",
-                    "Link"
+                    "Aplicaci\u00f3n",
+                    "Transporte",
+                    "Internet",
+                    "Acceso al medio"
                 ],
-                "md5": "4646c179b4049ae041415b12194c8ae8"
+                "md5": "c9337618794fcbe6783ed8f1c9264a4f"
             },
             {
-                "question": "Which of the layers concerns itself with getting a packet of data across a single physical connection?",
-                "answer": 675866983,
+                "question": "\u00bfCu\u00e1l de las capas se ocupa de trasladar un paquete de datos a trav\u00e9s de una \u00fanica conexi\u00f3n f\u00edsica?",
+                "answer": 0,
                 "answers": [
-                    "Application",
-                    "Transport",
-                    "Internetwork",
-                    "Link"
+                    "Aplicaci\u00f3n",
+                    "Transporte",
+                    "Internet",
+                    "Acceso al medio"
                 ],
-                "md5": "b0a8598d96ae4563cae322f2d3e6e914"
+                "md5": "499f997b3af458616f9b3b1485de7003"
             },
             {
-                "question": "What does CSMA/CD stand for?",
-                "answer": 687755983,
+                "question": "\u00bfQu\u00e9 significa CSMA/CD?",
+                "answer": 0,
                 "answers": [
-                    "Carrier Sense Multiple Access with Collision Detection",
-                    "Collision Sense Media Access with Continuous Direction",
-                    "Correlated Space Media Allocation with Constant Division",
-                    "Constant State Multiple Address Channel Divison"
+                    "Acceso M\u00faltiple con Escucha de Portadora y Detecci\u00f3n de Colisiones (*Carrier Sense Multiple Access with Collision Detection*)",
+                    "Acceso al Medio con Escucha de Colisiones y Direcci\u00f3n Continua (*Collision Sense Media Access with Continuous Direction*)",
+                    "Distribuci\u00f3n del Medio con Espacio Correlativo y Divisi\u00f3n Constante (*Correlated Space Media Allocation with Constant Division*)",
+                    "Direccionamiento M\u00faltiple de la Divisi\u00f3n del Canal de Estado Constante (*Constant State Multiple Address Channel Divison*)"
                 ],
-                "md5": "819d8875bccac443145330fc45126013"
+                "md5": "819a4a9d6bf0d79cb4447d2558391844"
             },
             {
-                "question": "What is the goal of the Internetwork layer?",
-                "answer": 215049983,
+                "question": "\u00bfCual es la funci\u00f3n de la capa de Internet?",
+                "answer": 0,
                 "answers": [
-                    "Insure that no data is lost while enroute",
-                    "Get a packet of data moved across multiple networks from its source to its destination",
-                    "Make sure that only logged-in users can use the Internet",
-                    "Insure than WiFi is fairly shared across multiple computers"
+                    "Asegurarse de que no se pierden datos durante el recorrido",
+                    "Hacer que un paquete de datos se mueva a trav\u00e9s de m\u00faltiples redes desde su origen hasta su destino",
+                    "Asegurarse de que solo pueden usar Internet aquellos usuarios que han iniciado sesi\u00f3n",
+                    "Garantizar que el WiFi se comparta correctamente entre varios equipos"
                 ],
-                "md5": "789fd46b2b575cd680d70a4ec259e76a"
+                "md5": "5f39fd555cc0aba7a39023cfc9cbffb0"
             },
             {
-                "question": "In addition to the data, source, and destination addresses, what else is needed to make sure that a message can be reassembled when it reaches its destination?",
-                "answer": 708566983,
+                "question": "Adem\u00e1s de los datos y direcciones de origen y destino, \u00bfqu\u00e9 m\u00e1s se necesita para asegurarse de que un mensaje pueda ser reconstruido cuando alcanza su destino?",
+                "answer": 0,
                 "answers": [
-                    "An offset of where the packet belongs relative to the beginning of the message",
-                    "A location to send the data to if the destination computer is down",
-                    "A compressed and uncompressed version of the data in the packet",
-                    "The GPS coordinates of the destination computer"
+                    "Un offset o \u00edndice que indique la posici\u00f3n que ocupa el paquete respecto al inicio del mensaje",
+                    "Una ubicaci\u00f3n a la que enviar los datos si el equipo de destino est\u00e1 apagado",
+                    "Una versi\u00f3n comprimida y otra sin comprimir de los datos del paquete",
+                    "Las coordenadas GPS del equipo de destino"
                 ],
-                "md5": "e2f6b4b6e63f6ba963504b15c0fbd2c7"
+                "md5": "c85f51e0212da3f4f2475f8fa607aff8"
             },
             {
-                "question": "What is \"window size\"?",
-                "answer": 258655983,
+                "question": "\u00bfQu\u00e9 es el \"tama\u00f1o de ventana\"?",
+                "answer": 0,
                 "answers": [
-                    "The sum of the length and width of a packet",
-                    "The maximum size of a single packet",
-                    "The maximum number of packets that can make up a message",
-                    "The maximum amount of data a computer can send before receiving an acknowledgement"
+                    "La suma de la longitud y anchura de un paquete",
+                    "El tama\u00f1o m\u00e1ximo de un \u00fanico paquete",
+                    "El n\u00famero m\u00e1ximo de paquetes que pueden formar un mensaje",
+                    "La cantidad m\u00e1xima de datos que un equipo puede enviar antes de recibir una confirmaci\u00f3n de recepci\u00f3n"
                 ],
-                "md5": "ef96a8b1f3bb711f4475ae4a91246ba3"
+                "md5": "bc93aa5424644817b2357c8abf42ace4"
             },
             {
-                "question": "In a typical networked client/server application, where does the client application run?",
-                "answer": 498474983,
+                "question": "En una aplicaci\u00f3n de red t\u00edpica cliente/servidor, \u00bfd\u00f3nde se ejecuta la aplicaci\u00f3n cliente?",
+                "answer": 0,
                 "answers": [
-                    "On your laptop, desktop, or mobile computer",
-                    "On a wireless access point",
-                    "On the closest router",
-                    "In an undersea fiber optic cable"
+                    "En tu port\u00e1til (laptop), computadora o m\u00f3vil (celular)",
+                    "En un punto de acceso inal\u00e1mbrico",
+                    "En el router m\u00e1s cercano",
+                    "En un cable de fibra \u00f3ptica submarino"
                 ],
-                "md5": "5be24618a819e9550c241dd84fde5ef5"
+                "md5": "9ed6bda65afd364c942167bf9aec8afc"
             },
             {
-                "question": "What does URL stand for?",
-                "answer": 412259983,
+                "question": "\u00bfQu\u00e9 significa URL?",
+                "answer": 0,
                 "answers": [
-                    "Universal Routing Linkage",
-                    "Uniform Retransmission Logic",
-                    "Uniform Resource Locator",
-                    "Unified Recovery List"
+                    "Enlace de Enrutamiento Universal (*Universal Routing Linkage*)",
+                    "L\u00f3gica de Retransmisi\u00f3n Uniforme (*Uniform Retransmission Logic*)",
+                    "Localizador Uniforme de Recursos (*Uniform Resource Locator*)",
+                    "Lista de Recuperaci\u00f3n Unificada (*Unified Recovery List*)"
                 ],
-                "md5": "ec8a6298b141d1e1c2dc744a58e40635"
+                "md5": "27cb4fc68616f5b656006b4977a87dcc"
             }
         ]
     },
     "03-link-layer.mkd": {
-        "title": "Link Layer",
+        "title": "La Capa de Acceso al medio",
         "questions": [
             {
-                "question": "When using a WiFi network to talk to the Internet, where does your computer send its packets?",
-                "answer": 334959983,
+                "question": "Cuando utilizas una red WiFi para comunicarse con Internet, \u00bfa d\u00f3nde env\u00eda sus paquetes tu equipo?",
+                "answer": 0,
                 "answers": [
-                    "A gateway",
-                    "A satellite",
-                    "A cell phone tower",
-                    "The Internet Central Office"
+                    "A la puerta de acceso (*gateway*)",
+                    "Al sat\u00e9lite",
+                    "A la torre de telefon\u00eda m\u00f3vil (celular)",
+                    "A la oficina central de Internet"
                 ],
-                "md5": "0442f9e77a13d1c1c6cb99ee1a2e669d"
+                "md5": "5015a0f2d0453e3783ce744a6d594948"
             },
             {
-                "question": "How is the link/physical address for a network device assigned?",
-                "answer": 527215983,
+                "question": "\u00bfQui\u00e9n asigna la direcci\u00f3n de acceso/f\u00edsica a un dispositivo de red?",
+                "answer": 0,
                 "answers": [
-                    "By the cell tower",
-                    "By the Internet Assignment Numbers Authority (IANA)",
-                    "By the manufacturer of the link equipment",
-                    "By the government"
+                    "Una torre de telefon\u00eda m\u00f3vil (celular)",
+                    "La Autoridad de Asignaci\u00f3n de N\u00fameros de Internet (IANA)",
+                    "El fabricante del dispositivo de conexi\u00f3n",
+                    "El gobierno"
                 ],
-                "md5": "8c7104334155aedd84371a74c8ba62a6"
+                "md5": "9b41d27af31d1cb1aa8a59190be087eb"
             },
             {
-                "question": "Which of these is a link address?",
-                "answer": 467753983,
+                "question": "\u00bfCu\u00e1l de las siguientes es una direcci\u00f3n de acceso?",
+                "answer": 0,
                 "answers": [
                     "0f:2a:b3:1f:b3:1a",
                     "192.168.3.14",
                     "www.khanacademy.com",
                     "@drchuck"
                 ],
-                "md5": "85c082694c4f8e2414589fbcf8d3a76d"
+                "md5": "84f3e5b22a51d5178d0cef38ab2d73d4"
             },
             {
-                "question": "How does your computer find the gateway on a WiFi network?",
-                "answer": 612440983,
+                "question": "\u00bfC\u00f3mo localiza un equipo la puerta de acceso de una red WiFi?",
+                "answer": 0,
                 "answers": [
-                    "It has a gateway address installed by the manufacturer",
-                    "It broadcasts a request for the address of the gateway",
-                    "It repeatedly sends a message to all possible gateway addresses until it finds one that works",
-                    "The user must enter the gateway address by hand"
+                    "Dispone de una direcci\u00f3n de puerta de acceso, instalada por el fabricante",
+                    "Retransmite una petici\u00f3n, solicitando la direcci\u00f3n de la puerta de acceso",
+                    "Env\u00eda un mensaje de forma repetida a todas las posibles direcciones de puertas de acceso, hasta que encuentra una que funciona",
+                    "El usuario debe introducir la direcci\u00f3n de la puerta de acceso manualmente"
                 ],
-                "md5": "b5445c016e57d8e3fa70fc0c1365a029"
+                "md5": "517d52b1379a7a6378a7d1d18694471a"
             },
             {
-                "question": "When your computer wants to send data across WiFi, what is the first thing it must do?",
-                "answer": 708566983,
+                "question": "Cuando un equipo quiere enviar datos a trav\u00e9s de una red WiFi, \u00bfqu\u00e9 es lo primero que debe hacer?",
+                "answer": 0,
                 "answers": [
-                    "Listen to see if other computers are sending data",
-                    "Just start sending the data",
-                    "Send a message to the gateway asking for permission to transmit",
-                    "Wait until informed that it is your turn to transmit"
+                    "Escuchar para comprobar si otros equipos est\u00e1n enviando datos",
+                    "Simplemente, empezar a enviar los datos sin m\u00e1s",
+                    "Enviar un mensaje a la puerta de acceso, pidiendo permiso para transmitir",
+                    "Esperar hasta que reciba aviso de que ha llegado su turno para transmitir"
                 ],
-                "md5": "395004bae92a99084de2728d9e04ac89"
+                "md5": "f9bb85b7ea9b6c8e051cacb987ab4576"
             },
             {
-                "question": "What does a WiFi-connected workstation do when it tries to send data and senses a collision has happened?",
-                "answer": 338926983,
+                "question": "\u00bfQu\u00e9 hace un puesto conectado a una red WiFi cuando intenta enviar datos y se da cuenta de que se ha producido una colisi\u00f3n?",
+                "answer": 0,
                 "answers": [
-                    "Keep sending the message so part of the message makes it through",
-                    "Wait until told by the gateway that the collision is over",
-                    "Immediately restart transmitting the message at the beginning",
-                    "Stop transmitting and wait a random amount of time before restarting"
+                    "Contin\u00faa enviando el mensaje para que de todos modos llegue al menos una parte",
+                    "Espera hasta que la puerta de acceso le informa de que la colisi\u00f3n ha terminado",
+                    "Reinicia inmediatamente la transmisi\u00f3n del mensaje desde el principio",
+                    "Deja de transmitir y espera un periodo de tiempo aleatorio antes de reiniciar la transmisi\u00f3n"
                 ],
-                "md5": "85fc7379e44ec6c067d92589717c5135"
+                "md5": "41f95ce74f44eb4034a09909fcd6519d"
             },
             {
-                "question": "When a station wants to send data across a \"token\"-style network, what is the first thing it must do?",
-                "answer": 411269983,
+                "question": "Cuando un puesto quiere enviar datos a trav\u00e9s de una red de tipo testigo (*token*), \u00bfqu\u00e9 es lo primero que debe hacer?",
+                "answer": 0,
                 "answers": [
-                    "Listen to see if other computers are sending data",
-                    "Just start sending the data",
-                    "Send a message to the gateway asking for permission to transmit",
-                    "Wait until informed that it is your turn to transmit"
+                    "Escuchar para comprobar si otros equipos est\u00e1n enviando datos",
+                    "Simplemente, empezar a enviar los datos sin m\u00e1s",
+                    "Enviar un mensaje a la puerta de acceso, pidiendo permiso para transmitir",
+                    "Esperar hasta que reciba aviso de que ha llegado su turno para transmitir"
                 ],
-                "md5": "281c0e30d504ea240393cc04777c02e1"
+                "md5": "fcde4106f7e593348c8565df612563c0"
             }
         ]
     },
     "04-internet-layer.mkd": {
-        "title": "Internetworking Layer (IP)",
+        "title": "La Capa de Internet (IP)",
         "questions": [
             {
-                "question": "What is the goal of the Internetworking layer?",
-                "answer": 852261983,
+                "question": "\u00bfCu\u00e1l es la funci\u00f3n de la capa de Internet?",
+                "answer": 0,
                 "answers": [
-                    "Move packets across multiple hops from a source to destination computer",
-                    "Move packets across a single physical connection",
-                    "Deal with web server failover",
-                    "Deal with encryption of sensitive data"
+                    "Mover paquetes a trav\u00e9s de m\u00faltiples saltos desde un equipo de origen hasta uno de destino",
+                    "Mover paquetes a trav\u00e9s de una \u00fanica conexi\u00f3n f\u00edsica",
+                    "Gestionar los fallos de los servidores web",
+                    "Gestionar el cifrado de datos sensibles"
                 ],
-                "md5": "d516cfba481c8a921cd6b55f092a862d"
+                "md5": "049c7292b7230950cdf767e34b531f32"
             },
             {
-                "question": "How many different physical links does a typical packet cross from its source to its destination on the Internet?",
-                "answer": 704604983,
+                "question": "\u00bfCu\u00e1ntas conexiones diferentes usa un paquete normal cuando viaja desde su origen hasta su destino a trav\u00e9s de Internet?",
+                "answer": 0,
                 "answers": [
                     "1",
                     "4",
                     "15",
                     "255"
                 ],
-                "md5": "3dc2a4be5b52d846b23926ebc5ad1822"
+                "md5": "93290569f4e4bf4ca5c83bd7994593c7"
             },
             {
-                "question": "Which of these is an IP address?",
-                "answer": 862172983,
+                "question": "\u00bfCu\u00e1l de las siguientes es una direcci\u00f3n IP?",
+                "answer": 0,
                 "answers": [
                     "0f:2a:b3:1f:b3:1a",
                     "192.168.3.14",
                     "www.khanacademy.com",
                     "@drchuck"
                 ],
-                "md5": "1930b74de287e95f4d56a3eb64db3931"
+                "md5": "fd3985c9f9e61dff04b8755d6aa1b818"
             },
             {
-                "question": "Why is it necessary to move from IPv4 to IPv6?",
-                "answer": 963255983,
+                "question": "\u00bfPor qu\u00e9 es necesario cambiar de IPv4 a IPv6?",
+                "answer": 0,
                 "answers": [
-                    "Because IPv6 has smaller routing tables",
-                    "Because IPv6 reduces the number of hops a packet must go across",
-                    "Because we are running out of IPv4 addresses",
-                    "Because IPv6 addresses are chosen by network hardware manufacturers"
+                    "Porque IPv6 tiene tablas de enrutamiento m\u00e1s peque\u00f1as",
+                    "Porque IPv6 reduce al n\u00famero de saltos que un paquete debe realizar",
+                    "Porque nos estamos quedando sin direcciones IPv4",
+                    "Porque los fabricantes de dispositivos de red prefieren las direcciones IPv6"
                 ],
-                "md5": "76a5f38d2adc64bcbe225b8abb5098e3"
+                "md5": "46c03871314870015be9c5f39bd83668"
             },
             {
-                "question": "What is a network number?",
-                "answer": 473699983,
+                "question": "\u00bfQu\u00e9 es una direcci\u00f3n de red?",
+                "answer": 0,
                 "answers": [
-                    "A group of IP addresses with the same prefix",
-                    "The GPS coordinates of a particular LAN",
-                    "The number of hops it takes for a packet to cross the network",
-                    "The overall delay packets experience crossing the network"
+                    "Un grupo de direcciones IP con el mismo prefijo",
+                    "Las coordenadas GPS de una red de \u00e1rea local concreta",
+                    "El n\u00famero de saltos que necesita un paquete para cruzar la red",
+                    "El retraso medio que experimentan los paquetes que atraviesan la red"
                 ],
-                "md5": "edce010243ede9eba7e8775dfd0875a8"
+                "md5": "11a714a4c92a494f8a833eeda2fd3cfd"
             },
             {
-                "question": "How many computers can have addresses within network number \"218.78\"?",
-                "answer": 920642983,
+                "question": "\u00bfCu\u00e1ntos equipos pueden tener direcciones IP dentro de una red cuya direcci\u00f3n es \"218.78\"?",
+                "answer": 0,
                 "answers": [
                     "650",
                     "6500",
                     "65000",
                     "650000"
                 ],
-                "md5": "641073f354940762b6dc80df27759dfd"
+                "md5": "7cb4adead1849fdf4dc6b0f68f009cda"
             },
             {
-                "question": "How do routers determine the path taken by a packet across the Internet?",
-                "answer": 219013983,
+                "question": "\u00bfC\u00f3mo determinan los routers el camino que debe seguir un paquete a trav\u00e9s de Internet?",
+                "answer": 0,
                 "answers": [
-                    "The routes are controlled by the IRG (Internet Routing Group)",
-                    "Each router looks at a packet and forwards it based on its best guess as to the correct outbound link",
-                    "Each router sends all packets on every outbound link (flooding algorithm)",
-                    "Each router holds on to a packet until a packet comes in from the destination computer"
+                    "Las rutas son controladas por el IRG (*Internet Routing Group* o Grupo de Enrutamiento de Internet)",
+                    "Cada router se fija en un paquete y lo reenv\u00eda bas\u00e1ndose en la mejor predicci\u00f3n que es capaz de hacer acerca de cu\u00e1l es la conexi\u00f3n de salida correcta.",
+                    "Cada router env\u00eda todos los paquetes a todas las conexiones de salida (algoritmo *flooding* o inundaci\u00f3n)",
+                    "Cada router retiene un paquete hasta que llega otro desde el equipo de destino"
                 ],
-                "md5": "f300c4296fd774b4783e0e8bc79ad0d2"
+                "md5": "60d3afd30033ed57c22d498e99d8d02b"
             },
             {
-                "question": "What is a routing table?",
-                "answer": 184330983,
+                "question": "\u00bfQu\u00e9 es una tabla de enrutamiento?",
+                "answer": 0,
                 "answers": [
-                    "A list of IP addresses mapped to link addresses",
-                    "A list of IP addresses mapped to GPS coordinates",
-                    "A list of network numbers mapped to GPS coordinates",
-                    "A list of network numbers mapped to outbound links from the router"
+                    "Una lista de direcciones IP relacionadas con direcciones de acceso",
+                    "Una lista de direcciones IP relacionadas con coordenadas GPS",
+                    "Una lista de direcciones de red relacionadas con coordenadas GPS",
+                    "Una lista de direcciones de red relacionadas con conexiones de salida del router"
                 ],
-                "md5": "39e567e32da0a140203c51f4cc33056a"
+                "md5": "7cd5f1b832de27032559524b93929822"
             },
             {
-                "question": "How does a newly connected router fill its routing tables?",
-                "answer": 120906983,
+                "question": "\u00bfC\u00f3mo rellena sus tablas de enrutamiento un router reci\u00e9n conectado a la red?",
+                "answer": 0,
                 "answers": [
-                    "By consulting the IANA (Internet Assigned Numbers Authority)",
-                    "By downloading the routing RFC (Request for Comments)",
-                    "By contacting the Internet Engineering Task Force (IETF)",
-                    "By asking neighboring routers how they route packets"
+                    "Consultando a la IANA (*Internet Assigned Numbers Authority*, o Autoridad de Asignaci\u00f3n de Direcciones de Internet)",
+                    "Descargando el RFC de enrutamiento (*Request for Comments*, o Solicitud de Comentarios)",
+                    "Contactando con las Fuerzas Especiales de Ingenieros de Internet (*Internet Engineering Task Force* o IETF)",
+                    "Preguntando a los routers vecinos c\u00f3mo encaminan ellos los paquetes"
                 ],
-                "md5": "9c6c9608cf31e5a5994c35e2160733ad"
+                "md5": "d340c8c2d94d83e47a6c7ec59da74b8b"
             },
             {
-                "question": "What does a router do when a physical link goes down?",
-                "answer": 275499983,
+                "question": "\u00bfQu\u00e9 hace un router cuando una conexi\u00f3n f\u00edsica se interrumpe?",
+                "answer": 0,
                 "answers": [
-                    "Throws away all of the routing table entries for that link",
-                    "Consults the Internet Map (IMAP) service",
-                    "Does a Domain Name (DNS) looking for the IP address",
-                    "Sends all the packets for that link back to the source computer"
+                    "Descarta todas las entradas de su tabla de enrutamiento que contengan esa conexi\u00f3n",
+                    "Consulta el servicio de mapeado de Internet (IMAP)",
+                    "Realiza una b\u00fasqueda de nombre de dominio (DNS) para esa direcci\u00f3n IP",
+                    "Env\u00eda todos los paquetes relativos a esa conexi\u00f3n de vuelta al equipo de origen"
                 ],
-                "md5": "25260d40fb228d7f961da7ecd8320e3f"
+                "md5": "876d1a0a134c02a11d9af4ec2eb150b1"
             },
             {
-                "question": "Why is it good to have at least a \"two-connected\" network?",
-                "answer": 529198983,
+                "question": "\u00bfPor qu\u00e9 resulta deseable tener al menos una red \"bi-conectada\"?",
+                "answer": 0,
                 "answers": [
-                    "Because routing tables are much smaller",
-                    "Because it removes the need for network numbers",
-                    "Because it supports more IPv4 addresses",
-                    "Because it continues to function even when a single link goes down"
+                    "Porque las tablas de enrutamiento son mucho m\u00e1s peque\u00f1as",
+                    "Porque se elimina la necesidad de tener direcciones de red",
+                    "Porque soporta m\u00e1s direcciones IPv4",
+                    "Porque contin\u00faa funcionando incluso cuando se produce un corte en una conexi\u00f3n"
                 ],
-                "md5": "a0f22c27daf32dc6668fec5974440e88"
+                "md5": "b90d171a9de7ea2d26fa656acae38312"
             },
             {
-                "question": "Do all packets from a message take the same route across the Internet?",
-                "answer": 577755983,
+                "question": "\u00bfToman todos los paquetes de un mensaje la misma ruta a trav\u00e9s de Internet?",
+                "answer": 0,
                 "answers": [
-                    "Yes",
+                    "S\u00ed",
                     "No"
                 ],
-                "md5": "73baeff1bd2592868a7b25dc0eb52a73"
+                "md5": "865f0ae60b19edb2788bcac7468154c4"
             },
             {
-                "question": "How do routers discover new routes and improve their routing tables?",
-                "answer": 397393983,
+                "question": "\u00bfC\u00f3mo descubren los routers nuevas rutas y mejoran sus tablas de enrutamiento?",
+                "answer": 0,
                 "answers": [
-                    "Each day at midnight they download a new Internet map from IMAP",
-                    "They periodically ask neighboring routers for their network tables",
-                    "They randomly discard packets to trigger error-correction code within the Internet",
-                    "They are given transmission speed data by destination computers"
+                    "Cada d\u00eda a medianoche descargan un mapa de Internet nuevo desde IMAP",
+                    "Preguntan peri\u00f3dicamente a los routers vecinos por sus propias tablas de enrutamiento",
+                    "Descartan paquetes al azar para activar el c\u00f3digo de correcci\u00f3n de errores que existe dentro de Internet",
+                    "Reciben datos de velocidades de transmisi\u00f3n desde los equipos de destino"
                 ],
-                "md5": "84e727a8879b8f7cdff4d3e6b40992f4"
+                "md5": "71724f727fba20d9eda358445e5177a3"
             },
             {
-                "question": "What is the purpose of the \"Time to Live\" field in a packet?",
-                "answer": 889919983,
+                "question": "\u00bfCual es el cometido del campo \"Tiempo de vida\" (*Time to Live* o TTL) en un paquete?",
+                "answer": 0,
                 "answers": [
-                    "To make sure that packets do not end up in an \"infinite loop\"",
-                    "To track how many minutes it takes for a packet to get through the network",
-                    "To maintain a mapping between network numbers and GPS coordinates",
-                    "To tell the router the correct output link for a particular packet"
+                    "Asegurarse de que los paquetes no terminen dentro de un \"bucle infinito\"",
+                    "Controlar cu\u00e1ntos minutos le lleva a un paquete atravesar la red",
+                    "Mantener una relaci\u00f3n entre las direcciones de red y las coordenadas GPS",
+                    "Informar al router sobre la conexi\u00f3n de salida correcta para un paquete concreto"
                 ],
-                "md5": "b7cc042152e5d06dd7e38dac8d93b9b4"
+                "md5": "e5bce0842ef8cf893fffed4d3557c19e"
             },
             {
-                "question": "How does the \"traceroute\" command work?",
-                "answer": 383518983,
+                "question": "\u00bfC\u00f3mo funciona el comando \"*traceroute*\"?",
+                "answer": 0,
                 "answers": [
-                    "It sends a series of packets with low TTL values so it can get a picture of where the packets get dropped",
-                    "It loads a network route from the Internet Map (IMAP)",
-                    "It contacts a Domain Name Server to get the route for a particular network number",
-                    "It asks routers to append route information to a packet as it is routed from source to destination"
+                    "Env\u00eda una serie de paquetes con bajos valores de TTL, para conseguir hacerse una idea de d\u00f3nde van siendo desechados esos paquetes",
+                    "Carga una ruta de red desde el Mapeado de Internet (IMAP)",
+                    "Contacta con un Servidor de Nombres de Dominio para obtener la ruta para una direcci\u00f3n de red concreta",
+                    "Le pide a los routers que a\u00f1adan informaci\u00f3n de la ruta al paquete a medida que va siendo encaminado desde su origen hasta su destino"
                 ],
-                "md5": "45308c5b4c8a5bdcca2086e006be6d32"
+                "md5": "79faf0b4726d97f559d86ca32aa1eb1a"
             },
             {
-                "question": "About how long does it take for a packet to cross the Pacific Ocean via an undersea fiber optic cable?",
-                "answer": 929560983,
+                "question": "\u00bfCu\u00e1nto tiempo le lleva aproximadamente a un paquete cruzar el oc\u00e9ano Pac\u00edfico a trav\u00e9s de un cable de fibra \u00f3ptica submarino?",
+                "answer": 0,
                 "answers": [
-                    "0.0025 Seconds",
-                    "0.025 Seconds",
-                    "0.250 Seconds",
-                    "2.5 Seconds"
+                    "0.0025 segundos",
+                    "0.025 segundos",
+                    "0.250 segundos",
+                    "2.5 segundos"
                 ],
-                "md5": "340407901c62bfd4801f493cf59f8f03"
+                "md5": "2548205e45010b9b0c92673affdc680b"
             },
             {
-                "question": "On a WiFi network, how does a computer get an Internetworking (IP) address?",
-                "answer": 870099983,
+                "question": "En una red WiFi, \u00bfc\u00f3mo obtiene un equipo una direcci\u00f3n de Internet (IP)?",
+                "answer": 0,
                 "answers": [
-                    "Using the DHCP protocol",
-                    "Using the DNS protocol",
-                    "Using the HTTP protocol",
-                    "Using the IMAP protocol"
+                    "Usando el protocolo DHCP",
+                    "Usando el protocolo DNS",
+                    "Usando el protocolo HTTP",
+                    "Usando el protocolo IMAP"
                 ],
-                "md5": "f47c257f1dd16ce6371a022adfa816a1"
+                "md5": "8b090f2c5ca5712413deb817f1374d83"
             },
             {
-                "question": "What is Network Address Translation (NAT)?",
-                "answer": 357755983,
+                "question": "\u00bfQu\u00e9 hace una Traducci\u00f3n de Direcciones de Red (*Network Address Translation* o NAT)?",
+                "answer": 0,
                 "answers": [
-                    "It looks up the IP address associated with text names like \"www.dr-chuck.com\"",
-                    "It allows IPv6 traffic to go across IPv4 networks",
-                    "It looks up the best outbound link for a particular router and network number",
-                    "It reuses special network numbers like \"192.168\" across multiple network gateways at multiple locations"
+                    "Averigua las direcciones IP asociadas con nombres de texto, como \"www.dr-chuck.com\"",
+                    "Permite que el tr\u00e1fico IPv6 pase a trav\u00e9s de redes IPv4",
+                    "Averigua cu\u00e1l es la mejor conexi\u00f3n de salida para un router concreto y una direcci\u00f3n de red",
+                    "Reutiliza direcciones de red especiales, como \"192.168\", a trav\u00e9s de m\u00faltiples puertas de acceso en m\u00faltiples ubicaciones"
                 ],
-                "md5": "eaa761f59ea35ae7cf02cb4725c7d5e3"
+                "md5": "be0914c8975c4c7752ae0965dd7ed0af"
             },
             {
-                "question": "How are IP addresses and network numbers managed globally?",
-                "answer": 354779983,
+                "question": "\u00bfC\u00f3mo se gestionan globalmente las direcciones IP y las direcciones de red?",
+                "answer": 0,
                 "answers": [
-                    "There are five top-level registries that manage network numbers in five geographic areas",
-                    "IP addresses are assigned worldwide randomly in a lottery",
-                    "IP addresses are assigned by network equipment manufacturers",
-                    "IP addresses are based on GPS coordinates"
+                    "Existen cinco registradores de nivel-superior que gestionan las direcciones de red en cinco \u00e1reas geogr\u00e1ficas",
+                    "Las direcciones IP son asignadas para todo el mundo aleatoriamente mediante un sorteo",
+                    "Las direcciones IP son asignadas por los fabricantes de equipamiento de red",
+                    "Las direcciones IP est\u00e1n basadas en coordenadas GPS"
                 ],
-                "md5": "d9388354a06e4dd0f09feef6b085ea24"
+                "md5": "98536ee749dc29166589880a2c55319e"
             },
             {
-                "question": "How much larger are IPv6 addresses than IPv4 addresses?",
-                "answer": 255681983,
+                "question": "\u00bfQu\u00e9 diferencia de longitud existe entre las direcciones IPv6 y las IPv4?",
+                "answer": 0,
                 "answers": [
-                    "They are the same size",
-                    "IPv6 addresses are 50% larger than IPv4 addresses",
-                    "IPv6 addresses are twice as large as IPv4 addresses",
-                    "IPv6 addresses are 10 times larger than IPv4 addresses"
+                    "Ambas tienen el mismo tama\u00f1o",
+                    "Las direcciones IPv6 son un 50% m\u00e1s largas que las IPv4",
+                    "Las direcciones IPv6 son el doble de largas que las IPv4",
+                    "Las direcciones IPv6 son 10 veces m\u00e1s largas que las IPv4"
                 ],
-                "md5": "77d62628afffc3676e58cc4838ef8d46"
+                "md5": "8828649e0831a556509d9213c72a122a"
             },
             {
-                "question": "What does it mean when your computer receives an IP address that starts with \"169..\"?",
-                "answer": 967219983,
+                "question": "Si tu equipo recibe una direcci\u00f3n IP que empieza por \"169..\", \u00bfqu\u00e9 es lo que indica eso?",
+                "answer": 0,
                 "answers": [
-                    "Your connection to the Internet supports the Multicast protocol",
-                    "The gateway is mappping your local address to a global address using NAT",
-                    "There was no gateway available to forward your packets to the Internet",
-                    "The gateway for this network is a low-speed gateway with a small window size"
+                    "Tu conexi\u00f3n a Internet soporta el protocolo Multicast",
+                    "La puerta de acceso est\u00e1 asociando tu direcci\u00f3n local con una direcci\u00f3n global usando NAT",
+                    "No hay una puerta de acceso disponible para reenviar tus paquetes a Internet",
+                    "La puerta de acceso para esa red es de baja velocidad, con un tama\u00f1o de ventana peque\u00f1o"
                 ],
-                "md5": "6307d194f1b4504f5dc18c3f0899a2e9"
+                "md5": "838dd3087224eb17d633166b9e3f9151"
             },
             {
-                "question": "If you were starting an Internet Service Provider in Poland, which Regional Internet Registry (RIR) would assign you a block of IP addresses.",
-                "answer": 114959983,
+                "question": "Si quisieras crear una empresa proveedora de servicios de Internet en Polonia, \u00bfqu\u00e9 Registro Regional de Internet (RIR) te asignar\u00eda un bloque de direcciones IP?",
+                "answer": 0,
                 "answers": [
                     "ARIN",
                     "LACNIC",
                     "RIPE NCC",
                     "APNIC",
                     "AFRNIC",
-                    "United Nations"
+                    "Naciones Unidas"
                 ],
-                "md5": "3e8c4b45eafecf125d80e26c4d4c66b8"
+                "md5": "a4e6306d482b29af1d90e0047c8efd6c"
             }
         ]
     },
     "05-dns.mkd": {
-        "title": "The Domain Name System",
+        "title": "El Sistema de Nombres de Dominio",
         "questions": [
             {
-                "question": "What does the Domain Name System accomplish?",
-                "answer": 127840983,
+                "question": "\u00bfQu\u00e9 hace el Sistema de Nombres de Dominios (DNS)?",
+                "answer": 0,
                 "answers": [
-                    "It allows network-connected computers to use a textual name for a computer and look up its IP address",
-                    "It keeps track of the GPS coordinates of all servers",
-                    "It allows Regional Internet Registries (RIRs) to manage IP addresses on the various continents",
-                    "It assigns different IP addresses to portable computers as they move from one WiFi to another"
+                    "Permite a los equipos conectados a la red usar un nombre textual para otro equipo y averiguar su direcci\u00f3n IP",
+                    "Mantiene un registro de las coordenadas GPS de todos los servidores",
+                    "Permite a los Registradores Regionales de Internet (RIRs) gestionar las direcciones IP de los distintos continentes",
+                    "Asigna direcciones IP distintas a los equipos port\u00e1tiles a medida que se van desplazando de una red WiFi a otra"
                 ],
-                "md5": "fb65a9c3881a90c7c71989b21f70500a"
+                "md5": "e81dd9c29e1c2c5b4a45eedfd251cabf"
             },
             {
-                "question": "What organization assigns top-level domains like \".com\", \".org\", and \".club\"?",
-                "answer": 143698983,
+                "question": "\u00bfQu\u00e9 organizaci\u00f3n asigna los dominios de nivel superior, como \".com\", \".org\", y \".club\"?",
+                "answer": 0,
                 "answers": [
-                    "IANA - Internet Assigned Numbers Authority",
-                    "IETF - Internet Engineering Task Force",
-                    "ICANN - International Corporation for Assigned Network Names",
-                    "IMAP - Internet Mapping Authoization Prototol"
+                    "IANA - *Internet Assigned Numbers Authority* (Autoridad de Asignaci\u00f3n de Direcciones de Internet)",
+                    "IETF - *Internet Engineering Task Force* (Fuerzas Especiales de Ingenieros de Internet)",
+                    "ICANN - *International Corporation for Assigned Network Names* (Corporaci\u00f3n Internacional para la Asignaci\u00f3n de Nombres de Red)",
+                    "IMAP - *Internet Mapping Authorization Protocol* (Protocolo de Autorizaci\u00f3n de Mapeado de Internet)"
                 ],
-                "md5": "14e1b9bedb2aa66371b38c8c7de796e0"
+                "md5": "b3b3e0147c878945d055f27f595e8a54"
             },
             {
-                "question": "Which of these is a domain address?",
-                "answer": 170455983,
+                "question": "\u00bfCu\u00e1l de estas es una direcci\u00f3n de dominio?",
+                "answer": 0,
                 "answers": [
                     "0f:2a:b3:1f:b3:1a",
                     "192.168.3.14",
                     "www.khanacademy.org",
                     "@drchuck"
                 ],
-                "md5": "47c0676fb9be6fc9f7fe9cc8dc6908f1"
+                "md5": "57d867e86c4bec2b1f10251bdc616c7e"
             },
             {
-                "question": "Which of these is *not* something a domain owner can do with their domain?",
-                "answer": 154599983,
+                "question": "\u00bfCu\u00e1l de las siguientes acciones es algo que el propietario de un dominio *no* puede hacer con ese dominio?",
+                "answer": 0,
                 "answers": [
-                    "Create subdomains",
-                    "Sell subdomains",
-                    "Create new top-level domains",
-                    "Assign an IP address to the domain or subdomain"
+                    "Crear subdominios",
+                    "Vender subdominios",
+                    "Crear nuevos dominios de nivel superior",
+                    "Asignar una direcci\u00f3n IP al dominio o subdominio"
                 ],
-                "md5": "c42f24c6e2bcf69d939aa60a6e02a58e"
+                "md5": "a6a02cb2d05022d6c826550da5052bbd"
             }
         ]
     },
     "06-transport-layer.mkd": {
-        "title": "Transport Layer",
+        "title": "La Capa de Transporte",
         "questions": [
             {
-                "question": "What is the primary problem the Transport (TCP) layer is supposed to solve?",
-                "answer": 227933983,
+                "question": "\u00bfCu\u00e1l es el principal problema que se supone que resuelve la capa de Transporte (TCP)?",
+                "answer": 0,
                 "answers": [
-                    "Move packets across multiple hops from a source to destination computer",
-                    "Move packets across a single physical connection",
-                    "Deal with lost and out-of-order packets",
-                    "Deal with encryption of sensitive data"
+                    "El movimiento de paquetes a trav\u00e9s de m\u00faltiples saltos desde un equipo de origen hasta uno de destino",
+                    "El movimiento de paquetes a trav\u00e9s de una \u00fanica conexi\u00f3n f\u00edsica",
+                    "Gestionar los paquetes perdidos y desordenados",
+                    "Gestionar la encriptaci\u00f3n de datos sensibles"
                 ],
-                "md5": "aeb09167e06fba4b301c3b731c6535b3"
+                "md5": "4a24669d3eb97a39d72e40e62d0a26c1"
             },
             {
-                "question": "What is in the TCP header?",
-                "answer": 270546983,
+                "question": "\u00bfQu\u00e9 contiene la cabecera TCP?",
+                "answer": 0,
                 "answers": [
-                    "Physical address",
-                    "IP Address and Time to Live",
-                    "Port number and offset",
-                    "Which document is being requested"
+                    "La direcci\u00f3n f\u00edsica",
+                    "La direcci\u00f3n IP y el Tiempo de Vida (TTL)",
+                    "El n\u00famero de puerto y el \u00edndice de posici\u00f3n del paquete (*offset*)",
+                    "Qu\u00e9 documento est\u00e1 siendo solicitado"
                 ],
-                "md5": "31058bf9ba244f2007ef3935ac17447e"
+                "md5": "eab398ff06117e957a6cbbc53c3d0989"
             },
             {
-                "question": "Why is \"window size\" important for the proper functioning of the network?",
-                "answer": 939470983,
+                "question": "\u00bfPor qu\u00e9 es importante el \"tama\u00f1o de ventana\" para el funcionamiento adecuado de la red?",
+                "answer": 0,
                 "answers": [
-                    "Because packets that are too large will clog fiber optic connections",
-                    "It prevents a fast computer from sending too much data on a slow connection",
-                    "It limits the number of hops a packet can take before it is dropped",
-                    "It determines what part of an IP address is the network number"
+                    "Porque los paquetes demasiado grandes atascan las conexiones de fibra \u00f3ptica",
+                    "Evita que un equipo r\u00e1pido env\u00ede demasiados datos a trav\u00e9s de una conexi\u00f3n lenta",
+                    "Limita el n\u00famero de saltos que un paquete puede dar antes de ser desechado",
+                    "Determina qu\u00e9 parte de una direcci\u00f3n IP se corresponde con la direcci\u00f3n de red"
                 ],
-                "md5": "fd81e2270ea79c2494845c00e0d9a215"
+                "md5": "d9fdeb050a00750fa3a8a17221ad57c1"
             },
             {
-                "question": "What happens when a sending computer receives an acknowledgement from the receiving computer?",
-                "answer": 773973983,
+                "question": "\u00bfQu\u00e9 ocurre cuando un equipo emisor recibe una confirmaci\u00f3n desde el equipo receptor?",
+                "answer": 0,
                 "answers": [
-                    "The sending computer resends the data to make sure it was transmitted accurately.",
-                    "The sending computer sends more data up to the window size",
-                    "The sending computer sends an \"acknowledgment for the acknowledgment\"",
-                    "The sending computer sends the acknowledgement to the Internet Map (IMAP)"
+                    "El equipo emisor vuelve a enviar los datos para asegurarse de que se han transmitido correctamente",
+                    "El equipo emisor env\u00eda m\u00e1s datos, hasta alcanzar el tama\u00f1o de ventana",
+                    "El equipo emisor env\u00eda una \"confirmaci\u00f3n de recepci\u00f3n de la confirmaci\u00f3n\"",
+                    "El equipo emisor env\u00eda la confirmaci\u00f3n al Mapa de Internet (IMAP)"
                 ],
-                "md5": "be3fe106266d7a4da6ec108374698d80"
+                "md5": "212d6b5d9d1dde4f9b0b4491af7a86d7"
             },
             {
-                "question": "Which of these detects and takes action when packets are lost?",
-                "answer": 169465983,
+                "question": "\u00bfCu\u00e1l de estos elementos detecta y toma medidas cuando se pierden paquetes?",
+                "answer": 0,
                 "answers": [
-                    "Sending computer",
-                    "Network gateway",
-                    "Core Internet routers",
-                    "Receiving computer"
+                    "Equipo emisor",
+                    "Puerta de acceso de la red",
+                    "Routers centrales de Internet",
+                    "Equipo receptor"
                 ],
-                "md5": "e6bc5fe16841f0a24b24202ac645f47f"
+                "md5": "f99d313ea9c959d2f300fd7dc0c6104d"
             },
             {
-                "question": "Which of these retains data packets so they can be retransmitted if a packets lost?",
-                "answer": 931541983,
+                "question": "Cu\u00e1l de estos elementos retiene paquetes de datos para que puedan ser enviados de nuevo si un paquete se pierde?",
+                "answer": 0,
                 "answers": [
-                    "Sending computer",
-                    "Network gateway",
-                    "Core Internet routers",
-                    "Receiving computer"
+                    "Equipo emisor",
+                    "Puerta de acceso de la red",
+                    "Routers centrales de Internet",
+                    "Equipo receptor"
                 ],
-                "md5": "f688bc1335f084132aac11d6faf62b06"
+                "md5": "279b33b8a29df06b76ccee47b8db0754"
             },
             {
-                "question": "Which of these is most similar to a TCP port?",
-                "answer": 210094983,
+                "question": "\u00bfCu\u00e1l de estos elementos es m\u00e1s parecido a un puerto TCP?",
+                "answer": 0,
                 "answers": [
-                    "Train station",
-                    "Undersea network cable",
-                    "Apartment number",
-                    "Sculpture garden"
+                    "Una estaci\u00f3n de tren",
+                    "Un cable de red submarino",
+                    "El n\u00famero de un apartamento",
+                    "Un jard\u00edn de esculturas"
                 ],
-                "md5": "c604c14ada99c47fa65d68439f19d7b1"
+                "md5": "18092639f2d4c337f251d34dde2990d6"
             },
             {
-                "question": "Which half of the client/server application must start first?",
-                "answer": 470726983,
+                "question": "\u00bfQu\u00e9 parte de una aplicaci\u00f3n cliente/servidor debe iniciarse primero?",
+                "answer": 0,
                 "answers": [
-                    "Client",
-                    "Server"
+                    "Cliente",
+                    "Servidor"
                 ],
-                "md5": "91bfc461dc0dd6b8c964ae9b75b271a8"
+                "md5": "a0b723e0dde12317416738bbf333c1d3"
             },
             {
-                "question": "What is the port number for the Domain Name System?",
-                "answer": 447935983,
+                "question": "\u00bfCu\u00e1l es el n\u00famero de puerto que utiliza el Sistema de Nombres de Dominios (DNS)?",
+                "answer": 0,
                 "answers": [
                     "22",
                     "80",
                     "53",
                     "143"
                 ],
-                "md5": "df79e4e6a2d9a43b5deae7da2ec11a2d"
+                "md5": "5030868649501add083b9877c777c86b"
             },
             {
-                "question": "What is the port number for the IMAP mail retrieval protocol?",
-                "answer": 385503983,
+                "question": "\u00bfCu\u00e1l es el n\u00famero de puerto que utiliza el protocolo de descarga de mensajes IMAP?",
+                "answer": 0,
                 "answers": [
                     "22",
                     "80",
                     "53",
                     "143"
                 ],
-                "md5": "8a53e0f0f6c733d2f824cce2ac2deffe"
+                "md5": "983d02e3c60c24db91ce754c2af9c1c9"
             }
         ]
     },
     "07-application-layer.mkd": {
-        "title": "Application Layer",
+        "title": "La Capa de Aplicaci\u00f3n",
         "questions": [
             {
-                "question": "Which layer is right below the Application layer?",
-                "answer": 168471983,
+                "question": "\u00bfQu\u00e9 capa est\u00e1 justo debajo de la capa de Aplicaci\u00f3n?",
+                "answer": 0,
                 "answers": [
-                    "Transport",
-                    "Internetworking",
-                    "Link Layer",
-                    "Obtuse layer"
+                    "Transporte",
+                    "Internet",
+                    "Capa de Acceso",
+                    "Capa Obtusa"
                 ],
-                "md5": "a72242ed92c62404cdb7bf2106061f0b"
+                "md5": "e532c75befeaabedb7ad2b6f7385394f"
             },
             {
-                "question": "What kind of document is used to describe widely used Application layer prototcols?",
-                "answer": 285410983,
+                "question": "\u00bfQu\u00e9 tipo de documento se usa para describir en detalle los protocolos usados por la capa de Aplicaci\u00f3n?",
+                "answer": 0,
                 "answers": [
                     "DHCP",
                     "RFC",
                     "APPDOC",
                     "ISO 9000"
                 ],
-                "md5": "b115f6ba71950b29d7256b1a9b8ae5e9"
+                "md5": "d64756f7facab0869204caca5ae76d58"
             },
             {
-                "question": "Which of these is an idea that was invented in the Application layer?",
-                "answer": 743254983,
+                "question": "\u00bfCu\u00e1l de los siguientes es un concepto ideado en la capa de Aplicaci\u00f3n?",
+                "answer": 0,
                 "answers": [
                     "0f:2a:b3:1f:b3:1a",
                     "192.168.3.14",
                     "www.khanacademy.com",
                     "http://www.dr-chuck.com/"
                 ],
-                "md5": "06f3dfadd8ecf3a3947a0b83f2400937"
+                "md5": "ac9578235f8a97848febbaac2d30b604"
             },
             {
-                "question": "Which of the following is *not* something that the Application layer worries about?",
-                "answer": 830461983,
+                "question": "\u00bfCu\u00e1l de los siguientes es un tema del que *no* debe preocuparse la capa de Aplicaci\u00f3n?",
+                "answer": 0,
                 "answers": [
-                    "Whether the client or server starts talking first",
-                    "The format of the commands and responses exchanged across a socket",
-                    "How the window size changes as data is sent across a socket",
-                    "How data is represented as it is sent across the network to assure interoperability."
+                    "Cu\u00e1l de los equipos (cliente o servidor) inicia la comunicaci\u00f3n",
+                    "El formato de los comandos y respuestas intercambiados a trav\u00e9s de un *socket*",
+                    "C\u00f3mo va cambiando el tama\u00f1o de ventana a medida que los datos van siendo enviados a trav\u00e9s de un socket",
+                    "El modo en el que se representan los datos al ser enviados a trav\u00e9s de la red para garantizar la interoperabilidad."
                 ],
-                "md5": "94a4e1d8f9eb5782052c3f0f6111e92f"
+                "md5": "9a5d420e734878bccb99afbc9d5c89dc"
             },
             {
-                "question": "Which of these is an Application layer protocol?",
-                "answer": 759107983,
+                "question": "\u00bfCu\u00e1l de los siguientes es un protocolo de la capa de Aplicaci\u00f3n?",
+                "answer": 0,
                 "answers": [
                     "HTTP",
                     "TCP",
                     "DHCP",
                     "Ethernet"
                 ],
-                "md5": "9741efd34cea415e9c272a6a4e08c61f"
+                "md5": "d1410a0389ce222e2b9a05b627eccd53"
             },
             {
-                "question": "What port would typically be used to talk to a web server?",
-                "answer": 231896983,
+                "question": "\u00bfQu\u00e9 puerto se utiliza habitualmente para comunicarse con un servidor web?",
+                "answer": 0,
                 "answers": [
                     "23",
                     "80",
                     "103",
                     "143"
                 ],
-                "md5": "e656569cbca5b20ce7ade5fb39134415"
+                "md5": "df2981c86123f0d30b86884ce433f9de"
             },
             {
-                "question": "What is the command that a web browser sends to a web server to retrieve an web document?",
-                "answer": 181357983,
+                "question": "\u00bfCu\u00e1l es el comando que env\u00eda un navegador a un servidor web para descargar un documento web?",
+                "answer": 0,
                 "answers": [
                     "RETR",
                     "DOCUMENT",
                     "404",
                     "GET"
                 ],
-                "md5": "b996f10421d9a2eaa88f50d7871433c0"
+                "md5": "60a03f396bdd3cc499c8e1bccb3e76b5"
             },
             {
-                "question": "What is the purpose of the \"Content-type:\" header when you retrieve a document over the web protocol?",
-                "answer": 262616983,
+                "question": "\u00bfCu\u00e1l es la utilidad de la cabecera \"Content-type\" cuando se descarga un documento a trav\u00e9s del protocolo web?",
+                "answer": 0,
                 "answers": [
-                    "Tells the browser how to display the retrieved document",
-                    "Tells the browser where to go if the document cannot be found",
-                    "Tells the browser whether or not the retrieved document is empty",
-                    "Tells the browser where the headers end and the content starts"
+                    "Indicarle al navegador c\u00f3mo mostrar el documento descargado",
+                    "Indicarle al navegador d\u00f3nde debe ir si no se puede encontrar el documento",
+                    "Indicarle al navegador si el documento descargado est\u00e1 vac\u00edo o no",
+                    "Indicarle al navegador d\u00f3nde terminan las cabeceras y empieza el contenido"
                 ],
-                "md5": "c356cdf6f48db0b285ac94839dfea6c7"
+                "md5": "7ee48d04d7077e07e9083ea5dd946566"
             },
             {
-                "question": "What common UNIX command can be used to send simple commands to a web server?",
-                "answer": 810642983,
+                "question": "\u00bfQu\u00e9 comando habitual en UNIX se puede utilizar para enviar comandos sencillos a un servidor web?",
+                "answer": 0,
                 "answers": [
                     "ftp",
                     "ping",
                     "traceroute",
                     "telnet"
                 ],
-                "md5": "c5ce944535231bacca6951a04cab0d8b"
+                "md5": "0facd46f61b47124cebcdce9cf50f850"
             },
             {
-                "question": "What does an HTTP status code of \"404\" mean?",
-                "answer": 351809983,
+                "question": "\u00bfQu\u00e9 significa un c\u00f3digo de estado HTTP \"404\"?",
+                "answer": 0,
                 "answers": [
-                    "Document has moved",
-                    "Successful document retrieval",
-                    "Protocol error",
-                    "Document not found"
+                    "El documento ha cambiado de ubicaci\u00f3n",
+                    "Descarga del documento correcta",
+                    "Error de protocolo",
+                    "Documento no encontrado"
                 ],
-                "md5": "979b5b136d9251cecc350e659e55e876"
+                "md5": "08d0ff280500634a1c2bd416cef6075a"
             },
             {
-                "question": "What characters are used to mark up HTML documents?",
-                "answer": 232886983,
+                "question": "\u00bfQu\u00e9 s\u00edmbolos se utilizan para resaltar la sintaxis en los documentos HTML?",
+                "answer": 0,
                 "answers": [
-                    "Less-then and greater-than signs < >",
-                    "Exclamation points !",
-                    "Square brackets [ ]",
-                    "Curly brackets { }"
+                    "Los s\u00edmbolos menor-que y mayor-que < >",
+                    "S\u00edmbolos de exclamaci\u00f3n !",
+                    "Par\u00e9ntesis cuadrados (corchetes) [ ]",
+                    "Llaves { }"
                 ],
-                "md5": "4a73ece2eadb78d14f16880381577a85"
+                "md5": "7969b5023326b8bf849dff7f0945e1ef"
             },
             {
-                "question": "What is a common application protocol for retrieving mail?",
-                "answer": 746227983,
+                "question": "\u00bfCu\u00e1l de los siguientes es un protocolo usado habitualmente para descargar correo?",
+                "answer": 0,
                 "answers": [
                     "RFC",
                     "HTML",
                     "ICANN",
                     "IMAP"
                 ],
-                "md5": "2c9b45d47201f90e950577195bb599a3"
+                "md5": "02e0b0c78a83944135b591d1f3885b7a"
             },
             {
-                "question": "What application protocol does RFC15 describe?",
-                "answer": 383518983,
+                "question": "\u00bfQu\u00e9 protocolo de aplicaci\u00f3n describe el RFC15?",
+                "answer": 0,
                 "answers": [
                     "telnet",
                     "ping",
                     "traceroute",
                     "www"
                 ],
-                "md5": "89e50fbcb43c9f1fe83bd061deba595a"
+                "md5": "23a48b5854c9b10ce511580a6c0bc947"
             },
             {
-                "question": "What happens to a server application that is sending a large file when the TCP layer has sent enough data to fill the window size and has not yet received an acknowledgement?",
-                "answer": 748208983,
+                "question": "\u00bfQu\u00e9 le ocurre a una aplicaci\u00f3n servidor que est\u00e1 enviando un fichero grande cuando la capa TCP ha enviado datos suficientes para llenar el tama\u00f1o de ventana y no ha recibido a\u00fan una confirmaci\u00f3n de recepci\u00f3n?",
+                "answer": 0,
                 "answers": [
-                    "The application switches its transmission to a new socket",
-                    "The application crashes and must be restarted",
-                    "The application is paused until the remote computer acknowledges that it has received some of the data",
-                    "The closest gateway router starts to discard packets that would exceed the window size"
+                    "La aplicaci\u00f3n cambia su transmisi\u00f3n a un socket nuevo",
+                    "La aplicaci\u00f3n falla y debe ser reiniciada",
+                    "La aplicaci\u00f3n se pone en pausa hasta que el equipo remoto confirma que ha recibido parte de los datos",
+                    "El router m\u00e1s cercano que ejerza de puerta de acceso empieza a descartar los paquetes que exceder\u00edan el tama\u00f1o de ventana"
                 ],
-                "md5": "9a81757f694557e6dfb363acd6c681f2"
+                "md5": "e392faa97e4c3efecfc6faa28d7ec1f5"
             },
             {
-                "question": "What is a \"socket\" on the Internet?",
-                "answer": 388476983,
+                "question": "\u00bfQu\u00e9 es un \"socket\" en Internet?",
+                "answer": 0,
                 "answers": [
-                    "A way for devices to get wireless power",
-                    "A way for devices to get an IP address",
-                    "An entry in a routing table",
-                    "A two-way data connection between a pair of client and server applications"
+                    "Un modo de que los dispositivos obtengan energ\u00eda de forma inal\u00e1mbrica",
+                    "Un modo de que los dispositivos obtengan una direcci\u00f3n IP",
+                    "Una entrada en una tabla de enrutamiento",
+                    "Una conexi\u00f3n bi-direccional entre un par de aplicaciones cliente y servidor"
                 ],
-                "md5": "362785f58e3ba596097610b0c6be88d7"
+                "md5": "eee3cd6229ab0e91caa009a871b5595b"
             },
             {
-                "question": "What must an application know to make a socket connection in software?",
-                "answer": 716494983,
+                "question": "\u00bfQu\u00e9 debe figurar en el c\u00f3digo de una aplicaci\u00f3n para poder realizar una conexi\u00f3n a trav\u00e9s de un socket?",
+                "answer": 0,
                 "answers": [
-                    "The address of the server and the port number on the server",
-                    "The route between the source and destination computers",
-                    "Which part of the IP address is the network number",
-                    "The initial size of the TCP window during transmission"
+                    "La direcci\u00f3n del servidor y el n\u00famero de puerto en ese servidor",
+                    "La ruta entre los equipos de origen y destino",
+                    "Qu\u00e9 parte de la direcci\u00f3n IP se corresponde con la direcci\u00f3n de red",
+                    "El tama\u00f1o inicial de la ventana TCP durante la transmisi\u00f3n"
                 ],
-                "md5": "9fe6573b8714f4de24fc6155c03ac342"
+                "md5": "4b837a5f447dc0636da216761501e0e5"
             }
         ]
     },
     "08-secure-transport.mkd": {
-        "title": "Secure Transport Layer",
+        "title": "La Capa de Transporte Seguro",
         "questions": [
             {
-                "question": "How do we indicate that we want a secure connection when using a web browser?",
-                "answer": 767035983,
+                "question": "Cuando utilizamos un navegador, \u00bfc\u00f3mo podemos indicar que queremos utilizar una conexi\u00f3n segura?",
+                "answer": 0,
                 "answers": [
-                    "Use https:// in the URL",
-                    "Use a secure web browser",
-                    "Open an icognito window",
-                    "Manually encode the address of the server using SHA1"
+                    "Usando https:// en la URL",
+                    "Usando un navegador web seguro",
+                    "Abriendo una ventana privada",
+                    "Codificando manualmente la direcci\u00f3n del servidor usando SHA1"
                 ],
-                "md5": "d6f11a6707c7e3d06521d9beeb2cb867"
+                "md5": "4e1c023e72ff5d7cb13031cc0e5c9efa"
             },
             {
-                "question": "Why is a shared-secret approach not suitable for use on the Internet?",
-                "answer": 113967983,
+                "question": "\u00bfPor qu\u00e9 un sistema de secreto compartido no es adecuado para su uso en Internet?",
+                "answer": 0,
                 "answers": [
-                    "Because people would lose or misplace the secret",
-                    "It is difficult to distribute the secrets",
-                    "Encryption and decruption with shared secrets are too easily broken",
-                    "Encryption and decryption with shared secrets take too much compute power"
+                    "Porque la gente podr\u00eda perder o traspapelar el secreto",
+                    "Resulta dif\u00edcil distribuir los secretos",
+                    "La encriptaci\u00f3n y desencriptado con secretos compartidos se pueden vencer muy f\u00e1cilmente",
+                    "La encriptaci\u00f3n y desencriptado con secretos compartidos necesita demasiada potencia de c\u00e1lculo"
                 ],
-                "md5": "8d47277f25cdeb9f6d431629eb0ed6fe"
+                "md5": "5b6ffe4064882e2ec333a99e30b76328"
             },
             {
-                "question": "What is the underlying mathematical concept that makes public/private key encryption secure?",
-                "answer": 285412983,
+                "question": "\u00bfCu\u00e1l es el concepto matem\u00e1tico subyacente que hace que resulte seguro el cifrado mediante clave p\u00fablica/privada?",
+                "answer": 0,
                 "answers": [
-                    "Continuous functions",
-                    "Taylor series",
-                    "Karnaugh Maps",
-                    "Prime numbers"
+                    "Las funciones continuas",
+                    "Las series de Taylor",
+                    "Los mapas de Karnaugh",
+                    "Los n\u00fameros primos"
                 ],
-                "md5": "32e34bfd2a523457c110831f14f881dc"
+                "md5": "0612578ddbf8691bb0933973ef4882e1"
             },
             {
-                "question": "Which of the keys can be sent across the internet in plain text without compromising security?",
-                "answer": 110002983,
+                "question": "\u00bfCu\u00e1l de las claves puede ser enviada a trav\u00e9s de Internet en texto plano sin comprometer la seguridad?",
+                "answer": 0,
                 "answers": [
-                    "Encryption key",
-                    "Decryption Key",
-                    "Shared Secret",
-                    "Univerally Safe Key (USK)"
+                    "La clave de cifrado",
+                    "La clave de descifrado",
+                    "El secreto compartido",
+                    "La Clave Universalmente Segura (*Universally Safe Key* o USK)"
                 ],
-                "md5": "a0e1affe34deaec8f129da026a9781a2"
+                "md5": "7b437b3219e3c5ae3786c40818c2182b"
             },
             {
-                "question": "Where does the Secure Sockets Layer (SSL) fit in the four-layer Internet architecture?",
-                "answer": 257664983,
+                "question": "\u00bfD\u00f3nde se sit\u00faa la Capa de Sockets Seguros (SSL) en la arquitectura de cuatro capas de Internet?",
+                "answer": 0,
                 "answers": [
-                    "Below the Link layer",
-                    "Between the Link and Internetworking layers",
-                    "Between the Internetworking and Transport layers",
-                    "Between the Transport and Application layers"
+                    "Debajo de la capa de Acceso",
+                    "Entre la capa de Acceso y la de Internet",
+                    "Entre la capa de Internet y la de Transporte",
+                    "Entre la capa de Transporte y la de Aplicaci\u00f3n"
                 ],
-                "md5": "af243ec7d9ddcd5be3aa9306c595f594"
+                "md5": "356fdd7b84cc752915582fc0e710593d"
             },
             {
-                "question": "If you were properly using https in a browser over WiFi in a cafe, which of the following is the greatest risk to your losing cradit card information when making an online purchase?",
-                "answer": 729380983,
+                "question": "Si est\u00e1s usando adecuadamente https en un navegador a trav\u00e9s de WiFi desde una cafeter\u00eda, \u00bfcu\u00e1l de los siguientes es el mayor riesgo que corres de perder informaci\u00f3n sobre tu tarjeta de cr\u00e9dito al realizar una compra online?",
+                "answer": 0,
                 "answers": [
-                    "Someone captured the packets that were sent across the WiFi",
-                    "Someone captured the packets in the gateway router",
-                    "Someone captured the packets as they passed through a core Intenet router",
-                    "You have a virus on your computer that is capturing keystrokes"
+                    "Que alguien capture los paquetes que has enviado a trav\u00e9s del WiFi",
+                    "Que alguien capture los paquetes en el router que hace de puerta de acceso",
+                    "Que alguien capture los paquetes cuando pasen a trav\u00e9s de un router central de Internet",
+                    "Que tengas un virus en tu equipo que capture las pulsaciones de tu teclado"
                 ],
-                "md5": "fcaa2678418599bfd17b236572295b86"
+                "md5": "a8922d415fda461349de771c42aa403b"
             },
             {
-                "question": "With the Secure Sockets Layer, where are packets encrypted and decrypted?",
-                "answer": 881002983,
+                "question": "Si se usa la Capa de Sockets Seguros (SSL), \u00bfd\u00f3nde son encriptados y desencriptados los paquetes?",
+                "answer": 0,
                 "answers": [
-                    "They are encrypted and decrypted as they pass through router",
-                    "Each physical link has its own separate encryption",
-                    "They are encrypted in your computer and decrypted in the server",
-                    "They are encrypted in the WiFi gateway and decrypted in the last router before the destination computer"
+                    "Son encriptados y desencriptados a medida que van pasando por el router",
+                    "Cada conexi\u00f3n f\u00edsica dispone de su propia encriptaci\u00f3n independiente",
+                    "Son encriptados en tu equipo y desencriptados en el servidor",
+                    "Son encriptados en la puerta de acceso WiFi y desencriptados en el \u00faltimo router antes de llegar al equipo de destino"
                 ],
-                "md5": "1b45a426ee7bd76b0d01c53527c18daf"
+                "md5": "f714fb36d365ce88dd358ea5a4ae03d4"
             },
             {
-                "question": "What changes to the IP layer were needed to make secure socket layer (SSL) work?",
-                "answer": 341896983,
+                "question": "\u00bfQu\u00e9 cambios se necesitan hacer en la capa IP para que funcione la Capa de Sockets Seguros (SSL)?",
+                "answer": 0,
                 "answers": [
-                    "No changes were needed",
-                    "We had to add support for Secure IP (IPSEC)",
-                    "We needed to support longer packets in IP",
-                    "The Time-To-Live (TTL) value needed to be encrypted"
+                    "No es necesario ning\u00fan cambio",
+                    "Debemos a\u00f1adir soporte para IP Segura (IPSEC)",
+                    "Debemos soportar paquetes m\u00e1s grandes en la IP",
+                    "Debe encriptarse el valor del Tiempo de Vida de los paquetes (TTL)"
                 ],
-                "md5": "a5964a825c5291bfbf1c6356a5e17503"
+                "md5": "f98733f4bb15c51d93731b95791b9c44"
             },
             {
-                "question": "If a rogue element was able to monitor all packets going through an undersea cable and you were using public/private key encryption properly, which of the following would be the most difficult for them to obtain?",
-                "answer": 485594983,
+                "question": "Si un sujeto malintencionado es capaz de monitorizar todos los paquetes que circulan a trav\u00e9s de un cable submarino y t\u00fa est\u00e1s usando correctamente el cifrado mediante clave p\u00fablica/privada, \u00bfcu\u00e1l de los siguientes datos le resultar\u00e1 m\u00e1s dif\u00edcil obtener?",
+                "answer": 0,
                 "answers": [
-                    "What servers you were communicating with",
-                    "How often you used the servers",
-                    "How much data you retrieved from the servers",
-                    "Which documents you retrieved from the servers"
+                    "Los servidores con los que est\u00e1s comunic\u00e1ndote",
+                    "La frecuencia con la que utilizas los servidores",
+                    "La cantidad de datos que recibes desde los servidores",
+                    "Qu\u00e9 documentos descargas desde los servidores"
                 ],
-                "md5": "cc0194cf0e4956a736217952b170e0fa"
+                "md5": "a9d1a9b7385533353f77571e9865f42e"
             },
             {
-                "question": "What is the purpose of a Certificate Authority in public/private key encryption?",
-                "answer": 869110983,
+                "question": "\u00bfCual es la funci\u00f3n de una Autoridad Certificadora en un cifrado mediante clave p\u00fablica/privada?",
+                "answer": 0,
                 "answers": [
-                    "To make sure people do not forge badges for learning activities",
-                    "To make sure packets get routed to the correct destination computer",
-                    "To assure us that a public key comes from the orgnization it claims to be from",
-                    "To choose when a particular country must switch from IPv4 to IPv6"
+                    "Asegurarse de que la gente no falsifique t\u00edtulos de actividades de ense\u00f1anza",
+                    "Asegurarse de que los paquetes sean dirigidos hacia el equipo de destino correcto",
+                    "Garantizarnos que una clave p\u00fablica procede realmente de la entidad de la que asegura proceder",
+                    "Elegir cu\u00e1ndo debe cambiar de IPv4 a IPv6 un determinado pa\u00eds"
                 ],
-                "md5": "8391c44f4870a8f94c6c738aecc78a66"
+                "md5": "8aac868977fb9aec48ec1db4c1b18a59"
             },
             {
-                "question": "The ARPANET network was in operation starting in the 1960s. Secure Sockets Layer (SSL) was not invented util the 1980s. How did the ARPANET insure the security of the data on its network?",
-                "answer": 505413983,
+                "question": "La red ARPANET llevaba funcionando desde principios de la d\u00e9cada de los 60. La Capa de Sockets Seguros (SLL) no se invent\u00f3 hasta los a\u00f1os 80. \u00bfC\u00f3mo logr\u00f3 ARPANET asegurar la seguridad de los datos en su rede?",
+                "answer": 0,
                 "answers": [
-                    "By using public/private keys and encrypting all transmissions",
-                    "By using encryption at the Link layer",
-                    "By making sure no one could access the physical links",
-                    "By only using secure WiFi routers"
+                    "Utilizando claves p\u00fablicas/privadas y cifrando todas las transmisiones",
+                    "Utilizando cifrado en la capa de Acceso",
+                    "Asegur\u00e1ndose de que nadie pudiera acceder a las conexiones f\u00edsicas",
+                    "Utilizando solamente routers WiFi seguros"
                 ],
-                "md5": "e72d824aea4937e3ff9626af277c1e4c"
+                "md5": "2030224927c8b30c22ec69954cec059e"
             },
             {
-                "question": "Which of these answers is \"Security is fun\" encrypted with a Caeser Cipher shift of 1.",
-                "answer": 480638983,
+                "question": "\u00bfCual de los siguientes corresponde al mensaje \"La seguridad es divertida\", encriptado con un Cifrado Cesar y un desplazamiento de 1?",
+                "answer": 0,
                 "answers": [
-                    "Ptsjduao rt dii",
-                    "Wentudhs di dju",
-                    "Tfdvsjuz jt gvo",
-                    "Asdfghjk qw zxc"
+                    "Pt sjduaortn zi diibtmasj",
+                    "We ntudhsdcx di djubfheln",
+                    "Mb tfhvsjebe ft ejwfsijeb",
+                    "As dfghjkini qw zxcvbnszl"
                 ],
-                "md5": "a8e8059130c7cbe604b32bdd6414b6e6"
+                "md5": "4992946ea67e0d6f68429bf5dde4e8aa"
             },
             {
-                "question": "What Caeser Cipher shift was used to encrypt \"V yvxr frphevgl\"?",
-                "answer": 651090983,
+                "question": "\u00bfQu\u00e9 desplazamiento se ha utilizado en Cifrado C\u00e9sar para encriptar el mensaje \"Zr thfgn yn frthevqnq\"?",
+                "answer": 0,
                 "answers": [
                     "1",
                     "6",
                     "13",
                     "24"
                 ],
-                "md5": "13fbe3cde7c293ba294464cbc1af7043"
+                "md5": "3a4b1cf7754e9a3cb2d432d4c7ff84f0"
             }
         ]
     },
     "09-OSI.mkd": {
-        "title": "The OSI Model",
+        "title": "El modelo OSI",
         "questions": [
             {
-                "question": "What is the primary value of the OSI network model?",
-                "answer": 924605983,
+                "question": "\u00bfCu\u00e1l es la principal utilidad del modelo de red OSI?",
+                "answer": 0,
                 "answers": [
-                    "OSI networks are used in the southern hemisphere",
-                    "The OSI approach can be use to analyze many different network models",
-                    "OSI networks make better use of limited bandwidth",
-                    "OSI networks are more secure"
+                    "Las redes OSI se utilizan en el hemisferio Sur",
+                    "El enfoque OSI puede ser usado para analizar muchos modelos de redes diferentes",
+                    "Las redes OSI hacen un uso mejor del ancho de banda cuando este est\u00e1 limitado",
+                    "Las redes OSI son m\u00e1s seguras"
                 ],
-                "md5": "63b7d2c315d620be87bf891254bc20f0"
+                "md5": "10826ab5838654a3e3efb31a51570dc3"
             },
             {
-                "question": "How many layers does the OSI model have?",
-                "answer": 468746983,
+                "question": "\u00bfCu\u00e1ntas capas tiene el modelo OSI?",
+                "answer": 0,
                 "answers": [
-                    "Four",
-                    "Six",
-                    "Seven",
-                    "Nine"
+                    "Cuatro",
+                    "Seis",
+                    "Siete",
+                    "Nueve"
                 ],
-                "md5": "4910504e38acdf85842ac49d58902765"
+                "md5": "f3b4aa362a423a2ea8e0cfcae5331495"
             },
             {
-                "question": "Which of the OSI layers deals with the shape of connectors for network connections?",
-                "answer": 772981983,
+                "question": "\u00bfCu\u00e1l de las capas OSI se ocupa de la forma que deben tener los conectores para las conexiones de red?",
+                "answer": 0,
                 "answers": [
-                    "Physical",
-                    "Data Link",
-                    "Network",
-                    "Transport"
+                    "F\u00edsica",
+                    "Enlace de Datos",
+                    "Red",
+                    "Transporte"
                 ],
-                "md5": "5e6bda3daf0a39dc2e8b3014def25a73"
+                "md5": "fef72ec9519304d65d1326ed43e2dfc4"
             },
             {
-                "question": "Which of the layers is most similar between the OSI and TCP network models?",
-                "answer": 423159983,
+                "question": "\u00bfCu\u00e1les de las capas son las que m\u00e1s se parecen entre los modelos de red OSI y TCP?",
+                "answer": 0,
                 "answers": [
-                    "TCP Link Layer and OSI Data Link Layer",
-                    "TCP Internetwork Layer and OSI Network Layer",
-                    "TCP Transport Layer and OSI Transport Layer",
-                    "TCP Application Layer and OSI Session Layer"
+                    "La capa de Acceso TCP y la capa de Enlace de Datos OSI",
+                    "La capa de Internet TCP y la capa de Red OSI",
+                    "La capa de Transporte TCP y la capa de Transporte OSI",
+                    "La capa de Aplicaci\u00f3n TCP y la capa de Sesi\u00f3n OSI"
                 ],
-                "md5": "0b49c8857e0bdc75793126d50efc9735"
+                "md5": "0ffb70453b9411325c3fa503a0a4c86f"
             },
             {
-                "question": "What layer does the TCP/IP Secure Sockets Layer map to in the OSI network model?",
-                "answer": 705596983,
+                "question": "\u00bfQu\u00e9 capa equivaldr\u00eda a la Capa de Sockets Seguros (SSL) de TCP/IP en el modelo de red OSI?",
+                "answer": 0,
                 "answers": [
-                    "Secure Data Link Layer (SDLL)",
-                    "Secure Network Layer (SNL)",
-                    "Secure Transport Layer (STL)",
-                    "Session and Presentation Layers"
+                    "La Capa de Acceso Seguro a Datos (*Secure Data Link Layer* o SDLL)",
+                    "La Capa de Red Segura (*Secure Network Layer* o SNL)",
+                    "La Capa de Transporte Seguro (*Secure Transport Layer* o STL)",
+                    "Las Capas de Sesi\u00f3n y Presentaci\u00f3n"
                 ],
-                "md5": "deb22be366bbf929811830b07c88b361"
+                "md5": "81c830bc04c569808dfc3bd9f32e3d5f"
             },
             {
-                "question": "Why does the TCP model combine the OSI Data Link and Physical layers into a single Link Layer?",
-                "answer": 499467983,
+                "question": "\u00bfPor qu\u00e9 el modelo TCP combina las capas OSI de Acceso a Datos y F\u00edsica en una \u00fanica capa de Acceso?",
+                "answer": 0,
                 "answers": [
-                    "Because the TCP model does not worry about the Physical layer",
-                    "Because the TCP model designers were ignored at the 1981 OSI meeting in Utrect, Netherlands",
-                    "Because quite often the design of Data Link and Physical layers are tightly connected for a particular technology",
-                    "To make the TCP model easier to understand by end users"
+                    "Porque el modelo TCP no se preocupa de la capa F\u00edsica",
+                    "Porque los dise\u00f1adores del modelo TCP fueron ignorados en el congreso OSI de 1981, en Utrect, Pa\u00edses Bajos",
+                    "Porque resulta bastante habitual que el dise\u00f1o de las capas de Enlace de Datos y F\u00edsica est\u00e9n estrechamente relacionados para una tecnolog\u00eda concreta",
+                    "Para conseguir que el modelo TCP sea m\u00e1s sencillo de entender por los usuarios finales"
                 ],
-                "md5": "868db9b91f19e3be80c5171672633b6f"
+                "md5": "e33786a4d83ad4e2437716f5ed171d16"
             }
         ]
     }

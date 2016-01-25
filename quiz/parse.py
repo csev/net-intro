@@ -27,7 +27,7 @@ def decode_answer(answer):
 
 # Load the keys from config.php if they exist
 answer_suffix = 89
-answer_factor = 97
+answer_factor = 107
 try:
     config = open('../config.php').read()
     x  = re.findall('answer_suffix = ([0-9]*)',config)
@@ -71,7 +71,7 @@ for f in sorted(os.listdir(pth)):
     if ( not f.endswith('.mkd') ) : continue
     print('Parsing',f)
     fname = os.path.join(os.getcwd(),'..','book',f)
-    lines = open(fname).read().split('\n')
+    lines = open(fname, encoding="utf8").read().split('\n')
     quiz = OrderedDict()
     questions = list()
     answers = list()
@@ -84,7 +84,7 @@ for f in sorted(os.listdir(pth)):
         if line.startswith('======') and prevline is not False and title is False:
             title = prevline
         prevline = line.rstrip()
-        if line.strip() == 'Questions' and not inquestions :
+        if line.strip() == 'Cuestionario' and not inquestions :
             inquestions = True
             continue
         if not inquestions : continue
