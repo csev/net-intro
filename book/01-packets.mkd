@@ -1,6 +1,6 @@
 % Introducción a las redes
 % Charles Severance
-% Traducido por Fernando Tardío
+% Traducido por: Fernando Tardío
 
 Introducción
 ============
