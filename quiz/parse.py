@@ -155,6 +155,7 @@ print('Loaded',len(oldanswers),'previous answers')
 
 match = 0
 missing = 0
+mislist = list()
 for f,quiz in quizzes.items():
     for q in quiz['questions'] : 
         signature = q['question']
@@ -167,10 +168,13 @@ for f,quiz in quizzes.items():
             q['answer'] = oldanswers[md5]
         q['answer'] = encode_answer(q['answer'])
         if q['answer'] == 0 :
+            mislist.append(md5);
             missing = missing + 1
 
 print('Copied',match,'previous answers into new json')
-print('There are',missing,'questions without an answer')
+if missing > 0 :
+    print('There are',missing,'questions without an answer')
+    print(mislist);
 
 outf = open('quiz_new.json','w')
 print(json.dumps(quizzes,indent=4), file=outf)
