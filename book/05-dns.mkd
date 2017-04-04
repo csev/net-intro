@@ -40,7 +40,8 @@ If you recall from the previous section, IP addresses are allocated based on
 where you connect a new network to the Internet. Domain names are allocated
 based on organizations that "own" the domain name. At the top of the domain
 name hierarchy is an organization called the International
-Corporation for Assigned Network Names (ICANN). ICANN chooses the top-level
+Corporation for Assigned Network Names and Numbers(ICANN).
+ICANN chooses the top-level
 domains (TLDs) like .com, .edu, and .org and assigns those to other organizations to
 manage.  Recently a new set of TLDs like .club and .help have been made available.
 
@@ -110,7 +111,7 @@ and retrieve the corresponding IP address for the domain name.
 For example, khanacademy.org is a domain that is assigned within
 the ".org" top-level domain.
 
-**ICANN**: International Corporation for Assigned Network Names.
+**ICANN**: International Corporation for Assigned Network Names and Numbers.
 Assigns and manages the top-level domains for the Internet.
 
 **registrar**: A company that can register, sell, and host
@@ -144,7 +145,7 @@ as they move from one WiFi to another
 and ".club"?
 a) IANA - Internet Assigned Numbers Authority
 b) IETF - Internet Engineering Task Force
-c) ICANN - International Corporation for Assigned Network Names
+c) ICANN - International Corporation for Assigned Network Names and Numbers
 d) IMAP - Internet Mapping Authorization Protocol
 
 3. Which of these is a domain address?
