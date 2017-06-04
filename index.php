@@ -63,11 +63,15 @@ are available as quizzes that can be taken online.
         </div>
       </div>
 
-      <!-- Site footer 
       <footer class="footer">
         <center>
+<p>If you find this material interesting you might be interested in 
+taking my related course, 
+"<a href="https://www.coursera.org/learn/insidetheinternet" 
+target="_blank">Internet History, Technology, and Security</a>"w available on 
+Coursera.</p>
         </center>
-      </footer> -->
+      </footer> 
 
 <?php require_once('javascript.php'); ?>
 
