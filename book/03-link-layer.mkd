@@ -39,7 +39,7 @@ All computers that are close enough to the base station
 with their radios turned on receive all of the packets the base station transmits,
 regardless of which computer the packet is supposed to be sent to. They also 
 "hear" all the packets sent by every other nearby computer. So your computer
-needs a way to to know which packets to treat as its own and which packets are
+needs a way to know which packets to treat as its own and which packets are
 being sent to other computers and can be safely ignored.
 
 An interesting side effect of the fact that all the computers within range can
