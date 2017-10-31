@@ -14,13 +14,16 @@ To produce the PDF of the book, you will need to install LaTeX on your
 system.  For Linux:
 
     apt-get install texlive-full
+    apt-get install pandoc
 
 For Macintosh,
 
     https://www.tug.org/mactex/
     https://www.tug.org/mactex/mactextras.html
+    
+    https://pandoc.org/installing.html#macos
 
-To build the book yourself, install *pandoc* and run
+To build the book yourself, run
 
     pandoc --default-image-extension=svg --epub-stylesheet=epub.css *.mkd -o x.epub
 
