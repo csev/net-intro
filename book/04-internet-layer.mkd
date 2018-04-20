@@ -86,7 +86,7 @@ ideas apply equally to IPv4 and IPv6 addresses.
 
 \index{network number}
 \index{host identifier}
-The most important thing about of IP addresses is that they can be broken into two
+The most important thing about IP addresses is that they can be broken into two
 parts.^[There are many points where an IP address can be broken into "Network
 Number" and "Host Identifier" - for this example, we will just split the address
 in half.] The first part of the two-piece address is called the "Network Number".
@@ -447,7 +447,7 @@ that someday we would have a billion computers on the Internet. But today with t
 expansion of the Internet and the "Internet of things" where smart cars,
 refrigerators, thermostats, and even lights will need IP addresses, we need to
 connect far more than a billion computers to the Internet. To make it possible
-to connect all these new computers to the Internet, engineers have designed a
+to connect all these new computers to the Internet, engineers have designed
 a new generation of the Internet Protocol called "IPv6". The 128-bit
 IPv6 addresses are much longer than the 32-bit IPv4 addresses.
 
