@@ -13,7 +13,7 @@
 as a source of Open Educational Resources to support my 
 <a target="_new" href="http://www.amazon.com/gp/product/1511654945/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1511654945&linkCode=as2&tag=drchu02-20&linkId=LUI4PZVNIMWUGOGS">textbook</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=drchu02-20&l=as2&o=1&a=1511654945" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 on TCP/IP network technologies.  
-I am also exploring a new approach to bulding remixable 
+I am also exploring a new approach to building remixable 
 OER materials.
 You can see the course code for the book in my 
 <a href="https://github.com/csev/net-intro/commits/master" target="_blank">GitHub repository</a>.  
