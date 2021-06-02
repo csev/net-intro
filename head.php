@@ -7,8 +7,6 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
-<link rel="stylesheet" href="http://getbootstrap.com/examples/justified-nav/justified-nav.css">
-
 <style>
 body {
   padding: 15px 15px 15px 15px;
