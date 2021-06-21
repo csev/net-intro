@@ -48,7 +48,7 @@ Each person had a single connection to a human "operator". The operator
 would connect two wires together to allow a pair of people to talk,
 and then disconnect them when the conversation was finished.
 
-![Connecting Using Telephone Operators](../sketchnote/Distance_Comm)
+![Connecting Using Telephone Operators](../sketchnote/Distance_Comm.png)
 
 The first local telephone systems worked well when a customer's home or
 business was close to the operator's building and a wire could be strung
