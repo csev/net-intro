@@ -48,7 +48,7 @@ Each person had a single connection to a human "operator". The operator
 would connect two wires together to allow a pair of people to talk,
 and then disconnect them when the conversation was finished.
 
-![Connecting Using Telephone Operators](../sketchnote/Distance_Comm.png)
+![Connecting Using Telephone Operators](../sketchnote/Distance_Comm)
 
 The first local telephone systems worked well when a customer's home or
 business was close to the operator's building and a wire could be strung
@@ -136,7 +136,7 @@ connected to another computer, and so on, you could send a message a long
 distance as long as each of the computers along the route of the message agreed to
 store and forward your message.
 
-![Store-and-Forward Networks](../sketchnote/Store_Fwd.png)
+![Store-and-Forward Networks](../sketchnote/Store_Fwd)
 
 Over time, with relatively few connections you could send data long
 distances across a patchwork of network connections as long as you were
@@ -178,7 +178,7 @@ entire message for as long as a few hours, the intermediate computer only
 needed to store a few packets for a few seconds while the packets waited for
 their turns on the outbound link.
 
-![Sending Packets](../sketchnote/Packets.png)
+![Sending Packets](../sketchnote/Packets)
 
 \index{IMP}
 \index{Interface Message Processor}
@@ -243,7 +243,7 @@ later packet might arrive before an earlier packet, perhaps because of a data
 message so that the destination computer can reassemble the packets in the
 correct order to reconstruct the original message.
 
-![Connecting Around the World](../sketchnote/Conn_around_world_HOP.png)
+![Connecting Around the World](../sketchnote/Conn_around_world_HOP)
 
 By creating a network using multiple short hops, the
 overall cost of communicating across a large geographical area could be spread
