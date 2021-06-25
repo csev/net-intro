@@ -33,7 +33,7 @@ that needs fixing.  Thanks in advance.</p>
           <a class="btn btn-primary" href="http://www-personal.umich.edu/~csev/books/net-intro/audio/" target="_blank">Audio &raquo;</a>
           <a class="btn btn-primary" href="https://amzn.to/34F1Y0z" target="_blank">Amazon &raquo;</a>
           <a class="btn btn-primary" style="margin-top:2px;" href="book/translations/Spanish/2021-06-12-book.pdf" target="_blank">Spanish &raquo;</a>
-          <a class="btn btn-primary" style="margin-top:2px;" href="book/translations/Greek/2021-06-02-book.pdf" target="_blank">Greek &raquo;</a>
+          <a class="btn btn-primary" style="margin-top:2px;" href="book/translations/Greek/2021-06-22-book.pdf" target="_blank">Greek &raquo;</a>
 </p>
         </div>
         <div class="col-lg-4">
