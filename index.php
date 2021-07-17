@@ -24,16 +24,15 @@ that needs fixing.  Thanks in advance.</p>
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-lg-4">
-          <h2>TextBook</h2>
           <p>There is a cool textbook with 
             sketchnote images by Mauro Toselli.  Electronic copies are free with a CC-BY
              license and the print copy is CC-BY-NC.</p>
           <p><a class="btn btn-primary" href="http://do1.dr-chuck.net/net-intro/EN_us/net-intro.pdf" target="_blank">PDF &raquo;</a>
           <a class="btn btn-primary" href="http://do1.dr-chuck.net/net-intro/EN_us/net-intro.epub" target="_blank">EPUB &raquo;</a>
           <a class="btn btn-primary" href="http://www-personal.umich.edu/~csev/books/net-intro/audio/" target="_blank">Audio &raquo;</a>
-          <a class="btn btn-primary" href="https://amzn.to/34F1Y0z" target="_blank">Amazon &raquo;</a>
           <a class="btn btn-primary" style="margin-top:2px;" href="book/translations/Spanish/2021-06-12-book.pdf" target="_blank">Spanish &raquo;</a>
           <a class="btn btn-primary" style="margin-top:2px;" href="book/translations/Greek/2021-06-28-book.pdf" target="_blank">Greek &raquo;</a>
+          <a class="btn btn-primary" href="book.php" target="_blank">Paper Books &raquo;</a>
 </p>
         </div>
         <div class="col-lg-4">
