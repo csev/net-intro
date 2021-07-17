@@ -24,7 +24,7 @@ by
 </li>
 <li>
 <a href="http://anikoula.gr/books/eisagogi-sta-diktya/" target="_blank">Greek translation</a> 
-translated by 
+by 
 <a href="https://twitter.com/KonstantiaQ">Konstantia Kiourtidou</a> and avaliable from 
 Anikoula books shipped from Thessaloniki, Greece.
 </li>
