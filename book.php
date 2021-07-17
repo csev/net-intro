@@ -18,7 +18,8 @@
 <ul>
 <li><a href="https://amzn.to/34F1Y0z" target="_blank">English available on Amazon</a></li>
 <li><a href="https://amzn.to/3hKoFYo" target="_blank">Spanish translation available on Amazon</a></li>
-<li><a href="http://anikoula.gr/books/eisagogi-sta-diktya/" target="_blank">Greek translation</a></li>
+<li><a href="http://anikoula.gr/books/eisagogi-sta-diktya/" target="_blank">Greek translation</a> from Anikoula books</li>
+<li><a href="https://dmkpress.com/catalog/computer/web/978-5-97060-959-0/" target="_blank">Russian translation</a> from DMK Press</li>
 </ul>
 <p>Back to <a href="index.php">Introduction to Networking</a>.</p>
 </div>
