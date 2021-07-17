@@ -32,6 +32,7 @@ that needs fixing.  Thanks in advance.</p>
           <a class="btn btn-primary" href="http://www-personal.umich.edu/~csev/books/net-intro/audio/" target="_blank">Audio &raquo;</a>
           <a class="btn btn-primary" style="margin-top:2px;" href="book/translations/Spanish/2021-06-12-book.pdf" target="_blank">Spanish &raquo;</a>
           <a class="btn btn-primary" style="margin-top:2px;" href="book/translations/Greek/2021-06-28-book.pdf" target="_blank">Greek &raquo;</a>
+          <a class="btn btn-primary" style="margin-top:2px;" href="book/translations/Russian/2021-07-11-book.pdf" target="_blank">Russian &raquo;</a>
           <a class="btn btn-primary" href="book.php" target="_blank">Paper Books &raquo;</a>
 </p>
         </div>
