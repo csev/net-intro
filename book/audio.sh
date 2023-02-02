@@ -14,7 +14,7 @@ do
  pandoc $f -t plain | sed '/^Glossary/,$d' | cat - audio.postamble | say -v $name -o audio/$x.mp4 --file-format=mp4f
  if [[ "$name" == "Samantha" ]]
  then
-  name="Tom"
+  name="Alex"
  else
   name="Samantha"
  fi
