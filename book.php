@@ -23,7 +23,7 @@ by
 <a href="https://twitter.com/fertardio">Fernando Tardio</a> and available from Amazon.
 </li>
 <li>
-<a href="http://anikoula.gr/books/eisagogi-sta-diktya/" target="_blank">Greek translation</a> 
+<a href="https://anikoula.gr/en/%CE%B2%CE%B9%CE%B2%CE%BB%CE%AF%CE%BF/eisagwgh-sta-diktya/" target="_blank">Greek translation</a> 
 by 
 <a href="https://twitter.com/KonstantiaQ">Konstantia Kiourtidou</a> and avaliable from 
 Anikoula books shipped from Thessaloniki, Greece.
