@@ -89,8 +89,8 @@ for f in sorted(os.listdir(pth)):
             continue
         if not inquestions : continue
         if line.strip() == '' : continue
-        queslist = re.findall('^[0-9]*\. (.*)',line)
-        anslist = re.findall('^[a-z]*\) (.*)',line)
+        queslist = re.findall(r'^[0-9]*\. (.*)',line)
+        anslist = re.findall(r'^[a-z]*\) (.*)',line)
         # print(line)
         if len(queslist) > 0 : 
             if question is not False and answer is not False : 
