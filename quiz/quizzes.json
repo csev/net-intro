@@ -656,7 +656,7 @@
             },
             {
                 "question": "Which half of the client/server application must start first?",
-                "answer": 1,
+                "answer": 2,
                 "answers": [
                     "Client",
                     "Server"

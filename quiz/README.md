@@ -1,6 +1,8 @@
 How to update the quiz questions
 --------------------------------
 
+Note: If you just keep the integers in quizzes.json it is OK.
+
 The answers in quizzes.json are encoded using two values from 
 config.php in the main folder:
 
