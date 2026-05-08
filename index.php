@@ -15,7 +15,9 @@ as a source of Open Educational Resources to support my
 on TCP/IP network technologies.  
 I am also exploring a new approach to building remixable 
 OER materials.
-You can see the course code for the book in my 
+This boko is part of a set of courses to prepare students
+to become <a href="https://www.masterprogrammer.com/">Master Programmers</a>.
+You can see the source code for the book in my 
 <a href="https://github.com/csev/net-intro/commits/master" target="_blank">GitHub repository</a>.  
 Feel free to submit a pull request if you find something 
 that needs fixing.  Thanks in advance.</p>
